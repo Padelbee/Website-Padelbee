@@ -1,10 +1,9 @@
 # THE COURT by Padelbee – Website
 
-Statische Website (eine HTML-Seite, keine Build-Schritte).
+Statische Website, keine Build-Schritte. Jede Seite ist ein eigener Ordner mit index.html:
 
-- `index.html` – komplette Seite (Start, Courts, Automaten, Referenzen)
-- `media/` – Bilder und Videos
-- `robots.txt`, `sitemap.xml` – für Suchmaschinen
+- `/` Start · `/courts/` · `/automaten/` · `/referenzen/` · `/blog/` (+ `/blog/<artikel>/`) · `/impressum/` · `/datenschutz/`
+- `media/` Bilder, Videos, Schriften (lokal, keine Google Fonts)
+- `robots.txt`, `sitemap.xml`, `404.html`
 
-Veröffentlicht über GitHub Pages (Settings → Pages → Branch `main`, Ordner `/ (root)`).
-Eigene Domain: Settings → Pages → Custom domain `the-court.com`.
+Veröffentlichung: GitHub Pages (Settings → Pages → Branch `main`, `/ (root)`), Custom domain `the-court.com`.
