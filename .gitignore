@@ -1,0 +1,8 @@
+# SMTP-Zugangsdaten (Kopie von inc/smtp-config.example.php mit echten Werten)
+inc/smtp-config.php
+
+# Cloudflare Turnstile Secret für lokale Entwicklung (Produktion: K8s-Secret padelbee-turnstile)
+inc/turnstile-config.php
+
+# Orgame Lead-Intake lokal (Produktion: K8s-Secret padelbee-orgame)
+inc/orgame-config.php

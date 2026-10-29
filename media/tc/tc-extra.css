@@ -1,0 +1,50 @@
+/* Ergänzungen zum Kundendesign (the-court.css bleibt unverändert): Mega-Menü, Footer-Zusatzlinks, Kontaktformular */
+
+/* Mega-Menü "Lösungen" */
+.dd-menu.mega{width:min(760px,92vw);grid-template-columns:repeat(3,minmax(0,1fr));gap:2px 8px}
+.dd-menu.mega>a{grid-column:span 1}
+.dd-menu .dd-grp{display:grid;align-content:start;gap:0;padding:10px 6px 6px;border-top:1px solid rgba(255,255,255,.12);margin-top:6px}
+.dd-menu .dd-h{margin:0 0 4px 14px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--petrol-200);font-weight:600}
+.dd-menu a.dd-s{padding:7px 14px;font-size:14px;font-weight:500;letter-spacing:0}
+
+/* Footer: zweite Linkzeile */
+.foot-links2{padding-top:10px;padding-bottom:6px;opacity:.75}
+.foot-links2 a{font-size:11px}
+
+/* Kontaktformular im Bereich #kontakt */
+.kform{max-width:1000px;margin:56px auto 0;text-align:left;background:var(--panel);border-top:4px solid var(--yellow);padding:clamp(22px,4vw,40px)}
+.kform h3{font-family:var(--f-display);font-style:italic;font-weight:700;font-size:clamp(26px,3.2vw,38px);margin:0 0 8px;color:var(--white)}
+.kform .kf-intro{margin:0 0 22px;color:var(--muted-d);max-width:62ch}
+.kform fieldset{border:0;margin:0 0 22px;padding:0}
+.kform legend,.kform .kf-lab{font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--petrol-200);padding:0;margin-bottom:8px}
+.kf-chips{display:flex;flex-wrap:wrap;gap:8px}
+.kf-chips label{display:flex;gap:8px;align-items:center;border:2px solid var(--petrol-600);padding:8px 12px;cursor:pointer;font-size:13px;font-weight:600;letter-spacing:.06em;color:var(--white)}
+.kf-chips label:has(input:checked){border-color:var(--yellow);background:var(--yellow);color:var(--petrol)}
+.kf-chips input{accent-color:var(--petrol)}
+.kf-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px}
+.kf-grid .wide{grid-column:1/-1}
+.kform input[type=text],.kform input[type=email],.kform input[type=tel],.kform select,.kform textarea{width:100%;font:inherit;font-size:16px;color:var(--white);background:rgba(255,255,255,.06);border:2px solid var(--petrol-600);border-radius:0;padding:12px 14px}
+.kform select option{color:var(--ink)}
+.kform textarea{min-height:110px;resize:vertical}
+.kform input:focus,.kform select:focus,.kform textarea:focus{outline:0;border-color:var(--yellow)}
+.kform ::placeholder{color:var(--petrol-200);opacity:1}
+.kf-check{display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--muted-d);line-height:1.45}
+.kf-check input{margin-top:3px;flex:none;width:18px;height:18px;accent-color:var(--yellow)}
+.kf-check a{color:var(--yellow)}
+.kf-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.kf-note{font-size:13px;color:var(--muted-d);margin:0 0 18px}
+.kf-hint{color:#ffb4a2;font-size:14px;margin:8px 0 0}
+.kf-alert{border:2px solid #ffb4a2;color:#ffd8cf;padding:12px 16px;margin:0 0 22px;font-size:15px}
+.kf-actions{margin-top:22px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+@media (max-width:700px){.kf-grid{grid-template-columns:1fr}}
+
+/* Bestätigungsseite / 404 */
+.tc-center{text-align:center}
+.tc-center .ctas{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:32px}
+
+/* Rechtstexte: Unterüberschriften der übernommenen Datenschutzerklärung */
+.legal-doc h3{font-size:17px;font-weight:700;color:var(--petrol);margin:22px 0 6px;font-family:var(--f-body);font-style:normal}
+.legal-doc h4{font-size:15px;font-weight:700;color:var(--petrol);margin:16px 0 4px;font-family:var(--f-body);font-style:normal}
+
+/* Blog: Artikeltitel ist ein h2 (die Seite hat genau eine h1, die der Listenansicht) */
+.b-article h2#baTitle{font-size:clamp(40px,6vw,76px);line-height:1;margin-top:10px}

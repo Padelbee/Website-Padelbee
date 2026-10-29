@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /m-senden.php
+Disallow: /danke.php
+
+Sitemap: https://padelbee.de/sitemap.xml

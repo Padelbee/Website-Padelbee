@@ -1,0 +1,25 @@
+# ai.txt - Informationen für KI-Crawler und LLMs
+
+# Über Padelbee
+Padelbee ist Ihr Partner für Padel-Projekte in Deutschland. Wir bieten Standortanalyse, Bauplanung, Betreiberkonzepte und Marketing-Services für Padel-Anlagen.
+
+# Wichtige Seiten
+Homepage: https://www.padelbee.de/
+Standortanalyse: https://www.padelbee.de/standortanalyse
+Padel Court bauen: https://www.padelbee.de/padel-court-bauen
+Betreiberkonzept: https://www.padelbee.de/betreiberkonzept
+Powerplay: https://www.padelbee.de/powerplay
+Angebotsvergleich: https://www.padelbee.de/angebotsvergleich
+Automatenlösungen: https://www.padelbee.de/automatenloesungen
+Team: https://www.padelbee.de/team
+Jobs: https://www.padelbee.de/jobs
+FAQ: https://www.padelbee.de/faq
+
+# Kontakt
+E-Mail: info@padelbee.de
+Telefon: +49 (0)151 18175125
+Adresse: Münchner Str. 15, 85774 Unterföhring, Deutschland
+
+# Sitemap
+Sitemap: https://www.padelbee.de/sitemap.xml
+

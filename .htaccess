@@ -1,0 +1,54 @@
+RewriteEngine on
+
+# Fehlerseite (404.php sendet selbst Status 404)
+ErrorDocument 404 /404.php
+
+# www -> Apex (Cloudflare erledigt das bereits, hier als Absicherung)
+RewriteCond %{HTTP_HOST} ^www\.padelbee\.de$ [NC]
+RewriteRule ^ https://padelbee.de%{REQUEST_URI} [R=301,L]
+
+# Direkter Aufruf von /seite.php (nur externe Anfragen, THE_REQUEST verhindert Schleifen) -> /seite
+# danke.php und m-senden.php bleiben bewusst erreichbar (Formular-Redirects).
+RewriteCond %{THE_REQUEST} ^[A-Z]+\s/index\.php[\s?]
+RewriteRule ^ / [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]+\s/(courts|automatenloesungen|referenzen|blog|faq|impressum|datenschutz|standortanalyse|padel-court-bauen|sportplatzbau|betreiberkonzept|powerplay|team|partner|angebotsvergleich|halle|standard-court|panorama-court|hybrid-court|premier-court|jobs|news)\.php[\s?]
+RewriteRule ^ /%1 [R=301,L]
+
+# Alte Pfade aus der GitHub-Pages-Zeit des neuen Designs
+RewriteRule ^automaten/?$ /automatenloesungen [R=301,L]
+RewriteRule ^(courts|referenzen|blog|impressum|datenschutz)/$ /$1 [R=301,L]
+
+# 301 Redirect von alter URL zu neuer SEO-optimierten URL
+RewriteRule ^bauplanung$ /padel-court-bauen [R=301,L]
+RewriteRule ^bauplanung\.php$ /padel-court-bauen [R=301,L]
+
+RewriteRule ^courts$ /courts.php [L]
+RewriteRule ^referenzen$ /referenzen.php [L]
+RewriteRule ^blog$ /blog.php [L]
+RewriteRule ^faq$ /faq.php [L]
+RewriteRule ^impressum$ /impressum.php [L]
+RewriteRule ^datenschutz$ /datenschutz.php [L]
+RewriteRule ^standortanalyse$ /standortanalyse.php [L]
+RewriteRule ^padel-court-bauen$ /padel-court-bauen.php [L]
+RewriteRule ^sportplatzbau$ /sportplatzbau.php [L]
+RewriteRule ^betreiberkonzept$ /betreiberkonzept.php [L]
+RewriteRule ^powerplay$ /powerplay.php [L]
+RewriteRule ^team$ /team.php [L]
+RewriteRule ^partner$ /partner.php [L]
+RewriteRule ^angebotsvergleich$ /angebotsvergleich.php [L]
+RewriteRule ^automatenloesungen$ /automatenloesungen.php [L]
+RewriteRule ^halle$ /halle.php [L]
+RewriteRule ^standard-court$ /standard-court.php [L]
+RewriteRule ^panorama-court$ /panorama-court.php [L]
+RewriteRule ^hybrid-court$ /hybrid-court.php [L]
+RewriteRule ^premier-court$ /premier-court.php [L]
+RewriteRule ^jobs$ /jobs.php [L]
+RewriteRule ^news$ /news.php [L]
+# HTML/PHP-Seiten nie im Browser cachen (Assets werden per ?v=N versioniert)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(php|html)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+</IfModule>
