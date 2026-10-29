@@ -2,31 +2,43 @@
 
 Ticket: **DEV-1086** in issuform (deine Unteraufgaben hängen daran). Neues Design „THE COURT by Padelbee“ von Martin Gaffal, Vorlage: https://padelbee.github.io/Website-Padelbee/
 
-## Wo du arbeitest: alles im Terminal
-- **Website (Dev):** https://padelbeedev.devvibe.io (nicht bei Google, Formular schickt nichts raus)
-- **VS Code im Browser:** https://padelbeedev-code.devvibe.io (Passwort per Mail von Matthias). Dort öffnest du nur das **Terminal** (Menü ☰ → Terminal → Neues Terminal, oder Strg+ö). Gearbeitet wird diesmal komplett im Terminal mit Claude Code, nicht durch Klicken im Editor.
-- Das Terminal startet im Projektordner `/var/www/html`. Das ist das Repo **Padelbee/Website-Padelbee**, Zweig `staging`, und genau das ist live auf padelbeedev zu sehen.
-- **Nie auf `main` pushen.** `main` gehört Martin (sein ursprünglicher Entwurf, daraus baut GitHub Pages). Gearbeitet wird nur auf `staging`.
+## Wo du arbeitest: im Terminal auf deinem Mac, mit Claude Code und dem devvibe-Plugin
+Voraussetzung ist die Einrichtung aus der devvibe-claude-README (gh angemeldet, issuform-MCP, Plugin `devvibe`, HQ unter `~/local/devvibe/hq`). Dazu kommt die Einladung in die GitHub-Organisation **Padelbee**.
 
-### Ablauf
-Einmalig beim ersten Mal:
+### Einmalig: Projektordner nach devvibe-Struktur anlegen
+Kundenprojekte liegen immer unter `~/local/kunden/<kunde>/<repo>`. Für Padelbee also:
 ```bash
-gh auth login               # GitHub.com → HTTPS → "Login with a web browser", Code im Browser eingeben
-gh auth setup-git           # danach klappt git push mit deinem GitHub-Konto
-claude                      # mit deinem Claude-Konto anmelden (Link öffnet sich im Browser)
+mkdir -p ~/local/kunden/padelbee
+gh repo clone Padelbee/Website-Padelbee ~/local/kunden/padelbee/Website-Padelbee
+cd ~/local/kunden/padelbee/Website-Padelbee
+git switch staging                     # Arbeitszweig, nie main
+git pull                               # vorher immer holen
+cd ~/local/devvibe/hq && git pull      # HQ aktualisieren (Projekt padelbee-website ist dort eingetragen)
 ```
-Danach jedes Mal einfach `claude` starten.
-In Claude Code sagst du, was du willst, z. B.: „Lies ANLEITUNG.md und baue Unteraufgabe DEV-1151: standortanalyse.php im neuen Design.“ Claude Code ändert die Dateien direkt im Webroot, du siehst das Ergebnis sofort nach dem Neuladen auf padelbeedev.devvibe.io.
+Genau dieser Pfad ist in `~/local/devvibe/hq/projects.md` hinterlegt. Startest du Claude in diesem Ordner, bekommt es automatisch den Projektstand aus HQ (`stand/padelbee-website.md`) und findet über issuform den Steckbrief von Padelbee.
 
-Wenn eine Seite passt, im Terminal (oder Claude Code darum bitten):
+### Jede Aufgabe
 ```bash
-python3 tests/seo_check.py --base http://localhost     # Prüfung, siehe unten
-git status                                            # was hat sich geändert?
-git add standortanalyse.php media/uploads/…           # nur deine Dateien
-git commit -m "Standortanalyse im neuen Design (DEV-1151)"
-git push                                              # sichert auf GitHub (Padelbee/Website-Padelbee, staging)
+cd ~/local/kunden/padelbee/Website-Padelbee && git pull
+claude
 ```
-Solange im Webroot etwas Uncommittetes liegt, holt der Pod keine fremden Änderungen von GitHub. Also regelmäßig committen und pushen.
+In Claude Code:
+```
+/plan DEV-1151          # übernimmt die Unteraufgabe, prüft Fakten, setzt sie auf "in Arbeit"
+/implement DEV-1151     # baut die Seiten, prüft, committet und pusht auf staging
+```
+- Nach dem Push ist die Änderung nach etwa 20 Sekunden auf **https://padelbeedev.devvibe.io** zu sehen (Vorschau, nicht bei Google, Formular schickt nichts raus). Dort anschauen, auch die Handy-Ansicht.
+- Passt etwas nicht, sag es Claude einfach in derselben Session.
+- Am Ende setzt Claude die Unteraufgabe auf **in_review** mit einem kurzen Kommentar. Kein PR, kein Merge, kein Deploy, keine Mail an Kunden: das macht Matthias.
+- Am Ende der Session schreibt Claude den Stand nach HQ (so steht es in den Regeln des Plugins).
+
+### Regeln
+- **Nur Zweig `staging`, nie `main`.** `main` gehört Martin (sein ursprünglicher Entwurf, daraus baut GitHub Pages).
+- Das Repo ist **öffentlich**: keine Passwörter, Schlüssel oder Zugangsdaten in Dateien oder Commits.
+- Vor jeder Arbeit `git pull`, nach jeder Arbeit `git push`.
+
+### Notfall ohne Mac: VS Code im Browser
+https://padelbeedev-code.devvibe.io (Passwort per Mail) hat ein Terminal mit Claude Code direkt im Webroot der Vorschau (dort `gh auth login`, `gh auth setup-git`, `claude`). Nicht gleichzeitig auf dem Mac und dort arbeiten, sonst gibt es Konflikte. Liegen dort uncommittete Änderungen, holt die Vorschau keine neuen Commits mehr.
 
 ## Wie eine Seite gebaut ist
 Jede Seite ist eine PHP-Datei im Hauptordner (z. B. `standortanalyse.php`). Die URL bleibt ohne `.php` (`/standortanalyse`), das regelt `.htaccess` schon. Vorbild: `courts.php` und `automatenloesungen.php`.
@@ -58,10 +70,10 @@ Die alte Seite steht bei Google gut. Deshalb:
 - URL nie ändern.
 
 ## Prüfen, bevor du eine Unteraufgabe abschließt
-Im Terminal (die Website läuft im selben Pod unter `localhost`):
+Nach dem Push gegen die Vorschau:
 ```bash
-python3 tests/seo_check.py --base http://localhost
-python3 tests/seo_check.py --base http://localhost --only pages --only schema   # nur Seiten und JSON-LD
+python3 tests/seo_check.py --base https://padelbeedev.devvibe.io --skip-form
+python3 tests/seo_check.py --base https://padelbeedev.devvibe.io --skip-form --only pages --only schema
 ```
 Deine Seiten müssen ohne FAIL durchlaufen (Seiten, die noch niemand gebaut hat, dürfen noch FAIL sein). Zusätzlich im Browser anschauen: Desktop und Handy, Menü, Links, keine Fehler in der Konsole.
 
