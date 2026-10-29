@@ -5,13 +5,17 @@ Ticket: **DEV-1086** in issuform (deine Unteraufgaben hängen daran). Neues Desi
 ## Wo du arbeitest: alles im Terminal
 - **Website (Dev):** https://padelbeedev.devvibe.io (nicht bei Google, Formular schickt nichts raus)
 - **VS Code im Browser:** https://padelbeedev-code.devvibe.io (Passwort per Mail von Matthias). Dort öffnest du nur das **Terminal** (Menü ☰ → Terminal → Neues Terminal, oder Strg+ö). Gearbeitet wird diesmal komplett im Terminal mit Claude Code, nicht durch Klicken im Editor.
-- Das Terminal startet im Projektordner `/var/www/html`. Das ist der Zweig `staging`, und genau das ist live auf padelbeedev zu sehen.
-- **Nie auf `main` pushen**, `main` ist die Live-Seite padelbee.de.
+- Das Terminal startet im Projektordner `/var/www/html`. Das ist das Repo **Padelbee/Website-Padelbee**, Zweig `staging`, und genau das ist live auf padelbeedev zu sehen.
+- **Nie auf `main` pushen.** `main` gehört Martin (sein ursprünglicher Entwurf, daraus baut GitHub Pages). Gearbeitet wird nur auf `staging`.
 
 ### Ablauf
+Einmalig beim ersten Mal:
 ```bash
-claude                      # beim ersten Mal: mit deinem Claude-Konto anmelden (Link öffnet sich im Browser)
+gh auth login               # GitHub.com → HTTPS → "Login with a web browser", Code im Browser eingeben
+gh auth setup-git           # danach klappt git push mit deinem GitHub-Konto
+claude                      # mit deinem Claude-Konto anmelden (Link öffnet sich im Browser)
 ```
+Danach jedes Mal einfach `claude` starten.
 In Claude Code sagst du, was du willst, z. B.: „Lies ANLEITUNG.md und baue Unteraufgabe DEV-1151: standortanalyse.php im neuen Design.“ Claude Code ändert die Dateien direkt im Webroot, du siehst das Ergebnis sofort nach dem Neuladen auf padelbeedev.devvibe.io.
 
 Wenn eine Seite passt, im Terminal (oder Claude Code darum bitten):
@@ -20,7 +24,7 @@ python3 tests/seo_check.py --base http://localhost     # Prüfung, siehe unten
 git status                                            # was hat sich geändert?
 git add standortanalyse.php media/uploads/…           # nur deine Dateien
 git commit -m "Standortanalyse im neuen Design (DEV-1151)"
-git push                                              # sichert auf GitHub, Zweig staging
+git push                                              # sichert auf GitHub (Padelbee/Website-Padelbee, staging)
 ```
 Solange im Webroot etwas Uncommittetes liegt, holt der Pod keine fremden Änderungen von GitHub. Also regelmäßig committen und pushen.
 
@@ -62,4 +66,4 @@ python3 tests/seo_check.py --base http://localhost --only pages --only schema   
 Deine Seiten müssen ohne FAIL durchlaufen (Seiten, die noch niemand gebaut hat, dürfen noch FAIL sein). Zusätzlich im Browser anschauen: Desktop und Handy, Menü, Links, keine Fehler in der Konsole.
 
 ## Nicht anfassen
-`m-senden.php`, `.htaccess`, `inc/tc/layout.php` (außer `TC_ASSET_VERSION`), `inc/tc/schema.php`, `k8s/`, `Dockerfile`. Wenn du dort etwas brauchst: Matthias fragen.
+`m-senden.php`, `.htaccess`, `inc/tc/layout.php` (außer `TC_ASSET_VERSION`), `inc/tc/schema.php`, `Dockerfile`. Wenn du dort etwas brauchst: Matthias fragen.
