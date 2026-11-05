@@ -37,7 +37,7 @@ tc_page_start([
     <div class="stats">
       <div><b data-count="5">5</b><span>Bausteine</span></div>
       <div><b data-count="5">5</b><span>Jahre Prognose</span></div>
-      <div><b>3D</b><span>Visualisierung</span></div>
+      <div><b>ROI</b><span>Business Case</span></div>
       <div><b data-count="1">1</b><span>Klare Empfehlung</span></div>
     </div>
   </div>

@@ -47,7 +47,7 @@ tc_page_start([
     <div class="stats">
       <div><b data-count="7">7</b><span>Schritte</span></div>
       <div><b data-count="3">3</b><span>Zielgruppen</span></div>
-      <div><b>3D</b><span>Geländemodell</span></div>
+      <div><b>3D</b><span>Visualisierung</span></div>
       <div><b data-count="2">2</b><span>Planungspartner</span></div>
     </div>
   </div>
