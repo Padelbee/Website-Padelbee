@@ -30,7 +30,7 @@ tc_page_start([
       <p class="label" style="color:var(--white)" data-type>Erstscreening · Markt · Business Case</p>
       <h1>Standort&shy;analyse.<br>Erst <span class="kw">prüfen.</span></h1>
       <p class="lead">Vom Start weg helfen wir dir, deine Chancen richtig zu bewerten, Investments sinnvoll zu planen und die Weichen zu stellen, damit Padel auch an deinem Standort boomt. Für eine starke Marktstrategie, bevor der erste Spatenstich gesetzt ist.</p>
-      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Erstscreening anfragen</a><a class="btn ghost" href="#s-bausteine">Leistungen ansehen</a></div>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Erstscreening anfragen</a><a class="btn ghost" href="#s-bausteine">5 Bausteine ansehen</a></div>
     </div>
     <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/standortanalyse-karte.png" alt="Stadtkarte mit Pin als Symbol für die Standortanalyse" loading="lazy" style="height:auto;object-fit:contain"></figure>
   </div>

@@ -40,7 +40,7 @@ tc_page_start([
       <p class="label" style="color:var(--white)" data-type>Planung · Genehmigung · Realisierung</p>
       <h1>Sportplatz&shy;<span class="kw">bau.</span></h1>
       <p class="lead">Gemeinsam mit thecourt.dev entwickeln, planen und realisieren wir moderne Padel- und Sportanlagen. Von der ersten Standortidee bis zur Inbetriebnahme begleiten wir Kommunen, Vereine und Investoren durch den gesamten Prozess: ganzheitlich, transparent und praxisnah.</p>
-      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Projekt anfragen</a><a class="btn ghost" href="#sp-schritte">Leistungsschritte ansehen</a></div>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Projekt anfragen</a><a class="btn ghost" href="#sp-schritte">7 Leistungsschritte ansehen</a></div>
     </div>
     <figure class="a-herofig"><img src="/media/leistungen/sportplatzbau-anlage.jpg" alt="Illustration einer beleuchteten Padel-Anlage im Grünen" loading="lazy"><figcaption>Padel- und Sportanlage</figcaption></figure>
   </div>

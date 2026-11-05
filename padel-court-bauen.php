@@ -23,7 +23,7 @@ tc_page_start([
       <p class="label" style="color:var(--white)" data-type>Bauplanung · Platzbau · Baubegleitung</p>
       <h1>Padel Court <span class="kw">bauen.</span></h1>
       <p class="lead">Du willst einen Padel Court bauen lassen? Wir stehen an deiner Seite, räumen alle Hürden aus dem Weg und sorgen dafür, dass dich im Projektverlauf keine Überraschungen erwarten. Von der ersten Planung bis zur Fertigstellung.</p>
-      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Bauprojekt anfragen</a><a class="btn ghost" href="#b-ablauf">Ablauf ansehen</a></div>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Bauprojekt anfragen</a><a class="btn ghost" href="#b-ablauf">Bauablauf ansehen</a></div>
     </div>
     <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/padel-court-baustellen.png" alt="Fotos von Padel-Baustellen: Aushub mit Bagger, Fundament, Montage von Glas und Gitter" loading="lazy" style="height:auto;object-fit:contain"></figure>
   </div>
