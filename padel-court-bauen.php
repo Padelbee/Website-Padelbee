@@ -32,7 +32,7 @@ tc_page_start([
       <div><b data-count="4">4</b><span>Bausteine</span></div>
       <div><b data-count="1">1</b><span>Ansprechpartner</span></div>
       <div><b data-count="3">3</b><span>Fachpartner</span></div>
-      <div><b>35.000 €</b><span>Richtwert Fundament, circa</span></div>
+      <div><b>35.000&nbsp;€</b><span>Ungefährer Richtwert Fundament</span></div>
     </div>
   </div>
 </section>
