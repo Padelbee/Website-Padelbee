@@ -36,10 +36,10 @@ tc_page_start([
   </div>
   <div class="inner hero-stats" style="padding-block:0 40px">
     <div class="stats">
-      <div><b data-count="5">5</b><span>Bausteine</span></div>
       <div><b data-count="5">5</b><span>Jahre Prognose</span></div>
       <div><b>ROI</b><span>Business Case</span></div>
-      <div><b data-count="1">1</b><span>Klare Empfehlung</span></div>
+      <div><b data-count="5">5</b><span>Bausteine</span></div>
+      <div><b data-count="50">50</b><span>Projekte</span></div>
     </div>
   </div>
 </section>

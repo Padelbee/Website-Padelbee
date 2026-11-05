@@ -29,10 +29,10 @@ tc_page_start([
   </div>
   <div class="inner hero-stats" style="padding-block:0 40px">
     <div class="stats">
-      <div><b data-count="4">4</b><span>Bausteine</span></div>
       <div><b data-count="1">1</b><span>Ansprechpartner</span></div>
-      <div><b data-count="3">3</b><span>Fachpartner</span></div>
-      <div><b>35.000&nbsp;€</b><span>Ungefährer Richtwert Fundament</span></div>
+      <div><b data-count="5">5</b><span>Court-Hersteller</span></div>
+      <div><b data-count="50">50</b><span>Projekte</span></div>
+      <div><b>27.000&nbsp;€</b><span>ab, pro Court netto</span></div>
     </div>
   </div>
 </section>
