@@ -43,7 +43,7 @@ tc_page_start([
     </div>
     <figure class="a-herofig"><img src="/images/anlagen/image008.png" alt="Illustration einer beleuchteten Padel-Anlage im Grünen" loading="lazy"><figcaption>Padel- und Sportanlage</figcaption></figure>
   </div>
-  <div class="inner" style="padding-block:0 40px">
+  <div class="inner hero-stats" style="padding-block:0 40px">
     <div class="stats">
       <div><b data-count="50">50</b><span>Projekte</span></div>
       <div><b data-count="3">3</b><span>Länder</span></div>

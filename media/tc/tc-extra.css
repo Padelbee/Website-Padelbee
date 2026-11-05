@@ -48,3 +48,7 @@
 
 /* Blog: Artikeltitel ist ein h2 (die Seite hat genau eine h1, die der Listenansicht) */
 .b-article h2#baTitle{font-size:clamp(40px,6vw,76px);line-height:1;margin-top:10px}
+
+/* Unterseiten-Kopf: Zahlenleiste wie Startseite nur in der Textspalte */
+.a-hero .inner.hero-stats{display:grid;grid-template-columns:1.25fr .75fr;gap:40px}
+@media (max-width:860px){.a-hero .inner.hero-stats{grid-template-columns:1fr}}
