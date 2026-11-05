@@ -53,15 +53,15 @@ tc_page_start([
   </div>
 </section>
 
-<section class="band dark grid-bg" id="b-weitere">
+<section class="band grid-bg" id="b-weitere" style="background-color:var(--grey-050)">
   <div class="inner">
     <p class="label">Weitere Leistungen</p>
-    <h2 class="reveal">Alles rund um dein <span class="kw">Padel-Projekt.</span></h2>
+    <h2 class="reveal">Alles rund um dein <span class="hl">Padel-Projekt.</span></h2>
     <p class="lead">Vor dem Bau prüfen wir deinen Standort, danach bringen wir deine Anlage an den Start und halten sie erfolgreich.</p>
     <div class="cards c3">
-      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Standort&shy;analyse</h3><p>Analyse der Potenziale am Standort und der Chancen am Markt mit Handlungsempfehlung zu Positionierung, Platzbau und Betrieb.</p><a class="btn ghost" href="/standortanalyse" style="margin-top:20px">Mehr zur Standortanalyse</a></article>
-      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Betreiber&shy;konzept</h3><p>Business-Plan, Angebots- und Marketing-Strategie für eine erfolgreiche Positionierung und einen reibungslosen Start am Standort.</p><a class="btn ghost" href="/betreiberkonzept" style="margin-top:20px">Mehr zum Betreiberkonzept</a></article>
-      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>PowerPlay®</h3><p>Marketingplan, Platzbuchungssoftware und Werbepakete digital und lokal, für die laufende Gewinnung von Spielerinnen und Spielern.</p><a class="btn ghost" href="/powerplay" style="margin-top:20px">Mehr zu PowerPlay®</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Standort&shy;analyse</h3><p>Analyse der Potenziale am Standort und der Chancen am Markt mit Handlungsempfehlung zu Positionierung, Platzbau und Betrieb.</p><a class="btn ghost-d" href="/standortanalyse" style="margin-top:20px">Mehr zur Standortanalyse</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Betreiber&shy;konzept</h3><p>Business-Plan, Angebots- und Marketing-Strategie für eine erfolgreiche Positionierung und einen reibungslosen Start am Standort.</p><a class="btn ghost-d" href="/betreiberkonzept" style="margin-top:20px">Mehr zum Betreiberkonzept</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>PowerPlay®</h3><p>Marketingplan, Platzbuchungssoftware und Werbepakete digital und lokal, für die laufende Gewinnung von Spielerinnen und Spielern.</p><a class="btn ghost-d" href="/powerplay" style="margin-top:20px">Mehr zu PowerPlay®</a></article>
     </div>
   </div>
 </section>
