@@ -52,3 +52,9 @@
 /* Unterseiten-Kopf: Zahlenleiste wie Startseite nur in der Textspalte */
 .a-hero .inner.hero-stats{display:grid;grid-template-columns:1.25fr .75fr;gap:40px}
 @media (max-width:860px){.a-hero .inner.hero-stats{grid-template-columns:1fr}}
+
+/* Rechtstexte: lange URLs am Handy umbrechen statt über den Rand ragen */
+.legal-doc a{overflow-wrap:anywhere}
+
+/* Kopieren-Buttons im Kontaktbereich: am Handy größere Tippfläche, Optik unverändert */
+@media (max-width:860px){.copy{min-height:40px;padding:8px 12px}}

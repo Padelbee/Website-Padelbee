@@ -15,6 +15,7 @@ tc_page_start([
     'description' => 'Standard, Panorama oder Full-Panorama: Padel-Courts von Padel Factory, 100% Padel, Padel Galis und mehr. Fundamente, Hallensysteme und herstellerneutrale Beratung.',
     'breadcrumb' => ['Courts' => '/courts'],
     'page_type' => 'CollectionPage',
+    'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [tc_schema_item_list('Padel-Court-Systeme', $courtProducts)],
 ]);
 ?>
@@ -25,7 +26,7 @@ tc_page_start([
       <p class="label" style="color:var(--white)" data-type>Courts · Hallen · Fundamente</p>
       <h1>Dein Court.<br>Unsere <span class="kw">Expertise.</span></h1>
       <p class="lead">Wir arbeiten mit international etablierten Court-Herstellern. Gemeinsam mit dir prüfen wir Standort, Budget und Nutzung und empfehlen den Court, der technisch, wirtschaftlich und qualitativ passt.</p>
-      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Court anfragen</a><a class="btn ghost" href="#c-systeme">Court-Systeme ansehen</a></div>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Court anfragen</a><a class="btn ghost" href="#c-systeme">Court-Systeme ansehen</a></div>
     </div>
     <div class="courtfig" aria-hidden="true">
       <svg viewBox="-34 -24 268 448" id="courtTop">
@@ -91,7 +92,7 @@ tc_page_start([
       <article class="maker reveal"><div class="logo"><div class="m" data-logo="padelconcept" data-h="54"></div></div><div class="origin">Lettland · Riga</div><p>Von einem deutschen Unternehmer geführt. Vorrätige Courts und Ersatzteile für kurze Lieferzeiten, eigene Montageteams, Beratung auf Deutsch. Direct from factory to your court.</p><div class="models-list">Standard Club · Panorama · Full Panorama</div><div class="facts"><span>Windlast 144 km/h</span><span>Mondo · Edelgrass</span><span>Schnelle Lieferung</span></div></article>
       <article class="maker reveal"><div class="logo"><div class="m" data-logo="100padel" data-h="54"></div></div><div class="origin">Frankreich · Fabrik in Valencia</div><p>Familienunternehmen unter Leitung von Padel-Profi Jérémy Scatena. Ausrüster mehrerer Premier-Padel-Turniere, fest stationiertes Montageteam in Deutschland, schlüsselfertig von der Bodenplatte bis zur Montage.</p><div class="models-list">Klassisch · Panorama · Full Panorama</div><div class="facts"><span>Mondo Supercourt</span><span>Montage in DE</span></div></article>
       <article class="maker reveal"><div class="logo"><div class="m" data-logo="mejorset" data-h="50"></div></div><div class="origin">Spanien · Premium Padel Courts</div><p>Premium-Courts aus Spanien für Clubs, die Wert auf Design und Turnierniveau legen. Wir binden MejorSet ein, wenn das Projekt es verlangt.</p><div class="facts"><span>Premium</span><span>Turnierniveau</span></div></article>
-      <article class="maker dk reveal" style="background:var(--petrol);color:var(--white);border-color:var(--petrol)"><div class="origin" style="color:var(--petrol-200);margin-top:0">Neutral beraten</div><h3 style="font-size:32px;margin-top:10px;color:var(--yellow)">Der passende Court für dein Projekt</h3><p style="color:var(--petrol-200)">Wir sind an keinen Hersteller gebunden. Du bekommst einen Vergleich auf Basis deines Standorts, deines Budgets und deines Nutzungskonzepts.</p><a class="btn" href="/#kontakt" style="margin-top:20px">Vergleich anfragen</a></article>
+      <article class="maker dk reveal" style="background:var(--petrol);color:var(--white);border-color:var(--petrol)"><div class="origin" style="color:var(--petrol-200);margin-top:0">Neutral beraten</div><h3 style="font-size:32px;margin-top:10px;color:var(--yellow)">Der passende Court für dein Projekt</h3><p style="color:var(--petrol-200)">Wir sind an keinen Hersteller gebunden. Du bekommst einen Vergleich auf Basis deines Standorts, deines Budgets und deines Nutzungskonzepts.</p><a class="btn" href="#kontakt" style="margin-top:20px">Vergleich anfragen</a></article>
     </div>
   </div>
 </section>
@@ -175,10 +176,5 @@ tc_page_start([
   </div>
 </section>
 
-<section class="band dark grid-bg">
-  <div class="inner cta-band">
-    <h2>Let's build <span class="kw">your court.</span></h2>
-    <a class="btn" href="/#kontakt">Beratungsgespräch anfragen</a>
-  </div>
-</section>
+<?php $tcPreselect = ['Padelcourt']; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
 <?php tc_page_end();

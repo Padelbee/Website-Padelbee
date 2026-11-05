@@ -27,7 +27,7 @@ tc_page_start([
         tc_schema_service('Verleih- und Verkaufsautomaten', 'Schlägerverleih, Bälle, Snacks und Getränke rund um die Uhr, ohne Personal: Verleih- und Verkaufsautomaten für Padel- und Tennisanlagen inklusive Leasing und Mietkauf.', '/automatenloesungen'),
         tc_schema_item_list('Verleih- und Verkaufsautomaten für Padel', $automatenProducts),
     ],
-    'extra_scripts' => '<script src="/media/tc/automaten.js?v=' . TC_ASSET_VERSION . '"></script>',
+    'extra_scripts' => '<script src="/media/tc/automaten.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
 ]);
 ?>
 <section class="band dark grid-bg a-hero">
@@ -37,7 +37,7 @@ tc_page_start([
       <p class="label" style="color:var(--white)" data-type>Digitalisierung · Verleih · Verkauf</p>
       <h1>Mehr Service.<br>Mehr <span class="kw">Umsatz.</span></h1>
       <p class="lead">Schlägerverleih, Bälle, Snacks und Getränke direkt am Court: vollautomatisch, rund um die Uhr und ohne Personal. Du gewinnst Zusatzerlöse und mehr Zeit für deine Community.</p>
-      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Automaten anfragen</a><a class="btn ghost" href="#a-produkte">Produkte ansehen</a></div>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Automaten anfragen</a><a class="btn ghost" href="#a-produkte">Produkte ansehen</a></div>
     </div>
     <figure class="a-herofig"><img src="/media/automaten/sg12b.jpg" alt="Beleuchteter Schläger-Verleihautomat mit 12 Fächern neben einem Padel-Court" loading="lazy"><figcaption>Verleihautomat · 12 Fächer</figcaption></figure>
   </div>
@@ -217,10 +217,5 @@ tc_page_start([
   </div>
 </section>
 
-<section class="band dark grid-bg" style="border-top:1px solid var(--line-d)">
-  <div class="inner cta-band">
-    <div><h2>Ready. <span class="kw">Play.</span></h2><p class="lead">Dein Sales Team: Laura, Philipp, Christian und Martin. <a href="mailto:info@padelbee.de" style="color:var(--yellow)">info@padelbee.de</a></p></div>
-    <a class="btn" href="/#kontakt">Angebot anfragen</a>
-  </div>
-</section>
+<?php $tcPreselect = ['Automatenlösungen']; $tcKontaktLead = 'Dein Sales Team: Laura, Philipp, Christian und Martin. <a href="mailto:info@padelbee.de" style="color:var(--yellow)">info@padelbee.de</a>'; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
 <?php tc_page_end();
