@@ -45,9 +45,9 @@ tc_page_start([
   </div>
   <div class="inner hero-stats" style="padding-block:0 40px">
     <div class="stats">
-      <div><b data-count="7">7</b><span>Leistungsschritte</span></div>
-      <div><b data-count="3">3</b><span>Zielgruppen: Kommunen, Vereine, Investoren</span></div>
-      <div><b>3D</b><span>CAD-Modell deines Geländes</span></div>
+      <div><b data-count="7">7</b><span>Schritte</span></div>
+      <div><b data-count="3">3</b><span>Zielgruppen</span></div>
+      <div><b>3D</b><span>Geländemodell</span></div>
       <div><b data-count="2">2</b><span>Planungspartner</span></div>
     </div>
   </div>

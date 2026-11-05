@@ -28,9 +28,9 @@ tc_page_start([
   </div>
   <div class="inner hero-stats" style="padding-block:0 40px">
     <div class="stats">
-      <div><b data-count="4">4</b><span>Phasen bis zum Court</span></div>
-      <div><b data-count="1">1</b><span>Ansprechpartner für alles</span></div>
-      <div><b data-count="3">3</b><span>Gewerke: Architektur, Ingenieure, Bau</span></div>
+      <div><b data-count="4">4</b><span>Bauphasen</span></div>
+      <div><b data-count="1">1</b><span>Ansprechpartner</span></div>
+      <div><b data-count="3">3</b><span>Fachgewerke</span></div>
       <div><b>35 T€</b><span>Richtwert Fundament</span></div>
     </div>
   </div>
