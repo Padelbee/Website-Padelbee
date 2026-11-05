@@ -61,7 +61,7 @@ tc_page_start([
 <section class="band grid-bg" id="s-weitere" style="background-color:var(--grey-050)">
   <div class="inner">
     <p class="label">Weitere Leistungen</p>
-    <h2 class="reveal">Nach der Analyse geht es <span class="kw">weiter.</span></h2>
+    <h2 class="reveal">Nach der Analyse geht es <span class="hl">weiter.</span></h2>
     <p class="lead">Ist die Entscheidung gefallen, begleiten wir dich vom Platzbau über das Betreiberkonzept bis zur Vermarktung.</p>
     <div class="cards c3">
       <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Platzbau</h3><p><strong>Realisierung Platzbau und Baubegleitung:</strong> Zuverlässige Realisierung von Fundament und Plätzen durch ein eingespieltes Team von Architekten, Ingenieuren und Bauunternehmen.</p><a class="btn ghost-d" href="/padel-court-bauen" style="margin-top:20px">Mehr zum Platzbau</a></article>
