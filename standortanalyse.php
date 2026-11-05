@@ -10,7 +10,7 @@ $bausteine = [
 tc_page_start([
     'path' => '/standortanalyse',
     'title' => 'Standortanalyse & Erstscreening für Padel-Anlagen · THE COURT',
-    'description' => 'Erstscreening für Padel-Anlagen: Standort- und Marktanalyse, technische Vorprüfung, Wirtschaftlichkeitsanalyse mit Business Case, Konzeptvisualisierung und klare Go/No-Go-Empfehlung.',
+    'description' => 'Erstscreening für Padel-Anlagen: Standort- und Marktanalyse, technische Vorprüfung, Business Case, Konzeptvisualisierung und Go/No-Go-Empfehlung.',
     'breadcrumb' => ['Standortanalyse' => '/standortanalyse'],
     'schema' => [
         tc_schema_service(
