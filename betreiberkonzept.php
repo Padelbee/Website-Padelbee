@@ -1,122 +1,73 @@
 <?php
-$page_id = 'betreiberkonzept';
-include 'inc/header.php';
+require __DIR__ . '/inc/tc/layout.php';
+$bausteine = [
+    ['Marketing', 'Wir entwickeln deine Marketing-Strategie mit Schärfung der USPs, der Preispolitik und einer differenzierenden Positionierung, um relevante Zielgruppen sofort und dauerhaft für Padel zu begeistern.'],
+    ['Business-Plan', 'Wir setzen für dich die Business-Planung auf, definieren KPIs und liefern dir alle notwendigen Planungsunterlagen.'],
+    ['Personal', 'Wir definieren mit dir den besten Personal-Mix und die individuellen Zuständigkeiten für reibungslose Prozesse.'],
+    ['Automati&shy;sierung', 'Wir beraten dich zu praktischen Automatisierungen und den dazu benötigten Hard- und Software-Komponenten für eine einfache Platzbuchung, Zugangs- und Lichtsteuerung und mehr.'],
+];
+tc_page_start([
+    'path' => '/betreiberkonzept',
+    'title' => 'Betreiberkonzept für Padel-Anlagen · THE COURT',
+    'description' => 'Maßgeschneidertes Betreiberkonzept für Padel-Anlagen: Marketing-Strategie, Business-Planung mit KPIs, Personal-Mix und Automatisierung für einen erfolgreichen Start.',
+    'breadcrumb' => ['Betreiberkonzept' => '/betreiberkonzept'],
+    'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
+    'schema' => [
+        tc_schema_service(
+            'Betreiberkonzept für Padel-Anlagen',
+            'Maßgeschneidertes Betreiberkonzept aufbauend auf das Erstscreening: Marketing-Strategie mit USPs und Preispolitik, Business-Planung mit KPIs, Personal-Mix und Beratung zur Automatisierung von Platzbuchung, Zugangs- und Lichtsteuerung.',
+            '/betreiberkonzept',
+            ['serviceType' => 'Betreiberkonzept', 'image' => '/media/leistungen/betreiberkonzept-kopf.png']
+        ),
+    ],
+]);
 ?>
+<section class="band dark grid-bg a-hero">
+  <div class="inner" style="padding-block:clamp(56px,8vw,110px)">
+    <div>
+      <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Betreiberkonzept</p>
+      <p class="label" style="color:var(--white)" data-type>Strategie · Business-Plan · Betrieb</p>
+      <h1>Betreiber&shy;<span class="kw">konzept.</span></h1>
+      <p class="lead">Aufbauend auf das Erstscreening entwickeln wir eine maßgeschneiderte Erfolgsstrategie für deine Anlage. Du erhältst eine individuelle Beratung und ein maßgeschneidertes Betreiberkonzept, damit du mit Padel sofort erfolgreich starten kannst.</p>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Betreiberkonzept anfragen</a><a class="btn ghost" href="#k-bausteine">4 Bausteine ansehen</a></div>
+    </div>
+    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/betreiberkonzept-kopf.png" alt="Zwei Padel-Spieler im Gespräch auf dem Court" loading="lazy" style="height:auto;object-fit:contain"></figure>
+  </div>
+  <div class="inner hero-stats" style="padding-block:0 40px">
+    <div class="stats">
+      <div><b data-count="4">4</b><span>Bausteine</span></div>
+      <div><b data-count="1">1</b><span>Ansprechpartner</span></div>
+      <div><b data-count="50">50</b><span>Projekte</span></div>
+      <div><b data-count="14" data-pre="+">+14</b><span>Jahre Padel-Erfahrung</span></div>
+    </div>
+  </div>
+</section>
 
-<main id="main">
+<section class="band grid-bg" id="k-bausteine">
+  <div class="inner">
+    <p class="label">Betreiberkonzept</p>
+    <h2 class="reveal">Für einen erfolgreichen Start mit <span class="hl">Padel.</span></h2>
+    <p class="lead">Vier Bausteine machen aus deiner Anlage einen funktionierenden Betrieb: wer deine Zielgruppe ist, was sich rechnet, wer was macht und was automatisch läuft.</p>
+    <div class="cards c4">
+<?php foreach ($bausteine as $i => $b): ?>
+      <article class="card reveal"><div class="k">Baustein <?= sprintf('%02d', $i + 1) ?></div><h3 data-type><?= $b[0] ?></h3><p><?= $b[1] ?></p></article>
+<?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
-<div class="containe-fluid betreiber" id="intro">
-	<div class="container">
-	<img src="images/L-Betreiberkonzept-0.png" alt="Betreiberkonzept Slogan" class="back">
-		<img src="images/L-Betreiberkonzept.png" alt="Betreiberkonzept Bild" class="textimg sub">
-		
-	</div>
-</div>
+<section class="band grid-bg" id="k-weitere" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label">Weitere Leistungen</p>
+    <h2 class="reveal">Vor und nach dem <span class="hl">Konzept.</span></h2>
+    <p class="lead">Vorher prüfen wir deinen Standort und bauen deine Plätze, danach bringen wir Spielerinnen und Spieler auf deine Courts.</p>
+    <div class="cards c3">
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Standort&shy;analyse</h3><p>Analyse der Chancen am Standort mit konkreter Handlungsempfehlung für dein Vorhaben.</p><a class="btn ghost-d" href="/standortanalyse" style="margin-top:20px">Mehr zur Standortanalyse</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Platzbau</h3><p>Zuverlässige Realisierung von Fundament und Plätzen durch ein eingespieltes Team von Architekten, Ingenieuren und Bauunternehmen.</p><a class="btn ghost-d" href="/padel-court-bauen" style="margin-top:20px">Mehr zum Platzbau</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>PowerPlay®</h3><p>Marketingplan, Platzbuchungssoftware und Werbepakete digital und lokal, für die laufende Gewinnung von Spielerinnen und Spielern.</p><a class="btn ghost-d" href="/powerplay" style="margin-top:20px">Mehr zu PowerPlay®</a></article>
+    </div>
+  </div>
+</section>
 
-<div class="container-fluid bg-rosa" id="block2">
-	<div class="container" >
-		<div class="row pt-6 pb-5">
-			<div class="col-12 pb-5">
-	  		<h1><?= t('betreiberkonzept_h1') ?></h1>
-			<h3><?= t('betreiberkonzept_h3') ?></h3>
-			<p><?= t('betreiberkonzept_intro') ?></p>
-			</div>
-			<div class="col-12 pb-4">
-				<div class="white-box">
-					<img src="images/L-Betreiberkonzept-1.png" alt="Betreiberkonzept Schritt 1"> 
-					<div class="text"><?= t('betreiberkonzept_box1') ?></div>
-				</div>
-			</div>
-			<div class="col-12 pb-4">
-				<div class="white-box">
-					<img src="images/L-Betreiberkonzept-2.png" alt="Betreiberkonzept Schritt 2"> 
-					<div class="text"><?= t('betreiberkonzept_box2') ?></div>
-				</div>
-			</div>
-			<div class="col-12 pb-4">
-				<div class="white-box">
-					<img src="images/L-Betreiberkonzept-3.png" alt="Betreiberkonzept Schritt 3"> 
-					<div class="text"><?= t('betreiberkonzept_box3') ?></div>
-				</div>
-			</div>
-			<div class="col-12 pb-4">
-				<div class="white-box">
-					<img src="images/L-Betreiberkonzept-4.png" alt="Betreiberkonzept Schritt 4"> 
-					<div class="text"><?= t('betreiberkonzept_box4') ?></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container-fluid bg-weiss" id="block3">
-	<div class="container" >
-		<div class="row pt-6 pb-5">
-			<div class="col-12 pb-5">
-			<h1><?= t('standortanalyse_weitere_h1') ?></h1>
-			<h3><?= t('standortanalyse_weitere_h3') ?></h3>
-			</div>
-			<div class="col-lg-4">
-				<div class="text-center spalte"> 
-				<img src="images/1-Standortanalyse.png" alt="Standortanalyse Icon">
-				<div class="text">
-				<h3><?= t('betreiberkonzept_col1_title') ?></h3>
-				<p><?= t('betreiberkonzept_col1_text') ?></p>
-				</div>
-				<a href="/standortanalyse " class="btn reiterbtn" rel="#tab-1"><?= t('index_mehr') ?></a>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="text-center spalte"> 
-				<img src="images/2-Bauplanung.png" alt="Bauplanung Icon">
-				<div class="text">
-				<h3><?= t('betreiberkonzept_col2_title') ?></h3>
-				<p><?= t('betreiberkonzept_col2_text') ?></p>
-				</div>
-				<a href="/padel-court-bauen " class="btn reiterbtn" rel="#tab-1"><?= t('index_mehr') ?></a>
-				</div>
-			</div>
-		
-			<div class="col-lg-4">
-				<div class="text-center spalte"> 
-				<img src="images/4-Powerplay.png" alt="PowerPlay Icon">
-				<div class="text">
-				<h3><?= t('betreiberkonzept_col3_title') ?></h3>
-				<p><?= t('betreiberkonzept_col3_text') ?></p>
-				</div>
-				<a href="/powerplay" class="btn reiterbtn" rel="#tab-1"><?= t('index_mehr') ?></a>
-				</div>
-			</div>
-		</div>
-
-	</div>
-</div>
-<div class="container" >
-		<div class="row pt-6">
-
-			<div class="col-12 pb-5">
-				<h2><?= t('index_ready_title') ?></h2>
-				<h3><?= t('index_ready_subtitle') ?></h3>
-			</div>
-			<div class="col-md-6">
-			<h3><?= t('index_kontakt_direkt') ?></h3>
-			<?php echo $telblock; ?><br />
-			info@padelbee.de<br />
-
-			</div>
-			<div class="col-md-6">
-			</div>
-			<div class="col-12">
-				<div class="trenner"><span><?= t('index_kontakt_oder') ?></span></div>
-			</div>
-		</div>
-	</div>
-	<?php
-	include 'inc/kontakt-form.php';
-	?>
-
-
-</main>
-<?php
-include 'inc/footer.php';
-?>
+<?php $tcPreselect = ['Maßgeschneidertes Betreiberkonzept']; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
+<?php tc_page_end();
