@@ -34,11 +34,11 @@ tc_page_start([
     <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/images/pic_standortanalyse.png" alt="Stadtkarte mit Pin als Symbol für die Standortanalyse" loading="lazy" style="height:auto;object-fit:contain;animation:none"></figure>
   </div>
   <div class="inner" style="padding-block:0 40px">
-    <div class="c-stats">
-      <div><b data-count="5">5</b><span>Bausteine im Erstscreening</span></div>
-      <div><b data-count="5">5</b><span>Jahre Prognose</span></div>
-      <div><b>2D/3D</b><span>Konzeptvisualisierung</span></div>
-      <div><b>Go/No-Go</b><span>Klare Empfehlung</span></div>
+    <div class="stats">
+      <div><b data-count="50">50</b><span>Projekte</span></div>
+      <div><b data-count="3">3</b><span>Länder</span></div>
+      <div><b data-count="14" data-pre="+">+14</b><span>Jahre Padel-Erfahrung</span></div>
+      <div><b data-count="30" data-plus>30+</b><span>Partner</span></div>
     </div>
   </div>
 </section>

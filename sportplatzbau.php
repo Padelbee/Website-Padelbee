@@ -44,11 +44,11 @@ tc_page_start([
     <figure class="a-herofig"><img src="/images/anlagen/image008.png" alt="Illustration einer beleuchteten Padel-Anlage im Grünen" loading="lazy"><figcaption>Padel- und Sportanlage</figcaption></figure>
   </div>
   <div class="inner" style="padding-block:0 40px">
-    <div class="c-stats">
-      <div><b data-count="7">7</b><span>Leistungsschritte</span></div>
-      <div><b>3D</b><span>CAD-Modelle &amp; Visualisierung</span></div>
-      <div><b>DIN 276</b><span>Kostenschätzung</span></div>
-      <div><b>1</b><span>Partner von Idee bis Eröffnung</span></div>
+    <div class="stats">
+      <div><b data-count="50">50</b><span>Projekte</span></div>
+      <div><b data-count="3">3</b><span>Länder</span></div>
+      <div><b data-count="14" data-pre="+">+14</b><span>Jahre Padel-Erfahrung</span></div>
+      <div><b data-count="30" data-plus>30+</b><span>Partner</span></div>
     </div>
   </div>
 </section>
