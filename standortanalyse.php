@@ -35,10 +35,10 @@ tc_page_start([
   </div>
   <div class="inner hero-stats" style="padding-block:0 40px">
     <div class="stats">
-      <div><b data-count="50">50</b><span>Projekte</span></div>
-      <div><b data-count="3">3</b><span>Länder</span></div>
-      <div><b data-count="14" data-pre="+">+14</b><span>Jahre Padel-Erfahrung</span></div>
-      <div><b data-count="30" data-plus>30+</b><span>Partner</span></div>
+      <div><b data-count="5">5</b><span>Bausteine im Erstscreening</span></div>
+      <div><b data-count="5">5</b><span>Jahre Prognose im Business Case</span></div>
+      <div><b>2D/3D</b><span>Konzept&shy;visualisierung</span></div>
+      <div><b data-count="1">1</b><span>klare Go/No-Go-Empfehlung</span></div>
     </div>
   </div>
 </section>

@@ -45,10 +45,10 @@ tc_page_start([
   </div>
   <div class="inner hero-stats" style="padding-block:0 40px">
     <div class="stats">
-      <div><b data-count="50">50</b><span>Projekte</span></div>
-      <div><b data-count="3">3</b><span>Länder</span></div>
-      <div><b data-count="14" data-pre="+">+14</b><span>Jahre Padel-Erfahrung</span></div>
-      <div><b data-count="30" data-plus>30+</b><span>Partner</span></div>
+      <div><b data-count="7">7</b><span>Leistungsschritte</span></div>
+      <div><b data-count="3">3</b><span>Zielgruppen: Kommunen, Vereine, Investoren</span></div>
+      <div><b>3D</b><span>CAD-Modell deines Geländes</span></div>
+      <div><b data-count="2">2</b><span>Planungspartner</span></div>
     </div>
   </div>
 </section>
