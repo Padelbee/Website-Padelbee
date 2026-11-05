@@ -1,219 +1,94 @@
 <?php
-$page_id = 'powerplay';
-include 'inc/header.php';
+require __DIR__ . '/inc/tc/layout.php';
+$partnership = [
+    ['Service', 'Der volle Service von Padelbee, damit es nicht beim Startschuss bleibt und Padel an deinem Standort erfolgreich wird und bleibt.'],
+    ['Beratung', 'Padelbee steht laufend beratend und analysierend an deiner Seite, um jederzeit die richtigen Maßnahmen zu ergreifen.'],
+    ['Digitali&shy;sierung', 'Padelbee liefert dir alle Tools zur Digitalisierung und Automatisierung des Spielbetriebs.'],
+    ['Spieler gewinnen', 'Und das Beste: Padelbee gewinnt für dich neue Spielerinnen und Spieler.'],
+];
+$mix = [
+    ['Marketing-Business-Mix', 'Online Booking', '/images/Online-Booking.jpg', 'Smartphone mit geöffneter Padel-Buchungsapp', ['Aufschaltung auf die größte Padel-Buchungsplattform', 'Online Payment der Buchungen', 'Zugangssteuerung zu Plätzen']],
+    ['Marketing-Business-Mix', 'Events &amp; Get-togethers', '/images/Events.jpg', 'Padel-Event mit vielen Spielern auf mehreren Courts', ['Eventkalender für Aktive und Beginner', 'Preispolitik inklusive', 'Die passende Werbung dazu']],
+    ['Marketing-Business-Mix', 'Turniere &amp; Trainings', '/images/Turniere-und-Trainings.jpg', 'Padel-Training mit Trainer und Spielerin auf dem Court', ['Innovative Trainings- und Spielkonzepte', 'Für Beginner und Fortgeschrittene', 'Preispolitik inklusive']],
+    ['Marketing-Business-Mix', 'Marketing &amp; Werbung', '/images/Marketing-Werbung.jpg', 'Laptop und Smartphone mit Social-Media-Seite eines Padel-Clubs', ['Wir vermarkten deine Angebote über Website, Landingpages und Online Marketing', 'Wir liefern dir individuelle Werbemittel für Social Networks und lokales Marketing']],
+    ['Das perfekte Round-Up', 'Coaching &amp; Consulting', '/images/Coaching-und-Consulting.jpg', 'Berater erklärt eine Strategie an einer Glaswand', ['Jährliche Season-Kickoff-Veranstaltung', 'Monatliche KPI-Analyse und Optimierungsgespräche', 'Trainerausbildung']],
+    ['Das perfekte Round-Up', 'Verkauf &amp; Verleih', '/images/Verkauf-und-Verleih.jpg', 'Verkaufs- und Verleihautomaten für Padel-Zubehör und Getränke', ['100 % digitalisierte Verkaufs- und Verleihautomaten', 'Für Schläger, Bälle, Zubehör, Getränke und mehr', 'Payment-Abwicklung inklusive']],
+];
+tc_page_start([
+    'path' => '/powerplay',
+    'title' => 'Padelbee PowerPlay® · Marketing und Business-Support für Padel-Anlagen · THE COURT',
+    'description' => 'Padelbee PowerPlay®: Online Booking, Events, Turniere, Marketing, Coaching und Automaten aus einer Hand, damit deine Padel-Anlage Spielerinnen und Spieler gewinnt und hält.',
+    'breadcrumb' => ['Padelbee PowerPlay®' => '/powerplay'],
+    'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
+    'schema' => [
+        tc_schema_service(
+            'Padelbee PowerPlay®',
+            'Marketing- und Business-Support für Padel-Anlagen: Online Booking mit Payment und Zugangssteuerung, Events, Turniere und Trainings, Marketing und Werbemittel, Coaching mit monatlicher KPI-Analyse sowie digitalisierte Verkaufs- und Verleihautomaten.',
+            '/powerplay',
+            ['serviceType' => 'Marketing und Betriebsunterstützung für Padel-Anlagen', 'image' => '/media/leistungen/powerplay-kopf.png']
+        ),
+    ],
+]);
 ?>
+<section class="band dark grid-bg a-hero">
+  <div class="inner" style="padding-block:clamp(56px,8vw,110px)">
+    <div>
+      <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Padelbee PowerPlay®</p>
+      <p class="label" style="color:var(--white)" data-type>Partnership · Marketing · Spielbetrieb</p>
+      <h1>Padelbee <span class="kw">PowerPlay®</span></h1>
+      <p class="lead">Werde Teil des Booms und setze auf unser einzigartiges und bewährtes Padelbee PowerPlay®. Mit der Padelbee Partnership genießt du den vollen Service, damit du Spielerinnen und Spieler nicht nur gewinnst, sondern auch langfristig begeisterst.</p>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">PowerPlay® anfragen</a><a class="btn ghost" href="#p-mix">6 Leistungen ansehen</a></div>
+    </div>
+    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/powerplay-kopf.png" alt="Padel-Spielerin in Bereitschaftsstellung auf dem Court" loading="lazy" style="height:auto;object-fit:contain"></figure>
+  </div>
+  <div class="inner hero-stats" style="padding-block:0 40px">
+    <div class="stats">
+      <div><b data-count="6">6</b><span>Leistungen im Mix</span></div>
+      <div><b data-count="12">12</b><span>KPI-Analysen im Jahr</span></div>
+      <div><b data-count="100">100</b><span>% digitalisierte Automaten</span></div>
+      <div><b data-count="50">50</b><span>Projekte</span></div>
+    </div>
+  </div>
+</section>
 
-<main id="main" class>
+<section class="band grid-bg" id="p-partnership">
+  <div class="inner">
+    <p class="label">Padelbee Partnership</p>
+    <h2 class="reveal">Damit es nicht beim <span class="hl">Startschuss</span> bleibt.</h2>
+    <p class="lead">Eine Anlage zu eröffnen ist der Anfang. Damit deine Courts dauerhaft gebucht sind, begleiten wir dich im laufenden Betrieb.</p>
+    <div class="cards c4">
+<?php foreach ($partnership as $i => $b): ?>
+      <article class="card reveal"><div class="k">Partnership <?= sprintf('%02d', $i + 1) ?></div><h3 data-type><?= $b[0] ?></h3><p><?= $b[1] ?></p></article>
+<?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
-<div class="containe-fluid powerplay" id="intro">
-	<div class="container">
-	<img src="images/L-Powerplay-0.png" alt="PowerPlay Slogan" class="back">
-		<img src="images/L-Powerplay.png" alt="PowerPlay Bild" class="textimg sub">
-		
-	</div>
-</div>
+<section class="band dark grid-bg" id="p-mix">
+  <div class="inner">
+    <p class="label">Der Marketing-Business-Mix</p>
+    <h2 class="reveal">Padelbee leistet und <span class="kw">organisiert.</span></h2>
+    <p class="lead">Von der Buchung über Events und Marketing bis zum Automaten am Court: sechs Leistungen, die zusammen deinen Spielbetrieb tragen.</p>
+    <div class="halls">
+<?php foreach ($mix as $m): ?>
+      <article class="card reveal"><figure class="vimg"><img src="<?= $m[2] ?>" alt="<?= $m[3] ?>" loading="lazy"></figure><div class="k"><?= $m[0] ?></div><h3 data-type><?= $m[1] ?></h3><ul><?php foreach ($m[4] as $li): ?><li><?= $li ?></li><?php endforeach; ?></ul></article>
+<?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
-<div class="container-fluid bg-gelb" id="block2">
-	<div class="container" >
-		<div class="row pt-6 pb-5">
-			<div class="col-12 pb-5">
-	  		<h1><?= t('powerplay_h1') ?></h1>
-			<h3><?= t('powerplay_h3') ?></h3>
-			<p><?= t('powerplay_intro') ?></p>
-			</div>
-			<div class="col-12 pb-4">
-				<div class="white-box">
-					<img src="images/L-Powerplay-1.png" alt="PowerPlay Schritt 1"> 
-					<div class="text"><?= t('powerplay_box1') ?></div>
-				</div>
-			</div>
-			<div class="col-12 pb-4">
-				<div class="white-box">
-					<img src="images/L-Powerplay-2.png" alt="PowerPlay Schritt 2"> 
-					<div class="text"><?= t('powerplay_box2') ?></div>
-				</div>
-			</div>
-			<div class="col-12 pb-4">
-				<div class="white-box">
-					<img src="images/L-Powerplay-3.png" alt="PowerPlay Schritt 3"> 
-					<div class="text"><?= t('powerplay_box3') ?></div>
-				</div>
-			</div>
-			<div class="col-12 pb-4">
-				<div class="white-box">
-					<img src="images/L-Powerplay-4.png" alt="PowerPlay Schritt 4"> 
-					<div class="text"><?= t('powerplay_box4') ?></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<section class="band grid-bg" id="p-weitere" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label">Weitere Leistungen</p>
+    <h2 class="reveal">Von der Idee bis zum <span class="hl">Spielbetrieb.</span></h2>
+    <p class="lead">PowerPlay® setzt dort an, wo die Anlage steht. Davor prüfen wir deinen Standort, bauen deine Plätze und entwickeln dein Betreiberkonzept.</p>
+    <div class="cards c3">
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Standort&shy;analyse</h3><p>Analyse der Potenziale am Standort und der Chancen am Markt mit Handlungsempfehlung zu Positionierung, Platzbau und Betrieb.</p><a class="btn ghost-d" href="/standortanalyse" style="margin-top:20px">Mehr zur Standortanalyse</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Platzbau</h3><p>Zuverlässige Realisierung von Fundament und Plätzen durch ein eingespieltes Team von Architekten, Ingenieuren und Bauunternehmen.</p><a class="btn ghost-d" href="/padel-court-bauen" style="margin-top:20px">Mehr zum Platzbau</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Betreiber&shy;konzept</h3><p>Business-Plan, Angebots- und Marketing-Strategie für eine erfolgreiche Positionierung und einen reibungslosen Start am Standort.</p><a class="btn ghost-d" href="/betreiberkonzept" style="margin-top:20px">Mehr zum Betreiberkonzept</a></article>
+    </div>
+  </div>
+</section>
 
-<div class="container-fluid bg-weiss" id="block3">
-	<div class="container" >
-		<div class="row pt-6 pb-5 g-0">
-		<div class="col-12 pb-5">
-			<h2><?= t('powerplay_mix_h2') ?></h2>
-		</div>
-
-		<div class="col-lg-6">
-			<img src="/images/Online-Booking.jpg" class="img-links img-fluid">
-		</div>
-		<div class="col-lg-6 h-center">
-			<div class="wrap">
-				<h3><?= t('powerplay_online_h3') ?></h3>
-				<ul class="haken gelb">
-					<?php foreach (explode("\n", t('powerplay_online_li')) as $li): ?><li><?= htmlspecialchars(trim($li)) ?></li><?php endforeach; ?>
-				</ul>
-			</div>
-		</div>
-
-		<div class="col-lg-6 h-center tausch1">
-			<div class="wrap">
-				<h3><?= t('powerplay_events_h3') ?></h3>
-				<ul class="haken gelb">
-					<?php foreach (explode("\n", t('powerplay_events_li')) as $li): ?><li><?= htmlspecialchars(trim($li)) ?></li><?php endforeach; ?>
-				</ul>
-			</div>
-		</div>
-		<div class="col-lg-6  tausch2">
-			<img src="/images/Events.jpg"class="img-rechts img-fluid">
-		</div>
-
-		<div class="col-lg-6">
-			<img src="/images/Turniere-und-Trainings.jpg"class="img-links img-fluid">
-		</div>
-		<div class="col-lg-6 h-center">
-			<div class="wrap">
-				<h3><?= t('powerplay_turniere_h3') ?></h3>
-				<ul class="haken gelb">
-					<?php foreach (explode("\n", t('powerplay_turniere_li')) as $li): ?><li><?= htmlspecialchars(trim($li)) ?></li><?php endforeach; ?>
-				</ul>
-			</div>
-		</div>
-
-		
-		<div class="col-lg-6 h-center tausch1">
-			<div class="wrap">
-				<h3><?= t('powerplay_marketing_h3') ?></h3>
-				<ul class="haken gelb">
-					<?php foreach (explode("\n", t('powerplay_marketing_li')) as $li): ?><li><?= htmlspecialchars(trim($li)) ?></li><?php endforeach; ?>
-				</ul>
-			</div>
-		</div>
-		<div class="col-lg-6 tausch2">
-			<img src="/images/Marketing-Werbung.jpg"class="img-rechts img-fluid">
-		</div>
-
-	</div>
-</div>
-
-
-<div class="container-fluid bg-hellgrau" id="block3">
-	<div class="container" >
-		<div class="row pt-6 pb-5 g-0">
-			<div class="col-12 pb-5">
-				<h2><?= t('powerplay_roundup_h2') ?></h2>
-				<h3><?= t('powerplay_roundup_h3') ?></h3>
-			</div>
-
-			<div class="col-lg-6">
-				<img src="/images/Coaching-und-Consulting.jpg" class="img-links img-fluid">
-			</div>
-			<div class="col-lg-6 h-center">
-				<div class="wrap">
-					<h3><?= t('powerplay_coaching_h3') ?></h3>
-					<ul class="haken gelb">
-						<?php foreach (explode("\n", t('powerplay_coaching_li')) as $li): ?><li><?= htmlspecialchars(trim($li)) ?></li><?php endforeach; ?>
-					</ul>
-				</div>
-			</div>
-
-			<div class="col-lg-6 h-center tausch1">
-				<div class="wrap">
-					<h3><?= t('powerplay_verkauf_h3') ?></h3>
-					<ul class="haken gelb">
-						<?php foreach (explode("\n", t('powerplay_verkauf_li')) as $li): ?><li><?= htmlspecialchars(trim($li)) ?></li><?php endforeach; ?>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-6 tausch2">
-				<img src="/images/Verkauf-und-Verleih.jpg"class="img-rechts img-fluid">
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="container-fluid bg-weiss" id="block3">
-	<div class="container" >
-		<div class="row pt-6 pb-5">
-			<div class="col-12 pb-5">
-				<h1><?= t('standortanalyse_weitere_h1') ?></h1>
-				<h3><?= t('standortanalyse_weitere_h3') ?></h3>
-				</div>
-				
-				<div class="col-lg-4">
-					<div class="text-center spalte"> 
-					<img src="images/1-Standortanalyse.png" alt="Standortanalyse Icon">
-					<div class="text">
-					<h3><?= t('betreiberkonzept_col1_title') ?></h3>
-					<p><?= t('betreiberkonzept_col1_text') ?></p>
-					</div>
-					<a href="/standortanalyse " class="btn reiterbtn" rel="#tab-1"><?= t('index_mehr') ?></a>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="text-center spalte"> 
-					<img src="images/2-Bauplanung.png" alt="Bauplanung Icon">
-					<div class="text">
-					<h3><?= t('standortanalyse_col1_title') ?></h3>
-					<p><?= t('standortanalyse_col1_text') ?></p>
-					</div>
-					<a href="/padel-court-bauen " class="btn reiterbtn" rel="#tab-1"><?= t('index_mehr') ?></a>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="text-center spalte"> 
-					<img src="images/3-Betreiberkonzept.png" alt="Betreiberkonzept Icon">
-					<div class="text">
-					<h3><?= t('standortanalyse_col2_title') ?></h3>
-					<p><?= t('standortanalyse_col2_text') ?></p>
-					</div>
-					<a href="/betreiberkonzept " class="btn reiterbtn" rel="#tab-1"><?= t('index_mehr') ?></a>
-					</div>
-				</div>			
-			</div>
-		</div>
-	</div>
-</div>
-
-
-	<div class="container" >
-		<div class="row pt-6">
-
-			<div class="col-12 pb-5">
-				<h2><?= t('index_ready_title') ?></h2>
-				<h3><?= t('index_ready_subtitle') ?></h3>
-			</div>
-			<div class="col-md-6">
-				<h3><?= t('index_kontakt_direkt') ?></h3>
-				<?php echo $telblock; ?><br />
-				info@padelbee.de<br />
-			</div>
-			<div class="col-md-6">
-			</div>
-			<div class="col-12">
-				<div class="trenner"><span><?= t('index_kontakt_oder') ?></span></div>
-			</div>
-		</div>
-	</div>
-	<?php
-	include 'inc/kontakt-form.php';
-	?>
-
-
-</main>
-<?php
-include 'inc/footer.php';
-?>
+<?php $tcPreselect = ['Padelbee Powerplay']; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
+<?php tc_page_end();
