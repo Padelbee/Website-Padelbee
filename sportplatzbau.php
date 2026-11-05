@@ -62,7 +62,7 @@ tc_page_start([
 <?php foreach ($schritte as $i => $s): ?>
       <article class="card reveal"><div class="k">Schritt <?= sprintf('%02d', $i + 1) ?></div><h3 data-type><?= $s[0] ?></h3><p><strong><?= $s[1] ?>:</strong> <?= $s[2] ?></p><ul class="ticks"><?php foreach ($s[3] as $li): ?><li><?= $li ?></li><?php endforeach; ?></ul></article>
 <?php endforeach; ?>
-      <article class="card dk reveal"><div class="k">Start</div><h3 data-type>Dein <span class="hl">Projekt.</span></h3><p>Dein Projekt beginnt hier. Schick uns deine Eckdaten. Wir melden uns mit einem ersten Standort-Quickcheck.</p><a class="btn" href="/#kontakt" style="margin-top:20px">Erstkontakt aufnehmen</a></article>
+      <article class="card dk reveal"><div class="k">Start</div><h3 data-type style="color:var(--white)">Dein <span class="kw">Projekt.</span></h3><p>Dein Projekt beginnt hier. Schick uns deine Eckdaten. Wir melden uns mit einem ersten Standort-Quickcheck.</p><a class="btn" href="/#kontakt" style="margin-top:20px">Erstkontakt aufnehmen</a></article>
     </div>
   </div>
 </section>

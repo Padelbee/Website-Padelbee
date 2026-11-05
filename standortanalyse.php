@@ -52,7 +52,7 @@ tc_page_start([
 <?php foreach ($bausteine as $i => $b): ?>
       <article class="card reveal"><div class="k">Baustein <?= sprintf('%02d', $i + 1) ?></div><h3 data-type><?= $b[0] ?></h3><p><strong><?= $b[1] ?>:</strong> <?= $b[2] ?></p></article>
 <?php endforeach; ?>
-      <article class="card dk reveal"><div class="k">Dein nächster Schritt</div><h3 data-type>Dein <span class="hl">Standort?</span></h3><p>Lohnt sich Padel bei dir? Erzähl uns von deinem Standort. Wir melden uns mit einer ersten Einschätzung und dem passenden Umfang für dein Erstscreening.</p><a class="btn" href="/#kontakt" style="margin-top:20px">Standort prüfen lassen</a></article>
+      <article class="card dk reveal"><div class="k">Dein nächster Schritt</div><h3 data-type style="color:var(--white)">Dein <span class="kw">Standort?</span></h3><p>Lohnt sich Padel bei dir? Erzähl uns von deinem Standort. Wir melden uns mit einer ersten Einschätzung und dem passenden Umfang für dein Erstscreening.</p><a class="btn" href="/#kontakt" style="margin-top:20px">Standort prüfen lassen</a></article>
     </div>
   </div>
 </section>
