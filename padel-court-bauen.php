@@ -16,13 +16,13 @@ tc_page_start([
 ]);
 ?>
 <section class="band dark grid-bg a-hero">
-  <div class="inner">
+  <div class="inner" style="padding-block:clamp(56px,8vw,110px)">
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Padel Court bauen</p>
       <p class="label" style="color:var(--white)" data-type>Bauplanung · Platzbau · Baubegleitung</p>
       <h1>Padel Court <span class="kw">bauen.</span></h1>
       <p class="lead">Du willst einen Padel Court bauen lassen? Wir stehen an deiner Seite, räumen alle Hürden aus dem Weg und sorgen dafür, dass dich im Projektverlauf keine Überraschungen erwarten. Von der ersten Planung bis zur Fertigstellung.</p>
-      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Bauprojekt anfragen</a><a class="btn ghost" href="#b-ablauf">Ablauf ansehen</a></div>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="/#kontakt">Bauprojekt anfragen</a><a class="btn ghost" href="#b-ablauf">Ablauf ansehen</a></div>
     </div>
     <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/images/leistugen-baustelle.png" alt="Fotos von Padel-Baustellen: Aushub mit Bagger, Fundament, Montage von Glas und Gitter" loading="lazy" style="height:auto;object-fit:contain;animation:none"></figure>
   </div>
