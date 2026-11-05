@@ -17,7 +17,7 @@ $mix = [
 tc_page_start([
     'path' => '/powerplay',
     'title' => 'Padelbee PowerPlay® · Marketing und Business-Support für Padel-Anlagen · THE COURT',
-    'description' => 'Padelbee PowerPlay®: Online Booking, Events, Turniere, Marketing, Coaching und Automaten aus einer Hand, damit deine Padel-Anlage Spielerinnen und Spieler gewinnt und hält.',
+    'description' => 'Padelbee PowerPlay®: Online Booking, Events, Turniere, Marketing, Coaching und Automaten, damit deine Padel-Anlage Spieler gewinnt und hält.',
     'breadcrumb' => ['Padelbee PowerPlay®' => '/powerplay'],
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
