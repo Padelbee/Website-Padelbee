@@ -38,7 +38,7 @@ $tcInterests = [
           <legend>Wofür interessierst du dich? (optional)</legend>
           <div class="kf-chips">
 <?php foreach ($tcInterests as $value => $label): ?>
-            <label><input type="checkbox" class="kf-int" value="<?= tc_h($value) ?>"><?= tc_h($label) ?></label>
+            <label><input type="checkbox" class="kf-int" value="<?= tc_h($value) ?>"<?= in_array($value, $tcPreselect ?? [], true) ? ' checked' : '' ?>><?= tc_h($label) ?></label>
 <?php endforeach; ?>
           </div>
         </fieldset>

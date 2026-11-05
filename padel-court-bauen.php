@@ -54,7 +54,7 @@ tc_page_start([
       <article class="card reveal"><div class="k">Phase 04</div><h3 data-type>Baubegleitung</h3><p><strong>Qualität und Sicherheit:</strong> Während der gesamten Bauphase sorgen wir für Qualitätssicherung und Sicherheit auf der Baustelle. So wird dein Court termingerecht und in hoher Qualität fertig.</p></article>
     </div>
     <figure class="reveal" style="margin:44px 0 0;position:relative;border-top:4px solid var(--yellow)"><img src="/images/image-platzbau-1.jpg" alt="Luftaufnahme einer fertigen Padel-Anlage mit mehreren Courts und Spielern" loading="lazy" style="width:100%;height:auto;display:block"></figure>
-    <p style="margin-top:32px"><a class="btn ghost" href="/courts">Court-Systeme &amp; Fundamente vergleichen</a></p>
+    <p style="margin-top:32px"><a class="btn ghost-d" href="/courts">Court-Systeme &amp; Fundamente vergleichen</a></p>
   </div>
 </section>
 
