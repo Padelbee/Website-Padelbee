@@ -10,7 +10,7 @@ tc_page_start([
             'Padel Court bauen: Bauplanung, Platzbau & Baubegleitung',
             'Realisierung von Padel-Courts von der Bauplanung mit Architekten über Genehmigung, Fundament und Platzbau nach regionalen Normen bis zur Qualitätssicherung und Fertigstellung.',
             '/padel-court-bauen',
-            ['serviceType' => 'Padel-Court-Bau', 'image' => '/media/courts/cp_outdoor1.jpg']
+            ['serviceType' => 'Padel-Court-Bau', 'image' => '/images/leistugen-baustelle.png']
         ),
     ],
 ]);
@@ -24,7 +24,7 @@ tc_page_start([
       <p class="lead">Du willst einen Padel Court bauen lassen? Wir stehen an deiner Seite, räumen alle Hürden aus dem Weg und sorgen dafür, dass dich im Projektverlauf keine Überraschungen erwarten. Von der ersten Planung bis zur Fertigstellung.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Bauprojekt anfragen</a><a class="btn ghost" href="#b-ablauf">Ablauf ansehen</a></div>
     </div>
-    <figure class="a-herofig"><img src="/media/courts/cp_outdoor1.jpg" alt="Padel Court auf festem Fundament im Bau" loading="lazy"><figcaption>Platzbau · Fundament</figcaption></figure>
+    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/images/leistugen-baustelle.png" alt="Fotos von Padel-Baustellen: Aushub mit Bagger, Fundament, Montage von Glas und Gitter" loading="lazy" style="height:auto;object-fit:contain;animation:none"></figure>
   </div>
   <div class="inner" style="padding-block:0 40px">
     <div class="c-stats">
@@ -53,6 +53,7 @@ tc_page_start([
       <article class="card reveal"><div class="k">03 · Platzbau</div><h3>Fundament &amp; Courts</h3><p>Ein eingespieltes Team aus Ingenieuren und Bauunternehmen baut Fundament und Padel-Plätze nach regionalen und lokalen Normen, inklusive aller gesetzlichen Gewährleistungsverpflichtungen.</p></article>
       <article class="card reveal"><div class="k">04 · Baubegleitung</div><h3>Qualität &amp; Sicherheit</h3><p>Während der gesamten Bauphase sorgen wir für Qualitätssicherung und Sicherheit auf der Baustelle. So wird dein Court termingerecht und in hoher Qualität fertig.</p></article>
     </div>
+    <figure class="reveal" style="margin:44px 0 0;position:relative;border-top:4px solid var(--yellow)"><img src="/images/image-platzbau-1.jpg" alt="Luftaufnahme einer fertigen Padel-Anlage mit mehreren Courts und Spielern" loading="lazy" style="width:100%;height:auto;display:block"></figure>
     <p style="margin-top:32px"><a class="btn ghost" href="/courts">Court-Systeme &amp; Fundamente vergleichen</a></p>
   </div>
 </section>

@@ -17,7 +17,7 @@ tc_page_start([
             'Standortanalyse & Erstscreening für Padel-Anlagen',
             'Standort- und Marktanalyse, technische und bauliche Vorprüfung, Wirtschaftlichkeitsanalyse mit 5-Jahres-Prognose, erste Konzeptvisualisierung und Go/No-Go-Empfehlung für geplante Padel-Anlagen.',
             '/standortanalyse',
-            ['serviceType' => 'Standortanalyse', 'image' => '/media/courts/halle.jpg']
+            ['serviceType' => 'Standortanalyse', 'image' => '/images/pic_standortanalyse.png']
         ),
     ],
 ]);
@@ -31,7 +31,7 @@ tc_page_start([
       <p class="lead">Vom Start weg helfen wir dir, deine Chancen richtig zu bewerten, Investments sinnvoll zu planen und die Weichen zu stellen, damit Padel auch an deinem Standort boomt. Für eine starke Marktstrategie, bevor der erste Spatenstich gesetzt ist.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Erstscreening anfragen</a><a class="btn ghost" href="#s-bausteine">Leistungen ansehen</a></div>
     </div>
-    <figure class="a-herofig"><img src="/media/courts/halle.jpg" alt="Luftansicht einer Padel-Halle mit zwei Courts" loading="lazy"><figcaption>Standort · Luftansicht</figcaption></figure>
+    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/images/pic_standortanalyse.png" alt="Stadtkarte mit Pin als Symbol für die Standortanalyse" loading="lazy" style="height:auto;object-fit:contain;animation:none"></figure>
   </div>
   <div class="inner" style="padding-block:0 40px">
     <div class="c-stats">
