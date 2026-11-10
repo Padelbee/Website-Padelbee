@@ -25,7 +25,7 @@
 
 require_once __DIR__ . '/schema.php';
 
-const TC_ASSET_VERSION = 3;
+const TC_ASSET_VERSION = 4;
 
 // Tracking/Consent wie auf der bisherigen Seite (GA4, CCM19, HubSpot). Auf false setzen, um alles abzuschalten.
 const TC_TRACKING = true;
