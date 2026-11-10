@@ -1,111 +1,23 @@
 <?php
-$page_id = 'premier-court';
-include 'inc/header.php';
-?>
-
-<main id="main" class="standard-court-page">
-
-    <div class="container-fluid standard-court-first-section standard-court-hero" id="block-premier-court">
-        <div class="container">
-            <div class="row pt-6 pb-5 align-items-center">
-                <div class="col-12 col-lg-6 order-2 order-lg-1 pb-4 pb-lg-0">
-                    <h1><?= t('premier-court_h1') ?></h1>
-                    <h3><?= t('premier-court_h3') ?></h3>
-                    <p><?= t('premier-court_intro') ?></p>
-                </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <img src="images/PREMIER%20Court/PREMIER%20Court.png" alt="PREMIER Court" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-hellgrau" id="block-premier-court-features">
-        <div class="container">
-            <div class="row pt-6 pb-5">
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('premier-court_box1_title') ?></h3>
-                        <p><?= t('premier-court_box1_text') ?></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('premier-court_box2_title') ?></h3>
-                        <p><?= t('premier-court_box2_text') ?></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('premier-court_box3_title') ?></h3>
-                        <p><?= t('premier-court_box3_text') ?></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('premier-court_box4_title') ?></h3>
-                        <p><?= t('premier-court_box4_text') ?></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid standard-court-big-block p-0" id="block-premier-court-overlay">
-        <div class="row no-gutters align-items-stretch">
-            <div class="col-12 col-lg-7">
-                <div class="standard-court-big-image">
-                    <img src="images/PREMIER%20Court/PREMIER%20Court-big.png" alt="PREMIER Court" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="standard-court-overlay">
-                    <p class="standard-court-overlay-lead"><?= t('premier-court_overlay_lead') ?></p>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('premier-court_box1_title') ?></h4>
-                        <p><?= t('premier-court_overlay_box1_text') ?></p>
-                    </div>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('premier-court_box3_title') ?></h4>
-                        <p><?= t('premier-court_overlay_box2_text') ?></p>
-                    </div>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('premier-court_box2_title') ?></h4>
-                        <p><?= t('premier-court_overlay_box3_text') ?></p>
-                    </div>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('premier-court_box4_title') ?></h4>
-                        <p><?= t('premier-court_overlay_box4_text') ?></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row pt-6">
-            <div class="col-12 pb-5">
-                <h2><?= t('index_ready_title') ?></h2>
-                <h3><?= t('index_ready_subtitle') ?></h3>
-            </div>
-            <div class="col-md-6">
-                <h3><?= t('index_kontakt_direkt') ?></h3>
-                <?php echo $telblock; ?><br>
-                info@padelbee.de<br>
-            </div>
-            <div class="col-md-6"></div>
-            <div class="col-12">
-                <div class="trenner"><span><?= t('index_kontakt_oder') ?></span></div>
-            </div>
-        </div>
-    </div>
-    <a id="kontakt" class="anchor2"></a>
-<?php
-$formaktiv = 7;
-include 'inc/kontakt-form.php';
-?>
-
-</main>
-<?php
-include 'inc/footer.php';
-?>
+require __DIR__ . '/inc/tc/layout.php';
+$court = [
+    'path' => '/premier-court',
+    'name' => 'PREMIER Court',
+    'title' => 'PREMIER Court · Topklasse von 3B Padel · THE COURT',
+    'description' => 'PREMIER Court von 3B Padel: Topklasse ohne tragende Verstrebungen, mit freiem Design und uneingeschränkter Sicht aus jeder Perspektive.',
+    'label' => '3B Padel · Modell Premier',
+    'h1' => 'PREMIER <span class="kw">Court.</span>',
+    'h2' => 'Top of the <span class="hl">Range.</span>',
+    'lead' => 'Das Modell Premier stellt die Topklasse der 3B Padel Courts dar. Es zeichnet sich durch den vollständigen Verzicht auf tragende Verstrebungen aus und bietet dadurch ein einzigartiges, freies Design mit uneingeschränkter Sicht aus jeder Perspektive. Diese Bauweise gewährleistet maximale Spielperformance, höchste Sicherheit und eine ästhetisch anspruchsvolle Optik. Im Grundpreis enthalten sind die komplette Konstruktion, ein 12 mm Sicherheitsglas-Kit, der fibrillierte Kunstrasenbelag sowie acht LED-Fluter.',
+    'image' => '/media/courts/modelle/premier.jpg',
+    'alt' => 'PREMIER Court ohne tragende Verstrebungen',
+    'caption' => 'PREMIER Court · Top of the Range',
+    'schema_name' => 'PREMIER Court',
+    'boxes' => [
+        ['Konstruktion', 'Die gesamte Struktur ist feuerverzinkt, um Langlebigkeit und Widerstandsfähigkeit sicherzustellen.'],
+        ['Glaspanele', 'Die hochresistenten Einscheibensicherheitsgläser mit polierten und abgeschrägten Kanten sind in zwei Varianten erhältlich: 12 mm ESG Einscheibensicherheitsglas oder 6+6 mm Verbund-Sicherheitsglas.'],
+        ['Kunstrasen', 'Erhältlich als fibrillierte oder strukturierte Ausführung, individuell anpassbar an die Spielvorlieben und den Komfort der Nutzer. Verfügbar in den Farben Grün, Blau und Rot.'],
+        ['Beleuchtung', 'Die Beleuchtung ist in drei Intensitätsstufen verfügbar und sorgt für optimale Sicht bei Abendspielen: 17.500 Lumen, 18.500 Lumen und 23.000 Lumen.'],
+    ],
+];
+include __DIR__ . '/inc/tc/court-modell.php';

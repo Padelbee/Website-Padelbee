@@ -1,111 +1,23 @@
 <?php
-$page_id = 'panorama-court';
-include 'inc/header.php';
-?>
-
-<main id="main" class="standard-court-page">
-
-    <div class="container-fluid standard-court-first-section standard-court-hero" id="block-panorama-court">
-        <div class="container">
-            <div class="row pt-6 pb-5 align-items-center">
-                <div class="col-12 col-lg-6 order-2 order-lg-1 pb-4 pb-lg-0">
-                    <h1><?= t('panorama-court_h1') ?></h1>
-                    <h3><?= t('panorama-court_h3') ?></h3>
-                    <p><?= t('panorama-court_intro') ?></p>
-                </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <img src="images/Panorama-Court%20/Panorama%20Court.png" alt="Panorama Court Modell Wing" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-hellgrau" id="block-panorama-court-features">
-        <div class="container">
-            <div class="row pt-6 pb-5">
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('panorama-court_box1_title') ?></h3>
-                        <p><?= t('panorama-court_box1_text') ?></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('panorama-court_box2_title') ?></h3>
-                        <p><?= t('panorama-court_box2_text') ?></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('panorama-court_box3_title') ?></h3>
-                        <p><?= t('panorama-court_box3_text') ?></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('panorama-court_box4_title') ?></h3>
-                        <p><?= t('panorama-court_box4_text') ?></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid standard-court-big-block p-0" id="block-panorama-court-overlay">
-        <div class="row no-gutters align-items-stretch">
-            <div class="col-12 col-lg-7">
-                <div class="standard-court-big-image">
-                    <img src="images/Panorama-Court%20/Panorama%20Court%20-big.png" alt="Panorama Court Modell Wing" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="standard-court-overlay">
-                    <p class="standard-court-overlay-lead"><?= t('panorama-court_overlay_lead') ?></p>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('panorama-court_box1_title') ?></h4>
-                        <p><?= t('panorama-court_overlay_box1_text') ?></p>
-                    </div>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('panorama-court_box3_title') ?></h4>
-                        <p><?= t('panorama-court_overlay_box2_text') ?></p>
-                    </div>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('panorama-court_box2_title') ?></h4>
-                        <p><?= t('panorama-court_overlay_box3_text') ?></p>
-                    </div>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('panorama-court_box4_title') ?></h4>
-                        <p><?= t('panorama-court_overlay_box4_text') ?></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row pt-6">
-            <div class="col-12 pb-5">
-                <h2><?= t('index_ready_title') ?></h2>
-                <h3><?= t('index_ready_subtitle') ?></h3>
-            </div>
-            <div class="col-md-6">
-                <h3><?= t('index_kontakt_direkt') ?></h3>
-                <?php echo $telblock; ?><br>
-                info@padelbee.de<br>
-            </div>
-            <div class="col-md-6"></div>
-            <div class="col-12">
-                <div class="trenner"><span><?= t('index_kontakt_oder') ?></span></div>
-            </div>
-        </div>
-    </div>
-    <a id="kontakt" class="anchor2"></a>
-<?php
-$formaktiv = 9;
-include 'inc/kontakt-form.php';
-?>
-
-</main>
-<?php
-include 'inc/footer.php';
-?>
+require __DIR__ . '/inc/tc/layout.php';
+$court = [
+    'path' => '/panorama-court',
+    'name' => 'Panorama Court',
+    'title' => 'Panorama Court · Modell Wing von 3B Padel · THE COURT',
+    'description' => 'Panorama Court von 3B Padel: Modell Wing mit offenem Design ohne vertikale Verstrebungen zwischen den Glasflächen, für klarere Sicht und offeneres Spielgefühl.',
+    'label' => '3B Padel · Modell Wing',
+    'h1' => 'Panorama <span class="kw">Court.</span>',
+    'h2' => 'Modell <span class="hl">Wing.</span>',
+    'lead' => 'Das Modell Wing steht für ein modernes, offenes Design und bildet die Zwischenstufe der Court-Kollektion. Es zeichnet sich durch den Wegfall der vertikalen Verstrebungen zwischen den Glasflächen aus: Lediglich vier Trägerrohre sind an den Ecken der Konstruktion positioniert. Dies sorgt für eine klarere Sicht und ein offeneres Spielgefühl. Der Richtpreis umfasst die Stahlkonstruktion, das 12 mm-Glas-Kit, den fibrillierten Kunstrasen sowie 8 Flutlichtstrahler.',
+    'image' => '/media/courts/modelle/panorama-wing.jpg',
+    'alt' => 'Panorama Court Modell Wing',
+    'caption' => 'Panorama Court · Modell Wing',
+    'schema_name' => 'Panorama Court Modell Wing',
+    'boxes' => [
+        ['Konstruktion', 'Die gesamte Struktur ist feuerverzinkt, um Langlebigkeit und Widerstandsfähigkeit sicherzustellen.'],
+        ['Glaspanele', 'Die hochresistenten Einscheibensicherheitsgläser mit polierten und abgeschrägten Kanten sind in zwei Varianten erhältlich: 12 mm Einscheibenglas oder 6+6 mm Verbund-Sicherheitsglas.'],
+        ['Kunstrasen', 'Erhältlich als fibrillierte oder strukturierte Ausführung, individuell anpassbar an die Spielvorlieben und den Komfort der Nutzer. Verfügbar in den Farben Grün, Blau und Rot.'],
+        ['Beleuchtung', 'Die Beleuchtung ist in drei Intensitätsstufen verfügbar und sorgt für optimale Sicht bei Abendspielen: 17.500 Lumen, 18.500 Lumen und 23.000 Lumen.'],
+    ],
+];
+include __DIR__ . '/inc/tc/court-modell.php';

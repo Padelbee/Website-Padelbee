@@ -1,111 +1,23 @@
 <?php
-$page_id = 'hybrid-court';
-include 'inc/header.php';
-?>
-
-<main id="main" class="standard-court-page">
-
-    <div class="container-fluid standard-court-first-section standard-court-hero" id="block-hybrid-court">
-        <div class="container">
-            <div class="row pt-6 pb-5 align-items-center">
-                <div class="col-12 col-lg-6 order-2 order-lg-1 pb-4 pb-lg-0">
-                    <h1><?= t('hybrid-court_h1') ?></h1>
-                    <h3><?= t('hybrid-court_h3') ?></h3>
-                    <p><?= t('hybrid-court_intro') ?></p>
-                </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <img src="images/HYBRID%20Court%20/HYBRID%20Court.png" alt="HYBRID Court" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid bg-hellgrau" id="block-hybrid-court-features">
-        <div class="container">
-            <div class="row pt-6 pb-5">
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('hybrid-court_box1_title') ?></h3>
-                        <p><?= t('hybrid-court_box1_text') ?></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('hybrid-court_box2_title') ?></h3>
-                        <p><?= t('hybrid-court_box2_text') ?></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('hybrid-court_box3_title') ?></h3>
-                        <p><?= t('hybrid-court_box3_text') ?></p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <div class="standard-court-box">
-                        <h3 class="standard-court-box-title"><?= t('hybrid-court_box4_title') ?></h3>
-                        <p><?= t('hybrid-court_box4_text') ?></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid standard-court-big-block p-0" id="block-hybrid-court-overlay">
-        <div class="row no-gutters align-items-stretch">
-            <div class="col-12 col-lg-7">
-                <div class="standard-court-big-image">
-                    <img src="images/HYBRID%20Court%20/HYBRID%20Court-big.png" alt="HYBRID Court" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-12 col-lg-5">
-                <div class="standard-court-overlay">
-                    <p class="standard-court-overlay-lead"><?= t('hybrid-court_overlay_lead') ?></p>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('hybrid-court_box1_title') ?></h4>
-                        <p><?= t('hybrid-court_overlay_box1_text') ?></p>
-                    </div>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('hybrid-court_box3_title') ?></h4>
-                        <p><?= t('hybrid-court_overlay_box2_text') ?></p>
-                    </div>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('hybrid-court_box2_title') ?></h4>
-                        <p><?= t('hybrid-court_overlay_box3_text') ?></p>
-                    </div>
-                    <div class="standard-court-overlay-item">
-                        <h4><?= t('hybrid-court_box4_title') ?></h4>
-                        <p><?= t('hybrid-court_overlay_box4_text') ?></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row pt-6">
-            <div class="col-12 pb-5">
-                <h2><?= t('index_ready_title') ?></h2>
-                <h3><?= t('index_ready_subtitle') ?></h3>
-            </div>
-            <div class="col-md-6">
-                <h3><?= t('index_kontakt_direkt') ?></h3>
-                <?php echo $telblock; ?><br>
-                info@padelbee.de<br>
-            </div>
-            <div class="col-md-6"></div>
-            <div class="col-12">
-                <div class="trenner"><span><?= t('index_kontakt_oder') ?></span></div>
-            </div>
-        </div>
-    </div>
-    <a id="kontakt" class="anchor2"></a>
-<?php
-$formaktiv = 10;
-include 'inc/kontakt-form.php';
-?>
-
-</main>
-<?php
-include 'inc/footer.php';
-?>
+require __DIR__ . '/inc/tc/layout.php';
+$court = [
+    'path' => '/hybrid-court',
+    'name' => 'HYBRID Court',
+    'title' => 'HYBRID Court aus Stahl und Holz von 3B Padel · THE COURT',
+    'description' => 'HYBRID Court von 3B Padel: Kombination aus feuerverzinktem Stahl und massiven Holzbalken, erstmals vorgestellt auf der Padel Best Expo 2024 in Monte Carlo.',
+    'label' => '3B Padel · Modell Hybrid',
+    'h1' => 'HYBRID <span class="kw">Court.</span>',
+    'h2' => 'Höchste Standards und exklusives <span class="hl">Design.</span>',
+    'lead' => 'Das Modell Hybrid ist die neueste Entwicklung innerhalb der 3B Padel-Kollektion und wurde erstmals auf der Padel Best Expo 2024 in Monte Carlo vorgestellt. Es kombiniert zwei Werkstoffe mit gegensätzlichen Eigenschaften, Stahl und Holz, und vereint so Stabilität, Leichtigkeit und Flexibilität in einem einzigartigen Design. Diese Verbindung verleiht dem Court eine besondere Eleganz und sorgt zugleich für maximale Sicherheit und Komfort während des Spiels. Im Grundpreis enthalten sind die komplette Konstruktion, ein 12 mm Sicherheitsglas-Kit, der fibrillierte Kunstrasenbelag sowie acht leistungsstarke LED-Fluter.',
+    'image' => '/media/courts/modelle/hybrid.jpg',
+    'alt' => 'HYBRID Court aus Stahl und Holz',
+    'caption' => 'HYBRID Court · Stahl und Holz',
+    'schema_name' => 'HYBRID Court',
+    'boxes' => [
+        ['Konstruktion', 'Wie der Name bereits andeutet, besteht die Hybrid-Konstruktion aus einer Kombination von feuerverzinktem Stahl und massiven Holzbalken, eine Verbindung, die Eleganz, Innovation und Widerstandsfähigkeit auf einzigartige Weise vereint. Dieses Design verkörpert eine harmonische Symbiose aus moderner Technik und natürlicher Ästhetik.'],
+        ['Glaspanele', 'Die hochresistenten Einscheibensicherheitsgläser mit polierten und abgeschrägten Kanten sind in zwei Varianten erhältlich: 12 mm Einscheibenglas oder 6+6 mm Verbund-Sicherheitsglas.'],
+        ['Kunstrasen', 'Erhältlich als fibrillierte oder strukturierte Ausführung, individuell anpassbar an die Spielvorlieben und den Komfort der Nutzer. Verfügbar in den Farben Grün, Blau und Rot.'],
+        ['Beleuchtung', 'Die Beleuchtung ist in drei Intensitätsstufen verfügbar und sorgt für optimale Sicht bei Abendspielen: 17.500 Lumen, 18.500 Lumen und 23.000 Lumen.'],
+    ],
+];
+include __DIR__ . '/inc/tc/court-modell.php';
