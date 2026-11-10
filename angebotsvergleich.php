@@ -8,7 +8,7 @@ $vorteile = [
 tc_page_start([
     'path' => '/angebotsvergleich',
     'title' => 'Angebotsvergleich für Padel-Plätze · THE COURT',
-    'description' => 'Angebotsvergleich für Padel-Projekte: korrekte Bewertung der Angebote für den Platzbau, detaillierter Vergleich der vorliegenden Angebote und sichere Planung der Baukosten.',
+    'description' => 'Angebotsvergleich für Padel-Projekte: korrekte Bewertung der Angebote, detaillierter Vergleich und sichere Planung der Baukosten.',
     'breadcrumb' => ['Angebotsvergleich' => '/angebotsvergleich'],
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [

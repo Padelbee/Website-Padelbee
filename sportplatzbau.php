@@ -19,7 +19,7 @@ $schritte = [
 tc_page_start([
     'path' => '/sportplatzbau',
     'title' => 'Sportplatzbau für Padel- & Sportanlagen · THE COURT',
-    'description' => 'Sportplatzbau mit Padelbee und thecourt.dev: Von der Idee bis zum fertigen Spielfeld. Planung und Realisierung moderner Padel- und Sportanlagen für Kommunen, Vereine und Investoren.',
+    'description' => 'Sportplatzbau mit Padelbee und thecourt.dev: Von der Idee bis zum fertigen Spielfeld. Planung und Realisierung moderner Padel- und Sportanlagen.',
     'breadcrumb' => ['Sportplatzbau' => '/sportplatzbau'],
     'og_image' => '/media/leistungen/sportplatzbau-anlage.jpg',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
