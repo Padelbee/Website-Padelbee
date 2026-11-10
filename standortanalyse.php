@@ -27,7 +27,7 @@ tc_page_start([
   <div class="inner" style="padding-block:clamp(56px,8vw,110px)">
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Standortanalyse</p>
-      <p class="label" style="color:var(--white)" data-type>Standortanalyse · Markt · Business Case</p>
+      <p class="label" style="color:var(--white)" data-type>Standortanalyse · Markt · Business&nbsp;Case</p>
       <h1>Erstscreening.<br>Erst <span class="kw">prüfen.</span></h1>
       <p class="lead">Vom Start weg helfen wir dir, deine Chancen richtig zu bewerten, Investments sinnvoll zu planen und die Weichen zu stellen, damit Padel auch an deinem Standort boomt.</p>
     </div>
