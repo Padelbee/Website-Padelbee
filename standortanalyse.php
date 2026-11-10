@@ -10,7 +10,7 @@ $bausteine = [
 tc_page_start([
     'path' => '/standortanalyse',
     'title' => 'Standortanalyse & Erstscreening für Padel-Anlagen · THE COURT',
-    'description' => 'Erstscreening für Padel-Anlagen: Standort- und Marktanalyse, technische Vorprüfung, Business Case, Konzeptvisualisierung und Go/No-Go-Empfehlung.',
+    'description' => 'Erstscreening für Padel-Anlagen: Standort- & Marktanalyse, technische Vorprüfung, Wirtschaftlichkeitsanalyse, Konzeptvisualisierung und klare Go/No-Go-Empfehlung.',
     'breadcrumb' => ['Standortanalyse' => '/standortanalyse'],
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
@@ -27,8 +27,8 @@ tc_page_start([
   <div class="inner" style="padding-block:clamp(56px,8vw,110px)">
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Standortanalyse</p>
-      <p class="label" style="color:var(--white)" data-type>Erstscreening · Markt · Business Case</p>
-      <h1>Standort&shy;analyse.<br>Erst <span class="kw">prüfen.</span></h1>
+      <p class="label" style="color:var(--white)" data-type>Standortanalyse · Markt · Business Case</p>
+      <h1>Erstscreening.<br>Erst <span class="kw">prüfen.</span></h1>
       <p class="lead">Vom Start weg helfen wir dir, deine Chancen richtig zu bewerten, Investments sinnvoll zu planen und die Weichen zu stellen, damit Padel auch an deinem Standort boomt.</p>
     </div>
     <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/standortanalyse-karte.png" alt="Stadtkarte mit Pin als Symbol für die Standortanalyse" loading="lazy" style="height:auto;object-fit:contain"></figure>
