@@ -1,124 +1,52 @@
 <?php
-$page_id = 'team';
-include 'inc/header.php';
+require __DIR__ . '/inc/tc/layout.php';
+$team = [
+    ['Martin Gaffal', 'Team Padelbee', 'Co-Founder / Geschäftsführer', '/images/team/martin.png'],
+    ['Stefan Möbius', 'Team MPM · Team Padelbee', 'Co-Founder', '/images/team/stefan.png'],
+    ['Oliver Scheck-Poturicek', 'Team Scheck Club', 'Experte mit Referenzanlage', '/images/team/oliver.png'],
+    ['Gerrit Molineus', 'Team Gabriel Realestate', 'M.Sc. Architekt / Projektentwicklung', '/images/team/gerrit.png'],
+    ['Angélique Willner', 'Team MPM', 'Projektleitung &amp; Projektsteuerung', '/images/team/angelique.png'],
+    ['Christian Bonk', 'Team Padelbee', 'Padelexperte · Padelcoach', '/images/team/christian.jpg'],
+    ['Florian von Stuckrad', 'Team MPM', 'Sports &amp; Products', '/media/team/florian.jpg'],
+    ['Philipp Kamp', 'Team MPM', 'Sales Manager', '/media/team/philipp.jpg'],
+    ['Sebastien Collinet', 'Team Padelbee', 'Projektleiter NRW', '/images/team/SEBASTIEN.png'],
+];
+tc_page_start([
+    'path' => '/team',
+    'title' => 'Das Padelbee Team · Padel-Experten für dein Projekt · THE COURT',
+    'description' => 'Das Padelbee Team: Volle Energie & Kompetenz für dein Padel-Projekt. Über 14 Jahre Padel-Erfahrung und 15 Jahre Marketing-Expertise für Racket Sports.',
+    'breadcrumb' => ['Team' => '/team'],
+    'page_type' => 'AboutPage',
+    'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
+    'schema' => array_map(
+        fn($p) => tc_schema_person($p[0], ['jobTitle' => html_entity_decode($p[2]), 'image' => $p[3]]),
+        $team
+    ),
+]);
 ?>
-
-<main id="main">
-
-    <div class="bg-court">
-        <div class="container" id="team">
-            <div class="row pt-6">
-                <div class="col-12 pb-5">
-                    <h1><?= t('team_h1') ?></h1>
-                    <h3><?= t('team_h3') ?></h3>
-                    <div>
-                        <p><?= t('team_p1') ?></p>
-                        <p><?= t('team_p2') ?></p>
-                    </div>
-                </div>
-            </div>
-            <div class="row team-grid">
-                <div class="col-md-4 col-6">
-                    <div class="person">
-                        <img src="images/team/martin.png" alt="MARTIN GAFFAL">
-                        <div class="marker">MARTIN GAFFAL</div>
-                        <p class="person-affil"><?= t('team_affil_martin') ?></p>
-                        <h5><?= t('team_role_ceo') ?></h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-6">
-                    <div class="person">
-                        <img src="images/team/stefan.png" alt="STEFAN MÖBIUS">
-                        <div class="marker">STEFAN MÖBIUS</div>
-                        <p class="person-affil"><?= t('team_affil_stefan') ?></p>
-                        <h5><?= t('team_role_cofounder') ?></h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-6">
-                    <div class="person">
-                        <img src="images/team/oliver.png" alt="OLIVER SCHECK-POTURICEK">
-                        <div class="marker">OLIVER SCHECK-POTURICEK</div>
-                        <p class="person-affil"><?= t('team_affil_oliver') ?></p>
-                        <h5><?= t('team_role_expert') ?></h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-6">
-                    <div class="person">
-                        <img src="images/team/gerrit.png" alt="GERRIT MOLINEUS">
-                        <div class="marker">GERRIT MOLINEUS</div>
-                        <p class="person-affil"><?= t('team_affil_gerrit') ?></p>
-                        <h5><?= t('team_role_architect') ?></h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-6">
-                    <div class="person">
-                        <img src="images/team/angelique.png" alt="ANGÉLÍQUE WILLNER">
-                        <div class="marker">ANGÉLÍQUE WILLNER</div>
-                        <p class="person-affil"><?= t('team_affil_angelique') ?></p>
-                        <h5><?= t('team_role_pp') ?></h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-6">
-                    <div class="person">
-                        <img src="images/team/christian.jpg?v=3" alt="CHRISTIAN BONK">
-                        <div class="marker">CHRISTIAN BONK</div>
-                        <p class="person-affil"><?= t('team_affil_christian') ?></p>
-                        <h5><?= t('team_role_christian') ?></h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-6">
-                    <div class="person">
-                        <img src="images/team/florian.webp?v=2" alt="FLORIAN VON STUCKRAD">
-                        <div class="marker">FLORIAN VON STUCKRAD</div>
-                        <p class="person-affil"><?= t('team_affil_florian') ?></p>
-                        <h5><?= t('team_role_florian') ?></h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-6">
-                    <div class="person">
-                        <img src="images/team/philipp.jpg?v=2" alt="PHILIPP KAMP">
-                        <div class="marker">PHILIPP KAMP</div>
-                        <p class="person-affil"><?= t('team_affil_philipp') ?></p>
-                        <h5><?= t('team_role_philipp') ?></h5>
-                    </div>
-                </div>
-                <div class="col-md-4 col-6">
-                    <div class="person">
-                        <img src="images/team/SEBASTIEN.png" alt="SEBASTIEN COLLINET">
-                        <div class="marker">SEBASTIEN COLLINET</div>
-                        <p class="person-affil"><?= t('team_affil_sebastien') ?></p>
-                        <h5><?= t('team_role_nrw') ?></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="band dark grid-bg a-hero">
+  <div class="inner" style="padding-block:clamp(56px,8vw,110px);grid-template-columns:1fr">
+    <div style="max-width:860px">
+      <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Team</p>
+      <p class="label" style="color:var(--white)" data-type>Racket Sports · Padel · Projektentwicklung</p>
+      <h1>Das Padelbee <span class="kw">Team.</span></h1>
+      <p class="lead">Wir lieben Racket Sports, kommen vom Tennis und anderen Sportarten und sehen in Padel eine Sportart, die ganz vielen Menschen in unserem Land jede Menge Spielspaß liefern wird. Der Einstieg ist leicht, Leistungsunterschiede gibt es im Gegensatz zu anderen Sportarten kaum bzw. jeder oder jede kann gegen jeden oder jede ganz einfach spielen.</p>
     </div>
+  </div>
+</section>
 
-    <div class="container">
-        <div class="row pt-6">
-
-            <div class="col-12 pb-5">
-                <h2><?= t('index_ready_title') ?></h2>
-                <h3><?= t('index_ready_subtitle') ?></h3>
-            </div>
-            <div class="col-md-6">
-                <h3><?= t('index_kontakt_direkt') ?></h3>
-                <?php echo $telblock; ?><br />
-                info@padelbee.de<br />
-
-            </div>
-            <div class="col-md-6">
-            </div>
-            <div class="col-12">
-                <div class="trenner"><span><?= t('index_kontakt_oder') ?></span></div>
-            </div>
-        </div>
+<section class="band grid-bg" id="t-team">
+  <div class="inner">
+    <p class="label">Team</p>
+    <h2 class="reveal">Volle Energie &amp; Kompetenz für dein <span class="hl">Padel-Projekt.</span></h2>
+    <p class="lead">Das Beste dabei: Wenn man es richtig anstellt, wird Padel an nahezu jedem Standort ein Erfolg. Wir, das Team von Padelbee, helfen dir auf dem Weg dorthin und in Zukunft.</p>
+    <div class="cards c3">
+<?php foreach ($team as $p): ?>
+      <article class="card reveal"><figure class="vimg" style="aspect-ratio:1/1"><img src="<?= $p[3] ?>" alt="<?= tc_h($p[0]) ?>" loading="lazy" style="object-position:center 25%"></figure><div class="k"><?= $p[1] ?></div><h3 data-type><?= tc_h($p[0]) ?></h3><p><?= $p[2] ?></p></article>
+<?php endforeach; ?>
     </div>
-    <?php
-	include 'inc/kontakt-form.php';
-	?>
+  </div>
+</section>
 
-</main>
-<?php
-include 'inc/footer.php';
-?>
+<?php $tcPreselect = []; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
+<?php tc_page_end();
