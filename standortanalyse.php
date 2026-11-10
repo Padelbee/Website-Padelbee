@@ -1,11 +1,11 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
 $bausteine = [
-    ['Markt <span class="hl">&amp;</span> Standort', 'Standort- und Marktanalyse', 'Bewertung von Lage, Einzugsgebiet, Wettbewerb und Zielgruppen sowie eine erste Nachfrage- und Auslastungsprognose.'],
-    ['Technik', 'Technische und bauliche Vorprüfung', 'Einschätzung der baulichen Machbarkeit inklusive Untergrund, Anschlüssen und möglicher Court-Layouts.'],
-    ['Business Case', 'Wirtschaftlichkeitsanalyse', 'Investitions-, Kosten- und Umsatzplanung inklusive 5-Jahres-Prognose, Break-even, ROI und Szenarienrechnung.'],
-    ['Konzept', 'Erste Konzeptvisualisierung', 'Moodboard, grobes Layout in 2D oder 3D sowie Optionen für Erweiterungen wie Gastro oder Zusatzflächen.'],
-    ['Go/No-Go', 'Beratung und Entscheidungsvorlage', 'Ergebnispräsentation mit klarer Go/No-Go-Empfehlung und konkreter Umsetzungs-Roadmap.'],
+    ['Standort- &amp; Markt&shy;analyse', 'Bewertung von Lage, Einzugsgebiet, Wettbewerb, Zielgruppen sowie erste Nachfrage- und Auslastungsprognose.'],
+    ['Technische &amp; bauliche Vorprüfung', 'Einschätzung der baulichen Machbarkeit inklusive Untergrund, Anschlüssen und möglicher Court-Layouts.'],
+    ['Wirtschaftlichkeits&shy;analyse / Business Case', 'Investitions-, Kosten- und Umsatzplanung inklusive 5-Jahres-Prognose, Break-even, ROI und Szenarienrechnung.'],
+    ['Erste Konzept&shy;visualisierung', 'Moodboard, grobes Layout (2D/3D) sowie Optionen für Erweiterungen wie Gastro oder Zusatzflächen.'],
+    ['Beratung &amp; Entscheidungs&shy;vorlage', 'Ergebnispräsentation mit klarer Go/No-Go-Empfehlung und konkreter Umsetzungs-Roadmap.'],
 ];
 tc_page_start([
     'path' => '/standortanalyse',
@@ -29,31 +29,21 @@ tc_page_start([
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Standortanalyse</p>
       <p class="label" style="color:var(--white)" data-type>Erstscreening · Markt · Business Case</p>
       <h1>Standort&shy;analyse.<br>Erst <span class="kw">prüfen.</span></h1>
-      <p class="lead">Vom Start weg helfen wir dir, deine Chancen richtig zu bewerten, Investments sinnvoll zu planen und die Weichen zu stellen, damit Padel auch an deinem Standort boomt. Für eine starke Marktstrategie, bevor der erste Spatenstich gesetzt ist.</p>
+      <p class="lead">Vom Start weg helfen wir dir, deine Chancen richtig zu bewerten, Investments sinnvoll zu planen und die Weichen zu stellen, damit Padel auch an deinem Standort boomt.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Erstscreening anfragen</a><a class="btn ghost" href="#s-bausteine">5 Bausteine ansehen</a></div>
     </div>
     <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/standortanalyse-karte.png" alt="Stadtkarte mit Pin als Symbol für die Standortanalyse" loading="lazy" style="height:auto;object-fit:contain"></figure>
-  </div>
-  <div class="inner hero-stats" style="padding-block:0 40px">
-    <div class="stats">
-      <div><b data-count="5">5</b><span>Jahre Prognose</span></div>
-      <div><b>ROI</b><span>Business Case</span></div>
-      <div><b data-count="5">5</b><span>Bausteine</span></div>
-      <div><b data-count="50">50</b><span>Projekte</span></div>
-    </div>
   </div>
 </section>
 
 <section class="band grid-bg" id="s-bausteine">
   <div class="inner">
     <p class="label">Erstscreening</p>
-    <h2 class="reveal">Fünf Bausteine. Eine klare <span class="hl">Entscheidung.</span></h2>
-    <p class="lead">Das Erstscreening zeigt dir, ob und wie sich Padel an deinem Standort rechnet. Am Ende steht eine belastbare Entscheidungsvorlage statt eines Bauchgefühls.</p>
+    <h2 class="reveal">Für eine starke Marktstrategie an deinem <span class="hl">Standort.</span></h2>
     <div class="cards c3">
 <?php foreach ($bausteine as $i => $b): ?>
-      <article class="card reveal"><div class="k">Baustein <?= sprintf('%02d', $i + 1) ?></div><h3 data-type><?= $b[0] ?></h3><p><?= $b[1] ?>: <?= $b[2] ?></p></article>
+      <article class="card reveal"><div class="k">Baustein <?= sprintf('%02d', $i + 1) ?></div><h3 data-type><?= $b[0] ?></h3><p><?= $b[1] ?></p></article>
 <?php endforeach; ?>
-      <article class="card dk reveal"><div class="k">Dein nächster Schritt</div><h3 data-type style="color:var(--white)">Dein <span class="kw">Standort?</span></h3><p>Lohnt sich Padel bei dir? Erzähl uns von deinem Standort. Wir melden uns mit einer ersten Einschätzung und dem passenden Umfang für dein Erstscreening.</p><a class="btn" href="#kontakt" style="margin-top:20px">Standort prüfen lassen</a></article>
     </div>
   </div>
 </section>
@@ -61,12 +51,11 @@ tc_page_start([
 <section class="band grid-bg" id="s-weitere" style="background-color:var(--grey-050)">
   <div class="inner">
     <p class="label">Weitere Leistungen</p>
-    <h2 class="reveal">Nach der Analyse geht es <span class="hl">weiter.</span></h2>
-    <p class="lead">Ist die Entscheidung gefallen, begleiten wir dich vom Platzbau über das Betreiberkonzept bis zur Vermarktung.</p>
+    <h2 class="reveal">Weitere Leistungen von <span class="hl">Padelbee.</span></h2>
     <div class="cards c3">
-      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Platzbau</h3><p>Zuverlässige Realisierung von Fundament und Plätzen durch ein eingespieltes Team von Architekten, Ingenieuren und Bauunternehmen.</p><a class="btn ghost-d" href="/padel-court-bauen" style="margin-top:20px">Mehr zum Platzbau</a></article>
-      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Betreiber&shy;konzept</h3><p>Business-Plan, Angebots- und Marketing-Strategie für eine erfolgreiche Positionierung und einen reibungslosen Start am Standort.</p><a class="btn ghost-d" href="/betreiberkonzept" style="margin-top:20px">Mehr zum Betreiberkonzept</a></article>
-      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>PowerPlay®</h3><p>Marketingplan, Platzbuchungssoftware und Werbepakete digital und lokal, für die laufende Gewinnung von Spielerinnen und Spielern.</p><a class="btn ghost-d" href="/powerplay" style="margin-top:20px">Mehr zu PowerPlay®</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Realisierung Platzbau &amp; Baubegleitung</h3><p>Zuverlässige Realisierung von Fundament und Plätzen durch ein eingespieltes Team von Architekten, Ingenieuren und Bauunternehmen.</p><a class="btn ghost-d" href="/padel-court-bauen" style="margin-top:20px">Mehr zum Platzbau</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Entwicklung maßgeschneidertes Betreiber&shy;konzept</h3><p>Business-Plan, Angebots- und Marketing-Strategie für eine erfolgreiche Positionierung und einen reibungslosen Start am Standort.</p><a class="btn ghost-d" href="/betreiberkonzept" style="margin-top:20px">Mehr zum Betreiberkonzept</a></article>
+      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Vermarktung heute und in Zukunft</h3><p>Marketingplan, Platzbuchungssoftware und Werbepakete digital &amp; lokal, für die laufende Gewinnung von Spieler*innen.</p><a class="btn ghost-d" href="/powerplay" style="margin-top:20px">Mehr zu PowerPlay®</a></article>
     </div>
   </div>
 </section>
