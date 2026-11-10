@@ -42,7 +42,7 @@ tc_page_start([
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Halle</p>
       <p class="label" style="color:var(--white)" data-type>Polycarbonat · Thermo Roof · Indoor</p>
-      <h1>Halle.<br>Überdachungs&shy;<span class="kw">lösungen.</span></h1>
+      <h1>Padel in der <span class="kw">Halle.</span></h1>
       <p class="lead">Wir setzen auf das Gesamtsystem von Padel Factory: Courts und Halle technisch sauber abgestimmt. Für andere Anforderungen arbeiten wir mit weiteren Hallenbauern wie Haltec, DS Stahl und Okatent.</p>
     </div>
     <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/courts/halle.jpg" alt="Polycarbonat-Halle mit zwei Courts, Luftansicht" style="object-position:center"><figcaption>Hallensystem · Polycarbonat</figcaption></figure>
@@ -82,7 +82,7 @@ tc_page_start([
     <p class="lead">Die Konstruktion besteht aus Trägern, Stützen und Fachwerkbögen aus feuerverzinktem Stahl mit quadratischem Querschnitt 300 × 300 mm, aufgebaut aus vier tragenden Hohlprofilen mit einem Querschnitt von 35 × 35 × 3 mm sowie diagonalen Verbindungsstreben gleicher Profilart. Die Konstruktion ist wie folgt aufgebaut:</p>
     <div class="cards c3">
 <?php foreach ($konstruktion as $k): ?>
-      <article class="card reveal"><figure class="vimg"><img src="<?= $k[1] ?>" alt="<?= tc_h(substr($k[0], 3)) ?>" loading="lazy"></figure><div class="k">Konstruktion</div><h3 data-type><?= $k[0] ?></h3><p><?= $k[2] ?></p></article>
+      <article class="card reveal"><figure class="vimg" style="background:var(--white)"><img src="<?= $k[1] ?>" alt="<?= tc_h(substr($k[0], 3)) ?>" loading="lazy" style="object-fit:contain"></figure><div class="k">Konstruktion</div><h3 data-type><?= $k[0] ?></h3><p><?= $k[2] ?></p></article>
 <?php endforeach; ?>
     </div>
     <div class="cards c3" style="margin-top:20px">
