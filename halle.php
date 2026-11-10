@@ -44,6 +44,7 @@ tc_page_start([
       <p class="label" style="color:var(--white)" data-type>Polycarbonat · Thermo Roof · Indoor</p>
       <h1>Padel in der <span class="kw">Halle.</span></h1>
       <p class="lead">Wir setzen auf das Gesamtsystem von Padel Factory: Courts und Halle technisch sauber abgestimmt. Für andere Anforderungen arbeiten wir mit weiteren Hallenbauern wie Haltec, DS Stahl und Okatent.</p>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Halle anfragen</a><a class="btn ghost" href="#h-produkte">Hallen-Produkte ansehen</a></div>
     </div>
     <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/courts/halle.jpg" alt="Polycarbonat-Halle mit zwei Courts, Luftansicht" style="object-position:center"><figcaption>Hallensystem · Polycarbonat</figcaption></figure>
   </div>

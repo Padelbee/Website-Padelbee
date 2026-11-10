@@ -33,6 +33,7 @@ tc_page_start([
       <p class="label" style="color:var(--white)" data-type><?= $court['label'] ?></p>
       <h1><?= $court['h1'] ?></h1>
       <p class="lead"><?= $court['lead'] ?></p>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Court anfragen</a><a class="btn ghost" href="#m-ausstattung">Ausstattung ansehen</a></div>
     </div>
     <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="<?= $court['image'] ?>" alt="<?= tc_h($court['alt']) ?>" style="object-position:center"><figcaption><?= tc_h($court['caption']) ?></figcaption></figure>
   </div>
