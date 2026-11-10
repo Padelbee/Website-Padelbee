@@ -43,10 +43,10 @@ tc_page_start([
   </div>
 </section>
 
-<section class="band dark grid-bg" id="v-vorteile">
+<section class="band grid-bg" id="v-vorteile" style="background-color:var(--grey-050)">
   <div class="inner">
     <p class="label">Vorteile</p>
-    <h2 class="reveal">Die Vorteile für <span class="kw">dich.</span></h2>
+    <h2 class="reveal">Die Vorteile für <span class="hl">dich.</span></h2>
     <div class="cards c3">
 <?php foreach ($vorteile as $i => $v): ?>
       <article class="card reveal"><div class="k">Vorteil <?= sprintf('%02d', $i + 1) ?></div><h3 data-type><?= $v[0] ?></h3><p><?= $v[1] ?></p></article>

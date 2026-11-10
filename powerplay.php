@@ -56,9 +56,9 @@ tc_page_start([
 
 <section class="band dark grid-bg" id="p-mix">
   <div class="inner">
-    <p class="label">Marketing-Business-Mix</p>
+    <p class="label">Leistungen</p>
     <h2 class="reveal">Der Marketing-Business-Mix von <span class="kw">Padelbee.</span></h2>
-    <div class="halls">
+    <div class="halls h4">
 <?php foreach (array_slice($mix, 0, 4) as $m): ?>
       <article class="card reveal"><figure class="vimg"><img src="<?= $m[2] ?>" alt="<?= $m[3] ?>" loading="lazy"></figure><div class="k"><?= $m[0] ?></div><h3 data-type><?= $m[1] ?></h3><ul><?php foreach ($m[4] as $li): ?><li><?= $li ?></li><?php endforeach; ?></ul></article>
 <?php endforeach; ?>

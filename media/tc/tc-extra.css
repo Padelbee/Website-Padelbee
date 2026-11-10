@@ -60,3 +60,4 @@
 @media (max-width:860px){.copy{min-height:40px;padding:8px 12px}}
 .card:has(>a.btn:last-child){display:flex;flex-direction:column;align-items:flex-start}
 .card:has(>a.btn:last-child)>p{flex:1}
+@media (min-width:981px){.halls.h4{grid-template-columns:repeat(4,minmax(0,1fr))}}
