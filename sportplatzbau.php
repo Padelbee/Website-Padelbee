@@ -19,7 +19,7 @@ $schritte = [
 tc_page_start([
     'path' => '/sportplatzbau',
     'title' => 'Sportplatzbau für Padel- & Sportanlagen · THE COURT',
-    'description' => 'Sportplatzbau mit Padelbee und thecourt.dev: Planung und Realisierung moderner Padel- und Sportanlagen für Kommunen, Vereine und Investoren.',
+    'description' => 'Sportplatzbau mit Padelbee und thecourt.dev: Von der Idee bis zum fertigen Spielfeld. Planung und Realisierung moderner Padel- und Sportanlagen für Kommunen, Vereine und Investoren.',
     'breadcrumb' => ['Sportplatzbau' => '/sportplatzbau'],
     'og_image' => '/media/leistungen/sportplatzbau-anlage.jpg',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
@@ -40,7 +40,6 @@ tc_page_start([
       <p class="label" style="color:var(--white)" data-type>thecourt.dev · Planung &amp; Realisierung moderner Padel- und Sportanlagen</p>
       <h1>Sportplatz&shy;<span class="kw">bau.</span></h1>
       <p class="lead">thecourt.dev ist dein Spezialist für die Entwicklung, Planung und Realisierung moderner Padel- und Sportanlagen. Von der ersten Standortidee bis zur fertigen Inbetriebnahme begleitet thecourt.dev Kommunen, Vereine und Investoren durch den gesamten Prozess: ganzheitlich, transparent und praxisnah.</p>
-      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Projekt anfragen</a><a class="btn ghost" href="#sp-schritte">7 Leistungsschritte ansehen</a></div>
     </div>
     <figure class="a-herofig"><img src="/media/leistungen/sportplatzbau-anlage.jpg" alt="Illustration einer beleuchteten Padel-Anlage im Grünen" loading="lazy"><figcaption>Padel- und Sportanlage</figcaption></figure>
   </div>

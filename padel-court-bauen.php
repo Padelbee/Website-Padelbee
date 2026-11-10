@@ -3,7 +3,7 @@ require __DIR__ . '/inc/tc/layout.php';
 tc_page_start([
     'path' => '/padel-court-bauen',
     'title' => 'Padel Court bauen · Bauplanung, Platzbau & Baubegleitung · THE COURT',
-    'description' => 'Padel Court bauen lassen: Bauplanung mit Architekten, Genehmigung, Fundament und Platzbau nach lokalen Normen sowie Baubegleitung bis zur Fertigstellung.',
+    'description' => 'Padel Court bauen lassen? Professionelle Bauplanung und Platzbau für Padel-Anlagen. Wir realisieren dein Padel-Projekt mit erfahrenen Architekten und Bauunternehmen.',
     'breadcrumb' => ['Padel Court bauen' => '/padel-court-bauen'],
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
@@ -23,7 +23,6 @@ tc_page_start([
       <p class="label" style="color:var(--white)" data-type>Bauplanung · Platzbau · Baubegleitung</p>
       <h1>Padel Court <span class="kw">bauen.</span></h1>
       <p class="lead">Padel Court bauen lassen? Padelbee steht an deiner Seite, damit alle Hürden aus dem Weg geräumt werden und dich keine Überraschungen im Projektverlauf erwarten. Beim Bau eines Padel Courts unterstützen wir dich von der ersten Planung bis zur Fertigstellung.</p>
-      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="#kontakt">Bauprojekt anfragen</a><a class="btn ghost" href="#b-ablauf">Bauablauf ansehen</a></div>
     </div>
     <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/padel-court-baustellen.png" alt="Fotos von Padel-Baustellen: Aushub mit Bagger, Fundament, Montage von Glas und Gitter" loading="lazy" style="height:auto;object-fit:contain"></figure>
   </div>
