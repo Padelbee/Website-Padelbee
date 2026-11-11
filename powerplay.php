@@ -19,7 +19,7 @@ tc_page_start([
     'title' => 'Padelbee PowerPlay® · Marketing und Business-Support für Padel-Anlagen · THE COURT',
     'description' => 'Padelbee PowerPlay®: Marketing und Business-Support für nachhaltigen Padel-Erfolg. Online Booking, Events, Turniere, Marketing, Coaching und Automaten.',
     'breadcrumb' => ['Padelbee PowerPlay®' => '/powerplay'],
-    'extra_scripts' => '<script src="/media/tc/hero-tilt.js?v=' . TC_ASSET_VERSION . '" defer></script>' . "\n" . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
+    'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_service(
             'Padelbee PowerPlay®',
@@ -38,7 +38,7 @@ tc_page_start([
       <h1 class="pp-h1">Padelbee <span class="kw">PowerPlay®</span></h1>
       <p class="lead">Werde Teil des Booms und setze auf unser einzigartiges wie bewährtes Padelbee PowerPlay®. Mit der Padelbee Partnership genießt du den vollen Service, damit du Spieler*innen nicht nur gewinnst, sondern auch langfristig begeisterst.</p>
     </div>
-    <div class="hero-art foto tilt"><div class="tilt-inner"><img src="/media/leistungen/powerplay-hero.png?v=2" alt="Padel-Spielerin in Bereitschaftsstellung auf dem Court"></div></div>
+    <div class="hero-art foto"><img src="/media/leistungen/powerplay-hero.png?v=2" alt="Padel-Spielerin in Bereitschaftsstellung auf dem Court"></div>
   </div>
 </section>
 

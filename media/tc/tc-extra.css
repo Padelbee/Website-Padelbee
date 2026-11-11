@@ -95,6 +95,9 @@
 /* PowerPlay: H1 am Desktop etwas kleiner, damit das Hero-Foto Platz hat */
 @media (min-width:861px){.pp-h1{font-size:clamp(56px,7.6vw,108px)!important}}
 
+/* PowerPlay: H1 am Desktop etwas kleiner, damit das Hero-Foto Platz hat */
+@media (min-width:861px){.pp-h1{font-size:clamp(56px,7.6vw,108px)!important}}
+
 /* Hero-Bild 3D (hero-tilt.js): Bild kippt mit der Maus und wirft Schatten */
 .hero-art.tilt{perspective:900px}
 .hero-art.tilt .tilt-inner{position:relative;transform-style:preserve-3d;animation:tiltSway 9s ease-in-out infinite alternate;transition:transform .25s ease-out;will-change:transform}
@@ -102,4 +105,3 @@
 .hero-art.tilt .tilt-inner img{animation:none;filter:drop-shadow(0 30px 40px rgba(0,0,0,.55))}
 @keyframes tiltSway{0%{transform:rotateY(-10deg) rotateX(4deg)}100%{transform:rotateY(10deg) rotateX(-4deg)}}
 @media (prefers-reduced-motion:reduce){.hero-art.tilt .tilt-inner{animation:none}}
-@media (max-width:860px){.hero-art.tilt .tilt-inner img{filter:drop-shadow(0 12px 16px rgba(0,0,0,.45))}.hero-art.tilt{margin-bottom:24px}}
