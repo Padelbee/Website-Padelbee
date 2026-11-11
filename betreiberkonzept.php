@@ -30,7 +30,7 @@ tc_page_start([
       <h1>Betreiber&shy;<span class="kw">konzept.</span></h1>
       <p class="lead">Aufbauend auf das Erstscreening entwickelt Padelbee eine maßgeschneiderte Erfolgsstrategie für deine Anlage, heißt: Du erhältst eine individuelle Beratung und ein maßgeschneidertes Betreiberkonzept, damit du mit Padel sofort erfolgreich starten kannst.</p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/betreiberkonzept-kopf.png" alt="Zwei Padel-Spieler im Gespräch auf dem Court" loading="lazy" style="height:auto;object-fit:contain"></figure>
+    <div class="hero-art foto"><img src="/media/leistungen/betreiberkonzept-hero.png" alt="Zwei Padel-Spieler im Gespräch auf dem Court"></div>
   </div>
 </section>
 

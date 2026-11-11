@@ -29,7 +29,7 @@ tc_page_start([
       <h1>Angebots&shy;<span class="kw">vergleich.</span></h1>
       <p class="lead">Aus nunmehr 14 Jahren Erfahrung im Bau von Padel-Plätzen haben wir nun den Angebotsvergleich entwickelt. Wir kennen die Details, auf die es ankommt und die Fallen, die eventuell lauern.</p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/angebotsvergleich-kopf.png" alt="Zwei Hände halten mehrere Angebote zum Vergleich" loading="lazy" style="height:auto;object-fit:contain"></figure>
+    <div class="hero-art frei"><img src="/media/leistungen/angebotsvergleich-hero.png" alt="Zwei Hände halten mehrere Angebote zum Vergleich"></div>
   </div>
 </section>
 

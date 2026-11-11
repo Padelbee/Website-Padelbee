@@ -82,3 +82,12 @@
 @keyframes jobsFloat{from{transform:translateY(-8px) rotate(-1deg)}to{transform:translateY(8px) rotate(1deg)}}
 @media (max-width:860px){.jobs-art{max-width:260px;justify-self:start}}
 @media (prefers-reduced-motion:reduce){.jobs-art img{animation:none}}
+
+/* Hero-Bilder ohne Rahmen: Foto läuft in den Hintergrund aus, Zeichnung schwebt frei */
+.hero-art{min-width:0;width:100%;max-width:460px;justify-self:center}
+.hero-art img{width:100%;height:auto;display:block}
+.hero-art.foto img{animation:heroZoom 16s ease-in-out infinite alternate}
+.hero-art.frei img{animation:jobsFloat 5s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.05)}}
+@media (max-width:860px){.hero-art{max-width:300px;justify-self:start}}
+@media (prefers-reduced-motion:reduce){.hero-art img{animation:none}}
