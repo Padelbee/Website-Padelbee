@@ -32,7 +32,6 @@ tc_page_start([
     'title' => 'Jobs bei Padelbee · Werkstudent Social Media, Marketing & Sales · THE COURT',
     'description' => 'Jobs bei Padelbee: Werde Teil des Padel-Booms! Aktuelle Stellenangebote, zum Beispiel Werkstudent (m/w/d) im Bereich Social Media, Marketing & Sales.',
     'breadcrumb' => ['Jobs' => '/jobs'],
-    'og_image' => '/media/leistungen/hero-jobs.jpg',
     'schema' => [[
         '@type' => 'JobPosting',
         'title' => 'Werkstudent (m/w/d) Social Media, Marketing & Sales',
@@ -63,7 +62,7 @@ tc_page_start([
       <h1>Mach mit bei <span class="kw">Padelbee.</span></h1>
       <p class="lead"><?= $intro ?></p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/leistungen/hero-jobs.jpg" alt="Padel-Halle von Padel 68 mit mehreren Courts" style="object-position:center"><figcaption>Padel 68 · Memmingen</figcaption></figure>
+    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/jobs-kopf.png" alt="Drei Padelbee-Bienen als Symbol für das Team" style="height:auto;object-fit:contain"></figure>
   </div>
 </section>
 

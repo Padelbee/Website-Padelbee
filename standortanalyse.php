@@ -12,7 +12,6 @@ tc_page_start([
     'title' => 'Standortanalyse & Erstscreening für Padel-Anlagen · THE COURT',
     'description' => 'Erstscreening für Padel-Anlagen: Standort- & Marktanalyse, technische Vorprüfung, Wirtschaftlichkeitsanalyse, Konzeptvisualisierung und klare Go/No-Go-Empfehlung.',
     'breadcrumb' => ['Standortanalyse' => '/standortanalyse'],
-    'og_image' => '/media/leistungen/hero-standortanalyse.jpg',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_service(
@@ -32,7 +31,7 @@ tc_page_start([
       <h1>Erstscreening.<br>Erst <span class="kw">prüfen.</span></h1>
       <p class="lead">Vom Start weg helfen wir dir, deine Chancen richtig zu bewerten, Investments sinnvoll zu planen und die Weichen zu stellen, damit Padel auch an deinem Standort boomt.</p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/leistungen/hero-standortanalyse.jpg" alt="Baufläche vor dem Vereinsheim, bevor die Padel-Courts entstehen" style="object-position:center"><figcaption>MyPadelClub · Stuttgart</figcaption></figure>
+    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/standortanalyse-karte.png" alt="Stadtkarte mit Pin als Symbol für die Standortanalyse" loading="lazy" style="height:auto;object-fit:contain"></figure>
   </div>
 </section>
 

@@ -10,7 +10,6 @@ tc_page_start([
     'title' => 'Angebotsvergleich für Padel-Plätze · THE COURT',
     'description' => 'Angebotsvergleich für Padel-Projekte: korrekte Bewertung der Angebote, detaillierter Vergleich und sichere Planung der Baukosten.',
     'breadcrumb' => ['Angebotsvergleich' => '/angebotsvergleich'],
-    'og_image' => '/media/leistungen/hero-angebotsvergleich.jpg',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_service(
@@ -30,7 +29,7 @@ tc_page_start([
       <h1>Angebots&shy;<span class="kw">vergleich.</span></h1>
       <p class="lead">Aus nunmehr 14 Jahren Erfahrung im Bau von Padel-Plätzen haben wir nun den Angebotsvergleich entwickelt. Wir kennen die Details, auf die es ankommt und die Fallen, die eventuell lauern.</p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/leistungen/hero-angebotsvergleich.jpg" alt="Nahaufnahme vom Netz eines Padel-Courts von Padel Factory" style="object-position:center"><figcaption>Bavarian Padel · Wallersdorf</figcaption></figure>
+    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/angebotsvergleich-kopf.png" alt="Zwei Hände halten mehrere Angebote zum Vergleich" loading="lazy" style="height:auto;object-fit:contain"></figure>
   </div>
 </section>
 
