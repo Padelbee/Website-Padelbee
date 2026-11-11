@@ -103,3 +103,4 @@
 .hero-art.tilt .tilt-inner .fg{position:absolute;left:0;top:0;width:100%;height:auto;transform:translateZ(80px) scale(.95);filter:drop-shadow(0 28px 30px rgba(0,0,0,.55));pointer-events:none}
 @keyframes tiltSway{0%{transform:rotateY(-10deg) rotateX(4deg)}100%{transform:rotateY(10deg) rotateX(-4deg)}}
 @media (prefers-reduced-motion:reduce){.hero-art.tilt .tilt-inner{animation:none}}
+@media (max-width:860px){.hero-art.tilt .tilt-inner .fg{filter:drop-shadow(0 10px 12px rgba(0,0,0,.45))}.hero-art.tilt{margin-bottom:24px}}
