@@ -94,4 +94,3 @@
 
 /* PowerPlay: H1 am Desktop etwas kleiner, damit das Hero-Foto Platz hat */
 @media (min-width:861px){.pp-h1{font-size:clamp(56px,7.6vw,108px)!important}}
-@media (min-width:861px){.hero-art.pp-art{max-width:600px;width:122%;justify-self:start;margin-left:-4%}}
