@@ -95,9 +95,11 @@
 /* PowerPlay: H1 am Desktop etwas kleiner, damit das Hero-Foto Platz hat */
 @media (min-width:861px){.pp-h1{font-size:clamp(56px,7.6vw,108px)!important}}
 
-/* Hero-Bild 3D-Kippen (hero-tilt.js) */
+/* Hero-Bild 3D (hero-tilt.js): Foto hinten, freigestellte Person als Ebene davor */
 .hero-art.tilt{perspective:900px}
-.hero-art.tilt img{transform-style:preserve-3d;filter:drop-shadow(0 30px 40px rgba(0,0,0,.55));animation:tiltSway 9s ease-in-out infinite alternate;transition:transform .25s ease-out;will-change:transform}
-.hero-art.tilt.live img{animation:none}
-@keyframes tiltSway{0%{transform:rotateY(-8deg) rotateX(3deg) translateZ(20px)}100%{transform:rotateY(8deg) rotateX(-3deg) translateZ(20px)}}
-@media (prefers-reduced-motion:reduce){.hero-art.tilt img{animation:none}}
+.hero-art.tilt .tilt-inner{position:relative;transform-style:preserve-3d;animation:tiltSway 9s ease-in-out infinite alternate;transition:transform .25s ease-out;will-change:transform}
+.hero-art.tilt.live .tilt-inner{animation:none}
+.hero-art.tilt .tilt-inner img{animation:none}
+.hero-art.tilt .tilt-inner .fg{position:absolute;left:0;top:0;width:100%;height:auto;transform:translateZ(80px) scale(.918);filter:drop-shadow(0 28px 30px rgba(0,0,0,.55));pointer-events:none}
+@keyframes tiltSway{0%{transform:rotateY(-10deg) rotateX(4deg)}100%{transform:rotateY(10deg) rotateX(-4deg)}}
+@media (prefers-reduced-motion:reduce){.hero-art.tilt .tilt-inner{animation:none}}
