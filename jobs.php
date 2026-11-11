@@ -1,6 +1,8 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
 $intro = 'Padelbee ist ein innovatives Start-up, das sich der Projektentwicklung von Padelanlagen verschrieben hat. Von der Standortanalyse, der Bauplanung, dem Platzbau und der Baubegleitung, einem maßgeschneiderten Betreiberkonzept bis hin zum Padelbee-Partnerschip mit dem vollen Marketing- und Business-Support für den laufenden &amp; nachhaltigen Padel-Erfolg. Padelbee bietet eine 360 Grad Lösung. Auftraggeber sind Vereine, gewerbliche Anlagen und oder Tourismusanbieter, Freizeitparks. Mit unserem Know-how und dem notwendigen Rundumblick bringen wir die Vorhaben unserer Kunden gewinnbringend voran.';
+$introKurz = 'Padelbee ist ein innovatives Start-up, das sich der Projektentwicklung von Padelanlagen verschrieben hat.';
+$introRest = trim(substr($intro, strlen($introKurz)));
 $stelle = 'Zur Verstärkung unseres Teams suchen wir einen engagierten Werkstudenten (m/w/d) im Bereich Social Media, Marketing &amp; Sales.';
 $bloecke = [
     ['Deine Aufgaben', [
@@ -60,7 +62,7 @@ tc_page_start([
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Jobs</p>
       <p class="label" style="color:var(--white)" data-type>Jobs · Wir suchen Verstärkung</p>
       <h1>Mach mit bei <span class="kw">Padelbee.</span></h1>
-      <p class="lead"><?= $intro ?></p>
+      <p class="lead"><?= $introKurz ?></p>
     </div>
     <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/jobs-kopf.png" alt="Drei Padelbee-Bienen als Symbol für das Team" style="height:auto;object-fit:contain"></figure>
   </div>
@@ -68,7 +70,9 @@ tc_page_start([
 
 <section class="band grid-bg" id="j-stelle">
   <div class="inner">
-    <p class="label">Jobangebote</p>
+    <p class="label">Über Padelbee</p>
+    <p class="lead reveal" style="max-width:860px"><?= $introRest ?></p>
+    <p class="label" style="margin-top:clamp(48px,6vw,80px)">Jobangebote</p>
     <h2 class="reveal">Werkstudent (m/w/d) Social Media, Marketing &amp; <span class="hl">Sales.</span></h2>
     <p class="lead"><?= $stelle ?></p>
     <div class="cards c3">
