@@ -24,7 +24,7 @@ tc_page_start([
       <h1>Padel Court <span class="kw">bauen.</span></h1>
       <p class="lead">Padel Court bauen lassen? Padelbee steht an deiner Seite, damit alle Hürden aus dem Weg geräumt werden und dich keine Überraschungen im Projektverlauf erwarten. Beim Bau eines Padel Courts unterstützen wir dich von der ersten Planung bis zur Fertigstellung.</p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/padel-court-baustellen.png" alt="Fotos von Padel-Baustellen: Aushub mit Bagger, Fundament, Montage von Glas und Gitter" loading="lazy" style="height:auto;object-fit:contain"></figure>
+    <div class="hero-art foto"><img src="/media/leistungen/padel-court-bauen-hero.png" alt="Fotos von Padel-Baustellen: Aushub mit Bagger, Fundament, Montage von Glas und Gitter"></div>
   </div>
 </section>
 
