@@ -64,7 +64,7 @@ tc_page_start([
       <h1>Mach mit bei <span class="kw">Padelbee.</span></h1>
       <p class="lead"><?= $introKurz ?></p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/jobs-kopf.png" alt="Drei Padelbee-Bienen als Symbol für das Team" style="height:auto;object-fit:contain"></figure>
+    <div class="jobs-art"><img src="/images/bienchen.png" alt="Drei Padelbee-Bienen als Symbol für das Team" width="467" height="452"></div>
   </div>
 </section>
 

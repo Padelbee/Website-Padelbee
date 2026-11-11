@@ -75,3 +75,10 @@
 @keyframes saPulse{0%{transform:scale(1);opacity:.9}100%{transform:scale(7);opacity:0}}
 @media (max-width:860px){.sa-wrap{max-width:340px;justify-self:start}}
 @media (prefers-reduced-motion:reduce){.sa-map,.sa-pin,.sa-shadow{opacity:1;transform:none}}
+
+/* Jobs: Bienen ohne Hintergrund, schweben leicht */
+.jobs-art{min-width:0;width:100%;max-width:420px;justify-self:center}
+.jobs-art img{width:100%;height:auto;display:block;animation:jobsFloat 5s ease-in-out infinite alternate}
+@keyframes jobsFloat{from{transform:translateY(-8px) rotate(-1deg)}to{transform:translateY(8px) rotate(1deg)}}
+@media (max-width:860px){.jobs-art{max-width:260px;justify-self:start}}
+@media (prefers-reduced-motion:reduce){.jobs-art img{animation:none}}
