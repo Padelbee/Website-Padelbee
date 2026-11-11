@@ -29,7 +29,7 @@ tc_page_start([
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Standortanalyse</p>
       <p class="label" style="color:var(--white)" data-type>Standortanalyse · Markt · Business&nbsp;Case</p>
-      <h1>Erstscreening.<br>Erst <span class="kw">prüfen.</span></h1>
+      <h1 style="font-size:clamp(56px,6.2vw,88px)">Erstscreening.<br>Erst <span class="kw">prüfen.</span></h1>
       <p class="lead">Vom Start weg helfen wir dir, deine Chancen richtig zu bewerten, Investments sinnvoll zu planen und die Weichen zu stellen, damit Padel auch an deinem Standort boomt.</p>
     </div>
     <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/leistungen/hero-standortanalyse.jpg" alt="Baufläche vor dem Vereinsheim, bevor die Padel-Courts entstehen" style="object-position:center"><figcaption>MyPadelClub · Stuttgart</figcaption></figure>

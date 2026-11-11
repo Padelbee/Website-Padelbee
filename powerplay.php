@@ -36,7 +36,7 @@ tc_page_start([
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Padelbee PowerPlay®</p>
       <p class="label" style="color:var(--white)" data-type>Partnership · Marketing · Spielbetrieb</p>
-      <h1>Padelbee <span class="kw">PowerPlay®</span></h1>
+      <h1 style="font-size:clamp(56px,8.4vw,120px)">Padelbee <span class="kw">PowerPlay®</span></h1>
       <p class="lead">Werde Teil des Booms und setze auf unser einzigartiges wie bewährtes Padelbee PowerPlay®. Mit der Padelbee Partnership genießt du den vollen Service, damit du Spieler*innen nicht nur gewinnst, sondern auch langfristig begeisterst.</p>
     </div>
     <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/leistungen/hero-powerplay.jpg" alt="Spieler*innen auf einem Padel-Court in der Halle" style="object-position:center"><figcaption>Scheck Club · München</figcaption></figure>
