@@ -38,7 +38,7 @@ tc_page_start([
       <h1 class="pp-h1">Padelbee <span class="kw">PowerPlay®</span></h1>
       <p class="lead">Werde Teil des Booms und setze auf unser einzigartiges wie bewährtes Padelbee PowerPlay®. Mit der Padelbee Partnership genießt du den vollen Service, damit du Spieler*innen nicht nur gewinnst, sondern auch langfristig begeisterst.</p>
     </div>
-    <div class="hero-art foto"><img src="/media/leistungen/powerplay-hero.png?v=3" alt="Padel-Spielerin in Bereitschaftsstellung auf dem Court"></div>
+    <div class="hero-art foto"><img src="/media/leistungen/powerplay-hero.png?v=4" alt="Padel-Spielerin in Bereitschaftsstellung auf dem Court"></div>
   </div>
 </section>
 
