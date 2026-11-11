@@ -19,6 +19,7 @@ tc_page_start([
     'title' => 'Padelbee PowerPlay® · Marketing und Business-Support für Padel-Anlagen · THE COURT',
     'description' => 'Padelbee PowerPlay®: Marketing und Business-Support für nachhaltigen Padel-Erfolg. Online Booking, Events, Turniere, Marketing, Coaching und Automaten.',
     'breadcrumb' => ['Padelbee PowerPlay®' => '/powerplay'],
+    'og_image' => '/media/leistungen/hero-powerplay.jpg',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_service(
@@ -38,7 +39,7 @@ tc_page_start([
       <h1>Padelbee <span class="kw">PowerPlay®</span></h1>
       <p class="lead">Werde Teil des Booms und setze auf unser einzigartiges wie bewährtes Padelbee PowerPlay®. Mit der Padelbee Partnership genießt du den vollen Service, damit du Spieler*innen nicht nur gewinnst, sondern auch langfristig begeisterst.</p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/powerplay-kopf.png" alt="Padel-Spielerin in Bereitschaftsstellung auf dem Court" loading="lazy" style="height:auto;object-fit:contain"></figure>
+    <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/leistungen/hero-powerplay.jpg" alt="Spieler*innen auf einem Padel-Court in der Halle" style="object-position:center"><figcaption>Scheck Club · München</figcaption></figure>
   </div>
 </section>
 

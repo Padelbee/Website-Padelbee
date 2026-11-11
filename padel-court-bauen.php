@@ -5,6 +5,7 @@ tc_page_start([
     'title' => 'Padel Court bauen · Bauplanung, Platzbau & Baubegleitung · THE COURT',
     'description' => 'Padel Court bauen lassen? Professionelle Bauplanung und Platzbau für Padel-Anlagen. Wir realisieren dein Padel-Projekt mit erfahrenen Architekten und Bauunternehmen.',
     'breadcrumb' => ['Padel Court bauen' => '/padel-court-bauen'],
+    'og_image' => '/media/leistungen/hero-padel-court-bauen.jpg',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_service(
@@ -24,7 +25,7 @@ tc_page_start([
       <h1>Padel Court <span class="kw">bauen.</span></h1>
       <p class="lead">Padel Court bauen lassen? Padelbee steht an deiner Seite, damit alle Hürden aus dem Weg geräumt werden und dich keine Überraschungen im Projektverlauf erwarten. Beim Bau eines Padel Courts unterstützen wir dich von der ersten Planung bis zur Fertigstellung.</p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/padel-court-baustellen.png" alt="Fotos von Padel-Baustellen: Aushub mit Bagger, Fundament, Montage von Glas und Gitter" loading="lazy" style="height:auto;object-fit:contain"></figure>
+    <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/leistungen/hero-padel-court-bauen.jpg" alt="Stahlrahmen für das Fundament eines Padel-Courts auf der Baustelle" style="object-position:center"><figcaption>Padel Fokus · Dortmund</figcaption></figure>
   </div>
 </section>
 

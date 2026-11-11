@@ -11,6 +11,7 @@ tc_page_start([
     'title' => 'Betreiberkonzept für Padel-Anlagen · THE COURT',
     'description' => 'Maßgeschneidertes Betreiberkonzept für Padel-Anlagen: Marketing-Strategie, Business-Planung mit KPIs, Personal-Mix und Automatisierung für einen erfolgreichen Start.',
     'breadcrumb' => ['Betreiberkonzept' => '/betreiberkonzept'],
+    'og_image' => '/media/leistungen/hero-betreiberkonzept.jpg',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_service(
@@ -30,7 +31,7 @@ tc_page_start([
       <h1>Betreiber&shy;<span class="kw">konzept.</span></h1>
       <p class="lead">Aufbauend auf das Erstscreening entwickelt Padelbee eine maßgeschneiderte Erfolgsstrategie für deine Anlage, heißt: Du erhältst eine individuelle Beratung und ein maßgeschneidertes Betreiberkonzept, damit du mit Padel sofort erfolgreich starten kannst.</p>
     </div>
-    <figure class="a-herofig" style="aspect-ratio:auto;max-width:520px;border-top:0;overflow:visible"><img src="/media/leistungen/betreiberkonzept-kopf.png" alt="Zwei Padel-Spieler im Gespräch auf dem Court" loading="lazy" style="height:auto;object-fit:contain"></figure>
+    <figure class="a-herofig" style="aspect-ratio:16/10;max-width:560px"><img src="/media/leistungen/hero-betreiberkonzept.jpg" alt="Empfang und Lounge einer Padel-Anlage mit Automaten" style="object-position:center"><figcaption>Padel 68 · Memmingen</figcaption></figure>
   </div>
 </section>
 
