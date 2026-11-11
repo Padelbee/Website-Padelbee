@@ -41,7 +41,7 @@ tc_page_start([
       <h1>Sportplatz&shy;<span class="kw">bau.</span></h1>
       <p class="lead">thecourt.dev ist dein Spezialist für die Entwicklung, Planung und Realisierung moderner Padel- und Sportanlagen. Von der ersten Standortidee bis zur fertigen Inbetriebnahme begleitet thecourt.dev Kommunen, Vereine und Investoren durch den gesamten Prozess: ganzheitlich, transparent und praxisnah.</p>
     </div>
-    <div class="hero-art foto"><img src="/media/leistungen/sportplatzbau-hero.png?v=2" alt="Illustration einer beleuchteten Padel-Anlage im Grünen"></div>
+    <div class="hero-art foto"><img src="/media/leistungen/sportplatzbau-hero-farbe.webp" alt="Illustration einer beleuchteten Padel-Anlage im Grünen"></div>
   </div>
 </section>
 
