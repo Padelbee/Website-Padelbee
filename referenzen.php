@@ -1,12 +1,33 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
+
+// Referenzprojekte: eine Datenquelle für Server-HTML (SEO) und referenzen.js (Filter, Detailansicht).
+$refs = json_decode((string) file_get_contents(__DIR__ . '/inc/tc/referenzen-data.json'), true) ?: [];
+$refs = array_values(array_filter($refs, fn($p) => ($p['live'] ?? true) !== false));
+usort($refs, fn($a, $b) =>
+    [count($b['bilder'] ?? []) > 0, $b['jahr'] ?? 0, $b['created'] ?? 0]
+    <=> [count($a['bilder'] ?? []) > 0, $a['jahr'] ?? 0, $a['created'] ?? 0]);
+$year = (int) date('Y');
+$refCourts = array_sum(array_map(fn($p) => (!($p['jahr'] ?? 0) || $p['jahr'] <= $year) ? (int) ($p['courts'] ?? 0) : 0, $refs));
+$refLaender = count(array_unique(array_map(fn($p) => $p['land'] ?: 'Deutschland', $refs))) ?: 1;
+$refJson = json_encode($refs, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP);
+
+$refSchema = tc_schema_item_list('Referenzprojekte von Padelbee', array_map(fn($p) => [
+    '@type' => 'SportsActivityLocation',
+    'name' => $p['titel'],
+    'description' => $p['kurz'] ?: null,
+    'address' => ['@type' => 'PostalAddress', 'addressLocality' => $p['ort'], 'addressCountry' => $p['land'] ?: 'Deutschland'],
+], $refs));
+
 tc_page_start([
     'path' => '/referenzen',
-    'title' => 'Referenzen · Abgeschlossene Padel- und Tennisprojekte · THE COURT',
-    'description' => 'Abgeschlossene Projekte von Padelbee und The Court: Padel-, Pickleball- und Tennisanlagen für Vereine, Hotels, Betreiber und Kommunen in DACH.',
+    'title' => 'Referenzen · Padel-Anlagen, die wir gebaut haben · THE COURT',
+    'description' => 'Referenzen von Padelbee: Padel-Courts und Hallen für Tennisvereine, Betreiber und Kommunen, vom Scheck Club München bis Konradsreuth und Mainburg.',
     'breadcrumb' => ['Referenzen' => '/referenzen'],
     'page_type' => 'CollectionPage',
-    'extra_scripts' => '<script src="/media/tc/referenzen.js?v=' . TC_ASSET_VERSION . '"></script>',
+    'schema' => [$refSchema],
+    'extra_scripts' => '<script>window.REF_STATIC=' . $refJson . ';</script>' . "\n"
+        . '<script src="/media/tc/referenzen.js?v=' . TC_ASSET_VERSION . '"></script>',
 ]);
 ?>
 <section class="band dark grid-bg r-hero">
@@ -14,12 +35,12 @@ tc_page_start([
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Referenzen</p>
     <p class="label" style="color:var(--white)" data-type>Projekte · Referenzen · Eröffnungen</p>
     <h1>Gebaut. Eröffnet. <span class="kw">Gespielt.</span></h1>
-    <p class="lead">Abgeschlossene Projekte von Padelbee und The Court: Padel-, Pickleball- und Tennisanlagen für Vereine, Hotels, Betreiber und Kommunen in Deutschland, Österreich und der Schweiz.</p>
+    <p class="lead">Unsere Referenzen: Padel-Anlagen für Tennisvereine, Sportvereine, kommerzielle Betreiber und Kommunen in ganz Deutschland. Von der ersten Standortanalyse über den Court-Bau bis zur Eröffnung.</p>
     <div class="c-stats r-stats" style="margin-top:44px">
-      <div><b id="rsProj">0</b><span>Referenzprojekte</span></div>
-      <div><b id="rsCourts">0</b><span>Courts gebaut</span></div>
-      <div><b id="rsLand">0</b><span>Länder</span></div>
-      <div><b>50+</b><span>Projekte in Arbeit</span></div>
+      <div><b id="rsProj"><?= count($refs) ?></b><span>Referenzprojekte</span></div>
+      <div><b id="rsCourts"><?= $refCourts ?></b><span>Courts gebaut</span></div>
+      <div><b id="rsLand"><?= $refLaender ?></b><span><?= $refLaender === 1 ? 'Land' : 'Länder' ?></span></div>
+      <div><b>30+</b><span>weitere Projekte</span></div>
     </div>
   </div>
 </section>
@@ -29,7 +50,8 @@ tc_page_start([
     <div class="r-top">
       <div>
         <p class="label">Referenzen</p>
-        <h2 class="reveal">Unsere <span class="hl">Projekte.</span></h2>
+        <h2 class="reveal">Projekte, die wir <span class="hl">bewegt haben.</span></h2>
+        <p class="lead">Unsere eigene Referenzanlage ist der <a href="/team">Scheck Club in Unterföhring bei München</a>, mit 12 Padel-Courts eine der größten Anlagen Deutschlands. Dort haben wir selbst erlebt, worauf es bei Planung, Fundament, Platzbau und Betrieb ankommt. Dieses Wissen steckt in jedem Projekt: ob zwei Outdoor-Courts auf einem früheren Tennisplatz, eine <a href="/courts">mobile Court-Plattform</a> auf einer befristeten Fläche oder eine neue <a href="/halle">Padel-Halle</a>. Neben den Projekten auf dieser Seite begleiten wir über 30 weitere Anlagen, abgeschlossen und in Planung.</p>
       </div>
       <div class="r-admin" id="rAdmin" hidden>
         <button type="button" class="btn" id="rNew">+ Projekt anlegen</button>
@@ -43,7 +65,34 @@ tc_page_start([
       <button type="button" class="fbtn" data-rf="Halle" aria-pressed="false">Halle</button>
       <button type="button" class="fbtn" data-rf="Automaten" aria-pressed="false">Automaten</button>
     </div>
-    <div class="refs" id="refs" aria-live="polite"></div>
+    <div class="refs" id="refs" aria-live="polite">
+<?php foreach ($refs as $p):
+    $imgs = $p['bilder'] ?? [];
+    $geplant = (($p['jahr'] ?? 0) > $year) || stripos((string) $p['titel'], 'planung') !== false;
+    $meta = implode(' · ', array_filter([$p['ort'] ?? '', ($p['land'] ?? '') !== 'Deutschland' ? ($p['land'] ?? '') : '', $p['zielgruppe'] ?? '']));
+?>
+      <button type="button" class="ref" onclick="location.hash='referenzen/<?= tc_h($p['id']) ?>'">
+        <figure>
+<?php if ($imgs): ?>
+          <img src="<?= tc_h($imgs[0]['url'] ?? '') ?>" alt="<?= tc_h(($imgs[0]['alt'] ?? '') ?: $p['titel'] . ' in ' . $p['ort']) ?>" loading="lazy">
+<?php else: ?>
+          <div class="noimg court-ph"><span><?= $geplant ? 'In Planung' : 'Bilder folgen' ?></span></div>
+<?php endif; ?>
+<?php if (!empty($p['jahr'])): ?>          <span class="badge"><?= (int) $p['jahr'] ?></span>
+<?php endif; ?>
+<?php if (count($imgs) > 1): ?>          <span class="nimg"><?= count($imgs) ?> Bilder</span>
+<?php endif; ?>
+        </figure>
+        <div class="rb">
+          <div class="pk"><?= tc_h($meta) ?></div>
+          <h3><?= tc_h($p['titel']) ?></h3>
+<?php if (!empty($p['kurz'])): ?>          <p><?= tc_h($p['kurz']) ?></p>
+<?php endif; ?>
+          <div class="rf"><?php if ((int) ($p['courts'] ?? 0)): ?><span><?= (int) $p['courts'] ?> Courts</span><?php endif; foreach (array_slice($p['kategorien'] ?? [], 0, 3) as $k): ?><span><?= tc_h($k) ?></span><?php endforeach; ?></div>
+        </div>
+      </button>
+<?php endforeach; ?>
+    </div>
     <div class="r-empty" id="rEmpty" hidden>
       <h3>Referenzen folgen in Kürze.</h3>
       <p>Wir stellen hier gerade unsere abgeschlossenen Projekte zusammen. Bis dahin zeigt dir die <a href="/#projekte">Projektkarte</a> alle 50 Standorte.</p>
