@@ -88,7 +88,7 @@ tc_page_start([
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">
     <h2>Schreib uns <span class="kw">direkt.</span></h2>
-    <p class="lead" style="margin:18px auto 0">Du planst eine Padel-Anlage? Dann melde dich direkt bei Martin oder Stefan.</p>
+    <p class="lead" style="margin:18px auto 0">Sprich direkt mit den Gründern. Damit Padel an deinem Standort schnell startet und erfolgreich bleibt.</p>
     <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:680px">
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><code>martin.gaffal@padelbee.de</code><button class="copy" type="button">Kopieren</button></div></div>
       <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><code>stefan.moebius@padelbee.de</code><button class="copy" type="button">Kopieren</button></div></div>
