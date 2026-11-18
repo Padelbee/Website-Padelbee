@@ -40,7 +40,7 @@ tc_page_start([
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Team</p>
       <p class="label" style="color:var(--white)" data-type>Entwickeln · Konzipieren · Beraten · Bauen · Betreiben</p>
       <h1>Das Padelbee <span class="kw">Team.</span></h1>
-      <p class="lead">Padelbee ist ein spezialisierter Projektentwickler für den Aufbau und Betrieb von Padel-Anlagen. Wir begleiten dich von der <a href="/standortanalyse">Standort- und Potenzialanalyse</a> über Planung, <a href="/padel-court-bauen">Bau und Baubegleitung</a> bis hin zu nachhaltigen <a href="/betreiberkonzept">Betreiberkonzepten</a>. Dabei arbeiten wir 100 % kundenorientiert.</p>
+      <p class="lead">Padelbee ist ein spezialisierter Projektentwickler für den Aufbau und Betrieb von Padel-Anlagen. Das Unternehmen begleitet seine Kunden von der <a href="/standortanalyse">Standort- und Potenzialanalyse</a> über Planung, <a href="/padel-court-bauen">Bau und Baubegleitung</a> bis hin zu nachhaltigen <a href="/betreiberkonzept">Betreiberkonzepten</a>. Dabei arbeiten wir 100% kundenorientiert.</p>
     </div>
   </div>
 </section>
