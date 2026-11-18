@@ -61,8 +61,8 @@ tc_page_start([
 <section class="band" id="t-netzwerk">
   <div class="inner">
     <p class="label">Unser Netzwerk</p>
-    <h2 class="reveal">Starke Partner an <span class="hl">unserer Seite.</span></h2>
-    <p class="lead">Für jedes Projekt holen wir die passenden Fachleute dazu: Architekturbüros, Baufirmen, Court-Hersteller und Betreiber. Alle Firmen findest du auf der Seite <a href="/partner">Partner</a>.</p>
+    <h2 class="reveal">Starkes <span class="hl">Partnernetzwerk.</span></h2>
+    <p class="lead">Wir arbeiten mit spezialisierten Architekturbüros für ganz Deutschland, effizient und schnell. Dazu kommt ein starkes Netzwerk aus <a href="/partner">Fachfirmen und Lieferanten</a> im Bau und für den Betrieb.</p>
     <div class="cards c3">
 <?php foreach ($netzwerk as $p): ?>
       <article class="card reveal"><figure class="vimg" style="aspect-ratio:1/1"><img src="<?= $p[3] ?>" alt="<?= tc_h($p[0]) ?>, <?= tc_h($p[1]) ?>" loading="lazy" style="object-position:center 25%"></figure><div class="k"><?= tc_h($p[1]) ?></div><h3 data-type><?= tc_h($p[0]) ?></h3><p><?= tc_h($p[2]) ?></p></article>
