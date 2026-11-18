@@ -49,7 +49,7 @@ tc_page_start([
   <div class="inner">
     <p class="label">Das Padelbee Team</p>
     <h2 class="reveal">Energie &amp; <span class="hl">Kompetenz.</span></h2>
-    <p class="lead">Sieben Menschen, ein Ziel: Padel soll an deinem Standort schnell starten und erfolgreich bleiben. Wir kommen aus Padel, Tennis und dem Betrieb von Sportanlagen und bringen über 14 Jahre Padel-Erfahrung und über 20 Jahre Erfahrung mit Racket Sports mit.</p>
+    <p class="lead">Sieben Menschen, ein Ziel: Padel soll an deinem Standort schnell starten und erfolgreich bleiben. Dafür bringen wir über 14 Jahre Padel-Erfahrung in Planung, Fundamentbau, Platzbau und erfolgreichem Betrieb mit und über 20 Jahre Erfahrung im Betrieb von Sportanlagen und Marketing für Racket Sports.</p>
     <div class="cards c4">
 <?php foreach ($team as $p): ?>
       <article class="card reveal"><figure class="vimg<?= $p[2] ? '' : ' ini' ?>" style="aspect-ratio:1/1"><?php if ($p[2]): ?><img src="<?= $p[2] ?>" alt="<?= tc_h($p[0]) ?>, <?= tc_h($p[1]) ?> bei Padelbee" loading="lazy" style="object-position:center 25%"><?php else: ?><span aria-hidden="true"><?= tc_h($initials($p[0])) ?></span><?php endif; ?></figure><div class="k"><?= tc_h($p[1]) ?></div><h3 data-type><?= tc_h($p[0]) ?></h3></article>
