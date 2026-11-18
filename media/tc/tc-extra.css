@@ -94,3 +94,12 @@
 
 /* PowerPlay: H1 am Desktop etwas kleiner, damit das Hero-Foto Platz hat */
 @media (min-width:861px){.pp-h1{font-size:clamp(56px,7.6vw,108px)!important}}
+
+/* Team: Platzhalter ohne Foto (Initialen), Office-Bereich */
+.vimg.ini{display:flex;align-items:center;justify-content:center;background:var(--petrol)}
+.vimg.ini span{font-family:var(--f-display);font-style:italic;font-weight:700;font-size:clamp(56px,7vw,96px);color:var(--yellow)}
+.t-office{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.t-office figure{margin:0;aspect-ratio:4/3;overflow:hidden;background:var(--petrol)}
+.t-office img{width:100%;height:100%;object-fit:cover;display:block}
+.t-addr{margin-top:18px;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:860px){.t-office{grid-template-columns:1fr}}
