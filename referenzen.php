@@ -9,7 +9,6 @@ usort($refs, fn($a, $b) =>
     <=> [count($a['bilder'] ?? []) > 0, $a['jahr'] ?? 0, $a['created'] ?? 0]);
 $year = (int) date('Y');
 $refCourts = array_sum(array_map(fn($p) => (!($p['jahr'] ?? 0) || $p['jahr'] <= $year) ? (int) ($p['courts'] ?? 0) : 0, $refs));
-$refLaender = count(array_unique(array_map(fn($p) => $p['land'] ?: 'Deutschland', $refs))) ?: 1;
 $refJson = json_encode($refs, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP);
 
 $refSchema = tc_schema_item_list('Referenzprojekte von Padelbee', array_map(fn($p) => [
@@ -21,7 +20,7 @@ $refSchema = tc_schema_item_list('Referenzprojekte von Padelbee', array_map(fn($
 
 tc_page_start([
     'path' => '/referenzen',
-    'title' => 'Referenzen · Padel-Anlagen, die wir gebaut haben · THE COURT',
+    'title' => 'Referenzen · Padel-Projekte, die wir bewegt haben · THE COURT',
     'description' => 'Referenzen von Padelbee: Padel-Courts und Hallen für Tennisvereine, Betreiber und Kommunen, vom Scheck Club München bis Konradsreuth und Mainburg.',
     'breadcrumb' => ['Referenzen' => '/referenzen'],
     'page_type' => 'CollectionPage',
@@ -33,14 +32,13 @@ tc_page_start([
 <section class="band dark grid-bg r-hero">
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Referenzen</p>
-    <p class="label" style="color:var(--white)" data-type>Projekte · Referenzen · Eröffnungen</p>
-    <h1>Gebaut. Eröffnet. <span class="kw">Gespielt.</span></h1>
-    <p class="lead">Unsere Referenzen: Padel-Anlagen für Tennisvereine, Sportvereine, kommerzielle Betreiber und Kommunen in ganz Deutschland. Von der ersten Standortanalyse über den Court-Bau bis zur Eröffnung.</p>
+    <p class="label" style="color:var(--white)" data-type>Referenzen</p>
+    <h1>Projekte, die wir <span class="kw">bewegt haben.</span></h1>
+    <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen für Tennisvereine, Sportvereine, Betreiber und Kommunen in ganz Deutschland. Entdecke eine Auswahl unserer Projekte.</p>
     <div class="c-stats r-stats" style="margin-top:44px">
-      <div><b id="rsProj"><?= count($refs) ?></b><span>Referenzprojekte</span></div>
-      <div><b id="rsCourts"><?= $refCourts ?></b><span>Courts gebaut</span></div>
-      <div><b id="rsLand"><?= $refLaender ?></b><span><?= $refLaender === 1 ? 'Land' : 'Länder' ?></span></div>
-      <div><b>30+</b><span>weitere Projekte</span></div>
+      <div><b id="rsProj"><?= count($refs) ?></b><span>Projekte</span></div>
+      <div><b id="rsCourts"><?= $refCourts ?></b><span>Courts</span></div>
+      <div><b>12</b><span>Courts in unserer Referenzanlage</span></div>
     </div>
   </div>
 </section>
@@ -50,8 +48,8 @@ tc_page_start([
     <div class="r-top">
       <div>
         <p class="label">Referenzen</p>
-        <h2 class="reveal">Projekte, die wir <span class="hl">bewegt haben.</span></h2>
-        <p class="lead">Unsere eigene Referenzanlage ist der <a href="/team">Scheck Club in Unterföhring bei München</a>, mit 12 Padel-Courts eine der größten Anlagen Deutschlands. Dort haben wir selbst erlebt, worauf es bei Planung, Fundament, Platzbau und Betrieb ankommt. Dieses Wissen steckt in jedem Projekt: ob zwei Outdoor-Courts auf einem früheren Tennisplatz, eine <a href="/courts">mobile Court-Plattform</a> auf einer befristeten Fläche oder eine neue <a href="/halle">Padel-Halle</a>. Neben den Projekten auf dieser Seite begleiten wir über 30 weitere Anlagen, abgeschlossen und in Planung.</p>
+        <h2 class="reveal">Padel-Anlagen in ganz <span class="hl">Deutschland.</span></h2>
+        <p class="lead">Unsere eigene Referenzanlage ist der <a href="/team">Scheck Club in Unterföhring bei München</a>. Mit 12 Padel-Courts ist er eine der größten Anlagen Deutschlands. Von hier aus begleiten wir Projekte jeder Größe, von zwei Outdoor-Courts auf einem Tennisplatz über <a href="/courts">mobile Court-Plattformen</a> bis zur neuen <a href="/halle">Padel-Halle</a>.</p>
       </div>
       <div class="r-admin" id="rAdmin" hidden>
         <button type="button" class="btn" id="rNew">+ Projekt anlegen</button>
@@ -103,7 +101,10 @@ tc_page_start([
 
 <section class="band dark grid-bg">
   <div class="inner cta-band">
-    <h2>Dein Projekt ist das <span class="kw">nächste.</span></h2>
+    <div style="max-width:760px">
+      <h2>Dein Projekt ist das <span class="kw">nächste.</span></h2>
+      <p class="lead" style="margin:16px 0 0">Gemeinsam entwickeln wir eine Lösung, die funktional überzeugt und deine Anlage klar und unverwechselbar positioniert.</p>
+    </div>
     <a class="btn" href="/#kontakt">Projekt anfragen</a>
   </div>
 </section>
