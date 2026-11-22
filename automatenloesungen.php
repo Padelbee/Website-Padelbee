@@ -1,27 +1,27 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
 $automaten = [
-    ['Padel Premium 12 Fach', 'Sportogo', '4950'],
-    ['Padel Premium 24 Fach', 'Sportogo', '6950'],
-    ['RentalBOX S', 'Pure Vending', '5190'],
-    ['Racx IQ + Payx 8', 'Zuply', '8483'],
-    ['Padel Ball Premium', 'Sportogo', '3500'],
-    ['SportsBOX', 'Pure Vending', '5490'],
-    ['Snack Touch Business', 'Sportogo', '7140'],
-    ['Snack Touch Premium Plus', 'Sportogo', '9680'],
-    ['DualBOX Lift', 'Pure Vending', '5990'],
-    ['Linx IQ + Payx 8', 'Zuply', '19180'],
+    ['Padel Premium 12 Fach', 'Sportogo', '4950', '/media/automaten/sg12.jpg'],
+    ['Padel Premium 24 Fach', 'Sportogo', '6950', '/media/automaten/sg24.jpg'],
+    ['RentalBOX S', 'Pure Vending', '5190', '/media/automaten/rentalbox.webp'],
+    ['Racx IQ + Payx 8', 'Zuply', '8483', '/media/automaten/zuply_racx.jpg'],
+    ['Padel Ball Premium', 'Sportogo', '3500', null],
+    ['SportsBOX', 'Pure Vending', '5490', '/media/automaten/sportsbox.webp'],
+    ['Snack Touch Business', 'Sportogo', '7140', '/media/automaten/touch_business.webp'],
+    ['Snack Touch Premium Plus', 'Sportogo', '9680', '/media/automaten/touch_premium.webp'],
+    ['DualBOX Lift', 'Pure Vending', '5990', '/media/automaten/dualbox.webp'],
+    ['Linx IQ + Payx 8', 'Zuply', '19180', '/media/automaten/zuply_combo.jpg'],
 ];
 $automatenProducts = array_map(
     fn($a) => tc_schema_product($a[0], 'Verleih- und Verkaufsautomat für Padel- und Tennisanlagen von ' . $a[1], [
-        'brand' => $a[1], 'category' => 'Verkaufsautomat', 'price' => $a[2], 'path' => '/automatenloesungen',
+        'brand' => $a[1], 'category' => 'Verkaufsautomat', 'price' => $a[2], 'image' => $a[3], 'path' => '/automatenloesungen',
     ]),
     $automaten
 );
 tc_page_start([
     'path' => '/automatenloesungen',
-    'title' => 'Schläger-Verleihautomaten & Verkaufsautomaten für Padel · THE COURT',
-    'description' => 'Verleih- und Verkaufsautomaten für Padel- und Tennisanlagen: Schlägerverleih, Bälle, Snacks und Getränke 24/7. Preise, RentalBOX-Konfigurator, Leasing und Mietkauf.',
+    'title' => 'Padel-Automaten · Schläger-Verleih & Verkaufsautomaten · THE COURT',
+    'description' => 'Padel-Automaten von Padelbee: Schlägerverleih, Bälle, Snacks und Getränke 24/7 ohne Personal. Alle Preise, RentalBOX-Konfigurator, Leasing und Mietkauf.',
     'breadcrumb' => ['Automaten' => '/automatenloesungen'],
     'schema' => [
         tc_schema_service('Verleih- und Verkaufsautomaten', 'Schlägerverleih, Bälle, Snacks und Getränke rund um die Uhr, ohne Personal: Verleih- und Verkaufsautomaten für Padel- und Tennisanlagen inklusive Leasing und Mietkauf.', '/automatenloesungen'),
@@ -35,8 +35,8 @@ tc_page_start([
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Automaten</p>
       <p class="label" style="color:var(--white)" data-type>Digitalisierung · Verleih · Verkauf</p>
-      <h1>Mehr Service.<br>Mehr <span class="kw">Umsatz.</span></h1>
-      <p class="lead">Schlägerverleih, Bälle, Snacks und Getränke direkt am Court: vollautomatisch, rund um die Uhr und ohne Personal. Du gewinnst Zusatzerlöse und mehr Zeit für deine Community.</p>
+      <h1>Padel-Automaten von <span class="kw">Padelbee.</span></h1>
+      <p class="lead">Padelschläger-Verleih, Bälle, Snacks und Getränke direkt am Court. Vollautomatisch, rund um die Uhr und ohne Personal. Für noch mehr Service, noch mehr Umsatz und noch mehr Zeit für deine Community.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Automaten anfragen</a><a class="btn ghost" href="#a-produkte">Produkte ansehen</a></div>
     </div>
     <figure class="a-herofig"><img src="/media/automaten/sg12b.jpg" alt="Beleuchteter Schläger-Verleihautomat mit 12 Fächern neben einem Padel-Court" loading="lazy"><figcaption>Verleihautomat · 12 Fächer</figcaption></figure>
@@ -54,7 +54,7 @@ tc_page_start([
 <section class="band grid-bg" id="a-ablauf">
   <div class="inner">
     <p class="label">So funktioniert's</p>
-    <h2 class="reveal">Buchen. Öffnen. <span class="hl">Spielen.</span></h2>
+    <h2 class="reveal">Zusatzeinnahmen. 100% <span class="hl">digitalisiert.</span></h2>
     <p class="lead">Deine Spieler leihen und kaufen selbstständig, bargeldlos und ohne Wartezeit. Du verwaltest alles per App oder Display, auch aus der Ferne.</p>
     <ol class="flow" id="flow">
       <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="9" y="3" width="14" height="26" rx="1"/><path d="M14 25h4"/></svg></i><h4>Auswählen</h4><p>Am Touchscreen oder per App: Schläger, Bälle, Drinks.</p></li>
@@ -65,7 +65,7 @@ tc_page_start([
     <div class="cards c3">
       <article class="card reveal"><div class="k">Digitalisierung</div><h3>100 % automatisiert</h3><p>Vollautomatischer Verleih und Verkauf, rund um die Uhr, ohne Personal. Remote-Verwaltung per App oder Display, Telemetrie und Software-Updates inklusive.</p></article>
       <article class="card reveal"><div class="k">Zusatzeinnahmen</div><h3>Mehr Umsatz</h3><p>Schlägerverleih, Bälle, Griffbänder, Snacks und Getränke: direkte Zusatzerlöse auf deiner Anlage, auch dann, wenn niemand vor Ort ist.</p></article>
-      <article class="card reveal"><div class="k">Community</div><h3>Mehr Zeit</h3><p>Kein Schlüsseldienst, kein Kassieren, kein Nachfragen an der Theke. Dein Team kümmert sich um die Spieler statt um die Logistik.</p></article>
+      <article class="card reveal"><div class="k">Community</div><h3>Mehr Zeit</h3><p>Kein Kassieren und keine Schlägerausgabe an der Theke. So bleibt deinem Team noch mehr Zeit für deine Community.</p></article>
     </div>
   </div>
 </section>
@@ -73,8 +73,8 @@ tc_page_start([
 <section class="band" id="a-produkte">
   <div class="inner">
     <p class="label">Produkte</p>
-    <h2 class="reveal">Der richtige Automat für deine <span class="hl">Anlage.</span></h2>
-    <p class="lead">Zehn Automaten von drei Partnern. Filtere nach dem, was du anbieten willst.</p>
+    <h2 class="reveal">Mehr Angebot, mehr <span class="hl">Service.</span></h2>
+    <p class="lead">Zehn Padel-Automaten von drei Partnern, vom Schläger-Verleihautomaten bis zum gekühlten Snackautomaten. Filtere nach dem, was du anbieten willst.</p>
     <div class="filters" role="group" aria-label="Produkte filtern">
       <button type="button" class="fbtn" data-f="all" aria-pressed="true">Alle</button>
       <button type="button" class="fbtn" data-f="verleih" aria-pressed="false">Schlägerverleih</button>
@@ -210,12 +210,12 @@ tc_page_start([
     <p class="label">Unsere Automaten-Partner</p>
     <h2 class="reveal">Drei Partner. <span class="kw">Ein</span> Ansprechpartner.</h2>
     <div class="cards c3">
-      <article class="card reveal"><div class="k">Österreich</div><h3>Sportogo</h3><p>Digitale Verleih- und Verkaufsautomaten speziell für Padel. Plexiglasfächer mit LED, Smart Access und Lichtsteuerung, verknüpft mit deiner Buchungs-App.</p></article>
-      <article class="card reveal"><div class="k">Gütersloh · 9 Länder</div><h3>Pure Vending</h3><p>Sport Vending für Padel- und Tennisanlagen. RentalBOX mit Kautionssystem, SportsBOX und DualBOX Lift, 21,5" Touchscreens und flexible Finanzierung.</p></article>
-      <article class="card reveal"><div class="k">Niederlande · Produktion Italien</div><h3>Zuply</h3><p>Premium Vending für Indoor-Clubs. Großes Fassungsvermögen und Gewichtssensoren für maximale Sicherheit, auf Wunsch komplett in deinem Branding.</p></article>
+      <article class="card reveal"><div class="k">Verleih · Verkauf · Smart Access</div><h3>Sportogo</h3><p>Dein Partner für digitale Automatenlösungen am Padel-Court. Verleih- und Verkaufsautomaten mit Plexiglasfächern und LED, dazu Smart Access und Lichtsteuerung, verknüpft mit deiner Buchungs-App.</p></article>
+      <article class="card reveal"><div class="k">Gütersloh · 9 Länder</div><h3>Pure Vending</h3><p>Sport Vending. Next Level. Automatenlösungen für Padel- und Tennisanlagen mit RentalBOX und Kautionssystem, SportsBOX, DualBOX Lift und flexibler Finanzierung.</p></article>
+      <article class="card reveal"><div class="k">Holland · Produktion Italien</div><h3>Zuply</h3><p>Premium Vending für Indoor-Clubs. Mehr Umsatz bei weniger Arbeit dank großem Fassungsvermögen, dazu Gewichtssensoren für maximale Sicherheit.</p></article>
     </div>
   </div>
 </section>
 
-<?php $tcPreselect = ['Automatenlösungen']; $tcKontaktLead = 'Dein Sales Team: Laura, Philipp, Christian und Martin. <a href="mailto:info@padelbee.de" style="color:var(--yellow)">info@padelbee.de</a>'; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
+<?php $tcPreselect = ['Automatenlösungen']; $tcKontaktLead = 'Wir sind für dich da. Laura, Philipp, Christian und Martin aus unserem Sales Team beraten dich zu deinem Padel-Automaten. Schreib an <a href="mailto:info@padelbee.de" style="color:var(--yellow)">info@padelbee.de</a> oder nutze das Formular.'; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
 <?php tc_page_end();
