@@ -37,8 +37,8 @@ tc_page_start([
     <h1>Padel-Projekte, die wir <span class="kw">bewegt haben.</span></h1>
     <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen, vom Tennisverein bis zum kommerziellen Betreiber.</p>
     <div class="c-stats r-stats" style="margin-top:44px">
-      <div><b data-count="10">10</b><span>Referenzprojekte</span></div>
-      <div><b data-count="30" data-pre="+">+30</b><span>weitere Projekte</span></div>
+      <div><b data-count="50">50</b><span>Projekte</span></div>
+      <div><b data-count="3">3</b><span>Länder</span></div>
       <div><b data-count="12">12</b><span>Courts im Scheck Club</span></div>
     </div>
     <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Projekt anfragen</a><a class="btn ghost" href="#r-liste">Alle Projekte ansehen</a></div>
@@ -61,7 +61,7 @@ tc_page_start([
       <li><b data-type data-speed="38">FC Jengen</b><span>2 Outdoor Courts</span><em class="plan">In Planung</em></li>
       <li><a href="#referenzen/jm2lhzv2t22b12fyrqpe"><b data-type data-speed="38">Padel Süd, VfL Kaltental</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
       <li><a href="#referenzen/jjli2ofqq3mrxlemw5cn"><b data-type data-speed="38">TC Grün-Rot Mainburg</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
-      <li class="all"><a href="#r-liste"><b data-type data-speed="38">+ 30 weitere Projekte</b><span>abgeschlossen und in Planung</span><em>Auswahl ansehen</em></a></li>
+      <li class="all"><a href="#r-liste"><b data-type data-speed="38">50 Projekte von Garbsen bis Graz</b><span>abgeschlossen und in Planung</span><em>Auswahl ansehen</em></a></li>
     </ul>
   </div>
 </section>
