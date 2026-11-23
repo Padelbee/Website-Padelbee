@@ -119,3 +119,8 @@
 .r-f17 a:hover,.r-f17 a:focus-visible{background:var(--grey-050)}
 .r-f17 em{display:inline-block;margin-top:8px;font-style:normal;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--petrol)}
 .r-f17 em::after{content:" →"}
+
+/* Referenzen-Hero: Kennzahlen nur so breit wie der Inhalt */
+.c-stats.r-stats{grid-template-columns:repeat(3,max-content);width:max-content;max-width:100%}
+.c-stats.r-stats div{padding-right:clamp(28px,4vw,56px)}
+@media (max-width:860px){.c-stats.r-stats{grid-template-columns:repeat(2,minmax(0,1fr));width:auto}}

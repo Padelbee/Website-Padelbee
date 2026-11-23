@@ -36,8 +36,8 @@ tc_page_start([
     <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen in ganz Deutschland, vom Tennisverein bis zum kommerziellen Betreiber.</p>
     <div class="c-stats r-stats" style="margin-top:44px">
       <div><b>10</b><span>Referenzprojekte</span></div>
-      <div><b>+30</b><span>weitere Projekte, abgeschlossen und in Planung</span></div>
-      <div><b>12</b><span>Padel-Courts im Scheck Club, unserer Referenzanlage</span></div>
+      <div><b>+30</b><span>weitere Projekte</span></div>
+      <div><b>12</b><span>Courts im Scheck Club</span></div>
     </div>
     <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Projekt anfragen</a><a class="btn ghost" href="#r-liste">Alle Projekte ansehen</a></div>
   </div>
