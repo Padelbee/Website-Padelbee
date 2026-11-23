@@ -52,8 +52,8 @@ tc_page_start([
     <p class="lead">Von zwei Outdoor-Courts bis zur Padelhalle mit Panorama Courts. Das sind unsere Referenzen.</p>
     <ul class="r-f17">
       <li><a href="#referenzen/ji3rdvvmh9qgx5t0dd5p"><b data-type data-speed="38">Scheck Club München</b><span>12 Padelplätze mit Recyclingbeton</span><em>Details ansehen</em></a></li>
-      <li><b data-type data-speed="38">SC Eching</b><span>Neubau Tennispark mit 5 Rebound Ace &amp; 2&nbsp;Padel&#8209;Courts</span><em class="plan">In Planung</em></li>
-      <li><b data-type data-speed="38">Sporthochschule Köln</b><span>Padelhalle mit 4 Panorama Courts</span><em class="plan">In Planung</em></li>
+      <li><a href="#referenzen/j51vwpfd4gfmh5l0hav9"><b data-type data-speed="38">SC Eching</b><span>Neubau Tennispark mit 5 Rebound Ace &amp; 2&nbsp;Padel&#8209;Courts</span><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/vm3vl4d7wzxabm92z3o4"><b data-type data-speed="38">Sporthochschule Köln</b><span>Padelhalle mit 4 Panorama Courts</span><em>Details ansehen</em></a></li>
       <li><a href="#referenzen/05jhvfy737ano5y7zgg4"><b data-type data-speed="38">Padel Anlage Bad Wiessee</b><span>In Planung</span><em>Details ansehen</em></a></li>
       <li><a href="#referenzen/id4m500u98242zvwsv39"><b data-type data-speed="38">Padel Point Konradsreuth</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
       <li><a href="#referenzen/mw0x5hzgv9iha2km30r2"><b data-type data-speed="38">Donau Padel Club</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
