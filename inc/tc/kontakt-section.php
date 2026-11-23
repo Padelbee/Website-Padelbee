@@ -2,6 +2,7 @@
 /**
  * Kontaktbereich wie auf der Startseite (#kontakt) für Unterseiten.
  * Optional vorher $tcPreselect = ['Erstscreening'] setzen (Werte aus $tcInterests in kontakt-form.php)
+ * $tcKontaktTitle (HTML der Überschrift, Standard "Ready. Play.")
  * und $tcKontaktLead (HTML, z. B. Ansprechpartner der Seite) für eine Zusatzzeile unter dem Label.
  * Die Seite muss kontakt-form.js und Turnstile laden (extra_scripts wie in index.php).
  */
@@ -9,7 +10,7 @@
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">
     <div class="logos2"><img src="/media/tc/logo-padelbee.svg" alt="Padelbee"><span class="bar"></span><img src="/media/tc/logo-thecourt.svg" alt="The Court"></div>
-    <h2>Ready. <span class="kw">Play.</span></h2>
+    <h2><?= $tcKontaktTitle ?? 'Ready. <span class="kw">Play.</span>' ?></h2>
     <p class="label" style="margin-top:22px">Padel · Pickleball · Tennis</p>
 <?php if (!empty($tcKontaktLead)): ?>
     <p class="lead" style="margin:18px auto 0"><?= $tcKontaktLead ?></p>
