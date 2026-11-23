@@ -152,3 +152,5 @@
 .pmore ul{margin-top:8px;flex:none}
 .a-trust{margin:28px 0 0;padding:16px 20px;border-left:6px solid var(--yellow);background:var(--white);font-weight:500}
 .a-trust a{color:inherit}
+.pb > ul:has(+ .pmore){flex:none}
+.pb .pmore{flex:1}
