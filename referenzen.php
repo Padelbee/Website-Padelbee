@@ -35,7 +35,7 @@ tc_page_start([
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Referenzen</p>
     <p class="label" style="color:var(--white)" data-type>Referenzen</p>
     <h1>Padel-Projekte, die wir <span class="kw">bewegt haben.</span></h1>
-    <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen in ganz Deutschland, vom Tennisverein bis zum kommerziellen Betreiber.</p>
+    <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen, vom Tennisverein bis zum kommerziellen Betreiber.</p>
     <div class="c-stats r-stats" style="margin-top:44px">
       <div><b data-count="10">10</b><span>Referenzprojekte</span></div>
       <div><b data-count="30" data-pre="+">+30</b><span>weitere Projekte</span></div>
@@ -47,7 +47,7 @@ tc_page_start([
 
 <section class="band grid-bg" id="r-uebersicht">
   <div class="inner">
-    <p class="label" data-type>Referenzen</p>
+    <p class="label" data-type>Auf einen Blick</p>
     <h2 class="reveal">Padel-Anlagen in ganz <span class="hl">Deutschland.</span></h2>
     <p class="lead">Von zwei Outdoor-Courts bis zur Padelhalle mit Panorama Courts. Das sind unsere Referenzen.</p>
     <ul class="r-f17">
@@ -123,7 +123,7 @@ tc_page_start([
           <h3 data-type><?= tc_h($p['titel']) ?></h3>
 <?php if (!empty($p['kurz'])): ?>          <p><?= tc_h($p['kurz']) ?></p>
 <?php endif; ?>
-          <div class="rf"><?php if ((int) ($p['courts'] ?? 0)): ?><span><?= (int) $p['courts'] ?> Courts</span><?php endif; foreach (array_slice($p['kategorien'] ?? [], 0, 3) as $k): ?><span><?= tc_h($k) ?></span><?php endforeach; ?></div>
+          <div class="rf"><?php if ((int) ($p['courts'] ?? 0)): ?><span><?= (int) $p['courts'] ?> <?= (int) $p['courts'] === 1 ? 'Court' : 'Courts' ?></span><?php endif; foreach (array_slice($p['kategorien'] ?? [], 0, 3) as $k): ?><span><?= tc_h($k) ?></span><?php endforeach; ?></div>
         </div>
       </button>
 <?php endforeach; ?>
