@@ -23,7 +23,7 @@ function render(){
     if(p.live===false) f.appendChild(el('span','badge draft','Entwurf')); else if(p.jahr) f.appendChild(el('span','badge',String(p.jahr)));
     if(imgs.length>1) f.appendChild(el('span','nimg',imgs.length+' Bilder'));
     const rb=el('div','rb'); rb.appendChild(el('div','pk',[p.ort,p.land&&p.land!=='Deutschland'?p.land:null,p.zielgruppe].filter(Boolean).join(' · ')));
-    rb.appendChild(el('h3',null,p.titel)); if(p.kurz) rb.appendChild(el('p',null,p.kurz));
+    const h3=el('h3',null,p.titel); h3.setAttribute('data-type',''); rb.appendChild(h3); if(p.kurz) rb.appendChild(el('p',null,p.kurz));
     const rf=el('div','rf'); if(+p.courts) rf.appendChild(el('span',null,p.courts+' Courts')); (p.kategorien||[]).slice(0,3).forEach(k=>rf.appendChild(el('span',null,k))); rb.appendChild(rf);
     b.append(f,rb); b.addEventListener('click',()=>{ location.hash='referenzen/'+p.id; }); box.appendChild(b);
   });
