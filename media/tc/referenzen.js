@@ -9,7 +9,7 @@ const el=(t,c,txt)=>{const e=document.createElement(t); if(c) e.className=c; if(
 function visible(){ return projects.filter(p=>canEdit||p.live!==false); }
 function render(){
   const list=visible(), box=$('refs'); box.textContent='';
-  const shown=list.filter(p=>filter==='all'||(p.kategorien||[]).includes(filter));
+  const LISTE=window.REF_LISTE||[]; const shown=list.filter(p=>!LISTE.includes(p.id)&&(filter==='all'||(p.kategorien||[]).includes(filter)));
   $('rEmpty').hidden=list.length>0;
   $('rFilters').hidden=list.length===0;
   const live=projects.filter(p=>p.live!==false);

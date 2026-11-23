@@ -8,6 +8,8 @@ usort($refs, fn($a, $b) =>
     [count($b['bilder'] ?? []) > 0, $b['jahr'] ?? 0, $b['created'] ?? 0]
     <=> [count($a['bilder'] ?? []) > 0, $a['jahr'] ?? 0, $a['created'] ?? 0]);
 $year = (int) date('Y');
+// Projekte aus der Liste nach Folie 17: oben als Liste, unten nicht noch einmal als Kachel
+$refListe = ['ji3rdvvmh9qgx5t0dd5p', 'j51vwpfd4gfmh5l0hav9', 'vm3vl4d7wzxabm92z3o4', '05jhvfy737ano5y7zgg4', 'id4m500u98242zvwsv39', 'mw0x5hzgv9iha2km30r2', '7b834ar449mjjy5q316a', 'qav386pqfdsv1tckcdsh', 'jm2lhzv2t22b12fyrqpe', 'jjli2ofqq3mrxlemw5cn'];
 $refJson = json_encode($refs, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP);
 
 $refSchema = tc_schema_item_list('Referenzprojekte von Padelbee', array_map(fn($p) => [
@@ -24,7 +26,7 @@ tc_page_start([
     'breadcrumb' => ['Referenzen' => '/referenzen'],
     'page_type' => 'CollectionPage',
     'schema' => [$refSchema],
-    'extra_scripts' => '<script>window.REF_STATIC=' . $refJson . ';</script>' . "\n"
+    'extra_scripts' => '<script>window.REF_STATIC=' . $refJson . ';window.REF_LISTE=' . json_encode($refListe) . ';</script>' . "\n"
         . '<script src="/media/tc/referenzen.js?v=' . TC_ASSET_VERSION . '"></script>',
 ]);
 ?>
@@ -35,9 +37,9 @@ tc_page_start([
     <h1>Padel-Projekte, die wir <span class="kw">bewegt haben.</span></h1>
     <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen in ganz Deutschland, vom Tennisverein bis zum kommerziellen Betreiber.</p>
     <div class="c-stats r-stats" style="margin-top:44px">
-      <div><b>10</b><span>Referenzprojekte</span></div>
-      <div><b>+30</b><span>weitere Projekte</span></div>
-      <div><b>12</b><span>Courts im Scheck Club</span></div>
+      <div><b data-count="10">10</b><span>Referenzprojekte</span></div>
+      <div><b data-count="30" data-pre="+">+30</b><span>weitere Projekte</span></div>
+      <div><b data-count="12">12</b><span>Courts im Scheck Club</span></div>
     </div>
     <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Projekt anfragen</a><a class="btn ghost" href="#r-liste">Alle Projekte ansehen</a></div>
   </div>
@@ -47,19 +49,19 @@ tc_page_start([
   <div class="inner">
     <p class="label">Referenzen</p>
     <h2 class="reveal">Padel-Anlagen in ganz <span class="hl">Deutschland.</span></h2>
-    <p class="lead">Vom Tennisverein bis zum kommerziellen Betreiber, von zwei Outdoor-Courts bis zur Padelhalle. Das sind unsere Referenzen.</p>
+    <p class="lead">Von zwei Outdoor-Courts bis zur Padelhalle mit Panorama Courts. Das sind unsere Referenzen.</p>
     <ul class="r-f17">
-      <li><a href="#referenzen/ji3rdvvmh9qgx5t0dd5p"><b>Scheck Club München</b><span>12 Padelplätze mit Recyclingbeton</span><em>Details ansehen</em></a></li>
-      <li><b>SC Eching</b><span>Neubau Tennispark mit 5 Rebound Ace &amp; 2 Padel-Courts</span><em class="plan">In Planung</em></li>
-      <li><b>Sporthochschule Köln</b><span>Padelhalle mit 4 Panorama Courts</span><em class="plan">In Planung</em></li>
-      <li><b>Padel Anlage Bad Wiessee</b><em class="plan">In Planung</em></li>
-      <li><a href="#referenzen/id4m500u98242zvwsv39"><b>Padel Point Konradsreuth</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
-      <li><a href="#referenzen/mw0x5hzgv9iha2km30r2"><b>Donau Padel Club</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
-      <li><a href="#referenzen/7b834ar449mjjy5q316a"><b>Bavarian Padel</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
-      <li><b>FC Jengen</b><span>2 Outdoor Courts</span><em class="plan">In Planung</em></li>
-      <li><a href="#referenzen/jm2lhzv2t22b12fyrqpe"><b>VfL Kaltental / MyPadelClub</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
-      <li><a href="#referenzen/jjli2ofqq3mrxlemw5cn"><b>TC Grün-Rot Mainburg</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
-      <li class="all"><b>+ 30 weitere Projekte</b><span>abgeschlossen und in Planung</span></li>
+      <li class="reveal"><a href="#referenzen/ji3rdvvmh9qgx5t0dd5p"><b>Scheck Club München</b><span>12 Padelplätze mit Recyclingbeton</span><em>Details ansehen</em></a></li>
+      <li class="reveal"><b>SC Eching</b><span>Neubau Tennispark mit 5 Rebound Ace &amp; 2 Padel-Courts</span><em class="plan">In Planung</em></li>
+      <li class="reveal"><b>Sporthochschule Köln</b><span>Padelhalle mit 4 Panorama Courts</span><em class="plan">In Planung</em></li>
+      <li class="reveal"><b>Padel Anlage Bad Wiessee</b><em class="plan">In Planung</em></li>
+      <li class="reveal"><a href="#referenzen/id4m500u98242zvwsv39"><b>Padel Point Konradsreuth</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li class="reveal"><a href="#referenzen/mw0x5hzgv9iha2km30r2"><b>Donau Padel Club</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li class="reveal"><a href="#referenzen/7b834ar449mjjy5q316a"><b>Bavarian Padel</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li class="reveal"><b>FC Jengen</b><span>2 Outdoor Courts</span><em class="plan">In Planung</em></li>
+      <li class="reveal"><a href="#referenzen/jm2lhzv2t22b12fyrqpe"><b>VfL Kaltental / MyPadelClub</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li class="reveal"><a href="#referenzen/jjli2ofqq3mrxlemw5cn"><b>TC Grün-Rot Mainburg</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li class="all reveal"><b>+ 30 weitere Projekte</b><span>abgeschlossen und in Planung</span></li>
     </ul>
   </div>
 </section>
@@ -82,9 +84,9 @@ tc_page_start([
   <div class="inner">
     <div class="r-top">
       <div>
-        <p class="label">Alle Projekte</p>
-        <h2 class="reveal">Projekte im <span class="hl">Detail.</span></h2>
-        <p class="lead">Hier findest du unsere Referenzen und weitere Projekte mit Bildern und Details, von <a href="/courts">mobilen Court-Plattformen</a> bis zur neuen <a href="/halle">Padel-Halle</a>. Klick auf ein Projekt für mehr Infos.</p>
+        <p class="label">Weitere Projekte</p>
+        <h2 class="reveal">Noch mehr <span class="hl">Projekte.</span></h2>
+        <p class="lead">Neben unseren Referenzen begleiten wir viele weitere Projekte, von <a href="/courts">mobilen Court-Plattformen</a> bis zur neuen <a href="/halle">Padel-Halle</a>. Klick auf ein Projekt für mehr Infos.</p>
       </div>
       <div class="r-admin" id="rAdmin" hidden>
         <button type="button" class="btn" id="rNew">+ Projekt anlegen</button>
@@ -99,7 +101,7 @@ tc_page_start([
       <button type="button" class="fbtn" data-rf="Automaten" aria-pressed="false">Automaten</button>
     </div>
     <div class="refs" id="refs" aria-live="polite">
-<?php foreach ($refs as $p):
+<?php foreach (array_filter($refs, fn($p) => !in_array($p['id'], $refListe, true)) as $p):
     $imgs = $p['bilder'] ?? [];
     $geplant = (($p['jahr'] ?? 0) > $year) || stripos((string) $p['titel'], 'planung') !== false;
     $meta = implode(' · ', array_filter([$p['ort'] ?? '', ($p['land'] ?? '') !== 'Deutschland' ? ($p['land'] ?? '') : '', $p['zielgruppe'] ?? '']));
