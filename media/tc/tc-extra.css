@@ -126,3 +126,6 @@
 @media (max-width:860px){.c-stats.r-stats{grid-template-columns:repeat(2,minmax(0,1fr));width:auto}}
 .r-f17 em.plan{color:var(--muted)}
 .r-f17 em.plan::after{content:none}
+.r-f17{align-items:start}
+.r-f17 li{transition:border-color .25s}
+.r-f17 li:has(a):hover{border-color:var(--petrol);border-left-color:var(--yellow)}
