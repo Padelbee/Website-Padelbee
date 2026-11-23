@@ -124,3 +124,5 @@
 .c-stats.r-stats{grid-template-columns:repeat(3,max-content);width:max-content;max-width:100%}
 .c-stats.r-stats div{padding-right:clamp(28px,4vw,56px)}
 @media (max-width:860px){.c-stats.r-stats{grid-template-columns:repeat(2,minmax(0,1fr));width:auto}}
+.r-f17 em.plan{color:var(--muted)}
+.r-f17 em.plan::after{content:none}

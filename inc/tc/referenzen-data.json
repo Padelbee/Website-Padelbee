@@ -333,37 +333,37 @@
  {
   "bilder": [
    {
-    "alt": "",
+    "alt": "Padel-Halle im Scheck Club München",
     "id": "8a1dd3de120416f1cf9ec7bd2de45dda",
     "url": "/media/uploads/8a1dd3de120416f1cf9ec7bd2de45dda.jpg"
    },
    {
-    "alt": "",
+    "alt": "Padel-Halle im Scheck Club München",
     "id": "a5b1ead76ff421ef2585a90d24bed755",
     "url": "/media/uploads/a5b1ead76ff421ef2585a90d24bed755.jpg"
    },
    {
-    "alt": "",
+    "alt": "Padel-Halle im Scheck Club München",
     "id": "18285e9a11bb1640f6fa0f95af25bf27",
     "url": "/media/uploads/18285e9a11bb1640f6fa0f95af25bf27.jpg"
    }
   ],
-  "courts": 4,
+  "courts": 12,
   "created": 1792830324661,
   "hersteller": "Padel Concept",
   "jahr": 2025,
   "kategorien": [
    "Padel"
   ],
-  "kurz": "Erweiterung der Padel Halle um vier Courts",
+  "kurz": "12 Padelplätze mit Recyclingbeton",
   "land": "Deutschland",
   "leistungen": [
    "Bau"
   ],
   "live": true,
   "ort": "München",
-  "text": "Die ehemalige Reit- und Soccerhalle wurde um vier Padelcourts von unserem Partner Padel Concept erweitert.",
-  "titel": "Scheck Club",
+  "text": "12 Padelplätze mit Recyclingbeton auf unserer Referenzanlage, eine der größten Padel-Anlagen Deutschlands.\n\nDie ehemalige Reit- und Soccerhalle wurde um vier Padelcourts von unserem Partner Padel Concept erweitert.",
+  "titel": "Scheck Club München",
   "updated": 1792830324661,
   "zielgruppe": "Kommerzieller Betreiber",
   "id": "ji3rdvvmh9qgx5t0dd5p"

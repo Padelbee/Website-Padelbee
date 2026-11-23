@@ -50,13 +50,13 @@ tc_page_start([
     <p class="lead">Vom Tennisverein bis zum kommerziellen Betreiber, von zwei Outdoor-Courts bis zur Padelhalle. Das sind unsere Referenzen.</p>
     <ul class="r-f17">
       <li><a href="#referenzen/ji3rdvvmh9qgx5t0dd5p"><b>Scheck Club München</b><span>12 Padelplätze mit Recyclingbeton</span><em>Details ansehen</em></a></li>
-      <li><a href="#referenzen/j51vwpfd4gfmh5l0hav9"><b>SC Eching</b><span>Neubau Tennispark mit 5 Rebound Ace &amp; 2 Padel-Courts</span><em>Details ansehen</em></a></li>
-      <li><a href="#referenzen/vm3vl4d7wzxabm92z3o4"><b>Sporthochschule Köln</b><span>Padelhalle mit 4 Panorama Courts</span><em>Details ansehen</em></a></li>
-      <li><a href="#referenzen/05jhvfy737ano5y7zgg4"><b>Padel Anlage Bad Wiessee</b><em>Details ansehen</em></a></li>
+      <li><b>SC Eching</b><span>Neubau Tennispark mit 5 Rebound Ace &amp; 2 Padel-Courts</span><em class="plan">In Planung</em></li>
+      <li><b>Sporthochschule Köln</b><span>Padelhalle mit 4 Panorama Courts</span><em class="plan">In Planung</em></li>
+      <li><b>Padel Anlage Bad Wiessee</b><em class="plan">In Planung</em></li>
       <li><a href="#referenzen/id4m500u98242zvwsv39"><b>Padel Point Konradsreuth</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
       <li><a href="#referenzen/mw0x5hzgv9iha2km30r2"><b>Donau Padel Club</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
       <li><a href="#referenzen/7b834ar449mjjy5q316a"><b>Bavarian Padel</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
-      <li><a href="#referenzen/qav386pqfdsv1tckcdsh"><b>FC Jengen</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li><b>FC Jengen</b><span>2 Outdoor Courts</span><em class="plan">In Planung</em></li>
       <li><a href="#referenzen/jm2lhzv2t22b12fyrqpe"><b>VfL Kaltental / MyPadelClub</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
       <li><a href="#referenzen/jjli2ofqq3mrxlemw5cn"><b>TC Grün-Rot Mainburg</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
       <li class="all"><b>+ 30 weitere Projekte</b><span>abgeschlossen und in Planung</span></li>
