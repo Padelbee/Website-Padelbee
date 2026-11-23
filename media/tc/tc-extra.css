@@ -143,3 +143,12 @@
 .faq summary:focus-visible{outline:2px solid var(--petrol);outline-offset:4px}
 .faq p{margin:0 0 24px;max-width:72ch;font-size:17px;line-height:1.65;color:#1E2A2A}
 .faq a{color:var(--petrol);text-decoration:underline;text-underline-offset:3px}
+/* Automaten: Zusatzangaben aus der Präsentation aufklappbar, Referenz-Hinweis */
+.pmore{margin-top:10px;font-size:14.5px;color:var(--muted)}
+.pmore summary{cursor:pointer;list-style:none;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--petrol)}
+.pmore summary::-webkit-details-marker{display:none}
+.pmore summary::after{content:" +"}
+.pmore[open] summary::after{content:" −"}
+.pmore ul{margin-top:8px;flex:none}
+.a-trust{margin:28px 0 0;padding:16px 20px;border-left:6px solid var(--yellow);background:var(--white);font-weight:500}
+.a-trust a{color:inherit}
