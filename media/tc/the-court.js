@@ -81,7 +81,7 @@ $('replay').addEventListener('click',playMap);
 /* observers: reveal, typing, counters, map */
 const io=new IntersectionObserver(es=>es.forEach(en=>{ if(!en.isIntersecting) return; const el=en.target; io.unobserve(el);
   if(el.classList.contains('reveal')){ el.classList.add('pre'); requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.remove('pre'))); }
-  if(el.hasAttribute('data-type')) typeEl(el, el.tagName==='H3'?38:26);
+  if(el.hasAttribute('data-type')) typeEl(el, +el.dataset.speed||(el.tagName==='H3'?38:26));
   if(el.hasAttribute('data-count')&&!RM){ const n=+el.dataset.count, plus=el.hasAttribute('data-plus'); const t0=performance.now(); (function f(now){ const u=Math.min(1,(now-t0)/1400); el.textContent=(el.dataset.pre||'')+Math.round(n*(1-Math.pow(1-u,3)))+(plus&&u===1?'+':''); if(u<1) requestAnimationFrame(f); })(t0); }
   if(el.id==='mapbox') playMap();
 }),{threshold:.35});

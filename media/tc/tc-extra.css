@@ -129,3 +129,4 @@
 .r-f17{align-items:start}
 .r-f17 li{transition:border-color .25s}
 .r-f17 li:has(a):hover{border-color:var(--petrol);border-left-color:var(--yellow)}
+.r-f17 span.cur{display:inline-block;margin-top:0}
