@@ -8,7 +8,6 @@ usort($refs, fn($a, $b) =>
     [count($b['bilder'] ?? []) > 0, $b['jahr'] ?? 0, $b['created'] ?? 0]
     <=> [count($a['bilder'] ?? []) > 0, $a['jahr'] ?? 0, $a['created'] ?? 0]);
 $year = (int) date('Y');
-$refCourts = array_sum(array_map(fn($p) => (!($p['jahr'] ?? 0) || $p['jahr'] <= $year) ? (int) ($p['courts'] ?? 0) : 0, $refs));
 $refJson = json_encode($refs, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP);
 
 $refSchema = tc_schema_item_list('Referenzprojekte von Padelbee', array_map(fn($p) => [
@@ -34,11 +33,10 @@ tc_page_start([
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Referenzen</p>
     <p class="label" style="color:var(--white)" data-type>Referenzen</p>
     <h1>Projekte, die wir <span class="kw">bewegt haben.</span></h1>
-    <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen für Tennisvereine, Sportvereine, Betreiber und Kommunen in ganz Deutschland. Entdecke eine Auswahl unserer Projekte.</p>
+    <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen in ganz Deutschland, vom Tennisverein bis zum kommerziellen Betreiber.</p>
     <div class="c-stats r-stats" style="margin-top:44px">
-      <div><b id="rsProj"><?= count($refs) ?></b><span>Projekte</span></div>
-      <div><b id="rsCourts"><?= $refCourts ?></b><span>Courts</span></div>
-      <div><b>12</b><span>Courts in unserer Referenzanlage</span></div>
+      <div><b>40+</b><span>Projekte, abgeschlossen und in Planung</span></div>
+      <div><b>12</b><span>Courts im Scheck Club, unserer Referenzanlage</span></div>
     </div>
   </div>
 </section>

@@ -13,7 +13,7 @@ function render(){
   $('rEmpty').hidden=list.length>0;
   $('rFilters').hidden=list.length===0;
   const live=projects.filter(p=>p.live!==false);
-  $('rsProj').textContent=live.length; $('rsCourts').textContent=live.filter(p=>!p.jahr||p.jahr<=YEAR).reduce((a,p)=>a+(+p.courts||0),0);
+  if($('rsProj')) $('rsProj').textContent=live.length; if($('rsCourts')) $('rsCourts').textContent=live.filter(p=>!p.jahr||p.jahr<=YEAR).reduce((a,p)=>a+(+p.courts||0),0);
   if($('rsLand')) $('rsLand').textContent=new Set(live.map(p=>p.land||'Deutschland')).size||0;
   shown.forEach((p,i)=>{
     const b=el('button','ref'); b.type='button'; b.style.animation=`pop .45s cubic-bezier(.16,1,.3,1) ${i*.05}s both`;
