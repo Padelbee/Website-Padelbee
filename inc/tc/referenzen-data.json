@@ -15,9 +15,9 @@
    "Betrieb"
   ],
   "live": true,
-  "ort": "Pfullingen",
-  "text": "Auf dem Gelände des TC Pfullingen hat ein kommerzieller Betreiber, der bereits Padel-Erfahrung in seinem eigenen Verein gesammelt hat, drei Double Courts errichtet. Die Bauarbeiten hat ein lokales Bauunternehmen übernommen. Die Spielfläche wurde mit Sickerasphalt gebaut, die Courts hat Padel Factory geliefert.",
-  "titel": "Padel Club Pfullingen",
+  "ort": "Pfullendorf",
+  "text": "Auf dem Gelände des TC Pfullendorf hat ein kommerzieller Betreiber, der bereits Padel-Erfahrung in seinem eigenen Verein gesammelt hat, drei Double Courts errichtet. Die Bauarbeiten hat ein lokales Bauunternehmen übernommen. Die Spielfläche wurde mit Sickerasphalt gebaut, die Courts hat Padel Factory geliefert.",
+  "titel": "Padel Club Pfullendorf",
   "updated": 1792848768949,
   "zielgruppe": "Kommerzieller Betreiber",
   "id": "io7skgiwvs4stlintxm8"
@@ -25,24 +25,44 @@
  {
   "bilder": [
    {
-    "alt": "",
+    "alt": "Padel Süd in Stuttgart",
     "id": "49db0446b4f4c38a60cd02eff18605fa",
     "url": "/media/uploads/49db0446b4f4c38a60cd02eff18605fa.jpg"
    },
    {
-    "alt": "",
+    "alt": "Padel Süd in Stuttgart",
     "id": "6673a7aee38399f598c289d1224fb2d4",
     "url": "/media/uploads/6673a7aee38399f598c289d1224fb2d4.jpg"
    },
    {
-    "alt": "",
+    "alt": "Padel Süd in Stuttgart",
     "id": "aad36ba774755e202c7ab9297595d23b",
     "url": "/media/uploads/aad36ba774755e202c7ab9297595d23b.jpg"
    },
    {
-    "alt": "",
+    "alt": "Padel Süd in Stuttgart",
     "id": "dacb6a9f6d25e363c0a583bdc52ed42b",
     "url": "/media/uploads/dacb6a9f6d25e363c0a583bdc52ed42b.jpg"
+   },
+   {
+    "alt": "Netz mit Padel-Süd-Branding auf dem Court",
+    "id": "afa68d7bc15571cf42a525df052384e5",
+    "url": "/media/uploads/afa68d7bc15571cf42a525df052384e5.jpg"
+   },
+   {
+    "alt": "Zwei Schläger und Ball am Netz von Padel Süd",
+    "id": "15ce216d92f0ee3fd01415e88a6f43ee",
+    "url": "/media/uploads/15ce216d92f0ee3fd01415e88a6f43ee.jpg"
+   },
+   {
+    "alt": "Logo von Padel Süd im Stahl der Court-Konstruktion",
+    "id": "8295a63ef555be752982dd19e89e193d",
+    "url": "/media/uploads/8295a63ef555be752982dd19e89e193d.jpg"
+   },
+   {
+    "alt": "Netzband mit Padel-Süd-Schriftzug vor Herbstbäumen",
+    "id": "3fda0659a42fb89459ac5d8ffde143a9",
+    "url": "/media/uploads/3fda0659a42fb89459ac5d8ffde143a9.jpg"
    }
   ],
   "courts": 4,
@@ -62,7 +82,7 @@
   "live": true,
   "ort": "Stuttgart",
   "text": "Auf dem Vereinsgelände des VfL Kaltental in Stuttgart haben drei Gründer aus Stuttgart eine Padel-Anlage mit vier Courts realisiert. Die Planung hat ein lokaler Architekt übernommen. Wir haben dem gesamten Team mit Padel-Know-how zur Seite gestanden und die Courts von Padel Factory geliefert. Die Spielfläche hat Polytan perfekt eingebaut: weniger Stress beim Einbau für den Bauherrn und eine komfortable, gelenkschonende Spielfläche für alle Spieler.",
-  "titel": "VfL Kaltental / MyPadelClub",
+  "titel": "Padel Süd",
   "updated": 1792848374592,
   "zielgruppe": "Kommerzieller Betreiber",
   "id": "jm2lhzv2t22b12fyrqpe"
@@ -74,7 +94,8 @@
   "hersteller": "Padel Concept",
   "jahr": 2026,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Automaten"
   ],
   "kurz": "Bau von zwei Padelcourts auf einem Tennisplatz",
   "land": "Deutschland",
@@ -99,7 +120,8 @@
   "hersteller": "",
   "jahr": 2027,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Halle"
   ],
   "kurz": "",
   "land": "Deutschland",
@@ -117,13 +139,20 @@
   "id": "29swphvtpn1grk98tapb"
  },
  {
-  "bilder": [],
+  "bilder": [
+   {
+    "alt": "Lageplan der geplanten Anlage in Bad Wiessee",
+    "id": "c1df1593dd1479f490d0a715c2560aee",
+    "url": "/media/uploads/c1df1593dd1479f490d0a715c2560aee.jpg"
+   }
+  ],
   "courts": 5,
   "created": 1792848190814,
   "hersteller": "Titan Padel",
   "jahr": 2027,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Automaten"
   ],
   "kurz": "",
   "land": "Deutschland",
@@ -150,7 +179,8 @@
   "hersteller": "",
   "jahr": 2027,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Halle"
   ],
   "kurz": "",
   "land": "Deutschland",
@@ -172,37 +202,37 @@
  {
   "bilder": [
    {
-    "alt": "",
+    "alt": "0711 Padel in Stuttgart",
     "id": "9066e91fff33d9008da530c065493094",
     "url": "/media/uploads/9066e91fff33d9008da530c065493094.jpg"
    },
    {
-    "alt": "",
+    "alt": "0711 Padel in Stuttgart",
     "id": "782efceef4b6627e114d349774ed63c7",
     "url": "/media/uploads/782efceef4b6627e114d349774ed63c7.jpg"
    },
    {
-    "alt": "",
+    "alt": "0711 Padel in Stuttgart",
     "id": "8dd9fa8a7c75ddcb3486fa5b074663a5",
     "url": "/media/uploads/8dd9fa8a7c75ddcb3486fa5b074663a5.jpg"
    },
    {
-    "alt": "",
+    "alt": "0711 Padel in Stuttgart",
     "id": "25b78857ac218e4dc39e6cb3941a4a3e",
     "url": "/media/uploads/25b78857ac218e4dc39e6cb3941a4a3e.jpg"
    },
    {
-    "alt": "",
+    "alt": "0711 Padel in Stuttgart",
     "id": "33166a0d59d79fe9e1078f71f023b43a",
     "url": "/media/uploads/33166a0d59d79fe9e1078f71f023b43a.jpg"
    },
    {
-    "alt": "",
+    "alt": "0711 Padel in Stuttgart",
     "id": "4b8b1423272a8f29d3f900676b56f235",
     "url": "/media/uploads/4b8b1423272a8f29d3f900676b56f235.jpg"
    },
    {
-    "alt": "",
+    "alt": "0711 Padel in Stuttgart",
     "id": "fdd1bd00eea63458130a1cee9fd61606",
     "url": "/media/uploads/fdd1bd00eea63458130a1cee9fd61606.jpg"
    }
@@ -212,7 +242,8 @@
   "hersteller": "Padel Factory",
   "jahr": 2026,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Automaten"
   ],
   "kurz": "2 Double und 1 Single Court auf einer mobilen Plattform",
   "land": "Deutschland",
@@ -233,27 +264,27 @@
  {
   "bilder": [
    {
-    "alt": "",
+    "alt": "Padel Fokus Gartenstadt Dortmund in Dortmund",
     "id": "3925b935b2edf0c3f49093aa0c212ddb",
     "url": "/media/uploads/3925b935b2edf0c3f49093aa0c212ddb.jpg"
    },
    {
-    "alt": "",
+    "alt": "Padel Fokus Gartenstadt Dortmund in Dortmund",
     "id": "213a9f054d323000220165370548c427",
     "url": "/media/uploads/213a9f054d323000220165370548c427.jpg"
    },
    {
-    "alt": "",
+    "alt": "Padel Fokus Gartenstadt Dortmund in Dortmund",
     "id": "56235d58dd1c7f31387d9c9a0fae9ec7",
     "url": "/media/uploads/56235d58dd1c7f31387d9c9a0fae9ec7.jpg"
    },
    {
-    "alt": "",
+    "alt": "Padel Fokus Gartenstadt Dortmund in Dortmund",
     "id": "d4fc3a90c4bef13000525c963075aaf6",
     "url": "/media/uploads/d4fc3a90c4bef13000525c963075aaf6.jpg"
    },
    {
-    "alt": "",
+    "alt": "Padel Fokus Gartenstadt Dortmund in Dortmund",
     "id": "260402e62eaac27b2e27d73c0f2056d5",
     "url": "/media/uploads/260402e62eaac27b2e27d73c0f2056d5.jpg"
    }
@@ -279,32 +310,32 @@
  {
   "bilder": [
    {
-    "alt": "",
+    "alt": "Bavarian Padel Wallersdorf in Wallersdorf",
     "id": "a84f84c23a55ea6e437efd25c90a9efb",
     "url": "/media/uploads/a84f84c23a55ea6e437efd25c90a9efb.jpg"
    },
    {
-    "alt": "",
+    "alt": "Bavarian Padel Wallersdorf in Wallersdorf",
     "id": "46c47185ec3134f6a26cdf6e7b3fae2b",
     "url": "/media/uploads/46c47185ec3134f6a26cdf6e7b3fae2b.jpg"
    },
    {
-    "alt": "",
+    "alt": "Bavarian Padel Wallersdorf in Wallersdorf",
     "id": "e002e65fd039b5a33c0ee7f125b7a07f",
     "url": "/media/uploads/e002e65fd039b5a33c0ee7f125b7a07f.jpg"
    },
    {
-    "alt": "",
+    "alt": "Bavarian Padel Wallersdorf in Wallersdorf",
     "id": "421416587e7fe83eede6c5162460b71d",
     "url": "/media/uploads/421416587e7fe83eede6c5162460b71d.jpg"
    },
    {
-    "alt": "",
+    "alt": "Bavarian Padel Wallersdorf in Wallersdorf",
     "id": "9bf6f227399f4599fdf3ee972ebbcf33",
     "url": "/media/uploads/9bf6f227399f4599fdf3ee972ebbcf33.jpg"
    },
    {
-    "alt": "",
+    "alt": "Bavarian Padel Wallersdorf in Wallersdorf",
     "id": "4b9b04de26068e1941db4edd8eb78e4c",
     "url": "/media/uploads/4b9b04de26068e1941db4edd8eb78e4c.jpg"
    }
@@ -333,36 +364,38 @@
  {
   "bilder": [
    {
-    "alt": "Padel-Halle im Scheck Club München",
+    "alt": "Scheck Club München in München",
     "id": "8a1dd3de120416f1cf9ec7bd2de45dda",
     "url": "/media/uploads/8a1dd3de120416f1cf9ec7bd2de45dda.jpg"
    },
    {
-    "alt": "Padel-Halle im Scheck Club München",
+    "alt": "Scheck Club München in München",
     "id": "a5b1ead76ff421ef2585a90d24bed755",
     "url": "/media/uploads/a5b1ead76ff421ef2585a90d24bed755.jpg"
    },
    {
-    "alt": "Padel-Halle im Scheck Club München",
+    "alt": "Scheck Club München in München",
     "id": "18285e9a11bb1640f6fa0f95af25bf27",
     "url": "/media/uploads/18285e9a11bb1640f6fa0f95af25bf27.jpg"
    }
   ],
-  "courts": 12,
+  "courts": 4,
   "created": 1792830324661,
   "hersteller": "Padel Concept",
   "jahr": 2025,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Halle",
+   "Automaten"
   ],
-  "kurz": "12 Padelplätze mit Recyclingbeton",
+  "kurz": "Erweiterung der Padel Halle um vier Courts",
   "land": "Deutschland",
   "leistungen": [
    "Bau"
   ],
   "live": true,
   "ort": "München",
-  "text": "12 Padelplätze mit Recyclingbeton auf unserer Referenzanlage, eine der größten Padel-Anlagen Deutschlands.\n\nDie ehemalige Reit- und Soccerhalle wurde um vier Padelcourts von unserem Partner Padel Concept erweitert.",
+  "text": "Die ehemalige Reit- und Soccerhalle wurde um vier Padelcourts von unserem Partner Padel Concept erweitert.",
   "titel": "Scheck Club München",
   "updated": 1792830324661,
   "zielgruppe": "Kommerzieller Betreiber",
@@ -375,7 +408,8 @@
   "hersteller": "",
   "jahr": 2027,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Halle"
   ],
   "kurz": "4 überdachte Padel Courts und eine Neubau-Halle",
   "land": "Deutschland",
@@ -418,12 +452,12 @@
  {
   "bilder": [
    {
-    "alt": "",
+    "alt": "Sportinsel Taufkirchen in Taufkirchen bei München",
     "id": "b7909747ad6237ff8034ef0c32bde824",
     "url": "/media/uploads/b7909747ad6237ff8034ef0c32bde824.jpg"
    },
    {
-    "alt": "",
+    "alt": "Sportinsel Taufkirchen in Taufkirchen bei München",
     "id": "f11bd488f29216faff8c8b3e49dec733",
     "url": "/media/uploads/f11bd488f29216faff8c8b3e49dec733.jpg"
    }
@@ -450,13 +484,55 @@
   "id": "f2vqyx00j71aub16q8k2"
  },
  {
-  "bilder": [],
+  "bilder": [
+   {
+    "alt": "Court im Donau Padel Park bei Abendsonne",
+    "id": "57c1e633d31054e4de3a0abc2239128c",
+    "url": "/media/uploads/57c1e633d31054e4de3a0abc2239128c.jpg"
+   },
+   {
+    "alt": "Luftaufnahme des Donau Padel Park neben der Tennisanlage",
+    "id": "403bb9706e9780e378896f1462f59fb6",
+    "url": "/media/uploads/403bb9706e9780e378896f1462f59fb6.jpg"
+   },
+   {
+    "alt": "Luftaufnahme der Courts und Tennisplätze",
+    "id": "2209d66e92f80dbf81555e1cef52656c",
+    "url": "/media/uploads/2209d66e92f80dbf81555e1cef52656c.jpg"
+   },
+   {
+    "alt": "Courts von oben",
+    "id": "8a527a224bde7ce20b09030e916d51ed",
+    "url": "/media/uploads/8a527a224bde7ce20b09030e916d51ed.jpg"
+   },
+   {
+    "alt": "Spieler auf dem Court im Gegenlicht",
+    "id": "f2b9ac3a159716a34bf1c1b8a38e3d53",
+    "url": "/media/uploads/f2b9ac3a159716a34bf1c1b8a38e3d53.jpg"
+   },
+   {
+    "alt": "Courts in der Montage",
+    "id": "df2e9cc05fd80002d324513ac5d7e76b",
+    "url": "/media/uploads/df2e9cc05fd80002d324513ac5d7e76b.jpg"
+   },
+   {
+    "alt": "Fertige Tragschicht vor der Court-Montage",
+    "id": "d5c0d1ce8b6f8bb8121c541dc86ea1ae",
+    "url": "/media/uploads/d5c0d1ce8b6f8bb8121c541dc86ea1ae.jpg"
+   },
+   {
+    "alt": "Baustelle mit angeliefertem Court-Material",
+    "id": "227f715ca019b54fa91027afd60baf8f",
+    "url": "/media/uploads/227f715ca019b54fa91027afd60baf8f.jpg"
+   }
+  ],
   "courts": 4,
   "created": 1792845132109,
   "hersteller": "Padel Concept",
   "jahr": 2026,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Automaten"
   ],
   "kurz": "Bau von 3 Double und 1 Single Outdoor Courts",
   "land": "Deutschland",
@@ -497,44 +573,46 @@
  {
   "bilder": [
    {
-    "alt": "",
+    "alt": "H30 Fitness & Padel, The Hall 68 in Memmingen",
     "id": "c4cf718596f63c7cb489d87a25ca4681",
     "url": "/media/uploads/c4cf718596f63c7cb489d87a25ca4681.jpg"
    },
    {
-    "alt": "",
+    "alt": "H30 Fitness & Padel, The Hall 68 in Memmingen",
     "id": "704f48a5eb0f84c9b89a8c6eabd21426",
     "url": "/media/uploads/704f48a5eb0f84c9b89a8c6eabd21426.jpg"
    },
    {
-    "alt": "",
+    "alt": "H30 Fitness & Padel, The Hall 68 in Memmingen",
     "id": "e0d3885619b56cee2460f57c72476a37",
     "url": "/media/uploads/e0d3885619b56cee2460f57c72476a37.jpg"
    },
    {
-    "alt": "",
+    "alt": "H30 Fitness & Padel, The Hall 68 in Memmingen",
     "id": "8084ade3b65ea767e96452472cd9aab1",
     "url": "/media/uploads/8084ade3b65ea767e96452472cd9aab1.jpg"
    },
    {
-    "alt": "",
+    "alt": "H30 Fitness & Padel, The Hall 68 in Memmingen",
     "id": "bb55afe4e0d2c3d7a25706836d9ddad0",
     "url": "/media/uploads/bb55afe4e0d2c3d7a25706836d9ddad0.jpg"
    },
    {
-    "alt": "",
+    "alt": "H30 Fitness & Padel, The Hall 68 in Memmingen",
     "id": "0145f3c6330509456bb7f3f13e59e0e3",
     "url": "/media/uploads/0145f3c6330509456bb7f3f13e59e0e3.jpg"
    }
   ],
   "courts": 6,
   "created": 1792848613597,
-  "hersteller": "",
+  "hersteller": "100% Padel",
   "jahr": 2026,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Halle",
+   "Automaten"
   ],
-  "kurz": "Neubau Gym und Padel Club",
+  "kurz": "4 Double und 2 Single Courts in einer kernsanierten Brauereihalle",
   "land": "Deutschland",
   "leistungen": [
    "Beratung",
@@ -544,46 +622,46 @@
   ],
   "live": true,
   "ort": "Memmingen",
-  "text": "In einem alten Industriegebäude wurde ein brandneues Premium-Gym sowie ein Padel Club gebaut. Der Betreiber legt enorm viel Wert auf Details und Aufenthaltsqualität für alle Besucher. \nDie Courts kommen von unserem Lieferanten 100% Padel.",
-  "titel": "Padel 68",
-  "updated": 1792848613597,
+  "text": "In einer alten, komplett kernsanierten Brauereihalle sind 4 Double und 2 Single Courts entstanden, kombiniert mit einem Premium-Gym. Bauherr ist ein kommerzieller Betreiber, der enorm viel Wert auf Details und Aufenthaltsqualität legt.\nWir haben das Projekt gemeinsam mit den Eigentümern umgesetzt: mit padelspezifischer Beratung und Projektsteuerung über die gesamte Bauzeit. Die Courts kommen von unserem Partner 100% Padel.",
+  "titel": "H30 Fitness & Padel, The Hall 68",
+  "updated": 1795166448701,
   "zielgruppe": "Kommerzieller Betreiber",
   "id": "9hgmyzr0fjjl9l7jxya0"
  },
  {
   "bilder": [
    {
-    "alt": "",
+    "alt": "TC BW Neufahrn in Neufahrn bei München",
     "id": "dd6f8c9ceeaf2a8b7d7ec1c8e8ef2e84",
     "url": "/media/uploads/dd6f8c9ceeaf2a8b7d7ec1c8e8ef2e84.jpg"
    },
    {
-    "alt": "",
+    "alt": "TC BW Neufahrn in Neufahrn bei München",
     "id": "0c63c9a7ffe78e780b5532e00a59122a",
     "url": "/media/uploads/0c63c9a7ffe78e780b5532e00a59122a.jpg"
    },
    {
-    "alt": "",
+    "alt": "TC BW Neufahrn in Neufahrn bei München",
     "id": "3052a2ef3a0e869dbf0423e6211cc263",
     "url": "/media/uploads/3052a2ef3a0e869dbf0423e6211cc263.jpg"
    },
    {
-    "alt": "",
+    "alt": "TC BW Neufahrn in Neufahrn bei München",
     "id": "c406ebc6ac5fe055cb0599017e4582e4",
     "url": "/media/uploads/c406ebc6ac5fe055cb0599017e4582e4.jpg"
    },
    {
-    "alt": "",
+    "alt": "TC BW Neufahrn in Neufahrn bei München",
     "id": "1611dcf357f62ce20447dcbc274b8d58",
     "url": "/media/uploads/1611dcf357f62ce20447dcbc274b8d58.jpg"
    },
    {
-    "alt": "",
+    "alt": "TC BW Neufahrn in Neufahrn bei München",
     "id": "26137b6729aa64c26672b816f0dcb0e5",
     "url": "/media/uploads/26137b6729aa64c26672b816f0dcb0e5.jpg"
    },
    {
-    "alt": "",
+    "alt": "TC BW Neufahrn in Neufahrn bei München",
     "id": "7f0535cc4e84c6bd646a84a3bab4c50a",
     "url": "/media/uploads/7f0535cc4e84c6bd646a84a3bab4c50a.jpg"
    }
@@ -593,7 +671,8 @@
   "hersteller": "Padel Concept",
   "jahr": 2025,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Automaten"
   ],
   "kurz": "Bau von zwei Padelplätzen auf schlecht genutzten Tennisplätzen inklusive Automatenlösungen",
   "land": "Deutschland",
@@ -611,13 +690,30 @@
   "id": "ovoj62up5mtr30adbg8r"
  },
  {
-  "bilder": [],
+  "bilder": [
+   {
+    "alt": "Indoor-Courts im C-Hub Crailsheim",
+    "id": "66fbe270568d17906afdbbaded157625",
+    "url": "/media/uploads/66fbe270568d17906afdbbaded157625.jpg"
+   },
+   {
+    "alt": "Blick von oben auf die Courts im C-Hub",
+    "id": "3da0e49d9a1cd36c825b536b9a8c9d9f",
+    "url": "/media/uploads/3da0e49d9a1cd36c825b536b9a8c9d9f.jpg"
+   },
+   {
+    "alt": "Lounge mit Blick auf die Courts im C-Hub",
+    "id": "54abddad93ea4e5e783f6cf91ca77ca6",
+    "url": "/media/uploads/54abddad93ea4e5e783f6cf91ca77ca6.jpg"
+   }
+  ],
   "courts": 2,
   "created": 1792847822571,
   "hersteller": "Padel Factory",
   "jahr": 2026,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Halle"
   ],
   "kurz": "2 Double Indoor Courts",
   "land": "Deutschland",
@@ -633,13 +729,25 @@
   "id": "wcuxqnvad6nx0l3f7kjj"
  },
  {
-  "bilder": [],
+  "bilder": [
+   {
+    "alt": "Match auf dem Court im Padel Point Konradsreuth",
+    "id": "d5556b93478d57f9dce5da95b7d8c18a",
+    "url": "/media/uploads/d5556b93478d57f9dce5da95b7d8c18a.jpg"
+   },
+   {
+    "alt": "Panorama-Court zwischen Kiefern",
+    "id": "2290d5125aa45734429d787a40a0599a",
+    "url": "/media/uploads/2290d5125aa45734429d787a40a0599a.jpg"
+   }
+  ],
   "courts": 2,
   "created": 1792830646058,
   "hersteller": "Padel Concept",
   "jahr": 2026,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Automaten"
   ],
   "kurz": "Bau von zwei Padelcourts in einem Naherholungsgebiet",
   "land": "Deutschland",
@@ -684,7 +792,13 @@
   "id": "j51vwpfd4gfmh5l0hav9"
  },
  {
-  "bilder": [],
+  "bilder": [
+   {
+    "alt": "Outdoor-Courts beim TV Zellingen am Main",
+    "id": "7237a79a9866de0158de094155cf5ef7",
+    "url": "/media/uploads/7237a79a9866de0158de094155cf5ef7.jpg"
+   }
+  ],
   "courts": 2,
   "created": 1792847422657,
   "hersteller": "Padel Factory",
@@ -707,13 +821,20 @@
   "id": "sr7b0r0tkmh8je6vu7tn"
  },
  {
-  "bilder": [],
+  "bilder": [
+   {
+    "alt": "Rendering der geplanten Halle mit Courts beim TC Eichenau",
+    "id": "422ae612c3229e72adb1baeef3dcff74",
+    "url": "/media/uploads/422ae612c3229e72adb1baeef3dcff74.jpg"
+   }
+  ],
   "courts": 3,
   "created": 1792848888098,
   "hersteller": "Padel Factory",
   "jahr": 2027,
   "kategorien": [
-   "Padel"
+   "Padel",
+   "Halle"
   ],
   "kurz": "2 überdachte Double Courts und 1 Outdoor Double Court",
   "land": "Deutschland",
@@ -731,5 +852,76 @@
   "updated": 1792848888098,
   "zielgruppe": "Tennisverein",
   "id": "0yritkc60ak3vrjodshp"
+ },
+ {
+  "bilder": [],
+  "courts": 2,
+  "created": 1795176397873,
+  "hersteller": "Padel Factory",
+  "jahr": 2026,
+  "kategorien": [
+   "Padel"
+  ],
+  "kurz": "2 Outdoor Courts bei einer Tennishalle",
+  "land": "Deutschland",
+  "leistungen": [
+   "Beratung",
+   "Bau"
+  ],
+  "live": true,
+  "ort": "Aichach",
+  "text": "Bei einer Tennishalle in Aichach entstehen zwei Outdoor Courts von Padel Factory. Wir begleiten den Kunden von Anfang an.\nDas Fundament baut ein lokales Bauunternehmen, die elastische Tragschicht kommt von Polytan.",
+  "titel": "Aichach",
+  "updated": 1795176397873,
+  "zielgruppe": "",
+  "id": "lf491he99cwvz27rj2to"
+ },
+ {
+  "bilder": [],
+  "courts": 2,
+  "created": 1795176428935,
+  "hersteller": "Padel Factory",
+  "jahr": 2026,
+  "kategorien": [
+   "Padel"
+  ],
+  "kurz": "2 Outdoor Courts bei einer Tennisanlage",
+  "land": "Deutschland",
+  "leistungen": [
+   "Beratung",
+   "Bau"
+  ],
+  "live": true,
+  "ort": "Eging am See",
+  "text": "Auf einer Tennisanlage in Eging am See entstehen zwei Outdoor Courts von Padel Factory.\nDas Fundament baut ein lokales Bauunternehmen, die elastische Tragschicht kommt von Polytan.",
+  "titel": "Eging am See",
+  "updated": 1795176428935,
+  "zielgruppe": "",
+  "id": "6etu4ofkvxtc3hwbf1yr"
+ },
+ {
+  "bilder": [],
+  "courts": 3,
+  "created": 1795176611690,
+  "hersteller": "100% Padel",
+  "jahr": 2026,
+  "kategorien": [
+   "Padel",
+   "Halle",
+   "Automaten"
+  ],
+  "kurz": "3 Full-Panorama-Courts in einer Neubauhalle",
+  "land": "Deutschland",
+  "leistungen": [
+   "Beratung",
+   "Digitalisierung"
+  ],
+  "live": true,
+  "ort": "Straubing",
+  "text": "In einer Neubauhalle in Straubing entstehen für einen kommerziellen Betreiber drei Full-Panorama-Courts von 100% Padel.\nWir beraten vollumfänglich: bei den Courts, bei den Automatenlösungen und bei der Zutrittskontrolle.",
+  "titel": "Straubing",
+  "updated": 1795176611690,
+  "zielgruppe": "Kommerzieller Betreiber",
+  "id": "u6q0p9stv2reg1ojtuht"
  }
 ]
