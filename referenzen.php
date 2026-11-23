@@ -35,8 +35,44 @@ tc_page_start([
     <h1>Projekte, die wir <span class="kw">bewegt haben.</span></h1>
     <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen in ganz Deutschland, vom Tennisverein bis zum kommerziellen Betreiber.</p>
     <div class="c-stats r-stats" style="margin-top:44px">
-      <div><b>40+</b><span>Projekte, abgeschlossen und in Planung</span></div>
-      <div><b>12</b><span>Courts im Scheck Club, unserer Referenzanlage</span></div>
+      <div><b>10</b><span>Referenzprojekte</span></div>
+      <div><b>+30</b><span>weitere Projekte, abgeschlossen und in Planung</span></div>
+      <div><b>12</b><span>Padel-Courts im Scheck Club, unserer Referenzanlage</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band grid-bg" id="r-uebersicht">
+  <div class="inner">
+    <p class="label">Referenzen</p>
+    <h2 class="reveal">Padel-Anlagen in ganz <span class="hl">Deutschland.</span></h2>
+    <p class="lead">Vom Tennisverein bis zum kommerziellen Betreiber, von zwei Outdoor-Courts bis zur Padelhalle. Das sind unsere Referenzen.</p>
+    <ul class="r-f17">
+      <li><b>Scheck Club München</b><span>12 Padelplätze mit Recyclingbeton</span></li>
+      <li><b>SC Eching</b><span>Neubau Tennispark mit 5 Rebound Ace &amp; 2 Padel-Courts</span></li>
+      <li><b>Sporthochschule Köln</b><span>Padelhalle mit 4 Panorama Courts</span></li>
+      <li><b>Padel Anlage Bad Wiessee</b></li>
+      <li><b>Padel Point Konradsreuth</b><span>2 Outdoor Courts</span></li>
+      <li><b>Donau Padel Club</b><span>4 Outdoor Courts</span></li>
+      <li><b>Bavarian Padel</b><span>2 Outdoor Courts</span></li>
+      <li><b>FC Jengen</b><span>2 Outdoor Courts</span></li>
+      <li><b>VfL Kaltental / MyPadelClub</b><span>4 Outdoor Courts</span></li>
+      <li><b>TC Grün-Rot Mainburg</b><span>2 Outdoor Courts</span></li>
+      <li class="all"><b>+ 30 weitere Projekte</b><span>abgeschlossen und in Planung</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" id="r-scheck">
+  <div class="inner">
+    <p class="label">Festes Fundament</p>
+    <h2 class="reveal">Aufbau <span class="hl">Scheck Club München.</span></h2>
+    <p class="lead">Von der Bodenvorbereitung über die Betonplatte bis zum fertig montierten Court, dokumentiert an unserer eigenen Anlage. Mit 12 Padel-Courts ist der <a href="/team">Scheck Club</a> unsere Referenzanlage und eine der größten Deutschlands. So bauen wir auch dein <a href="/padel-court-bauen">Padel-Court-Fundament</a>.</p>
+    <div class="r-steps">
+      <figure class="reveal"><img src="/media/referenzen/scheck-aufbau-1.jpg" alt="Scheck Club München: Bodenvorbereitung für einen neuen Padel-Court in der Halle" loading="lazy"></figure>
+      <figure class="reveal"><img src="/media/referenzen/scheck-aufbau-2.jpg" alt="Scheck Club München: Schalung für die Betonplatte des Padel-Courts" loading="lazy"></figure>
+      <figure class="reveal"><img src="/media/referenzen/scheck-aufbau-3.jpg" alt="Scheck Club München: Detail der Schalung am Fundament" loading="lazy"></figure>
+      <figure class="reveal"><img src="/media/referenzen/scheck-aufbau-4.jpg" alt="Scheck Club München: fertig montierte Padel-Courts in der Halle" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -45,9 +81,9 @@ tc_page_start([
   <div class="inner">
     <div class="r-top">
       <div>
-        <p class="label">Referenzen</p>
-        <h2 class="reveal">Padel-Anlagen in ganz <span class="hl">Deutschland.</span></h2>
-        <p class="lead">Unsere eigene Referenzanlage ist der <a href="/team">Scheck Club in Unterföhring bei München</a>. Mit 12 Padel-Courts ist er eine der größten Anlagen Deutschlands. Von hier aus begleiten wir Projekte jeder Größe, von zwei Outdoor-Courts auf einem Tennisplatz über <a href="/courts">mobile Court-Plattformen</a> bis zur neuen <a href="/halle">Padel-Halle</a>.</p>
+        <p class="label">Alle Projekte</p>
+        <h2 class="reveal">Projekte im <span class="hl">Detail.</span></h2>
+        <p class="lead">Hier findest du unsere Referenzen und weitere Projekte mit Bildern und Details, von <a href="/courts">mobilen Court-Plattformen</a> bis zur neuen <a href="/halle">Padel-Halle</a>. Klick auf ein Projekt für mehr Infos.</p>
       </div>
       <div class="r-admin" id="rAdmin" hidden>
         <button type="button" class="btn" id="rNew">+ Projekt anlegen</button>
