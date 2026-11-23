@@ -32,13 +32,14 @@ tc_page_start([
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Referenzen</p>
     <p class="label" style="color:var(--white)" data-type>Referenzen</p>
-    <h1>Projekte, die wir <span class="kw">bewegt haben.</span></h1>
+    <h1>Padel-Projekte, die wir <span class="kw">bewegt haben.</span></h1>
     <p class="lead">Wir entwickeln, planen und bauen Padel-Anlagen in ganz Deutschland, vom Tennisverein bis zum kommerziellen Betreiber.</p>
     <div class="c-stats r-stats" style="margin-top:44px">
       <div><b>10</b><span>Referenzprojekte</span></div>
       <div><b>+30</b><span>weitere Projekte, abgeschlossen und in Planung</span></div>
       <div><b>12</b><span>Padel-Courts im Scheck Club, unserer Referenzanlage</span></div>
     </div>
+    <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Projekt anfragen</a><a class="btn ghost" href="#r-liste">Alle Projekte ansehen</a></div>
   </div>
 </section>
 
@@ -48,16 +49,16 @@ tc_page_start([
     <h2 class="reveal">Padel-Anlagen in ganz <span class="hl">Deutschland.</span></h2>
     <p class="lead">Vom Tennisverein bis zum kommerziellen Betreiber, von zwei Outdoor-Courts bis zur Padelhalle. Das sind unsere Referenzen.</p>
     <ul class="r-f17">
-      <li><b>Scheck Club München</b><span>12 Padelplätze mit Recyclingbeton</span></li>
-      <li><b>SC Eching</b><span>Neubau Tennispark mit 5 Rebound Ace &amp; 2 Padel-Courts</span></li>
-      <li><b>Sporthochschule Köln</b><span>Padelhalle mit 4 Panorama Courts</span></li>
-      <li><b>Padel Anlage Bad Wiessee</b></li>
-      <li><b>Padel Point Konradsreuth</b><span>2 Outdoor Courts</span></li>
-      <li><b>Donau Padel Club</b><span>4 Outdoor Courts</span></li>
-      <li><b>Bavarian Padel</b><span>2 Outdoor Courts</span></li>
-      <li><b>FC Jengen</b><span>2 Outdoor Courts</span></li>
-      <li><b>VfL Kaltental / MyPadelClub</b><span>4 Outdoor Courts</span></li>
-      <li><b>TC Grün-Rot Mainburg</b><span>2 Outdoor Courts</span></li>
+      <li><a href="#referenzen/ji3rdvvmh9qgx5t0dd5p"><b>Scheck Club München</b><span>12 Padelplätze mit Recyclingbeton</span><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/j51vwpfd4gfmh5l0hav9"><b>SC Eching</b><span>Neubau Tennispark mit 5 Rebound Ace &amp; 2 Padel-Courts</span><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/vm3vl4d7wzxabm92z3o4"><b>Sporthochschule Köln</b><span>Padelhalle mit 4 Panorama Courts</span><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/05jhvfy737ano5y7zgg4"><b>Padel Anlage Bad Wiessee</b><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/id4m500u98242zvwsv39"><b>Padel Point Konradsreuth</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/mw0x5hzgv9iha2km30r2"><b>Donau Padel Club</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/7b834ar449mjjy5q316a"><b>Bavarian Padel</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/qav386pqfdsv1tckcdsh"><b>FC Jengen</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/jm2lhzv2t22b12fyrqpe"><b>VfL Kaltental / MyPadelClub</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
+      <li><a href="#referenzen/jjli2ofqq3mrxlemw5cn"><b>TC Grün-Rot Mainburg</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
       <li class="all"><b>+ 30 weitere Projekte</b><span>abgeschlossen und in Planung</span></li>
     </ul>
   </div>
