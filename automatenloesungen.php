@@ -62,7 +62,7 @@ tc_page_start([
 
 <section class="band grid-bg" id="a-ablauf">
   <div class="inner">
-    <p class="label">So funktioniert's</p>
+    <p class="label" data-type>So funktioniert's</p>
     <h2 class="reveal">Buchen. Öffnen. <span class="hl">Spielen.</span></h2>
     <p class="lead">Deine Spieler leihen und kaufen selbstständig, bargeldlos und ohne Wartezeit. Du verwaltest alles per App oder Display, auch aus der Ferne.</p>
     <ol class="flow" id="flow">
@@ -72,16 +72,16 @@ tc_page_start([
       <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 16a10 10 0 1 0 3-7"/><path d="M6 4v6h6"/></svg></i><h4>Zurückgeben</h4><p>Schläger zurück ins Fach, Kaution wird freigegeben.</p></li>
     </ol>
     <div class="cards c3">
-      <article class="card reveal"><div class="k">Digitalisierung</div><h3>100 % automatisiert</h3><p>Vollautomatischer Verleih und Verkauf, rund um die Uhr, ohne Personal. Remote-Verwaltung per App oder Display, Telemetrie und Software-Updates inklusive.</p></article>
-      <article class="card reveal"><div class="k">Zusatzeinnahmen</div><h3>Mehr Umsatz</h3><p>Schlägerverleih, Bälle, Griffbänder, Snacks und Getränke: direkte Zusatzerlöse auf deiner Anlage, auch dann, wenn niemand vor Ort ist.</p></article>
-      <article class="card reveal"><div class="k">Community</div><h3>Mehr Zeit</h3><p>Kein Schlüsseldienst, kein Kassieren, kein Nachfragen an der Theke. Dein Team kümmert sich um die Spieler statt um die Logistik.</p></article>
+      <article class="card reveal"><div class="k">Digitalisierung</div><h3 data-type>100 % automatisiert</h3><p>Vollautomatischer Verleih und Verkauf, rund um die Uhr, ohne Personal. Remote-Verwaltung per App oder Display, Telemetrie und Software-Updates inklusive.</p></article>
+      <article class="card reveal"><div class="k">Zusatzeinnahmen</div><h3 data-type>Mehr Umsatz</h3><p>Schlägerverleih, Bälle, Griffbänder, Snacks und Getränke: direkte Zusatzerlöse auf deiner Anlage, auch dann, wenn niemand vor Ort ist.</p></article>
+      <article class="card reveal"><div class="k">Community</div><h3 data-type>Mehr Zeit</h3><p>Kein Schlüsseldienst, kein Kassieren, kein Nachfragen an der Theke. Dein Team kümmert sich um die Spieler statt um die Logistik.</p></article>
     </div>
   </div>
 </section>
 
 <section class="band" id="a-produkte">
   <div class="inner">
-    <p class="label">Produkte</p>
+    <p class="label" data-type>Produkte</p>
     <h2 class="reveal">Der richtige Automat für deine <span class="hl">Anlage.</span></h2>
     <p class="lead">Zehn Padel-Automaten von drei Partnern, vom Schläger-Verleihautomaten bis zum gekühlten Snackautomaten. Filtere nach dem, was du anbieten willst.</p>
     <div class="filters" role="group" aria-label="Produkte filtern">
@@ -93,24 +93,24 @@ tc_page_start([
     <div class="prods" id="prods">
       <article class="prod" data-cat="verleih">
         <figure class="ph photo"><img src="/media/automaten/sg12.jpg" alt="Verleihautomat Padel Premium mit 12 Fächern" loading="lazy"></figure>
-        <div class="pb"><div class="pk">Sportogo · Verleihautomat</div><h3>Padel Premium 12 Fach</h3>
+        <div class="pb"><div class="pk">Sportogo · Verleihautomat</div><h3 data-type>Padel Premium 12 Fach</h3>
         <ul><li>45 × 54 × 194 cm, 75 kg, 230 V / LAN</li><li>Fachgröße innen 135 × 385 × 535 mm</li><li>7" Touchscreen, Plexiglasfront, LED</li><li>Bargeldlos, Remote-Verwaltung</li><li>In Blau und Schwarz</li><li>12 Monate Garantie</li></ul>
         <div class="price"><b>4.950 €</b><span>+ 49 €/Monat Grundgebühr</span></div></div>
       </article>
       <article class="prod" data-cat="verleih">
         <figure class="ph photo"><img src="/media/automaten/sg24.jpg" alt="Zwei Verleihautomaten Padel Premium mit insgesamt 24 Fächern" loading="lazy"></figure>
-        <div class="pb"><div class="pk">Sportogo · Verleihautomat</div><h3>Padel Premium 24 Fach</h3>
+        <div class="pb"><div class="pk">Sportogo · Verleihautomat</div><h3 data-type>Padel Premium 24 Fach</h3>
         <ul><li>90 × 54 × 194 cm, 150 kg, 230 V / LAN</li><li>Fachgröße innen 135 × 385 × 535 mm</li><li>7" Touchscreen, Plexiglasfront, LED</li><li>Bargeldlos, Remote-Verwaltung</li><li>In Blau und Schwarz</li><li>12 Monate Garantie</li></ul>
         <div class="price"><b>6.950 €</b><span>+ 49 €/Monat Grundgebühr</span></div></div>
       </article>
       <article class="prod" data-cat="verleih">
         <figure class="ph cut"><img src="/media/automaten/rentalbox.webp" alt="RentalBOX Schläger-Verleihautomat" loading="lazy"></figure>
-        <div class="pb"><div class="pk">Pure Vending · Verleihautomat</div><h3>RentalBOX</h3>
-        <ul><li>Verleih mit Sicherheitskaution</li><li>Mietdauer und Preise frei einstellbar</li><li>Padel- und Pickleballschläger</li><li>Indoor oder Outdoor (+ 500 €, überdacht)</li><li>10,1" Touchscreen (S), 21,5" ab Größe M</li><li>Zzgl. Nayax-Terminal 400 €, Payment-Gebühr 12 €/Monat</li></ul>
+        <div class="pb"><div class="pk">Pure Vending · Verleihautomat</div><h3 data-type>RentalBOX</h3>
+        <ul><li>Verleih mit Sicherheitskaution</li><li>Mietdauer und Preise frei einstellbar</li><li>Padel- und Pickleballschläger</li><li>Optional Verkauf von Bällen und Griffbändern</li><li>Indoor oder Outdoor (+ 500 €, überdacht)</li><li>10,1" Touchscreen (S), 21,5" ab Größe M, Ethernet / WLAN</li><li>Zzgl. Nayax-Terminal 400 €, Payment-Gebühr 12 €/Monat</li></ul>
         <div class="price"><b>ab 5.190 €</b><span>Mietkauf ab 104 €/Monat</span></div></div>
       </article>
       <div class="prod cfgrow" data-cat="verleih" id="a-konfigurator">
-        <div class="cfg-head"><div class="pk">RentalBOX-Konfigurator</div><h3>Wie viele <span class="kw">Courts</span> hast du?</h3><p>Die RentalBOX wächst mit deiner Anlage. Schieb den Regler auf deine Court-Anzahl und sieh, welche Größe passt.</p></div>
+        <div class="cfg-head"><div class="pk">RentalBOX-Konfigurator</div><h3 data-type>Wie viele <span class="kw">Courts</span> hast du?</h3><p>Die RentalBOX wächst mit deiner Anlage. Schieb den Regler auf deine Court-Anzahl und sieh, welche Größe passt.</p></div>
         <div class="cfg">
           <div class="cfg-in">
             <label for="courtsRange" class="cfg-lab">Courts auf deiner Anlage: <b id="courtsOut">3</b></label>
@@ -129,44 +129,44 @@ tc_page_start([
       </div>
       <article class="prod" data-cat="verleih">
         <figure class="ph photo"><img src="/media/automaten/zuply_racx.jpg" alt="Zuply Racx IQ Verleihautomat mit Gewichtssensoren" loading="lazy"></figure>
-        <div class="pb"><div class="pk">Zuply · Premium · Indoor</div><h3>Racx IQ + Payx 8</h3>
-        <ul><li>Bis zu 50 Produkte, 35 kg pro Fach</li><li>Gewichtssensoren für maximale Sicherheit</li><li>8" Touchscreen, QR-Code-Reader</li><li>Verleih plus Bälle und Zubehör</li><li>Optional mit 4G-Router (680 €)</li><li>12 Monate Garantie</li></ul>
+        <div class="pb"><div class="pk">Zuply · Premium · Indoor</div><h3 data-type>Racx IQ + Payx 8</h3>
+        <ul><li>Bis zu 50 Produkte, 10 pro Fach, bis 35 kg pro Fach</li><li>Gewichtssensoren für maximale Sicherheit</li><li>8" Touchscreen, QR-Code-Reader</li><li>Verleih plus Bälle und Zubehör</li><li>Optional mit 4G-Router (680 €)</li><li>12 Monate Garantie</li></ul>
         <div class="price"><b>8.483 €</b><span>+ 59 €/Monat Grundgebühr</span></div></div>
       </article>
       <article class="prod" data-cat="baelle">
         <figure class="ph art" aria-hidden="true"><svg viewBox="0 0 200 240" class="cans"><g class="can"><rect x="34" y="40" width="40" height="150" rx="6"/><circle cx="54" cy="70" r="13"/><circle cx="54" cy="110" r="13"/><circle cx="54" cy="150" r="13"/></g><g class="can" style="animation-delay:.25s"><rect x="80" y="40" width="40" height="150" rx="6"/><circle cx="100" cy="70" r="13"/><circle cx="100" cy="110" r="13"/><circle cx="100" cy="150" r="13"/></g><g class="can" style="animation-delay:.5s"><rect x="126" y="40" width="40" height="150" rx="6"/><circle cx="146" cy="70" r="13"/><circle cx="146" cy="110" r="13"/><circle cx="146" cy="150" r="13"/></g><text x="100" y="222" text-anchor="middle">BIS ZU 100 DOSEN</text></svg></figure>
-        <div class="pb"><div class="pk">Sportogo · Ballautomat</div><h3>Padel Ball Premium</h3>
+        <div class="pb"><div class="pk">Sportogo · Ballautomat</div><h3 data-type>Padel Ball Premium</h3>
         <ul><li>Bis zu 100 Balldosen, 3er und 4er</li><li>45 × 54 × 194 cm, 75 kg</li><li>Plexiglasfront, LED, bargeldlos</li><li>Modular kombinierbar mit Premium 12/24</li><li>12 Monate Garantie</li></ul>
         <div class="price"><b>3.500 €</b><span>netto</span></div></div>
       </article>
       <article class="prod" data-cat="baelle">
         <figure class="ph cut"><img src="/media/automaten/sportsbox.webp" alt="SportsBOX Verkaufsautomat für Bälle und Zubehör" loading="lazy"></figure>
-        <div class="pb"><div class="pk">Pure Vending · Sportautomat</div><h3>SportsBOX</h3>
-        <ul><li>Bis zu 144 Balldosen, 88 Griffbänder und Zubehör</li><li>21,5" Touchscreen, digitaler Warenkorb</li><li>126 × 77 × 194 cm, 240 kg</li><li>Outdoor-Version (überdacht)</li><li>Zzgl. Nayax-Terminal 400 €, Payment-Gebühr 12 €/Monat</li></ul>
+        <div class="pb"><div class="pk">Pure Vending · Sportautomat</div><h3 data-type>SportsBOX</h3>
+        <ul><li>Bis zu 144 Balldosen, 88 Griffbänder, Dämpfer und Zubehör</li><li>21,5" Touchscreen, digitaler Warenkorb</li><li>126 × 77 × 194 cm, 240 kg</li><li>Ungekühlt, Ethernet / WLAN, 230 V</li><li>Outdoor-Version (überdacht)</li><li>Zzgl. Nayax-Terminal 400 €, Payment-Gebühr 12 €/Monat</li></ul>
         <div class="price"><b>5.490 €</b><span>Mietkauf ab 110 €/Monat</span></div></div>
       </article>
       <article class="prod" data-cat="snacks baelle">
         <figure class="ph cut"><img src="/media/automaten/touch_business.webp" alt="Snack Touch Business Verkaufsautomat" loading="lazy"></figure>
-        <div class="pb"><div class="pk">Sportogo · Verkaufsautomat</div><h3>Snack Touch Business</h3>
+        <div class="pb"><div class="pk">Sportogo · Verkaufsautomat</div><h3 data-type>Snack Touch Business</h3>
         <ul><li>Bis zu 229 Produkte, 50 Balldosen</li><li>Gekühlt +3 °C, zwei Temperaturzonen</li><li>7" Touchscreen, Wi-Fi und Bluetooth</li><li>75 × 79 × 183 cm, 236 kg</li><li>Ohne Ball-Option: 6.640 €</li><li>12 Monate Garantie</li></ul>
         <div class="price"><b>7.140 €</b><span>+ 29 €/Monat Grundgebühr</span></div></div>
       </article>
       <article class="prod" data-cat="snacks baelle">
         <figure class="ph cut dark"><img src="/media/automaten/touch_premium.webp" alt="Snack Touch Premium Plus Verkaufsautomat" loading="lazy"></figure>
-        <div class="pb"><div class="pk">Sportogo · Verkaufsautomat</div><h3>Snack Touch Premium Plus</h3>
+        <div class="pb"><div class="pk">Sportogo · Verkaufsautomat</div><h3 data-type>Snack Touch Premium Plus</h3>
         <ul><li>Bis zu 444 Produkte, 100 Balldosen</li><li>10" Touch-Tablet, LED-Preisleisten</li><li>Gekühlt, Einbruchsschutz</li><li>106 × 79 × 183 cm, 348 kg</li><li>12 Monate Garantie</li></ul>
         <div class="price"><b>9.680 €</b><span>+ 29 €/Monat Grundgebühr</span></div></div>
       </article>
       <article class="prod" data-cat="snacks baelle">
         <figure class="ph cut"><img src="/media/automaten/dualbox.webp" alt="DualBOX Lift Automat für Getränke, Snacks und Bälle" loading="lazy"></figure>
-        <div class="pb"><div class="pk">Pure Vending · Kombiautomat</div><h3>DualBOX Lift</h3>
+        <div class="pb"><div class="pk">Pure Vending · Kombiautomat</div><h3 data-type>DualBOX Lift</h3>
         <ul><li>Gekühlt: 208 Flaschen/Dosen und 112 Snacks</li><li>Ungekühlt: 48 Balldosen, 33 Griffbänder</li><li>Produktlift, bruchsicher auch für Glas</li><li>145 × 85 × 197 cm, 370 kg</li><li>Optional Altersprüfung (595 €)</li><li>Outdoor-Version: 6.690 €</li><li>Zzgl. Nayax-Terminal 400 €, Payment-Gebühr 12 €/Monat</li></ul>
         <div class="price"><b>5.990 €</b><span>Mietkauf ab 120 €/Monat</span></div></div>
       </article>
       <article class="prod" data-cat="snacks verleih">
         <figure class="ph photo"><img src="/media/automaten/zuply_combo.jpg" alt="Zuply Linx und Racx im Padelbee-Branding" loading="lazy"></figure>
-        <div class="pb"><div class="pk">Zuply · Premium · Indoor</div><h3>Linx IQ + Payx 8</h3>
-        <ul><li>Gekühlt 0–4 °C, Drinks und Snacks</li><li>50 Produkte, 35 kg pro Fach, Gewichtssensoren</li><li>8" Touch-Tablet, QR-Code-Reader</li><li>Im Bild kombiniert mit Racx IQ, in deinem Branding</li><li>Optional mit 4G-Router (680 €)</li><li>12 Monate Garantie</li></ul>
+        <div class="pb"><div class="pk">Zuply · Premium · Indoor</div><h3 data-type>Linx IQ + Payx 8</h3>
+        <ul><li>Gekühlt 0–4 °C, Drinks und Snacks</li><li>50 Produkte, 10 pro Fach, 35 kg pro Fach, Gewichtssensoren</li><li>20 Fachtrenner</li><li>8" Touch-Tablet, QR-Code-Reader</li><li>Im Bild kombiniert mit Racx IQ, in deinem Branding</li><li>Optional mit 4G-Router (680 €)</li><li>12 Monate Garantie</li></ul>
         <div class="price"><b>19.180 €</b><span>+ 58 €/Monat Grundgebühr</span></div></div>
       </article>
     </div>
@@ -176,13 +176,13 @@ tc_page_start([
 
 <section class="band grid-bg" style="background-color:var(--grey-050)" id="a-smart">
   <div class="inner">
-    <p class="label">Smart Solutions</p>
+    <p class="label" data-type>Smart Solutions</p>
     <h2 class="reveal">Mehr Kontrolle. Mehr <span class="hl">Effizienz.</span></h2>
     <p class="lead">Licht und Zugang laufen automatisch mit deinen Buchungen. Kein Licht brennt umsonst, niemand braucht einen Schlüssel.</p>
     <div class="smartwrap">
       <article class="smartcard reveal">
         <figure class="ph art" aria-hidden="true"><svg viewBox="0 0 200 240" class="smartsvg"><circle class="bulb" cx="70" cy="80" r="30"/><path d="M58 112h24M60 122h20" class="ln"/><rect x="120" y="60" width="44" height="80" class="lock"/><circle cx="150" cy="100" r="5" class="dot"/><path d="M40 170h120" class="ln"/><circle cx="100" cy="170" r="6" class="pulse"/><text x="100" y="222" text-anchor="middle">LICHT · ZUGANG · BUCHUNG</text></svg></figure>
-        <div class="pb"><div class="pk">Sportogo · Smart Solutions</div><h3>Smart Access &amp; Light Control</h3>
+        <div class="pb"><div class="pk">Sportogo · Smart Solutions</div><h3 data-type>Smart Access &amp; Light Control</h3>
         <ul><li>Licht schaltet automatisch mit der Buchung</li><li>Zugangskontrolle mit der Buchungs-App verknüpft</li><li>Relais und elektrische Schlösser nicht inkl.</li><li>Installationsanleitung für den Elektriker</li></ul>
         <div class="price"><b>2.000 €</b><span>einmalig, netto</span></div></div>
       </article>
@@ -202,12 +202,12 @@ tc_page_start([
 
 <section class="band" id="a-finanzierung">
   <div class="inner">
-    <p class="label">Finanzierung</p>
+    <p class="label" data-type>Finanzierung</p>
     <h2 class="reveal">Flexibel <span class="hl">finanziert.</span></h2>
     <p class="lead">Kaufen, leasen oder im Mietkauf: Über den Finanzierungspartner von Pure Vending findest du die Variante, die zu dir passt. Konditionen bekommst du über uns.</p>
     <div class="vs">
-      <article class="card reveal"><h3>Leasing <small>ab 109 €/Monat</small></h3><ul class="ticks"><li>Leasinggeber bleibt Eigentümer</li><li>Keine Kaufpflicht, Option auf Übernahme zum Restwert</li></ul></article>
-      <article class="card reveal"><h3>Mietkauf <small>ab 104 €/Monat</small></h3><ul class="ticks"><li>Wirtschaftliches Eigentum ab Tag 1</li><li>Rechtliches Eigentum nach der letzten Rate</li></ul></article>
+      <article class="card reveal"><h3 data-type>Leasing <small>ab 109 €/Monat</small></h3><ul class="ticks"><li>Leasinggeber bleibt Eigentümer</li><li>Keine Kaufpflicht, Option auf Übernahme zum Restwert</li></ul></article>
+      <article class="card reveal"><h3 data-type>Mietkauf <small>ab 104 €/Monat</small></h3><ul class="ticks"><li>Wirtschaftliches Eigentum ab Tag 1</li><li>Rechtliches Eigentum nach der letzten Rate</li></ul></article>
     </div>
     <div class="ideal"><span class="k">Ideal für</span><span>Tennisvereine</span><span>Padel-Clubs</span><span>Sporthallen</span><span>Sporthotels</span><span>Eventveranstalter</span></div>
     <p class="fine" style="color:var(--muted)">Monatliche Rate „ab“, abhängig von Laufzeit, Schlussrate und Konfiguration. Beispiel: 48 Monate, 20 % Schlussrate, Bonität vorausgesetzt. Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.</p>
@@ -216,12 +216,12 @@ tc_page_start([
 
 <section class="band dark grid-bg" id="a-partner">
   <div class="inner">
-    <p class="label">Unsere Automaten-Partner</p>
+    <p class="label" data-type>Unsere Automaten-Partner</p>
     <h2 class="reveal">Drei Partner. <span class="kw">Ein</span> Ansprechpartner.</h2>
     <div class="cards c3">
-      <article class="card reveal"><div class="k">Österreich</div><h3>Sportogo</h3><p>Dein Partner für digitale Verleih- und Verkaufsautomaten speziell für Padel. Plexiglasfächer mit LED, Smart Access und Lichtsteuerung, verknüpft mit deiner Buchungs-App.</p></article>
-      <article class="card reveal"><div class="k">Gütersloh · 9 Länder</div><h3>Pure Vending</h3><p>Sport Vending. Next Level. Automatenlösungen für Padel- und Tennisanlagen mit RentalBOX und Kautionssystem, SportsBOX, DualBOX Lift und flexibler Finanzierung.</p></article>
-      <article class="card reveal"><div class="k">Niederlande · Produktion Italien</div><h3>Zuply</h3><p>Premium Vending für Indoor-Clubs. Mehr Umsatz bei weniger Arbeit dank großem Fassungsvermögen, dazu Gewichtssensoren für maximale Sicherheit. Auf Wunsch komplett in deinem Branding.</p></article>
+      <article class="card reveal"><div class="k">Österreich</div><h3 data-type>Sportogo</h3><p>Dein Partner für digitale Verleih- und Verkaufsautomaten speziell für Padel. Plexiglasfächer mit LED, Smart Access und Lichtsteuerung, verknüpft mit deiner Buchungs-App.</p></article>
+      <article class="card reveal"><div class="k">Gütersloh · 9 Länder</div><h3 data-type>Pure Vending</h3><p>Sport Vending. Next Level. Automatenlösungen für Padel- und Tennisanlagen mit RentalBOX und Kautionssystem, SportsBOX, DualBOX Lift und flexibler Finanzierung. Dazu Online-Verwaltung, Mobile App und 21,5" Touchscreens mit digitalem Warenkorb und Werbe-Display.</p></article>
+      <article class="card reveal"><div class="k">Niederlande · Produktion Italien</div><h3 data-type>Zuply</h3><p>Premium Vending für Indoor-Clubs. Mehr Umsatz bei weniger Arbeit dank großem Fassungsvermögen, dazu Gewichtssensoren für maximale Sicherheit. Auf Wunsch komplett in deinem Branding.</p></article>
     </div>
   </div>
 </section>
