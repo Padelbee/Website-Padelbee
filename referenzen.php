@@ -61,7 +61,7 @@ tc_page_start([
       <li><b data-type data-speed="38">FC Jengen</b><span>2 Outdoor Courts</span><em class="plan">In Planung</em></li>
       <li><a href="#referenzen/jm2lhzv2t22b12fyrqpe"><b data-type data-speed="38">Padel Süd, VfL Kaltental</b><span>4 Outdoor Courts</span><em>Details ansehen</em></a></li>
       <li><a href="#referenzen/jjli2ofqq3mrxlemw5cn"><b data-type data-speed="38">TC Grün-Rot Mainburg</b><span>2 Outdoor Courts</span><em>Details ansehen</em></a></li>
-      <li class="all"><a href="#r-liste"><b data-type data-speed="38">+ 30 weitere Projekte</b><span>abgeschlossen und in Planung</span><em>Alle ansehen</em></a></li>
+      <li class="all"><a href="#r-liste"><b data-type data-speed="38">+ 30 weitere Projekte</b><span>abgeschlossen und in Planung</span><em>Auswahl ansehen</em></a></li>
     </ul>
   </div>
 </section>
