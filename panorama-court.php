@@ -3,7 +3,7 @@ require __DIR__ . '/inc/tc/layout.php';
 // Inhalt nach der Courts-Präsentation 2026 (Folie 4, 5, 10, 15, 19 bis 22, 26) und
 // Martins neuestem Entwurf (the-court.com/courts, Variante Panorama, Stand 23.11.2026).
 $galis = [
-    ['Mundial 90/160', 'Das klassische Modell verbindet ein einheitliches, schlichtes Design mit herausragender Stabilität durch robuste Eckpfeiler. Der vielseitigste Court der Range.', 'Panoramic', 'Filux', 'Galis', '90/160 km/h', '/media/courts/modelle/galis-19.jpg'],
+    ['Mundial 90/160', 'Der Panorama-Court schlechthin. Das klassische Modell verbindet ein einheitliches, schlichtes Design mit herausragender Stabilität durch robuste Eckpfeiler. Der vielseitigste Court der Range.', 'Panoramic', 'Filux', 'Galis', '90/160 km/h', '/media/courts/modelle/galis-19.jpg'],
     ['M360', 'Eine Weiterentwicklung des Mundial mit schlankem, abgerundetem Eckpfeiler. Die Struktur verbindet Stabilität und Eleganz und erweitert die Sicht auf den Court.', 'Panoramic', 'Filux', 'Galis', '90 km/h', '/media/courts/modelle/galis-20.jpg'],
     ['Atlas', 'Die Evolution des Mundial ohne Eckpfeiler. Mehr Sichtbarkeit und eine klare Ästhetik, entwickelt, um sich in jedes Umfeld einzufügen.', 'Ultrapanoramic', 'Filux', 'Galis', '68 km/h', '/media/courts/modelle/galis-21.jpg'],
     ['Wilson 90/160', 'Aus der Verbindung von Padel Galis und Wilson. Die Eckpfeiler geben hohe Stabilität und verbessern die Sicht.', 'Panoramic', '4 × 64 LED', 'V-Shape', '90/160 km/h', '/media/courts/modelle/galis-22.jpg', ['Wilson-Individualisierungen', 'Hochglanzlackierung', 'Premium-Beleuchtung']],
@@ -106,7 +106,7 @@ $v = [
     ],
     'extra_html' => $galisHtml,
     'faq' => [
-        ['frage' => 'Für wen eignet sich der Panorama Court?', 'antwort' => 'Der Panorama Court hat weniger sichtbare Streben und größere Glasflächen, Zuschauer sehen mehr vom Spiel. Damit ist er die goldene Mitte für Clubs mit Anspruch. Unsere Faustregel ist einfach. Wo Zuschauer stehen, lohnt sich Panorama. Für einen reinen Show-Court mit fast durchgehendem Glas gibt es Full-Panorama, mehr dazu bei den <a href="/courts#c-systeme">Court-Varianten</a>.'],
+        ['frage' => 'Für wen eignet sich der Panorama Court?', 'antwort' => 'Der Panorama Court passt zu Clubs mit Anspruch, bei denen Zuschauer mehr vom Spiel sehen sollen. Unsere Faustregel ist einfach. Wo Zuschauer stehen, lohnt sich Panorama, wo Wind und Wetter wirken, punktet Standard. Mehr dazu beim <a href="/standard-court">Standard Court</a> und beim <a href="/premier-court">Full-Panorama Court</a>.'],
         ['frage' => 'Was kostet ein Panorama Court?', 'antwort' => 'Der Wing Panoramic von Padel Factory kostet ab 28.150 € netto pro Court, inklusive Stahlkonstruktion, 12-mm-Glas-Kit, fibrilliertem Kunstrasen und 8 Flutlichtstrahlern, zuzüglich Übernachtungs- und Verpflegungskosten. Der Endpreis hängt von Hersteller und Ausstattung ab. Für die Gesamtkalkulation kommt das Fundament mit einem Richtwert von rund 35.000 € dazu, mehr dazu unter <a href="/courts#c-fundament">Fundament</a>.'],
         ['frage' => 'Wie viel Garantie gibt es auf einen Panorama Court?', 'antwort' => 'Padel Factory nennt 15 Jahre Herstellergarantie auf die Konstruktion (lt. Hersteller). Bei 100% Padel sind es 2 Jahre Gewährleistung. Die Garantie gewährt immer der jeweilige Hersteller, nicht die THE COURT GmbH. Welche Bedingungen gelten, prüfen wir für dein Projekt mit dem Hersteller.'],
     ],
