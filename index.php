@@ -48,7 +48,7 @@ tc_page_start([
     </div>
   </div>
 </section>
-<section class="band dark grid-bg v-intro v-zoom" aria-label="Film: Die 360°-Plattform">
+<section class="band dark grid-bg v-intro v-zoom" id="film" aria-label="Film: Die 360°-Plattform">
   <div class="inner">
     <figure>
       <video id="introVid" autoplay muted loop playsinline preload="metadata" poster="/media/intro.jpg" src="/media/intro.mp4" aria-label="Padelbee Film: Die 360°-Plattform"></video>
