@@ -145,3 +145,11 @@
 #projekte{background:#fdfdfd}
 .proj-film{margin:36px 0 0}
 .proj-film video{width:100%;height:auto;display:block;aspect-ratio:1600/758;background:#fdfdfd}
+/* Partner auf der Startseite kompakter: alle Logos aus Martins Entwurf, aber dichter */
+#partner .pgroup{margin-top:30px}
+#partner .pgroup h3{font-size:clamp(20px,1.8vw,26px)}
+#partner .logos{grid-template-columns:repeat(8,minmax(0,1fr));gap:8px;margin-top:12px}
+#partner .lg{height:84px}
+#partner .lg .t{font-size:8.5px;letter-spacing:.12em}
+@media (max-width:1100px){#partner .logos{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:560px){#partner .logos{grid-template-columns:repeat(2,minmax(0,1fr))}#partner .lg{height:76px}}

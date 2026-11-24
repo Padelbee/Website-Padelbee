@@ -51,13 +51,13 @@ tc_page_start([
 <section class="band dark grid-bg v-intro v-zoom" id="film" aria-label="Film: Die 360°-Plattform">
   <div class="inner">
     <figure>
-      <video id="introVid" autoplay muted loop playsinline preload="metadata" poster="/media/intro.jpg" src="/media/intro.mp4" aria-label="Padelbee Film: Die 360°-Plattform"></video>
+      <video id="introVid" muted loop playsinline preload="none" poster="/media/intro.jpg" src="/media/intro.mp4" aria-label="Padelbee Film: Die 360°-Plattform"></video>
       <button type="button" class="snd" id="introSnd" aria-pressed="false" aria-label="Ton einschalten" title="Ton einschalten"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z" fill="currentColor"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg></button>
     </figure>
   </div>
 </section>
 <script>(()=>{const v=document.getElementById('introVid'),b=document.getElementById('introSnd');if(!v||!b)return;const OFF='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z" fill="currentColor"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>',ON='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>';
-if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();v.controls=true;}
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.controls=true;}else{new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)v.play().catch(()=>{});else v.pause();}),{threshold:.3}).observe(v);}
 b.addEventListener('click',()=>{v.muted=!v.muted;if(!v.muted)v.play();b.innerHTML=v.muted?OFF:ON;b.setAttribute('aria-label',v.muted?'Ton einschalten':'Ton ausschalten');b.title=b.getAttribute('aria-label');b.setAttribute('aria-pressed',String(!v.muted));});})();</script>
 <script>(()=>{const s=document.querySelector('.v-zoom'),f=s&&s.querySelector('figure');if(!f)return;if(matchMedia('(prefers-reduced-motion: reduce)').matches){f.style.setProperty('--z',1);return;}
 let t=0;const u=()=>{t=0;const r=s.getBoundingClientRect(),vh=innerHeight;const p=Math.min(1,Math.max(0,(vh-r.top)/(vh*.85)));f.style.setProperty('--z',p.toFixed(3));};
@@ -66,7 +66,7 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
   <div class="inner">
     <p class="label" data-type>Offizieller Padel-Infrastrukturpartner des Bayerischen Tennis-Verbands</p>
     <div class="hero-media">
-      <figure><picture><source type="image/webp" srcset="/media/home/hero_return-480.webp 480w, /media/home/hero_return.webp 668w" sizes="(max-width: 860px) 100vw, 50vw"><img fetchpriority="high" width="668" height="1000" src="/media/home/hero_return.jpg" alt="Spieler beim Return am Netz, Ball im Fokus"></picture></figure>
+      <figure><picture><source type="image/webp" srcset="/media/home/hero_return-480.webp 480w, /media/home/hero_return.webp 668w" sizes="(max-width: 860px) 100vw, 50vw"><img loading="lazy" width="668" height="1000" src="/media/home/hero_return.jpg" alt="Spieler beim Return am Netz, Ball im Fokus"></picture></figure>
       <figure><picture><source type="image/webp" srcset="/media/home/hero_netz-480.webp 480w, /media/home/hero_netz.webp 666w" sizes="(max-width: 860px) 100vw, 50vw"><img loading="lazy" width="666" height="1000" src="/media/home/hero_netz.jpg" alt="Spieler springt am Netz, Aufnahme von oben"></picture></figure>
       <figure><picture><source type="image/webp" srcset="/media/home/hero_ball-480.webp 480w, /media/home/hero_ball.webp 666w" sizes="(max-width: 860px) 100vw, 50vw"><img loading="lazy" width="666" height="1000" src="/media/home/hero_ball.jpg" alt="Gelber Ball vor dunklem Court, Blick über die Schulter des Spielers"></picture></figure>
       <figure><picture><source type="image/webp" srcset="/media/home/hero_halle-480.webp 480w, /media/home/hero_halle.webp 666w" sizes="(max-width: 860px) 100vw, 50vw"><img loading="lazy" width="666" height="1000" src="/media/home/hero_halle.jpg" alt="Bälle auf dem Hallendach über den Courts"></picture></figure>
