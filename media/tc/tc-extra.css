@@ -338,3 +338,7 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 .v-midcta{margin:24px 0 0}
 @media (max-width:1100px){.vr-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.vr-grid{grid-template-columns:1fr}}
+/* Zwei Varianten-Karten nebeneinander, Bilder im ruhigen Format */
+.cards.c2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:44px}
+#v-varianten .vimg{aspect-ratio:16/9;max-height:none}
+@media (max-width:680px){.cards.c2{grid-template-columns:1fr}}

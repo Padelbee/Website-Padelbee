@@ -41,7 +41,7 @@ $v = [
     'alt' => 'Panorama Court Rendering mit großen Glasflächen',
     'stats' => [
         ['7', 'Panorama-Modelle', 'von 4 Herstellern'],
-        ['<small>bis zu</small> 160 km/h', 'Windlast', 'Padel Galis, lt. Hersteller'],
+        ['<small>bis zu</small> 160', 'km/h Windlast', 'Padel Galis, lt. Hersteller'],
         ['12 mm', 'ESG-Glas', 'Wing Panoramic, Panorama'],
         ['28.150 €', 'ab, pro Court netto', 'Wing Panoramic, Stand 11/2026'],
     ],
