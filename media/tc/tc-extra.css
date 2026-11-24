@@ -319,3 +319,4 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
   #kontakt .person b{font-size:22px}
   .people .person .mail a{overflow-wrap:normal;word-break:normal}
 }
+@media (max-width:680px){.c-stats b small{display:inline;margin:0 .4em 0 0;vertical-align:.8em}}
