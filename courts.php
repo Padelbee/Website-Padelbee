@@ -63,7 +63,11 @@ tc_page_start([
       <article class="card variant reveal"><figure class="vimg"><img src="/media/courts/panorama.jpg" alt="Panorama-Court Rendering" loading="lazy"></figure><div class="elev"><svg viewBox="0 0 260 100" data-var="pan"></svg></div><div class="k">Premium</div><h3 data-type>Panorama</h3><p>Deutlich weniger sichtbare Streben, größere Glasflächen und eine offenere Anmutung. Bessere Sicht für Zuschauer und ein hochwertiger Gesamteindruck.</p><span class="tier"><a href="/panorama-court">Design &amp; Offenheit</a></span></article>
       <article class="card variant reveal"><figure class="vimg"><img src="/media/courts/full.jpg" alt="Full-Panorama-Court Rendering" loading="lazy"></figure><div class="elev"><svg viewBox="0 0 260 100" data-var="full"></svg></div><div class="k">Topklasse</div><h3 data-type>Full-Panorama</h3><p>Nahezu durchgehende Glasflächen und eine minimale Stahlstruktur. Repräsentativ, mit klarem Show-Court-Charakter, vor allem für Indoor-Clubs und TV-Übertragungen.</p><span class="tier"><a href="/premier-court">Show-Court · Indoor</a></span></article>
     </div>
-    <details class="pmore c-more"><summary>Mehr Details</summary><ul><li>Kunstrasen in nahezu allen Farben, farblich angepasste Stahlkonstruktion</li><li>Zusätzliche Türen, Fangnetze und Branding-Optionen projektabhängig umsetzbar</li><li>Details und eventuelle Mehrkosten stimmen wir im weiteren Planungsprozess individuell mit dir ab</li></ul></details>
+    <div class="gest g3">
+      <article class="gbox reveal"><div class="k">Individualisierung</div><p>Kunstrasen in nahezu allen Farben, farblich angepasste Stahlkonstruktion.</p></article>
+      <article class="gbox reveal"><div class="k">Sonderausstattung</div><p>Zusätzliche Türen, Fangnetze und Branding-Optionen sind projektabhängig umsetzbar.</p></article>
+      <article class="gbox reveal"><div class="k">Mehrkosten</div><p>Details und eventuelle Mehrkosten stimmen wir im weiteren Planungsprozess individuell mit dir ab.</p></article>
+    </div>
   </div>
 </section>
 
