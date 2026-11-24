@@ -445,3 +445,13 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 .lg .txt{font-size:min(26px,11cqi);max-width:calc(100% - 20px)}
 .lg .txt small{font-size:min(10px,5.6cqi);letter-spacing:min(.24em,1.2cqi)}
 .lg .t{max-width:calc(100% - 24px);font-size:min(10px,6cqi);letter-spacing:min(.2em,.5cqi);white-space:nowrap}
+
+/* Modellkarten Desktop: Bild füllt die ganze Höhe der Textspalte, keine leere Fläche darunter */
+@media (min-width:861px){
+  .vm-top{align-items:stretch}
+  .vm-media{display:flex;flex-direction:column}
+  .vm-media .vm-img{flex:1 1 auto;aspect-ratio:auto;min-height:300px;height:auto}
+  .vm-media .vm-img img{height:100%}
+}
+/* Silbentrennung nur für wirklich lange Wörter (nicht „Langle-bigkeit“) */
+.vm-specs dd,.vr-table td,.fd-plat td{hyphenate-limit-chars:18 8 8}
