@@ -285,3 +285,7 @@
 .kf-sub{margin:0;color:var(--white);font-size:clamp(17px,1.6vw,20px);line-height:1.5}
 .kf-wrap:not(.open) .kf-intro{display:none}
 .kf-wrap.open .kf-sub{display:none}
+/* Kontakt-Abschluss: Untertitel größer, Kästen kompakter */
+#kontakt .lead{font-size:clamp(18px,1.8vw,22px);line-height:1.55;max-width:760px}
+#kontakt .people{max-width:760px}
+#kontakt .kf-wrap .kform{max-width:760px}

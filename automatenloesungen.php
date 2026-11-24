@@ -240,5 +240,5 @@ tc_page_start([
   </div>
 </section>
 
-<?php $tcPreselect = ['Automatenlösungen']; $tcFormButton = 'Angebot anfragen'; $tcKontaktLead = 'Wir sind für dich da. Laura, Philipp, Christian und Martin aus unserem Sales Team beraten dich zu deinem Padel-Automaten. Schreib an <a href="mailto:info@padelbee.de" style="color:var(--yellow)">info@padelbee.de</a> oder nutze das Formular.'; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
+<?php $tcPreselect = ['Automatenlösungen']; $tcFormButton = 'Angebot anfragen'; $tcKontaktLead = 'Wir sind für dich da.<br>Laura, Philipp, Christian und Martin aus unserem Sales Team beraten dich zu deinem Padel-Automaten. Schreib an <a href="mailto:info@padelbee.de" style="color:var(--yellow)">info@padelbee.de</a> oder nutze das Formular.'; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
 <?php tc_page_end();
