@@ -32,8 +32,7 @@ tc_page_start([
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Padel Court bauen</p>
       <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padel Court bauen · Planung · Bau</span>Bis zum ersten <span class="kw">Aufschlag.</span></h1>
-      <p class="lead lead-bal">Zwischen der ersten Idee und dem ersten Aufschlag liegen viele Entscheidungen.</p>
-      <p class="lead">Beim Padel Court bauen begleiten wir dich in Deutschland, Österreich und der Schweiz durch alle, vom Bauantrag bis zur Eröffnung deines Padelcourts.</p>
+      <p class="lead lead-fill">Zwischen der ersten Idee und dem ersten Aufschlag liegen viele Entscheidungen. Beim Padel Court bauen begleiten wir dich in Deutschland, Österreich und der Schweiz durch alle, vom Bauantrag bis zur Eröffnung deines Padelcourts.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Bau anfragen</a><a class="btn ghost" href="#p-ablauf">Ablauf ansehen</a></div>
     </div>
     <figure class="courtfig courtphoto"><img src="/media/referenzen/scheck-aufbau-4.jpg" alt="Scheck Club München: fertig montierte Padel-Courts in der Halle"></figure>

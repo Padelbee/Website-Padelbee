@@ -509,3 +509,4 @@ span.sbr{display:block;height:4px}
 @media (min-width:561px) and (max-width:980px){.cards.c3>*:last-child:nth-child(odd){grid-column:1/-1}}
 /* Kurzer Einleitungssatz über zwei Zeilen gleichmäßig verteilen (Wunsch Bietal) */
 .lead.lead-bal{text-wrap:balance}
+.lead.lead-fill{text-wrap:wrap}
