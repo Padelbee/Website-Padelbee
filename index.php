@@ -133,7 +133,7 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
 <section class="band grid-bg" id="phasen" style="background-color:var(--grey-050)">
   <div class="inner">
     <p class="label" data-type>Unsere Leistungen</p>
-    <h2 class="reveal">In jeder Phase deines&nbsp;<span class="hl">Padel-Projekts.</span></h2>
+    <h2 class="reveal">In jeder Phase deines <span class="hl">Padel&#8209;Projekts.</span></h2>
     <p class="lead">Von der ersten Rechnung bis zum laufenden Betrieb begleiten wir dich mit sieben Leistungen. Zu jeder führt ein Link mit allen Details.</p>
     <div class="ph-grid ph-compact">
       <article class="ph reveal"><p class="label n" data-type>01</p><h3 data-type>Finanzielle Planung &amp; Business Case</h3><p>Wir erstellen einen bankfähigen Business Case und prüfen Fördermittel und Investoren.</p><ul class="chips"><li>Court ab 27.000 € netto</li><li>Fundament rund 35.000 €</li><li>Halle ab 280 €/m²</li><li>Kauf, Leasing oder Joint Venture</li></ul><a class="ph-more" href="/standortanalyse">Zur Standortanalyse</a></article>
