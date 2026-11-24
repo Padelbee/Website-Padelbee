@@ -168,3 +168,22 @@ addEventListener('hashchange',route); route();
     ns.forEach(t=>{ const v=t.textContent.replace(/(^|[\s(])([A-Za-zÄÖÜäöüß0-9]{1,10})-([A-Za-zÄÖÜäöüß0-9]{1,10})(?=[\s.,;)!? ]|$)/g,(x,a,b,c)=>a+b+'‑'+c); if(v!==t.textContent) t.textContent=v; });
   });
 })();
+
+/* Überschriften mit zwei Sätzen („Vier Hersteller. Ein Ansprechpartner.“) nur zwischen den Sätzen umbrechen, nie mitten im Satz.
+   Jeder Satz wird ein inline-block; ist ein Satz breiter als die Zeile (Handy), bricht er darin ganz normal um. */
+(function(){
+  document.querySelectorAll('main h2, section h2, main h1 .h1-main').forEach(h=>{
+    if(h.querySelector('.h-sent')) return;
+    const groups=[[]];
+    [...h.childNodes].forEach(n=>{
+      if(n.nodeType===3){
+        const parts=n.textContent.split(/(?<=[.!?])\s+(?=\S)/);
+        parts.forEach((p,i)=>{ if(i>0) groups.push([]); if(p) groups[groups.length-1].push(document.createTextNode(p)); });
+      } else groups[groups.length-1].push(n);
+    });
+    const g=groups.filter(x=>x.some(n=>n.textContent.trim()));
+    if(g.length<2) return;
+    h.textContent='';
+    g.forEach((nodes,i)=>{ if(i>0) h.appendChild(document.createTextNode(' ')); const s=document.createElement('span'); s.className='h-sent'; nodes.forEach(n=>s.appendChild(n)); h.appendChild(s); });
+  });
+})();
