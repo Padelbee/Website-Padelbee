@@ -426,3 +426,6 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 .vr-facts span{font-size:10px;padding:3px 6px;letter-spacing:.1em}
 .v-leadrow{margin-top:24px}
 @media (max-width:560px){.vr-item .vr-facts{grid-column:1/-1}}
+
+/* Textbild: lange Fachwörter in schmalen technischen Angaben dürfen silbengetrennt werden (nur Wörter ab 12 Zeichen) */
+.vm-specs dd,.vr-table td,.fd-plat td{hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:12 5 5}

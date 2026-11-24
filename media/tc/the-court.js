@@ -155,7 +155,7 @@ addEventListener('hashchange',route); route();
   const NB='\u00a0'; const WID=[];
   const sel='main p, main li, main dd, main td, main figcaption, main h2, main h3, main h4, section p, section li, section dd, section td, section figcaption, section h2, section h3, section h4, .lead';
   document.querySelectorAll(sel).forEach(el=>{
-    if(el.closest('form,nav,header,footer,.chips,.c-stats,.dd-menu')) return;
+    if(el.closest('form,nav,header,footer,.c-stats,.dd-menu')) return;
     if(el.querySelector('p,li,div,ul,ol,table')) return;
     const nodes=[]; const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; while(n=w.nextNode()) nodes.push(n);
     // 2) „&“ und Zahlen an das nächste Wort binden
@@ -191,7 +191,12 @@ addEventListener('hashchange',route); route();
   document.querySelectorAll(sel).forEach(el=>{
     if(el.closest('form,nav,header,footer,.dd-menu')) return;
     const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; const ns=[]; while(n=w.nextNode()) ns.push(n);
-    ns.forEach(t=>{ const v=t.textContent.replace(/(^|[\s(])([A-Za-zÄÖÜäöüß0-9°%]{1,10})-([A-Za-zÄÖÜäöüß0-9]{1,10})(?=[\s.,;)!? ]|$)/g,(x,a,b,c)=>a+b+'‑'+c); if(v!==t.textContent) t.textContent=v; });
+    ns.forEach(t=>{ const v=t.textContent.replace(/(^|[\s(])([A-Za-zÄÖÜäöüß0-9°%]{1,10})-([A-Za-zÄÖÜäöüß0-9]{1,10})(?=[\s.,;)!? ]|$)/g,(x,a,b,c)=>a+b+'‑'+c)
+      .replace(/([A-Za-zÄÖÜäöüß0-9])\/([A-Za-zÄÖÜäöüß0-9])/g,'$1/\u2060$2'); // „Go/No-Go“ nicht am Schrägstrich trennen
+      if(v!==t.textContent) t.textContent=v;
+      // „<span>360°</span>-Plattform“: nicht vor dem Bindestrich umbrechen
+      const ps=t.previousSibling; if(ps&&ps.nodeType===1&&/^-\S/.test(t.textContent)) t.textContent='\u2060‑'+t.textContent.slice(1);
+    });
   });
 })();
 
