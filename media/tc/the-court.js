@@ -168,6 +168,7 @@ addEventListener('hashchange',route); route();
     if(!last) return;
     const m=last.textContent.match(/^([\s\S]*\S)[ \u00a0]+(\S+)\s*$/); if(!m) return;
     const prev=m[1].split(/[ \t\n]/).pop(); // inkl. schon gebundener Teile (z. B. „100 %“)
+    if(last.textContent[m[1].length]===NB) return; // von Hand gesetztes festes Leerzeichen (&nbsp;) bleibt immer
     WID.push({el, node:last, idx:m[1].length, pair:prev+' '+m[2]});
   });
   const ctx=document.createElement('canvas').getContext('2d');
