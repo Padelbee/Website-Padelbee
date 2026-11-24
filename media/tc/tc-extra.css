@@ -216,3 +216,4 @@
 .fd-plat{table-layout:fixed;width:100%}
 .fd-plat th,.fd-plat td{overflow-wrap:anywhere;hyphens:auto}
 @media (max-width:560px){.fd-plat thead{display:none}.fd-plat tr{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:10px 0;border-bottom:1px solid var(--line)}.fd-plat td{border:0;padding:0}.fd-plat td:last-child{grid-column:1/-1;color:var(--muted);font-size:13px}}
+.fd-plat{min-width:0}
