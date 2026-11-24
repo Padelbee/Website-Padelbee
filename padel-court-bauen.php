@@ -7,7 +7,7 @@ $pbFaq = [
     ['frage' => 'Was kostet eine Padelanlage?', 'antwort' => 'Für die erste Kalkulation brauchst du drei Zahlen. Ein Padel-Court kostet ab 27.000 € netto, das Fundament als Richtwert rund 35.000 € und eine Halle ab 280 €/m² netto. Dazu kommen Planung, Genehmigung, Licht und Digitalisierung. Den genauen Betrag bestimmen Standort, Variante und Ausstattung. Alle Court-Varianten findest du unter <a href="/courts">Courts</a>.'],
     ['frage' => 'Woran hängen Padel-Projekte bei der Genehmigung?', 'antwort' => 'Der Court ist schnell bestellt, die Genehmigung dauert oft länger. Drei Themen solltest du früh klären. Bei Lage und Baurecht geht es darum, was der Bebauungsplan auf deiner Fläche erlaubt. Padel ist lauter als Tennis, deshalb gehören Abstand zur Wohnbebauung, Ausrichtung der Courts und Spielzeiten früh ins Konzept. Auch Lichtmasten, Lichttemperatur und Ausrichtung planen wir von Anfang an mit. Hol die Gemeinde früh an den Tisch, das ist unser Tipp.'],
     ['frage' => 'Wie finanziere ich meine Padelanlage?', 'antwort' => 'Du musst nicht sofort sechsstellig investieren. Drei Wege stehen dir offen, nämlich Kauf, Leasing oder Joint Venture. Beim Kauf investierst du einmal und dir gehört alles. Beim Leasing fließen die Raten aus dem laufenden Betrieb und deine Liquidität bleibt erhalten. Beim Joint Venture stellt ein Verein die Fläche, das Joint Venture baut, finanziert und betreibt. Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.'],
-    ['frage' => 'Kann mein Tennisverein Padel ohne eigene Investition bekommen?', 'antwort' => 'Ja, über das Joint Venture mit dem Motions Racket Club. Dein Verein stellt die Fläche und bekommt dafür Pacht. Bau, Finanzierung und Betrieb übernimmt das Joint Venture, für den Verein liegt die Investition bei 0 €. Deine Mitglieder spielen mit 30 % Rabatt. Mehr dazu auf der Seite <a href="/sportplatzbau">Sportplatzbau</a>.'],
+    ['frage' => 'Kann mein Tennisverein Padel ohne eigene Investition bekommen?', 'antwort' => 'Ja, über das Joint Venture mit dem Motions Racket Club. Dein Verein stellt die Fläche und bekommt dafür Pacht. Bau, Finanzierung und Betrieb übernimmt das Joint Venture, für den Verein liegt die Investition bei 0 €. Deine Mitglieder spielen mit 30 % Rabatt. Wie das Modell funktioniert, erklären wir beim <a href="/betreiberkonzept#b-finanzierung">Betreiberkonzept</a>.'],
 ];
 tc_page_start([
     'path' => '/padel-court-bauen',
@@ -32,7 +32,7 @@ tc_page_start([
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Padel Court bauen</p>
       <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padel Court bauen · Planung · Bau</span>Bis zum ersten <span class="kw">Aufschlag.</span></h1>
-      <p class="lead">Du willst einen Padel Court bauen? Wir begleiten dich in Deutschland, Österreich und der Schweiz von Bauantrag und Ausschreibung bis zur Eröffnung deines Padelcourts. Zwischen der ersten Idee und dem ersten Aufschlag liegen viele Entscheidungen, wir begleiten dich durch alle. Am Anfang steht die <a href="/standortanalyse">Standortanalyse</a>.</p>
+      <p class="lead">Du willst einen Padel Court bauen? Zwischen der ersten Idee und dem ersten Aufschlag liegen viele Entscheidungen. Wir begleiten dich in Deutschland, Österreich und der Schweiz durch alle, vom Bauantrag bis zur Eröffnung deines Padelcourts.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Bau anfragen</a><a class="btn ghost" href="#p-ablauf">Ablauf ansehen</a></div>
     </div>
     <figure class="courtfig courtphoto"><img src="/media/referenzen/scheck-aufbau-4.jpg" alt="Scheck Club München: fertig montierte Padel-Courts in der Halle"></figure>
@@ -62,7 +62,6 @@ tc_page_start([
       <article class="gbox"><div class="k">Planung &amp; Architektur</div><p>Wir stimmen Courts, Halle, Licht, Wege und Sanitär aufeinander ab, alles genehmigungsfähig. Den Bauantrag erstellen wir mit spezialisierten Architekturbüros.</p></article>
       <article class="gbox"><div class="k">Bau</div><p>Courts, Hallen und Fundamente bauen wir schlüsselfertig, mit Ausschreibung und Bauleitung. Dafür setzen wir auf über 30 Partner aus Planung, Court- und Hallenbau.</p></article>
     </div>
-    <div class="ideal reveal"><span class="k">Deine sieben Etappen</span><span>Beratung</span><span>Finanzierung</span><span>Planung &amp; Architektur</span><span>Bau</span><span>Digitalisierung</span><span>Betrieb</span><span>Franchise</span></div>
   </div>
 </section>
 
@@ -98,7 +97,7 @@ tc_page_start([
         </tbody>
       </table>
     </div>
-    <p class="fav-note fav-note-l">Die Zahlen sind Richtwerte, kein Angebot. Dazu kommen Planung, Genehmigung, Licht und Digitalisierung.</p><p class="more-row"><a class="more-link" href="/courts">Court-Varianten</a><a class="more-link" href="/halle">Hallen</a><a class="more-link" href="/automatenloesungen">Automaten</a></p>
+    <p class="fav-note fav-note-l">Die Zahlen sind Richtwerte, kein Angebot. Dazu kommen Planung, Genehmigung, Licht und Digitalisierung. Genau hier trennt sich eine gute von einer teuren Anlage.</p><p class="more-row"><a class="more-link" href="/courts">Court-Varianten</a><a class="more-link" href="/halle">Hallen</a><a class="more-link" href="/automatenloesungen">Automaten</a></p>
     <h3 class="reveal" style="margin-top:clamp(40px,5vw,64px);font-size:clamp(26px,2.6vw,36px)">Welcher Padel Court passt zu deinem Budget?</h3>
     <p class="lead">Die drei Court-Varianten unterscheiden sich vor allem in den Streben zwischen den Glaselementen. Jede Variante gibt es als Doppel- oder als Einzel-Court.</p>
     <div class="tablewrap reveal">
