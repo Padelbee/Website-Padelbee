@@ -297,3 +297,7 @@ p,li,dd,summary,figcaption{text-wrap:pretty}
 h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 .lead{max-width:68ch}
 #kontakt .lead{max-width:760px}
+/* Ruhigerer Textsatz: Leads breiter und ohne Balance (keine leeren Flächen rechts), nur Überschriften ausgleichen */
+.lead{text-wrap:pretty;max-width:860px}
+#kontakt .lead{text-wrap:balance}
+.favbody p,.maker p,.card p,.gbox p{text-wrap:pretty}
