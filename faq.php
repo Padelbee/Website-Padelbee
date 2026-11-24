@@ -20,7 +20,7 @@ tc_page_start([
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; FAQ</p>
     <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padel FAQ</span>Häufig gestellte <span class="kw">Fragen.</span></h1>
-    <p class="lead">Hier findest du Antworten rund um Padel, von Regeln und Ausrüstung bis zu Kosten und Spielorten. Du planst eine eigene Anlage? Mehr dazu unter <a href="/padel-court-bauen">Padel Court bauen</a> und <a href="/courts">Padel-Courts</a>.</p>
+    <p class="lead">Hier findest du Antworten rund um Padel, von Regeln und Ausrüstung bis zu Kosten und Spielorten. Du planst eine eigene Anlage? Ablauf und Kosten erklären wir bei <a href="/padel-court-bauen">Padel Court bauen</a>, alle Varianten zeigen wir bei <a href="/courts">Padel-Courts</a>.</p>
   </div>
 </section>
 

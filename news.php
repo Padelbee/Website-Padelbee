@@ -14,7 +14,7 @@ tc_page_start([
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; News</p>
     <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padelbee News</span>Aktuelles von uns und aus der <span class="kw">Padel-Welt.</span></h1>
-    <p class="lead">Neue Projekte, Events und Einblicke aus unserem Alltag. Unsere fertigen Anlagen findest du unter <a href="/referenzen">Referenzen</a>.</p>
+    <p class="lead">Neue Projekte, Events und Einblicke aus unserem Alltag. <a class="more-link" href="/referenzen">Fertige Anlagen ansehen</a></p>
   </div>
 </section>
 

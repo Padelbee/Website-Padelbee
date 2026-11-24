@@ -80,7 +80,7 @@ tc_page_start([
         <p>Das Flutlicht brennt, aber keiner spielt. Oder Spieler stehen vor verschlossener Tür, weil niemand aufschließt. Smart Access &amp; Light Control verknüpft Licht und Zugang direkt mit dem Buchungssystem. Wer gebucht hat, kommt rein. Das Licht geht zur gebuchten Zeit an und danach wieder aus.</p>
         <ul class="b-tick"><li>Keine Schlüsselübergabe, kein Personal vor Ort</li><li>Strom nur, wenn gespielt wird</li><li>Volle Kontrolle über Zugang und Auslastung</li><li>Inklusive Installationsanleitung für Elektriker</li></ul>
         <p class="b-once"><b>2.000 €</b> einmalig, dazu 49 bis 129 € im Monat je nach Anzahl der Courts</p>
-        <p class="b-note">Relais und elektrische Schlösser sind nicht im Angebot enthalten. Alle Preise netto. Die Preisstaffel findest du unter <a href="/automatenloesungen#a-smart">Automatenlösungen</a>.</p>
+        <p class="b-note">Relais und elektrische Schlösser sind nicht im Angebot enthalten. Alle Preise netto. <a class="more-link" href="/automatenloesungen#a-smart">Preisstaffel ansehen</a></p>
       </article>
       <div class="b-partners">
         <p class="label" data-type>Digital-Partner</p>

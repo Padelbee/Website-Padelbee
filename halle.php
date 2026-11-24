@@ -99,7 +99,7 @@ tc_page_start([
     <h2 class="reveal"><span class="kw">Preise</span> &amp; Technik.</h2>
     <div class="h-price reveal">
       <div><span>Hallen ab</span><b>280 €/m²</b><em>netto</em></div>
-      <div><p>Der Preis hängt vom System und von der Größe deiner Halle ab.</p><p>Für die Gesamtkalkulation kommen der Court ab 27.000 € netto und das Fundament mit rund 35.000 € als Richtwert dazu. Beides findest du unter <a href="/courts">Padel-Courts</a>.</p><a class="btn" href="#kontakt">Hallenpreis anfragen</a></div>
+      <div><p>Der Preis hängt vom System und von der Größe deiner Halle ab.</p><p>Für die Gesamtkalkulation kommen der Court ab 27.000 € netto und das Fundament mit rund 35.000 € als Richtwert dazu.</p><p><a class="more-link" href="/courts">Court und Fundament ansehen</a></p><a class="btn" href="#kontakt">Hallenpreis anfragen</a></div>
     </div>
     <div class="cards c4">
       <article class="card reveal"><div class="k">Maße</div><h3 data-type>Flexibel</h3><p>Breite, Länge und Höhe sind flexibel. Beide Hallen sind beliebig erweiterbar.</p></article>
@@ -126,7 +126,7 @@ tc_page_start([
     </div>
     <div class="partnerimgs"><figure class="reveal"><img src="/media/courts/haltec_industriehalle.webp" alt="Stahlhalle von Haltec mit Vordach und Fensterbändern" loading="lazy"><figcaption>Stahlhalle</figcaption></figure><figure class="reveal"><img src="/media/courts/haltec_firstlichtband.webp" alt="Firstlichtband in einer Haltec-Stahlhalle, Innenansicht" loading="lazy"><figcaption>Firstlichtband</figcaption></figure><figure class="reveal"><img src="/media/courts/haltec_fassade.webp" alt="Fassade einer Haltec-Halle mit Fensterband" loading="lazy"><figcaption>Fensterband</figcaption></figure><figure class="reveal"><img src="/media/courts/haltec_sektionaltor.webp" alt="Haltec-Mehrzweckhalle mit verglastem Sektionaltor" loading="lazy"><figcaption>Sektionaltor</figcaption></figure><figure class="reveal"><img src="/media/courts/haltec_stahlhalle.webp" alt="Gedämmte Haltec-Stahlhalle mit Bürotrakt" loading="lazy"><figcaption>Gedämmte Halle</figcaption></figure></div>
     <p class="fav-note fav-note-l">Fotos von unserem Hallenpartner <a href="https://www.haltec.de" target="_blank" rel="noopener">Haltec</a>.</p>
-    <p class="a-trust">Ein Beispiel aus unseren Projekten ist die Padelhalle mit vier Panorama Courts an der Sporthochschule Köln. Weitere Projekte findest du unter <a href="/referenzen">Referenzen</a>.</p>
+    <p class="a-trust">An der Sporthochschule Köln entsteht eine Padelhalle mit vier Panorama Courts. <a class="more-link" href="/referenzen">Alle Referenzen ansehen</a></p>
   </div>
 </section>
 

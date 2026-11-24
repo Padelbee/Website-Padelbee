@@ -97,7 +97,7 @@ $spLogos = [
     <p class="lead">Der SC Eching bei München baut einen neuen Tennispark mit 5 Rebound Ace Tennisplätzen und 2 Outdoor Padel Courts. Wir begleiten den Verein von der Beratung und Finanzierung über Planung, Architektur und Bau bis zu Digitalisierung und Betrieb.</p>
     <div class="fd-cost reveal">
       <div><span>Neubau Tennispark</span><b>5 + 2</b><p>5 Rebound Ace Tennisplätze und 2 Outdoor Padel Courts.</p></div>
-      <div><span>In Planung</span><b>Fertig 2027</b><p>Die Fertigstellung ist für 2027 geplant. Mehr Projekte vom Tennisverein bis zum kommerziellen Betreiber findest du in unseren <a href="/referenzen#referenzen/j51vwpfd4gfmh5l0hav9" style="color:var(--yellow)">Referenzen</a>.</p></div>
+      <div><span>In Planung</span><b>Fertig 2027</b><p>Die Fertigstellung ist für 2027 geplant.</p><p><a class="more-link" href="/referenzen#referenzen/j51vwpfd4gfmh5l0hav9">Alle Referenzen ansehen</a></p></div>
     </div>
     <ul class="chips reveal"><li>Beratung</li><li>Finanzierung</li><li>Planung &amp; Architektur</li><li>Bau</li><li>Digitalisierung</li><li>Betrieb</li></ul>
     <div class="teaser reveal">
@@ -121,7 +121,7 @@ $spLogos = [
 <?php endif; ?>
 <?php endforeach; ?>
     </div>
-    <p class="partnernote sp-partnernote">Alle Partner findest du unter <a href="/partner">Partner</a>.</p>
+    <p class="partnernote sp-partnernote"><a class="more-link" href="/partner">Alle Partner ansehen</a></p>
   </div>
 </section>
 

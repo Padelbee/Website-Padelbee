@@ -153,7 +153,7 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Herstellerreferenzen</p>
     <h2 class="reveal">Courts, die <span class="hl">gespielt</span> werden.</h2>
-    <p class="lead">Projekte unserer Hersteller, keine Projekte von Padelbee. Unsere eigenen Projekte findest du unter <a href="/referenzen">Referenzen</a>.</p>
+    <p class="lead">Projekte unserer Hersteller, keine Projekte von Padelbee. <a class="more-link" href="/referenzen">Unsere eigenen Projekte ansehen</a></p>
     <div class="gallery">
       <figure class="g-wide reveal"><img src="/media/courts/pf_milano.jpg" alt="Padel Factory Premier Court am Castello Sforzesco, Mailand" loading="lazy"><figcaption>Padel Factory · Premier · Mailand <span class="g-ref">Herstellerreferenz</span></figcaption></figure>
       <figure class="reveal"><img src="/media/courts/pf_montaner.jpg" alt="Padel Factory Wing Court, Frankreich" loading="lazy"><figcaption>Padel Factory · Wing · Frankreich <span class="g-ref">Herstellerreferenz</span></figcaption></figure>

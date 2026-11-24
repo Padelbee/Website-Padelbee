@@ -98,7 +98,7 @@ tc_page_start([
         </tbody>
       </table>
     </div>
-    <p class="fav-note fav-note-l">Die Zahlen sind Richtwerte, kein Angebot. Dazu kommen Planung, Genehmigung, Licht und Digitalisierung. Mehr zu <a href="/courts">Court-Varianten</a>, <a href="/halle">Hallen</a> und <a href="/automatenloesungen">Automaten</a> findest du auf den eigenen Seiten.</p>
+    <p class="fav-note fav-note-l">Die Zahlen sind Richtwerte, kein Angebot. Dazu kommen Planung, Genehmigung, Licht und Digitalisierung.</p><p class="more-row"><a class="more-link" href="/courts">Court-Varianten</a><a class="more-link" href="/halle">Hallen</a><a class="more-link" href="/automatenloesungen">Automaten</a></p>
     <h3 class="reveal" style="margin-top:clamp(40px,5vw,64px);font-size:clamp(26px,2.6vw,36px)">Welcher Padel Court passt zu deinem Budget?</h3>
     <p class="lead">Die drei Court-Varianten unterscheiden sich vor allem in den Streben zwischen den Glaselementen. Jede Variante gibt es als Doppel- oder als Einzel-Court.</p>
     <div class="tablewrap reveal">
@@ -123,7 +123,7 @@ tc_page_start([
       <div>
         <p class="label" data-type>Fundament</p>
         <h2 class="reveal">Fest oder <span class="hl">mobil?</span></h2>
-        <p class="lead">Die Wahl hängt vom Standort und von der Laufzeit deines Miet- oder Pachtvertrags ab. Beide Varianten liegen preislich in einem ähnlichen Rahmen. Alle Details zum festen Fundament, zur mobilen Plattform und zur elastischen Tragschicht findest du unter <a href="/courts#c-fundament">Das richtige Fundament</a>. So sieht ein festes Fundament in der Praxis aus, zeigt der <a href="/referenzen#r-scheck">Aufbau im Scheck Club München</a>.</p>
+        <p class="lead">Die Wahl hängt vom Standort und von der Laufzeit deines Miet- oder Pachtvertrags ab. Beide Varianten liegen preislich in einem ähnlichen Rahmen. Festes Fundament, mobile Plattform und elastische Tragschicht erklären wir dir bei <a href="/courts#c-fundament">Das richtige Fundament</a>. Wie das in der Praxis aussieht, zeigt der <a href="/referenzen#r-scheck">Aufbau im Scheck Club München</a>.</p>
       </div>
     </div>
   </div>

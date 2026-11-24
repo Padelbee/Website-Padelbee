@@ -29,7 +29,7 @@ tc_page_start([
     <div class="posts" id="posts"></div>
     <div class="r-empty" id="bEmpty" hidden>
       <h3>Die ersten Artikel sind in Arbeit.</h3>
-      <p>Bis dahin findest du alles Wichtige zu <a href="/courts">Padel-Courts</a> und <a href="/automatenloesungen">Automaten</a> auf unseren Themenseiten.</p>
+      <p>Bis dahin erfährst du alles Wichtige bei <a href="/courts">Padel-Courts</a> und <a href="/automatenloesungen">Automaten</a>.</p>
     </div>
     <p class="r-hint" id="bHint" hidden></p>
   </div>

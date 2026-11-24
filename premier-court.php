@@ -7,7 +7,7 @@ $glas3b = 'Hochresistentes ESG mit polierten, abgeschrägten Kanten, als 12 mm E
 $licht3b = 'Drei Intensitätsstufen mit 17.500, 18.500 oder 23.000 Lumen für optimale Sicht bei Abendspielen.';
 $rasen3b = 'Fibrilliert oder strukturiert, anpassbar an Spielvorlieben und Komfort. Verfügbar in Grün, Blau und Rot.';
 ob_start(); ?>
-    <p class="a-trust reveal">Ein Beispiel aus unseren Projekten ist Straubing. In einer Neubauhalle entstehen dort für einen kommerziellen Betreiber drei Full-Panorama-Courts von 100% Padel. Weitere Projekte findest du unter <a href="/referenzen">Referenzen</a>.</p>
+    <p class="a-trust reveal">In Straubing entstehen gerade drei Full-Panorama-Courts von 100% Padel, in einer Neubauhalle für einen kommerziellen Betreiber. <a class="more-link" href="/referenzen">Alle Referenzen ansehen</a></p>
 <?php $refHtml = ob_get_clean();
 
 $v = [

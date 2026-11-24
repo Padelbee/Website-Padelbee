@@ -104,7 +104,8 @@ $v = [
             'facts' => ['Turnierausrüster der Premier Padel Tour (lt. Hersteller)', 'Einbrennlackierung, Farbe nach Kundenwunsch', 'Verzinkt (nicht feuerverzinkt), 2 Jahre Gewährleistung', 'Montageteam in Deutschland'],
         ],
     ],
-    'extra_html' => $galisHtml,
+    'extra_html' => $galisHtml . '
+    <p class="a-trust reveal">An der Sporthochschule Köln entsteht eine neue Padelhalle mit 4 Panorama Courts. <a class="more-link" href="/referenzen">Alle Referenzen ansehen</a></p>',
     'faq' => [
         ['frage' => 'Für wen eignet sich der Panorama Court?', 'antwort' => 'Der Panorama Court passt zu Clubs mit Anspruch, bei denen Zuschauer mehr vom Spiel sehen sollen. Unsere Faustregel ist einfach. Wo Zuschauer stehen, lohnt sich Panorama, wo Wind und Wetter wirken, punktet Standard. Mehr dazu beim <a href="/standard-court">Standard Court</a> und beim <a href="/premier-court">Full-Panorama Court</a>.'],
         ['frage' => 'Was kostet ein Panorama Court?', 'antwort' => 'Der Wing Panoramic von Padel Factory kostet ab 28.150 € netto pro Court, inklusive Stahlkonstruktion, 12-mm-Glas-Kit, fibrilliertem Kunstrasen und 8 Flutlichtstrahlern, zuzüglich Übernachtungs- und Verpflegungskosten. Der Endpreis hängt von Hersteller und Ausstattung ab. Für die Gesamtkalkulation kommt das Fundament mit einem Richtwert von rund 35.000 € dazu, mehr dazu unter <a href="/courts#c-fundament">Fundament</a>.'],

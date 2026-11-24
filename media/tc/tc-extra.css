@@ -498,3 +498,10 @@ span.sbr{display:block;height:4px}
 .cur{margin-right:-.58em}
 /* Variantenseiten: Links zu Gestaltung und Fundament unter den weiteren Varianten (Abschnitt Detail entfällt, Inhalt steht auf /courts) */
 .v-links-after{margin-top:32px}
+/* Weiterführende Links als kurze Aktion mit Pfeil statt "findest du unter …" (Bietal 25.11.) */
+.more-link{display:inline-block;margin-top:10px;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--petrol)!important;text-decoration:none;white-space:nowrap}
+.more-link::after{content:" \2192"}
+.more-link:hover{text-decoration:underline;text-underline-offset:4px}
+.a-trust .more-link,.lead .more-link,.b-note .more-link{display:block;width:max-content;max-width:100%;white-space:normal}
+.dark .more-link,.card.dk .more-link{color:var(--yellow)!important}
+.more-row{display:flex;flex-wrap:wrap;gap:6px 28px;margin-top:4px}
