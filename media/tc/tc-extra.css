@@ -491,3 +491,5 @@ span.sbr{display:block;height:4px}
 @media (max-width:860px){.c-hallteaser{grid-template-columns:1fr}}
 /* Premier: "Full-Panorama" ist ungetrennt, H1 auf dem Handy etwas kleiner */
 @media (max-width:480px){[data-view="premier-court"] .c-hero h1{font-size:11.5vw}}
+/* Tipp-Cursor nimmt keinen Platz in der Zeile ein, darf also keinen Zeilenumbruch auslösen (sonst springt der Text) */
+.cur{margin-right:-.58em}
