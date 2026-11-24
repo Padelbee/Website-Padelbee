@@ -50,7 +50,7 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Padel im Winter</p>
     <h2 class="reveal">Eine Halle spielt das <span class="hl">ganze Jahr.</span></h2>
-    <p class="lead">Ein Outdoor-Court spielt die halbe Saison. Vier Gründe, warum sich eine Halle über deinen Courts rechnet.</p>
+    <p class="lead">Ein Outdoor-Court spielt die halbe Saison. Im Sommer sind Outdoor-Courts voll, im November stehen sie leer. Genau dann suchen Spieler einen Platz und zahlen dafür.</p>
     <div class="gest">
       <article class="gbox reveal"><div class="k">Mehr Spielzeit</div><p>Mit Dach fällt kein Termin wegen Regen, Wind oder Schnee aus. Jede Stunde ist buchbar.</p></article>
       <article class="gbox reveal"><div class="k">Mehr Planbarkeit</div><p>Trainings, Kurse und Turniere lassen sich verlässlich planen. Das bindet Spieler an deinen Standort.</p></article>
@@ -64,12 +64,12 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Hallensysteme</p>
     <h2 class="reveal">Zwei Systeme. Ein <span class="hl">Ziel.</span></h2>
-    <p class="lead">Spielen bei jedem Wetter. Polycarbonat ist der Einstieg, ThermoRoof die Premium-Lösung. Die Maße sind Beispielmaße, Breite, Länge und Höhe richten wir nach deiner Fläche.</p>
+    <p class="lead">Wer Padel ernst meint, braucht irgendwann ein Dach. Wir setzen auf zwei Hallensysteme für ein Ziel, spielen bei jedem Wetter. Die Maße sind Beispielmaße.</p>
     <div class="h-sys">
       <article class="card reveal">
         <div class="k">Einstieg</div>
         <h3 data-type>Polycarbonat</h3>
-        <p>Leicht, hell und günstig. Die Überdachung besteht aus 8 mm Exolon und ist offen oder vollständig geschlossen möglich. Beliebig erweiterbar.</p>
+        <p>Leicht, hell und günstig. Die Überdachung besteht aus 8 mm Exolon und ist offen oder vollständig geschlossen möglich.</p>
         <div class="facts vm-facts"><span>8 mm Exolon</span><span>Offen oder geschlossen</span><span>9,42 m Höhe bei 1 Court</span></div>
         <table class="h-tab"><thead><tr><th>Courts</th><th>Maße</th><th>Fläche</th></tr></thead><tbody>
           <tr><td>1 Court</td><td>12 × 21 m</td><td>252 m²</td></tr>
@@ -81,7 +81,7 @@ tc_page_start([
       <article class="card reveal">
         <div class="k">Premium</div>
         <h3 data-type>ThermoRoof</h3>
-        <p>Mit 40 mm Isolierung, beheizbar und optimal für den Ganzjahresbetrieb. Beliebig erweiterbar.</p>
+        <p>Mit 40 mm Isolierung, beheizbar und optimal für den Ganzjahresbetrieb.</p>
         <div class="facts vm-facts"><span>+40 mm Isolierung</span><span>Beheizbar</span><span>9,42 m Höhe</span></div>
         <table class="h-tab"><thead><tr><th>Courts</th><th>Maße</th><th>Fläche</th></tr></thead><tbody>
           <tr><td>1 Court</td><td>13 × 27 m</td><td>354 m²</td></tr>
@@ -95,18 +95,16 @@ tc_page_start([
 <section class="band dark grid-bg" id="h-technik">
   <div class="inner">
     <p class="label" data-type>Preise &amp; Technik</p>
-    <h2 class="reveal">Ab 280 €/m². Mit der Technik, die du <span class="kw">brauchst.</span></h2>
+    <h2 class="reveal">Preise &amp; <span class="kw">Technik.</span></h2>
     <div class="h-price reveal">
       <div><span>Hallen ab</span><b>280 €/m²</b><em>netto</em></div>
       <div><p>Der Preis hängt vom System und von der Größe deiner Halle ab. Für die Gesamtkalkulation kommen der Court ab 27.000 € netto und das Fundament mit rund 35.000 € als Richtwert dazu. Beides findest du unter <a href="/courts">Padel-Courts</a>.</p><a class="btn" href="#kontakt">Hallenpreis anfragen</a></div>
     </div>
-    <div class="cards c3">
+    <div class="cards c4">
       <article class="card reveal"><div class="k">Maße</div><h3 data-type>Flexibel</h3><p>Breite, Länge und Höhe sind flexibel. Beide Hallen sind beliebig erweiterbar.</p></article>
       <article class="card reveal"><div class="k">Statik</div><h3 data-type>Schnee und Wind</h3><p>Hohe Tragfähigkeit für Schnee- und Windlasten.</p></article>
-      <article class="card reveal"><div class="k">Wände</div><h3 data-type>Seitenwände und Fenster</h3><p>Verschiebbare Seitenwände oder Fensterelemente.</p></article>
-      <article class="card reveal"><div class="k">Klima</div><h3 data-type>Beheizbar</h3><p>Beheizbare Ausführungen sind möglich. Die ThermoRoof-Halle ist optimal für den Ganzjahresbetrieb.</p></article>
-      <article class="card reveal"><div class="k">Energie</div><h3 data-type>Photovoltaik</h3><p>Eine PV-Anlage lässt sich auf dem Hallendach integrieren.</p></article>
-      <article class="card reveal"><div class="k">Luft</div><h3 data-type>Belüftung</h3><p>Seitliche Schiebepaneele sorgen für natürliche Belüftung.</p></article>
+      <article class="card reveal"><div class="k">Wände &amp; Luft</div><h3 data-type>Offen oder zu</h3><p>Verschiebbare Seitenwände oder Fensterelemente, seitliche Schiebepaneele für natürliche Belüftung.</p></article>
+      <article class="card reveal"><div class="k">Klima &amp; Energie</div><h3 data-type>Heizung und PV</h3><p>Beheizbare Ausführungen sind möglich, eine PV-Anlage lässt sich auf dem Hallendach integrieren.</p></article>
     </div>
   </div>
 </section>
@@ -115,7 +113,7 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Hallenpartner</p>
     <h2 class="reveal">Eine Halle. Der <span class="hl">passende</span> Partner.</h2>
-    <p class="lead">Mit Padel Factory bekommst du Courts und Hallensystem aus einer Hand. Für andere Anforderungen arbeiten wir mit weiteren Hallenbauern, und wir suchen für dich die richtige Lösung.</p>
+    <p class="lead">Unser Hauptsystem kommt von Padel Factory, Courts und Halle sind aufeinander abgestimmt. Für Sonderfälle arbeiten wir mit Haltec, DS Stahl und Okatent.</p>
     <div class="logos">
       <div class="lg" role="img" aria-label="Padel Factory"><span class="t">Gesamtsystem</span><div class="m" data-logo="padelfactory" data-h="48"></div></div>
       <div class="lg" role="img" aria-label="Haltec"><span class="t">Hallenbau</span><div class="m" data-logo="haltec" data-h="48"></div></div>
@@ -151,7 +149,7 @@ tc_page_start([
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
       <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
     </div>
-<?php $tcPreselect = ['Hallenlösungen']; $tcFormButton = 'Hallengröße berechnen lassen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
+<?php $tcPreselect = ['Hallenlösungen']; $tcFormButton = 'Halle anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
   </div>
 </section>
 <?php tc_page_end();
