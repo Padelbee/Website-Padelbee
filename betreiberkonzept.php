@@ -3,12 +3,18 @@ require __DIR__ . '/inc/tc/layout.php';
 // Inhalt nach Firmenpräsentation 2026 (F2, F3, F4, F5, F6), Automaten-Präsentation (A6 Smart Access & Light Control)
 // und Martins neuestem Claude-Entwurf (Leistungen, Joint Venture mit dem Motions Racket Club, Blog-Ratgeber zur Finanzierung).
 $leistungen = [
-    ['04', 'Betreiberkonzept & Digitalisierung', 'Buchung, Zugang, Licht und Automaten greifen ineinander. Auf Wunsch unterstützen wir dich auch nach der Eröffnung.', '#b-digital', 'Zur Digitalisierung'],
-    ['05', 'Marketing & Community-Aufbau', 'Wir übernehmen Markenaufbau, Sponsoring, Community-Wachstum und kommerzielles Management für Clubs und Betreiber.', null, null],
-    ['06', 'Zugang zu Sponsoren', 'Zusatzeinnahmen durch Sponsoren. Logos lassen sich integrieren und Glasflächen individualisieren, so entsteht eine professionelle Präsentationsfläche mit&nbsp;Wiedererkennungswert.', '/courts#c-marke', 'Gestaltung der Courts'],
-    ['', 'Academy & Coaching', 'Wir bieten strukturierte Trainingsprogramme, Betreiber-Coaching und&nbsp;Unternehmensberatung.', null, null],
-    ['', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '#b-netzwerk', 'Zu den Partnern'],
-    ['07', 'Automatenlösungen', 'Zusatzeinnahmen mit Schlägerverleih, Bällen, Snacks und Getränken, rund um die Uhr und ohne Personal.', '/automatenloesungen', 'Zu den Automaten'],
+    ['Digitalisierung & Automatisierung', 'Betreiberkonzept & Digitalisierung', 'Buchung, Zugang, Licht und Automaten greifen ineinander. Auf Wunsch unterstützen wir dich auch nach der Eröffnung.', '#b-digital', 'Zur Digitalisierung'],
+    ['Sport Management', 'Marketing & Community-Aufbau', 'Wir übernehmen Markenaufbau, Sponsoring, Community-Wachstum und kommerzielles Management für Clubs und Betreiber.', null, null],
+    ['Zusatzeinnahmen', 'Zugang zu Sponsoren', 'Zusatzeinnahmen durch Sponsoren. Logos lassen sich integrieren und Glasflächen individualisieren, so entsteht eine professionelle Präsentationsfläche mit&nbsp;Wiedererkennungswert.', '/courts#c-marke', 'Gestaltung der Courts'],
+    ['Ausbildung & Training', 'Academy & Coaching', 'Wir bieten strukturierte Trainingsprogramme, Betreiber-Coaching und&nbsp;Unternehmensberatung.', null, null],
+    ['Management & Formate', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '#b-netzwerk', 'Zu den Partnern'],
+    ['Verleih & Verkauf', 'Automatenlösungen', 'Zusatzeinnahmen mit Schlägerverleih, Bällen, Snacks und Getränken, rund um die Uhr und ohne Personal.', '/automatenloesungen', 'Zu den Automaten'],
+];
+$bkFaq = [
+    ['frage' => 'Kann mein Tennisverein Padel ohne eigene Investition bekommen?', 'antwort' => 'Ja, über das Joint Venture mit dem Motions Racket Club. Dein Verein stellt die Fläche und bekommt dafür Pacht. Bau, Finanzierung und Betrieb übernimmt das Joint Venture, für den Verein liegt die Investition bei 0 €. Deine Mitglieder spielen mit 30 % Rabatt.'],
+    ['frage' => 'Wie viel Pacht bekommt mein Verein?', 'antwort' => 'Dein Verein bekommt eine ortsübliche Pacht pro Tennisplatz und Monat, langfristig vereinbart. Wie hoch sie genau ist, hängt von Standort und Fläche ab. Deshalb rechnen wir sie für deinen Verein individuell durch. Statt Pflegekosten für einen ungenutzten Platz hast du damit planbare Einnahmen.'],
+    ['frage' => 'Was haben die Vereinsmitglieder davon?', 'antwort' => 'Deine Mitglieder bekommen 30 % Rabatt auf den Stundenpreis, an allen MRC-Standorten und nicht nur zu Hause. Sie können 24 Stunden früher buchen als alle anderen und erhalten Zugang zu Events, Training und Partnerrabatten. Das Joint Venture baut außerdem Angebote für Kinder und Einsteiger auf.'],
+    ['frage' => 'Kann mein Club bei einem Event dabei sein?', 'antwort' => 'Ja, sprich uns gern an, wenn dein Club bei einem unserer Events dabei sein will. Ob Turnier, Messe oder ein eigenes Format auf deiner Anlage, wir prüfen gemeinsam, was zu deinem Club passt. Schreib uns dafür über das Kontaktformular und erzähl uns kurz von deiner Anlage.'],
 ];
 tc_page_start([
     'path' => '/betreiberkonzept',
@@ -24,6 +30,7 @@ tc_page_start([
             '/betreiberkonzept',
             ['serviceType' => 'Betreiberkonzept', 'image' => '/media/uploads/a5b1ead76ff421ef2585a90d24bed755.jpg']
         ),
+        tc_schema_faq($bkFaq, '/betreiberkonzept'),
     ],
 ]);
 ?>
@@ -54,7 +61,7 @@ tc_page_start([
     <p class="lead">Ein Ansprechpartner für jede Phase.</p>
     <div class="cards c3">
 <?php foreach ($leistungen as $l): ?>
-      <article class="card reveal"><div class="k"><?= $l[0] !== '' ? 'Leistung ' . $l[0] : 'Leistungsspektrum' ?></div><h3 data-type><?= $l[1] ?></h3><p><?= $l[2] ?></p><?php if ($l[3]): ?><a class="btn ghost-d" href="<?= $l[3] ?>" style="margin-top:20px"><?= $l[4] ?></a><?php endif; ?></article>
+      <article class="card reveal"><div class="k"><?= tc_h($l[0]) ?></div><h3 data-type><?= $l[1] ?></h3><p><?= $l[2] ?></p><?php if ($l[3]): ?><a class="btn ghost-d" href="<?= $l[3] ?>" style="margin-top:20px"><?= $l[4] ?></a><?php endif; ?></article>
 <?php endforeach; ?>
     </div>
     <div class="b-franchise reveal"><div class="k">Auf Wunsch</div><h3 data-type>Franchise</h3><p>Wer eine starke Marke will, bekommt ein erprobtes Konzept.</p></div>
@@ -84,6 +91,7 @@ tc_page_start([
           <div class="lg" role="img" aria-label="Zuply"><span class="t">Vending</span><div class="m" data-logo="zuply" data-h="40"></div></div>
           <div class="lg lg-wide"><span class="t">Digital</span><div class="txt">Levendo<small>Global</small></div></div>
         </div>
+        <p class="b-note"><a href="/partner">Alle Partner ansehen</a></p>
       </div>
     </div>
   </div>
@@ -95,7 +103,7 @@ tc_page_start([
     <h2 class="reveal">Turniere, Training und <span class="hl">Events.</span></h2>
     <p class="lead">Wir bringen Padel dorthin, wo Spieler, Vereine und Betreiber zusammenkommen. Dafür arbeiten wir mit starken Partnern aus Academy, Events und Coaching zusammen.</p>
     <div class="cards c3 b-events">
-      <article class="card reveal"><div class="k">Turnierserie</div><h3 data-type>Rafa Nadal Padel Tour 2026</h3><p>Die Tour macht 2026 an drei Standorten in Deutschland Station, in München im Scheck Club, in Düsseldorf bei Mitte Padel und in Berlin bei Padel Ludwigsfelde.</p></article>
+      <article class="card reveal"><div class="k">Turnierserie</div><h3 data-type>Rafa Nadal Padel Tour 2026</h3><p>Die Tour macht 2026 an drei Standorten in Deutschland Station, in München im <a href="/referenzen#r-scheck">Scheck Club</a>, in Düsseldorf bei Mitte Padel und in Berlin bei Padel Ludwigsfelde.</p></article>
       <article class="card reveal"><div class="k">Format</div><h3 data-type>Best-of-Three-Challenge</h3><p>Im Rapid-Format gewinnt das Team, das zuerst 2 Punkte holt. Gespielt wird im einfachen K.&#8209;o.&#8209;System, wer verliert, scheidet aus. Das Gewinnerteam nimmt 1.000 € Preisgeld mit nach Hause.</p></article>
       <article class="card reveal"><div class="k">Messen</div><h3 data-type>f.re.e und Active Connected</h3><p>Gemeinsam mit der MPM GmbH und Sports Connected bringen wir Racketsport auf die f.re.e München vom 10. bis 14. Februar 2027. Auf der Active Connected leiten wir den Bereich Racketsports.</p></article>
     </div>
@@ -104,7 +112,7 @@ tc_page_start([
       <div class="lg" role="img" aria-label="Patricio Travel"><span class="t">Travel</span><div class="m" data-logo="patricio" data-h="40"></div></div>
       <div class="lg" role="img" aria-label="Padel World Summit"><span class="t">Summit</span><div class="m" data-logo="pws" data-h="40"></div></div>
       <div class="lg" role="img" aria-label="Active Connected"><span class="t">Messe</span><div class="m" data-logo="activeconnected" data-h="40"></div></div>
-      <div class="lg" role="img" aria-label="Scheck Club"><span class="t">Referenzclub</span><div class="m" data-logo="scheck" data-h="40"></div></div>
+      <div class="lg" role="img" aria-label="Scheck Club"><span class="t">Referenzclub</span><div class="m" data-logo="scheck" data-h="52"></div></div>
       <div class="lg"><span class="t">Messe</span><div class="txt">Sports Tech<small>Nation 2026</small></div></div>
     </div>
     <div class="b-eventcta reveal"><div><h3 data-type>Dein Club beim nächsten Event?</h3><p>Ob Turnier, Messe oder ein eigenes Format auf deiner Anlage, wir prüfen gemeinsam, was zu deinem Club passt.</p></div><a class="btn" href="#kontakt">Event anfragen</a></div>
@@ -135,6 +143,18 @@ tc_page_start([
         <p class="b-jv-note">Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.</p>
         <a class="btn ghost-d" href="#kontakt" style="margin-top:8px">Joint Venture anfragen</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="band grid-bg" id="b-faq" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label" data-type>FAQ</p>
+    <h2 class="reveal">Fragen zu Betrieb und <span class="hl">Joint Venture.</span></h2>
+    <div class="faq-list">
+<?php foreach ($bkFaq as $f): ?>
+      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= tc_h($f['antwort']) ?></p></details>
+<?php endforeach; ?>
     </div>
   </div>
 </section>

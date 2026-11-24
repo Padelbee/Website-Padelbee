@@ -48,3 +48,7 @@
 .b-list li{padding-left:20px;position:relative}
 .b-list li::before{content:"";position:absolute;left:0;top:.65em;width:10px;height:2px;background:var(--yellow)}
 @media (max-width:640px){.b-roles{grid-template-columns:1fr}}
+/* Chips im Joint-Venture-Kasten lesbarer */
+.b-jv-body .vm-facts span{font-size:12px;padding:5px 9px}
+.b-partners .b-note{margin-top:14px}
+#b-netzwerk .card p a{color:inherit}
