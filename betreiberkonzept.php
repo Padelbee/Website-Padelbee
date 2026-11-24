@@ -7,7 +7,7 @@ $leistungen = [
     ['Sport Management', 'Marketing & Community-Aufbau', 'Wir übernehmen Markenaufbau, Sponsoring, Community-Wachstum und kommerzielles Management für Clubs und Betreiber.', null, null],
     ['Zusatzeinnahmen', 'Zugang zu Sponsoren', 'Zusatzeinnahmen durch Sponsoren. Logos lassen sich integrieren und Glasflächen individualisieren, so entsteht eine professionelle Präsentationsfläche mit&nbsp;Wiedererkennungswert.', '/courts#c-marke', 'Gestaltung der Courts'],
     ['Ausbildung & Training', 'Academy & Coaching', 'Wir bieten strukturierte Trainingsprogramme, Betreiber-Coaching und&nbsp;Unternehmensberatung.', null, null],
-    ['Management & Formate', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '#b-netzwerk', 'Zu den Partnern'],
+    ['Management & Formate', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '#b-netzwerk', 'Zu den Events'],
     ['Verleih & Verkauf', 'Automatenlösungen', 'Zusatzeinnahmen mit Schlägerverleih, Bällen, Snacks und Getränken, rund um die Uhr und ohne Personal.', '/automatenloesungen', 'Zu den Automaten'],
 ];
 $bkFaq = [
