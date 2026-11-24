@@ -259,3 +259,10 @@
 .vmodel .logo .m{-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:left center;mask-position:left center;max-width:100%}
 .vm-facts{display:flex;flex-wrap:wrap;gap:8px}
 .vm-facts span{font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:2px solid var(--petrol);padding:5px 8px}
+/* Kontakt-Abschluss: Titel, Untertitel, Button (Formular klappt auf), Ansprechpartner schlicht darunter */
+.people.people-plain{display:flex;justify-content:center;flex-wrap:wrap;gap:16px 56px;max-width:none;margin:48px auto 0;text-align:center}
+.people-plain .person{background:none;border:0;padding:0}
+.people-plain .person b{font-size:20px;margin-top:4px}
+.people-plain .person .mail{justify-content:center;margin-top:4px}
+.people-plain .person .mail a{border:0;color:var(--muted-d);font-size:15px}
+.people-plain .person .mail a:hover{color:var(--yellow)}

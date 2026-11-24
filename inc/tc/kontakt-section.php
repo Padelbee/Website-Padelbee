@@ -15,12 +15,12 @@
 <?php if (!empty($tcKontaktLead)): ?>
     <p class="lead" style="margin:18px auto 0"><?= $tcKontaktLead ?></p>
 <?php endif; ?>
-    <div class="people">
+<?php include __DIR__ . '/kontakt-form-toggle.php'; ?>
+    <div class="people people-plain">
       <div class="person"><div class="k">Dein Projekt</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
       <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
       <div class="person"><div class="k">Allgemein</div><b>The Court GmbH</b><div class="mail"><a href="mailto:info@padelbee.de">info@padelbee.de</a></div></div>
     </div>
-<?php include __DIR__ . '/kontakt-form-toggle.php'; ?>
     <div class="addr">Scheck Club · Münchner Str. 15 · 85774 Unterföhring</div>
     <div class="urls">padelbee.de</div>
   </div>
