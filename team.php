@@ -78,7 +78,7 @@ tc_page_start([
       <figure class="reveal"><img src="/media/uploads/a5b1ead76ff421ef2585a90d24bed755.jpg" alt="Padel-Halle im Scheck Club Unterföhring, Blick von der Galerie auf die Courts" loading="lazy"></figure>
       <div>
         <p class="label">Unser Office</p>
-        <h2 class="reveal">Wo Racketsports 365 Tage <span class="hl">pulsiert.</span></h2>
+        <h2 class="reveal">Wo Racketsports 365 Tage&nbsp;<span class="hl">pulsiert.</span></h2>
         <p class="lead">Unser Büro liegt im Scheck Club in Unterföhring bei München. Mit 12 Padel-Courts ist er eine der größten Padel-Anlagen Deutschlands und unsere <a href="/referenzen">Referenzanlage</a>.</p>
         <p class="t-addr">Scheck Club · Münchner Str. 15 · 85774 Unterföhring</p>
       </div>
