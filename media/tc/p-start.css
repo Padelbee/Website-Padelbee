@@ -140,3 +140,4 @@
 .ph-compact .ph:last-child{grid-column:span 3}
 @media (max-width:980px){.ph-compact{grid-template-columns:repeat(2,minmax(0,1fr))}.ph-compact .ph:last-child{grid-column:span 2}}
 @media (max-width:640px){.ph-compact{grid-template-columns:1fr}.ph-compact .ph:last-child{grid-column:auto}}
+.ph-compact .ph{align-items:stretch;justify-content:flex-start;height:auto;text-align:left}.ph-compact .ph .chips{justify-content:flex-start}
