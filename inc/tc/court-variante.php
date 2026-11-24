@@ -106,7 +106,7 @@ tc_page_start([
 <section class="band" id="v-varianten">
   <div class="inner">
     <p class="label" data-type>Weitere Varianten</p>
-    <h2 class="reveal">Die anderen <span class="hl">Varianten.</span></h2>
+    <h2 class="reveal">Drei Varianten, ein <span class="hl">Prinzip.</span></h2>
     <div class="cards c<?= count($v['others']) ?>">
 <?php foreach ($v['others'] as $o): ?>
       <article class="card variant vflat reveal"><figure class="vimg"><img src="<?= $o[5] ?>" alt="<?= tc_h($o[1]) ?>-Court Rendering" loading="lazy"></figure><div class="vf-body"><div class="k"><?= $o[0] ?></div><h3 data-type><?= $o[1] ?></h3><p><?= $o[2] ?></p><span class="tier"><a href="<?= $o[3] ?>"><?= $o[4] ?></a></span></div></article>
