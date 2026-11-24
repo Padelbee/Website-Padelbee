@@ -278,3 +278,10 @@
 .kf-wrap.open #kontakt-formular{max-height:2600px;opacity:1}
 .kf-wrap:not(.open) .kform{padding-bottom:36px}
 @media (prefers-reduced-motion:reduce){.kf-wrap #kontakt-formular{transition:none}}
+/* Kontakt-Abschluss gleichmäßig: Kästen und Anfrage-Kasten gleich breit, Titel etwas kleiner */
+#kontakt.end h2{font-size:clamp(52px,7.5vw,112px)}
+#kontakt .people{max-width:1000px}
+#kontakt .kf-wrap .kform{max-width:1000px;margin-top:20px}
+.kf-sub{margin:0;color:var(--white);font-size:clamp(17px,1.6vw,20px);line-height:1.5}
+.kf-wrap:not(.open) .kf-intro{display:none}
+.kf-wrap.open .kf-sub{display:none}

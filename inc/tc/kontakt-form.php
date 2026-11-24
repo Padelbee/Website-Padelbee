@@ -29,6 +29,9 @@ $tcInterests = [
 ?>
     <div class="kform" id="anfrage">
       <h3>Projekt anfragen</h3>
+<?php if (!empty($tcFormToggle)): ?>
+      <p class="kf-sub">Lass dir deine Anlage durchrechnen, im kostenlosen Erstgespräch.</p>
+<?php endif; ?>
       <p class="kf-intro">Erzähl uns kurz, was du vorhast. Wir melden uns innerhalb von 24 Stunden bei dir.</p>
 <?php if (!empty($tcFormToggle)): ?>
       <p class="kf-open"><button class="btn" type="button" data-kf-open aria-expanded="false" aria-controls="kontakt-formular"><?= tc_h($tcFormButtonText ?? 'Projekt anfragen') ?></button></p>
