@@ -444,4 +444,4 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 .lg{container-type:inline-size}
 .lg .txt{font-size:min(26px,11cqi);max-width:calc(100% - 20px)}
 .lg .txt small{font-size:min(10px,5.6cqi);letter-spacing:min(.24em,1.2cqi)}
-.lg .t{max-width:calc(100% - 24px);font-size:min(10px,5.8cqi);letter-spacing:min(.2em,1.1cqi);white-space:nowrap}
+.lg .t{max-width:calc(100% - 24px);font-size:min(10px,6cqi);letter-spacing:min(.2em,.5cqi);white-space:nowrap}
