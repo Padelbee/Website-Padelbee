@@ -17,7 +17,7 @@ $v = [
     'description' => 'Premier Court und Full-Panorama-Court mit nahezu durchgehendem Glas, der Show-Court für Indoor-Clubs. Modelle von Padel Factory, Padel Concept und 100% Padel.',
     'label' => 'Premier Court · Full-Panorama · Topklasse',
     'h1' => 'Full&#8209;Panorama <span class="kw">Court.</span>',
-    'lead' => 'Der Full-Panorama Court ist das Premiumsegment. Nahezu durchgehende Glasflächen und eine minimale Stahlstruktur geben ihm eine sehr elegante, repräsentative Optik mit deutlichem Show-Court-Charakter. Er ist der Show-Court für Indoor-Clubs, Turniere und TV-Übertragungen. Bei Padel Factory heißt er Premier Extreme Panoramic. Jedes Modell gibt es als Double- und als Single-Court.',
+    'lead' => 'Der Full-Panorama Court ist die Topklasse. Nahezu durchgehende Glasflächen und eine minimale Stahlstruktur geben ihm eine sehr elegante, repräsentative Optik. Er ist der Show-Court für Indoor-Clubs, Turniere und TV-Übertragungen. Bei Padel Factory heißt er Premier Extreme Panoramic. Jedes Modell gibt es als Double- und als Single-Court.',
     'image' => '/media/courts/cp_indoor_ret.jpg',
     'alt' => 'Indoor-Padelhalle mit Courts von 100% Padel, Herstellerreferenz',
     'stats' => [
@@ -74,9 +74,10 @@ $v = [
             'facts' => ['Turnierausrüster der Premier Padel Tour (lt. Hersteller)', 'Einbrennlackierung, Farbe nach Wahl', 'Verzinkt (nicht feuerverzinkt), 2 Jahre Gewährleistung', 'Montageteam in Deutschland'],
         ],
     ],
+    'strategy_lead' => 'Die Wahl ist auch eine strategische Positionierung deiner Anlage.',
     'extra_html' => $refHtml,
     'faq' => [
-        ['frage' => 'Für wen eignet sich der Full-Panorama Court?', 'antwort' => 'Der Full-Panorama Court hat fast durchgehendes Glas und einen minimalen Stahlrahmen. Er ist der Show-Court für Indoor-Clubs, Turniere und TV-Übertragungen. Nicht jeder Standort braucht den Show-Court. Unsere Faustregel ist einfach. Wo Zuschauer stehen, lohnt sich Panorama, wo Wind und Wetter wirken, punktet Standard. Mehr dazu beim <a href="/panorama-court">Panorama Court</a> und beim <a href="/standard-court">Standard Court</a>.'],
+        ['frage' => 'Für wen eignet sich der Full-Panorama Court?', 'antwort' => 'Der Full-Panorama Court ist der Show-Court für Indoor-Clubs, Turniere und TV-Übertragungen. Die beiden anderen Varianten findest du beim <a href="/panorama-court">Panorama Court</a> und beim <a href="/standard-court">Standard Court</a>.'],
         ['frage' => 'Was kostet ein Premier Court?', 'antwort' => 'Der Premier Extreme Panoramic von Padel Factory kostet ab 29.400 € netto pro Court, inklusive kompletter Konstruktion, 12-mm-Glas-Kit, fibrilliertem Kunstrasen und acht LED-Flutern, zuzüglich Übernachtungs- und Verpflegungskosten. Der Endpreis hängt von Hersteller und Ausstattung ab. Für die Gesamtkalkulation kommt das Fundament mit einem Richtwert von rund 35.000 € dazu, mehr dazu unter <a href="/courts#c-fundament">Fundament</a>. Für die Halle siehst du alle Maße unter <a href="/halle">Padel Halle</a>.'],
         ['frage' => 'Wie viel Garantie gibt es auf einen Full-Panorama Court?', 'antwort' => 'Padel Factory nennt 15 Jahre Herstellergarantie auf die Konstruktion (lt. Hersteller). Bei 100% Padel sind es 2 Jahre Gewährleistung. Die Garantie gewährt immer der jeweilige Hersteller, nicht die THE COURT GmbH. Welche Bedingungen gelten, prüfen wir für dein Projekt mit dem Hersteller.'],
     ],

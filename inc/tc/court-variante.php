@@ -108,7 +108,8 @@ tc_page_start([
     <p class="label" data-type>Court-Systeme · Detail</p>
     <h2 class="reveal">Nicht nur technisch. Auch <span class="kw">strategisch.</span></h2>
     <div class="v-leadrow">
-      <p class="v-links"><a class="btn ghost" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost" href="/courts#c-fundament">Das richtige Fundament</a></p>
+<?php if (!empty($v['strategy_lead'])): ?>      <p class="lead"><?= $v['strategy_lead'] ?></p>
+<?php endif; ?>      <p class="v-links"><a class="btn ghost" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost" href="/courts#c-fundament">Das richtige Fundament</a></p>
     </div>
     <div class="gest g3">
       <article class="gbox reveal"><div class="k">Individualisierung</div><p>Kunstrasen in nahezu allen Farben, farblich angepasste Stahlkonstruktion.</p></article>
