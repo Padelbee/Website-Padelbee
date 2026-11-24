@@ -470,3 +470,5 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 /* Hero-Spalten dürfen auf dem Handy nicht breiter als der Bildschirm werden (SVG, lange Kicker) */
 .band .inner > *{min-width:0}
 .band .inner svg{max-width:100%}
+/* Sicherheitsnetz: dekorative Grafiken dürfen nie seitliches Scrollen auslösen */
+main{overflow-x:clip}

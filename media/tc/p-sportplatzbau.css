@@ -1,5 +1,5 @@
 /* Sportplatzbau: Seitenspezifisches. Das lange Wort in der H1 darf auf dem Handy nicht überlaufen. */
-.sp-h1{font-size:clamp(34px,8.2vw,112px)}
+.sp-h1{font-size:clamp(30px,8.2vw,112px)}
 .card.dk p a{color:var(--yellow);text-underline-offset:3px}
 .sp-partnernote{margin-top:28px}
 .sp-partnernote a{color:var(--yellow)}
