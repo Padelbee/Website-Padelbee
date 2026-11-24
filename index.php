@@ -216,17 +216,13 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
 
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">
-    <div class="logos2"><img src="/media/tc/logo-padelbee.svg" alt="Padelbee"><span class="bar"></span><img src="/media/tc/logo-thecourt.svg" alt="The Court"></div>
     <h2>Ready. <span class="kw">Play.</span></h2>
-    <p class="label" style="margin-top:22px" data-type>Padel · Pickleball · Tennis</p>
-    <div class="people">
-      <div class="person"><div class="k">Dein Projekt</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
+    <p class="lead" style="margin:18px auto 0">Padel, Pickleball oder Tennis, egal, wer du bist, wir finden das passende Konzept. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
+    <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
       <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
-      <div class="person"><div class="k">Allgemein</div><b>The Court GmbH</b><div class="mail"><a href="mailto:info@padelbee.de">info@padelbee.de</a></div></div>
     </div>
-<?php include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
-    <div class="addr">Scheck Club · Münchner Str. 15 · 85774 Unterföhring</div>
-    <div class="urls">padelbee.de</div>
+<?php $tcFormButton = 'Beratungsgespräch anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
   </div>
 </section>
 <?php tc_page_end();
