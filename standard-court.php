@@ -70,6 +70,7 @@ $v = [
             'facts' => ['Turnierausrüster der Premier Padel Tour (lt. Hersteller)', 'Einbrennlackierung, Sonderfarben erhältlich', 'Verzinkt (nicht feuerverzinkt), 2 Jahre Gewährleistung', 'Montageteam in Deutschland'],
         ],
     ],
+    'strategy_lead' => 'Die Wahl ist auch eine strategische Positionierung deiner Anlage.',
     'faq' => [
         ['frage' => 'Für wen eignet sich der Standard Court?', 'antwort' => 'Der Standard Court ist der Klassiker. Zusätzliche Streben zwischen den Glasscheiben machen ihn besonders stabil. Mit dem besten Preis-Leistungs-Verhältnis ist er ideal für Vereine und Outdoor-Anlagen. Unsere Faustregel ist einfach. Wo Wind und Wetter wirken, punktet Standard. Wo viele Zuschauer stehen, lohnt sich der <a href="/panorama-court">Panorama Court</a>.'],
         ['frage' => 'Was kostet ein Standard Court?', 'antwort' => 'Der Smash Standard von Padel Factory kostet ab 27.275 € netto pro Court, inklusive kompletter Stahlkonstruktion, Glas-Kit, fibrilliertem Kunstrasen und 8 Flutlichtstrahlern, zuzüglich Übernachtungs- und Verpflegungskosten. Der Endpreis hängt von Hersteller und Ausstattung ab. Für die Gesamtkalkulation kommt das Fundament mit einem Richtwert von rund 35.000 € dazu, mehr dazu unter <a href="/courts#c-fundament">Fundament</a>.'],

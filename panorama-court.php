@@ -104,6 +104,7 @@ $v = [
             'facts' => ['Turnierausrüster der Premier Padel Tour (lt. Hersteller)', 'Einbrennlackierung, Farbe nach Kundenwunsch', 'Verzinkt (nicht feuerverzinkt), 2 Jahre Gewährleistung', 'Montageteam in Deutschland'],
         ],
     ],
+    'strategy_lead' => 'Die Wahl ist auch eine strategische Positionierung deiner Anlage.',
     'extra_html' => $galisHtml,
     'faq' => [
         ['frage' => 'Für wen eignet sich der Panorama Court?', 'antwort' => 'Der Panorama Court hat weniger sichtbare Streben und größere Glasflächen, Zuschauer sehen mehr vom Spiel. Damit ist er die goldene Mitte für Clubs mit Anspruch. Unsere Faustregel ist einfach. Wo Zuschauer stehen, lohnt sich Panorama. Für einen reinen Show-Court mit fast durchgehendem Glas gibt es Full-Panorama, mehr dazu bei den <a href="/courts#c-systeme">Court-Varianten</a>.'],
