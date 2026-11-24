@@ -177,7 +177,7 @@ addEventListener('hashchange',route); route();
     const groups=[[]];
     [...h.childNodes].forEach(n=>{
       if(n.nodeType===3){
-        const parts=n.textContent.split(/(?<=[.!?])\s+(?=\S)/);
+        const parts=n.textContent.split(/(?<=[.!?])\s+/);
         parts.forEach((p,i)=>{ if(i>0) groups.push([]); if(p) groups[groups.length-1].push(document.createTextNode(p)); });
       } else groups[groups.length-1].push(n);
     });
