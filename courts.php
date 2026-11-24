@@ -84,7 +84,7 @@ tc_page_start([
 <section class="band" id="c-hersteller">
   <div class="inner">
     <p class="label" data-type>Court-Partner</p>
-    <h2 class="reveal">Fünf Hersteller. <span class="hl">Ein</span> Ansprechpartner.</h2>
+    <h2 class="reveal">Fünf Hersteller. Ein <span class="hl">Ansprechpartner.</span></h2>
     <p class="lead">Jeder Hersteller hat eigene Stärken. Wir kennen alle aus der Praxis und vergleichen für dich Qualität, Lieferzeit, Herstellergarantie und Preis.</p>
     <div class="makers">
       <article class="maker reveal"><div class="logo"><div class="m" data-logo="padelconcept" data-h="54"></div></div><div class="origin">Lettland · Riga</div><p>Von einem deutschen Unternehmer geführt. Vorrätige Courts und Ersatzteile für kurze Lieferzeiten, eigene Montageteams, Beratung auf Deutsch. Direct from factory to your court.</p><div class="models-list">Standard Club · Panorama · Full Panorama</div><div class="facts"><span>Windlast 144 km/h (lt. Hersteller)</span><span>Mondo · Edelgrass</span><span>Schnelle Lieferung</span></div><details class="pmore"><summary>Mehr Details</summary><ul><li>Verzinkte Stahlstrukturen mit hochwertiger Pulverbeschichtung</li><li>Ideal für Projekte mit engem Zeitrahmen</li><li>Montageteams mit mehr als fünf Jahren Erfahrung im Courtbau</li><li>Ausschließlich europäische Markenrasen</li><li>Beratung und Wartung auf Deutsch, Englisch oder Lettisch</li></ul></details></article>

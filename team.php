@@ -78,7 +78,7 @@ tc_page_start([
       <figure class="reveal"><img src="/media/uploads/a5b1ead76ff421ef2585a90d24bed755.jpg" alt="Padel-Halle im Scheck Club Unterföhring, Blick von der Galerie auf die Courts" loading="lazy"></figure>
       <div>
         <p class="label">Unser Office</p>
-        <h2 class="reveal">Wo Racketsports 365 Tage&nbsp;<span class="hl">pulsiert.</span></h2>
+        <h2 class="reveal">Wo Racketsports <span class="hl">365 Tage</span> pulsiert.</h2>
         <p class="lead">Unser Büro liegt im Scheck Club in Unterföhring bei München. Mit 12 Padel-Courts ist er eine der größten Padel-Anlagen Deutschlands und unsere <a href="/referenzen">Referenzanlage</a>.</p>
         <p class="t-addr">Scheck Club · Münchner Str. 15 · 85774 Unterföhring</p>
       </div>
@@ -88,7 +88,7 @@ tc_page_start([
 
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">
-    <h2>Wir sind für dich <span class="kw">da.</span></h2>
+    <h2>Wir sind <span class="kw">für dich</span> da.</h2>
     <p class="lead" style="margin:18px auto 0">Du hast einen Standort, wir haben den Plan. Sichere dir jetzt dein unverbindliches Beratungsgespräch, damit Padel bei dir schnell startet und erfolgreich bleibt.</p>
     <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>

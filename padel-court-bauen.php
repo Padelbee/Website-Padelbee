@@ -132,7 +132,7 @@ tc_page_start([
 <section class="band" id="p-finanzierung">
   <div class="inner">
     <p class="label" data-type>Finanzierung</p>
-    <h2 class="reveal">Du musst nicht sofort <span class="hl">sechsstellig</span> investieren.</h2>
+    <h2 class="reveal">Du musst <span class="hl">nicht sofort</span> sechsstellig investieren.</h2>
     <p class="lead">Drei Wege stehen dir offen. Welcher passt, hängt von deinen Zielen ab. Willst du die volle Kontrolle oder planbare Einnahmen ohne Investitionsrisiko? Wir rechnen beide Seiten mit dir durch.</p>
     <div class="cards c3">
       <article class="card reveal"><div class="k">Passt zu Betreibern mit Kapital</div><h3 data-type>Kauf</h3><p>Du investierst einmal und dir gehört alles. Der Klassiker für Betreiber mit Kapital und langfristigem Plan.</p></article>

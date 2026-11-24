@@ -98,7 +98,7 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
     <p class="lead" style="margin-top:14px">Padelbee ist ein spezialisierter Projektentwickler für den Aufbau und Betrieb von Padel-Anlagen. Wir begleiten dich von der <a href="/standortanalyse">Standort- und Potenzialanalyse</a> über Planung, <a href="/padel-court-bauen">Bau und Baubegleitung</a> bis hin zu nachhaltigen <a href="/betreiberkonzept">Betreiberkonzepten</a> und arbeiten dabei 100 % kundenorientiert.</p>
     <div class="cards c4" id="leistungen-karten">
 <?php foreach ($svc as $s): ?>
-      <article class="card svc reveal"><div class="k">Leistung</div><h3 data-type><?= str_replace('&amp;', '<span class="hl">&amp;</span>', $s[0]) ?></h3><p><?= $s[1] ?></p><a class="svc-more" href="<?= tc_h($s[2]) ?>"><?= tc_h($s[3]) ?></a></article>
+      <article class="card svc reveal"><div class="k">Leistung</div><h3 data-type><?= $s[0] ?></h3><p><?= $s[1] ?></p><a class="svc-more" href="<?= tc_h($s[2]) ?>"><?= tc_h($s[3]) ?></a></article>
 <?php endforeach; ?>
       <article class="card svc dk reveal"><div class="k">Plattform</div><h3 data-type>360°</h3><p>Alles aus einer Hand, von der Idee bis zum laufenden Betrieb.</p><a class="svc-more" href="#kontakt">Projekt anfragen</a></article>
     </div>
@@ -196,7 +196,7 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
     <div class="cards c3">
       <article class="card reveal"><div class="k">Vereine</div><h3 data-type>Tennisvereine</h3><p>Padel als zweites Standbein bringt mehr Mitglieder und mehr Auslastung.</p></article>
       <article class="card reveal"><div class="k">Vereine</div><h3 data-type>Sportvereine</h3><p>Neue Sparten mit wenig Fläche und schneller Amortisation.</p></article>
-      <article class="card reveal"><div class="k">Hotellerie · Gewerbe</div><h3 data-type>Hotels <span class="kw">&amp;</span> kommerzielle Betreiber</h3><p>Beratung und Bau von Anlagen für Hotels, Resorts und private Betreiber.</p></article>
+      <article class="card reveal"><div class="k">Hotellerie · Gewerbe</div><h3 data-type>Hotels &amp; kommerzielle Betreiber</h3><p>Beratung und Bau von Anlagen für Hotels, Resorts und private Betreiber.</p></article>
       <article class="card reveal"><div class="k">Golf</div><h3 data-type>Golfclubs</h3><p>Racketsport als Ergänzung für Mitglieder und Gäste.</p></article>
       <article class="card reveal"><div class="k">Öffentlich</div><h3 data-type>Kommunen</h3><p>Sportinfrastruktur für Bürgerinnen und Bürger, inklusive Fördermittel.</p></article>
       <article class="card reveal"><div class="k">Tourismus</div><h3 data-type>Tourismusverbände</h3><p>Padel und Pickleball als Attraktion für Regionen und Gäste.</p></article>

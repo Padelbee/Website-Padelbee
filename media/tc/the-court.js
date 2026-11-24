@@ -22,11 +22,11 @@ function typeEl(el,speed=28){ if(RM||el.dataset.typing) return; el.dataset.typin
 
 /* services */
 const SV=[['Beratung','Erstscreening, Standort- und Marktanalyse, Go/No-Go-Empfehlung.'],['Finanzierung','Bankfähiger Business Case, Leasing, Fördermittel und Investoren.'],['Planung & Architektur','Konzept, 3D-Visualisierung, Bauantrag mit spezialisierten Architekturbüros.'],['Bau','Courts, Hallen und Fundamente schlüsselfertig, mit Ausschreibung und Bauleitung.'],['Digitalisierung','Buchungssystem, Zugangskontrolle, Lichtsteuerung und Automaten.'],['Betrieb','Betreiberkonzept, Marketing, Community-Aufbau und Sponsoring.'],['Franchise','Ein erprobtes Clubkonzept unter der Marke The Court, an vielen Standorten.']];
-$('svc').innerHTML=SV.map(([h,p])=>`<article class="card reveal"><div class="k">Leistung</div><h3 data-type>${h.replace('&','<span class="hl">&amp;</span>')}</h3><p>${p}</p></article>`).join('')+`<article class="card dk reveal"><div class="k">Plattform</div><h3 data-type>360°</h3><p>Alles aus einer Hand, von der Idee bis zum laufenden Betrieb.</p></article>`;
+$('svc').innerHTML=SV.map(([h,p])=>`<article class="card reveal"><div class="k">Leistung</div><h3 data-type>${h}</h3><p>${p}</p></article>`).join('')+`<article class="card dk reveal"><div class="k">Plattform</div><h3 data-type>360°</h3><p>Alles aus einer Hand, von der Idee bis zum laufenden Betrieb.</p></article>`;
 
 /* target groups */
 const TG=[['Vereine','Tennisvereine','Padel als zweites Standbein: mehr Mitglieder, mehr Auslastung.'],['Vereine','Sportvereine','Neue Sparten mit wenig Fläche und schneller Amortisation.'],['Hotellerie · Gewerbe','Hotels & kommerzielle Betreiber','Beratung und Bau von Anlagen für Hotels, Resorts und private Betreiber.'],['Golf','Golfclubs','Racketsport als Ergänzung für Mitglieder und Gäste.'],['Öffentlich','Kommunen','Sportinfrastruktur für Bürgerinnen und Bürger, inklusive Fördermittel.'],['Tourismus','Tourismusverbände','Padel und Pickleball als Attraktion für Regionen und Gäste.']];
-$('tg').innerHTML=TG.map(([k,h,p])=>`<article class="card reveal"><div class="k">${k}</div><h3 data-type>${h.replace('&','<span class="kw">&amp;</span>')}</h3><p>${p}</p></article>`).join('');
+$('tg').innerHTML=TG.map(([k,h,p])=>`<article class="card reveal"><div class="k">${k}</div><h3 data-type>${h}</h3><p>${p}</p></article>`).join('');
 
 /* partners */
 const PG=[

@@ -27,7 +27,7 @@ $v = [
         ['29.400 €', 'ab, pro Court netto', 'Premier Extreme, Stand 11/2026'],
     ],
     'models_label' => 'Full-Panorama-Modelle',
-    'models_h2' => 'Drei Hersteller. <span class="hl">Ein</span> Ansprechpartner.',
+    'models_h2' => 'Drei Hersteller. Ein <span class="hl">Ansprechpartner.</span>',
     'models_lead' => 'Mehr Glas, weniger Stahl, aber nicht jeder Standort braucht den Show-Court. Wir vergleichen die Full-Panorama-Modelle für dich auf Basis deines Standorts, deines Budgets und deines Nutzungskonzepts und empfehlen den passenden Court.',
     'models' => [
         [

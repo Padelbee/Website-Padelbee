@@ -23,7 +23,7 @@ $v = [
     ],
     'note' => 'Preise netto, zzgl. Übernachtungs- und Verpflegungskosten. Die Garantie gewährt der jeweilige Hersteller, nicht die THE COURT GmbH.',
     'models_label' => 'Standard-Modelle',
-    'models_h2' => 'Drei Hersteller. <span class="hl">Ein</span> Ansprechpartner.',
+    'models_h2' => 'Drei Hersteller. Ein <span class="hl">Ansprechpartner.</span>',
     'models_lead' => 'Jeder Hersteller hat eigene Stärken. Wir vergleichen die Standard-Modelle für dich auf Basis deines Standorts, deines Budgets und deines Nutzungskonzepts und empfehlen den passenden Court.',
     'models' => [
         [

@@ -96,7 +96,7 @@ tc_page_start([
 <section class="band dark grid-bg" id="h-technik">
   <div class="inner">
     <p class="label" data-type>Preise &amp; Technik</p>
-    <h2 class="reveal">Preise &amp; <span class="kw">Technik.</span></h2>
+    <h2 class="reveal"><span class="kw">Preise</span> &amp; Technik.</h2>
     <div class="h-price reveal">
       <div><span>Hallen ab</span><b>280 €/m²</b><em>netto</em></div>
       <div><p>Der Preis hängt vom System und von der Größe deiner Halle ab.</p><p>Für die Gesamtkalkulation kommen der Court ab 27.000 € netto und das Fundament mit rund 35.000 € als Richtwert dazu. Beides findest du unter <a href="/courts">Padel-Courts</a>.</p><a class="btn" href="#kontakt">Hallenpreis anfragen</a></div>

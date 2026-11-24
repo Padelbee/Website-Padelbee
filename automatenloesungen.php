@@ -219,7 +219,7 @@ tc_page_start([
 <section class="band dark grid-bg" id="a-partner">
   <div class="inner">
     <p class="label" data-type>Unsere Automaten-Partner</p>
-    <h2 class="reveal">Drei Partner. <span class="kw">Ein</span> Ansprechpartner.</h2>
+    <h2 class="reveal">Drei Partner. Ein <span class="kw">Ansprechpartner.</span></h2>
     <div class="cards c3">
       <article class="card reveal"><div class="k">Österreich</div><h3 data-type>Sportogo</h3><p>Dein Partner für digitale Verleih- und Verkaufsautomaten speziell für Padel. Plexiglasfächer mit LED, Smart Access und Lichtsteuerung, verknüpft mit deiner Buchungs-App.</p></article>
       <article class="card reveal"><div class="k">Gütersloh · 9 Länder</div><h3 data-type>Pure Vending</h3><p>Sport Vending. Next Level. Automatenlösungen für Padel- und Tennisanlagen mit RentalBOX und Kautionssystem, SportsBOX, DualBOX Lift und flexibler Finanzierung. Dazu Online-Verwaltung, Mobile App und 21,5" Touchscreens mit digitalem Warenkorb und Werbe-Display.</p></article>

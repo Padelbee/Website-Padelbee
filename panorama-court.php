@@ -57,7 +57,7 @@ $v = [
         ['28.150 €', 'ab, pro Court netto', 'Wing Panoramic, Stand 11/2026'],
     ],
     'models_label' => 'Panorama-Modelle',
-    'models_h2' => 'Vier Hersteller. <span class="hl">Ein</span> Ansprechpartner.',
+    'models_h2' => 'Vier Hersteller. Ein <span class="hl">Ansprechpartner.</span>',
     'models_lead' => 'Jeder Hersteller hat eigene Stärken. Wir vergleichen die Panorama-Modelle für dich auf Basis deines Standorts, deines Budgets und deines Nutzungskonzepts und empfehlen den passenden Court.',
     'models' => [
         [
