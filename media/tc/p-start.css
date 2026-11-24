@@ -104,3 +104,14 @@
 .v-zoom .inner{max-width:1240px;padding-inline:0}
 .v-zoom figure{width:calc(76% + 24% * var(--z,0));max-width:min(100%,calc(78vh * 16 / 9))}
 @media (max-width:600px){.v-zoom figure{width:calc(92% + 8% * var(--z,0));max-width:100%}}
+/* Handy und Tablet: weniger Leerraum vor und nach dem Video, 360°-Kreis sichtbar */
+@media (max-width:1023px){
+  .ht .inner{min-height:0;padding-block:clamp(40px,7vw,72px) clamp(28px,5vw,48px)}
+  .v-zoom .inner{padding-block:0 clamp(20px,4vw,36px)}
+  .h-rest .inner{padding-block:clamp(16px,3vw,32px) 20px}
+  .h-rest .hero-media .ring{display:block;left:auto;right:-6px;bottom:-34px;width:clamp(92px,16vw,130px);max-width:none}
+  .h-rest .hero-media .ring .num b{font-size:clamp(22px,4.4vw,34px)}
+  .h-rest .hero-media .ring .num small{font-size:clamp(5px,1vw,7px);max-width:70%}
+  .h-rest .hero-media{margin-bottom:48px}
+}
+@media (min-width:601px) and (max-width:1023px){.h-rest .hero-media figure:nth-child(even){transform:translateY(20px)}}
