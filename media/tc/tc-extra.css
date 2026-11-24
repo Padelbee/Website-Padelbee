@@ -289,3 +289,4 @@
 #kontakt .lead{font-size:clamp(18px,1.8vw,22px);line-height:1.55;max-width:760px}
 #kontakt .people{max-width:760px}
 #kontakt .kf-wrap .kform{max-width:760px}
+#kontakt .lead{font-size:clamp(21px,2.4vw,30px);line-height:1.45;max-width:900px;color:var(--white)}
