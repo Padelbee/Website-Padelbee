@@ -115,3 +115,10 @@
   .h-rest .hero-media{margin-bottom:48px}
 }
 @media (min-width:601px) and (max-width:1023px){.h-rest .hero-media figure:nth-child(even){transform:translateY(20px)}}
+/* Claim "100 % kompetent · flexibel · kundenorientiert" als drei Kacheln */
+.claim3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:40px;background:var(--petrol);border-top:4px solid var(--yellow)}
+.claim3 div{padding:clamp(18px,2.4vw,30px) clamp(14px,2vw,28px);text-align:center;min-width:0}
+.claim3 div+div{border-left:1px solid rgba(255,255,255,.15)}
+.claim3 b{display:block;font-family:var(--f-display);font-style:italic;font-weight:700;font-size:clamp(32px,4vw,56px);line-height:1;color:var(--yellow)}
+.claim3 span{display:block;margin-top:10px;font-weight:600;font-size:clamp(11px,1vw,13px);letter-spacing:.2em;text-transform:uppercase;color:var(--white);overflow-wrap:anywhere}
+@media (max-width:560px){.claim3 b{font-size:28px}.claim3 span{font-size:9.5px;letter-spacing:.12em}}
