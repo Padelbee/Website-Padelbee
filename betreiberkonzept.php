@@ -96,7 +96,7 @@ tc_page_start([
     <p class="lead">Wir bringen Padel dorthin, wo Spieler, Vereine und Betreiber zusammenkommen. Dafür arbeiten wir mit starken Partnern aus Academy, Events und Coaching zusammen.</p>
     <div class="cards c3 b-events">
       <article class="card reveal"><div class="k">Turnierserie</div><h3 data-type>Rafa Nadal Padel Tour 2026</h3><p>Die Tour macht 2026 an drei Standorten in Deutschland Station, in München im Scheck Club, in Düsseldorf bei Mitte Padel und in Berlin bei Padel Ludwigsfelde.</p></article>
-      <article class="card reveal"><div class="k">Format</div><h3 data-type>Best-of-Three-Challenge</h3><p>Das Team, das zuerst 2 Punkte holt, gewinnt das Match. Gespielt wird im einfachen K.-o.-System, das Gewinnerteam nimmt 1.000 € Preisgeld mit nach Hause.</p></article>
+      <article class="card reveal"><div class="k">Format</div><h3 data-type>Best-of-Three-Challenge</h3><p>Das Team, das zuerst 2 Punkte holt, gewinnt das Match. Gespielt wird im einfachen K.&#8209;o.&#8209;System, das Gewinnerteam nimmt 1.000 € Preisgeld mit nach Hause.</p></article>
       <article class="card reveal"><div class="k">Messen</div><h3 data-type>f.re.e und Active Connected</h3><p>Gemeinsam mit der MPM GmbH und Sports Connected bringen wir Racketsport auf die f.re.e München vom 10. bis 14. Februar 2027. Auf der Active Connected leiten wir den Bereich Racketsports.</p></article>
     </div>
     <div class="logos">
@@ -105,7 +105,6 @@ tc_page_start([
       <div class="lg" role="img" aria-label="Padel World Summit"><span class="t">Summit</span><div class="m" data-logo="pws" data-h="40"></div></div>
       <div class="lg" role="img" aria-label="Active Connected"><span class="t">Messe</span><div class="m" data-logo="activeconnected" data-h="40"></div></div>
       <div class="lg" role="img" aria-label="Scheck Club"><span class="t">Referenzclub</span><div class="m" data-logo="scheck" data-h="40"></div></div>
-      <div class="lg"><span class="t">Events</span><div class="txt">Best of Three<small>Challenge</small></div></div>
       <div class="lg"><span class="t">Messe</span><div class="txt">Sports Tech<small>Nation 2026</small></div></div>
     </div>
   </div>

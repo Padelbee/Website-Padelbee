@@ -27,3 +27,9 @@
 @media (max-width:980px){.b-digi{grid-template-columns:1fr}}
 @media (max-width:860px){.b-jv{grid-template-columns:1fr}.b-jv-logos{grid-template-columns:repeat(2,minmax(0,1fr));padding:18px}}
 @media (max-width:560px){.b-fees{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Events-Logos: 6 Kästen ohne Lücke (Desktop 3 + 3, Handy 2 + 2 + 2) */
+#b-netzwerk .logos{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:860px){#b-netzwerk .logos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* Event-Karten: auf schmalen Bildschirmen untereinander statt 2 + 1 */
+@media (max-width:980px){.b-events{grid-template-columns:1fr!important}}
