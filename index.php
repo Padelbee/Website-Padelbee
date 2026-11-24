@@ -94,8 +94,7 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
   <div class="inner">
     <p class="label" data-type>Leistungen</p>
     <h2 class="reveal">Die <span class="hl">360°</span>-Plattform.</h2>
-    <p class="lead">Ein Ansprechpartner für jede Phase. Du bekommst Beratung, Finanzierung, Planung, Bau, Digitalisierung, Betrieb und Franchise aus einer Hand.</p>
-    <p class="lead" style="margin-top:14px">Padelbee ist ein spezialisierter Projektentwickler für den Aufbau und Betrieb von Padel-Anlagen. Wir begleiten dich von der <a href="/standortanalyse">Standort- und Potenzialanalyse</a> über Planung, <a href="/padel-court-bauen">Bau und Baubegleitung</a> bis hin zu nachhaltigen <a href="/betreiberkonzept">Betreiberkonzepten</a> und arbeiten dabei 100 % kundenorientiert.</p>
+    <p class="lead">Ein Ansprechpartner für jede Phase, von der <a href="/standortanalyse">Standort- und Potenzialanalyse</a> über Planung und <a href="/padel-court-bauen">Bau</a> bis zum nachhaltigen <a href="/betreiberkonzept">Betreiberkonzept</a>.</p>
     <div class="cards c4" id="leistungen-karten">
 <?php foreach ($svc as $s): ?>
       <article class="card svc reveal"><div class="k">Leistung</div><h3 data-type><?= $s[0] ?></h3><p><?= $s[1] ?></p><a class="svc-more" href="<?= tc_h($s[2]) ?>"><?= tc_h($s[3]) ?></a></article>
