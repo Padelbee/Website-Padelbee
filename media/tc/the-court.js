@@ -159,13 +159,15 @@ addEventListener('hashchange',route); route();
     if(el.querySelector('p,li,div,ul,ol,table')) return;
     const nodes=[]; const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; while(n=w.nextNode()) nodes.push(n);
     // 2) „&“ und Zahlen an das nächste Wort binden
-    nodes.forEach(t=>{ const v=t.textContent.replace(/(^|\s)(&|\d[\d.,]*)\s+(?=\S)/g,(x,a,b)=>a+b+NB); if(v!==t.textContent) t.textContent=v; });
+    const head=/^H[1-4]$/.test(el.tagName);
+    // Zahlen nur im Fließtext binden (in großen Überschriften würde die Zeile zu breit)
+    nodes.forEach(t=>{ const v=t.textContent.replace(head?/(^|\s)(&)\s+(?=\S)/g:/(^|\s)(&|\d[\d.,]*)\s+(?=\S)/g,(x,a,b)=>a+b+NB); if(v!==t.textContent) t.textContent=v; });
     nodes.forEach(t=>{ const ps=t.previousSibling; if(ps&&ps.nodeType===1&&ps.textContent.trim()==='&'&&/^\s/.test(t.textContent)) t.textContent=t.textContent.replace(/^\s+/,NB); });
     // 1) letzte zwei Wörter: Stelle merken, entschieden wird per Messung (siehe unten)
     let last=null; for(let i=nodes.length-1;i>=0;i--){ if(nodes[i].textContent.trim()){ last=nodes[i]; break; } }
     if(!last) return;
     const m=last.textContent.match(/^([\s\S]*\S)[ \u00a0]+(\S+)\s*$/); if(!m) return;
-    const prev=m[1].split(/\s/).pop();
+    const prev=m[1].split(/[ \t\n]/).pop(); // inkl. schon gebundener Teile (z. B. „100 %“)
     WID.push({el, node:last, idx:m[1].length, pair:prev+' '+m[2]});
   });
   // Nur zusammenhalten, wenn beide Wörter zusammen höchstens 92 % der aktuellen Zeilenbreite brauchen (echte Schrift gemessen)
@@ -187,7 +189,7 @@ addEventListener('hashchange',route); route();
 
 /* Kurze Bindestrich-Wörter (z. B. Single-Court, Padel-Profi) nicht am Bindestrich umbrechen */
 (function(){
-  const sel='main p, main li, main dd, main td, main figcaption, main h2, main h3, main h4, section p, section li, section dd, section td, section figcaption, section h2, section h3, section h4, .lead';
+  const sel='main p, main li, main dd, main td, main figcaption, main h3, main h4, section p, section li, section dd, section td, section figcaption, section h3, section h4, .lead';
   document.querySelectorAll(sel).forEach(el=>{
     if(el.closest('form,nav,header,footer,.dd-menu')) return;
     const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; const ns=[]; while(n=w.nextNode()) ns.push(n);

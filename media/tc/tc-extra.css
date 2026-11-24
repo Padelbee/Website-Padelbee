@@ -429,3 +429,11 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 
 /* Textbild: lange Fachwörter in schmalen technischen Angaben dürfen silbengetrennt werden (nur Wörter ab 12 Zeichen) */
 .vm-specs dd,.vr-table td,.fd-plat td{hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:12 5 5}
+
+/* Textbild auf schmalen Geräten (Prüfung 320 bis 1920 px, 24.11.) */
+/* Header-Button erst ab 561 px, darunter nur Menü (vorher ragte er zwischen 461 und 560 px aus dem Bild) */
+@media (max-width:560px){.head-cta{display:none}.burger{margin-left:auto}}
+/* H2 auf sehr schmalen Handys etwas kleiner, damit lange Wörter („Racketsportanlagen“, „Ansprechpartner.“) in die Zeile passen; ab 400 px unverändert */
+@media (max-width:400px){h2{font-size:clamp(30px,10vw,40px)}}
+/* Lange Buttons dürfen auf dem Handy umbrechen statt aus dem Kasten zu ragen */
+@media (max-width:480px){.btn{max-width:100%;white-space:normal;text-align:center;justify-content:center;line-height:1.35}}
