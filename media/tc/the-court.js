@@ -85,6 +85,15 @@ const io=new IntersectionObserver(es=>es.forEach(en=>{ if(!en.isIntersecting) re
   if(el.hasAttribute('data-count')&&!RM){ const n=+el.dataset.count, plus=el.hasAttribute('data-plus'); const t0=performance.now(); (function f(now){ const u=Math.min(1,(now-t0)/1400); el.textContent=(el.dataset.pre||'')+Math.round(n*(1-Math.pow(1-u,3)))+(plus&&u===1?'+':''); if(u<1) requestAnimationFrame(f); })(t0); }
   if(el.id==='mapbox') playMap();
 }),{threshold:.35});
+/* Einheitlich auf allen Seiten (Design-Regeln): Karten- und Produkt-Überschriften tippen, Labels tippen */
+document.querySelectorAll('main h3, section h3, main p.label, section p.label').forEach(h=>{
+  if(h.hasAttribute('data-type')||h.closest('.faq,summary,form,header,footer,.dd-menu,.c-stats')||h.querySelector('[data-type],small')) return;
+  h.setAttribute('data-type','');
+});
+/* Hat die Seite ein eigenes Formular (#kontakt), führen Header- und Menü-Links dorthin statt zur Startseite */
+if(location.pathname!=='/'&&document.getElementById('kontakt')&&document.getElementById('kontakt-formular')){
+  document.querySelectorAll('a[href="/#kontakt"]').forEach(a=>a.setAttribute('href','#kontakt'));
+}
 document.querySelectorAll('.reveal,[data-type],[data-count],#mapbox').forEach(el=>io.observe(el));
 
 /* ===== views (Start / Courts) ===== */

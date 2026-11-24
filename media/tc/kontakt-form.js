@@ -67,8 +67,10 @@
     if (scroll) setTimeout(function () { document.getElementById('anfrage').scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 60);
   }
   if (btn) btn.addEventListener('click', function () { open(false); });
-  document.querySelectorAll('a[href="#kontakt"], a[href="' + location.pathname + '#kontakt"]').forEach(function (a) {
-    a.addEventListener('click', function () { open(false); });
+  // Delegiert, damit auch später umgestellte Header-Links (the-court.js) das Formular öffnen
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href="#kontakt"], a[href="' + location.pathname + '#kontakt"]');
+    if (a) open(false);
   });
   if (location.hash === '#kontakt' || /[?&]error=/.test(location.search)) open(false);
 })();
