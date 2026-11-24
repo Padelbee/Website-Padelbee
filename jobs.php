@@ -31,7 +31,7 @@ foreach ($bloecke as $b) {
 }
 tc_page_start([
     'path' => '/jobs',
-    'title' => 'Jobs bei Padelbee · Werkstudent Social Media, Marketing & Sales · THE COURT',
+    'title' => 'Jobs: Werkstudent Social Media, Marketing & Sales · Padelbee',
     'description' => 'Jobs bei Padelbee: Werde Teil des Padel-Booms! Aktuelle Stellenangebote, zum Beispiel Werkstudent (m/w/d) im Bereich Social Media, Marketing & Sales.',
     'breadcrumb' => ['Jobs' => '/jobs'],
     'schema' => [[
@@ -39,6 +39,7 @@ tc_page_start([
         'title' => 'Werkstudent (m/w/d) Social Media, Marketing & Sales',
         'description' => html_entity_decode($jobDesc),
         'datePosted' => '2026-10-21',
+        'validThrough' => '2027-04-21T23:59:59+02:00',
         'employmentType' => 'PART_TIME',
         'hiringOrganization' => ['@id' => TC_ORG_ID],
         'jobLocation' => [
