@@ -64,7 +64,7 @@
 
 /* Standortanalyse: Hero-Grafik Karte mit Stecknadel */
 @media (min-width:861px){.sa-h1{font-size:clamp(56px,6.2vw,88px)!important}}
-.sa-wrap{min-width:0;width:100%;max-width:440px;justify-self:center}.sa-art{width:100%;height:auto;display:block}
+.sa-wrap{min-width:0;width:100%;max-width:440px;justify-self:center}.sa-art{width:100%;height:auto;display:block;overflow:hidden}
 .sa-map{opacity:0;animation:saFade 1s ease .1s forwards}
 .sa-zone{transform-box:fill-box;transform-origin:center;animation:saSpin 30s linear infinite}
 .sa-pin{transform:translateY(-60px);opacity:0;animation:saDrop .7s cubic-bezier(.3,1.5,.6,1) .8s forwards}
