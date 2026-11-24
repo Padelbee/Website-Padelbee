@@ -28,7 +28,7 @@ $gruppen = [
             ['t', 'BAP', 'Architektur', 'BAP', 'Barthe Asmuth Partner', 'Barthe Asmuth Partner'],
             ['t', 'InfraConstruct', 'Tiefbau', 'InfraConstruct', 'Bau GmbH', 'Bau GmbH'],
         ]],
-        ['k' => 'Courts', 't' => 'Court-Hersteller', 'text' => 'Fünf Hersteller, hundert Prozent Padel-Expertise und verlässliche Qualität. Wir sind an keinen einzelnen Hersteller gebunden und vergleichen für dich Qualität, Lieferzeit, Herstellergarantie und Preis.', 'link' => ['/courts#c-hersteller', 'Alle Hersteller im Detail'], 'tiles' => [
+        ['k' => 'Courts', 't' => 'Court-Hersteller', 'text' => 'Jeder Hersteller hat eigene Stärken. Wir sind an keinen einzelnen Hersteller gebunden und vergleichen für dich Qualität, Lieferzeit, Herstellergarantie und Preis.', 'link' => ['/courts#c-hersteller', 'Alle Hersteller im Detail'], 'tiles' => [
             ['m', 'padelfactory', 'Courts', 'Padel Factory', 'Italien · 15 Jahre Herstellergarantie (lt. Hersteller)'],
             ['m', 'padelconcept', 'Courts', 'Padel Concept', 'Lettland · vorrätige Courts, kurze Lieferzeiten'],
             ['m', 'mejorset', 'Courts', 'Mejor Set', 'Spanien · Premium Padel Courts'],
@@ -63,7 +63,7 @@ $gruppen = [
         ['k' => 'Finanzierung', 't' => 'Finanzierung', 'text' => 'Kauf, Leasing oder Joint Venture, wir finden das Modell, das zu dir passt. Für die Finanzierung haben wir mindspringpadel an unserer Seite.', 'link' => null, 'tiles' => [
             ['m', 'mindspring', 'Finanzierung', 'mindspringpadel', ''],
         ]],
-        ['k' => 'Academy · Events · Coaching', 't' => 'Academy, Events &amp; Coaching', 'text' => 'Strukturierte Trainingsprogramme, Betreiber-Coaching sowie professionelle Planung und Durchführung von Turnieren und Events. Mehr dazu bei <a href="/powerplay">Padelbee PowerPlay®</a>.', 'link' => null, 'tiles' => [
+        ['k' => 'Academy · Events · Coaching', 't' => 'Academy, Events &amp; Coaching', 'text' => 'Strukturierte Trainingsprogramme, Betreiber-Coaching sowie professionelle Planung und Durchführung von Turnieren und Events. Mehr dazu beim <a href="/betreiberkonzept#b-netzwerk">Betreiberkonzept</a>.', 'link' => null, 'tiles' => [
             ['m', 'rna', 'Academy', 'Rafa Nadal Academy', ''],
             ['m', 'patricio', 'Travel', 'Patricio Travel', ''],
             ['m', 'pws', 'Summit', 'Padel World Summit', ''],
