@@ -345,3 +345,66 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 
 /* Zwei-Satz-Überschriften: Umbruch nur zwischen den Sätzen (the-court.js) */
 .h-sent{display:inline-block;text-wrap:balance}
+
+/* ===== Court-Varianten v2 (Abnahme Bietal 24.11.): Bild und Text nebeneinander, technische Daten als Reihe ===== */
+.vmodel{display:block;padding:32px}
+.vm-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 44px;align-items:start}
+.vmodels .vmodel:nth-child(even) .vm-media{order:2}
+.vm-media .vm-img{margin:0;aspect-ratio:16/10}
+.vm-img.fit-contain{background:var(--white);border:1px solid var(--line)}
+.vm-img.fit-contain img{object-fit:contain}
+.vm-media .vm-facts{margin-top:16px}
+.vmodel .vm-head .logo{height:48px}
+.vmodel .vm-head .k{margin-top:10px}
+.vmodel .vm-price{margin-top:16px!important;padding-top:14px;border-top:1px solid var(--line)}
+.vmodel .vm-price span{margin-top:2px}
+.vm-more{margin-top:28px;border-top:1px solid var(--line)}
+.vm-more summary{display:none}
+.vm-more .vm-specs{grid-template-columns:repeat(4,minmax(0,1fr));gap:0 28px;margin:0}
+.vm-more .vm-specs div{border-bottom:0;padding:18px 0 0}
+.vm-more .vm-specs dd{font-size:14.5px}
+/* Abschluss der Modelle: Hinweis und Zwischen-CTA in einer Zeile */
+.v-foot{display:flex;align-items:center;justify-content:space-between;gap:20px 32px;flex-wrap:wrap;margin-top:28px}
+.v-foot .fav-note{margin:0;flex:1 1 420px}
+.v-foot .v-midcta{margin:0}
+/* Padel Galis: Karten + eine Vergleichstabelle */
+.vr-item p.vr-line{display:none}
+.vr-table{width:100%;border-collapse:collapse;margin-top:28px;font-size:15px;table-layout:fixed}
+.vr-table th,.vr-table td{text-align:left;padding:12px 14px 12px 0;border-top:1px solid var(--line);vertical-align:top}
+.vr-table thead th{font-family:var(--f-display);font-style:italic;font-weight:600;font-size:18px;border-top:0;padding-bottom:10px}
+.vr-table tbody th{font-weight:600;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--petrol);width:16%}
+.vr-table td{color:var(--ink,#111)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* Strategie: Lead und Buttons in einer Zeile, drei Kästen in einer Reihe */
+.v-leadrow{display:flex;align-items:flex-end;justify-content:space-between;gap:20px 40px;flex-wrap:wrap}
+.v-leadrow .lead{flex:1 1 520px;margin-bottom:0}
+.v-links{display:flex;gap:14px;flex-wrap:wrap;margin:0}
+.gest.g3{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:36px}
+/* Weitere Varianten: flache Querkarten */
+#v-varianten .card.vflat{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:0;padding:0;align-items:stretch}
+#v-varianten .vflat .vimg{aspect-ratio:auto;height:100%;min-height:200px;margin:0}
+#v-varianten .vflat .vimg img{width:100%;height:100%;object-fit:cover}
+#v-varianten .vflat .vf-body{padding:24px 26px}
+#v-varianten .vflat h3{margin-top:6px}
+@media (max-width:1100px){.vm-more .vm-specs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:980px){#v-varianten .cards.c2{grid-template-columns:1fr}}
+@media (max-width:860px){
+  .vmodel{padding:22px}
+  .vm-top{display:flex;flex-direction:column}
+  .vm-media{display:contents}
+  .vm-media .vm-img{order:0}
+  .vm-head{order:1;margin-top:18px}
+  .vm-media .vm-facts{order:2}
+  .vm-more{margin-top:20px}
+  .vm-more summary{display:flex;align-items:center;justify-content:space-between;cursor:pointer;list-style:none;padding:14px 0 0;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--petrol)}
+  .vm-more summary::-webkit-details-marker{display:none}
+  .vm-more summary::after{content:"+";font-size:20px;letter-spacing:0;line-height:1}
+  .vm-more[open] summary::after{content:"−"}
+  .vm-more .vm-specs{grid-template-columns:1fr}
+  .vm-more .vm-specs div{padding:14px 0 0}
+  .gest.g3{grid-template-columns:1fr}
+  .vr-table{display:none}
+  .vr-item p.vr-line{display:block;flex:0;margin-top:10px;font-weight:600;font-size:12px;letter-spacing:.08em;color:var(--petrol)}
+}
+@media (max-width:560px){.vr-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.vr-item h4{font-size:20px}.vr-item p{font-size:14px}
+  #v-varianten .card.vflat{grid-template-columns:1fr}#v-varianten .vflat .vimg{aspect-ratio:16/9;height:auto;min-height:0}}

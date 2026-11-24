@@ -14,7 +14,7 @@ ob_start(); ?>
         <div class="logo"><div class="m" data-logo="padelgalis" data-h="50"></div></div>
         <div class="k">Padel Galis · The Player's Court</div>
         <h3 data-type>Vier Panorama-Modelle</h3>
-        <p>Laut Hersteller offizieller Court-Partner der Premier Padel Tour und der Federación Española de Pádel. Alle vier Modelle haben den Kunstrasen PG5 und unterscheiden sich vor allem bei Eckpfeilern, Beleuchtung und Windlast.</p>
+        <p>Laut Hersteller offizieller Court-Partner der Premier Padel Tour und der Federación Española de Pádel. Alle vier Modelle haben den Kunstrasen PG5.</p>
       </div>
       <div class="vr-grid">
 <?php foreach ($galis as $g): ?>
@@ -22,10 +22,18 @@ ob_start(); ?>
           <figure class="vm-img"><img src="<?= $g[6] ?>" alt="Padel Galis <?= tc_h($g[0]) ?> Court" loading="lazy"></figure>
           <h4><?= tc_h($g[0]) ?></h4>
           <p><?= tc_h($g[1]) ?></p>
-          <dl><div><dt>Struktur</dt><dd><?= $g[2] ?></dd></div><div><dt>Beleuchtung</dt><dd><?= $g[3] ?></dd></div><div><dt>Lichtmast</dt><dd><?= $g[4] ?></dd></div><div><dt>Windlast</dt><dd><?= $g[5] ?></dd></div></dl>
+          <p class="vr-line"><?= $g[2] ?> · <?= $g[3] ?> · Lichtmast <?= $g[4] ?> · <?= $g[5] ?></p>
         </div>
 <?php endforeach; ?>
       </div>
+      <table class="vr-table">
+        <thead><tr><th scope="col"><span class="sr">Merkmal</span></th><?php foreach ($galis as $g): ?><th scope="col"><?= tc_h($g[0]) ?></th><?php endforeach; ?></tr></thead>
+        <tbody>
+<?php foreach (['Struktur' => 2, 'Beleuchtung' => 3, 'Lichtmast' => 4, 'Windlast' => 5] as $lbl => $i): ?>
+          <tr><th scope="row"><?= $lbl ?></th><?php foreach ($galis as $g): ?><td><?= $g[$i] ?></td><?php endforeach; ?></tr>
+<?php endforeach; ?>
+        </tbody>
+      </table>
     </article>
 <?php $galisHtml = ob_get_clean();
 
@@ -53,11 +61,11 @@ $v = [
             'logo' => 'padelfactory', 'logo_h' => 44, 'brand' => '3B Padel',
             'maker' => '3B Padel', 'tier' => 'Zwischenstufe',
             'name' => 'Wing Panoramic',
-            'text' => 'Modernes, offenes Design als Zwischenstufe der Court-Kollektion. Die vertikalen Verstrebungen zwischen den Glasflächen entfallen, nur vier Trägerrohre stehen an den Ecken. Das sorgt für ein offeneres Spielgefühl. Der Richtpreis umfasst Stahlkonstruktion, 12-mm-Glas-Kit, fibrillierten Kunstrasen und 8 Flutlichtstrahler.',
-            'price' => 28150, 'price_note' => 'zzgl. Übernachtungs- und Verpflegungskosten',
+            'text' => 'Modernes, offenes Design als Zwischenstufe der Court-Kollektion. Die vertikalen Verstrebungen zwischen den Glasflächen entfallen, nur vier Trägerrohre stehen an den Ecken. Das sorgt für ein offeneres Spielgefühl.',
+            'price' => 28150, 'price_incl' => 'inkl. Stahlkonstruktion, 12-mm-Glas-Kit, fibrilliertem Kunstrasen und 8 Flutlichtstrahlern', 'price_note' => 'zzgl. Übernachtungs- und Verpflegungskosten',
             'image' => '/media/courts/modelle/panorama-wing.jpg', 'alt' => '3B Padel Wing Panoramic Court',
             'specs' => [
-                ['Konstruktion', 'Die gesamte Struktur ist feuerverzinkt, um Langlebigkeit und Widerstandsfähigkeit sicherzustellen.'],
+                ['Konstruktion', 'Die gesamte Struktur ist auf Langlebigkeit und Widerstandsfähigkeit ausgelegt.'],
                 ['Kunstrasen', 'Fibrilliert oder strukturiert, anpassbar an Spielvorlieben und Komfort. Verfügbar in Grün, Blau und Rot.'],
                 ['Glaspanele', 'Hochresistentes ESG mit polierten, abgeschrägten Kanten, als 12 mm Einscheibenglas oder 6+6 mm VSG.'],
                 ['Beleuchtung', 'Drei Intensitätsstufen mit 17.500, 18.500 oder 23.000 Lumen für optimale Sicht bei Abendspielen.'],
@@ -68,12 +76,12 @@ $v = [
             'logo' => 'padelconcept', 'logo_h' => 54, 'brand' => 'Padel Concept',
             'maker' => 'Padel Concept', 'tier' => 'Panorama',
             'name' => 'Panorama',
-            'text' => 'Panorama-Design mit uneingeschränkter Sicht, geeignet für den Indoor- und Outdoorbereich. Die Glaspanele sind aus ESG 12 mm.',
+            'text' => 'Panorama-Design mit uneingeschränkter Sicht, geeignet für den Indoor- und Outdoorbereich.',
             'image' => '/media/courts/modelle/panorama-padelconcept.jpg', 'alt' => 'Padel Concept Panorama Court in einer Halle, Rendering',
             'specs' => [
                 ['Konstruktion', 'Verzinkte Stahlkonstruktion, pulverbeschichtet nach Kundenwunsch. Entwickelt nach Vorgaben der IPF und EPA sowie den Anforderungen der WPT.'],
                 ['Kunstrasen', 'Europäische Hersteller wie Mondo, Edelgrass oder Italgrass, monofilament oder fibrilliert, zertifiziert. Standardfarben Blau oder Grün.'],
-                ['Glaspanele', 'Zertifiziertes ESG auf 5 mm starken Moosgummidichtungen zur Reduzierung von Vibrationen und zum Schutz vor Beschädigungen.'],
+                ['Glaspanele', 'Zertifiziertes ESG 12 mm auf 5 mm starken Moosgummidichtungen zur Reduzierung von Vibrationen und zum Schutz vor Beschädigungen.'],
                 ['Beleuchtung', '„Pro-Version“ der Lampenhalterung in dreieckiger Form. LED-Beleuchtungssystem gemäß internationalen Standards.'],
             ],
             'facts' => ['Windlast 144 km/h (lt. Hersteller)', 'Netz in „Pro-Version“ mit Netzkopfband', 'Schnelle Lieferung'],
@@ -83,7 +91,7 @@ $v = [
             'maker' => '100% Padel', 'tier' => 'Panorama',
             'name' => 'Panorama-Padelplatz',
             'text' => 'Das hochwertige Modell mit elegantem Design. Größere, offenere Glasflächen sorgen für bessere Sicht und einen modernen Gesamteindruck.',
-            'image' => '/media/courts/modelle/panorama-100padel.jpg', 'alt' => '100% Padel Panorama-Padelplatz, Zeichnungen aus drei Perspektiven',
+            'image' => '/media/courts/modelle/panorama-100padel.jpg', 'fit' => 'contain', 'alt' => '100% Padel Panorama-Padelplatz, Zeichnungen aus drei Perspektiven',
             'specs' => [
                 ['Konstruktion', '100 × 50 mm Pfosten mit Stützstreben, 50 × 50 × 4 mm elektroverschweißtes Drahtgitter.'],
                 ['Kunstrasen', 'Faserrasen, Monofilament oder Supercourt, als Premium-Rasen von Mondo.'],

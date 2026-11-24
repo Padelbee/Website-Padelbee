@@ -187,3 +187,11 @@ addEventListener('hashchange',route); route();
     g.forEach((nodes,i)=>{ if(i>0) h.appendChild(document.createTextNode(' ')); const s=document.createElement('span'); s.className='h-sent'; nodes.forEach(n=>s.appendChild(n)); h.appendChild(s); });
   });
 })();
+
+/* Technische Daten in den Modellkarten: am Desktop offen, auf dem Handy zum Aufklappen */
+(function(){
+  const d=document.querySelectorAll('details.vm-more'); if(!d.length) return;
+  const mq=window.matchMedia('(min-width:861px)');
+  const set=()=>d.forEach(x=>{ x.open=mq.matches; });
+  set(); mq.addEventListener('change',set);
+})();

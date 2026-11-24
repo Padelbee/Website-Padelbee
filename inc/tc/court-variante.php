@@ -11,7 +11,7 @@
  *   'models_label', 'models_h2' (HTML), 'models_lead',
  *   'models' => [[
  *     'logo', 'logo_h', 'maker', 'tier', 'name', 'text', 'image'?, 'alt'?,
- *     'specs' => [[Titel, Text], ...], 'facts' => [...], 'price'?, 'price_note'?, 'brand'
+ *     'specs' => [[Titel, Text], ...], 'facts' => [...], 'price'?, 'price_incl'?, 'price_note'?, 'brand', 'fit'? ('contain')
  *   ], ...],
  *   'others' => [[k, Titel, Text, Link, Linktext, Bild], ...]
  * ]
@@ -64,32 +64,41 @@ tc_page_start([
     <div class="vmodels">
 <?php foreach ($v['models'] as $m): ?>
       <article class="vmodel reveal">
-        <div class="vm-head">
-          <div class="logo"><div class="m" data-logo="<?= $m['logo'] ?>" data-h="<?= $m['logo_h'] ?>"></div></div>
-          <div class="k"><?= $m['maker'] ?> · <?= $m['tier'] ?></div>
-          <h3 data-type><?= $m['name'] ?></h3>
-          <p><?= $m['text'] ?></p>
-<?php if (!empty($m['price'])): ?>
-          <p class="vm-price"><b>ab <?= number_format((float) $m['price'], 0, ',', '.') ?> €</b> netto<?php if (!empty($m['price_note'])): ?><span><?= $m['price_note'] ?></span><?php endif; ?></p>
-<?php endif; ?>
+        <div class="vm-top">
+          <div class="vm-media">
 <?php if (!empty($m['image'])): ?>
-          <figure class="vm-img"><img src="<?= $m['image'] ?>" alt="<?= tc_h($m['alt']) ?>" loading="lazy"></figure>
+            <figure class="vm-img<?= !empty($m['fit']) ? ' fit-' . $m['fit'] : '' ?>"><img src="<?= $m['image'] ?>" alt="<?= tc_h($m['alt']) ?>" loading="lazy"></figure>
 <?php endif; ?>
-        </div>
-        <dl class="vm-specs">
-<?php foreach ($m['specs'] as $sp): ?>
-          <div><dt><?= $sp[0] ?></dt><dd><?= $sp[1] ?></dd></div>
-<?php endforeach; ?>
-        </dl>
 <?php if (!empty($m['facts'])): ?>
-        <div class="facts vm-facts"><?php foreach ($m['facts'] as $f): ?><span><?= $f ?></span><?php endforeach; ?></div>
+            <div class="facts vm-facts"><?php foreach ($m['facts'] as $f): ?><span><?= $f ?></span><?php endforeach; ?></div>
 <?php endif; ?>
+          </div>
+          <div class="vm-head">
+            <div class="logo"><div class="m" data-logo="<?= $m['logo'] ?>" data-h="<?= $m['logo_h'] ?>"></div></div>
+            <div class="k"><?= $m['maker'] ?> · <?= $m['tier'] ?></div>
+            <h3 data-type><?= $m['name'] ?></h3>
+            <p><?= $m['text'] ?></p>
+<?php if (!empty($m['price'])): ?>
+            <p class="vm-price"><b>ab <?= number_format((float) $m['price'], 0, ',', '.') ?> €</b> netto<?php if (!empty($m['price_incl'])): ?><span><?= $m['price_incl'] ?></span><?php endif; ?><?php if (!empty($m['price_note'])): ?><span><?= $m['price_note'] ?></span><?php endif; ?></p>
+<?php endif; ?>
+          </div>
+        </div>
+        <details class="vm-more">
+          <summary>Technische Daten</summary>
+          <dl class="vm-specs">
+<?php foreach ($m['specs'] as $sp): ?>
+            <div><dt><?= $sp[0] ?></dt><dd><?= $sp[1] ?></dd></div>
+<?php endforeach; ?>
+          </dl>
+        </details>
       </article>
 <?php endforeach; ?>
     </div>
 <?= $v['extra_html'] ?? '' ?>
-    <p class="fav-note fav-note-l">Technische Angaben und Garantien lt. Hersteller. Die Garantie gewährt der jeweilige Hersteller, nicht die THE COURT GmbH.</p>
-    <p class="v-midcta"><a class="btn" href="#kontakt">Vergleich anfragen</a></p>
+    <div class="v-foot">
+      <p class="fav-note fav-note-l">Technische Angaben und Garantien lt. Hersteller. Die Garantie gewährt der jeweilige Hersteller, nicht die THE COURT GmbH.</p>
+      <p class="v-midcta"><a class="btn" href="#kontakt">Vergleich anfragen</a></p>
+    </div>
   </div>
 </section>
 
@@ -97,14 +106,15 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Court-Systeme · Detail</p>
     <h2 class="reveal">Nicht nur technisch. Auch <span class="hl">strategisch.</span></h2>
-    <p class="lead">Die Wahl des Court-Typs ist nicht ausschließlich eine technische Entscheidung, sondern auch eine strategische Positionierung deiner Anlage.</p>
-    <div class="gest">
+    <div class="v-leadrow">
+      <p class="lead">Die Wahl des Court-Typs ist nicht ausschließlich eine technische Entscheidung, sondern auch eine strategische Positionierung deiner Anlage.</p>
+      <p class="v-links"><a class="btn ghost" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost" href="/courts#c-fundament">Das richtige Fundament</a></p>
+    </div>
+    <div class="gest g3">
       <article class="gbox reveal"><div class="k">Individualisierung</div><p>Kunstrasen in nahezu allen Farben, farblich angepasste Stahlkonstruktion.</p></article>
       <article class="gbox reveal"><div class="k">Sonderausstattung</div><p>Zusätzliche Türen, Fangnetze und Branding-Optionen sind projektabhängig umsetzbar.</p></article>
-      <article class="gbox reveal"><div class="k">Double / Single</div><p>Alle Courtmodelle sind sowohl als Double- als auch als Single-Court erhältlich.</p></article>
       <article class="gbox reveal"><div class="k">Mehrkosten</div><p>Details und eventuelle Mehrkosten stimmen wir im weiteren Planungsprozess individuell mit dir ab.</p></article>
     </div>
-    <p style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap"><a class="btn ghost" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost" href="/courts#c-fundament">Das richtige Fundament</a></p>
   </div>
 </section>
 
@@ -114,7 +124,7 @@ tc_page_start([
     <h2 class="reveal">Drei Varianten, ein <span class="hl">Prinzip.</span></h2>
     <div class="cards c<?= count($v['others']) ?>">
 <?php foreach ($v['others'] as $o): ?>
-      <article class="card variant reveal"><figure class="vimg"><img src="<?= $o[5] ?>" alt="<?= tc_h($o[1]) ?>-Court Rendering" loading="lazy"></figure><div class="k"><?= $o[0] ?></div><h3 data-type><?= $o[1] ?></h3><p><?= $o[2] ?></p><span class="tier"><a href="<?= $o[3] ?>"><?= $o[4] ?></a></span></article>
+      <article class="card variant vflat reveal"><figure class="vimg"><img src="<?= $o[5] ?>" alt="<?= tc_h($o[1]) ?>-Court Rendering" loading="lazy"></figure><div class="vf-body"><div class="k"><?= $o[0] ?></div><h3 data-type><?= $o[1] ?></h3><p><?= $o[2] ?></p><span class="tier"><a href="<?= $o[3] ?>"><?= $o[4] ?></a></span></div></article>
 <?php endforeach; ?>
     </div>
   </div>
