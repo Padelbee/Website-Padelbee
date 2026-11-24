@@ -39,7 +39,16 @@ tc_page_start([
     'schema' => array_merge($svcNodes, [tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $faq), '/')]),
 ]);
 ?>
-<section class="band dark v-intro" aria-label="Film: Die 360°-Plattform">
+<section class="band dark grid-bg hero ht">
+  <div class="inner">
+    <div>
+      <h1><span class="label h1-kicker" style="color:var(--white)" data-type>&gt; Padelbee · Padelanlagen · Projektentwicklung</span>Wir bauen<br><span class="cycle" id="cycle">Padel.</span></h1>
+      <p class="lead">Padelbee ist Projektentwickler für Padel-, Pickleball- und Tennisanlagen in Deutschland, Österreich und der Schweiz. Du bekommst Beratung, Finanzierung, Planung, Bau und Betrieb aus einer Hand.</p>
+      <div class="ctas"><a class="btn" href="#kontakt">Projekt anfragen</a><a class="btn ghost" href="/referenzen">50 Projekte ansehen</a></div>
+    </div>
+  </div>
+</section>
+<section class="band dark grid-bg v-intro v-zoom" aria-label="Film: Die 360°-Plattform">
   <div class="inner">
     <figure>
       <video id="introVid" autoplay muted loop playsinline preload="metadata" poster="/media/intro.jpg" src="/media/intro.mp4" aria-label="Padelbee Film: Die 360°-Plattform"></video>
@@ -50,17 +59,12 @@ tc_page_start([
 <script>(()=>{const v=document.getElementById('introVid'),b=document.getElementById('introSnd');if(!v||!b)return;const OFF='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z" fill="currentColor"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>',ON='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>';
 if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();v.controls=true;}
 b.addEventListener('click',()=>{v.muted=!v.muted;if(!v.muted)v.play();b.innerHTML=v.muted?OFF:ON;b.setAttribute('aria-label',v.muted?'Ton einschalten':'Ton ausschalten');b.title=b.getAttribute('aria-label');b.setAttribute('aria-pressed',String(!v.muted));});})();</script>
-
-<section class="band dark grid-bg hero">
+<script>(()=>{const s=document.querySelector('.v-zoom'),f=s&&s.querySelector('figure');if(!f)return;if(matchMedia('(prefers-reduced-motion: reduce)').matches){f.style.setProperty('--z',1);return;}
+let t=0;const u=()=>{t=0;const r=s.getBoundingClientRect(),vh=innerHeight;const p=Math.min(1,Math.max(0,(vh-r.top)/(vh*.85)));f.style.setProperty('--z',p.toFixed(3));};
+const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{passive:true});addEventListener('resize',q);u();})();</script>
+<section class="band dark grid-bg h-rest">
   <div class="inner">
-    <div>
-      <div class="topline"><span>Padel · Style · Culture</span></div>
-      <h1><span class="label h1-kicker" style="color:var(--white)" data-type>&gt; Padelbee · Padelanlagen · Projektentwicklung</span>Wir bauen<br><span class="cycle" id="cycle">Padel.</span></h1>
-      <p class="lead">Padelbee ist Projektentwickler für Padel-, Pickleball- und Tennisanlagen in Deutschland, Österreich und der Schweiz. Du bekommst Beratung, Finanzierung, Planung, Bau und Betrieb aus einer Hand.</p>
-      <p class="label" style="margin-top:22px" data-type>Offizieller Padel-Infrastrukturpartner des Bayerischen Tennis-Verbands</p>
-      <div class="dach" data-type>Deutschland <span>·</span> Österreich <span>·</span> Schweiz</div>
-      <div class="ctas"><a class="btn" href="#kontakt">Projekt anfragen</a><a class="btn ghost" href="/referenzen">50 Projekte ansehen</a></div>
-    </div>
+    <p class="label" data-type>Offizieller Padel-Infrastrukturpartner des Bayerischen Tennis-Verbands</p>
     <div class="hero-media">
       <figure><picture><source type="image/webp" srcset="/media/home/hero_return-480.webp 480w, /media/home/hero_return.webp 668w" sizes="(max-width: 860px) 100vw, 50vw"><img fetchpriority="high" width="668" height="1000" src="/media/home/hero_return.jpg" alt="Spieler beim Return am Netz, Ball im Fokus"></picture></figure>
       <figure><picture><source type="image/webp" srcset="/media/home/hero_netz-480.webp 480w, /media/home/hero_netz.webp 666w" sizes="(max-width: 860px) 100vw, 50vw"><img loading="lazy" width="666" height="1000" src="/media/home/hero_netz.jpg" alt="Spieler springt am Netz, Aufnahme von oben"></picture></figure>
