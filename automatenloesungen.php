@@ -13,12 +13,12 @@ $automaten = [
     ['Linx IQ + Payx 8', 'Zuply', '19180', '/media/automaten/zuply_combo.jpg'],
 ];
 $automatenFaq = [
-    ['frage' => 'Wie funktioniert ein Schläger-Verleihautomat?', 'antwort' => 'Ein Verleihautomat gibt Schläger ohne Personal aus, in vier Schritten: Deine Spieler wählen am Touchscreen oder per App, bezahlen bargeldlos mit Karte, Apple Pay, Google Pay oder PayPal und hinterlegen eine Kaution. Dann öffnet sich das richtige Fach automatisch. Nach dem Spiel kommt der Schläger zurück ins Fach und die Kaution wird freigegeben. Details in <a href="/blog">Schläger leihen ohne Personal</a>.'],
+    ['frage' => 'Wie funktioniert ein Schläger-Verleihautomat?', 'antwort' => 'Ein Verleihautomat gibt Schläger ohne Personal aus, in vier Schritten. Deine Spieler wählen am Touchscreen oder per App, bezahlen bargeldlos mit Karte, Apple Pay, Google Pay oder PayPal und hinterlegen eine Kaution. Dann öffnet sich das richtige Fach automatisch. Nach dem Spiel kommt der Schläger zurück ins Fach und die Kaution wird freigegeben. Details in <a href="/blog">Schläger leihen ohne Personal</a>.'],
     ['frage' => 'Was kostet ein Padel-Automat?', 'antwort' => 'Unsere zehn Automaten kosten zwischen 3.500 € und 19.180 € netto. Der Ballautomat Padel Ball Premium startet bei 3.500 €, der Verleihautomat Padel Premium 12 bei 4.950 € plus 49 € Grundgebühr im Monat. Die RentalBOX gibt es ab 5.190 €. Bei einigen Modellen kommt eine monatliche Grundgebühr dazu. Alle Preise sind netto, Stand 10/2026.'],
     ['frage' => 'Welcher Verleihautomat passt zu wie vielen Courts?', 'antwort' => 'Für drei bis vier Courts reicht als Faustregel eine RentalBOX in Größe M mit 23 Fächern für 5.490 € netto. Die RentalBOX gibt es in den Größen S bis XXL und sie wächst mit deiner Anlage. Mit dem Regler im RentalBOX-Konfigurator oben auf dieser Seite siehst du, welche Größe zu deiner Court-Anzahl passt. Kombinierbar ist sie mit der DualBOX Lift für Getränke, Snacks und Bälle.'],
     ['frage' => 'Kann ich einen Automaten finanzieren?', 'antwort' => 'Ja, du kannst kaufen, leasen oder im Mietkauf finanzieren. Leasing startet bei 109 € im Monat, der Leasinggeber bleibt Eigentümer. Im Mietkauf ab 104 € im Monat bist du ab dem ersten Tag wirtschaftlicher Eigentümer. Beispiel: 48 Monate Laufzeit, 20 % Schlussrate, Bonität vorausgesetzt. Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.'],
-    ['frage' => 'Was ist in der monatlichen Grundgebühr enthalten?', 'antwort' => 'Die Grundgebühr deckt Telemetrie, Fernwartung und Software-Updates ab. Damit verwaltest du deinen Automaten per App oder Display, auch aus der Ferne, und bekommst Updates automatisch. Wie hoch die Gebühr ist, hängt vom Modell ab: bei unseren Automaten zwischen 29 € und 59 € im Monat, manche Modelle haben keine.'],
-    ['frage' => 'Was kostet Smart Access & Light Control?', 'antwort' => 'Smart Access &amp; Light Control kostet 2.000 € einmalig plus eine monatliche Gebühr nach Court-Anzahl: 49 € für 1 bis 4 Courts, 89 € für 5 bis 8 und 129 € für 9 bis 12 Courts. Ab 13 Courts gibt es ein individuelles Angebot. Relais und elektrische Schlösser sind nicht enthalten und werden von deinem Elektriker installiert. Alle Preise netto.'],
+    ['frage' => 'Was ist in der monatlichen Grundgebühr enthalten?', 'antwort' => 'Die Grundgebühr deckt Telemetrie, Fernwartung und Software-Updates ab. Damit verwaltest du deinen Automaten per App oder Display, auch aus der Ferne, und bekommst Updates automatisch. Wie hoch die Gebühr ist, hängt vom Modell ab. Bei unseren Automaten liegt sie zwischen 29 € und 59 € im Monat, manche Modelle haben keine.'],
+    ['frage' => 'Was kostet Smart Access & Light Control?', 'antwort' => 'Smart Access &amp; Light Control kostet 2.000 € einmalig plus eine monatliche Gebühr nach Court-Anzahl, und zwar 49 € für 1 bis 4 Courts, 89 € für 5 bis 8 und 129 € für 9 bis 12 Courts. Ab 13 Courts gibt es ein individuelles Angebot. Relais und elektrische Schlösser sind nicht enthalten und werden von deinem Elektriker installiert. Alle Preise netto.'],
     ['frage' => 'Für wen ist das Angebot gedacht?', 'antwort' => 'Unser Automaten-Angebot richtet sich ausschließlich an Unternehmen, Vereine und die öffentliche Hand. Typische Betreiber sind Padelhallen, Tennisvereine mit Padel-Courts, Hotels und Freizeitanlagen, die Schläger, Bälle, Snacks und Getränke rund um die Uhr anbieten wollen. Automaten von uns stehen unter anderem in Memmingen, Straubing und Mainburg; mehr in unseren <a href="/referenzen">Referenzen</a>.'],
 ];
 $automatenProducts = array_map(
@@ -66,14 +66,14 @@ tc_page_start([
     <h2 class="reveal">Buchen. Öffnen. <span class="hl">Spielen.</span></h2>
     <p class="lead">Deine Spieler leihen und kaufen selbstständig, bargeldlos und ohne Wartezeit. Du verwaltest alles per App oder Display, auch aus der Ferne.</p>
     <ol class="flow" id="flow">
-      <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="9" y="3" width="14" height="26" rx="1"/><path d="M14 25h4"/></svg></i><h4>Auswählen</h4><p>Am Touchscreen oder per App: Schläger, Bälle, Drinks.</p></li>
+      <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="9" y="3" width="14" height="26" rx="1"/><path d="M14 25h4"/></svg></i><h4>Auswählen</h4><p>Schläger, Bälle oder Drinks am Touchscreen oder per App wählen.</p></li>
       <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="4" y="8" width="24" height="16" rx="1"/><path d="M4 13h24M8 19h6"/></svg></i><h4>Bezahlen</h4><p>Karte, Apple &amp; Google Pay, PayPal. Kaution beim Verleih.</p></li>
       <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="4" width="22" height="24"/><path d="M5 12h22M5 20h22M20 8h3"/></svg></i><h4>Fach öffnet</h4><p>Das richtige Fach entriegelt automatisch.</p></li>
       <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 16a10 10 0 1 0 3-7"/><path d="M6 4v6h6"/></svg></i><h4>Zurückgeben</h4><p>Schläger zurück ins Fach, Kaution wird freigegeben.</p></li>
     </ol>
     <div class="cards c3">
       <article class="card reveal"><div class="k">Digitalisierung</div><h3 data-type>100 % automatisiert</h3><p>Vollautomatischer Verleih und Verkauf, rund um die Uhr, ohne Personal. Remote-Verwaltung per App oder Display, Telemetrie und Software-Updates inklusive.</p></article>
-      <article class="card reveal"><div class="k">Zusatzeinnahmen</div><h3 data-type>Mehr Umsatz</h3><p>Schlägerverleih, Bälle, Griffbänder, Snacks und Getränke: direkte Zusatzerlöse auf deiner Anlage, auch dann, wenn niemand vor Ort ist.</p></article>
+      <article class="card reveal"><div class="k">Zusatzeinnahmen</div><h3 data-type>Mehr Umsatz</h3><p>Schlägerverleih, Bälle, Griffbänder, Snacks und Getränke bringen dir direkte Zusatzerlöse auf deiner Anlage, auch dann, wenn niemand vor Ort ist.</p></article>
       <article class="card reveal"><div class="k">Community</div><h3 data-type>Mehr Zeit</h3><p>Kein Schlüsseldienst, kein Kassieren, kein Nachfragen an der Theke. Dein Team kümmert sich um die Spieler statt um die Logistik.</p></article>
     </div>
   </div>
@@ -205,7 +205,7 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Finanzierung</p>
     <h2 class="reveal">Flexibel <span class="hl">finanziert.</span></h2>
-    <p class="lead">Kaufen, leasen oder im Mietkauf: Über den Finanzierungspartner von Pure Vending findest du die Variante, die zu dir passt. Konditionen bekommst du über uns.</p>
+    <p class="lead">Ob kaufen, leasen oder Mietkauf, über den Finanzierungspartner von Pure Vending findest du die Variante, die zu dir passt. Konditionen bekommst du über uns.</p>
     <div class="vs">
       <article class="card reveal"><h3><span data-type>Leasing</span> <small>ab 109 €/Monat</small></h3><ul class="ticks"><li>Leasinggeber bleibt Eigentümer</li><li>Keine Kaufpflicht, Option auf Übernahme zum Restwert</li></ul></article>
       <article class="card reveal"><h3><span data-type>Mietkauf</span> <small>ab 104 €/Monat</small></h3><ul class="ticks"><li>Wirtschaftliches Eigentum ab Tag 1</li><li>Rechtliches Eigentum nach der letzten Rate</li></ul></article>
