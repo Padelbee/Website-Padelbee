@@ -1,12 +1,14 @@
 <?php
 /**
- * Kontaktformular hinter einem Button: Klick (oder Link auf #kontakt) klappt das Formular auf.
+ * Kontaktformular als kleine CTA: Kasten "Projekt anfragen" zeigt erst nur Überschrift, Satz und Button.
+ * Klick auf den Button (oder ein Link auf #kontakt) klappt die Formularfelder im selben Kasten auf.
  * Optional vorher $tcFormButton setzen (Button-Text, Standard "Projekt anfragen").
- * Das Formular selbst kommt unverändert aus kontakt-form.php (ID, Feldnamen, action, HubSpot).
+ * Das Formular selbst bleibt unverändert (ID, Feldnamen, action, HubSpot).
  */
 $tcFormButtonText = $tcFormButton ?? 'Projekt anfragen';
+$tcFormToggle = true;
 ?>
-    <p class="kf-open"><button class="btn" type="button" data-kf-open aria-expanded="false" aria-controls="kf-wrap"><?= tc_h($tcFormButtonText) ?></button></p>
-    <div class="kf-wrap" id="kf-wrap" inert><div class="kf-in">
+    <div class="kf-wrap" id="kf-wrap">
 <?php include __DIR__ . '/kontakt-form.php'; ?>
-    </div></div>
+    </div>
+<?php $tcFormToggle = false;

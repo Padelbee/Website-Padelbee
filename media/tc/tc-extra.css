@@ -269,3 +269,12 @@
 /* E-Mails in den Ansprechpartner-Kästen schlicht, ohne gelben Strich */
 .person .mail a{border:0;color:var(--white)}
 .person .mail a:hover{color:var(--yellow)}
+/* Formular als kleine CTA: Kasten "Projekt anfragen" erst mit Button, Felder klappen auf */
+.kf-wrap{display:block}
+.kf-wrap .kform{text-align:left}
+.kf-wrap .kf-open{margin:22px 0 0;text-align:left}
+.kf-wrap.open .kf-open{display:none}
+.kf-wrap #kontakt-formular{max-height:0;overflow:hidden;opacity:0;transition:max-height .7s cubic-bezier(.16,1,.3,1),opacity .4s}
+.kf-wrap.open #kontakt-formular{max-height:2600px;opacity:1}
+.kf-wrap:not(.open) .kform{padding-bottom:36px}
+@media (prefers-reduced-motion:reduce){.kf-wrap #kontakt-formular{transition:none}}

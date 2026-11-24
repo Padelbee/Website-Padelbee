@@ -49,21 +49,24 @@
   }
 })();
 
-/* Formular hinter Button (kontakt-form-toggle.php): Button oder Link auf #kontakt klappt es auf. */
+/* Formular als kleine CTA (kontakt-form-toggle.php): Button oder Link auf #kontakt klappt die Felder auf. */
 (function () {
   var wrap = document.getElementById('kf-wrap');
   if (!wrap) return;
-  var btn = document.querySelector('[data-kf-open]');
+  var form = document.getElementById('kontakt-formular');
+  var btn = wrap.querySelector('[data-kf-open]');
+  if (form) form.inert = true;
   function open(scroll) {
-    if (wrap.classList.contains('open')) { if (scroll) wrap.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
-    wrap.classList.add('open');
-    wrap.removeAttribute('inert');
-    if (btn) { btn.setAttribute('aria-expanded', 'true'); btn.closest('.kf-open').classList.add('done'); }
-    if (scroll) setTimeout(function () { wrap.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
-    var first = wrap.querySelector('input:not([type=hidden]):not([type=checkbox]), select, textarea');
-    if (first) setTimeout(function () { try { first.focus({ preventScroll: true }); } catch (e) {} }, 450);
+    if (!wrap.classList.contains('open')) {
+      wrap.classList.add('open');
+      if (form) form.inert = false;
+      if (btn) btn.setAttribute('aria-expanded', 'true');
+      var first = form && form.querySelector('input:not([type=hidden]):not([type=checkbox]):not(.kf-hp), select, textarea');
+      if (first) setTimeout(function () { try { first.focus({ preventScroll: true }); } catch (e) {} }, 500);
+    }
+    if (scroll) setTimeout(function () { document.getElementById('anfrage').scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 60);
   }
-  if (btn) btn.addEventListener('click', function () { open(true); });
+  if (btn) btn.addEventListener('click', function () { open(false); });
   document.querySelectorAll('a[href="#kontakt"], a[href="' + location.pathname + '#kontakt"]').forEach(function (a) {
     a.addEventListener('click', function () { open(false); });
   });
