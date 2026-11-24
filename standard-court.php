@@ -12,7 +12,7 @@ $v = [
     'description' => 'Der Standard Court ist die stabile, wirtschaftliche Padel-Court-Variante. Modelle von Padel Factory, Padel Concept und 100% Padel, ab 27.275 € netto.',
     'label' => 'Court-Variante · Einstieg',
     'h1' => 'Standard <span class="kw">Court.</span>',
-    'lead' => 'Der Standard Court ist die klassische, wirtschaftliche Lösung. Zusätzliche Streben zwischen den Glaselementen machen die Konstruktion besonders stabil. Ideal, wenn dir Preis-Leistung und Robustheit wichtig sind. Du bekommst ihn bei uns von drei <a href="/courts#c-hersteller">Court-Herstellern</a>, jedes Modell als Double- und als Single-Court.',
+    'lead' => 'Der Standard Court ist die klassische, wirtschaftliche Lösung. Zusätzliche Streben zwischen den Glaselementen machen die Konstruktion besonders stabil, ideal bei Fokus auf Preis-Leistung und Robustheit. Jedes Modell gibt es als Double- und als Single-Court.',
     'image' => '/media/courts/standard.jpg',
     'alt' => 'Standard Court Rendering mit Streben zwischen den Glaselementen',
     'stats' => [
