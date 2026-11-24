@@ -46,11 +46,11 @@ tc_page_start([
   <div class="inner" style="padding-block:0 40px">
     <div class="c-stats">
       <div><b data-count="5">5</b><span>Court-Hersteller</span></div>
-      <div><b><small>bis zu</small> <span data-count="15">15</span></b><span>Jahre Herstellergarantie</span></div>
+      <div><b><small>bis zu</small> <span data-count="15">15</span></b><span>Jahre Herstellergarantie*</span></div>
       <div><b data-count="3">3</b><span>Court-Varianten</span></div>
-      <div><b>27 T€</b><span>ab, pro Court netto</span></div>
+      <div><b>27 T€</b><span>ab, pro Court netto*</span></div>
     </div>
-    <p class="fine-note">Herstellergarantie auf die Konstruktion lt. Hersteller. Die Garantie gewährt der jeweilige Hersteller, nicht Padelbee. Preise netto, Stand 11/2026.</p>
+    <p class="fine-note c-note">* Herstellergarantie auf die Konstruktion lt. Hersteller. Die Garantie gewährt der jeweilige Hersteller, nicht Padelbee. Preise netto, Stand 11/2026.</p>
   </div>
 </section>
 
@@ -114,8 +114,8 @@ tc_page_start([
     <h2 class="reveal">Das richtige <span class="hl">Fundament.</span></h2>
     <p class="lead">Feste Betonplatte oder mobile, rückbaubare Plattform: Die Wahl hängt vom Standort und von der Laufzeit deines Mietvertrags ab. Beide Varianten liegen preislich in einem ähnlichen Rahmen.</p>
     <div class="vs">
-      <article class="card reveal"><figure class="cimg"><img src="/media/courts/cp_outdoor1.jpg" alt="Court auf festem Fundament im Bau" loading="lazy"></figure><h3 data-type>Festes Fundament <small>Langfristiger Standort</small></h3><p>Dauerhaft gegossene Betonplatte mit Streifenfundament (Standard 40 × 80 cm, angepasst an den Boden, Tiefgründung unter Frostschutztiefe). Maximale Standfestigkeit, ausgelegt auf viele Jahre Betrieb. Spielfläche aus Drainbeton, Sickerasphalt oder elastischer Tragschicht. So sieht das beim <a href="/referenzen#r-scheck">Aufbau im Scheck Club München</a> aus.</p></article>
-      <article class="card reveal"><figure class="cimg"><img src="/media/courts/pf_wpc.jpg" alt="Padel Factory Wing Court auf mobiler WPC-Plattform" loading="lazy"></figure><h3 data-type>Mobile Plattform <small>Befristeter Standort</small></h3><p>Modulare Unterkonstruktion ohne Betonfundament. Rückbaubar und versetzbar, ideal bei kürzeren Mietverträgen und Zwischennutzung. Mobile Fundamente und Courts lassen sich oft über Leasing finanzieren. In vielen Förderprogrammen derzeit nicht förderfähig, im Einzelfall prüfen.</p></article>
+      <article class="card reveal"><figure class="cimg"><img src="/media/courts/cp_outdoor1.jpg" alt="Court auf festem Fundament im Bau" loading="lazy"></figure><h3><span data-type>Festes Fundament</span> <small>Langfristiger Standort</small></h3><p>Dauerhaft gegossene Betonplatte mit Streifenfundament (Standard 40 × 80 cm, angepasst an den Boden, Tiefgründung unter Frostschutztiefe). Maximale Standfestigkeit, ausgelegt auf viele Jahre Betrieb. Spielfläche aus Drainbeton, Sickerasphalt oder elastischer Tragschicht. So sieht das beim <a href="/referenzen#r-scheck">Aufbau im Scheck Club München</a> aus.</p></article>
+      <article class="card reveal"><figure class="cimg"><img src="/media/courts/pf_wpc.jpg" alt="Padel Factory Wing Court auf mobiler WPC-Plattform" loading="lazy"></figure><h3><span data-type>Mobile Plattform</span> <small>Befristeter Standort</small></h3><p>Modulare Unterkonstruktion ohne Betonfundament. Rückbaubar und versetzbar, ideal bei kürzeren Mietverträgen und Zwischennutzung. Mobile Fundamente und Courts lassen sich oft über Leasing finanzieren. In vielen Förderprogrammen derzeit nicht förderfähig, im Einzelfall prüfen.</p></article>
     </div>
     <div class="bigfig">
       <div><span>Richtwert Fundament</span><b>ca. 35.000 €</b><p>je nach Standort, Boden und baulichen Anforderungen, für beide Varianten.</p></div>

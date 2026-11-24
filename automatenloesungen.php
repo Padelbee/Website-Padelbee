@@ -207,8 +207,8 @@ tc_page_start([
     <h2 class="reveal">Flexibel <span class="hl">finanziert.</span></h2>
     <p class="lead">Kaufen, leasen oder im Mietkauf: Über den Finanzierungspartner von Pure Vending findest du die Variante, die zu dir passt. Konditionen bekommst du über uns.</p>
     <div class="vs">
-      <article class="card reveal"><h3 data-type>Leasing <small>ab 109 €/Monat</small></h3><ul class="ticks"><li>Leasinggeber bleibt Eigentümer</li><li>Keine Kaufpflicht, Option auf Übernahme zum Restwert</li></ul></article>
-      <article class="card reveal"><h3 data-type>Mietkauf <small>ab 104 €/Monat</small></h3><ul class="ticks"><li>Wirtschaftliches Eigentum ab Tag 1</li><li>Rechtliches Eigentum nach der letzten Rate</li></ul></article>
+      <article class="card reveal"><h3><span data-type>Leasing</span> <small>ab 109 €/Monat</small></h3><ul class="ticks"><li>Leasinggeber bleibt Eigentümer</li><li>Keine Kaufpflicht, Option auf Übernahme zum Restwert</li></ul></article>
+      <article class="card reveal"><h3><span data-type>Mietkauf</span> <small>ab 104 €/Monat</small></h3><ul class="ticks"><li>Wirtschaftliches Eigentum ab Tag 1</li><li>Rechtliches Eigentum nach der letzten Rate</li></ul></article>
     </div>
     <div class="ideal"><span class="k">Ideal für</span><span>Tennisvereine</span><span>Padel-Clubs</span><span>Sporthallen</span><span>Sporthotels</span><span>Eventveranstalter</span></div>
     <p class="fine" style="color:var(--muted)">Monatliche Rate „ab“, abhängig von Laufzeit, Schlussrate und Konfiguration. Beispiel: 48 Monate, 20 % Schlussrate, Bonität vorausgesetzt. Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.</p>
