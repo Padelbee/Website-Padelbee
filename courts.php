@@ -101,9 +101,14 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Individuelle Gestaltung</p>
     <h2 class="reveal">Dein Court ist Teil deiner <span class="hl">Marke.</span></h2>
-    <p class="lead">Wähle aus, was zu deiner Anlage passt. Wir stimmen alles mit dem Hersteller ab.</p>
+    <p class="lead">Ein Padel-Court ist heute weit mehr als eine Sportfläche, er prägt die Wahrnehmung deiner gesamten Anlage. Wähle aus, was zu deiner Anlage passt. Wir stimmen alles mit dem Hersteller ab.</p>
     <ul class="optlist reveal"><li><div><b>Court in RAL-Farbe</b></div></li><li><div><b>Details in RAL-Farbe</b></div></li><li><div><b>Kunstrasen in vielen Farben</b> <span>Blau, Grün, Rot, Schwarz, Anthrazit, Terracotta, Violett, Pink, Petrol u. v. m.</span></div></li><li><div><b>Kunstrasen vom Hersteller oder Mondo Premium Turf</b></div></li><li><div><b>Schaumstoffprotektoren mit Logo</b> <span>für Türen und Netzpfosten</span></div></li><li><div><b>Netzkante mit Logo</b></div></li><li><div><b>Netz mit Logo</b></div></li><li><div><b>Vogelschutzverglasung</b></div></li><li><div><b>Windlastzone 1 bis 4</b></div></li><li><div><b>Indoor oder Outdoor</b></div></li><li><div><b>Lichtmasten</b> <span>gerade, in C- oder Z-Form</span></div></li><li><div><b>Lichttemperatur</b> <span>nach Wunsch</span></div></li><li><div><b>Zusätzliche LEDs</b></div></li></ul>
-    <details class="pmore c-more"><summary>Mehr Details</summary><ul><li>Kunstrasen klassisch in Blau, Rot oder Grün, auch kombiniert zwischen Spielfeld und Auslaufbereichen, passend zu deinem Corporate Design</li><li>Logos integrieren, Glasflächen individualisieren und Sponsoren sichtbar einbinden</li><li>Zusätzliche Türen, spezielle Zugangslösungen und abgestimmte Beleuchtungskonzepte, auch bei architektonischen Besonderheiten</li><li>Nahezu alle Elemente sind gestaltbar. Entscheidend ist nicht, was technisch möglich ist, sondern was strategisch sinnvoll ist.</li></ul></details>
+    <div class="cards c3 m-cards">
+      <article class="card reveal"><div class="k">Kunstrasen</div><h3 data-type>Farbe mit System</h3><p>Klassisch in Blau, ebenso in Rot oder Grün. Auch Kombinationen zwischen Spielfeld und Auslaufbereichen sind möglich und schaffen eine klare visuelle Differenzierung, passend zu deinem Corporate Design.</p></article>
+      <article class="card reveal"><div class="k">Branding</div><h3 data-type>Logos, Glas, Sponsoren</h3><p>Logos lassen sich integrieren, Glasflächen individualisieren und Sponsoren sichtbar einbinden. So entsteht eine professionelle Präsentationsfläche mit Wiedererkennungswert.</p></article>
+      <article class="card reveal"><div class="k">Bauliche Anpassung</div><h3 data-type>Türen, Zugänge, Licht</h3><p>Zusätzliche Türen, spezielle Zugangslösungen und individuell abgestimmte Beleuchtungskonzepte. Auch architektonische Besonderheiten bei Indoor- und Outdoor-Anlagen berücksichtigen wir.</p></article>
+    </div>
+    <p class="m-quote reveal">Nahezu alle Elemente sind gestaltbar. Entscheidend ist nicht, was technisch möglich ist, sondern was <span class="hl">strategisch sinnvoll</span> ist.</p>
   </div>
 </section>
 

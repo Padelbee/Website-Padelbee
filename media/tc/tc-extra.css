@@ -190,3 +190,5 @@
 .c-stats b small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-d);vertical-align:.9em;margin-right:.5em}
 .c-stats span{line-height:1.5}
 .c-stats .st-sub{display:block;font-style:normal;font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:none;opacity:.7;margin-top:4px}
+.m-cards{margin-top:44px}
+.m-quote{margin:48px 0 0;max-width:900px;font-family:var(--f-display);font-style:italic;font-size:clamp(26px,3vw,40px);line-height:1.2;color:var(--ink,#111)}
