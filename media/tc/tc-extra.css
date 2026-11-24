@@ -472,3 +472,5 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 .band .inner svg{max-width:100%}
 /* Sicherheitsnetz: dekorative Grafiken dürfen nie seitliches Scrollen auslösen */
 main{overflow-x:clip}
+/* Kostentabelle (Padel Court bauen): auf dem Handy als gestapelte Zeilen statt Querscrollen */
+@media (max-width:600px){.tablewrap .plat{min-width:0}.tablewrap .plat thead{display:none}.tablewrap .plat tr{display:block;padding:14px 0;border-bottom:1px solid var(--line)}.tablewrap .plat td{display:block;border:0;padding:2px 0}.tablewrap .plat td:nth-child(2){color:var(--petrol);font-weight:600}}

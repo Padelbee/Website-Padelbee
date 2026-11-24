@@ -47,7 +47,7 @@ tc_page_start([
 <section class="band grid-bg" id="s-ablauf">
   <div class="inner">
     <p class="label" data-type>Standortanalyse</p>
-    <h2 class="reveal">Drei Phasen. Eine <span class="hl">Entscheidungsgrundlage.</span></h2>
+    <h2 class="reveal">Drei Phasen. Eine <span class="hl">Entscheidungs&shy;grundlage.</span></h2>
     <p class="lead">Am Anfang prüfen wir Fläche, Zielgruppe und Potenzial deines Standorts. Danach klären wir Finanzierung und Genehmigung, bevor gebaut wird.</p>
     <div class="cards c3">
       <article class="card reveal"><div class="k">Phase 01</div><h3 data-type>Erstkontakt &amp; Projektaufnahme</h3><p>Du stellst deine Anfrage, wir prüfen deinen Standort im Quickcheck und legen deine Projektziele fest.</p><ul class="chips"><li>Eingangsanfrage &amp; Standort-Quickcheck</li><li>Projektziele definieren</li><li>Erste Kostenschätzung</li><li>Termin für die Besichtigung</li></ul></article>
