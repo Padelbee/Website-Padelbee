@@ -4,6 +4,7 @@
  * Inhalte aus der Courts-Präsentation 2026 (Folie 4, 5, Modellfolien) und
  * Martins neuestem Entwurf (the-court.com/courts). Keine Texte der alten Seite.
  *
+ * Optional: 'extra_html' (eigener Block nach den Modellen, z. B. Modellreihe als Vergleich).
  * Erwartet $v = [
  *   'path', 'name', 'title', 'description', 'label', 'h1' (HTML), 'lead' (HTML),
  *   'image', 'alt', 'stats' => [[Zahl-HTML, Text, Zusatz], ...], 'note',
@@ -22,6 +23,9 @@ $products = array_map(fn($m) => tc_schema_product($m['name'], strip_tags($m['tex
     'path' => $v['path'],
     'price' => isset($m['price']) ? $m['price'] : null,
 ]), $v['models']);
+foreach ($v['schema_extra'] ?? [] as $x) {
+    $products[] = tc_schema_product($x['name'], $x['text'], ['brand' => $x['brand'], 'category' => 'Padel-Court', 'image' => $x['image'], 'path' => $v['path']]);
+}
 
 tc_page_start([
     'path' => $v['path'],
@@ -49,7 +53,6 @@ tc_page_start([
       <div><b><?= $s[0] ?></b><span><?= $s[1] ?><?php if (!empty($s[2])): ?><em class="st-sub"><?= $s[2] ?></em><?php endif; ?></span></div>
 <?php endforeach; ?>
     </div>
-    <p class="c-note"><?= $v['note'] ?></p>
   </div>
 </section>
 
@@ -84,11 +87,13 @@ tc_page_start([
       </article>
 <?php endforeach; ?>
     </div>
-    <p class="fine-note">Technische Angaben und Garantien lt. Hersteller. Die Garantie gewährt der jeweilige Hersteller, nicht die THE COURT GmbH.</p>
+<?= $v['extra_html'] ?? '' ?>
+    <p class="fav-note fav-note-l">Technische Angaben und Garantien lt. Hersteller. Die Garantie gewährt der jeweilige Hersteller, nicht die THE COURT GmbH.</p>
+    <p class="v-midcta"><a class="btn" href="#kontakt">Vergleich anfragen</a></p>
   </div>
 </section>
 
-<section class="band grid-bg" style="background-color:var(--grey-050)" id="v-strategie">
+<section class="band dark grid-bg" id="v-strategie">
   <div class="inner">
     <p class="label" data-type>Court-Systeme · Detail</p>
     <h2 class="reveal">Nicht nur technisch. Auch <span class="hl">strategisch.</span></h2>
@@ -99,7 +104,7 @@ tc_page_start([
       <article class="gbox reveal"><div class="k">Double / Single</div><p>Alle Courtmodelle sind sowohl als Double- als auch als Single-Court erhältlich.</p></article>
       <article class="gbox reveal"><div class="k">Mehrkosten</div><p>Details und eventuelle Mehrkosten stimmen wir im weiteren Planungsprozess individuell mit dir ab.</p></article>
     </div>
-    <p style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap"><a class="btn ghost-d" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost-d" href="/courts#c-fundament">Das richtige Fundament</a></p>
+    <p style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap"><a class="btn ghost" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost" href="/courts#c-fundament">Das richtige Fundament</a></p>
   </div>
 </section>
 
@@ -119,7 +124,7 @@ tc_page_start([
   <div class="inner">
     <h2>Let's build <span class="kw">your court.</span></h2>
     <p class="lead" style="margin:18px auto 0">Gemeinsam entwickeln wir eine Lösung, die funktional überzeugt und deine Anlage klar und unverwechselbar positioniert. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
-    <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:680px">
+    <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
       <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
     </div>
