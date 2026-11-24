@@ -136,7 +136,7 @@ tc_page_start([
 
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">
-    <h2>Padel startet schnell und bleibt&nbsp;<span class="kw">erfolgreich.</span></h2>
+    <h2>Padel startet schnell und bleibt <span class="kw">erfolgreich.</span></h2>
     <p class="lead" style="margin:18px auto 0">Wir entwickeln dein Betreiberkonzept 100 % kundenorientiert, von Digitalisierung und Marketing bis zu Events und Finanzierung. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
     <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
