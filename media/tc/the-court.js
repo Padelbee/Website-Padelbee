@@ -148,7 +148,7 @@ addEventListener('hashchange',route); route();
 
 
 /* Textbild zentral (Abnahme Bietal 24.11.): gilt für alle Seiten und alle Breiten, ändert keinen Text, nur Umbruchstellen.
-   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn sie in der echten Schrift höchstens 92 % der aktuellen Zeile brauchen (bei jeder Fenstergröße neu).
+   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn das letzte Wort kurz ist (max. 35 % der Zeile) und beide zusammen max. 60 % brauchen (bei jeder Fenstergröße neu).
    2) „&“ und Zahlen bleiben am folgenden Wort („Planung & Architektur“, „365 Tage“, „12 mm“).
    3) Gilt auch für Überschriften mit Tipp-Effekt (der Effekt liest den Text erst beim Scrollen ein). */
 (function(){
@@ -170,16 +170,19 @@ addEventListener('hashchange',route); route();
     const prev=m[1].split(/[ \t\n]/).pop(); // inkl. schon gebundener Teile (z. B. „100 %“)
     WID.push({el, node:last, idx:m[1].length, pair:prev+' '+m[2]});
   });
-  // Nur zusammenhalten, wenn beide Wörter zusammen höchstens 92 % der aktuellen Zeilenbreite brauchen (echte Schrift gemessen)
   const ctx=document.createElement('canvas').getContext('2d');
   function apply(){
     WID.forEach(x=>{
       if(x.el.dataset.typing) return;
       const t=x.node.textContent; if(t.length<=x.idx) return;
       const cs=getComputedStyle(x.el); ctx.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;
-      let pw=ctx.measureText(x.pair).width; if(cs.textTransform==='uppercase') pw=ctx.measureText(x.pair.toUpperCase()).width;
-      pw+=x.pair.length*(parseFloat(cs.letterSpacing)||0);
-      const ok=x.el.clientWidth>0 && pw<=x.el.clientWidth*0.92;
+      const up=cs.textTransform==='uppercase', ls=parseFloat(cs.letterSpacing)||0;
+      const mw=str=>ctx.measureText(up?str.toUpperCase():str).width+str.length*ls;
+      const W=x.el.clientWidth, tail=x.pair.slice(x.pair.indexOf(' ')+1);
+      // Nur ein wirklich kurzes letztes Wort (höchstens 35 % der Zeile) wird an das vorige gebunden,
+      // und nur wenn beide zusammen höchstens 60 % brauchen. Sonst entsteht in der Zeile davor ein Loch
+      // (Beispiel: „farblich“ allein, weil „angepasste Stahlkonstruktion.“ zusammenhing).
+      const ok=W>0 && mw(tail)<=W*0.35 && mw(x.pair)<=W*0.6;
       const ch=ok?NB:' '; if(t[x.idx]!==ch) x.node.textContent=t.slice(0,x.idx)+ch+t.slice(x.idx+1);
     });
   }
