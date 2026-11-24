@@ -220,7 +220,7 @@
 /* Gestaltungs-Kästen: Optionen gleichmäßig im Raster, Kästen gleich hoch */
 .gest{align-items:stretch}
 .gbox{display:flex;flex-direction:column}
-.gbox .chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:auto;padding-top:18px}
+.gbox .chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:18px}
 .gbox .chips li{display:flex;align-items:center;min-height:44px;border-color:var(--petrol-200)}
 .gbox .chips li.w{grid-column:1/-1}
 @media (max-width:560px){.gbox .chips{grid-template-columns:1fr}}
