@@ -65,8 +65,7 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Hallensysteme</p>
     <h2 class="reveal">Zwei Systeme. Ein <span class="hl">Ziel.</span></h2>
-    <p class="lead">Wer Padel ernst meint, braucht irgendwann ein Dach. Wir setzen auf zwei Hallensysteme für ein Ziel, spielen bei jedem Wetter.</p>
-    <p class="lead">Die Maße sind Beispielmaße.</p>
+    <p class="lead">Wer Padel ernst meint, braucht irgendwann ein Dach. Wir setzen auf zwei Hallensysteme für ein Ziel, spielen bei jedem Wetter. Die Maße sind Beispielmaße.</p>
     <div class="h-sys">
       <article class="card reveal">
         <div class="k">Einstieg</div>
