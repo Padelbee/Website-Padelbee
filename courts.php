@@ -26,7 +26,6 @@ tc_page_start([
     'description' => 'Padel-Courts in drei Varianten von fünf Herstellern, Fundamente und Hallen ab 280 €/m² netto. Wir vergleichen Preis, Lieferzeit und Garantie für dich.',
     'breadcrumb' => ['Courts' => '/courts'],
     'page_type' => 'CollectionPage',
-    'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_item_list('Padel-Court-Systeme', $courtProducts),
         tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $courtsFaq), '/courts'),
@@ -173,5 +172,15 @@ tc_page_start([
   </div>
 </section>
 
-<?php $tcPreselect = ['Padelcourt']; $tcKontaktTitle = 'Let\'s build <span class="kw">your court.</span>'; $tcKontaktLead = 'Gemeinsam entwickeln wir eine Lösung, die funktional überzeugt und deine Anlage klar und unverwechselbar positioniert. Kontaktiere uns für ein unverbindliches Beratungsgespräch.'; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
+<section class="band dark grid-bg end" id="kontakt">
+  <div class="inner">
+    <h2>Let's build <span class="kw">your court.</span></h2>
+    <p class="lead" style="margin:18px auto 0">Gemeinsam entwickeln wir eine Lösung, die funktional überzeugt und deine Anlage klar und unverwechselbar positioniert. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
+    <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:680px">
+      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><code>martin.gaffal@padelbee.de</code><button class="copy" type="button">Kopieren</button></div></div>
+      <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><code>stefan.moebius@padelbee.de</code><button class="copy" type="button">Kopieren</button></div></div>
+    </div>
+    <p style="margin-top:32px"><a class="btn" href="/#kontakt">Beratungsgespräch anfragen</a></p>
+  </div>
+</section>
 <?php tc_page_end();
