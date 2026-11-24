@@ -226,3 +226,5 @@
 @media (max-width:560px){.gbox .chips{grid-template-columns:1fr}}
 /* Karten-Hover auf hellem Grund dezenter */
 .band:not(.dark) .card:hover{border-color:var(--petrol-200);border-top-color:var(--yellow)}
+/* DEV-1572 Pkt. 5: Megamenü-Texte umbrechen statt in die Nachbarspalte laufen */
+.dd-menu.mega{white-space:normal}
