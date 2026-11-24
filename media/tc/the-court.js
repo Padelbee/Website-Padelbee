@@ -148,7 +148,7 @@ addEventListener('hashchange',route); route();
 
 
 /* Textbild zentral (Abnahme Bietal 24.11.): gilt für alle Seiten und alle Breiten, ändert keinen Text, nur Umbruchstellen.
-   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn sie zusammen höchstens ~55 % einer Zeile brauchen.
+   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn sie zusammen höchstens ~75 % einer Zeile brauchen.
    2) „&“ und Zahlen bleiben am folgenden Wort („Planung & Architektur“, „365 Tage“, „12 mm“).
    3) Gilt auch für Überschriften mit Tipp-Effekt (der Effekt liest den Text erst beim Scrollen ein). */
 (function(){
@@ -160,6 +160,7 @@ addEventListener('hashchange',route); route();
     const nodes=[]; const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; while(n=w.nextNode()) nodes.push(n);
     // 2) „&“ und Zahlen an das nächste Wort binden
     nodes.forEach(t=>{ const v=t.textContent.replace(/(^|\s)(&|\d[\d.,]*)\s+(?=\S)/g,(x,a,b)=>a+b+NB); if(v!==t.textContent) t.textContent=v; });
+    nodes.forEach(t=>{ const ps=t.previousSibling; if(ps&&ps.nodeType===1&&ps.textContent.trim()==='&'&&/^\s/.test(t.textContent)) t.textContent=t.textContent.replace(/^\s+/,NB); });
     // 1) letzte zwei Wörter (nur innerhalb desselben Textknotens)
     let last=null; for(let i=nodes.length-1;i>=0;i--){ if(nodes[i].textContent.trim()){ last=nodes[i]; break; } }
     if(!last) return;
@@ -167,7 +168,7 @@ addEventListener('hashchange',route); route();
     const prev=m[1].split(/\s/).pop(); const tail=m[2];
     const cs=getComputedStyle(el); const fs=parseFloat(cs.fontSize)||16; const width=el.clientWidth||el.getBoundingClientRect().width;
     const perLine=width/(fs*0.55); // grobe Zeichen pro Zeile
-    if(perLine && (prev.length+1+tail.length)>perLine*0.55) return;
+    if(perLine && (prev.length+1+tail.length)>perLine*0.75) return;
     last.textContent=m[1]+NB+tail+m[3];
   });
 })();
