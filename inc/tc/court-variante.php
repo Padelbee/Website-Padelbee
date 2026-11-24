@@ -69,9 +69,6 @@ tc_page_start([
 <?php if (!empty($m['image'])): ?>
             <figure class="vm-img<?= !empty($m['fit']) ? ' fit-' . $m['fit'] : '' ?>"><img src="<?= $m['image'] ?>" alt="<?= tc_h($m['alt']) ?>" loading="lazy"></figure>
 <?php endif; ?>
-<?php if (!empty($m['facts'])): ?>
-            <div class="facts vm-facts"><?php foreach ($m['facts'] as $f): ?><span><?= $f ?></span><?php endforeach; ?></div>
-<?php endif; ?>
           </div>
           <div class="vm-head">
             <div class="logo"><div class="m" data-logo="<?= $m['logo'] ?>" data-h="<?= $m['logo_h'] ?>"></div></div>
@@ -80,6 +77,9 @@ tc_page_start([
             <p><?= $m['text'] ?></p>
 <?php if (!empty($m['price'])): ?>
             <p class="vm-price"><b>ab <?= number_format((float) $m['price'], 0, ',', '.') ?> €</b> netto<?php if (!empty($m['price_incl'])): ?><span><?= $m['price_incl'] ?></span><?php endif; ?><?php if (!empty($m['price_note'])): ?><span><?= $m['price_note'] ?></span><?php endif; ?></p>
+<?php endif; ?>
+<?php if (!empty($m['facts'])): ?>
+            <div class="facts vm-facts"><?php foreach ($m['facts'] as $f): ?><span><?= $f ?></span><?php endforeach; ?></div>
 <?php endif; ?>
           </div>
         </div>
