@@ -21,6 +21,7 @@ Gilt für jede weitere Unterseite. Ziel: jede Seite ist beim ersten Zeigen schon
 - **Keine künstlichen Umbrüche** (`<br>`) im Fließtext. Zusammengehörige Sätze bleiben in einem Absatz.
 - **Keine Hurenkinder:** Das erledigt `the-court.js` global (letzte zwei Wörter zusammen, kurze Bindestrich-Wörter wie Single‑Court ungetrennt). Bei Überschriften mit `<span>` am Ende `&nbsp;` vor den Span setzen.
 - **Textbreite:** Leads sind ca. 860 px breit mit `text-wrap: pretty`, ohne Balance, damit rechts keine leere Fläche bleibt. `balance` nur für Überschriften und zentrierte CTA-Texte.
+- **Kürzen ohne Inhaltsverlust** (Abnahme Panorama, 24.11.2026): Gestrichen werden nur Dopplungen (steht schon in Überschrift, Hero oder Kennzahl) und reine Werbesätze ohne Information. Zahlen, technische Daten, Herstellernamen, Garantien und Preise bleiben immer. Aufzählungen werden zu Chips oder Tabellen, Preisbestandteile („inkl. …“) stehen beim Preis, wiederholte Datenblöcke werden zu einer Vergleichstabelle. Martins Entwurf wird zuerst komplett gebaut, dann eine Kürzungstabelle zeigen (was fällt weg, warum, wo steht der Inhalt noch). Gekürzt wird erst nach Bietals Okay.
 - **Ansprache:** du. Sprachliche Änderungen an schon abgenommenen Seiten vorher vorschlagen.
 
 ## 3. Seitenaufbau
@@ -29,6 +30,7 @@ Gilt für jede weitere Unterseite. Ziel: jede Seite ist beim ersten Zeigen schon
 - **Wechsel hell/dunkel** zwischen den Sections, keine zwei gleichen Bänder hintereinander ohne Grund.
 - **Hero:** Kicker-Label in der H1 (Suchbegriff), H1, Lead, 2 Buttons (primär „… anfragen“, ghost „… ansehen“), Bild oder Visual. Kennzahlen darunter.
 - **Kennzahlen:** Zusätze („lt. Hersteller“, „Stand 11/2026“) als feine zweite Zeile (`.st-sub`), kein loses Kleingedrucktes darunter. „bis zu“ klein im Label-Stil. Auf dem Handy als 2×2-Raster, alle Zahlen auf einer Höhe.
+- **Produktkarten:** Bild und Text nebeneinander (abwechselnd links/rechts), Preis und Merkmal-Chips in der Textspalte, technische Daten als Reihe darunter (Handy: aufklappbar). Keine leeren Flächen neben kurzen Spalten. Vorbild `inc/tc/court-variante.php`.
 - **Lange Listen nicht als Stichpunktwand:** Inhalte gruppieren, zum Beispiel als Kästen mit Kurztext und Options-Chips im gleichmäßigen 2-Spalten-Raster, lange Chips über die volle Breite. Optionen stehen direkt unter dem Text, die freie Fläche liegt unten.
 - **„Mehr Details“ (aufklappbar)** nur für ergänzende Folienfakten in Karten. Kerninhalte gehören sichtbar auf die Seite. Starke Verkaufsargumente nie verstecken.
 - **Zusammengehöriges zusammen:** Eine Tabelle, die nur zu einer Karte gehört, steht in dieser Karte. Kosten werden in einem gemeinsamen Kasten zusammengefasst.
