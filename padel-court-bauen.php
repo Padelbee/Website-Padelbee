@@ -58,6 +58,10 @@ tc_page_start([
       <article class="card reveal"><div class="k">Phase 06</div><h3 data-type>Werkplanung, Ausschreibung &amp; Vergabe</h3><p>Wir planen die Details, schreiben die Gewerke aus und geben dir eine Vergabeempfehlung.</p><ul class="chips"><li>Detailplanung für Fundamente, Beleuchtung und Entwässerung</li><li>Ausschreibung &amp; Vergabeempfehlung</li><li>Vertragsgestaltung &amp; verbindliche Terminschiene</li></ul></article>
       <article class="card reveal"><div class="k">Phase 07</div><h3 data-type>Bauausführung &amp; Inbetriebnahme</h3><p>Wir koordinieren die Baustelle, montieren die Padelcourts und begleiten die Eröffnung.</p><ul class="chips"><li>Baustelleneinrichtung &amp; Koordination</li><li>Montage Padelcourts &amp; Qualitätssicherung</li><li>Abnahme, Eröffnung &amp; Monitoring</li></ul></article>
     </div>
+    <div class="gest reveal" style="margin-top:28px">
+      <article class="gbox"><div class="k">Planung &amp; Architektur</div><p>Wir stimmen Courts, Halle, Licht, Wege und Sanitär aufeinander ab, alles genehmigungsfähig. Den Bauantrag erstellen wir mit spezialisierten Architekturbüros.</p></article>
+      <article class="gbox"><div class="k">Bau</div><p>Courts, Hallen und Fundamente bauen wir schlüsselfertig, mit Ausschreibung und Bauleitung. Dafür setzen wir auf über 30 Partner aus Planung, Court- und Hallenbau.</p></article>
+    </div>
     <div class="ideal reveal"><span class="k">Deine sieben Etappen</span><span>Beratung</span><span>Finanzierung</span><span>Planung &amp; Architektur</span><span>Bau</span><span>Digitalisierung</span><span>Betrieb</span><span>Franchise</span></div>
   </div>
 </section>
@@ -95,6 +99,19 @@ tc_page_start([
       </table>
     </div>
     <p class="fav-note fav-note-l">Die Zahlen sind Richtwerte, kein Angebot. Dazu kommen Planung, Genehmigung, Licht und Digitalisierung. Mehr zu <a href="/courts">Court-Varianten</a>, <a href="/halle">Hallen</a> und <a href="/automatenloesungen">Automaten</a> findest du auf den eigenen Seiten.</p>
+    <h3 class="reveal" style="margin-top:clamp(40px,5vw,64px);font-size:clamp(26px,2.6vw,36px)">Welcher Padel Court passt zu deinem Budget?</h3>
+    <p class="lead">Die drei Court-Varianten unterscheiden sich vor allem in den Streben zwischen den Glaselementen. Jede Variante gibt es als Doppel- oder als Einzel-Court.</p>
+    <div class="tablewrap reveal">
+      <table class="plat">
+        <thead><tr><th>Variante</th><th>Merkmal</th><th>Passt zu</th></tr></thead>
+        <tbody>
+          <tr><td><a href="/standard-court">Standard</a></td><td>zusätzliche Streben, besonders stabil</td><td>Vereinen, Outdoor-Anlagen, Fokus auf Preis-Leistung</td></tr>
+          <tr><td><a href="/panorama-court">Panorama</a></td><td>weniger Streben, größere Glasflächen</td><td>Clubs mit Zuschauern</td></tr>
+          <tr><td><a href="/premier-court">Full Panorama</a></td><td>fast durchgehend Glas, minimaler Stahlrahmen</td><td>Indoor-Clubs, Turnieren, TV-Übertragungen</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fav-note fav-note-l">Unsere Faustregel ist einfach. Wo Zuschauer stehen, lohnt sich Panorama, wo Wind und Wetter wirken, punktet Standard. Wir arbeiten mit fünf Herstellern und vergleichen für dich Qualität, Lieferzeit, Herstellergarantie und Preis.</p>
     <p style="margin-top:28px"><a class="btn" href="#kontakt">Anlage durchrechnen lassen</a></p>
   </div>
 </section>
