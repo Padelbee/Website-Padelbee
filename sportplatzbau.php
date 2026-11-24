@@ -67,8 +67,8 @@ $spLogos = [
 <section class="band grid-bg" id="sp-zielgruppen">
   <div class="inner">
     <p class="label" data-type>Für wen wir bauen</p>
-    <h2 class="reveal">Moderne Racketsportanlagen für <span class="hl">Padel, Pickleball &amp; Tennis.</span></h2>
-    <p class="lead">Wir beraten, entwickeln und bauen für Vereine, Hotels, Gewerbe und die öffentliche Hand. Unser Angebot richtet sich ausschließlich an Unternehmen, Vereine und die öffentliche Hand, nicht an Privatpersonen.</p>
+    <h2 class="reveal">Vom Tennisverein bis zur <span class="hl">Kommune.</span></h2>
+    <p class="lead">Unser Angebot richtet sich ausschließlich an Unternehmen, Vereine und die öffentliche Hand, nicht an Privatpersonen.</p>
     <div class="cards c3">
 <?php foreach ($spGroups as $g): ?>
       <article class="card reveal"><div class="k"><?= $g[0] ?></div><h3 data-type><?= $g[1] ?></h3><p><?= $g[2] ?></p></article>
@@ -81,11 +81,11 @@ $spLogos = [
   <div class="inner">
     <p class="label" data-type>Mehrsportanlagen</p>
     <h2 class="reveal">Was über Padel <span class="kw">hinausgeht.</span></h2>
-    <p class="lead">Neben Padel planen wir auch Anlagen für Pickleball und Tennis. Padel und Tennis sind keine Konkurrenz, denn wer Padel entdeckt, bleibt oft auch beim Tennis.</p>
+    <p class="lead">Neben Padel planen wir auch Anlagen für Pickleball und Tennis.</p>
     <div class="cards c3">
-      <article class="card dk reveal"><div class="k">Padel</div><h3 data-type>Wenig Fläche</h3><p>Ein Padel-Court braucht deutlich weniger Fläche als ein Tennisplatz. Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Alles zu <a href="/courts">Courts</a> und zum <a href="/padel-court-bauen">Bau</a>.</p></article>
-      <article class="card dk reveal"><div class="k">Pickleball</div><h3 data-type>Attraktion für Gäste</h3><p>Padel und Pickleball machen Regionen und Hotels für Gäste attraktiv. Im Partnernetzwerk ist Joola unser Partner für Pickleball.</p></article>
-      <article class="card dk reveal"><div class="k">Tennis</div><h3 data-type>Neu gebaut</h3><p>Wir planen auch Tennisanlagen, zum Beispiel den neuen Tennispark des SC Eching mit 5 Rebound Ace Tennisplätzen.</p></article>
+      <article class="card dk reveal"><div class="k">Tennisverein</div><h3 data-type>Leere Plätze nutzen</h3><p>In vielen Vereinen stehen Tennisplätze leer. Ein Platz, der nicht bespielt wird, kostet nur. Auf einen Tennisplatz passen bis zu zwei Padel-Courts, und Padel bringt jüngere Spieler, Familien und Firmen auf die Anlage.</p><p>Padel und Tennis sind keine Konkurrenz. Wer Padel entdeckt, bleibt oft auch beim Tennis.</p></article>
+      <article class="card dk reveal"><div class="k">Hotel</div><h3 data-type>Das Upgrade, das Gäste buchen</h3><p>Padel ist der Sport, den Gäste im Urlaub ausprobieren wollen. Leicht zu lernen, gesellig, perfekt für Paare, Familien und Firmengruppen. Schon ein Einzel-Court reicht für ein starkes Angebot.</p></article>
+      <article class="card dk reveal"><div class="k">Pickleball</div><h3 data-type>Attraktion für Gäste</h3><p>Padel und Pickleball machen Regionen und Hotels für Gäste attraktiv. Im Partnernetzwerk ist Joola unser Partner für Pickleball. Alles zu <a href="/courts">Courts</a> und zum <a href="/padel-court-bauen">Bau</a>.</p></article>
     </div>
   </div>
 </section>
