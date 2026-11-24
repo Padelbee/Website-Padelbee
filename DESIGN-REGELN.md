@@ -19,6 +19,7 @@ Gilt für jede weitere Unterseite. Ziel: jede Seite ist beim ersten Zeigen schon
 - **Keine Doppelpunkt-Konstruktionen** im Fließtext („X: Y“), auch wenn Martin sie hat. Kurze technische Angaben in Produktkarten („Gekühlt: …“) sind erlaubt.
 - **Keine Gedankenstriche** (– —) im sichtbaren Text. Spannen als „1 bis 4“, „2.000 bis 5.000 €“.
 - **Keine künstlichen Umbrüche** (`<br>`) im Fließtext. Zusammengehörige Sätze bleiben in einem Absatz.
+- **Neuer Satz, neuer Absatz** (Wunsch Bietal, 24.11.2026): In Karten (2 Sätze) und kurzen Leads beginnt der zweite Satz als eigener Absatz (`<p>`, kein `<br>`), damit kein Satzanfang allein am Zeilenende hängt („… aus. Jede“). Abstand klein (`.lead + .lead`, `.card p + p` in tc-extra.css).
 - **Keine Hurenkinder:** Das erledigt `the-court.js` global (letzte zwei Wörter zusammen, kurze Bindestrich-Wörter wie Single‑Court ungetrennt). Bei Überschriften mit `<span>` am Ende `&nbsp;` vor den Span setzen.
 - **Textbild zentral (nicht pro Seite korrigieren):** `the-court.js` hält die letzten zwei Wörter nur zusammen, wenn das letzte Wort kurz ist (max. 50 % der Zeile) und beide zusammen max. 60 % brauchen (bei jeder Fenstergröße neu gemessen; längere Paare würden in der Zeile davor ein Loch reißen), bindet „&“ und im Fließtext Zahlen an das nächste Wort, hält kurze Bindestrich-Wörter und Begriffe mit Schrägstrich („Go/No-Go-Empfehlung“) zusammen und bricht Zwei-Satz-Überschriften nur zwischen den Sätzen. `tc-extra.css`: `text-wrap: pretty` für Fließtext, `balance` für Überschriften, Silbentrennung nur für sehr lange Wörter (ab 16 Zeichen) in Karten, technischen Angaben und Kartenüberschriften, damit davor keine Löcher entstehen, H2 unter 400 px etwas kleiner. Prüfung: Scan über 17 Breiten von 320 bis 1920 px (einzelnes Wort unter 40 % der Zeile, keine Löcher: keine Zeile mitten im Absatz unter 60 % Breite, kein seitlicher Überlauf). Vor dem Zeigen die Screenshots selbst auf Löcher und leere Flächen ansehen..
 - **Textbreite:** Leads sind ca. 860 px breit mit `text-wrap: pretty`, ohne Balance, damit rechts keine leere Fläche bleibt. `balance` nur für Überschriften und zentrierte CTA-Texte.
@@ -51,6 +52,7 @@ Gilt für jede weitere Unterseite. Ziel: jede Seite ist beim ersten Zeigen schon
 
 ## 5. Animationen
 
+- Der Tipp-Effekt hält die Höhe der Überschrift (the-court.js `typeEl`), Karten springen beim Tippen nicht.
 - `data-type` (gelber Tipp-Cursor) auf jedes `p.label` und jeden Karten- und Produkt-`h3`. Bei Überschriften mit `<small>` nur den Titel in `<span data-type>` setzen, sonst springt die Zeile.
 - Zähler mit `data-count`, Reveal auf Karten. Nach Änderungen an `media/tc/*` `TC_ASSET_VERSION` hochzählen.
 
