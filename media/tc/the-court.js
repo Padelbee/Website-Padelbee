@@ -148,7 +148,7 @@ addEventListener('hashchange',route); route();
 
 
 /* Textbild zentral (Abnahme Bietal 24.11.): gilt für alle Seiten und alle Breiten, ändert keinen Text, nur Umbruchstellen.
-   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn das letzte Wort kurz ist (max. 50 % der Zeile) und beide zusammen max. 60 % brauchen (bei jeder Fenstergröße neu).
+   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn das letzte Wort kurz ist (max. 50 % der Zeile) und dadurch in der Zeile davor kein Loch entsteht (wird gemessen) (bei jeder Fenstergröße neu).
    2) „&“ und Zahlen bleiben am folgenden Wort („Planung & Architektur“, „365 Tage“, „12 mm“).
    3) Gilt auch für Überschriften mit Tipp-Effekt (der Effekt liest den Text erst beim Scrollen ein). */
 (function(){
@@ -171,6 +171,12 @@ addEventListener('hashchange',route); route();
     WID.push({el, node:last, idx:m[1].length, pair:prev+' '+m[2]});
   });
   const ctx=document.createElement('canvas').getContext('2d');
+  function holes(el,W){
+    const r=document.createRange(); r.selectNodeContents(el); const L={};
+    [...r.getClientRects()].forEach(q=>{ if(q.width<1) return; const k=Math.round(q.top); L[k]=Math.max(L[k]||0,q.right)-0; L[k+'l']=Math.min(L[k+'l']??q.left,q.left); });
+    const tops=Object.keys(L).filter(k=>!k.endsWith('l')).map(Number).sort((a,b)=>a-b);
+    let n=0; tops.slice(0,-1).forEach(t=>{ if(L[t]-L[t+'l']<W*0.55) n++; }); return n;
+  }
   function apply(){
     WID.forEach(x=>{
       if(x.el.dataset.typing) return;
@@ -182,8 +188,12 @@ addEventListener('hashchange',route); route();
       // Nur ein kurzes letztes Wort (höchstens 50 % der Zeile) wird an das vorige gebunden,
       // und nur wenn beide zusammen höchstens 60 % brauchen. Sonst entsteht in der Zeile davor ein Loch
       // (Beispiel: „farblich“ allein, weil „angepasste Stahlkonstruktion.“ zusammenhing).
-      const ok=W>0 && mw(tail)<=W*0.5 && mw(x.pair)<=W*0.6;
-      const ch=ok?NB:' '; if(t[x.idx]!==ch) x.node.textContent=t.slice(0,x.idx)+ch+t.slice(x.idx+1);
+      const ok=W>0 && mw(tail)<=W*0.5 && mw(x.pair)<=W*0.85;
+      const set=ch=>{ const v=x.node.textContent; if(v[x.idx]!==ch) x.node.textContent=v.slice(0,x.idx)+ch+v.slice(x.idx+1); };
+      if(!ok){ set(' '); return; }
+      // Ergebnis messen: entsteht durch das Zusammenhalten ein Loch (Zeile vor der letzten unter 55 %), zurücknehmen
+      set(' '); const before=holes(x.el,W); set(NB); const after=holes(x.el,W);
+      if(after>before) set(' ');
     });
   }
   apply(); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(apply);
