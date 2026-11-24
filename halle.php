@@ -145,7 +145,7 @@ tc_page_start([
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">
     <h2>Welche Halle passt auf <span class="kw">deine Fläche?</span></h2>
-    <p class="lead" style="margin:18px auto 0">Lass uns prüfen, welche Halle auf deine Fläche passt. Wir vergleichen Polycarbonat und ThermoRoof mit allen Maßen für dich. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
+    <p class="lead" style="margin:18px auto 0">Lass uns prüfen, welche Halle auf deine Fläche passt. Wir vergleichen Polycarbonat und ThermoRoof mit allen Maßen für dich. Ob deine Fläche passt, prüfen wir in der <a href="/standortanalyse">Standortanalyse</a>. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
     <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
       <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>

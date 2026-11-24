@@ -25,7 +25,7 @@
 
 require_once __DIR__ . '/schema.php';
 
-const TC_ASSET_VERSION = 109;
+const TC_ASSET_VERSION = 110;
 
 // Tracking/Consent wie auf der bisherigen Seite (GA4, CCM19, HubSpot). Auf false setzen, um alles abzuschalten.
 const TC_TRACKING = true;
@@ -108,7 +108,7 @@ function tc_header(bool $isStart): void
         <button type="button" class="dd-btn" aria-expanded="false" aria-controls="ddMenu" data-nav-group="courts automaten">Lösungen <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
         <div class="dd-menu mega" id="ddMenu">
           <a href="/courts" data-nav="courts"><span class="dd-k">Courts</span><b>Padel-Courts</b><small>Drei Varianten, fünf Hersteller, Fundamente</small></a>
-          <a href="/courts#c-hallen"><span class="dd-k">Hallen</span><b>Hallenlösungen</b><small>Polycarbonat und ThermoRoof, ab 280 €/m²</small></a>
+          <a href="/halle"><span class="dd-k">Hallen</span><b>Hallenlösungen</b><small>Polycarbonat und ThermoRoof, ab 280 €/m²</small></a>
           <a href="/automatenloesungen" data-nav="automaten"><span class="dd-k">Automaten</span><b>Verleih &amp; Verkauf</b><small>Schläger, Bälle, Snacks und Getränke 24/7</small></a>
 <?php foreach (['leistungen' => 'Leistungen', 'courts' => 'Court-Varianten', 'unternehmen' => 'Unternehmen'] as $key => $label): ?>
           <div class="dd-grp"><p class="dd-h"><?= tc_h($label) ?></p>
@@ -127,7 +127,7 @@ function tc_header(bool $isStart): void
   <nav class="mnav" id="mnav" aria-label="Mobile Navigation" hidden>
     <a href="/">Start</a>
     <p class="mnav-k">Lösungen</p>
-    <a href="/courts" class="sub">Padel-Courts</a><a href="/courts#c-hallen" class="sub">Hallenlösungen</a><a href="/automatenloesungen" class="sub">Automaten</a>
+    <a href="/courts" class="sub">Padel-Courts</a><a href="/halle" class="sub">Hallenlösungen</a><a href="/automatenloesungen" class="sub">Automaten</a>
 <?php foreach (['leistungen' => 'Leistungen', 'courts' => 'Court-Varianten', 'unternehmen' => 'Unternehmen'] as $key => $label): ?>
     <p class="mnav-k"><?= tc_h($label) ?></p>
     <?php foreach ($menu[$key] as $name => $href): ?><a href="<?= tc_h($href) ?>" class="sub"><?= tc_h($name) ?></a><?php endforeach; ?>
@@ -145,7 +145,7 @@ function tc_footer(bool $isStart): void
     $a = $isStart ? '' : '/';
     $menu = tc_menu();
     ?>
-<nav class="band foot-nav" aria-label="Seitenübersicht" style="background:var(--petrol)"><div class="foot-links"><a href="/">Start</a><a href="/courts">Padel-Courts</a><a href="/courts#c-hallen">Hallenlösungen</a><a href="/automatenloesungen">Verleih- &amp; Verkaufsautomaten</a><a href="/referenzen">Referenzen</a><a href="/blog">Blog</a><a href="<?= $a ?>#leistungen">Leistungen</a><a href="<?= $a ?>#projekte">Projektkarte</a><a href="<?= $a ?>#partner">Partner</a><a href="<?= $a ?>#kontakt">Kontakt</a><a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a></div>
+<nav class="band foot-nav" aria-label="Seitenübersicht" style="background:var(--petrol)"><div class="foot-links"><a href="/">Start</a><a href="/courts">Padel-Courts</a><a href="/halle">Hallenlösungen</a><a href="/automatenloesungen">Verleih- &amp; Verkaufsautomaten</a><a href="/referenzen">Referenzen</a><a href="/blog">Blog</a><a href="<?= $a ?>#leistungen">Leistungen</a><a href="<?= $a ?>#projekte">Projektkarte</a><a href="<?= $a ?>#partner">Partner</a><a href="<?= $a ?>#kontakt">Kontakt</a><a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a></div>
 <div class="foot-links foot-links2"><?php foreach ($menu as $group): foreach ($group as $name => $href): ?><a href="<?= tc_h($href) ?>"><?= tc_h($name) ?></a><?php endforeach; endforeach; ?></div></nav>
 <footer class="foot band"><div class="row"><div><?= tc_logos() ?></div><div>Oktober 2026</div></div></footer>
 <?php

@@ -482,3 +482,10 @@ main{overflow-x:clip}
 
 /* neue Zeile für hängende Satzanfänge (the-court.js) */
 span.sbr{display:block;height:4px}
+/* Courts: Hallen nur als Teaser, Details auf /halle */
+.c-hallteaser{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center;margin-top:36px}
+.c-hallteaser figure{margin:0;aspect-ratio:16/10;overflow:hidden;border-top:4px solid var(--yellow)}
+.c-hallteaser img{width:100%;height:100%;object-fit:cover;display:block}
+.c-hallteaser .lead{margin-top:0}
+.dark .c-hallteaser .chips li{background:transparent;border-color:var(--petrol-200);color:var(--white)}
+@media (max-width:860px){.c-hallteaser{grid-template-columns:1fr}}

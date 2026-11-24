@@ -133,16 +133,13 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Hallensysteme</p>
     <h2 class="reveal">Moderne <span class="kw">Hallen.</span></h2>
-    <p class="lead">Wir setzen auf das Gesamtsystem von Padel Factory, damit Courts und Halle technisch sauber aufeinander abgestimmt sind. Für andere Anforderungen arbeiten wir mit weiteren Hallenbauern wie Haltec, DS Stahl und Okatent. Mehr dazu findest du auf unserer Seite zur <a href="/halle">Padel Halle</a>.</p>
-    <div class="hallimgs one">
-      <figure class="reveal"><img src="/media/courts/dshs.jpg" alt="Hallenkonzept mit Glasfront, Rendering" loading="lazy"><figcaption>Hallenkonzept · Rendering</figcaption></figure>
-    </div>
-    <div class="partnerimgs"><figure class="reveal"><img src="/media/courts/haltec_industriehalle.webp" alt="Stahlhalle von Haltec mit Vordach und Fensterbändern" loading="lazy"><figcaption>Stahlhalle</figcaption></figure><figure class="reveal"><img src="/media/courts/haltec_firstlichtband.webp" alt="Firstlichtband in einer Haltec-Stahlhalle, Innenansicht" loading="lazy"><figcaption>Firstlichtband</figcaption></figure><figure class="reveal"><img src="/media/courts/haltec_fassade.webp" alt="Fassade einer Haltec-Halle mit Fensterband" loading="lazy"><figcaption>Fensterband</figcaption></figure><figure class="reveal"><img src="/media/courts/haltec_sektionaltor.webp" alt="Haltec-Mehrzweckhalle mit verglastem Sektionaltor" loading="lazy"><figcaption>Sektionaltor</figcaption></figure><figure class="reveal"><img src="/media/courts/haltec_stahlhalle.webp" alt="Gedämmte Haltec-Stahlhalle mit Bürotrakt" loading="lazy"><figcaption>Gedämmte Halle</figcaption></figure></div>
-    <p class="partnernote">Fotos von unserem Hallenpartner <a href="https://www.haltec.de" target="_blank" rel="noopener">Haltec</a></p>
-    <div class="halls">
-      <article class="card reveal"><div class="k">Einstieg</div><h3 data-type>Polycarbonat</h3><p>8 mm Exolon, offen oder vollständig geschlossen. Beliebig erweiterbar.</p><ul><li><b>1 Court</b> 12 × 21 m · 252 m² · 9,42 m hoch</li><li><b>2 Courts</b> 25 × 26 m · 666 m²</li><li><b>3 Courts</b> 26 × 36 m · 932 m²</li><li><b>4 Courts</b> 26 × 50 m · 1.290 m²</li></ul></article>
-      <article class="card reveal"><div class="k">Premium</div><h3 data-type>ThermoRoof</h3><p>+40 mm Isolierung, beheizbar und optimal für den Ganzjahresbetrieb.</p><ul><li><b>1 Court</b> 13 × 27 m · 354 m² · 9,42 m</li><li><b>4 Courts</b> 28 × 51 m · 1.412 m² · 9,42 m</li><li>Beliebig erweiterbar</li></ul></article>
-      <article class="card reveal" style="border-top-color:var(--yellow)"><div class="k">Kennzahlen</div><h3 data-type>ab 280 €/m²</h3><p>netto, Breite, Länge und Höhe flexibel.</p><ul><li>Hohe Tragfähigkeit für Schnee- und Windlasten</li><li>Verschiebbare Seitenwände oder Fenster</li><li>PV-Anlage auf dem Dach integrierbar</li><li>Seitliche Schiebepaneele zur Belüftung</li></ul></article>
+    <div class="c-hallteaser">
+      <figure class="reveal"><img src="/media/courts/halle.jpg" alt="Polycarbonat-Halle mit zwei Padel-Courts, Luftansicht als Rendering" loading="lazy"></figure>
+      <div>
+        <p class="lead">Wir setzen auf das Gesamtsystem von Padel Factory, damit Courts und Halle technisch sauber aufeinander abgestimmt sind. Für andere Anforderungen arbeiten wir mit weiteren Hallenbauern wie Haltec, DS Stahl und Okatent.</p>
+        <ul class="chips"><li>Polycarbonat · Einstieg</li><li>ThermoRoof · Premium</li><li>ab 280 €/m² netto</li><li>1 bis 4 Courts, erweiterbar</li></ul>
+        <a class="btn" href="/halle" style="margin-top:28px">Alles zur Padel Halle</a>
+      </div>
     </div>
   </div>
 </section>
