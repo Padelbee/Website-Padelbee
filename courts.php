@@ -102,11 +102,11 @@ tc_page_start([
     <p class="label" data-type>Individuelle Gestaltung</p>
     <h2 class="reveal">Dein Court ist Teil deiner <span class="hl">Marke.</span></h2>
     <p class="lead">Ein Padel-Court ist heute weit mehr als eine Sportfläche, er prägt die Wahrnehmung deiner gesamten Anlage. Wähle aus, was zu deiner Anlage passt. Wir stimmen alles mit dem Hersteller ab.</p>
-    <ul class="optlist reveal"><li><div><b>Court in RAL-Farbe</b></div></li><li><div><b>Details in RAL-Farbe</b></div></li><li><div><b>Kunstrasen in vielen Farben</b> <span>Blau, Grün, Rot, Schwarz, Anthrazit, Terracotta, Violett, Pink, Petrol u. v. m.</span></div></li><li><div><b>Kunstrasen vom Hersteller oder Mondo Premium Turf</b></div></li><li><div><b>Schaumstoffprotektoren mit Logo</b> <span>für Türen und Netzpfosten</span></div></li><li><div><b>Netzkante mit Logo</b></div></li><li><div><b>Netz mit Logo</b></div></li><li><div><b>Vogelschutzverglasung</b></div></li><li><div><b>Windlastzone 1 bis 4</b></div></li><li><div><b>Indoor oder Outdoor</b></div></li><li><div><b>Lichtmasten</b> <span>gerade, in C- oder Z-Form</span></div></li><li><div><b>Lichttemperatur</b> <span>nach Wunsch</span></div></li><li><div><b>Zusätzliche LEDs</b></div></li></ul>
-    <div class="cards c3 m-cards">
-      <article class="card reveal"><div class="k">Kunstrasen</div><h3 data-type>Blau, Rot, Grün</h3><p>Klassisch in Blau, ebenso in Rot oder Grün. Auch Kombinationen zwischen Spielfeld und Auslaufbereichen sind möglich und schaffen eine klare visuelle Differenzierung, passend zu deinem Corporate Design.</p></article>
-      <article class="card reveal"><div class="k">Branding</div><h3 data-type>Logos, Glas, Sponsoren</h3><p>Logos lassen sich integrieren, Glasflächen individualisieren und Sponsoren sichtbar einbinden. So entsteht eine professionelle Präsentationsfläche mit Wiedererkennungswert.</p></article>
-      <article class="card reveal"><div class="k">Bauliche Anpassung</div><h3 data-type>Türen, Zugänge, Licht</h3><p>Zusätzliche Türen, spezielle Zugangslösungen und individuell abgestimmte Beleuchtungskonzepte. Auch architektonische Besonderheiten bei Indoor- und Outdoor-Anlagen berücksichtigen wir.</p></article>
+    <div class="gest">
+      <article class="gbox reveal"><div class="k">Farbe &amp; Kunstrasen</div><p>Klassisch in Blau, ebenso in Rot oder Grün. Auch Kombinationen zwischen Spielfeld und Auslaufbereichen sind möglich und schaffen eine klare visuelle Differenzierung, passend zu deinem Corporate Design.</p><ul class="chips"><li>Court in RAL-Farbe</li><li>Details in RAL-Farbe</li><li>Kunstrasen in vielen Farben: Blau, Grün, Rot, Schwarz, Anthrazit, Terracotta, Violett, Pink, Petrol u. v. m.</li><li>Kunstrasen vom Hersteller oder Mondo Premium Turf</li></ul></article>
+      <article class="gbox reveal"><div class="k">Branding</div><p>Logos lassen sich integrieren, Glasflächen individualisieren und Sponsoren sichtbar einbinden. So entsteht eine professionelle Präsentationsfläche mit Wiedererkennungswert.</p><ul class="chips"><li>Netz mit Logo</li><li>Netzkante mit Logo</li><li>Schaumstoffprotektoren mit Logo für Türen und Netzpfosten</li></ul></article>
+      <article class="gbox reveal"><div class="k">Licht</div><p>Individuell abgestimmte Beleuchtungskonzepte für deine Anlage.</p><ul class="chips"><li>Lichtmasten gerade, in C- oder Z-Form</li><li>Lichttemperatur nach Wunsch</li><li>Zusätzliche LEDs</li></ul></article>
+      <article class="gbox reveal"><div class="k">Bauliche Anpassung</div><p>Zusätzliche Türen, spezielle Zugangslösungen und auch architektonische Besonderheiten bei Indoor- und Outdoor-Anlagen berücksichtigen wir.</p><ul class="chips"><li>Indoor oder Outdoor</li><li>Windlastzone 1 bis 4</li><li>Vogelschutzverglasung</li></ul></article>
     </div>
     <p class="m-quote reveal">Nahezu alle Elemente sind gestaltbar. Entscheidend ist nicht, was technisch möglich ist, sondern was <span class="hl">strategisch sinnvoll</span> ist.</p>
   </div>
@@ -117,24 +117,14 @@ tc_page_start([
     <p class="label" data-type>Fundament</p>
     <h2 class="reveal">Das richtige <span class="hl">Fundament.</span></h2>
     <p class="lead">Feste Betonplatte oder mobile, rückbaubare Plattform: Die Wahl hängt vom Standort und von der Laufzeit deines Mietvertrags ab. Beide Varianten liegen preislich in einem ähnlichen Rahmen.</p>
-    <div class="vs">
-      <article class="card reveal"><figure class="cimg"><img src="/media/courts/cp_outdoor1.jpg" alt="Court auf festem Fundament im Bau" loading="lazy"></figure><h3><span data-type>Festes Fundament</span> <small>Langfristiger Standort</small></h3><p>Dauerhaft gegossene Betonplatte mit Streifenfundament (Standard 40 × 80 cm, angepasst an den Boden, Tiefgründung unter Frostschutztiefe). Maximale Standfestigkeit, ausgelegt auf viele Jahre Betrieb. Spielfläche aus Drainbeton, Sickerasphalt oder elastischer Tragschicht. So sieht das beim <a href="/referenzen#r-scheck">Aufbau im Scheck Club München</a> aus.</p></article>
-      <article class="card reveal"><figure class="cimg"><img src="/media/courts/pf_wpc.jpg" alt="Padel Factory Wing Court auf mobiler WPC-Plattform" loading="lazy"></figure><h3><span data-type>Mobile Plattform</span> <small>Befristeter Standort</small></h3><p>Modulare Unterkonstruktion ohne Betonfundament. Rückbaubar und versetzbar, ideal bei kürzeren Mietverträgen und Zwischennutzung. Mobile Fundamente und Courts lassen sich oft über Leasing finanzieren. In vielen Förderprogrammen derzeit nicht förderfähig, im Einzelfall prüfen.</p></article>
+    <div class="vs fd">
+      <article class="card reveal"><figure class="cimg"><img src="/media/courts/cp_outdoor1.jpg" alt="Court auf festem Fundament im Bau" loading="lazy"></figure><h3><span data-type>Festes Fundament</span> <small>Langfristiger Standort</small></h3><p>Dauerhaft gegossene Betonplatte mit Streifenfundament (Standard 40 × 80 cm, angepasst an den Boden, Tiefgründung unter Frostschutztiefe). Maximale Standfestigkeit, ausgelegt auf viele Jahre Betrieb. Spielfläche aus Drainbeton, Sickerasphalt oder elastischer Tragschicht.</p><div class="fd-why"><b>Ideal, wenn</b> du strategisch über viele Jahre planst. In der Regel die wirtschaftlichste und stabilste Lösung.</div><p class="fd-link">So sieht das beim <a href="/referenzen#r-scheck">Aufbau im Scheck Club München</a> aus.</p></article>
+      <article class="card reveal"><figure class="cimg"><img src="/media/courts/pf_wpc.jpg" alt="Padel Factory Wing Court auf mobiler WPC-Plattform" loading="lazy"></figure><h3><span data-type>Mobile Plattform</span> <small>Befristeter Standort</small></h3><p>Modulare Unterkonstruktion ohne Betonfundament. Rückbaubar und versetzbar, ideal bei kürzeren Mietverträgen und Zwischennutzung. Mobile Fundamente und Courts lassen sich oft über Leasing finanzieren. In vielen Förderprogrammen derzeit nicht förderfähig, im Einzelfall prüfen.</p><div class="fd-why"><b>Ideal, wenn</b> du flexibel bleiben willst: Die gesamte Anlage lässt sich bei Bedarf versetzen. Das reduziert dein Investitionsrisiko, und mit Leasing wird deine Liquidität geschont.</div>
+        <table class="plat fd-plat"><thead><tr><th>Hersteller</th><th>Garantie lt. Hersteller</th><th>Belag</th></tr></thead><tbody><tr><td>Padel Factory</td><td>15 Jahre</td><td>WPC-Paneele, robuste Konstruktion</td></tr><tr><td>Padel Galis / Flexipadel</td><td>5 Jahre</td><td>Keramikplatten</td></tr><tr><td>Padel Concept</td><td>2 Jahre</td><td>Keramikplatten</td></tr></tbody></table></article>
     </div>
-    <div class="bigfig">
+    <div class="fd-cost reveal">
       <div><span>Richtwert Fundament</span><b>ca. 35.000 €</b><p>je nach Standort, Boden und baulichen Anforderungen, für beide Varianten.</p></div>
-      <div><span>Elastische Tragschicht</span><b>+2.000 bis 5.000 €</b><p>pro Court. Gummi-Split-Mischung, z. B. von Polytan: komplett eben, gelenkschonend und wasserdurchlässig.</p></div>
-    </div>
-    <details class="pmore c-more"><summary>Mehr Details</summary><ul><li>Festes Fundament: in der Regel die wirtschaftlichste und stabilste Lösung, ideal für Betreiber, die strategisch über viele Jahre planen</li><li>Mobiles Fundament: rückbaubar, die gesamte Anlage lässt sich bei Bedarf versetzen. Das reduziert dein Investitionsrisiko.</li><li>Finanzierung über Leasing: Die Anfangsinvestition bleibt überschaubar, deine Liquidität wird geschont.</li><li>Elastische Tragschicht: Streifenfundament und Unterbau baut ein lokales Bauunternehmen, die letzten ca. 5 cm entstehen als Gummi-Split-Mischung, z. B. durch Polytan. Gelenkschonend und ein Pluspunkt in der Außendarstellung deines Clubs.</li></ul></details>
-    <div class="tablewrap">
-      <table class="plat">
-        <thead><tr><th>Mobile Plattform</th><th>Herstellergarantie (lt. Hersteller)</th><th>Belag der Plattform</th></tr></thead>
-        <tbody>
-          <tr><td>Padel Factory</td><td>15 Jahre</td><td>Robuste Konstruktion mit WPC-Paneelen</td></tr>
-          <tr><td>Padel Galis / Flexipadel</td><td>5 Jahre</td><td>Keramikplatten</td></tr>
-          <tr><td>Padel Concept</td><td>2 Jahre</td><td>Keramikplatten</td></tr>
-        </tbody>
-      </table>
+      <div><span>Elastische Tragschicht</span><b>+2.000 bis 5.000 €</b><p>pro Court. Streifenfundament und Unterbau baut ein lokales Bauunternehmen, die letzten ca. 5 cm entstehen als Gummi-Split-Mischung, z. B. von Polytan: komplett eben, gelenkschonend und wasserdurchlässig. Ein Pluspunkt auch in der Außendarstellung deines Clubs.</p></div>
     </div>
   </div>
 </section>
