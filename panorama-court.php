@@ -112,7 +112,7 @@ $v = [
     ],
     'others' => [
         ['Einstieg', 'Standard', 'Die klassische, wirtschaftliche Lösung. Zusätzliche Streben zwischen den Glaselementen machen die Konstruktion besonders stabil.', '/standard-court', 'Zum Standard Court', '/media/courts/standard.jpg'],
-        ['Topklasse', 'Full-Panorama', 'Nahezu durchgehende Glasflächen und eine minimale Stahlstruktur. Repräsentativ, mit klarem Show-Court-Charakter, vor allem für Indoor-Clubs und TV-Übertragungen.', '/courts#c-systeme', 'Alle Varianten vergleichen', '/media/courts/full.jpg'],
+        ['Topklasse', 'Full-Panorama', 'Nahezu durchgehende Glasflächen und eine minimale Stahlstruktur. Repräsentativ, mit klarem Show-Court-Charakter, vor allem für Indoor-Clubs und TV-Übertragungen.', '/premier-court', 'Zum Full-Panorama Court', '/media/courts/full.jpg'],
     ],
 ];
 // Galis-Modelle zusätzlich als Produkte für Google

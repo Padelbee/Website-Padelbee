@@ -77,7 +77,7 @@ $v = [
     ],
     'others' => [
         ['Premium', 'Panorama', 'Deutlich weniger sichtbare Streben, größere Glasflächen und eine offenere Anmutung. Bessere Sicht für Zuschauer und ein hochwertiger&nbsp;Gesamteindruck.', '/panorama-court', 'Zum Panorama Court', '/media/courts/panorama.jpg'],
-        ['Topklasse', 'Full-Panorama', 'Nahezu durchgehende Glasflächen und eine minimale Stahlstruktur. Repräsentativ, mit klarem Show-Court-Charakter, vor allem für Indoor-Clubs und TV-Übertragungen.', '/courts#c-systeme', 'Alle Varianten vergleichen', '/media/courts/full.jpg'],
+        ['Topklasse', 'Full-Panorama', 'Nahezu durchgehende Glasflächen und eine minimale Stahlstruktur. Repräsentativ, mit klarem Show-Court-Charakter, vor allem für Indoor-Clubs und TV-Übertragungen.', '/premier-court', 'Zum Full-Panorama Court', '/media/courts/full.jpg'],
     ],
 ];
 include __DIR__ . '/inc/tc/court-variante.php';
