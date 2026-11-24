@@ -113,22 +113,6 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
   </div>
 </section>
 
-<section class="band dark grid-bg" id="spektrum">
-  <div class="inner">
-    <p class="label" data-type>Leistungsspektrum</p>
-    <h2 class="reveal">Das Padelbee&nbsp;<span class="kw">Spektrum.</span></h2>
-    <p class="lead">Wir entwickeln Padel- und Racketsportprojekte ganzheitlich, von der Machbarkeit bis zur Fertigstellung, und begleiten Betreiber auch danach.</p>
-    <div class="cards c3">
-      <article class="card svc reveal"><div class="k">01 · Padel &amp; Racketsports</div><h3 data-type>Projektentwicklung</h3><p>Netzwerk für ganzheitliche Planung und Entwicklung von Padel- und Racketsportprojekten, von der Machbarkeit bis zur Fertigstellung.</p><a class="svc-more" href="/standortanalyse">Zur Standortanalyse</a></article>
-      <article class="card svc reveal"><div class="k">02 · Projektrealisierung</div><h3 data-type>Partnernetzwerk</h3><p>Erprobtes Netzwerk aus Baufirmen, Lieferanten und Spezialisten für eine sichere und termingerechte Umsetzung.</p><a class="svc-more" href="/partner">Zu den Partnern</a></article>
-      <article class="card svc reveal"><div class="k">03 · Beratung · Courts · Hallen · Digital</div><h3 data-type>360°-Plattform</h3><p>Vollständige Ökosystem-Lösung für Strategie, Hallenbau, Courtausstattung, Digitalisierung und Automatisierung.</p><a class="svc-more" href="/courts">Zu den Courts</a></article>
-      <article class="card svc reveal"><div class="k">04 · Ausbildung &amp; Training</div><h3 data-type>Academy &amp; Coaching</h3><p>Strukturierte Trainingsprogramme, Betreiber-Coaching und Unternehmensberatung.</p><a class="svc-more" href="/betreiberkonzept#b-leistungen">Zum Betreiberkonzept</a></article>
-      <article class="card svc reveal"><div class="k">05 · Management &amp; Formate</div><h3 data-type>Turnier &amp; Event</h3><p>Professionelle Planung und Durchführung von Turnieren und Events.</p><a class="svc-more" href="/betreiberkonzept#b-netzwerk">Zu den Events</a></article>
-      <article class="card svc reveal"><div class="k">06 · Sport Management</div><h3 data-type>Vermarktung</h3><p>Markenaufbau, Sponsoring, Community-Wachstum und kommerzielles Management für Clubs und Betreiber.</p><a class="svc-more" href="/betreiberkonzept#b-leistungen">Zum Betreiberkonzept</a></article>
-    </div>
-  </div>
-</section>
-
 <section class="band grid-bg" id="phasen" style="background-color:var(--grey-050)">
   <div class="inner">
     <p class="label" data-type>Unsere Leistungen</p>
@@ -151,12 +135,10 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
     <p class="label" data-type>Know-how &amp; Kompetenzen</p>
     <h2 class="reveal">Die Padelbee&nbsp;<span class="kw">Expertise.</span></h2>
     <p class="lead">Hinter jedem Projekt steht Erfahrung aus Planung, Fundamentbau, Platzbau und Betrieb. Lern das <a href="/team">Padelbee Team</a> kennen, das sie für dein Projekt einbringt.</p>
-    <div class="cards c3">
-      <article class="card xp reveal"><b class="xp-n" data-count="14" data-pre="+">+14</b><h3 data-type>Jahre Padel-Erfahrung</h3><p>In Planung, Fundamentbau, Platzbau und erfolgreichem Betrieb.</p></article>
+    <div class="cards c4">
       <article class="card xp reveal"><b class="xp-n" data-count="12">12</b><h3 data-type>Padel-Courts</h3><p>Auf unserer Referenzanlage Scheck Club, eine der größten Deutschlands.</p></article>
       <article class="card xp reveal"><b class="xp-n" data-count="20" data-pre="+">+20</b><h3 data-type>Jahre Racketsports</h3><p>Erfahrung im Betrieb von Sportanlagen und Marketing für Racket Sports.</p></article>
       <article class="card xp reveal"><b class="xp-n w">mehrere</b><h3 data-type>Architekturbüros</h3><p>Spezialisierte Partner für ganz Deutschland, effizient und schnell.</p></article>
-      <article class="card xp reveal"><b class="xp-n" data-count="30" data-plus>30+</b><h3 data-type>Partnernetzwerk</h3><p>Starkes Netzwerk aus Fachfirmen und Lieferanten im Bau und für den Betrieb.</p></article>
       <article class="card xp reveal"><b class="xp-n">101 %</b><h3 data-type>Engagiert</h3><p>Damit Padel an deinem Standort schnell startet und erfolgreich bleibt.</p></article>
     </div>
   </div>
