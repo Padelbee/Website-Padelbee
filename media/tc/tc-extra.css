@@ -496,3 +496,5 @@ span.sbr{display:block;height:4px}
 @media (min-width:861px){[data-view="premier-court"] .c-hero .inner>div:first-child{container-type:inline-size}[data-view="premier-court"] .c-hero h1{font-size:min(132px,14.4cqi)}}
 /* Tipp-Cursor nimmt keinen Platz in der Zeile ein, darf also keinen Zeilenumbruch auslösen (sonst springt der Text) */
 .cur{margin-right:-.58em}
+/* Variantenseiten: Links zu Gestaltung und Fundament unter den weiteren Varianten (Abschnitt Detail entfällt, Inhalt steht auf /courts) */
+.v-links-after{margin-top:32px}

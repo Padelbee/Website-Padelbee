@@ -74,7 +74,6 @@ $v = [
             'facts' => ['Turnierausrüster der Premier Padel Tour (lt. Hersteller)', 'Einbrennlackierung, Farbe nach Wahl', 'Verzinkt (nicht feuerverzinkt), 2 Jahre Gewährleistung', 'Montageteam in Deutschland'],
         ],
     ],
-    'strategy_lead' => 'Die Wahl ist auch eine strategische Positionierung deiner Anlage.',
     'extra_html' => $refHtml,
     'faq' => [
         ['frage' => 'Für wen eignet sich der Full-Panorama Court?', 'antwort' => 'Der Full-Panorama Court ist der Show-Court für Indoor-Clubs, Turniere und TV-Übertragungen. Die beiden anderen Varianten findest du beim <a href="/panorama-court">Panorama Court</a> und beim <a href="/standard-court">Standard Court</a>.'],

@@ -103,22 +103,6 @@ tc_page_start([
   </div>
 </section>
 
-<section class="band dark grid-bg" id="v-strategie">
-  <div class="inner">
-    <p class="label" data-type>Court-Systeme · Detail</p>
-    <h2 class="reveal">Nicht nur technisch. Auch <span class="kw">strategisch.</span></h2>
-    <div class="v-leadrow">
-<?php if (!empty($v['strategy_lead'])): ?>      <p class="lead"><?= $v['strategy_lead'] ?></p>
-<?php endif; ?>      <p class="v-links"><a class="btn ghost" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost" href="/courts#c-fundament">Das richtige Fundament</a></p>
-    </div>
-    <div class="gest g3">
-      <article class="gbox reveal"><div class="k">Individualisierung</div><p>Kunstrasen in nahezu allen Farben, farblich angepasste Stahlkonstruktion.</p></article>
-      <article class="gbox reveal"><div class="k">Sonderausstattung</div><p>Zusätzliche Türen, Fangnetze und Branding-Optionen sind projektabhängig umsetzbar.</p></article>
-      <article class="gbox reveal"><div class="k">Mehrkosten</div><p>Details und eventuelle Mehrkosten stimmen wir im weiteren Planungsprozess individuell mit dir ab.</p></article>
-    </div>
-  </div>
-</section>
-
 <section class="band" id="v-varianten">
   <div class="inner">
     <p class="label" data-type>Weitere Varianten</p>
@@ -129,6 +113,7 @@ tc_page_start([
       <article class="card variant vflat reveal"><figure class="vimg"><img src="<?= $o[5] ?>" alt="<?= tc_h($o[1]) ?>-Court Rendering" loading="lazy"></figure><div class="vf-body"><div class="k"><?= $o[0] ?></div><h3 data-type><?= $o[1] ?></h3><p><?= $o[2] ?></p><span class="tier"><a href="<?= $o[3] ?>"><?= $o[4] ?></a></span></div></article>
 <?php endforeach; ?>
     </div>
+    <p class="v-links v-links-after"><a class="btn ghost-d" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost-d" href="/courts#c-fundament">Das richtige Fundament</a></p>
   </div>
 </section>
 
