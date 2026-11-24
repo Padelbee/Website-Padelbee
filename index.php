@@ -162,7 +162,7 @@ b.addEventListener('click',()=>{v.muted=!v.muted;if(!v.muted)v.play();b.textCont
 <section class="band proj" id="projekte">
   <div class="inner">
     <p class="label" data-type>Projekte 2026</p>
-    <h2 class="reveal">Grenzenlos&nbsp;<span class="hl">unterwegs.</span></h2>
+    <h2 class="reveal">Grenzenlos <span class="hl">unterwegs.</span></h2>
     <p class="lead">50 Projekte von Garbsen bis Graz. Jeder Punkt ist eine Anlage, die wir beraten, geplant oder gebaut haben, gesteuert aus Unterföhring bei München.</p>
     <div class="wrap">
       <div class="mapbox" id="mapbox">

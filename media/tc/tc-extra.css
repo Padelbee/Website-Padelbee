@@ -467,3 +467,6 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 #v-faq .faq-list{margin-top:32px}
 
 .v-rule{max-width:none}
+/* Hero-Spalten dürfen auf dem Handy nicht breiter als der Bildschirm werden (SVG, lange Kicker) */
+.band .inner > *{min-width:0}
+.band .inner svg{max-width:100%}
