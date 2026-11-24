@@ -108,7 +108,7 @@ function tc_header(bool $isStart): void
         <button type="button" class="dd-btn" aria-expanded="false" aria-controls="ddMenu" data-nav-group="courts automaten">Lösungen <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
         <div class="dd-menu mega" id="ddMenu">
           <a href="/courts" data-nav="courts"><span class="dd-k">Courts</span><b>Padel-Courts</b><small>Drei Varianten, fünf Hersteller, Fundamente</small></a>
-          <a href="/courts#c-hallen"><span class="dd-k">Hallen</span><b>Hallenlösungen</b><small>Polycarbonat und ThermoRoof, ab 250 €/m²</small></a>
+          <a href="/courts#c-hallen"><span class="dd-k">Hallen</span><b>Hallenlösungen</b><small>Polycarbonat und ThermoRoof, ab 280 €/m²</small></a>
           <a href="/automatenloesungen" data-nav="automaten"><span class="dd-k">Automaten</span><b>Verleih &amp; Verkauf</b><small>Schläger, Bälle, Snacks und Getränke 24/7</small></a>
 <?php foreach (['leistungen' => 'Leistungen', 'courts' => 'Court-Varianten', 'unternehmen' => 'Unternehmen'] as $key => $label): ?>
           <div class="dd-grp"><p class="dd-h"><?= tc_h($label) ?></p>
