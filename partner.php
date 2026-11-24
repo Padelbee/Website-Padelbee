@@ -101,7 +101,7 @@ tc_page_start([
   <div class="inner">
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Partner</p>
-      <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padelbee Partner · 360° Padel-Expertise</span>Unser <span class="kw">Partnernetzwerk.</span></h1>
+      <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padelbee Partner · 360° Padel-Expertise</span>Unser <span class="kw">Partner&shy;netzwerk.</span></h1>
       <p class="lead">Padelbee arbeitet mit über 30 Partnern aus Planung, Bau, <a href="/courts#c-hersteller">Courtbau</a>, <a href="/halle">Hallenbau</a>, <a href="/automatenloesungen">Digitalisierung</a>, Equipment und Events. Für dein Projekt wählen wir die passenden aus.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Projekt anfragen</a><a class="btn ghost" href="#p-netzwerk">Partner ansehen</a></div>
     </div>

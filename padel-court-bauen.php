@@ -31,7 +31,7 @@ tc_page_start([
   <div class="inner">
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Padel Court bauen</p>
-      <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padel Court bauen · Planung · Bau</span>Bis zum ersten&nbsp;<span class="kw">Aufschlag.</span></h1>
+      <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padel Court bauen · Planung · Bau</span>Bis zum ersten <span class="kw">Aufschlag.</span></h1>
       <p class="lead">Du willst einen Padel Court bauen? Wir begleiten dich in Deutschland, Österreich und der Schweiz von Bauantrag und Ausschreibung bis zur Eröffnung deines Padelcourts. Zwischen der ersten Idee und dem ersten Aufschlag liegen viele Entscheidungen, wir begleiten dich durch alle. Am Anfang steht die <a href="/standortanalyse">Standortanalyse</a>.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Bau anfragen</a><a class="btn ghost" href="#p-ablauf">Ablauf ansehen</a></div>
     </div>

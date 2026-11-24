@@ -28,7 +28,7 @@ tc_page_start([
   <div class="inner">
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Standortanalyse</p>
-      <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Standortanalyse · Erstscreening</span>Passt Padel zu deinem&nbsp;<span class="kw">Standort?</span></h1>
+      <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Standortanalyse · Erstscreening</span>Passt Padel zu deinem <span class="kw">Standort?</span></h1>
       <p class="lead">Mit der Standortanalyse und dem Erstscreening prüfen wir Fläche, Zielgruppe und Potenzial deines Standorts, bevor du Geld ausgibst. Am Ende steht eine Go/No-Go-Empfehlung, mit der du sicher entscheidest, ob du einen <a href="/padel-court-bauen">Padel Court bauen</a> lässt.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Erstscreening anfragen</a><a class="btn ghost" href="#s-ablauf">Ablauf ansehen</a></div>
     </div>
