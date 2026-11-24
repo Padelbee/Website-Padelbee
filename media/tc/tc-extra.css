@@ -437,3 +437,5 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 @media (max-width:400px){h2{font-size:clamp(30px,10vw,40px)}}
 /* Lange Buttons dürfen auf dem Handy umbrechen statt aus dem Kasten zu ragen */
 @media (max-width:480px){.btn{max-width:100%;white-space:normal;text-align:center;justify-content:center;line-height:1.35}}
+/* Sehr lange Einzelwörter in Kartenüberschriften („Tourismusverbände“) trennen statt überlaufen; nur Wörter ab 14 Zeichen */
+.card h3,.gbox h3,.vmodel h3{hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:14 6 6}
