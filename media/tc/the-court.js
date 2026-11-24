@@ -207,7 +207,10 @@ addEventListener('hashchange',route); route();
     document.querySelectorAll('span.sbr').forEach(b=>{ const p=b.parentNode; b.remove(); p.normalize(); });
     WID.forEach(x=>{
       if(x.el.dataset.typing) return;
-      const t=x.node.textContent; if(t.length<=x.idx) return;
+      let t=x.node.textContent;
+      // Andere Textbild-Schritte (z. B. Schrägstrich in „90/160“) verschieben die Position: Stelle neu suchen, nie ein Zeichen überschreiben
+      if(t[x.idx]!==' '&&t[x.idx]!==NB){ const mm=t.match(/^([\s\S]*\S)[ \u00a0]+(\S+)\s*$/); if(!mm) return; x.idx=mm[1].length; }
+      if(t.length<=x.idx) return;
       const cs=getComputedStyle(x.el); ctx.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;
       const up=cs.textTransform==='uppercase', ls=parseFloat(cs.letterSpacing)||0;
       const mw=str=>ctx.measureText(up?str.toUpperCase():str).width+str.length*ls;
