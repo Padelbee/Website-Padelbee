@@ -84,3 +84,4 @@
 .v-intro .snd svg{width:18px;height:18px}
 .v-intro .snd:hover,.v-intro .snd:focus-visible{color:var(--petrol);background:var(--yellow)}
 @media (max-width:600px){.v-intro .snd{width:20px;height:20px;bottom:.5%;right:3.6%}.v-intro .snd svg{width:14px;height:14px}}
+@media (max-width:600px){.v-intro figure{overflow:visible;margin-bottom:34px}.v-intro .snd{bottom:-32px;right:0;width:28px;height:28px;color:var(--white)}.v-intro .snd svg{width:18px;height:18px}}
