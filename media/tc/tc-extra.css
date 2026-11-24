@@ -186,3 +186,7 @@
 .c-hero .inner:has(> .c-stats){display:block}
 /* Kopfzeile: zwischen Burger-Grenze und voller Breite enger setzen, damit nichts abgeschnitten wird */
 @media (min-width:1181px) and (max-width:1360px){.site-head .row{gap:16px}.nav{gap:14px;letter-spacing:.1em}.brand{gap:10px}.brand img{height:20px}.head-cta{padding:10px 12px;letter-spacing:.12em}}
+/* Hero-Kennzahlen: "bis zu" als ruhiges Label, Zusatzangaben als feine zweite Zeile */
+.c-stats b small{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-d);vertical-align:.9em;margin-right:.5em}
+.c-stats span{line-height:1.5}
+.c-stats .st-sub{display:block;font-style:normal;font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:none;opacity:.7;margin-top:4px}

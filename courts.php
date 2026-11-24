@@ -46,9 +46,9 @@ tc_page_start([
   <div class="inner" style="padding-block:0 40px">
     <div class="c-stats">
       <div><b data-count="5">5</b><span>Court-Hersteller</span></div>
-      <div><b><small>bis zu</small> 15</b><span>Jahre Garantie<br>lt. Hersteller</span></div>
+      <div><b><small>bis zu</small> 15</b><span>Jahre Garantie<em class="st-sub">lt. Hersteller</em></span></div>
       <div><b data-count="3">3</b><span>Court-Varianten</span></div>
-      <div><b>27 T€</b><span>ab, pro Court netto<br>Stand 11/2026</span></div>
+      <div><b>27 T€</b><span>ab, pro Court netto<em class="st-sub">Stand 11/2026</em></span></div>
     </div>
   </div>
 </section>
