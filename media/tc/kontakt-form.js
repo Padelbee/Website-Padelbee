@@ -48,3 +48,24 @@
     });
   }
 })();
+
+/* Formular hinter Button (kontakt-form-toggle.php): Button oder Link auf #kontakt klappt es auf. */
+(function () {
+  var wrap = document.getElementById('kf-wrap');
+  if (!wrap) return;
+  var btn = document.querySelector('[data-kf-open]');
+  function open(scroll) {
+    if (wrap.classList.contains('open')) { if (scroll) wrap.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+    wrap.classList.add('open');
+    wrap.removeAttribute('inert');
+    if (btn) { btn.setAttribute('aria-expanded', 'true'); btn.closest('.kf-open').classList.add('done'); }
+    if (scroll) setTimeout(function () { wrap.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 80);
+    var first = wrap.querySelector('input:not([type=hidden]):not([type=checkbox]), select, textarea');
+    if (first) setTimeout(function () { try { first.focus({ preventScroll: true }); } catch (e) {} }, 450);
+  }
+  if (btn) btn.addEventListener('click', function () { open(true); });
+  document.querySelectorAll('a[href="#kontakt"], a[href="' + location.pathname + '#kontakt"]').forEach(function (a) {
+    a.addEventListener('click', function () { open(false); });
+  });
+  if (location.hash === '#kontakt' || /[?&]error=/.test(location.search)) open(false);
+})();

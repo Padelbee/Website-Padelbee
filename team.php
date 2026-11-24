@@ -24,6 +24,7 @@ tc_page_start([
     'description' => 'Das Padelbee Team um Martin Gaffal und Stefan Möbius: Projektentwickler für Padel-Anlagen mit über 14 Jahren Padel-Erfahrung, Office im Scheck Club München.',
     'breadcrumb' => ['Team' => '/team'],
     'page_type' => 'AboutPage',
+    'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => array_merge(
         array_map(fn($p) => tc_schema_person($p[0], ['jobTitle' => $p[1], 'image' => $p[2]]), $team),
         [tc_schema_clean([
@@ -90,10 +91,10 @@ tc_page_start([
     <h2>Wir sind für dich <span class="kw">da.</span></h2>
     <p class="lead" style="margin:18px auto 0">Du hast einen Standort, wir haben den Plan. Sichere dir jetzt dein unverbindliches Beratungsgespräch, damit Padel bei dir schnell startet und erfolgreich bleibt.</p>
     <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:680px">
-      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><code>martin.gaffal@padelbee.de</code><button class="copy" type="button">Kopieren</button></div></div>
-      <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><code>stefan.moebius@padelbee.de</code><button class="copy" type="button">Kopieren</button></div></div>
+      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
+      <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
     </div>
-    <p style="margin-top:32px"><a class="btn" href="/#kontakt">Beratungsgespräch anfragen</a></p>
+<?php $tcFormButton = 'Beratungsgespräch anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
   </div>
 </section>
 <?php tc_page_end();

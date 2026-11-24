@@ -178,10 +178,10 @@ tc_page_start([
     <h2>Let's build <span class="kw">your court.</span></h2>
     <p class="lead" style="margin:18px auto 0">Gemeinsam entwickeln wir eine Lösung, die funktional überzeugt und deine Anlage klar und unverwechselbar positioniert. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
     <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:680px">
-      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><code>martin.gaffal@padelbee.de</code><button class="copy" type="button">Kopieren</button></div></div>
-      <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><code>stefan.moebius@padelbee.de</code><button class="copy" type="button">Kopieren</button></div></div>
+      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
+      <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
     </div>
-<?php $tcPreselect = ['Padelcourt']; include __DIR__ . '/inc/tc/kontakt-form.php'; ?>
+<?php $tcPreselect = ['Padelcourt']; $tcFormButton = 'Beratungsgespräch anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
   </div>
 </section>
 <?php tc_page_end();
