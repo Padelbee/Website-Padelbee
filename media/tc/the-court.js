@@ -158,3 +158,13 @@ addEventListener('hashchange',route); route();
     last.textContent=m[1]+' '+tail+m[3];
   });
 })();
+
+/* Kurze Bindestrich-Wörter (z. B. Single-Court, Padel-Profi) nicht am Bindestrich umbrechen */
+(function(){
+  const sel='main p, main li, main figcaption, section p, section li, section figcaption, section h3, .lead';
+  document.querySelectorAll(sel).forEach(el=>{
+    if(el.closest('form,nav,header,footer,.dd-menu')||el.hasAttribute('data-type')||el.querySelector('[data-type]')) return;
+    const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; const ns=[]; while(n=w.nextNode()) ns.push(n);
+    ns.forEach(t=>{ const v=t.textContent.replace(/(^|[\s(])([A-Za-zÄÖÜäöüß0-9]{1,10})-([A-Za-zÄÖÜäöüß0-9]{1,10})(?=[\s.,;)!? ]|$)/g,(x,a,b,c)=>a+b+'‑'+c); if(v!==t.textContent) t.textContent=v; });
+  });
+})();
