@@ -4,6 +4,7 @@ require __DIR__ . '/inc/tc/layout.php';
 // und Martins Entwurf (the-court.com, Stand 23.11.2026: Leistungen, FAQ, Ratgeber).
 $saFaq = [
     ['frage' => 'Wie starte ich mein Projekt?', 'antwort' => 'Du startest mit einem kostenlosen Erstgespräch. Darin sprechen wir über deinen Standort, dein Budget und dein Nutzungskonzept und klären, ob Padel dort passt. Danach rechnen wir deine Anlage durch und zeigen dir, welche Courts, welches Fundament und welche Finanzierung infrage kommen. Schreib uns einfach über das Kontaktformular oder per E-Mail.'],
+    ['frage' => 'Wie läuft ein Padel-Projekt ab?', 'antwort' => 'Ein Padel-Projekt läuft bei uns in sieben Etappen, von Beratung und Finanzierung über Planung und Architektur, Bau und Digitalisierung bis zu Betrieb und auf Wunsch Franchise. Am Anfang prüfen wir Fläche, Zielgruppe und Potenzial deines Standorts. Danach klären wir Finanzierung und Genehmigung, bevor gebaut wird. Was in jeder Phase passiert, liest du unter <a href="/padel-court-bauen">Padel Court bauen</a>.'],
     ['frage' => 'Wie viele Padel-Courts passen auf einen Tennisplatz?', 'antwort' => 'Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ein Padel-Court braucht deutlich weniger Fläche als ein Tennisplatz. Aus einem ungenutzten Tennisplatz kann so eine kleine Padelanlage werden, ohne dass dein Verein neues Gelände braucht. Ob deine Plätze passen, prüfen wir vor Ort zusammen mit Baurecht, Lärmschutz und Licht.'],
 ];
 tc_page_start([
@@ -65,7 +66,7 @@ tc_page_start([
     <p class="lead">Zur Standortanalyse gehört die finanzielle Planung. Wir erstellen einen bankfähigen Business Case und rechnen dir vor, was deine Fläche bringen kann.</p>
     <div class="cards c3">
       <article class="card dk reveal"><div class="k">Leistung 01</div><h3 data-type>Business Case</h3><p>Ein bankfähiger Business Case zeigt dir, welche Courts, welches Fundament und welche Finanzierung für deine Anlage infrage kommen.</p></article>
-      <article class="card dk reveal"><div class="k">Finanzierung</div><h3 data-type>Dein Modell</h3><p>Kauf, Leasing oder Joint Venture. Wir finden das Modell, das zu dir passt, und prüfen Fördermittel und Investoren.</p></article>
+      <article class="card dk reveal"><div class="k">Finanzierung</div><h3 data-type>Dein Modell</h3><p>Kauf, Leasing oder <a href="/betreiberkonzept#b-finanzierung">Joint Venture</a>. Wir finden das Modell, das zu dir passt, und prüfen Fördermittel und Investoren.</p></article>
       <article class="card dk reveal"><div class="k">Erste Zahlen</div><h3 data-type>Richtwerte</h3><p>Für die erste Kalkulation rechnen wir mit einem Court ab 27.000 € netto, einem Fundament von rund 35.000 € und einer Halle ab 280 €/m² netto.</p></article>
     </div>
     <p class="fav-note">Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.</p>
@@ -79,7 +80,7 @@ tc_page_start([
     <h2 class="reveal">Am Ende steht deine <span class="hl">Go/No-Go-Empfehlung.</span></h2>
     <p class="lead">Du weißt, ob Padel an deinem Standort passt, was es nach DIN 276 kostet und welche Variante sich eignet. Danach geht es mit dem Bauantrag und der Genehmigung weiter.</p>
     <div class="teaser">
-      <div><h3>Weiter mit Phase 4 bis&nbsp;<span>7.</span></h3><p>Bauantrag, Freigabe, Ausschreibung und Bau deines Padel Courts.</p></div>
+      <div><h3>Weiter mit <span>Phase 4 bis 7.</span></h3><p>Bauantrag, Freigabe, Ausschreibung und Bau deines Padel Courts.</p></div>
       <a class="btn" href="/padel-court-bauen">Padel Court bauen</a>
     </div>
     <p class="m-quote reveal">50 Projekte in 3 Ländern zeigen, dass mit dem richtigen Partner aus einer Idee eine Anlage wird, die <span class="hl">läuft.</span> Sieh dir unsere <a href="/referenzen">Referenzen</a> an.</p>
