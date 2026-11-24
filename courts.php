@@ -46,11 +46,10 @@ tc_page_start([
   <div class="inner" style="padding-block:0 40px">
     <div class="c-stats">
       <div><b data-count="5">5</b><span>Court-Hersteller</span></div>
-      <div><b><small>bis zu</small> 15</b><span>Jahre Herstellergarantie*</span></div>
+      <div><b><small>bis zu</small> 15</b><span>Jahre Garantie lt. Hersteller</span></div>
       <div><b data-count="3">3</b><span>Court-Varianten</span></div>
-      <div><b>27 T€</b><span>ab, pro Court netto*</span></div>
+      <div><b>27 T€</b><span>ab, pro Court netto · Stand 11/2026</span></div>
     </div>
-    <p class="fine-note c-note">* Herstellergarantie auf die Konstruktion lt. Hersteller. Die Garantie gewährt der jeweilige Hersteller, nicht die THE COURT GmbH. Preise netto, Stand 11/2026.</p>
   </div>
 </section>
 
