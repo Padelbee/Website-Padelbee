@@ -62,7 +62,7 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Finanzielle Planung &amp; Business Case</p>
     <h2 class="reveal">Wer früh richtig plant, spart später <span class="kw">doppelt.</span></h2>
-    <p class="lead">Zur Standortanalyse gehört die finanzielle Planung. Wir erstellen einen bankfähigen Business Case und rechnen deine Anlage durch.</p>
+    <p class="lead">Zur Standortanalyse gehört die finanzielle Planung. Wir erstellen einen bankfähigen Business Case und rechnen dir vor, was deine Fläche bringen kann.</p>
     <div class="cards c3">
       <article class="card dk reveal"><div class="k">Leistung 01</div><h3 data-type>Business Case</h3><p>Ein bankfähiger Business Case zeigt dir, welche Courts, welches Fundament und welche Finanzierung für deine Anlage infrage kommen.</p></article>
       <article class="card dk reveal"><div class="k">Finanzierung</div><h3 data-type>Dein Modell</h3><p>Kauf, Leasing oder Joint Venture. Wir finden das Modell, das zu dir passt, und prüfen Fördermittel und Investoren.</p></article>
