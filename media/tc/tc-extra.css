@@ -507,3 +507,5 @@ span.sbr{display:block;height:4px}
 .more-row{display:flex;flex-wrap:wrap;gap:6px 28px;margin-top:4px}
 /* Drei Karten auf mittleren Bildschirmen: einzelne letzte Karte über die volle Breite statt leerem Feld daneben (alle Seiten) */
 @media (min-width:561px) and (max-width:980px){.cards.c3>*:last-child:nth-child(odd){grid-column:1/-1}}
+/* Kurzer Einleitungssatz über zwei Zeilen gleichmäßig verteilen (Wunsch Bietal) */
+.lead.lead-bal{text-wrap:balance}
