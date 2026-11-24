@@ -16,10 +16,10 @@ $v = [
     'title' => 'Premier Court und Full-Panorama-Court im Vergleich · Padelbee',
     'description' => 'Premier Court und Full-Panorama-Court mit nahezu durchgehendem Glas, der Show-Court für Indoor-Clubs. Modelle von Padel Factory, Padel Concept und 100% Padel.',
     'label' => 'Premier Court · Full-Panorama · Topklasse',
-    'h1' => 'Full-Panorama <span class="kw">Court.</span>',
+    'h1' => 'Full&#8209;Panorama <span class="kw">Court.</span>',
     'lead' => 'Der Full-Panorama Court ist das Premiumsegment. Nahezu durchgehende Glasflächen und eine minimale Stahlstruktur geben ihm eine sehr elegante, repräsentative Optik mit deutlichem Show-Court-Charakter. Er ist der Show-Court für Indoor-Clubs, Turniere und TV-Übertragungen. Bei Padel Factory heißt er Premier Extreme Panoramic. Jedes Modell gibt es als Double- und als Single-Court.',
-    'image' => '/media/courts/modelle/premier.jpg',
-    'alt' => 'Premier Court ohne tragende Verstrebungen',
+    'image' => '/media/courts/cp_indoor_ret.jpg',
+    'alt' => 'Indoor-Padelhalle mit Courts von 100% Padel, Herstellerreferenz',
     'stats' => [
         ['3', 'Full-Panorama-Modelle', 'von 3 Herstellern'],
         ['<small>bis zu</small> 15', 'Jahre Garantie', 'Padel Factory, lt. Hersteller'],
