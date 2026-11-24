@@ -6,12 +6,12 @@ const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const $=id=>document.getElementById(id)||document.createElement("div");
 
 /* typing effect on any element with [data-type]; text stays visible at rest */
-function typeEl(el,speed=28){ if(RM||el.dataset.typing) return; el.dataset.typing='1';
+function typeEl(el,speed=28){ if(RM||el.dataset.typing) return; el.dataset.typing='1'; const hBox=el.getBoundingClientRect(); if(getComputedStyle(el).display!=='inline'){ el.style.minHeight=hBox.height+'px'; el.style.minWidth=Math.min(hBox.width,el.parentElement?el.parentElement.clientWidth:hBox.width)+'px'; }
   const tw=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); const nodes=[]; let n; while(n=tw.nextNode()) nodes.push([n,n.textContent]);
   nodes.forEach(([t])=>t.textContent='');
   const cur=document.createElement('span'); cur.className='cur'; el.appendChild(cur);
   let ni=0, ci=0;
-  (function step(){ if(ni>=nodes.length){ setTimeout(()=>{cur.remove();delete el.dataset.typing;},1200); return; }
+  (function step(){ if(ni>=nodes.length){ setTimeout(()=>{cur.remove();delete el.dataset.typing;el.style.minHeight='';el.style.minWidth='';},1200); return; }
     const [t,full]=nodes[ni]; t.textContent=full.slice(0,++ci); const ch=full[ci-1];
     if(ci>=full.length){ni++;ci=0;}
     setTimeout(step, ch===' '?speed*.5:speed*(.6+Math.random()*.8)); })();

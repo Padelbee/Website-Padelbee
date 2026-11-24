@@ -19,3 +19,4 @@
 .band:not(.dark) .hallimgs.one{margin-top:28px}
 .logos+.hallimgs{margin-top:28px}
 @media (max-width:860px){.h-sys{grid-template-columns:1fr}.h-price{grid-template-columns:1fr}.h-price>div+div{border-left:0;border-top:1px solid rgba(255,255,255,.15)}}
+.h-price p + p{margin-top:8px}

@@ -52,10 +52,10 @@ tc_page_start([
     <h2 class="reveal">Eine Halle spielt das <span class="hl">ganze Jahr.</span></h2>
     <p class="lead">Ein Outdoor-Court spielt die halbe Saison. Im Sommer sind Outdoor-Courts voll, im November stehen sie leer. Genau dann suchen Spieler einen Platz und zahlen dafür.</p>
     <div class="gest">
-      <article class="gbox reveal"><div class="k">Mehr Spielzeit</div><p>Mit Dach fällt kein Termin wegen Regen, Wind oder Schnee aus. Jede Stunde ist buchbar.</p></article>
-      <article class="gbox reveal"><div class="k">Mehr Planbarkeit</div><p>Trainings, Kurse und Turniere lassen sich verlässlich planen. Das bindet Spieler an deinen Standort.</p></article>
-      <article class="gbox reveal"><div class="k">Mehr Energie</div><p>Auf dem Hallendach ist Photovoltaik möglich. Der Strom versorgt Licht, Heizung und <a href="/automatenloesungen">Automaten</a>.</p></article>
-      <article class="gbox reveal"><div class="k">Wachsen nach Bedarf</div><p>Starte mit einem oder zwei Courts. Die Halle ist erweiterbar, wenn die Nachfrage steigt.</p></article>
+      <article class="gbox reveal"><div class="k">Mehr Spielzeit</div><p>Mit Dach fällt kein Termin wegen Regen, Wind oder Schnee aus.</p><p>Jede Stunde ist buchbar.</p></article>
+      <article class="gbox reveal"><div class="k">Mehr Planbarkeit</div><p>Trainings, Kurse und Turniere lassen sich verlässlich planen.</p><p>Das bindet Spieler an deinen Standort.</p></article>
+      <article class="gbox reveal"><div class="k">Mehr Energie</div><p>Auf dem Hallendach ist Photovoltaik möglich.</p><p>Der Strom versorgt Licht, Heizung und <a href="/automatenloesungen">Automaten</a>.</p></article>
+      <article class="gbox reveal"><div class="k">Wachsen nach Bedarf</div><p>Starte mit einem oder zwei Courts.</p><p>Die Halle ist erweiterbar, wenn die Nachfrage steigt.</p></article>
     </div>
   </div>
 </section>
@@ -64,7 +64,8 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Hallensysteme</p>
     <h2 class="reveal">Zwei Systeme. Ein <span class="hl">Ziel.</span></h2>
-    <p class="lead">Wer Padel ernst meint, braucht irgendwann ein Dach. Wir setzen auf zwei Hallensysteme für ein Ziel, spielen bei jedem Wetter. Die Maße sind Beispielmaße.</p>
+    <p class="lead">Wer Padel ernst meint, braucht irgendwann ein Dach. Wir setzen auf zwei Hallensysteme für ein Ziel, spielen bei jedem Wetter.</p>
+    <p class="lead">Die Maße sind Beispielmaße.</p>
     <div class="h-sys">
       <article class="card reveal">
         <div class="k">Einstieg</div>
@@ -98,7 +99,7 @@ tc_page_start([
     <h2 class="reveal">Preise &amp; <span class="kw">Technik.</span></h2>
     <div class="h-price reveal">
       <div><span>Hallen ab</span><b>280 €/m²</b><em>netto</em></div>
-      <div><p>Der Preis hängt vom System und von der Größe deiner Halle ab. Für die Gesamtkalkulation kommen der Court ab 27.000 € netto und das Fundament mit rund 35.000 € als Richtwert dazu. Beides findest du unter <a href="/courts">Padel-Courts</a>.</p><a class="btn" href="#kontakt">Hallenpreis anfragen</a></div>
+      <div><p>Der Preis hängt vom System und von der Größe deiner Halle ab.</p><p>Für die Gesamtkalkulation kommen der Court ab 27.000 € netto und das Fundament mit rund 35.000 € als Richtwert dazu. Beides findest du unter <a href="/courts">Padel-Courts</a>.</p><a class="btn" href="#kontakt">Hallenpreis anfragen</a></div>
     </div>
     <div class="cards c4">
       <article class="card reveal"><div class="k">Maße</div><h3 data-type>Flexibel</h3><p>Breite, Länge und Höhe sind flexibel. Beide Hallen sind beliebig erweiterbar.</p></article>

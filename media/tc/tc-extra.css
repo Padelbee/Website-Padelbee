@@ -476,3 +476,6 @@ main{overflow-x:clip}
 @media (max-width:600px){.tablewrap .plat{min-width:0}.tablewrap .plat thead{display:none}.tablewrap .plat tr{display:block;padding:14px 0;border-bottom:1px solid var(--line)}.tablewrap .plat td{display:block;border:0;padding:2px 0}.tablewrap .plat td:nth-child(2){color:var(--petrol);font-weight:600}}
 /* Scheck-Club-Logo hat sehr feine Linien: etwas kräftiger darstellen */
 .lg .m[data-logo="scheck"]{filter:drop-shadow(.7px 0 0 var(--petrol)) drop-shadow(-.7px 0 0 var(--petrol)) drop-shadow(0 .7px 0 var(--petrol))}
+/* Zweiter Satz als eigener Absatz (Wunsch Bietal 24.11.): Abstand klein halten */
+.lead + .lead{margin-top:10px}
+.gbox p + p,.card p + p{margin-top:6px}
