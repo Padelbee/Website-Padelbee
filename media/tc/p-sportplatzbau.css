@@ -3,3 +3,6 @@
 .card.dk p a{color:var(--yellow);text-underline-offset:3px}
 .sp-partnernote{margin-top:28px}
 .sp-partnernote a{color:var(--yellow)}
+.dark .card .chips li{background:transparent;border-color:var(--petrol-200);color:var(--white)}
+.dark .card .chips li a{color:inherit;text-decoration:none}
+.dark .card .chips li a::after{content:" \2192"}

@@ -49,7 +49,7 @@ $spLogos = [
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Sportplatzbau</p>
       <h1 class="sp-h1"><span class="label h1-kicker" style="color:var(--white)" data-type>Sportplatzbau · Tennis · Pickleball · Padel</span>Moderne <span class="kw">Racketsport&shy;anlagen.</span></h1>
-      <p class="lead">Beim Sportplatzbau beraten, entwickeln und bauen wir moderne Anlagen für Padel, Pickleball und Tennis, für Vereine, Hotels, Gewerbe und die öffentliche Hand. Egal, wer du bist, wir finden das passende Konzept. Wie ein Projekt abläuft, liest du unter <a href="/standortanalyse">Standortanalyse</a> und <a href="/padel-court-bauen">Padel Court bauen</a>.</p>
+      <p class="lead">Beim Sportplatzbau beraten, entwickeln und bauen wir moderne Anlagen für Padel, Pickleball und Tennis, für Vereine, Hotels, Gewerbe und die öffentliche Hand. Wie ein Projekt abläuft, liest du unter <a href="/standortanalyse">Standortanalyse</a> und <a href="/padel-court-bauen">Padel Court bauen</a>.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Anlage anfragen</a><a class="btn ghost" href="#sp-referenz">Referenz ansehen</a></div>
     </div>
     <figure class="courtfig courtphoto"><img src="/media/courts/anlage_luftbild.jpg" alt="Luftaufnahme einer Anlage mit fünf Padel-Courts neben Tennisplätzen"></figure>
@@ -80,12 +80,12 @@ $spLogos = [
 <section class="band dark grid-bg" id="sp-mehrsport">
   <div class="inner">
     <p class="label" data-type>Mehrsportanlagen</p>
-    <h2 class="reveal">Was über Padel <span class="kw">hinausgeht.</span></h2>
+    <h2 class="reveal">Mehr aus deiner Anlage <span class="kw">machen.</span></h2>
     <p class="lead">Neben Padel planen wir auch Anlagen für Pickleball und Tennis.</p>
     <div class="cards c3">
-      <article class="card dk reveal"><div class="k">Tennisverein</div><h3 data-type>Leere Plätze nutzen</h3><p>In vielen Vereinen stehen Tennisplätze leer. Ein Platz, der nicht bespielt wird, kostet nur. Auf einen Tennisplatz passen bis zu zwei Padel-Courts, und Padel bringt jüngere Spieler, Familien und Firmen auf die Anlage.</p><p>Padel und Tennis sind keine Konkurrenz. Wer Padel entdeckt, bleibt oft auch beim Tennis.</p></article>
-      <article class="card dk reveal"><div class="k">Hotel</div><h3 data-type>Das Upgrade, das Gäste buchen</h3><p>Padel ist der Sport, den Gäste im Urlaub ausprobieren wollen. Leicht zu lernen, gesellig, perfekt für Paare, Familien und Firmengruppen. Schon ein Einzel-Court reicht für ein starkes Angebot.</p></article>
-      <article class="card dk reveal"><div class="k">Pickleball</div><h3 data-type>Attraktion für Gäste</h3><p>Padel und Pickleball machen Regionen und Hotels für Gäste attraktiv. Im Partnernetzwerk ist Joola unser Partner für Pickleball. Alles zu <a href="/courts">Courts</a> und zum <a href="/padel-court-bauen">Bau</a>.</p></article>
+      <article class="card dk reveal"><div class="k">Tennisverein</div><h3 data-type>Leere Plätze nutzen</h3><p>In vielen Vereinen stehen Tennisplätze leer. Ein Platz, der nicht bespielt wird, kostet nur. Auf einen Tennisplatz passen bis zu zwei Padel-Courts, und Padel bringt jüngere Spieler, Familien und Firmen auf die Anlage.</p><p>Padel und Tennis sind keine Konkurrenz. Wer Padel entdeckt, bleibt oft auch beim Tennis.</p><ul class="chips"><li>Planbare Einnahmen statt Pflegekosten</li><li>Mehr Leben im Vereinsheim und in der Gastronomie</li></ul></article>
+      <article class="card dk reveal"><div class="k">Hotel</div><h3 data-type>Das Upgrade, das Gäste buchen</h3><p>Padel ist der Sport, den Gäste im Urlaub ausprobieren wollen. Leicht zu lernen, gesellig, perfekt für Paare, Familien und Firmengruppen. Schon ein Einzel-Court reicht für ein starkes Angebot.</p><ul class="chips"><li><a href="/halle">Ganzjährig mit Halle</a></li><li><a href="/automatenloesungen">Ohne Personal mit Automaten</a></li><li><a href="/courts#c-marke">Mit deiner Marke</a></li></ul></article>
+      <article class="card dk reveal"><div class="k">Pickleball</div><h3 data-type>Attraktion für Gäste</h3><p>Padel und Pickleball machen Regionen und Hotels für Gäste attraktiv. Im Partnernetzwerk ist Joola unser Partner für Pickleball.</p></article>
     </div>
   </div>
 </section>
