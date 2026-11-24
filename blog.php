@@ -7,7 +7,7 @@ tc_page_start([
     'breadcrumb' => ['Blog' => '/blog'],
     'page_type' => 'CollectionPage',
     'schema' => [tc_schema_blog('Padel-Wissen', 'Kosten, Genehmigung, Court-Systeme, Hallen, Automaten und Betrieb: Praxiswissen aus über 50 Padel-Projekten von Padelbee und The Court.')],
-    'extra_scripts' => '<script src="/media/tc/blog.js?v=' . TC_ASSET_VERSION . '"></script>',
+    'extra_scripts' => '<script src="/media/tc/blog.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
 ]);
 ?>
 <section class="band dark grid-bg b-hero" id="b-list-hero">
@@ -43,14 +43,19 @@ tc_page_start([
     <p class="b-teaser" id="baTeaser"></p>
     <figure class="b-cover" id="baCoverFig"><img id="baCover" alt=""></figure>
     <div class="b-body" id="baBody"></div>
-    <div class="b-foot"><a class="btn" href="/#kontakt">Projekt besprechen</a><a class="btn ghost-l" href="/blog">Alle Artikel</a><button type="button" class="btn ghost-l" id="baEdit" hidden>Bearbeiten</button></div>
+    <div class="b-foot"><a class="btn" href="#kontakt">Projekt besprechen</a><a class="btn ghost-l" href="/blog">Alle Artikel</a><button type="button" class="btn ghost-l" id="baEdit" hidden>Bearbeiten</button></div>
   </div>
 </article>
 
-<section class="band dark grid-bg">
-  <div class="inner cta-band">
+<section class="band dark grid-bg end" id="kontakt">
+  <div class="inner">
     <h2>Fragen zu deinem <span class="kw">Projekt?</span></h2>
-    <a class="btn" href="/#kontakt">Kostenloses Erstgespräch</a>
+    <p class="lead" style="margin:18px auto 0">Sprich mit uns im kostenlosen Erstgespräch über deinen Standort, dein Budget und dein Nutzungskonzept.</p>
+    <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
+      <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
+    </div>
+<?php $tcFormButton = 'Kostenloses Erstgespräch'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
   </div>
 </section>
 
