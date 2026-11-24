@@ -107,7 +107,6 @@ tc_page_start([
     <p class="label" data-type>Court-Systeme · Detail</p>
     <h2 class="reveal">Nicht nur technisch. Auch <span class="hl">strategisch.</span></h2>
     <div class="v-leadrow">
-      <p class="lead">Die Wahl des Court-Typs ist nicht ausschließlich eine technische Entscheidung, sondern auch eine strategische Positionierung deiner Anlage.</p>
       <p class="v-links"><a class="btn ghost" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost" href="/courts#c-fundament">Das richtige Fundament</a></p>
     </div>
     <div class="gest g3">

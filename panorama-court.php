@@ -3,10 +3,10 @@ require __DIR__ . '/inc/tc/layout.php';
 // Inhalt nach der Courts-Präsentation 2026 (Folie 4, 5, 10, 15, 19 bis 22, 26) und
 // Martins neuestem Entwurf (the-court.com/courts, Variante Panorama, Stand 23.11.2026).
 $galis = [
-    ['Mundial 90/160', 'Der Panorama-Court schlechthin. Das klassische Modell verbindet ein einheitliches, schlichtes Design mit herausragender Stabilität durch robuste Eckpfeiler. Der vielseitigste Court der Range.', 'Panoramic', 'Filux', 'Galis', '90/160 km/h', '/media/courts/modelle/galis-19.jpg'],
+    ['Mundial 90/160', 'Das klassische Modell verbindet ein einheitliches, schlichtes Design mit herausragender Stabilität durch robuste Eckpfeiler. Der vielseitigste Court der Range.', 'Panoramic', 'Filux', 'Galis', '90/160 km/h', '/media/courts/modelle/galis-19.jpg'],
     ['M360', 'Eine Weiterentwicklung des Mundial mit schlankem, abgerundetem Eckpfeiler. Die Struktur verbindet Stabilität und Eleganz und erweitert die Sicht auf den Court.', 'Panoramic', 'Filux', 'Galis', '90 km/h', '/media/courts/modelle/galis-20.jpg'],
     ['Atlas', 'Die Evolution des Mundial ohne Eckpfeiler. Mehr Sichtbarkeit und eine klare Ästhetik, entwickelt, um sich in jedes Umfeld einzufügen.', 'Ultrapanoramic', 'Filux', 'Galis', '68 km/h', '/media/courts/modelle/galis-21.jpg'],
-    ['Wilson 90/160', 'Aus der Verbindung von Padel Galis und Wilson. Die Eckpfeiler geben hohe Stabilität und verbessern die Sicht, dazu Wilson-Individualisierungen, Hochglanzlackierung und Premium-Beleuchtung.', 'Panoramic', '4 × 64 LED', 'V-Shape', '90/160 km/h', '/media/courts/modelle/galis-22.jpg'],
+    ['Wilson 90/160', 'Aus der Verbindung von Padel Galis und Wilson. Die Eckpfeiler geben hohe Stabilität und verbessern die Sicht.', 'Panoramic', '4 × 64 LED', 'V-Shape', '90/160 km/h', '/media/courts/modelle/galis-22.jpg', ['Wilson-Individualisierungen', 'Hochglanzlackierung', 'Premium-Beleuchtung']],
 ];
 ob_start(); ?>
     <article class="vmodel vrange reveal">
@@ -22,6 +22,9 @@ ob_start(); ?>
           <figure class="vm-img"><img src="<?= $g[6] ?>" alt="Padel Galis <?= tc_h($g[0]) ?> Court" loading="lazy"></figure>
           <h4><?= tc_h($g[0]) ?></h4>
           <p><?= tc_h($g[1]) ?></p>
+<?php if (!empty($g[7])): ?>
+          <div class="facts vm-facts vr-facts"><?php foreach ($g[7] as $f): ?><span><?= tc_h($f) ?></span><?php endforeach; ?></div>
+<?php endif; ?>
           <p class="vr-line"><?= $g[2] ?> · <?= $g[3] ?> · Lichtmast <?= $g[4] ?> · <?= $g[5] ?></p>
         </div>
 <?php endforeach; ?>
@@ -55,7 +58,7 @@ $v = [
     ],
     'models_label' => 'Panorama-Modelle',
     'models_h2' => 'Vier Hersteller. <span class="hl">Ein</span> Ansprechpartner.',
-    'models_lead' => 'Jeder Hersteller hat eigene Stärken. Wir vergleichen die Panorama-Modelle für dich auf Basis deines Standorts, deines Budgets und deines Nutzungskonzepts und empfehlen den Court, der technisch, wirtschaftlich und qualitativ passt.',
+    'models_lead' => 'Jeder Hersteller hat eigene Stärken. Wir vergleichen die Panorama-Modelle für dich auf Basis deines Standorts, deines Budgets und deines Nutzungskonzepts und empfehlen den passenden Court.',
     'models' => [
         [
             'logo' => 'padelfactory', 'logo_h' => 44, 'brand' => '3B Padel',

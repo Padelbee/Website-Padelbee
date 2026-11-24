@@ -422,3 +422,7 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
   .vr-item p.vr-line{margin:4px 0 0;align-self:start;font-size:11px}
   .vr-item p:not(.vr-line){grid-column:1/-1;margin-top:12px;font-size:14.5px}
 }
+.vr-facts{margin-top:10px;gap:5px}
+.vr-facts span{font-size:10px;padding:3px 6px;letter-spacing:.1em}
+.v-leadrow{margin-top:24px}
+@media (max-width:560px){.vr-item .vr-facts{grid-column:1/-1}}
