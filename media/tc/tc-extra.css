@@ -301,3 +301,5 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 .lead{text-wrap:pretty;max-width:860px}
 #kontakt .lead{text-wrap:balance}
 .favbody p,.maker p,.card p,.gbox p{text-wrap:pretty}
+/* Hinweis unter den Favoriten als sichtbare Bildunterschrift statt loser Kleintext */
+.fav-note{margin:20px 0 0;padding:10px 0 10px 16px;border-left:4px solid var(--yellow);font-size:15px;color:var(--petrol-200)}

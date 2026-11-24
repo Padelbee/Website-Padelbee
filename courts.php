@@ -77,7 +77,7 @@ tc_page_start([
       <article class="fav reveal"><figure><img src="/media/courts/pf_ortigia.jpg" alt="Padel Factory Panorama-Court am Meer, Ortigia, Sizilien" loading="lazy"></figure><div class="favbody"><div class="k">Favorit Outdoor</div><h3 data-type>Padel Factory</h3><p>Feuerverzinkter und zusätzlich pulverbeschichteter Stahl, verstärkte Statik für Wind- und Schneelasten und 15 Jahre Herstellergarantie auf die Konstruktion (lt. Hersteller). Gemacht für Wetter, Jahr für Jahr.</p></div></article>
       <article class="fav reveal"><figure><img src="/media/courts/cp_indoor.jpg" alt="Padelhalle mit mehreren Courts von 100% Padel" loading="lazy"></figure><div class="favbody"><div class="k">Favorit Indoor</div><h3 data-type>100% Padel</h3><p>Laut Hersteller Turnierausrüster der Premier Padel Tour, Mondo-Supercourt-Rasen und ein fest stationiertes Montageteam in Deutschland. Schlüsselfertige Hallen-Courts mit Profi-Charakter.</p></div></article>
     </div>
-    <p class="fine-note" style="margin-top:20px">Die Bilder zeigen Herstellerreferenzen, keine Projekte von Padelbee.</p>
+    <p class="fav-note">Die Bilder zeigen Herstellerreferenzen, keine Projekte von Padelbee.</p>
   </div>
 </section>
 
