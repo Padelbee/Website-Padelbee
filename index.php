@@ -168,7 +168,7 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
     <h2 class="reveal">Grenzenlos <span class="hl">unterwegs.</span></h2>
     <p class="lead">50 Projekte von Garbsen bis Graz. Jeder Punkt ist eine Anlage, die wir beraten, geplant oder gebaut haben, gesteuert aus Unterföhring bei München.</p>
     <figure class="proj-film reveal">
-      <video id="projVid" muted loop playsinline preload="none" poster="/media/projekte-karte.jpg" src="/media/projekte-karte.mp4" aria-label="Animierte Karte: 50 Projekte in Deutschland und Österreich, von Unterföhring bis Graz"></video>
+      <video id="projVid" muted loop playsinline preload="none" poster="/media/projekte-karte.jpg?v=2" src="/media/projekte-karte.mp4?v=2" aria-label="Animierte Karte: 50 Projekte in Deutschland und Österreich, von Unterföhring bis Graz"></video>
     </figure>
     <p style="margin-top:28px"><a class="btn" href="/referenzen">Referenzen ansehen</a></p>
     <script>(()=>{const v=document.getElementById('projVid');if(!v)return;if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.controls=true;return;}new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)v.play().catch(()=>{});else v.pause();}),{threshold:.35}).observe(v);})();</script>
