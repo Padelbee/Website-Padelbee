@@ -292,3 +292,8 @@
 #kontakt .lead{font-size:clamp(21px,2.4vw,30px);line-height:1.45;max-width:900px;color:var(--white)}
 #kontakt .lead{max-width:1000px;text-wrap:balance}
 #kontakt .lead{font-size:clamp(19px,2vw,24px);color:var(--muted-d)}
+/* Textbild (Beti-Regeln 24.11.): keine Hurenkinder, ausgewogene Überschriften, ruhige Textbreite, ohne feste Umbrüche */
+p,li,dd,summary,figcaption{text-wrap:pretty}
+h1,h2,h3,.lead,.m-quote{text-wrap:balance}
+.lead{max-width:68ch}
+#kontakt .lead{max-width:760px}
