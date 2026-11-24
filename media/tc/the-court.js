@@ -147,25 +147,38 @@ addEventListener('hashchange',route); route();
 })();
 
 
-/* Keine Hurenkinder: letzte zwei Wörter eines Absatzes zusammenhalten (alle Bildschirmgrößen, Text bleibt gleich) */
+/* Textbild zentral (Abnahme Bietal 24.11.): gilt für alle Seiten und alle Breiten, ändert keinen Text, nur Umbruchstellen.
+   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn sie zusammen höchstens ~55 % einer Zeile brauchen.
+   2) „&“ und Zahlen bleiben am folgenden Wort („Planung & Architektur“, „365 Tage“, „12 mm“).
+   3) Gilt auch für Überschriften mit Tipp-Effekt (der Effekt liest den Text erst beim Scrollen ein). */
 (function(){
-  const sel='main p, main li, main figcaption, main dd, section p, section li, section figcaption, section h3, .lead';
+  const NB='\u00a0';
+  const sel='main p, main li, main dd, main td, main figcaption, main h2, main h3, main h4, section p, section li, section dd, section td, section figcaption, section h2, section h3, section h4, .lead';
   document.querySelectorAll(sel).forEach(el=>{
-    if(el.closest('form,nav,header,footer,.chips,.c-stats,.dd-menu')||el.querySelector('[data-type]')||el.hasAttribute('data-type')) return;
-    const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let last=null,n; while(n=w.nextNode()) if(n.textContent.trim()) last=n;
-    if(!last) return; const s=last.textContent; const m=s.match(/^([\s\S]*\S)\s+(\S+)(\s*)$/); if(!m) return;
-    const tail=m[2]; const prev=m[1].split(/\s/).pop(); if((prev+tail).length>28) return;
-    last.textContent=m[1]+' '+tail+m[3];
+    if(el.closest('form,nav,header,footer,.chips,.c-stats,.dd-menu')) return;
+    if(el.querySelector('p,li,div,ul,ol,table')) return;
+    const nodes=[]; const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; while(n=w.nextNode()) nodes.push(n);
+    // 2) „&“ und Zahlen an das nächste Wort binden
+    nodes.forEach(t=>{ const v=t.textContent.replace(/(^|\s)(&|\d[\d.,]*)\s+(?=\S)/g,(x,a,b)=>a+b+NB); if(v!==t.textContent) t.textContent=v; });
+    // 1) letzte zwei Wörter (nur innerhalb desselben Textknotens)
+    let last=null; for(let i=nodes.length-1;i>=0;i--){ if(nodes[i].textContent.trim()){ last=nodes[i]; break; } }
+    if(!last) return;
+    const s=last.textContent; const m=s.match(/^([\s\S]*\S)\s+(\S+)(\s*)$/); if(!m) return;
+    const prev=m[1].split(/\s/).pop(); const tail=m[2];
+    const cs=getComputedStyle(el); const fs=parseFloat(cs.fontSize)||16; const width=el.clientWidth||el.getBoundingClientRect().width;
+    const perLine=width/(fs*0.55); // grobe Zeichen pro Zeile
+    if(perLine && (prev.length+1+tail.length)>perLine*0.55) return;
+    last.textContent=m[1]+NB+tail+m[3];
   });
 })();
 
 /* Kurze Bindestrich-Wörter (z. B. Single-Court, Padel-Profi) nicht am Bindestrich umbrechen */
 (function(){
-  const sel='main p, main li, main figcaption, section p, section li, section figcaption, section h3, .lead';
+  const sel='main p, main li, main dd, main td, main figcaption, main h2, main h3, main h4, section p, section li, section dd, section td, section figcaption, section h2, section h3, section h4, .lead';
   document.querySelectorAll(sel).forEach(el=>{
-    if(el.closest('form,nav,header,footer,.dd-menu')||el.hasAttribute('data-type')||el.querySelector('[data-type]')) return;
+    if(el.closest('form,nav,header,footer,.dd-menu')) return;
     const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; const ns=[]; while(n=w.nextNode()) ns.push(n);
-    ns.forEach(t=>{ const v=t.textContent.replace(/(^|[\s(])([A-Za-zÄÖÜäöüß0-9]{1,10})-([A-Za-zÄÖÜäöüß0-9]{1,10})(?=[\s.,;)!? ]|$)/g,(x,a,b,c)=>a+b+'‑'+c); if(v!==t.textContent) t.textContent=v; });
+    ns.forEach(t=>{ const v=t.textContent.replace(/(^|[\s(])([A-Za-zÄÖÜäöüß0-9°%]{1,10})-([A-Za-zÄÖÜäöüß0-9]{1,10})(?=[\s.,;)!? ]|$)/g,(x,a,b,c)=>a+b+'‑'+c); if(v!==t.textContent) t.textContent=v; });
   });
 })();
 
@@ -177,7 +190,7 @@ addEventListener('hashchange',route); route();
     const groups=[[]];
     [...h.childNodes].forEach(n=>{
       if(n.nodeType===3){
-        const parts=n.textContent.split(/(?<=[.!?])\s+/);
+        const parts=n.textContent.split(/(?<=[.!?])[ \t\n]+/);
         parts.forEach((p,i)=>{ if(i>0) groups.push([]); if(p) groups[groups.length-1].push(document.createTextNode(p)); });
       } else groups[groups.length-1].push(n);
     });
