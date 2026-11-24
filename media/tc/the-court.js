@@ -148,11 +148,11 @@ addEventListener('hashchange',route); route();
 
 
 /* Textbild zentral (Abnahme Bietal 24.11.): gilt für alle Seiten und alle Breiten, ändert keinen Text, nur Umbruchstellen.
-   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn sie zusammen höchstens ~75 % einer Zeile brauchen.
+   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn sie in der echten Schrift höchstens 80 % der aktuellen Zeile brauchen (bei jeder Fenstergröße neu).
    2) „&“ und Zahlen bleiben am folgenden Wort („Planung & Architektur“, „365 Tage“, „12 mm“).
    3) Gilt auch für Überschriften mit Tipp-Effekt (der Effekt liest den Text erst beim Scrollen ein). */
 (function(){
-  const NB='\u00a0';
+  const NB='\u00a0'; const WID=[];
   const sel='main p, main li, main dd, main td, main figcaption, main h2, main h3, main h4, section p, section li, section dd, section td, section figcaption, section h2, section h3, section h4, .lead';
   document.querySelectorAll(sel).forEach(el=>{
     if(el.closest('form,nav,header,footer,.chips,.c-stats,.dd-menu')) return;
@@ -161,16 +161,28 @@ addEventListener('hashchange',route); route();
     // 2) „&“ und Zahlen an das nächste Wort binden
     nodes.forEach(t=>{ const v=t.textContent.replace(/(^|\s)(&|\d[\d.,]*)\s+(?=\S)/g,(x,a,b)=>a+b+NB); if(v!==t.textContent) t.textContent=v; });
     nodes.forEach(t=>{ const ps=t.previousSibling; if(ps&&ps.nodeType===1&&ps.textContent.trim()==='&'&&/^\s/.test(t.textContent)) t.textContent=t.textContent.replace(/^\s+/,NB); });
-    // 1) letzte zwei Wörter (nur innerhalb desselben Textknotens)
+    // 1) letzte zwei Wörter: Stelle merken, entschieden wird per Messung (siehe unten)
     let last=null; for(let i=nodes.length-1;i>=0;i--){ if(nodes[i].textContent.trim()){ last=nodes[i]; break; } }
     if(!last) return;
-    const s=last.textContent; const m=s.match(/^([\s\S]*\S)\s+(\S+)(\s*)$/); if(!m) return;
-    const prev=m[1].split(/\s/).pop(); const tail=m[2];
-    const cs=getComputedStyle(el); const fs=parseFloat(cs.fontSize)||16; const width=el.clientWidth||el.getBoundingClientRect().width;
-    const perLine=width/(fs*0.55); // grobe Zeichen pro Zeile
-    if(perLine && (prev.length+1+tail.length)>perLine*0.75) return;
-    last.textContent=m[1]+NB+tail+m[3];
+    const m=last.textContent.match(/^([\s\S]*\S)[ \u00a0]+(\S+)\s*$/); if(!m) return;
+    const prev=m[1].split(/\s/).pop();
+    WID.push({el, node:last, idx:m[1].length, pair:prev+' '+m[2]});
   });
+  // Nur zusammenhalten, wenn beide Wörter zusammen höchstens 80 % der aktuellen Zeilenbreite brauchen (echte Schrift gemessen)
+  const ctx=document.createElement('canvas').getContext('2d');
+  function apply(){
+    WID.forEach(x=>{
+      if(x.el.dataset.typing) return;
+      const t=x.node.textContent; if(t.length<=x.idx) return;
+      const cs=getComputedStyle(x.el); ctx.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;
+      let pw=ctx.measureText(x.pair).width; if(cs.textTransform==='uppercase') pw=ctx.measureText(x.pair.toUpperCase()).width;
+      pw+=x.pair.length*(parseFloat(cs.letterSpacing)||0);
+      const ok=x.el.clientWidth>0 && pw<=x.el.clientWidth*0.8;
+      const ch=ok?NB:' '; if(t[x.idx]!==ch) x.node.textContent=t.slice(0,x.idx)+ch+t.slice(x.idx+1);
+    });
+  }
+  apply(); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(apply);
+  let rt; window.addEventListener('resize',()=>{ clearTimeout(rt); rt=setTimeout(apply,120); });
 })();
 
 /* Kurze Bindestrich-Wörter (z. B. Single-Court, Padel-Profi) nicht am Bindestrich umbrechen */
