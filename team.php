@@ -90,11 +90,11 @@ tc_page_start([
   <div class="inner">
     <h2>Wir sind für dich <span class="kw">da.</span></h2>
     <p class="lead" style="margin:18px auto 0">Du hast einen Standort, wir haben den Plan. Sichere dir jetzt dein unverbindliches Beratungsgespräch, damit Padel bei dir schnell startet und erfolgreich bleibt.</p>
-<?php $tcFormButton = 'Beratungsgespräch anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
-    <div class="people people-plain">
+    <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:680px">
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
       <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
     </div>
+<?php $tcFormButton = 'Beratungsgespräch anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
   </div>
 </section>
 <?php tc_page_end();

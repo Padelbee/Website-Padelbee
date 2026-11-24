@@ -266,3 +266,6 @@
 .people-plain .person .mail{justify-content:center;margin-top:4px}
 .people-plain .person .mail a{border:0;color:var(--muted-d);font-size:15px}
 .people-plain .person .mail a:hover{color:var(--yellow)}
+/* E-Mails in den Ansprechpartner-Kästen schlicht, ohne gelben Strich */
+.person .mail a{border:0;color:var(--white)}
+.person .mail a:hover{color:var(--yellow)}
