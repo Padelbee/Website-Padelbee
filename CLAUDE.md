@@ -1,6 +1,6 @@
 # Padelbee-Website (padelbee.de)
 
-Lies zuerst `ANLEITUNG.md`. Kurzfassung für Claude Code:
+Lies zuerst `ANLEITUNG.md`. Für jede Unterseite gelten außerdem die Design- und Qualitätsregeln in `DESIGN-REGELN.md` (vor dem Bauen lesen, vor dem Zeigen die Prüfliste abarbeiten). Kurzfassung für Claude Code:
 - Repo Padelbee/Website-Padelbee (öffentlich!). Arbeite nur auf dem Zweig `staging`, nie auf `main` (Martins Entwurf, GitHub Pages). Kein Force-Push. Keine Passwörter, Schlüssel oder Zugangsdaten committen.
 - Seiten: PHP-Dateien im Hauptordner mit `tc_page_start()` / `tc_page_end()` aus `inc/tc/layout.php`; Vorbild `courts.php`.
 - Jede Seite: eigener Title und Meta-Description, genau eine `<h1>`, JSON-LD über `inc/tc/schema.php`, URLs der alten Seite nie ändern.
