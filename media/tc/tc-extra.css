@@ -237,3 +237,25 @@
 .kf-wrap.open{grid-template-rows:1fr}
 .kf-in{overflow:hidden;min-height:0}
 @media (prefers-reduced-motion:reduce){.kf-wrap{transition:none}}
+/* Court-Variantenseiten (Standard, Panorama): Modelle mit Kenndaten */
+.vmodels{display:grid;gap:24px;margin-top:44px}
+.vmodel{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0 40px;background:var(--white);border:1px solid var(--line);border-top:4px solid var(--yellow);padding:32px;min-width:0}
+.vmodel .logo{height:56px;display:flex;align-items:center}
+.vmodel .logo .m{background:var(--petrol)}
+.vmodel .k{margin-top:14px;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--petrol)}
+.vmodel h3{margin:8px 0 0;font-size:clamp(28px,2.6vw,38px)}
+.vmodel .vm-head p{margin:12px 0 0;color:var(--muted);line-height:1.6}
+.vmodel .vm-price{color:var(--ink,#111)!important}
+.vmodel .vm-price b{font-size:22px}
+.vmodel .vm-price span{display:block;font-size:13px;color:var(--muted)}
+.vm-img{margin:20px 0 0;aspect-ratio:16/10;overflow:hidden}
+.vm-img img{width:100%;height:100%;object-fit:cover;display:block}
+.vm-specs{margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;align-content:start}
+.vm-specs div{padding:18px 0;border-bottom:1px solid var(--line);min-width:0}
+.vm-specs dt{font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--petrol)}
+.vm-specs dd{margin:8px 0 0;color:var(--muted);font-size:15px;line-height:1.55}
+.vm-facts{grid-column:1/-1;margin-top:24px}
+@media (max-width:860px){.vmodel{grid-template-columns:1fr;padding:24px}.vm-specs{grid-template-columns:1fr;margin-top:12px}}
+.vmodel .logo .m{-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:left center;mask-position:left center;max-width:100%}
+.vm-facts{display:flex;flex-wrap:wrap;gap:8px}
+.vm-facts span{font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:2px solid var(--petrol);padding:5px 8px}
