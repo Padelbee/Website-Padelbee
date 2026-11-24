@@ -52,7 +52,7 @@ tc_page_start([
     <p class="label" data-type>Bauphasen 4 bis 7</p>
     <h2 class="reveal">Vom Bauantrag bis zur <span class="hl">Eröffnung.</span></h2>
     <p class="lead">Eine Padel-Anlage baut man nicht nebenbei. Wir führen dich durch vier Bauphasen, nachdem Standort und Konzept in der <a href="/standortanalyse">Standortanalyse</a> geklärt sind.</p>
-    <div class="cards c4">
+    <div class="cards c2">
       <article class="card reveal"><div class="k">Phase 04</div><h3 data-type>Abstimmungen &amp; Bauantrag</h3><p>Wir sprechen mit der Baubehörde, erstellen den Bauantrag und reichen ihn ein.</p><ul class="chips"><li>Erstgespräch Baubehörde</li><li>Bauantragsunterlagen</li><li>Fachgutachten (Lärm, Statik, Beleuchtung)</li><li>Einreichung bei der Genehmigungsbehörde</li></ul></article>
       <article class="card reveal"><div class="k">Phase 05</div><h3 data-type>Kosten-, Termin- &amp; Gremienfreigabe</h3><p>Wir berechnen die Kosten, erstellen einen Grobterminplan und prüfen Fördermittel, bis die Umsetzung beschlossen ist.</p><ul class="chips"><li>Kostenberechnung &amp; Grobterminplan</li><li>Fördermittelprüfung / Vereinsgremien</li><li>Beschluss zur Umsetzung</li></ul></article>
       <article class="card reveal"><div class="k">Phase 06</div><h3 data-type>Werkplanung, Ausschreibung &amp; Vergabe</h3><p>Wir planen die Details, schreiben die Gewerke aus und geben dir eine Vergabeempfehlung.</p><ul class="chips"><li>Detailplanung für Fundamente, Beleuchtung und Entwässerung</li><li>Ausschreibung &amp; Vergabeempfehlung</li><li>Vertragsgestaltung &amp; verbindliche Terminschiene</li></ul></article>
