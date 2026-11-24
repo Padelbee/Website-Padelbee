@@ -5,8 +5,8 @@ require __DIR__ . '/inc/tc/layout.php';
 $leistungen = [
     ['04', 'Betreiberkonzept & Digitalisierung', 'Buchung, Zugang, Licht und Automaten greifen ineinander. Auf Wunsch unterstützen wir dich auch nach der Eröffnung.', '#b-digital', 'Zur Digitalisierung'],
     ['05', 'Marketing & Community-Aufbau', 'Wir übernehmen Markenaufbau, Sponsoring, Community-Wachstum und kommerzielles Management für Clubs und Betreiber.', null, null],
-    ['06', 'Zugang zu Sponsoren', 'Zusatzeinnahmen durch Sponsoren. Logos lassen sich integrieren und Glasflächen individualisieren, so entsteht eine professionelle Präsentationsfläche mit Wiedererkennungswert.', '/courts#c-marke', 'Gestaltung der Courts'],
-    ['', 'Academy & Coaching', 'Wir bieten strukturierte Trainingsprogramme, Betreiber-Coaching und Unternehmensberatung.', null, null],
+    ['06', 'Zugang zu Sponsoren', 'Zusatzeinnahmen durch Sponsoren. Logos lassen sich integrieren und Glasflächen individualisieren, so entsteht eine professionelle Präsentationsfläche mit&nbsp;Wiedererkennungswert.', '/courts#c-marke', 'Gestaltung der Courts'],
+    ['', 'Academy & Coaching', 'Wir bieten strukturierte Trainingsprogramme, Betreiber-Coaching und&nbsp;Unternehmensberatung.', null, null],
     ['', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '#b-netzwerk', 'Zu den Partnern'],
     ['07', 'Automatenlösungen', 'Zusatzeinnahmen mit Schlägerverleih, Bällen, Snacks und Getränken, rund um die Uhr und ohne Personal.', '/automatenloesungen', 'Zu den Automaten'],
 ];
@@ -136,7 +136,7 @@ tc_page_start([
 
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">
-    <h2>Padel startet schnell und bleibt <span class="kw">erfolgreich.</span></h2>
+    <h2>Padel startet schnell und bleibt&nbsp;<span class="kw">erfolgreich.</span></h2>
     <p class="lead" style="margin:18px auto 0">Wir entwickeln dein Betreiberkonzept 100 % kundenorientiert, von Digitalisierung und Marketing bis zu Events und Finanzierung. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
     <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>

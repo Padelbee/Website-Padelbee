@@ -202,7 +202,7 @@ addEventListener('hashchange',route); route();
 
 /* Kurze Bindestrich-Wörter (z. B. Single-Court, Padel-Profi) nicht am Bindestrich umbrechen */
 (function(){
-  const sel='main p, main li, main dd, main td, main figcaption, main h3, main h4, section p, section li, section dd, section td, section figcaption, section h3, section h4, .lead';
+  const sel='main p, main li, main dd, main td, main figcaption, main h4, section p, section li, section dd, section td, section figcaption, section h4, .lead';
   document.querySelectorAll(sel).forEach(el=>{
     if(el.closest('form,nav,header,footer,.dd-menu')) return;
     const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; const ns=[]; while(n=w.nextNode()) ns.push(n);
