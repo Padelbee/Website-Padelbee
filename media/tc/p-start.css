@@ -99,3 +99,4 @@
 .h-rest .hero-media figure:nth-child(even){transform:translateY(32px)}
 .h-rest .hero-media .ring{left:auto;right:-20px;bottom:-40px}
 @media (max-width:860px){.h-rest .hero-media{gap:8px}.h-rest .hero-media figure:nth-child(even){transform:none}.h-rest .hero-media .ring{display:none}}
+.h-rest .hero-media{margin-bottom:56px}@media (max-width:860px){.h-rest .hero-media{margin-bottom:24px}}
