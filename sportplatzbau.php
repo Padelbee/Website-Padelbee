@@ -1,85 +1,151 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
-$schritte = [
-    ['Erstkontakt &amp; Projekt&shy;aufnahme', 'Der erste Schritt zu deiner Padel-Anlage: Wir erfassen deine Wünsche und prüfen die grundsätzliche Machbarkeit.',
-        ['Standort-Quickcheck und erste Machbarkeitsbewertung', 'Definition von Projektzielen und Anforderungen (temporär/dauerhaft, Kapazitäten, Betriebskonzept)', 'Erste Kostenschätzung und Planung einer Standortbesichtigung']],
-    ['Standort&shy;analyse &amp; Gelände&shy;aufnahme', 'Detaillierte Erfassung aller relevanten Standortdaten mit modernster Technik.',
-        ['Gemeinsame Begehung und Analyse vor Ort', 'Vermessung mit GPS, Drohne und Laser-Scanning', 'Erfassung der Infrastruktur (Zufahrten, Leitungen, Entwässerung)', 'Erstellung von 2D- und 3D-CAD-Modellen']],
-    ['Konzept&shy;entwicklung &amp; Grundlagen&shy;analyse', 'Entwicklung des optimalen Konzepts unter Berücksichtigung aller rechtlichen und technischen Rahmenbedingungen.',
-        ['Prüfung der baurechtlichen Zulässigkeit (§34/§35 BauGB)', 'Technische Untersuchungen (Boden, Altlasten, Erschließung)', 'Variantenplanung: Court-Anzahl, Überdachung, Parkplätze', '3D-Visualisierungen und Kostenschätzung nach DIN 276']],
-    ['Abstimmung &amp; Genehmigung', 'Wir kümmern uns um alle behördlichen Genehmigungen und koordinieren alle Beteiligten.',
-        ['Frühzeitige Klärung mit Behörden', 'Erstellung der Bauantragsunterlagen und Fachgutachten', 'Koordination aller Beteiligten bis zur Genehmigung']],
-    ['Kosten-, Termin- &amp; Gremien&shy;freigabe', 'Detaillierte Planung und finale Freigabe für die Projektumsetzung.',
-        ['Detaillierte Kalkulation und Grobterminplan', 'Prüfung von Fördermitteln und Abstimmung mit Vereins- oder Kommunalgremien', 'Offizielle Projektfreigabe zur Umsetzung']],
-    ['Werkplanung, Aus&shy;schreibung &amp; Vergabe', 'Detaillierte Ausführungsplanung und professionelle Vergabe aller Gewerke.',
-        ['Detailplanung aller Gewerke (Fundamente, Technik, Beleuchtung)', 'Leistungsverzeichnisse, Angebotsprüfung und Vergabeempfehlung', 'Vertragsgestaltung und Bauzeitenplanung']],
-    ['Bau&shy;ausführung &amp; Inbetrieb&shy;nahme', 'Von der Baustelle bis zur erfolgreichen Eröffnung deiner Padel-Anlage.',
-        ['Baustellenkoordination und Qualitätsmanagement', 'Fachgerechte Montage der Padelcourts', 'Offizielle Abnahme, Eröffnung und Begleitung der Startphase']],
+// Inhalt: Martins Entwurf (the-court.com, Stand 23.11.2026: "Für wen wir bauen", FAQ, Partnernetzwerk),
+// Referenz SC Eching (Folie 17 und inc/tc/referenzen-data.json), Bau-Partner (Folie 3).
+$spFaq = [
+    ['frage' => 'Für wen baut ihr Sportanlagen?', 'antwort' => 'Wir bauen für Vereine, Hotels, Gewerbe und die öffentliche Hand. Das reicht vom Tennisverein, der ungenutzte Plätze in Padel-Courts umwandelt, bis zum kommerziellen Betreiber mit eigener Halle. Neben Padel planen wir auch Anlagen für Pickleball und Tennis. Unser Angebot richtet sich ausschließlich an Unternehmen, Vereine und die öffentliche Hand, nicht an Privatpersonen.'],
+    ['frage' => 'Wie viele Padel-Courts passen auf einen Tennisplatz?', 'antwort' => 'Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ein Padel-Court braucht deutlich weniger Fläche als ein Tennisplatz. Aus einem ungenutzten Tennisplatz kann so eine kleine Padelanlage werden, ohne dass dein Verein neues Gelände braucht. Ob deine Plätze passen, prüfen wir vor Ort, zusammen mit Baurecht, Lärm und Licht. Wie das abläuft, steht unter <a href="/standortanalyse">Standortanalyse</a>.'],
+    ['frage' => 'In welchen Ländern seid ihr aktiv?', 'antwort' => 'Wir sind in Deutschland, Österreich und der Schweiz aktiv. Unsere 50 Projekte reichen von Garbsen bis Graz und werden aus Unterföhring bei München gesteuert. Dazu zählen Anlagen, die wir beraten, geplant oder gebaut haben, vom Tennisverein bis zum kommerziellen Betreiber. Alle Standorte findest du in unseren <a href="/referenzen">Referenzen</a>.'],
 ];
 tc_page_start([
     'path' => '/sportplatzbau',
-    'title' => 'Sportplatzbau für Padel- & Sportanlagen · THE COURT',
-    'description' => 'Sportplatzbau mit Padelbee und thecourt.dev: Von der Idee bis zum fertigen Spielfeld. Planung und Realisierung moderner Padel- und Sportanlagen.',
+    'title' => 'Sportplatzbau für Tennis, Pickleball & Padel · Padelbee',
+    'description' => 'Sportplatzbau für Vereine, Hotels, Gewerbe und Kommunen: Tennis-, Pickleball- und Padelanlagen aus einer Hand, von der Beratung bis zum Betrieb.',
     'breadcrumb' => ['Sportplatzbau' => '/sportplatzbau'],
-    'og_image' => '/media/leistungen/sportplatzbau-anlage.jpg',
+    'og_image' => '/media/courts/anlage_luftbild.jpg',
+    'extra_head' => '<link rel="stylesheet" href="/media/tc/p-sportplatzbau.css?v=' . TC_ASSET_VERSION . '">',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_service(
-            'Sportplatzbau: Planung & Realisierung von Padel- und Sportanlagen',
-            'Entwicklung, Planung und Realisierung moderner Padel- und Sportanlagen für Kommunen, Vereine und Investoren: Geländeaufnahme, Konzept, Genehmigung, Ausschreibung, Bauausführung und Inbetriebnahme.',
+            'Sportplatzbau: Tennis-, Pickleball- und Padelanlagen',
+            'Beratung, Entwicklung und Bau moderner Racketsportanlagen für Padel, Pickleball und Tennis für Vereine, Hotels, Gewerbe und die öffentliche Hand in Deutschland, Österreich und der Schweiz.',
             '/sportplatzbau',
-            ['serviceType' => 'Sportplatzbau', 'image' => '/media/leistungen/sportplatzbau-anlage.jpg']
+            ['serviceType' => 'Sportplatzbau', 'image' => '/media/courts/anlage_luftbild.jpg']
         ),
+        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $spFaq), '/sportplatzbau'),
     ],
 ]);
+$spGroups = [
+    ['Vereine', 'Tennisvereine', 'Padel als zweites Standbein, mit mehr Mitgliedern und mehr Auslastung.'],
+    ['Vereine', 'Sportvereine', 'Neue Sparten mit wenig Fläche und schneller Amortisation.'],
+    ['Hotellerie · Gewerbe', 'Hotels &amp; kommerzielle Betreiber', 'Beratung und Bau von Anlagen für Hotels, Resorts und private Betreiber.'],
+    ['Golf', 'Golfclubs', 'Racketsport als Ergänzung für Mitglieder und Gäste.'],
+    ['Öffentlich', 'Kommunen', 'Sportinfrastruktur für Bürgerinnen und Bürger, inklusive Fördermittel.'],
+    ['Tourismus', 'Tourismusverbände', 'Padel und Pickleball als Attraktion für Regionen und Gäste.'],
+];
+$spLogos = [
+    ['txt', 'BAP', 'Barthe Asmuth Partner', 'Architektur'],
+    ['planeco', 'Planung'],
+    ['acp', 'Projektmanagement'],
+    ['polytan', 'Sportbeläge'],
+    ['txt', 'InfraConstruct', 'Bau GmbH', 'Tiefbau'],
+    ['avsyntec', 'Rebound Ace'],
+    ['kramke', 'Bau'],
+    ['txt', 'The Court', 'Development', 'Sportplatzbau'],
+];
 ?>
-<section class="band dark grid-bg a-hero">
-  <div class="inner" style="padding-block:clamp(56px,8vw,110px)">
+<section class="band dark grid-bg c-hero">
+  <div class="inner">
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Sportplatzbau</p>
-      <p class="label" style="color:var(--white)" data-type>thecourt.dev · Planung &amp; Realisierung moderner Padel- und Sportanlagen</p>
-      <h1>Sportplatz&shy;<span class="kw">bau.</span></h1>
-      <p class="lead">thecourt.dev ist dein Spezialist für die Entwicklung, Planung und Realisierung moderner Padel- und Sportanlagen. Von der ersten Standortidee bis zur fertigen Inbetriebnahme begleitet thecourt.dev Kommunen, Vereine und Investoren durch den gesamten Prozess: ganzheitlich, transparent und praxisnah.</p>
+      <h1 class="sp-h1"><span class="label h1-kicker" style="color:var(--white)" data-type>Sportplatzbau · Tennis · Pickleball · Padel</span>Moderne <span class="kw">Racketsport&shy;anlagen.</span></h1>
+      <p class="lead">Beim Sportplatzbau beraten, entwickeln und bauen wir moderne Anlagen für Padel, Pickleball und Tennis, für Vereine, Hotels, Gewerbe und die öffentliche Hand. Egal, wer du bist, wir finden das passende Konzept. Wie ein Projekt abläuft, liest du unter <a href="/standortanalyse">Standortanalyse</a> und <a href="/padel-court-bauen">Padel Court bauen</a>.</p>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Anlage anfragen</a><a class="btn ghost" href="#sp-referenz">Referenz ansehen</a></div>
     </div>
-    <div class="hero-art foto"><img src="/media/leistungen/sportplatzbau-hero-farbe.webp" alt="Illustration einer beleuchteten Padel-Anlage im Grünen"></div>
+    <figure class="courtfig courtphoto"><img src="/media/courts/anlage_luftbild.jpg" alt="Luftaufnahme einer Anlage mit fünf Padel-Courts neben Tennisplätzen"></figure>
+  </div>
+  <div class="inner" style="padding-block:0 40px">
+    <div class="c-stats">
+      <div><b data-count="50">50</b><span>Projekte</span></div>
+      <div><b data-count="3">3</b><span>Länder</span></div>
+      <div><b>30+</b><span>Partner</span></div>
+      <div><b>+14</b><span>Jahre Padel-Erfahrung<em class="st-sub">im Team</em></span></div>
+    </div>
   </div>
 </section>
 
-<section class="band grid-bg" id="sp-schritte">
+<section class="band grid-bg" id="sp-zielgruppen">
   <div class="inner">
-    <p class="label">Unsere Leistungsschritte</p>
-    <h2 class="reveal">Von der Erstidee bis zur <span class="hl">Eröffnung.</span></h2>
-    <div class="cards c4">
-<?php foreach ($schritte as $i => $s): ?>
-      <article class="card reveal"><div class="k">Schritt <?= sprintf('%02d', $i + 1) ?></div><h3 data-type><?= $s[0] ?></h3><p><?= $s[1] ?></p><ul class="ticks"><?php foreach ($s[2] as $li): ?><li><?= $li ?></li><?php endforeach; ?></ul></article>
+    <p class="label" data-type>Für wen wir bauen</p>
+    <h2 class="reveal">Moderne Racketsportanlagen für <span class="hl">Padel, Pickleball &amp; Tennis.</span></h2>
+    <p class="lead">Wir beraten, entwickeln und bauen für Vereine, Hotels, Gewerbe und die öffentliche Hand. Unser Angebot richtet sich ausschließlich an Unternehmen, Vereine und die öffentliche Hand, nicht an Privatpersonen.</p>
+    <div class="cards c3">
+<?php foreach ($spGroups as $g): ?>
+      <article class="card reveal"><div class="k"><?= $g[0] ?></div><h3 data-type><?= $g[1] ?></h3><p><?= $g[2] ?></p></article>
 <?php endforeach; ?>
     </div>
   </div>
 </section>
 
-<section class="band dark grid-bg" id="sp-ergebnis">
+<section class="band dark grid-bg" id="sp-mehrsport">
   <div class="inner">
-    <div class="vs" style="align-items:center">
-      <figure class="reveal" style="margin:0"><img src="/media/leistungen/sportplatzbau-ergebnis.jpg" alt="Illustration einer fertigen Padel-Anlage mit Stadion im Hintergrund" loading="lazy" style="width:100%;height:auto;display:block;border-top:4px solid var(--yellow)"></figure>
-      <div>
-        <p class="label">thecourt.dev</p>
-        <h2 class="reveal">Das <span class="kw">Ergebnis.</span></h2>
-        <p class="lead">Eine hochwertige und innovative Padel- und Sportanlage, individuell auf Standort, Nutzung und Budget abgestimmt, entwickelt mit der Erfahrung und Planungssicherheit von thecourt.dev.</p>
-      </div>
+    <p class="label" data-type>Mehrsportanlagen</p>
+    <h2 class="reveal">Was über Padel <span class="kw">hinausgeht.</span></h2>
+    <p class="lead">Neben Padel planen wir auch Anlagen für Pickleball und Tennis. Padel und Tennis sind keine Konkurrenz, denn wer Padel entdeckt, bleibt oft auch beim Tennis.</p>
+    <div class="cards c3">
+      <article class="card dk reveal"><div class="k">Padel</div><h3 data-type>Wenig Fläche</h3><p>Ein Padel-Court braucht deutlich weniger Fläche als ein Tennisplatz. Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Alles zu <a href="/courts">Courts</a> und zum <a href="/padel-court-bauen">Bau</a>.</p></article>
+      <article class="card dk reveal"><div class="k">Pickleball</div><h3 data-type>Attraktion für Gäste</h3><p>Padel und Pickleball machen Regionen und Hotels für Gäste attraktiv. Im Partnernetzwerk ist Joola unser Partner für Pickleball.</p></article>
+      <article class="card dk reveal"><div class="k">Tennis</div><h3 data-type>Neu gebaut</h3><p>Wir planen auch Tennisanlagen, zum Beispiel den neuen Tennispark des SC Eching mit 5 Rebound Ace Tennisplätzen.</p></article>
     </div>
   </div>
 </section>
 
-<section class="band" id="sp-partner">
+<section class="band" id="sp-referenz">
   <div class="inner">
-    <p class="label">Partner</p>
-    <h2 class="reveal">In <span class="hl">Zusammenarbeit</span> mit</h2>
-    <div class="vs">
-      <article class="card reveal"><img src="/images/partner/gabriel.png" alt="Gabriel Partners Real Estate" loading="lazy" style="height:48px;width:auto;display:block"><h3 style="margin-top:20px">Gerrit S. Molineus <small>Architekt und Projektentwickler</small></h3><p>Gabriel Partners Real Estate</p></article>
-      <article class="card dk reveal"><div class="k">Planung &amp; Realisierung</div><h3>thecourt.dev</h3><p>Spezialist für die Entwicklung, Planung und Realisierung moderner Padel- und Sportanlagen.</p><a class="btn" href="https://thecourt.dev/" target="_blank" rel="noopener noreferrer" style="margin-top:20px">thecourt.dev besuchen</a></article>
+    <p class="label" data-type>Referenz</p>
+    <h2 class="reveal">SC <span class="hl">Eching.</span></h2>
+    <p class="lead">Der SC Eching bei München baut einen neuen Tennispark mit 5 Rebound Ace Tennisplätzen und 2 Outdoor Padel Courts. Wir begleiten den Verein von der Beratung und Finanzierung über Planung, Architektur und Bau bis zu Digitalisierung und Betrieb.</p>
+    <div class="fd-cost reveal">
+      <div><span>Neubau Tennispark</span><b>5 + 2</b><p>5 Rebound Ace Tennisplätze und 2 Outdoor Padel Courts.</p></div>
+      <div><span>In Planung</span><b>Fertig 2027</b><p>Die Fertigstellung ist für 2027 geplant. Mehr Projekte vom Tennisverein bis zum kommerziellen Betreiber findest du in unseren <a href="/referenzen#referenzen/j51vwpfd4gfmh5l0hav9" style="color:var(--yellow)">Referenzen</a>.</p></div>
+    </div>
+    <ul class="chips reveal"><li>Beratung</li><li>Finanzierung</li><li>Planung &amp; Architektur</li><li>Bau</li><li>Digitalisierung</li><li>Betrieb</li></ul>
+    <div class="teaser reveal">
+      <div><h3>Padel im Verein, 0 €&nbsp;<span>Investition.</span></h3><p>Dein Verein stellt die Fläche, das Joint Venture mit dem Motions Racket Club baut, finanziert und betreibt. Du bekommst Pacht, deine Mitglieder spielen mit 30 % Rabatt.</p></div>
+      <a class="btn" href="/padel-court-bauen#p-finanzierung">Finanzierung ansehen</a>
     </div>
   </div>
 </section>
 
-<?php $tcPreselect = ['Padel Court bauen - Bauplanung, Platzbau & Baubegleitung']; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
+<section class="band dark grid-bg" id="sp-partner">
+  <div class="inner">
+    <p class="label" data-type>Bau-Partner</p>
+    <h2 class="reveal">Stark im <span class="kw">Netzwerk.</span></h2>
+    <p class="lead">30+ Partner aus Planung, Bau, Courtbau, Hallenbau, Digitalisierung, Equipment und Events. Für dein Projekt wählen wir die passenden aus.</p>
+    <div class="logos">
+<?php foreach ($spLogos as $l): ?>
+<?php if ($l[0] === 'txt'): ?>
+      <div class="lg reveal"><span class="t"><?= $l[3] ?></span><div class="txt"><?= $l[1] ?><small><?= $l[2] ?></small></div></div>
+<?php else: ?>
+      <div class="lg reveal" role="img" aria-label="<?= tc_h($l[0]) ?>"><span class="t"><?= $l[1] ?></span><div class="m" data-logo="<?= $l[0] ?>" data-h="48"></div></div>
+<?php endif; ?>
+<?php endforeach; ?>
+    </div>
+    <p class="partnernote sp-partnernote">Alle Partner findest du unter <a href="/partner">Partner</a>.</p>
+  </div>
+</section>
+
+<section class="band grid-bg" id="sp-faq" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label" data-type>FAQ</p>
+    <h2 class="reveal">Fragen zum <span class="hl">Sportplatzbau.</span></h2>
+    <div class="faq-list">
+<?php foreach ($spFaq as $f): ?>
+      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= $f['antwort'] ?></p></details>
+<?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<section class="band dark grid-bg end" id="kontakt">
+  <div class="inner">
+    <h2>Egal, wer du bist, wir finden das passende <span class="kw">Konzept.</span></h2>
+    <p class="lead" style="margin:18px auto 0">Ob Verein, Hotel, Gewerbe oder Kommune, wir zeigen dir, welche Racketsportanlage zu deinem Standort passt. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
+    <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
+      <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
+    </div>
+<?php $tcPreselect = ['Tennisplatzbau', 'Pickleball', 'Padelcourt']; $tcFormButton = 'Anlage anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
+  </div>
+</section>
 <?php tc_page_end();

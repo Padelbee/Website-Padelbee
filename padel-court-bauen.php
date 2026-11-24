@@ -1,59 +1,152 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
+// Inhalt: Bauphasen 4 bis 7 (Firmenpräsentation 2026, Folien 15 und 16) und Martins Entwurf
+// (the-court.com, Stand 23.11.2026: FAQ, Ratgeber zu Kosten, Ablauf, Genehmigung und Finanzierung).
+$pbFaq = [
+    ['frage' => 'Wie läuft ein Padel-Projekt ab?', 'antwort' => 'Ein Padel-Projekt läuft bei uns in sieben Etappen. Das sind Beratung, Finanzierung, Planung und Architektur, Bau, Digitalisierung, Betrieb und auf Wunsch Franchise. Am Anfang prüfen wir Fläche, Zielgruppe und Potenzial deines Standorts, das ist die <a href="/standortanalyse">Standortanalyse</a>. Danach klären wir Finanzierung und Genehmigung, bevor gebaut wird. Die Bauphasen 4 bis 7 findest du oben auf dieser Seite.'],
+    ['frage' => 'Was kostet eine Padelanlage?', 'antwort' => 'Für die erste Kalkulation brauchst du drei Zahlen. Ein Padel-Court kostet ab 27.000 € netto, das Fundament als Richtwert rund 35.000 € und eine Halle ab 280 €/m² netto. Dazu kommen Planung, Genehmigung, Licht und Digitalisierung. Den genauen Betrag bestimmen Standort, Variante und Ausstattung. Alle Court-Varianten findest du unter <a href="/courts">Courts</a>.'],
+    ['frage' => 'Woran hängen Padel-Projekte bei der Genehmigung?', 'antwort' => 'Der Court ist schnell bestellt, die Genehmigung dauert oft länger. Drei Themen solltest du früh klären. Bei Lage und Baurecht geht es darum, was der Bebauungsplan auf deiner Fläche erlaubt. Padel ist lauter als Tennis, deshalb gehören Abstand zur Wohnbebauung, Ausrichtung der Courts und Spielzeiten früh ins Konzept. Auch Lichtmasten, Lichttemperatur und Ausrichtung planen wir von Anfang an mit. Hol die Gemeinde früh an den Tisch, das ist unser Tipp.'],
+    ['frage' => 'Wie finanziere ich meine Padelanlage?', 'antwort' => 'Du musst nicht sofort sechsstellig investieren. Drei Wege stehen dir offen, nämlich Kauf, Leasing oder Joint Venture. Beim Kauf investierst du einmal und dir gehört alles. Beim Leasing fließen die Raten aus dem laufenden Betrieb und deine Liquidität bleibt erhalten. Beim Joint Venture stellt ein Verein die Fläche, das Joint Venture baut, finanziert und betreibt. Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.'],
+    ['frage' => 'Kann mein Tennisverein Padel ohne eigene Investition bekommen?', 'antwort' => 'Ja, über das Joint Venture mit dem Motions Racket Club. Dein Verein stellt die Fläche und bekommt dafür Pacht. Bau, Finanzierung und Betrieb übernimmt das Joint Venture, für den Verein liegt die Investition bei 0 €. Deine Mitglieder spielen mit 30 % Rabatt. Mehr dazu auf der Seite <a href="/sportplatzbau">Sportplatzbau</a>.'],
+];
 tc_page_start([
     'path' => '/padel-court-bauen',
-    'title' => 'Padel Court bauen · Bauplanung, Platzbau & Baubegleitung · THE COURT',
-    'description' => 'Padel Court bauen lassen? Professionelle Bauplanung und Platzbau für Padel-Anlagen. Wir realisieren dein Padel-Projekt mit erfahrenen Architekten und Bauunternehmen.',
+    'title' => 'Padel Court bauen: Ablauf, Kosten & Finanzierung · Padelbee',
+    'description' => 'Padel Court bauen in Deutschland: Bauantrag, Ausschreibung und Bau deines Padelcourts mit Padelbee. Mit Kosten ab 27.000 € netto und Finanzierungswegen.',
     'breadcrumb' => ['Padel Court bauen' => '/padel-court-bauen'],
+    'og_image' => '/media/referenzen/scheck-aufbau-4.jpg',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_service(
-            'Padel Court bauen: Bauplanung, Platzbau & Baubegleitung',
-            'Realisierung von Padel-Courts von der Bauplanung mit Architekten über Genehmigung, Fundament und Platzbau nach regionalen Normen bis zur Qualitätssicherung und Fertigstellung.',
+            'Padel Court bauen: Bauantrag, Ausschreibung und Bau',
+            'Padel Court bauen in Deutschland, Österreich und der Schweiz: Bauantrag und Fachgutachten, Kosten-, Termin- und Gremienfreigabe, Werkplanung, Ausschreibung und Vergabe, Bauausführung, Montage der Padelcourts, Abnahme und Eröffnung.',
             '/padel-court-bauen',
-            ['serviceType' => 'Padel-Court-Bau', 'image' => '/media/leistungen/padel-court-baustellen.png']
+            ['serviceType' => 'Padel-Court-Bau', 'image' => '/media/referenzen/scheck-aufbau-4.jpg']
         ),
+        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $pbFaq), '/padel-court-bauen'),
     ],
 ]);
 ?>
-<section class="band dark grid-bg a-hero">
-  <div class="inner" style="padding-block:clamp(56px,8vw,110px)">
+<section class="band dark grid-bg c-hero">
+  <div class="inner">
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Padel Court bauen</p>
-      <p class="label" style="color:var(--white)" data-type>Bauplanung · Platzbau · Baubegleitung</p>
-      <h1>Padel Court <span class="kw">bauen.</span></h1>
-      <p class="lead">Padel Court bauen lassen? Padelbee steht an deiner Seite, damit alle Hürden aus dem Weg geräumt werden und dich keine Überraschungen im Projektverlauf erwarten. Beim Bau eines Padel Courts unterstützen wir dich von der ersten Planung bis zur Fertigstellung.</p>
+      <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padel Court bauen · Planung · Bau</span>Bis zum ersten&nbsp;<span class="kw">Aufschlag.</span></h1>
+      <p class="lead">Du willst einen Padel Court bauen? Wir begleiten dich in Deutschland, Österreich und der Schweiz von Bauantrag und Ausschreibung bis zur Eröffnung deines Padelcourts. Zwischen der ersten Idee und dem ersten Aufschlag liegen viele Entscheidungen, wir begleiten dich durch alle. Am Anfang steht die <a href="/standortanalyse">Standortanalyse</a>.</p>
+      <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Bau anfragen</a><a class="btn ghost" href="#p-ablauf">Ablauf ansehen</a></div>
     </div>
-    <div class="hero-art foto"><img src="/media/leistungen/padel-court-baustellen.png" alt="Fotos von Padel-Baustellen: Aushub mit Bagger, Fundament, Montage von Glas und Gitter"></div>
+    <figure class="courtfig courtphoto"><img src="/media/referenzen/scheck-aufbau-4.jpg" alt="Scheck Club München: fertig montierte Padel-Courts in der Halle"></figure>
+  </div>
+  <div class="inner" style="padding-block:0 40px">
+    <div class="c-stats">
+      <div><b data-count="4">4</b><span>Bauphasen<em class="st-sub">Phase 4 bis 7</em></span></div>
+      <div><b>27 T€</b><span>ab, pro Court netto<em class="st-sub">Stand 11/2026</em></span></div>
+      <div><b>35 T€</b><span>Fundament<em class="st-sub">Richtwert</em></span></div>
+      <div><b><small>ab</small> 280 €</b><span>pro m² Halle netto<em class="st-sub">Stand 11/2026</em></span></div>
+    </div>
   </div>
 </section>
 
-<section class="band grid-bg" id="b-ablauf">
+<section class="band grid-bg" id="p-ablauf">
   <div class="inner">
-    <p class="label">Bauplanung &amp; Baubegleitung</p>
-    <h2 class="reveal">Für eine reibungslose Realisierung deines <span class="hl">Padel Projekts.</span></h2>
-    <ol class="flow">
-      <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M4 26h24M7 26V12l9-6 9 6v14M13 26v-7h6v7"/></svg></i><h4>Organisieren</h4><p>Padelbee organisiert die zuverlässige Realisierung des kompletten Bauvorhabens, mit automatisierten Prozessen von Planung bis Fertigstellung. Wenn du einen Padel Court bauen möchtest, sind wir dein zuverlässiger Partner.</p></li>
-      <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="4" width="22" height="24"/><path d="M10 10h12M10 15h12M10 20h7"/></svg></i><h4>Planen</h4><p>Mit erfahrenen Architekten erstellen wir einen dedizierten Bauplan mit Blick auf Standort, Bauauflagen und Umweltschutz und kümmern uns um die Genehmigung aller baulichen Maßnahmen. So wird dein Padel Court Bau professionell geplant.</p></li>
-      <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M4 24h24M8 24v-6h16v6M12 18V8h8v10"/></svg></i><h4>Bauen</h4><p>Ein zuverlässiges Team aus Ingenieuren und Bauunternehmen führt den Bau des Fundaments und der Padel-Plätze entsprechend der regionalen &amp; lokalen Normen durch, inklusive aller gesetzlichen Gewährleistungsverpflichtungen. Dein Padel Court wird fachgerecht errichtet.</p></li>
-      <li><i aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 17l6 6 14-14"/></svg></i><h4>Übergeben</h4><p>Während der gesamten Realisierungs-Phase wird selbstverständlich für die notwendige Qualitätssicherung und Sicherheit auf der Baustelle gesorgt. So stellen wir sicher, dass dein Padel Court Bau termingerecht und in höchster Qualität abgeschlossen wird.</p></li>
-    </ol>
-    <figure class="reveal" style="margin:44px 0 0;position:relative;border-top:4px solid var(--yellow)"><img src="/images/image-platzbau-1.jpg" alt="Luftaufnahme einer fertigen Padel-Anlage mit mehreren Courts und Spielern" loading="lazy" style="width:100%;height:auto;display:block"></figure>
-    <p style="margin-top:32px"><a class="btn ghost-d" href="/courts">Court-Systeme &amp; Fundamente vergleichen</a></p>
+    <p class="label" data-type>Bauphasen 4 bis 7</p>
+    <h2 class="reveal">Vom Bauantrag bis zur <span class="hl">Eröffnung.</span></h2>
+    <p class="lead">Eine Padel-Anlage baut man nicht nebenbei. Wir führen dich durch vier Bauphasen, nachdem Standort und Konzept in der <a href="/standortanalyse">Standortanalyse</a> geklärt sind.</p>
+    <div class="cards c4">
+      <article class="card reveal"><div class="k">Phase 04</div><h3 data-type>Abstimmungen &amp; Bauantrag</h3><p>Wir sprechen mit der Baubehörde, erstellen den Bauantrag und reichen ihn ein.</p><ul class="chips"><li>Erstgespräch Baubehörde</li><li>Bauantragsunterlagen</li><li>Fachgutachten (Lärm, Statik, Beleuchtung)</li><li>Einreichung bei der Genehmigungsbehörde</li></ul></article>
+      <article class="card reveal"><div class="k">Phase 05</div><h3 data-type>Kosten-, Termin- &amp; Gremienfreigabe</h3><p>Wir berechnen die Kosten, erstellen einen Grobterminplan und prüfen Fördermittel, bis die Umsetzung beschlossen ist.</p><ul class="chips"><li>Kostenberechnung &amp; Grobterminplan</li><li>Fördermittelprüfung / Vereinsgremien</li><li>Beschluss zur Umsetzung</li></ul></article>
+      <article class="card reveal"><div class="k">Phase 06</div><h3 data-type>Werkplanung, Ausschreibung &amp; Vergabe</h3><p>Wir planen die Details, schreiben die Gewerke aus und geben dir eine Vergabeempfehlung.</p><ul class="chips"><li>Detailplanung für Fundamente, Beleuchtung und Entwässerung</li><li>Ausschreibung &amp; Vergabeempfehlung</li><li>Vertragsgestaltung &amp; verbindliche Terminschiene</li></ul></article>
+      <article class="card reveal"><div class="k">Phase 07</div><h3 data-type>Bauausführung &amp; Inbetriebnahme</h3><p>Wir koordinieren die Baustelle, montieren die Padelcourts und begleiten die Eröffnung.</p><ul class="chips"><li>Baustelleneinrichtung &amp; Koordination</li><li>Montage Padelcourts &amp; Qualitätssicherung</li><li>Abnahme, Eröffnung &amp; Monitoring</li></ul></article>
+    </div>
+    <div class="ideal reveal"><span class="k">Deine sieben Etappen</span><span>Beratung</span><span>Finanzierung</span><span>Planung &amp; Architektur</span><span>Bau</span><span>Digitalisierung</span><span>Betrieb</span><span>Franchise</span></div>
   </div>
 </section>
 
-<section class="band grid-bg" id="b-weitere" style="background-color:var(--grey-050)">
+<section class="band dark grid-bg" id="p-genehmigung">
   <div class="inner">
-    <p class="label">Weitere Leistungen</p>
-    <h2 class="reveal">Weitere Leistungen von <span class="hl">Padelbee.</span></h2>
+    <p class="label" data-type>Genehmigung</p>
+    <h2 class="reveal">Genehmigung ohne <span class="kw">Kopfschmerzen.</span></h2>
+    <p class="lead">Der Court ist schnell bestellt, die Genehmigung dauert oft länger. Wer die typischen Stolpersteine kennt, spart Wochen. Drei Themen solltest du früh klären.</p>
     <div class="cards c3">
-      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Initiale Standort&shy;analyse</h3><p>Analyse der Chancen am Standort mit konkreter Handlungsempfehlung für dein Vorhaben.</p><a class="btn ghost-d" href="/standortanalyse" style="margin-top:20px">Mehr zur Standortanalyse</a></article>
-      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Entwicklung maßgeschneidertes Betreiber&shy;konzept</h3><p>Business-Plan, Angebots- und Marketing-Strategie für eine erfolgreiche Positionierung und einen reibungslosen Start am Standort.</p><a class="btn ghost-d" href="/betreiberkonzept" style="margin-top:20px">Mehr zum Betreiberkonzept</a></article>
-      <article class="card reveal"><div class="k">Leistung</div><h3 data-type>Vermarktung heute und in Zukunft</h3><p>Marketingplan, Platzbuchungssoftware und Werbepakete digital &amp; lokal, für die laufende Gewinnung von Spieler*innen.</p><a class="btn ghost-d" href="/powerplay" style="margin-top:20px">Mehr zu PowerPlay®</a></article>
+      <article class="card dk reveal"><div class="k">Thema 01</div><h3 data-type>Lage und Baurecht</h3><p>Was erlaubt der Bebauungsplan auf deiner Fläche? Auf bestehenden Sportanlagen ist das oft einfacher als auf der grünen Wiese.</p></article>
+      <article class="card dk reveal"><div class="k">Thema 02</div><h3 data-type>Lärm</h3><p>Padel ist lauter als Tennis. Der Ballwechsel an der Glaswand ist hörbar. Abstand zur Wohnbebauung, Ausrichtung der Courts und Spielzeiten gehören früh ins Konzept.</p></article>
+      <article class="card dk reveal"><div class="k">Thema 03</div><h3 data-type>Licht</h3><p>Flutlicht verlängert die Spielzeit, braucht aber eine saubere Planung. Lichtmasten, Lichttemperatur und Ausrichtung planen wir von Anfang an mit.</p></article>
+    </div>
+    <p class="fav-note">Hol die Gemeinde früh an den Tisch, das ist unser Tipp. Ein gutes Konzept überzeugt schneller als jeder Einspruch.</p>
+  </div>
+</section>
+
+<section class="band" id="p-kosten">
+  <div class="inner">
+    <p class="label" data-type>Kosten</p>
+    <h2 class="reveal">Was kostet ein <span class="hl">Padel Court?</span></h2>
+    <p class="lead">Die erste Frage in jedem Gespräch ist die nach den Kosten. Ehrlich gesagt kostet es weniger, als viele denken, und mehr, als ein Court allein. Die Tabelle zeigt die Richtwerte, mit denen wir im Erstgespräch rechnen. Alle Preise sind netto, Stand November 2026.</p>
+    <div class="tablewrap reveal">
+      <table class="plat">
+        <thead><tr><th>Baustein</th><th>Richtwert netto</th><th>Wovon der Preis abhängt</th></tr></thead>
+        <tbody>
+          <tr><td>Padel-Court</td><td>ab 27.000 € pro Court</td><td>Variante, Hersteller, Ausstattung wie Kunstrasen, Licht und Branding</td></tr>
+          <tr><td>Fundament</td><td>rund 35.000 €</td><td>Standort, Boden und Bauauflagen</td></tr>
+          <tr><td>Elastische Tragschicht</td><td>2.000 bis 5.000 € pro Court extra</td><td>optional, schont Gelenke und Belag</td></tr>
+          <tr><td>Halle</td><td>ab 280 €/m²</td><td>System (Polycarbonat oder ThermoRoof) und Größe</td></tr>
+          <tr><td>Smart Access &amp; Light Control</td><td>2.000 € einmalig plus 49 bis 129 € im Monat</td><td>Anzahl der Courts</td></tr>
+          <tr><td>Verleihautomat</td><td>ab 4.950 € plus 49 € im Monat</td><td>Modell und Anzahl der Fächer</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fav-note fav-note-l">Die Zahlen sind Richtwerte, kein Angebot. Dazu kommen Planung, Genehmigung, Licht und Digitalisierung. Mehr zu <a href="/courts">Court-Varianten</a>, <a href="/halle">Hallen</a> und <a href="/automatenloesungen">Automaten</a> findest du auf den eigenen Seiten.</p>
+    <p style="margin-top:28px"><a class="btn" href="#kontakt">Anlage durchrechnen lassen</a></p>
+  </div>
+</section>
+
+<section class="band grid-bg" id="p-fundament" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <div class="t-office">
+      <figure class="reveal"><img src="/media/courts/cp_outdoor1.jpg" alt="Court auf festem Fundament im Bau" loading="lazy"></figure>
+      <div>
+        <p class="label" data-type>Fundament</p>
+        <h2 class="reveal">Fest oder <span class="hl">mobil?</span></h2>
+        <p class="lead">Die Wahl hängt vom Standort und von der Laufzeit deines Miet- oder Pachtvertrags ab. Beide Varianten liegen preislich in einem ähnlichen Rahmen. Alle Details zum festen Fundament, zur mobilen Plattform und zur elastischen Tragschicht findest du unter <a href="/courts#c-fundament">Das richtige Fundament</a>. So sieht ein festes Fundament in der Praxis aus, zeigt der <a href="/referenzen#r-scheck">Aufbau im Scheck Club München</a>.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<?php $tcPreselect = ['Padel Court bauen - Bauplanung, Platzbau & Baubegleitung']; include __DIR__ . '/inc/tc/kontakt-section.php'; ?>
+<section class="band" id="p-finanzierung">
+  <div class="inner">
+    <p class="label" data-type>Finanzierung</p>
+    <h2 class="reveal">Du musst nicht sofort <span class="hl">sechsstellig</span> investieren.</h2>
+    <p class="lead">Drei Wege stehen dir offen. Welcher passt, hängt von deinen Zielen ab. Willst du die volle Kontrolle oder planbare Einnahmen ohne Investitionsrisiko? Wir rechnen beide Seiten mit dir durch.</p>
+    <div class="cards c3">
+      <article class="card reveal"><div class="k">Passt zu Betreibern mit Kapital</div><h3 data-type>Kauf</h3><p>Du investierst einmal und dir gehört alles. Der Klassiker für Betreiber mit Kapital und langfristigem Plan.</p></article>
+      <article class="card reveal"><div class="k">Passt zu mobilen Plattformen und Automaten</div><h3 data-type>Leasing</h3><p>Die Raten fließen aus dem laufenden Betrieb, die Liquidität bleibt. Für Automaten gibt es Leasing ab 109 € und Mietkauf ab 104 € im Monat, zum Beispiel mit 48 Monaten Laufzeit und 20 % Schlussrate, Bonität vorausgesetzt.</p></article>
+      <article class="card reveal"><div class="k">Passt zu Tennisvereinen</div><h3 data-type>Joint Venture</h3><p>Der Verein stellt die Fläche, das Joint Venture mit dem Motions Racket Club baut, finanziert und betreibt. Du bekommst Pacht und investierst 0 €.</p></article>
+    </div>
+    <p class="fav-note fav-note-l">Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.</p>
+  </div>
+</section>
+
+<section class="band grid-bg" id="p-faq" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label" data-type>FAQ</p>
+    <h2 class="reveal">Fragen zum <span class="hl">Padel Court bauen.</span></h2>
+    <div class="faq-list">
+<?php foreach ($pbFaq as $f): ?>
+      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= $f['antwort'] ?></p></details>
+<?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<section class="band dark grid-bg end" id="kontakt">
+  <div class="inner">
+    <h2>Aus einer Idee wird eine Anlage, die <span class="kw">läuft.</span></h2>
+    <p class="lead" style="margin:18px auto 0">Starte mit Etappe 1 und sprich mit uns über deinen Standort. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
+    <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
+      <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
+    </div>
+<?php $tcPreselect = ['Padel Court bauen - Bauplanung, Platzbau & Baubegleitung', 'Padelcourt']; $tcFormButton = 'Beratungsgespräch anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
+  </div>
+</section>
 <?php tc_page_end();
