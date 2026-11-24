@@ -105,7 +105,7 @@ tc_page_start([
 <section class="band dark grid-bg" id="v-strategie">
   <div class="inner">
     <p class="label" data-type>Court-Systeme · Detail</p>
-    <h2 class="reveal">Nicht nur technisch. Auch <span class="hl">strategisch.</span></h2>
+    <h2 class="reveal">Nicht nur technisch. Auch <span class="kw">strategisch.</span></h2>
     <div class="v-leadrow">
       <p class="v-links"><a class="btn ghost" href="/courts#c-marke">Alle Gestaltungsoptionen</a><a class="btn ghost" href="/courts#c-fundament">Das richtige Fundament</a></p>
     </div>

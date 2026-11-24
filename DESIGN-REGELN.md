@@ -36,6 +36,7 @@ Gilt für jede weitere Unterseite. Ziel: jede Seite ist beim ersten Zeigen schon
 - **Zusammengehöriges zusammen:** Eine Tabelle, die nur zu einer Karte gehört, steht in dieser Karte. Kosten werden in einem gemeinsamen Kasten zusammengefasst.
 - **Hinweise sichtbar** (zum Beispiel „Die Bilder zeigen Herstellerreferenzen …“) als Bildunterschrift mit gelbem Strich links, nicht als loser Kleintext.
 - **Bildunterschriften:** Projekt in einer Zeile, Zusatz („Herstellerreferenz“, „Rendering“) als feine zweite Zeile, einheitlich bei allen Bildern.
+- **Gelber Akzent in Überschriften:** auf hellem Grund `hl` (gelb unterlegt), auf dunklem Grund `kw` (gelbe Schrift). Nie `hl` in dunklen Bändern.
 - **Hover:** Karten auf hellem Grund bekommen einen petrol-200-Rand, nicht schwarz.
 
 ## 4. CTA und Kontakt
