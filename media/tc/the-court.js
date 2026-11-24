@@ -180,8 +180,31 @@ addEventListener('hashchange',route); route();
     if(last.textContent[m[1].length]===NB) return; // von Hand gesetztes festes Leerzeichen (&nbsp;) bleibt immer
     WID.push({el, node:last, idx:m[1].length, pair:prev+' '+m[2]});
   });
-  const ctx=document.createElement('canvas').getContext('2d');
+  let rt; const ctx=document.createElement('canvas').getContext('2d');
+  // Neuer Satz, neue Zeile (Wunsch Bietal 24.11.): Hängt der Anfang eines neuen Satzes nur mit 1 oder 2 Wörtern
+  // am Zeilenende, beginnt der Satz in einer neuen Zeile (span.sbr). Bei jeder Fenstergröße neu gemessen, Text bleibt gleich.
+  const SB=[...document.querySelectorAll('main p, section p, main li, main dd')].filter(el=>!el.closest('form,nav,header,footer,.c-stats,.dd-menu,table,.kf-wrap')&&!el.hasAttribute('data-type')&&!el.classList.contains('label')&&!el.querySelector('p,li,div,ul,ol,table'));
+  const END=/[.!?][\u201c\u201d"')]?$/, ABBR=/^(z\.|B\.|u\.|a\.|ca\.|bzw\.|lt\.|v\.|Nr\.|inkl\.|zzgl\.|St\.|Str\.|d\.|h\.|\d+\.)$/;
+  function sbrRun(el){
+    if(!el.offsetParent||el.dataset.typing) return;
+    for(let g=0;g<6;g++){
+      const W=[]; const tw=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n;
+      while(n=tw.nextNode()){ const re=/\S+/g; let m; while(m=re.exec(n.textContent)){ const rg=document.createRange(); rg.setStart(n,m.index); rg.setEnd(n,m.index+m[0].length); const rs=rg.getClientRects(); if(rs.length) W.push({n,s:m.index,t:m[0],top:Math.round(rs[0].top),btm:Math.round(rs[rs.length-1].top)}); } }
+      let hit=-1;
+      for(let i=1;i<W.length;i++){
+        if(!END.test(W[i-1].t)||ABBR.test(W[i-1].t)||!/^[A-Z\u00c4\u00d6\u00dc\u201e"]/.test(W[i].t)) continue;
+        let j=i; while(j<W.length-1&&!END.test(W[j].t)) j++;
+        if(j-i<2) continue;
+        const line=W[i].top; if(Math.abs(W[i-1].btm-line)>3||Math.abs(W[j].btm-line)<4) continue;
+        if(W.slice(i,j+1).filter(x=>Math.abs(x.top-line)<4).length>2) continue;
+        hit=i; break;
+      }
+      if(hit<0) break;
+      const after=W[hit].n.splitText(W[hit].s); const br=document.createElement('span'); br.className='sbr'; after.parentNode.insertBefore(br,after);
+    }
+  }
   function apply(){
+    document.querySelectorAll('span.sbr').forEach(b=>{ const p=b.parentNode; b.remove(); p.normalize(); });
     WID.forEach(x=>{
       if(x.el.dataset.typing) return;
       const t=x.node.textContent; if(t.length<=x.idx) return;
@@ -195,9 +218,11 @@ addEventListener('hashchange',route); route();
       const ok=W>0 && mw(tail)<=W*0.5 && mw(x.pair)<=W*0.6;
       const ch=ok?NB:' '; if(t[x.idx]!==ch) x.node.textContent=t.slice(0,x.idx)+ch+t.slice(x.idx+1);
     });
+    SB.forEach(sbrRun);
   }
+  document.addEventListener('toggle',()=>{ clearTimeout(rt); rt=setTimeout(apply,60); },true);
   apply(); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(apply);
-  let rt; window.addEventListener('resize',()=>{ clearTimeout(rt); rt=setTimeout(apply,120); });
+  window.addEventListener('resize',()=>{ clearTimeout(rt); rt=setTimeout(apply,120); });
 })();
 
 /* Kurze Bindestrich-Wörter (z. B. Single-Court, Padel-Profi) nicht am Bindestrich umbrechen */

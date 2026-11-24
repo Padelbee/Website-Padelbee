@@ -477,5 +477,8 @@ main{overflow-x:clip}
 /* Scheck-Club-Logo hat sehr feine Linien: etwas kräftiger darstellen */
 .lg .m[data-logo="scheck"]{filter:drop-shadow(.7px 0 0 var(--petrol)) drop-shadow(-.7px 0 0 var(--petrol)) drop-shadow(0 .7px 0 var(--petrol))}
 /* Zweiter Satz als eigener Absatz (Wunsch Bietal 24.11.): Abstand klein halten */
-.lead + .lead{margin-top:10px}
+.inner .lead + .lead{margin-top:4px}
 .gbox p + p,.card p + p{margin-top:6px}
+
+/* neue Zeile für hängende Satzanfänge (the-court.js) */
+span.sbr{display:block;height:4px}
