@@ -439,3 +439,9 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 @media (max-width:480px){.btn{max-width:100%;white-space:normal;text-align:center;justify-content:center;line-height:1.35}}
 /* Sehr lange Einzelwörter in Kartenüberschriften („Tourismusverbände“) trennen statt überlaufen; nur Wörter ab 14 Zeichen */
 .card h3,.gbox h3,.vmodel h3{hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:14 6 6}
+
+/* Partner-Kästen: Schriftzug-Logos und Labels passen sich der Kastenbreite an (vorher ragte „InfraConstruct“ auf dem Handy heraus) */
+.lg{container-type:inline-size}
+.lg .txt{font-size:min(26px,11cqi);max-width:calc(100% - 20px)}
+.lg .txt small{font-size:min(10px,5.6cqi);letter-spacing:min(.24em,1.2cqi)}
+.lg .t{max-width:calc(100% - 24px);font-size:min(10px,5.8cqi);letter-spacing:min(.2em,1.1cqi);white-space:nowrap}
