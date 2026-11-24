@@ -306,3 +306,16 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 /* Galerie-Bildunterschrift: Projekt in einer Zeile, "Herstellerreferenz" als feine zweite Zeile */
 .gallery figcaption{letter-spacing:.14em;max-width:calc(100% - 24px)}
 .gallery figcaption .g-ref{display:block;margin-top:3px;font-size:9.5px;letter-spacing:.16em;color:var(--petrol-200);font-weight:600}
+/* Handy (UX): Hero-Kennzahlen als ruhiges 2x2-Raster, Ansprechpartner untereinander */
+@media (max-width:680px){
+  .c-stats{grid-template-columns:repeat(2,minmax(0,1fr));border-top:0;column-gap:20px}
+  .c-stats div{border-right:0 !important;border-top:1px solid var(--line-d);padding:16px 0 18px}
+  .c-stats b{font-size:36px}
+  .c-stats b small{display:block;font-size:10px;letter-spacing:.18em;vertical-align:0;margin:0 0 6px}
+  .c-stats span{font-size:11px;letter-spacing:.14em;line-height:1.45}
+  .c-stats .st-sub{font-size:10.5px}
+  #kontakt .people{grid-template-columns:1fr !important;gap:12px}
+  #kontakt .person{padding:18px 20px}
+  #kontakt .person b{font-size:22px}
+  .people .person .mail a{overflow-wrap:normal;word-break:normal}
+}
