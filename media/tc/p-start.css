@@ -100,3 +100,7 @@
 .h-rest .hero-media .ring{left:auto;right:-20px;bottom:-40px}
 @media (max-width:860px){.h-rest .hero-media{gap:8px}.h-rest .hero-media figure:nth-child(even){transform:none}.h-rest .hero-media .ring{display:none}}
 .h-rest .hero-media{margin-bottom:56px}@media (max-width:860px){.h-rest .hero-media{margin-bottom:24px}}
+/* Video wächst nur bis zur Inhaltsbreite (wie Text und Fotos), nie bildschirmfüllend */
+.v-zoom .inner{max-width:1240px;padding-inline:0}
+.v-zoom figure{width:calc(76% + 24% * var(--z,0));max-width:min(100%,calc(78vh * 16 / 9))}
+@media (max-width:600px){.v-zoom figure{width:calc(92% + 8% * var(--z,0));max-width:100%}}
