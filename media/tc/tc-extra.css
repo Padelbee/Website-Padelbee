@@ -184,3 +184,5 @@
 .c-note{margin:0;padding:12px 0 0;border-top:1px solid var(--line-d);font-size:12.5px;letter-spacing:.02em}
 .c-hero .c-stats + .c-note{border-top:0}
 .c-hero .inner:has(> .c-stats){display:block}
+/* Kopfzeile: zwischen Burger-Grenze und voller Breite enger setzen, damit nichts abgeschnitten wird */
+@media (min-width:1181px) and (max-width:1360px){.site-head .row{gap:16px}.nav{gap:14px;letter-spacing:.1em}.brand{gap:10px}.brand img{height:20px}.head-cta{padding:10px 12px;letter-spacing:.12em}}
