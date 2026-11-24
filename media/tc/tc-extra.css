@@ -510,3 +510,5 @@ span.sbr{display:block;height:4px}
 /* Kurzer Einleitungssatz über zwei Zeilen gleichmäßig verteilen (Wunsch Bietal) */
 .lead.lead-bal{text-wrap:balance}
 .lead.lead-fill{text-wrap:wrap}
+/* Wortgruppe zusammenhalten (ab Tablet-Breite) */
+@media (min-width:600px){.keep{white-space:nowrap}}
