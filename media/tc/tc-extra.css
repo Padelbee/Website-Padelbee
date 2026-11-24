@@ -303,3 +303,6 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 .favbody p,.maker p,.card p,.gbox p{text-wrap:pretty}
 /* Hinweis unter den Favoriten als sichtbare Bildunterschrift statt loser Kleintext */
 .fav-note{margin:20px 0 0;padding:10px 0 10px 16px;border-left:4px solid var(--yellow);font-size:15px;color:var(--petrol-200)}
+/* Galerie-Bildunterschrift: Projekt in einer Zeile, "Herstellerreferenz" als feine zweite Zeile */
+.gallery figcaption{letter-spacing:.14em;max-width:calc(100% - 24px)}
+.gallery figcaption .g-ref{display:block;margin-top:3px;font-size:9.5px;letter-spacing:.16em;color:var(--petrol-200);font-weight:600}
