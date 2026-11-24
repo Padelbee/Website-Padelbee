@@ -14,7 +14,7 @@ ob_start(); ?>
         <div class="logo"><div class="m" data-logo="padelgalis" data-h="50"></div></div>
         <div class="k">Padel Galis · The Player's Court</div>
         <h3 data-type>Vier Panorama-Modelle</h3>
-        <p>Laut Hersteller offizieller Court-Partner der Premier Padel Tour und der Federación Española de Pádel. Alle vier Modelle haben den Kunstrasen PG5.</p>
+        <p>Laut Hersteller offizieller Court-Partner der Premier Padel Tour und der Federación Española de Pádel. LED, Kunstrasen, Glas und Stahl lassen sich stark individualisieren. Alle vier Modelle haben den Kunstrasen PG5.</p>
       </div>
       <div class="vr-grid">
 <?php foreach ($galis as $g): ?>
@@ -47,7 +47,7 @@ $v = [
     'description' => 'Panorama Court mit größeren Glasflächen und offener Sicht. Sieben Modelle von Padel Factory, Padel Concept, 100% Padel und Padel Galis, ab 28.150 € netto.',
     'label' => 'Court-Variante · Premium',
     'h1' => 'Panorama <span class="kw">Court.</span>',
-    'lead' => 'Der Panorama Court hat deutlich weniger sichtbare Streben, größere Glasflächen und eine offenere Anmutung. Das bringt bessere Sicht für Zuschauer und einen hochwertigen Gesamteindruck. Jedes Modell gibt es als Double- und als Single-Court.',
+    'lead' => 'Der Panorama Court hat deutlich weniger sichtbare Streben, größere Glasflächen und eine offenere Anmutung. Das bringt bessere Sicht für Zuschauer und einen hochwertigen Gesamteindruck. Damit ist er die goldene Mitte für Clubs mit Anspruch. Jedes Modell gibt es als Double- und als Single-Court.',
     'image' => '/media/courts/panorama.jpg',
     'alt' => 'Panorama Court Rendering mit großen Glasflächen',
     'stats' => [
@@ -62,7 +62,7 @@ $v = [
     'models' => [
         [
             'logo' => 'padelfactory', 'logo_h' => 44, 'brand' => '3B Padel',
-            'maker' => '3B Padel', 'tier' => 'Zwischenstufe',
+            'maker' => '3B Padel', 'tier' => 'Zwischenstufe', 'fav' => 'Favorit Outdoor',
             'name' => 'Wing Panoramic',
             'text' => 'Modernes, offenes Design als Zwischenstufe der Court-Kollektion. Die vertikalen Verstrebungen zwischen den Glasflächen entfallen, nur vier Trägerrohre stehen an den Ecken. Das sorgt für ein offeneres Spielgefühl.',
             'price' => 28150, 'price_incl' => 'inkl. Stahlkonstruktion, 12-mm-Glas-Kit, fibrilliertem Kunstrasen und 8 Flutlichtstrahlern', 'price_note' => 'zzgl. Übernachtungs- und Verpflegungskosten',
@@ -73,11 +73,11 @@ $v = [
                 ['Glaspanele', 'Hochresistentes ESG mit polierten, abgeschrägten Kanten, als 12 mm Einscheibenglas oder 6+6 mm VSG.'],
                 ['Beleuchtung', 'Drei Intensitätsstufen mit 17.500, 18.500 oder 23.000 Lumen für optimale Sicht bei Abendspielen.'],
             ],
-            'facts' => ['15 J. Herstellergarantie (lt. Hersteller)', 'Feuerverzinkt und pulverbeschichtet', 'Produktion in Italien'],
+            'facts' => ['15 J. Herstellergarantie (lt. Hersteller)', 'Feuerverzinkt und pulverbeschichtet', 'Verstärkte Statik für Wind- und Schneelasten', 'Produktion in Italien'],
         ],
         [
             'logo' => 'padelconcept', 'logo_h' => 54, 'brand' => 'Padel Concept',
-            'maker' => 'Padel Concept', 'tier' => 'Panorama',
+            'maker' => 'Padel Concept', 'tier' => 'Panorama', 'fav' => 'Favorit Outdoor',
             'name' => 'Panorama',
             'text' => 'Panorama-Design mit uneingeschränkter Sicht, geeignet für den Indoor- und Outdoorbereich.',
             'image' => '/media/courts/modelle/panorama-padelconcept.jpg', 'alt' => 'Padel Concept Panorama Court in einer Halle, Rendering',
@@ -87,11 +87,11 @@ $v = [
                 ['Glaspanele', 'Zertifiziertes ESG 12 mm auf 5 mm starken Moosgummidichtungen zur Reduzierung von Vibrationen und zum Schutz vor Beschädigungen.'],
                 ['Beleuchtung', '„Pro-Version“ der Lampenhalterung in dreieckiger Form. LED-Beleuchtungssystem gemäß internationalen Standards.'],
             ],
-            'facts' => ['Windlast 144 km/h (lt. Hersteller)', 'Netz in „Pro-Version“ mit Netzkopfband', 'Schnelle Lieferung'],
+            'facts' => ['Windlast 144 km/h (lt. Hersteller)', 'Netz in „Pro-Version“ mit Netzkopfband', 'Vorrätige Courts und Ersatzteile', 'Eigene Montageteams, Beratung auf Deutsch'],
         ],
         [
             'logo' => '100padel', 'logo_h' => 54, 'brand' => '100% Padel',
-            'maker' => '100% Padel', 'tier' => 'Panorama',
+            'maker' => '100% Padel', 'tier' => 'Panorama', 'fav' => 'Favorit Indoor',
             'name' => 'Panorama-Padelplatz',
             'text' => 'Das hochwertige Modell mit elegantem Design. Größere, offenere Glasflächen sorgen für bessere Sicht und einen modernen Gesamteindruck.',
             'image' => '/media/courts/modelle/panorama-100padel.jpg', 'fit' => 'contain', 'alt' => '100% Padel Panorama-Padelplatz, Zeichnungen aus drei Perspektiven',
@@ -101,10 +101,15 @@ $v = [
                 ['Glas', 'Geprüfte Sicherheitsbarriere aus Sicherheitsglas für eine offene Sicht auf das Spiel.'],
                 ['Beleuchtung', 'Direkte Beleuchtung mit 3 m hohen Lichtmasten aus kaltverzinktem 80.60-Rohr und 200-W-LED-Lampen.'],
             ],
-            'facts' => ['Einbrennlackierung, Farbe nach Kundenwunsch', 'Verzinkt (nicht feuerverzinkt), 2 Jahre Gewährleistung', 'Montageteam in Deutschland'],
+            'facts' => ['Turnierausrüster der Premier Padel Tour (lt. Hersteller)', 'Einbrennlackierung, Farbe nach Kundenwunsch', 'Verzinkt (nicht feuerverzinkt), 2 Jahre Gewährleistung', 'Montageteam in Deutschland'],
         ],
     ],
     'extra_html' => $galisHtml,
+    'faq' => [
+        ['frage' => 'Für wen eignet sich der Panorama Court?', 'antwort' => 'Der Panorama Court hat weniger sichtbare Streben und größere Glasflächen, Zuschauer sehen mehr vom Spiel. Damit ist er die goldene Mitte für Clubs mit Anspruch. Unsere Faustregel ist einfach. Wo Zuschauer stehen, lohnt sich Panorama. Für einen reinen Show-Court mit fast durchgehendem Glas gibt es Full-Panorama, mehr dazu bei den <a href="/courts#c-systeme">Court-Varianten</a>.'],
+        ['frage' => 'Was kostet ein Panorama Court?', 'antwort' => 'Der Wing Panoramic von Padel Factory kostet ab 28.150 € netto pro Court, inklusive Stahlkonstruktion, 12-mm-Glas-Kit, fibrilliertem Kunstrasen und 8 Flutlichtstrahlern, zuzüglich Übernachtungs- und Verpflegungskosten. Der Endpreis hängt von Hersteller und Ausstattung ab. Für die Gesamtkalkulation kommt das Fundament mit einem Richtwert von rund 35.000 € dazu, mehr dazu unter <a href="/courts#c-fundament">Fundament</a>.'],
+        ['frage' => 'Wie viel Garantie gibt es auf einen Panorama Court?', 'antwort' => 'Padel Factory nennt 15 Jahre Herstellergarantie auf die Konstruktion (lt. Hersteller). Bei 100% Padel sind es 2 Jahre Gewährleistung. Die Garantie gewährt immer der jeweilige Hersteller, nicht die THE COURT GmbH. Welche Bedingungen gelten, prüfen wir für dein Projekt mit dem Hersteller.'],
+    ],
     'others' => [
         ['Einstieg', 'Standard', 'Die klassische, wirtschaftliche Lösung. Zusätzliche Streben zwischen den Glaselementen machen die Konstruktion besonders stabil.', '/standard-court', 'Zum Standard Court', '/media/courts/standard.jpg'],
         ['Topklasse', 'Full-Panorama', 'Nahezu durchgehende Glasflächen und eine minimale Stahlstruktur. Repräsentativ, mit klarem Show-Court-Charakter, vor allem für Indoor-Clubs und TV-Übertragungen.', '/courts#c-systeme', 'Alle Varianten vergleichen', '/media/courts/full.jpg'],

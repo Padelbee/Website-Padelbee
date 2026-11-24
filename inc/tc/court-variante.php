@@ -11,7 +11,8 @@
  *   'models_label', 'models_h2' (HTML), 'models_lead',
  *   'models' => [[
  *     'logo', 'logo_h', 'maker', 'tier', 'name', 'text', 'image'?, 'alt'?,
- *     'specs' => [[Titel, Text], ...], 'facts' => [...], 'price'?, 'price_incl'?, 'price_note'?, 'brand', 'fit'? ('contain')
+ *     'specs' => [[Titel, Text], ...], 'facts' => [...], 'price'?, 'price_incl'?, 'price_note'?, 'brand', 'fit'? ('contain'), 'fav'? (Favorit-Label)
+ *   'faq' => [['frage','antwort'(HTML)], ...] optional
  *   ], ...],
  *   'others' => [[k, Titel, Text, Link, Linktext, Bild], ...]
  * ]
@@ -34,7 +35,7 @@ tc_page_start([
     'breadcrumb' => ['Courts' => '/courts', $v['name'] => $v['path']],
     'og_image' => $v['image'],
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
-    'schema' => [tc_schema_item_list($v['name'] . ': Modelle', $products)],
+    'schema' => array_values(array_filter([tc_schema_item_list($v['name'] . ': Modelle', $products), !empty($v['faq']) ? tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $v['faq']), $v['path']) : null])),
 ]);
 ?>
 <section class="band dark grid-bg c-hero">
@@ -72,7 +73,7 @@ tc_page_start([
           </div>
           <div class="vm-head">
             <div class="logo"><div class="m" data-logo="<?= $m['logo'] ?>" data-h="<?= $m['logo_h'] ?>"></div></div>
-            <div class="k"><?= $m['maker'] ?> · <?= $m['tier'] ?></div>
+            <div class="k"><?= $m['maker'] ?> · <?= $m['tier'] ?><?php if (!empty($m['fav'])): ?> <span class="vm-fav"><?= $m['fav'] ?></span><?php endif; ?></div>
             <h3 data-type><?= $m['name'] ?></h3>
             <p><?= $m['text'] ?></p>
 <?php if (!empty($m['price'])): ?>
@@ -121,6 +122,7 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Weitere Varianten</p>
     <h2 class="reveal">Drei Varianten, ein <span class="hl">Prinzip.</span></h2>
+    <p class="v-rule reveal"><span class="k">Unsere Faustregel</span>Wo Zuschauer stehen, lohnt sich Panorama. Wo Wind und Wetter wirken, punktet Standard.</p>
     <div class="cards c<?= count($v['others']) ?>">
 <?php foreach ($v['others'] as $o): ?>
       <article class="card variant vflat reveal"><figure class="vimg"><img src="<?= $o[5] ?>" alt="<?= tc_h($o[1]) ?>-Court Rendering" loading="lazy"></figure><div class="vf-body"><div class="k"><?= $o[0] ?></div><h3 data-type><?= $o[1] ?></h3><p><?= $o[2] ?></p><span class="tier"><a href="<?= $o[3] ?>"><?= $o[4] ?></a></span></div></article>
@@ -128,6 +130,20 @@ tc_page_start([
     </div>
   </div>
 </section>
+
+<?php if (!empty($v['faq'])): ?>
+<section class="band grid-bg" id="v-faq" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label" data-type>FAQ</p>
+    <h2 class="reveal">Fragen zum <span class="hl"><?= tc_h($v['name']) ?>.</span></h2>
+    <div class="faq-list">
+<?php foreach ($v['faq'] as $f): ?>
+      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= $f['antwort'] ?></p></details>
+<?php endforeach; ?>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
 
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">

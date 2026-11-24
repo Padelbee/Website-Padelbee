@@ -459,3 +459,9 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 /* Schmale Karten: sehr lange Wörter (ab 16 Zeichen, z. B. „Zugangskontrolle“, „Widerstandsfähigkeit“) dürfen getrennt werden,
    damit davor keine Löcher entstehen. Kürzere Wörter werden nie getrennt. */
 .card p,.gbox p,.vm-specs dd,.vr-item p,.maker p,.favbody p,.fd p,.card li,.gbox li{hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:16 7 7}
+
+/* Favorit-Label in Modellkarten und Faustregel-Kasten (Martins Entwurf /courts und Blog 17.11.) */
+.vm-fav{display:inline-block;margin-left:8px;padding:3px 8px;background:var(--yellow);color:var(--petrol);font-size:10.5px;letter-spacing:.14em;vertical-align:1px}
+.v-rule{margin:24px 0 0;max-width:860px;padding:16px 20px;border-left:4px solid var(--yellow);background:var(--white);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:var(--ink,#111);text-wrap:pretty}
+.v-rule .k{display:block;margin-bottom:6px;font-weight:600;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--petrol)}
+#v-faq .faq-list{margin-top:32px}

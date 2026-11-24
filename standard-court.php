@@ -12,7 +12,7 @@ $v = [
     'description' => 'Der Standard Court ist die stabile, wirtschaftliche Padel-Court-Variante. Modelle von Padel Factory, Padel Concept und 100% Padel, ab 27.275 € netto.',
     'label' => 'Court-Variante · Einstieg',
     'h1' => 'Standard <span class="kw">Court.</span>',
-    'lead' => 'Der Standard Court ist die klassische, wirtschaftliche Lösung. Zusätzliche Streben zwischen den Glaselementen machen die Konstruktion besonders stabil, ideal bei Fokus auf Preis-Leistung und Robustheit. Jedes Modell gibt es als Double- und als Single-Court.',
+    'lead' => 'Der Standard Court ist die klassische, wirtschaftliche Lösung. Zusätzliche Streben zwischen den Glaselementen machen die Konstruktion besonders stabil. Mit dem besten Preis-Leistungs-Verhältnis ist er ideal für Vereine und Outdoor-Anlagen. Jedes Modell gibt es als Double- und als Single-Court.',
     'image' => '/media/courts/standard.jpg',
     'alt' => 'Standard Court Rendering mit Streben zwischen den Glaselementen',
     'stats' => [
@@ -28,7 +28,7 @@ $v = [
     'models' => [
         [
             'logo' => 'padelfactory', 'logo_h' => 44, 'brand' => '3B Padel',
-            'maker' => '3B Padel', 'tier' => 'Basismodell',
+            'maker' => '3B Padel', 'tier' => 'Basismodell', 'fav' => 'Favorit Outdoor',
             'name' => 'Smash Standard',
             'text' => 'Das Basismodell aus Italien mit selbsttragender Stahlrohrkonstruktion (Profil 80 × 40 mm) zwischen den Glasfeldern. Die hohe Anzahl selbsttragender Elemente gewährleistet außergewöhnliche Stabilität und Sicherheit.',
             'price' => 27275, 'price_incl' => 'inkl. kompletter Stahlkonstruktion, 10-mm-Glas-Kit, fibrilliertem Kunstrasen und 8 Flutlichtstrahlern', 'price_note' => 'zzgl. Übernachtungs- und Verpflegungskosten',
@@ -39,11 +39,11 @@ $v = [
                 ['Glaspanele', $glas3b],
                 ['Beleuchtung', $licht3b],
             ],
-            'facts' => ['15 J. Herstellergarantie (lt. Hersteller)', 'Feuerverzinkt und pulverbeschichtet', 'Produktion in Italien'],
+            'facts' => ['15 J. Herstellergarantie (lt. Hersteller)', 'Feuerverzinkt und pulverbeschichtet', 'Verstärkte Statik für Wind- und Schneelasten', 'Produktion in Italien'],
         ],
         [
             'logo' => 'padelconcept', 'logo_h' => 54, 'brand' => 'Padel Concept',
-            'maker' => 'Padel Concept', 'tier' => 'Standard',
+            'maker' => 'Padel Concept', 'tier' => 'Standard', 'fav' => 'Favorit Outdoor',
             'name' => 'Standard Club',
             'text' => 'Standard-Court im klassischen Design, geeignet für den Innen- und Außenbereich.',
             'image' => '/media/courts/modelle/standard-club.jpg', 'alt' => 'Padel Concept Standard Club Court in einer Halle, Rendering',
@@ -53,11 +53,11 @@ $v = [
                 ['Glaspanele', 'Zertifiziertes ESG 10 mm auf 5 mm starken Moosgummidichtungen zur Reduzierung von Vibrationen und zum Schutz vor Beschädigungen.'],
                 ['Beleuchtung', '„Pro-Version“ der Lampenhalterung in dreieckiger Form. LED-Beleuchtungssystem gemäß internationalen Standards.'],
             ],
-            'facts' => ['Windlast 144 km/h (lt. Hersteller)', 'Netz in „Pro-Version“ mit Netzkopfband', 'Schnelle Lieferung'],
+            'facts' => ['Windlast 144 km/h (lt. Hersteller)', 'Netz in „Pro-Version“ mit Netzkopfband', 'Vorrätige Courts und Ersatzteile', 'Eigene Montageteams, Beratung auf Deutsch'],
         ],
         [
             'logo' => '100padel', 'logo_h' => 54, 'brand' => '100% Padel',
-            'maker' => '100% Padel', 'tier' => 'Standard',
+            'maker' => '100% Padel', 'tier' => 'Standard', 'fav' => 'Favorit Indoor',
             'name' => 'Klassischer Padelplatz',
             'text' => 'Das robuste Modell im klassischen Design. Die stabile Konstruktion aus Pfosten mit Stützstreben und geprüftem Sicherheitsglas ist die wirtschaftliche Basis für jede Anlage.',
             'image' => '/media/courts/modelle/standard-100padel.jpg', 'fit' => 'contain', 'alt' => '100% Padel Klassischer Padelplatz, Zeichnungen aus drei Perspektiven',
@@ -67,8 +67,13 @@ $v = [
                 ['Glas', 'Geprüftes Sicherheitsglas. Glasanker mit Neopren und Verriegelungsbolzen geschützt.'],
                 ['Beleuchtung', 'Direkte Beleuchtung mit 3 m hohen Lichtmasten aus kaltverzinktem 80.60-Rohr und 200-W-LED-Lampen.'],
             ],
-            'facts' => ['Einbrennlackierung, Sonderfarben erhältlich', 'Verzinkt (nicht feuerverzinkt), 2 Jahre Gewährleistung', 'Montageteam in Deutschland'],
+            'facts' => ['Turnierausrüster der Premier Padel Tour (lt. Hersteller)', 'Einbrennlackierung, Sonderfarben erhältlich', 'Verzinkt (nicht feuerverzinkt), 2 Jahre Gewährleistung', 'Montageteam in Deutschland'],
         ],
+    ],
+    'faq' => [
+        ['frage' => 'Für wen eignet sich der Standard Court?', 'antwort' => 'Der Standard Court ist der Klassiker. Zusätzliche Streben zwischen den Glasscheiben machen ihn besonders stabil. Mit dem besten Preis-Leistungs-Verhältnis ist er ideal für Vereine und Outdoor-Anlagen. Unsere Faustregel ist einfach. Wo Wind und Wetter wirken, punktet Standard. Wo viele Zuschauer stehen, lohnt sich der <a href="/panorama-court">Panorama Court</a>.'],
+        ['frage' => 'Was kostet ein Standard Court?', 'antwort' => 'Der Smash Standard von Padel Factory kostet ab 27.275 € netto pro Court, inklusive kompletter Stahlkonstruktion, Glas-Kit, fibrilliertem Kunstrasen und 8 Flutlichtstrahlern, zuzüglich Übernachtungs- und Verpflegungskosten. Der Endpreis hängt von Hersteller und Ausstattung ab. Für die Gesamtkalkulation kommt das Fundament mit einem Richtwert von rund 35.000 € dazu, mehr dazu unter <a href="/courts#c-fundament">Fundament</a>.'],
+        ['frage' => 'Wie viel Garantie gibt es auf einen Standard Court?', 'antwort' => 'Padel Factory nennt 15 Jahre Herstellergarantie auf die Konstruktion (lt. Hersteller). Bei 100% Padel sind es 2 Jahre Gewährleistung. Die Garantie gewährt immer der jeweilige Hersteller, nicht die THE COURT GmbH. Welche Bedingungen gelten, prüfen wir für dein Projekt mit dem Hersteller.'],
     ],
     'others' => [
         ['Premium', 'Panorama', 'Deutlich weniger sichtbare Streben, größere Glasflächen und eine offenere Anmutung. Bessere Sicht für Zuschauer und ein hochwertiger Gesamteindruck.', '/panorama-court', 'Zum Panorama Court', '/media/courts/panorama.jpg'],
