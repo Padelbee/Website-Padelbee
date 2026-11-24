@@ -146,3 +146,15 @@ addEventListener('hashchange',route); route();
   if(!RM){ document.querySelectorAll('.variant').forEach(v=>io2.observe(v)); }
 })();
 
+
+/* Keine Hurenkinder: letzte zwei Wörter eines Absatzes zusammenhalten (alle Bildschirmgrößen, Text bleibt gleich) */
+(function(){
+  const sel='main p, main li, main figcaption, main dd, section p, section li, section figcaption, section h3, .lead';
+  document.querySelectorAll(sel).forEach(el=>{
+    if(el.closest('form,nav,header,footer,.chips,.c-stats,.dd-menu')||el.querySelector('[data-type]')||el.hasAttribute('data-type')) return;
+    const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let last=null,n; while(n=w.nextNode()) if(n.textContent.trim()) last=n;
+    if(!last) return; const s=last.textContent; const m=s.match(/^([\s\S]*\S)\s+(\S+)(\s*)$/); if(!m) return;
+    const tail=m[2]; const prev=m[1].split(/\s/).pop(); if((prev+tail).length>28) return;
+    last.textContent=m[1]+' '+tail+m[3];
+  });
+})();
