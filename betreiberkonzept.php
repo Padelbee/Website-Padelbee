@@ -40,8 +40,8 @@ tc_page_start([
   <div class="inner" style="padding-block:0 40px">
     <div class="c-stats">
       <div><b data-count="20" data-pre="+">+20</b><span>Jahre Racketsports<em class="st-sub">Betrieb von Sportanlagen</em></span></div>
-      <div><b data-count="12">12</b><span>Padel-Courts<em class="st-sub">Referenzanlage Scheck Club</em></span></div>
-      <div><b data-count="14" data-pre="+">+14</b><span>Jahre Padel-Erfahrung</span></div>
+      <div><b data-count="12">12</b><span>Padel-Courts<em class="st-sub">Referenzanlage Scheck Club, eine der größten Deutschlands</em></span></div>
+      <div><b data-count="14" data-pre="+">+14</b><span>Jahre Padel-Erfahrung<em class="st-sub">in Planung, Fundament- und Platzbau und Betrieb</em></span></div>
       <div><b data-count="30" data-plus>30+</b><span>Partner</span></div>
     </div>
   </div>
@@ -51,12 +51,13 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Betrieb</p>
     <h2 class="reveal">Unser <span class="hl">Leistungsspektrum.</span></h2>
-    <p class="lead">Unsere Leistungen reichen von Betreiberkonzept, Marketing und Community-Aufbau über Sponsoren und Academy bis zu Events und Automaten. Für alles hast du einen Ansprechpartner.</p>
+    <p class="lead">Ein Ansprechpartner für jede Phase.</p>
     <div class="cards c3">
 <?php foreach ($leistungen as $l): ?>
       <article class="card reveal"><div class="k"><?= $l[0] !== '' ? 'Leistung ' . $l[0] : 'Leistungsspektrum' ?></div><h3 data-type><?= $l[1] ?></h3><p><?= $l[2] ?></p><?php if ($l[3]): ?><a class="btn ghost-d" href="<?= $l[3] ?>" style="margin-top:20px"><?= $l[4] ?></a><?php endif; ?></article>
 <?php endforeach; ?>
     </div>
+    <div class="b-franchise reveal"><div class="k">Auf Wunsch</div><h3 data-type>Franchise</h3><p>Wer eine starke Marke will, bekommt ein erprobtes Konzept.</p></div>
   </div>
 </section>
 
@@ -69,11 +70,10 @@ tc_page_start([
       <article class="card b-smart reveal">
         <div class="k">Sportogo · Smart Solutions</div>
         <h3 data-type>Smart Access &amp; Light Control</h3>
-        <p>Licht und Zugang laufen automatisch mit deinen Buchungen. Kein Licht brennt umsonst, niemand braucht einen Schlüssel.</p>
-        <ul class="b-tick"><li>Automatische Lichtsteuerung, mit Buchungen verknüpft</li><li>Zugangskontrolle, mit Buchungs-App verknüpft</li><li>Inklusive Installationsanleitung für Elektriker</li></ul>
-        <p class="b-once"><b>2.000 €</b> einmalig, netto</p>
-        <div class="b-fees"><div><b>49 €</b><span>pro Monat<em>1 bis 4 Courts</em></span></div><div><b>89 €</b><span>pro Monat<em>5 bis 8 Courts</em></span></div><div><b>129 €</b><span>pro Monat<em>9 bis 12 Courts</em></span></div><div><b>13+</b><span>Courts<em>auf Anfrage</em></span></div></div>
-        <p class="b-note">Für Licht- und Zutrittssteuerung sind Relais und elektrische Schlösser zu installieren, sie sind nicht im Angebot enthalten. Alle Preise netto. Mehr zu den Preisen und Automaten unter <a href="/automatenloesungen#a-smart">Automatenlösungen</a>.</p>
+        <p>Das Flutlicht brennt, aber keiner spielt. Oder Spieler stehen vor verschlossener Tür, weil niemand aufschließt. Smart Access &amp; Light Control verknüpft Licht und Zugang direkt mit dem Buchungssystem. Wer gebucht hat, kommt rein. Das Licht geht zur gebuchten Zeit an und danach wieder aus.</p>
+        <ul class="b-tick"><li>Keine Schlüsselübergabe, kein Personal vor Ort</li><li>Strom nur, wenn gespielt wird</li><li>Volle Kontrolle über Zugang und Auslastung</li><li>Inklusive Installationsanleitung für Elektriker</li></ul>
+        <p class="b-once"><b>2.000 €</b> einmalig, dazu 49 bis 129 € im Monat je nach Anzahl der Courts</p>
+        <p class="b-note">Relais und elektrische Schlösser sind nicht im Angebot enthalten. Alle Preise netto. Die Preisstaffel findest du unter <a href="/automatenloesungen#a-smart">Automatenlösungen</a>.</p>
       </article>
       <div class="b-partners">
         <p class="label" data-type>Digital-Partner</p>
@@ -96,7 +96,7 @@ tc_page_start([
     <p class="lead">Wir bringen Padel dorthin, wo Spieler, Vereine und Betreiber zusammenkommen. Dafür arbeiten wir mit starken Partnern aus Academy, Events und Coaching zusammen.</p>
     <div class="cards c3 b-events">
       <article class="card reveal"><div class="k">Turnierserie</div><h3 data-type>Rafa Nadal Padel Tour 2026</h3><p>Die Tour macht 2026 an drei Standorten in Deutschland Station, in München im Scheck Club, in Düsseldorf bei Mitte Padel und in Berlin bei Padel Ludwigsfelde.</p></article>
-      <article class="card reveal"><div class="k">Format</div><h3 data-type>Best-of-Three-Challenge</h3><p>Das Team, das zuerst 2 Punkte holt, gewinnt das Match. Gespielt wird im einfachen K.&#8209;o.&#8209;System, das Gewinnerteam nimmt 1.000 € Preisgeld mit nach Hause.</p></article>
+      <article class="card reveal"><div class="k">Format</div><h3 data-type>Best-of-Three-Challenge</h3><p>Im Rapid-Format gewinnt das Team, das zuerst 2 Punkte holt. Gespielt wird im einfachen K.&#8209;o.&#8209;System, wer verliert, scheidet aus. Das Gewinnerteam nimmt 1.000 € Preisgeld mit nach Hause.</p></article>
       <article class="card reveal"><div class="k">Messen</div><h3 data-type>f.re.e und Active Connected</h3><p>Gemeinsam mit der MPM GmbH und Sports Connected bringen wir Racketsport auf die f.re.e München vom 10. bis 14. Februar 2027. Auf der Active Connected leiten wir den Bereich Racketsports.</p></article>
     </div>
     <div class="logos">
@@ -107,6 +107,7 @@ tc_page_start([
       <div class="lg" role="img" aria-label="Scheck Club"><span class="t">Referenzclub</span><div class="m" data-logo="scheck" data-h="40"></div></div>
       <div class="lg"><span class="t">Messe</span><div class="txt">Sports Tech<small>Nation 2026</small></div></div>
     </div>
+    <div class="b-eventcta reveal"><div><h3 data-type>Dein Club beim nächsten Event?</h3><p>Ob Turnier, Messe oder ein eigenes Format auf deiner Anlage, wir prüfen gemeinsam, was zu deinem Club passt.</p></div><a class="btn" href="#kontakt">Event anfragen</a></div>
   </div>
 </section>
 
@@ -120,12 +121,17 @@ tc_page_start([
       <article class="card reveal"><div class="k">Modell 2</div><h3 data-type>Leasing</h3><p>Gerade bei mobilen Plattformen und Automaten eine starke Option. Die Raten fließen aus dem laufenden Betrieb, die Liquidität bleibt.</p></article>
       <article class="card dk reveal"><div class="k">Modell 3</div><h3 data-type>Joint Venture</h3><p>Mit dem Motions Racket Club stellst du als Verein nur die Fläche. Bau, Finanzierung und Betrieb übernimmt das Joint Venture. Du bekommst Pacht und investierst 0 €.</p></article>
     </div>
+    <p class="lead b-choose">Welcher Weg passt, hängt von deinen Zielen ab. Willst du die volle Kontrolle oder planbare Einnahmen ohne Investitionsrisiko? Wir rechnen beide Seiten mit dir durch.</p>
     <div class="b-jv reveal">
       <div class="b-jv-logos"><div class="lg" role="img" aria-label="Motions Racket Club"><span class="t">Joint Venture</span><div class="m" data-logo="mrc" data-h="34"></div></div><div class="lg" role="img" aria-label="mindspringpadel"><span class="t">Finanzierung</span><div class="m" data-logo="mindspring" data-h="34"></div></div></div>
       <div class="b-jv-body">
         <h3 data-type>Padel im Tennisverein</h3>
-        <p>Wir entwickeln, der Motions Racket Club betreibt. Dein Verein stellt die Fläche gegen Pacht, pflegt Außenfläche und Courts, stellt die Sanitärräume und trägt kein Investitionsrisiko. Deine Mitglieder bekommen 30 % Rabatt auf den Stundenpreis, an allen MRC-Standorten.</p>
-        <div class="facts vm-facts"><span>0 € Investition</span><span>Pacht pro Platz</span><span>30 % Mitgliederrabatt</span><span>24 h früher buchen</span></div>
+        <p>Wir entwickeln, der Motions Racket Club betreibt. So bleibt dein Verein Gastgeber, aber nicht Unternehmer.</p>
+        <div class="b-roles">
+          <div><div class="k">Das Joint Venture übernimmt</div><ul class="b-list"><li>Bau, Finanzierung und Betrieb</li><li>Jugend- und Trainingsangebote</li><li>Turniere zu rabattierten Konditionen</li><li>Marke „Motions Racket Club [Standort]“ mit Co-Branding</li></ul></div>
+          <div><div class="k">Dein Verein übernimmt</div><ul class="b-list"><li>Fläche gegen ortsübliche Pacht, pro Tennisplatz und Monat, langfristig</li><li>Pflege der Außenfläche und Courts</li><li>Sanitärräume</li><li>Padel im Vereinsleben verankern</li></ul></div>
+        </div>
+        <div class="facts vm-facts"><span>30 % Mitgliederrabatt an allen MRC-Standorten</span><span>24 h früher buchen</span><span>Events, Training und Partnerrabatte</span></div>
         <p class="b-jv-note">Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.</p>
         <a class="btn ghost-d" href="#kontakt" style="margin-top:8px">Joint Venture anfragen</a>
       </div>

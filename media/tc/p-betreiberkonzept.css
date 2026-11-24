@@ -33,3 +33,18 @@
 @media (max-width:860px){#b-netzwerk .logos{grid-template-columns:repeat(2,minmax(0,1fr))}}
 /* Event-Karten: auf schmalen Bildschirmen untereinander statt 2 + 1 */
 @media (max-width:980px){.b-events{grid-template-columns:1fr!important}}
+/* Franchise, Event-CTA, Modellwahl, Aufgabenteilung Joint Venture */
+.b-franchise{margin-top:20px;padding:24px 28px;background:var(--white);border:1px solid var(--line);border-left:6px solid var(--yellow);display:grid;grid-template-columns:minmax(0,1fr);gap:4px}
+.b-franchise .k{font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--petrol)}
+.b-franchise h3{margin:6px 0 0;font-size:clamp(24px,2.2vw,32px)}
+.b-franchise p{margin:8px 0 0;color:var(--muted)}
+.b-eventcta{margin-top:24px;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:24px 28px;background:var(--petrol);color:var(--white);border-top:4px solid var(--yellow)}
+.b-eventcta h3{margin:0;color:var(--yellow);font-size:clamp(24px,2.2vw,32px)}
+.b-eventcta p{margin:8px 0 0;color:var(--petrol-200);max-width:640px}
+.b-choose{margin-top:32px}
+.b-roles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:18px}
+.b-roles .k{font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--petrol)}
+.b-list{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px;color:var(--muted);font-size:15px}
+.b-list li{padding-left:20px;position:relative}
+.b-list li::before{content:"";position:absolute;left:0;top:.65em;width:10px;height:2px;background:var(--yellow)}
+@media (max-width:640px){.b-roles{grid-template-columns:1fr}}
