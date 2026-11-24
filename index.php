@@ -102,7 +102,7 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
 <?php endforeach; ?>
       <article class="card svc dk reveal"><div class="k">Plattform</div><h3 data-type>360°</h3><p>Alles aus einer Hand, von der Idee bis zum laufenden Betrieb.</p><a class="svc-more" href="#kontakt">Projekt anfragen</a></article>
     </div>
-    <div class="claim3 reveal" role="list" aria-label="100 % kompetent, 100 % flexibel, 100 % kundenorientiert"><div role="listitem"><b>100&nbsp;%</b><span>kompetent</span></div><div role="listitem"><b>100&nbsp;%</b><span>flexibel</span></div><div role="listitem"><b>100&nbsp;%</b><span>kundenorientiert</span></div></div>
+    <div class="claim3 reveal" role="list" aria-label="100 % kompetent, 100 % flexibel, 100 % kundenorientiert"><div role="listitem"><b>100&nbsp;%</b><span>kompetent</span></div><div role="listitem"><b>100&nbsp;%</b><span>flexibel</span></div><div role="listitem"><b>100&nbsp;%</b><span>kunden&shy;orientiert</span></div></div>
     <div class="teaser"><div><h3 data-type>Courts, Hallen &amp; <span>Fundamente.</span></h3><p>Fünf Hersteller, drei Court-Varianten, unsere Favoriten für Outdoor und Indoor. Dazu <a href="/halle">Hallen</a> ab 280 €/m² netto.</p></div><a class="btn" href="/courts">Zu den Courts</a>
       <div class="vtiles">
         <a class="vt" href="/standard-court"><span class="k">Einstieg</span><b>Standard Court</b><span class="s">Preis-Leistung</span></a>

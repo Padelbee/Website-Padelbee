@@ -120,5 +120,5 @@
 .claim3 div{padding:clamp(18px,2.4vw,30px) clamp(14px,2vw,28px);text-align:center;min-width:0}
 .claim3 div+div{border-left:1px solid rgba(255,255,255,.15)}
 .claim3 b{display:block;font-family:var(--f-display);font-style:italic;font-weight:700;font-size:clamp(32px,4vw,56px);line-height:1;color:var(--yellow)}
-.claim3 span{display:block;margin-top:10px;font-weight:600;font-size:clamp(11px,1vw,13px);letter-spacing:.2em;text-transform:uppercase;color:var(--white);overflow-wrap:anywhere}
+.claim3 span{display:block;margin-top:10px;font-weight:600;font-size:clamp(11px,1vw,13px);letter-spacing:.2em;text-transform:uppercase;color:var(--white);hyphens:manual;-webkit-hyphens:manual}
 @media (max-width:560px){.claim3 b{font-size:28px}.claim3 span{font-size:9.5px;letter-spacing:.12em}}
