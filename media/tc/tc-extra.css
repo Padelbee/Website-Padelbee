@@ -455,3 +455,7 @@ h1,h2,h3,.lead,.m-quote{text-wrap:balance}
 }
 /* Silbentrennung nur für wirklich lange Wörter (nicht „Langle-bigkeit“) */
 .vm-specs dd,.vr-table td,.fd-plat td{hyphenate-limit-chars:18 8 8}
+
+/* Schmale Karten: sehr lange Wörter (ab 16 Zeichen, z. B. „Zugangskontrolle“, „Widerstandsfähigkeit“) dürfen getrennt werden,
+   damit davor keine Löcher entstehen. Kürzere Wörter werden nie getrennt. */
+.card p,.gbox p,.vm-specs dd,.vr-item p,.maker p,.favbody p,.fd p,.card li,.gbox li{hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:16 7 7}

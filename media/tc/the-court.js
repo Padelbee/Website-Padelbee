@@ -197,7 +197,7 @@ addEventListener('hashchange',route); route();
     if(el.closest('form,nav,header,footer,.dd-menu')) return;
     const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let n; const ns=[]; while(n=w.nextNode()) ns.push(n);
     ns.forEach(t=>{ const v=t.textContent.replace(/(^|[\s(])([A-Za-zÄÖÜäöüß0-9°%]{1,10})-([A-Za-zÄÖÜäöüß0-9]{1,10})(?=[\s.,;)!? ]|$)/g,(x,a,b,c)=>a+b+'‑'+c)
-      .replace(/\S*[A-Za-zÄÖÜäöüß0-9]\/[A-Za-zÄÖÜäöüß0-9]\S*/g,w=>w.replace(/\/(?!\u2060)/g,'/\u2060').replace(/-/g,'‑')); // „Go/No-Go-Empfehlung“ als Ganzes, nicht an / oder - trennen
+      .replace(/([A-Za-zÄÖÜäöüß0-9])\/(?!\u2060)([A-Za-zÄÖÜäöüß0-9])/g,'$1/\u2060$2'); // nicht am Schrägstrich trennen; am Bindestrich vor einem langen Wortteil darf getrennt werden (sonst Loch in der Zeile davor)
       if(v!==t.textContent) t.textContent=v;
       // „<span>360°</span>-Plattform“: nicht vor dem Bindestrich umbrechen
       const ps=t.previousSibling; if(ps&&ps.nodeType===1&&/^-\S/.test(t.textContent)) t.textContent='\u2060‑'+t.textContent.slice(1);
