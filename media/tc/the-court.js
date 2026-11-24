@@ -148,7 +148,7 @@ addEventListener('hashchange',route); route();
 
 
 /* Textbild zentral (Abnahme Bietal 24.11.): gilt für alle Seiten und alle Breiten, ändert keinen Text, nur Umbruchstellen.
-   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn sie in der echten Schrift höchstens 80 % der aktuellen Zeile brauchen (bei jeder Fenstergröße neu).
+   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn sie in der echten Schrift höchstens 92 % der aktuellen Zeile brauchen (bei jeder Fenstergröße neu).
    2) „&“ und Zahlen bleiben am folgenden Wort („Planung & Architektur“, „365 Tage“, „12 mm“).
    3) Gilt auch für Überschriften mit Tipp-Effekt (der Effekt liest den Text erst beim Scrollen ein). */
 (function(){
@@ -168,7 +168,7 @@ addEventListener('hashchange',route); route();
     const prev=m[1].split(/\s/).pop();
     WID.push({el, node:last, idx:m[1].length, pair:prev+' '+m[2]});
   });
-  // Nur zusammenhalten, wenn beide Wörter zusammen höchstens 80 % der aktuellen Zeilenbreite brauchen (echte Schrift gemessen)
+  // Nur zusammenhalten, wenn beide Wörter zusammen höchstens 92 % der aktuellen Zeilenbreite brauchen (echte Schrift gemessen)
   const ctx=document.createElement('canvas').getContext('2d');
   function apply(){
     WID.forEach(x=>{
@@ -177,7 +177,7 @@ addEventListener('hashchange',route); route();
       const cs=getComputedStyle(x.el); ctx.font=cs.fontStyle+' '+cs.fontWeight+' '+cs.fontSize+' '+cs.fontFamily;
       let pw=ctx.measureText(x.pair).width; if(cs.textTransform==='uppercase') pw=ctx.measureText(x.pair.toUpperCase()).width;
       pw+=x.pair.length*(parseFloat(cs.letterSpacing)||0);
-      const ok=x.el.clientWidth>0 && pw<=x.el.clientWidth*0.8;
+      const ok=x.el.clientWidth>0 && pw<=x.el.clientWidth*0.92;
       const ch=ok?NB:' '; if(t[x.idx]!==ch) x.node.textContent=t.slice(0,x.idx)+ch+t.slice(x.idx+1);
     });
   }
