@@ -291,3 +291,4 @@
 #kontakt .kf-wrap .kform{max-width:760px}
 #kontakt .lead{font-size:clamp(21px,2.4vw,30px);line-height:1.45;max-width:900px;color:var(--white)}
 #kontakt .lead{max-width:1000px;text-wrap:balance}
+#kontakt .lead{font-size:clamp(19px,2vw,24px);color:var(--muted-d)}
