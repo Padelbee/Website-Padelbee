@@ -59,6 +59,7 @@ tc_page_start([
 <script>(()=>{const v=document.getElementById('introVid'),b=document.getElementById('introSnd');if(!v||!b)return;const OFF='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z" fill="currentColor"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>',ON='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z" fill="currentColor"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>';
 if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();v.controls=true;}
 b.addEventListener('click',()=>{v.muted=!v.muted;if(!v.muted)v.play();b.innerHTML=v.muted?OFF:ON;b.setAttribute('aria-label',v.muted?'Ton einschalten':'Ton ausschalten');b.title=b.getAttribute('aria-label');b.setAttribute('aria-pressed',String(!v.muted));});})();</script>
+<script>(()=>{const v=document.getElementById('projVid');if(!v)return;if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.controls=true;return;}new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)v.play().catch(()=>{});else v.pause();}),{threshold:.35}).observe(v);})();</script>
 <script>(()=>{const s=document.querySelector('.v-zoom'),f=s&&s.querySelector('figure');if(!f)return;if(matchMedia('(prefers-reduced-motion: reduce)').matches){f.style.setProperty('--z',1);return;}
 let t=0;const u=()=>{t=0;const r=s.getBoundingClientRect(),vh=innerHeight;const p=Math.min(1,Math.max(0,(vh-r.top)/(vh*.85)));f.style.setProperty('--z',p.toFixed(3));};
 const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{passive:true});addEventListener('resize',q);u();})();</script>
@@ -167,23 +168,10 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
     <p class="label" data-type>Projekte 2026</p>
     <h2 class="reveal">Grenzenlos <span class="hl">unterwegs.</span></h2>
     <p class="lead">50 Projekte von Garbsen bis Graz. Jeder Punkt ist eine Anlage, die wir beraten, geplant oder gebaut haben, gesteuert aus Unterföhring bei München.</p>
-    <div class="wrap">
-      <div class="mapbox" id="mapbox">
-        <svg id="map" viewBox="0 0 1000 1100" role="img" aria-label="Karte mit 50 Projektstandorten in Deutschland und Österreich">
-          <g id="countries"></g><g id="trails"></g><g id="pins"></g>
-          <g id="hq"></g>
-        </svg>
-      </div>
-      <div class="panel">
-        <p class="label" data-type>Projekte</p>
-        <div class="counter"><span class="hl" id="count">50</span></div>
-        <div class="city" id="city">Unterföhring</div>
-        <div class="sub" id="sub">Scheck Club · Headquarter</div>
-        <ul class="regions" id="regions"></ul>
-        <button class="btn replay" id="replay" type="button">Animation neu starten</button>
-        <a class="btn" href="/referenzen" style="margin-top:12px">Referenzen ansehen</a>
-      </div>
-    </div>
+    <figure class="proj-film reveal">
+      <video id="projVid" muted loop playsinline preload="none" poster="/media/projekte-karte.jpg" src="/media/projekte-karte.mp4" aria-label="Animierte Karte: 50 Projekte in Deutschland und Österreich, von Unterföhring bis Graz"></video>
+    </figure>
+    <p style="margin-top:28px"><a class="btn" href="/referenzen">Referenzen ansehen</a></p>
   </div>
 </section>
 
@@ -213,15 +201,6 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
   </div>
 </section>
 
-<section class="band dark" id="film">
-  <div class="inner">
-    <p class="label" data-type>Film</p>
-    <h2 class="reveal">Sehen statt&nbsp;<span class="kw">lesen.</span></h2>
-    <div class="films one">
-      <div class="film"><video controls muted playsinline preload="none" poster="/media/projekte.jpg" src="/media/projekte.mp4" aria-label="Film: 50 Projekte, 3 Länder"></video><h3 data-type>50 Projekte, 3 Länder</h3><p>Unsere Projekte auf der Karte · 45 s</p></div>
-    </div>
-  </div>
-</section>
 
 <section class="band grid-bg" id="faq" style="background-color:var(--grey-050)">
   <div class="inner">
