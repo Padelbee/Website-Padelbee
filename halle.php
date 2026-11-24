@@ -31,7 +31,8 @@ tc_page_start([
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Halle</p>
       <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padel Halle · Polycarbonat · ThermoRoof</span>Moderne <span class="kw">Hallen.</span></h1>
-      <p class="lead">Für deine Padel Halle haben wir uns bewusst für das Gesamtsystem von Padel Factory entschieden, <a href="/courts">Courts</a> und Hallensystem aus einer Hand. Das garantiert technisch sauber abgestimmte, langlebige Gesamtkonzepte. Darüber hinaus haben wir weitere Partner für den Hallenbau und suchen für dich die richtige Lösung.</p>
+      <p class="lead">Für deine Padel Halle haben wir uns bewusst für das Gesamtsystem von Padel Factory entschieden, <a href="/courts">Courts</a> und Hallensystem aus einer Hand.</p>
+      <p class="lead">Das garantiert technisch sauber abgestimmte, langlebige Gesamtkonzepte. Darüber hinaus haben wir weitere Partner für den Hallenbau und suchen für dich die richtige Lösung.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Halle anfragen</a><a class="btn ghost" href="#h-systeme">Hallensysteme vergleichen</a></div>
     </div>
     <figure class="courtfig courtphoto"><img src="/media/courts/halle.jpg" alt="Polycarbonat-Halle mit zwei Courts, Luftansicht als Rendering"></figure>
