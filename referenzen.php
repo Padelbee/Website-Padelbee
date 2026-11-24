@@ -27,7 +27,9 @@ tc_page_start([
     'page_type' => 'CollectionPage',
     'schema' => [$refSchema],
     'extra_scripts' => '<script>window.REF_STATIC=' . $refJson . ';window.REF_LISTE=' . json_encode($refListe) . ';</script>' . "\n"
-        . '<script src="/media/tc/referenzen.js?v=' . TC_ASSET_VERSION . '"></script>',
+        . '<script src="/media/tc/referenzen.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n"
+        . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n"
+        . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
 ]);
 ?>
 <section class="band dark grid-bg r-hero">
@@ -41,7 +43,7 @@ tc_page_start([
       <div><b data-count="3">3</b><span>Länder</span></div>
       <div><b data-count="12">12</b><span>Courts im Scheck Club</span></div>
     </div>
-    <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="/#kontakt">Projekt anfragen</a><a class="btn ghost" href="#r-liste">Alle Projekte ansehen</a></div>
+    <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Projekt anfragen</a><a class="btn ghost" href="#r-liste">Alle Projekte ansehen</a></div>
   </div>
 </section>
 
@@ -136,13 +138,15 @@ tc_page_start([
   </div>
 </section>
 
-<section class="band dark grid-bg">
-  <div class="inner cta-band">
-    <div style="max-width:760px">
-      <h2>Dein Projekt ist das <span class="kw">nächste.</span></h2>
-      <p class="lead" style="margin:16px 0 0">Gemeinsam entwickeln wir eine Lösung, die funktional überzeugt und deine Anlage klar und unverwechselbar positioniert.</p>
+<section class="band dark grid-bg end" id="kontakt">
+  <div class="inner">
+    <h2>Dein Projekt ist das <span class="kw">nächste.</span></h2>
+    <p class="lead" style="margin:18px auto 0">Gemeinsam entwickeln wir eine Lösung, die funktional überzeugt und deine Anlage klar und unverwechselbar positioniert.</p>
+    <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+      <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
+      <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
     </div>
-    <a class="btn" href="/#kontakt">Projekt anfragen</a>
+<?php $tcFormButton = 'Projekt anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
   </div>
 </section>
 
