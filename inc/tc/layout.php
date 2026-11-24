@@ -75,6 +75,7 @@ function tc_menu(): array
             'Standard Court' => '/standard-court',
             'Panorama Court' => '/panorama-court',
             'Full-Panorama Court' => '/premier-court',
+            'Hybrid Court' => '/hybrid-court',
             'Halle' => '/halle',
         ],
         'unternehmen' => [
