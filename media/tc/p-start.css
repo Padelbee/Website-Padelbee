@@ -122,3 +122,10 @@
 .claim3 b{display:block;font-family:var(--f-display);font-style:italic;font-weight:700;font-size:clamp(32px,4vw,56px);line-height:1;color:var(--yellow)}
 .claim3 span{display:block;margin-top:10px;font-weight:600;font-size:clamp(11px,1vw,13px);letter-spacing:.2em;text-transform:uppercase;color:var(--white);hyphens:manual;-webkit-hyphens:manual}
 @media (max-width:560px){.claim3 b{font-size:28px}.claim3 span{font-size:9.5px;letter-spacing:.12em}}
+/* Claim schlanker (Wunsch Bietal): helle Leiste, kein dunkler Block */
+.claim3{background:transparent;border-top:0;border-block:1px solid var(--line);margin-top:32px}
+.claim3 div{display:flex;align-items:baseline;justify-content:center;gap:12px;padding:16px 12px}
+.claim3 div+div{border-left:1px solid var(--line)}
+.claim3 b{font-size:clamp(22px,2vw,28px);color:var(--petrol);background:linear-gradient(transparent 58%,var(--yellow) 58%);padding:0 2px}
+.claim3 span{margin-top:0;color:var(--petrol);font-size:12px}
+@media (max-width:700px){.claim3 div{flex-direction:column;align-items:center;gap:6px;padding:14px 6px}.claim3 b{font-size:22px}.claim3 span{font-size:9.5px}}
