@@ -148,7 +148,7 @@ addEventListener('hashchange',route); route();
 
 
 /* Textbild zentral (Abnahme Bietal 24.11.): gilt für alle Seiten und alle Breiten, ändert keinen Text, nur Umbruchstellen.
-   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn das letzte Wort kurz ist (max. 35 % der Zeile) und beide zusammen max. 60 % brauchen (bei jeder Fenstergröße neu).
+   1) Keine Hurenkinder: letzte zwei Wörter zusammenhalten, wenn das letzte Wort kurz ist (max. 50 % der Zeile) und beide zusammen max. 60 % brauchen (bei jeder Fenstergröße neu).
    2) „&“ und Zahlen bleiben am folgenden Wort („Planung & Architektur“, „365 Tage“, „12 mm“).
    3) Gilt auch für Überschriften mit Tipp-Effekt (der Effekt liest den Text erst beim Scrollen ein). */
 (function(){
@@ -179,10 +179,10 @@ addEventListener('hashchange',route); route();
       const up=cs.textTransform==='uppercase', ls=parseFloat(cs.letterSpacing)||0;
       const mw=str=>ctx.measureText(up?str.toUpperCase():str).width+str.length*ls;
       const W=x.el.clientWidth, tail=x.pair.slice(x.pair.indexOf(' ')+1);
-      // Nur ein wirklich kurzes letztes Wort (höchstens 35 % der Zeile) wird an das vorige gebunden,
+      // Nur ein kurzes letztes Wort (höchstens 50 % der Zeile) wird an das vorige gebunden,
       // und nur wenn beide zusammen höchstens 60 % brauchen. Sonst entsteht in der Zeile davor ein Loch
       // (Beispiel: „farblich“ allein, weil „angepasste Stahlkonstruktion.“ zusammenhing).
-      const ok=W>0 && mw(tail)<=W*0.35 && mw(x.pair)<=W*0.6;
+      const ok=W>0 && mw(tail)<=W*0.5 && mw(x.pair)<=W*0.6;
       const ch=ok?NB:' '; if(t[x.idx]!==ch) x.node.textContent=t.slice(0,x.idx)+ch+t.slice(x.idx+1);
     });
   }
