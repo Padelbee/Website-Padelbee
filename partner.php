@@ -168,9 +168,7 @@ tc_page_start([
         <div class="pg-s">
           <p class="label k" data-type><?= $g['k'] ?></p>
           <h3 data-type><?= $g['t'] ?></h3>
-<?php if ($g['text'] !== ''): ?>
           <p class="t"><?= $g['text'] ?></p>
-<?php endif; ?>
           <div class="pg-logos">
 <?php foreach ($g['tiles'] as $t) $pTile($t); ?>
           </div>
