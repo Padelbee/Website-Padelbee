@@ -88,7 +88,7 @@ tc_page_start([
     <p class="lead">Hier findest du Antworten rund um deine Padelanlage, von Kosten und Ablauf über Courts und Halle bis zu Automaten, Padel im Verein und unseren Referenzen.</p>
     <nav class="faq-nav" aria-label="FAQ-Themen">
 <?php foreach ($gruppen as $g): ?>
-      <a href="#<?= $g['id'] ?>"><?= strip_tags($g['h2']) ?></a>
+      <a href="#<?= $g['id'] ?>"><?= rtrim(strip_tags($g['h2']), '.') ?></a>
 <?php endforeach; ?>
     </nav>
   </div>
