@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /m-senden.php
 Disallow: /danke.php
-Disallow: /verwaltung
+Disallow: /verwaltung.php
 Disallow: /verwaltung-api.php
 
 Sitemap: https://padelbee.de/sitemap.xml

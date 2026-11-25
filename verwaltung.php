@@ -18,7 +18,7 @@ if (($_GET['abmelden'] ?? '') === '1') {
     $_SESSION = [];
     session_destroy();
     setcookie('pb_admin', '', ['expires' => time() - 3600, 'path' => '/']);
-    header('Location: /verwaltung');
+    header('Location: /verwaltung.php');
     exit;
 }
 
@@ -35,7 +35,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
         $_SESSION['pb_admin'] = true;
         $_SESSION['pb_admin_until'] = time() + 8 * 3600;
         $_SESSION['pb_csrf'] = bin2hex(random_bytes(24));
-        header('Location: /verwaltung');
+        header('Location: /verwaltung.php');
         exit;
     } else {
         cs_login_failed($ip);
@@ -48,7 +48,7 @@ $angemeldet = cs_is_admin();
 $csrf = cs_csrf();
 
 tc_page_start([
-    'path' => '/verwaltung',
+    'path' => '/verwaltung.php',
     'title' => 'Verwaltung · Padelbee',
     'description' => 'Anmeldung zur Verwaltung von Projekten und Blog.',
     'robots' => 'noindex,nofollow',
@@ -64,11 +64,11 @@ tc_page_start([
     <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px">
       <a class="btn" href="/referenzen#r-liste">Projekte bearbeiten</a>
       <a class="btn" href="/blog#b-liste">Blog bearbeiten</a>
-      <a class="btn ghost" href="/verwaltung?abmelden=1">Abmelden</a>
+      <a class="btn ghost" href="/verwaltung.php?abmelden=1">Abmelden</a>
     </div>
 <?php else: ?>
     <p class="lead">Hier meldest du dich an, um Projekte und Blog-Artikel anzulegen und zu bearbeiten.</p>
-    <form method="post" action="/verwaltung" class="pb-login" style="margin-top:28px;max-width:420px">
+    <form method="post" action="/verwaltung.php" class="pb-login" style="margin-top:28px;max-width:420px">
       <input type="hidden" name="csrf" value="<?= tc_h($csrf) ?>">
       <label style="display:grid;gap:8px;font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--white)">Passwort
         <input type="password" name="passwort" required autocomplete="current-password" style="font:inherit;font-size:16px;letter-spacing:0;text-transform:none;padding:12px 14px;border:1px solid var(--line-d);background:#fff;color:var(--ink)">

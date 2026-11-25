@@ -81,7 +81,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     const bar = document.createElement('div');
     bar.className = 'pb-adminbar';
-    bar.innerHTML = 'Bearbeitungsmodus aktiv · <a href="/verwaltung">Verwaltung</a> · <a href="/verwaltung?abmelden=1">Abmelden</a>';
+    bar.innerHTML = 'Bearbeitungsmodus aktiv · <a href="/verwaltung.php">Verwaltung</a> · <a href="/verwaltung.php?abmelden=1">Abmelden</a>';
     document.body.appendChild(bar);
   });
 })();
