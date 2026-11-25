@@ -5,3 +5,9 @@
 .band .faq-list{margin-top:28px}
 .f-hero .inner{display:block}
 .f-hero .lead{max-width:860px}
+/* Handy: Themen als saubere Liste untereinander statt ungleich breiter Kästen */
+@media (max-width:680px){
+  .faq-nav{display:block;margin-top:28px;border-top:1px solid var(--line-d)}
+  .faq-nav a{display:flex;justify-content:space-between;align-items:center;padding:15px 0;border:0;border-bottom:1px solid var(--line-d)}
+  .faq-nav a::after{content:"\2193";color:var(--yellow);font-size:14px;letter-spacing:0}
+}
