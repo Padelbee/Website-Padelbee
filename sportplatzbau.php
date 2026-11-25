@@ -2,7 +2,13 @@
 require __DIR__ . '/inc/tc/layout.php';
 // Inhalt: Martins Entwurf (the-court.com, Stand 23.11.2026: "Für wen wir bauen", FAQ, Partnernetzwerk),
 // Referenz SC Eching (Folie 17 und inc/tc/referenzen-data.json), Bau-Partner (Folie 3).
-// DEV-1667: Keine eigene FAQ mehr, die Antworten wiederholten die Karten und die Referenz auf dieser Seite. Alle Fragen stehen auf /faq.
+// DEV-1667: FAQ wie in Martins Entwurf; die Karten oben sind kurz, damit sich nichts wiederholt.
+$spFaq = [
+    ['frage' => 'Baut ihr auch Tennis- und Pickleballplätze?', 'antwort' => 'Ja, neben Padel planen wir auch Anlagen für Pickleball und Tennis. Ein Beispiel ist der neue Tennispark des SC Eching bei München mit 5 Rebound Ace Tennisplätzen und 2 Outdoor Padel Courts. Wir begleiten den Verein dort von der Beratung und Finanzierung über Planung, Architektur und Bau bis zu Digitalisierung und Betrieb. Mehr dazu in unseren <a href="/referenzen">Referenzen</a>.'],
+    ['frage' => 'Was bringt Padel einem Tennisverein?', 'antwort' => 'In vielen Vereinen stehen Tennisplätze leer, bei gleichen Pflegekosten. Ein Platz, der nicht bespielt wird, kostet nur. Aus einem ungenutzten Tennisplatz werden Padel-Courts, und dein Verein hat planbare Einnahmen statt Pflegekosten. Padel bringt neue Zielgruppen auf die Anlage, jüngere Spieler, Familien und Firmen, und sorgt für mehr Leben im Vereinsheim und in der Gastronomie.'],
+    ['frage' => 'Ist Padel eine Konkurrenz für Tennis?', 'antwort' => 'Nein. Padel und Tennis sind keine Konkurrenz. Wer Padel entdeckt, bleibt oft auch beim Tennis. Padel bringt zusätzlich neue Zielgruppen auf die Anlage und macht sie für neue Mitglieder attraktiv.'],
+    ['frage' => 'Lohnt sich Padel für ein Hotel?', 'antwort' => 'Padel ist der Sport, den Gäste im Urlaub ausprobieren wollen. Er ist leicht zu lernen, gesellig und perfekt für Paare, Familien und Firmengruppen. Ein Padel-Court braucht deutlich weniger Platz als ein Tennisplatz, schon ein Einzel-Court reicht für ein starkes Angebot. Mit einer <a href="/halle">Halle</a> spielst du unabhängig vom Wetter, <a href="/automatenloesungen">Verleihautomaten</a> geben Schläger und Bälle rund um die Uhr aus, und mit Logo und Court-Farbe im CI wird der Court Teil deines Hotels.'],
+];
 tc_page_start([
     'path' => '/sportplatzbau',
     'title' => 'Sportplatzbau für Tennis, Pickleball & Padel · Padelbee',
@@ -18,6 +24,7 @@ tc_page_start([
             '/sportplatzbau',
             ['serviceType' => 'Sportplatzbau', 'image' => '/media/courts/anlage_luftbild.jpg']
         ),
+        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => html_entity_decode(strip_tags($f['antwort']), ENT_QUOTES, 'UTF-8')], $spFaq), '/sportplatzbau'),
     ],
 ]);
 $spGroups = [
@@ -56,8 +63,8 @@ $spLogos = [
     <p class="label" data-type>Mehrsportanlagen</p>
     <h2 class="reveal">Mehr aus deiner Anlage <span class="hl">machen.</span></h2>
     <div class="cards c3">
-      <article class="card dk reveal"><div class="k">Tennisverein</div><h3 data-type>Leere Plätze nutzen</h3><p>In vielen Vereinen stehen Tennisplätze leer. Ein Platz, der nicht bespielt wird, kostet nur. Auf einen Tennisplatz passen bis zu zwei Padel-Courts, und Padel bringt jüngere Spieler, Familien und Firmen auf die Anlage.</p><p>Padel und Tennis sind keine Konkurrenz. Wer Padel entdeckt, bleibt oft auch beim Tennis.</p><ul class="chips"><li>Planbare Einnahmen statt Pflegekosten</li><li>Mehr Leben im Vereinsheim und in der Gastronomie</li></ul></article>
-      <article class="card dk reveal"><div class="k">Hotel</div><h3 data-type>Das Upgrade, das Gäste buchen</h3><p>Padel ist der Sport, den Gäste im Urlaub ausprobieren wollen. Er ist leicht zu lernen, gesellig und perfekt für Paare, Familien und Firmengruppen. Schon ein Einzel-Court reicht für ein starkes Angebot.</p><ul class="chips"><li><a href="/halle">Ganzjährig mit Halle</a></li><li><a href="/automatenloesungen">Ohne Personal mit Automaten</a></li><li><a href="/courts#c-marke">Mit deiner Marke</a></li></ul></article>
+      <article class="card dk reveal"><div class="k">Tennisverein</div><h3 data-type>Leere Plätze nutzen</h3><p>Padel bringt jüngere Spieler, Familien und Firmen auf deine Anlage.</p><ul class="chips"><li>Planbare Einnahmen statt Pflegekosten</li><li>Mehr Leben im Vereinsheim und in der Gastronomie</li></ul></article>
+      <article class="card dk reveal"><div class="k">Hotel</div><h3 data-type>Das Upgrade, das Gäste buchen</h3><p>Schon ein Einzel-Court reicht für ein starkes Angebot.</p><ul class="chips"><li><a href="/halle">Ganzjährig mit Halle</a></li><li><a href="/automatenloesungen">Ohne Personal mit Automaten</a></li><li><a href="/courts#c-marke">Mit deiner Marke</a></li></ul></article>
       <article class="card dk reveal"><div class="k">Pickleball</div><h3 data-type>Attraktion für Gäste</h3><p>Padel und Pickleball machen Regionen und Hotels für Gäste attraktiv. Für Pickleball arbeiten wir mit Joola zusammen.</p><div class="sp-joola" role="img" aria-label="Joola"><div class="m" data-logo="joola" data-h="44"></div></div><ul class="chips"><li><a href="/partner">Alle Partner</a></li></ul></article>
     </div>
   </div>
@@ -94,6 +101,18 @@ $spLogos = [
   </div>
 </section>
 
+
+<section class="band grid-bg" id="sp-faq" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label" data-type>FAQ</p>
+    <h2 class="reveal">Fragen zum <span class="hl">Sportplatzbau.</span></h2>
+    <div class="faq-list">
+<?php foreach ($spFaq as $f): ?>
+      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= $f['antwort'] ?></p></details>
+<?php endforeach; ?>
+    </div>
+  </div>
+</section>
 
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">

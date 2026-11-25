@@ -2,7 +2,11 @@
 require __DIR__ . '/inc/tc/layout.php';
 // Inhalt: Bauphasen 1 bis 3 (Firmenpräsentation 2026, Folie 15), Leistung 01 (Folie 6)
 // und Martins Entwurf (the-court.com, Stand 23.11.2026: Leistungen, FAQ, Ratgeber).
-// DEV-1667: Keine eigene FAQ mehr. Die Fragen stehen wie in Martins Entwurf nur einmal (Startseite, /sportplatzbau), gesammelt auf /faq.
+// DEV-1667: FAQ wie in Martins Entwurf, jede Frage nur auf einer Seite (verschoben von der Startseite bzw. aus Martins Motions-FAQ).
+$saFaq = [
+    ['frage' => 'Wie starte ich mein Projekt?', 'antwort' => 'Du startest mit einem kostenlosen Erstgespräch. Darin sprechen wir über deinen Standort, dein Budget und dein Nutzungskonzept und klären, ob Padel dort passt. Danach rechnen wir deine Anlage durch und zeigen dir, welche Courts, welches Fundament und welche Finanzierung infrage kommen. Schreib uns einfach über das <a href="#kontakt">Kontaktformular</a> oder per E-Mail.'],
+    ['frage' => 'Wie viele Padel-Courts passen auf einen Tennisplatz?', 'antwort' => 'Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ein Padel-Court braucht deutlich weniger Fläche als ein Tennisplatz. Aus einem ungenutzten Tennisplatz kann so eine kleine Padelanlage werden, ohne dass dein Verein neues Gelände braucht. Ob deine Plätze passen, prüfen wir vor Ort zusammen mit Baurecht, Lärmschutz und Licht. Mehr dazu beim <a href="/padel-court-bauen#p-genehmigung">Padel Court bauen</a>.'],
+];
 tc_page_start([
     'path' => '/standortanalyse',
     'title' => 'Standortanalyse & Erstscreening für Padel · Padelbee',
@@ -17,6 +21,7 @@ tc_page_start([
             '/standortanalyse',
             ['serviceType' => 'Standortanalyse', 'image' => '/media/leistungen/standortanalyse-karte.png']
         ),
+        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => html_entity_decode(strip_tags($f['antwort']), ENT_QUOTES, 'UTF-8')], $saFaq), '/standortanalyse'),
     ],
 ]);
 ?>
@@ -48,7 +53,6 @@ tc_page_start([
       <article class="card reveal"><div class="k">Phase 02</div><h3 data-type>Standortbesichtigung &amp; Geländeaufnahme</h3><p>Wir gehen den Standort gemeinsam mit dir ab und nehmen das Gelände genau auf.</p><ul class="chips"><li>Begehung mit dir</li><li>GPS-Vermessung &amp; Drohnenbefliegung</li><li>Infrastruktur-Erfassung</li><li>CAD-Übertrag (2D &amp; 3D)</li></ul></article>
       <article class="card reveal"><div class="k">Phase 03</div><h3 data-type>Grundlagenanalyse &amp; Konzeptentwicklung</h3><p>Wir prüfen, ob dein Vorhaben planungsrechtlich möglich ist, und entwickeln Varianten, die wir dir in 3D zeigen. Dafür arbeiten wir mit spezialisierten Architekturbüros, die effizient und schnell für ganz Deutschland planen.</p><ul class="chips"><li>Planungsrechtliche Prüfung (§34/§35 BauGB)</li><li>Technische Untersuchungen</li><li>Variantenplanung</li><li>3D-Visualisierung &amp; Kostenrahmen (DIN 276)</li></ul></article>
     </div>
-    <p class="v-rule reveal"><span class="k">Für Tennisvereine</span>Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ob deine Plätze passen, prüfen wir vor Ort zusammen mit Baurecht, Lärmschutz und Licht.<br><a class="more-link" style="white-space:normal" href="/padel-court-bauen#p-genehmigung">Worauf es bei der Genehmigung ankommt</a></p>
   </div>
 </section>
 
@@ -75,6 +79,18 @@ tc_page_start([
     <div class="teaser">
       <div><h3>Weiter mit <span>Phase 4 bis 7.</span></h3><p>Bauantrag, Freigabe, Ausschreibung und Bau deines Padel Courts.</p></div>
       <a class="btn" href="/padel-court-bauen">Padel Court bauen</a>
+    </div>
+  </div>
+</section>
+
+<section class="band grid-bg" id="s-faq" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label" data-type>FAQ</p>
+    <h2 class="reveal">Fragen zur <span class="hl">Standortanalyse.</span></h2>
+    <div class="faq-list">
+<?php foreach ($saFaq as $f): ?>
+      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= $f['antwort'] ?></p></details>
+<?php endforeach; ?>
     </div>
   </div>
 </section>

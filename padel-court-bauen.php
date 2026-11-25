@@ -2,7 +2,11 @@
 require __DIR__ . '/inc/tc/layout.php';
 // Inhalt: Bauphasen 4 bis 7 (Firmenpräsentation 2026, Folien 15 und 16) und Martins Entwurf
 // (the-court.com, Stand 23.11.2026: FAQ, Ratgeber zu Kosten, Ablauf, Genehmigung und Finanzierung).
-// DEV-1667: Keine eigene FAQ, die Fragen zu Genehmigung und Finanzierung stehen als Abschnitte auf dieser Seite und auf /faq.
+// DEV-1667: FAQ wie in Martins Entwurf, jede Frage nur auf einer Seite (verschoben von der Startseite).
+$pbFaq = [
+    ['frage' => 'Wie läuft ein Padel-Projekt ab?', 'antwort' => 'Ein Padel-Projekt läuft bei uns in sieben Etappen, von Beratung und Finanzierung über Planung und Architektur, Bau und Digitalisierung bis zu Betrieb und auf Wunsch Franchise. Am Anfang prüfen wir Fläche, Zielgruppe und Potenzial deines Standorts. Danach klären wir Finanzierung und Genehmigung, bevor gebaut wird. Mehr dazu bei der <a href="/standortanalyse">Standortanalyse</a>.'],
+    ['frage' => 'Was kostet eine Padelanlage?', 'antwort' => 'Für die erste Kalkulation brauchst du drei Zahlen. Ein Padel-Court kostet ab 27.000 € netto, das Fundament als Richtwert rund 35.000 € und eine Halle ab 280 €/m² netto. Den genauen Betrag bestimmen Standort, Variante und Ausstattung. Mehr dazu bei den <a href="/courts">Padel-Courts</a> und der <a href="/halle">Padel-Halle</a>.'],
+];
 tc_page_start([
     'path' => '/padel-court-bauen',
     'title' => 'Padel Court bauen: Ablauf, Kosten & Finanzierung · Padelbee',
@@ -17,6 +21,7 @@ tc_page_start([
             '/padel-court-bauen',
             ['serviceType' => 'Padel-Court-Bau', 'image' => '/media/referenzen/scheck-aufbau-4.jpg']
         ),
+        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => html_entity_decode(strip_tags($f['antwort']), ENT_QUOTES, 'UTF-8')], $pbFaq), '/padel-court-bauen'),
     ],
 ]);
 ?>
@@ -133,6 +138,18 @@ tc_page_start([
       <article class="card reveal"><div class="k">Passt zu Tennisvereinen</div><h3 data-type>Joint Venture</h3><p>Der Verein stellt die Fläche, das Joint Venture mit dem Motions Racket Club baut, finanziert und betreibt. Du bekommst Pacht und investierst 0 €.</p></article>
     </div>
     <p class="fav-note fav-note-l">Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.</p>
+  </div>
+</section>
+
+<section class="band grid-bg" id="p-faq" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label" data-type>FAQ</p>
+    <h2 class="reveal">Fragen zum <span class="hl">Padel Court bauen.</span></h2>
+    <div class="faq-list">
+<?php foreach ($pbFaq as $f): ?>
+      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= $f['antwort'] ?></p></details>
+<?php endforeach; ?>
+    </div>
   </div>
 </section>
 
