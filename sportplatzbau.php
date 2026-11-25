@@ -58,7 +58,7 @@ $spLogos = [
 <section class="band grid-bg" id="sp-mehrsport">
   <div class="inner">
     <p class="label" data-type>Mehrsportanlagen</p>
-    <h2 class="reveal">Mehr aus deiner Anlage <span class="kw">machen.</span></h2>
+    <h2 class="reveal">Mehr aus deiner Anlage <span class="hl">machen.</span></h2>
     <p class="lead">Neben Padel planen wir auch Anlagen für Pickleball und Tennis.</p>
     <div class="cards c3">
       <article class="card dk reveal"><div class="k">Tennisverein</div><h3 data-type>Leere Plätze nutzen</h3><p>In vielen Vereinen stehen Tennisplätze leer. Ein Platz, der nicht bespielt wird, kostet nur. Auf einen Tennisplatz passen bis zu zwei Padel-Courts, und Padel bringt jüngere Spieler, Familien und Firmen auf die Anlage.</p><p>Padel und Tennis sind keine Konkurrenz. Wer Padel entdeckt, bleibt oft auch beim Tennis.</p><ul class="chips"><li>Planbare Einnahmen statt Pflegekosten</li><li>Mehr Leben im Vereinsheim und in der Gastronomie</li></ul></article>
