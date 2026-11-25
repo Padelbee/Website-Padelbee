@@ -50,7 +50,7 @@ $spLogos = [
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Sportplatzbau</p>
       <h1 class="sp-h1"><span class="label h1-kicker" style="color:var(--white)" data-type>Sportplatzbau · Tennis · Pickleball · Padel</span>Moderne <span class="kw">Racketsport&shy;anlagen.</span></h1>
       <p class="lead">Beim Sportplatzbau beraten, entwickeln und bauen wir moderne Anlagen für Padel, Pickleball und Tennis, für Vereine, Hotels, Gewerbe und die öffentliche Hand.</p>
-      <p class="lead">Wie ein Projekt abläuft, liest du unter <a href="/standortanalyse">Standortanalyse</a> und <a href="/padel-court-bauen">Padel Court bauen</a>.</p>
+      <p class="lead">Wie ein Projekt abläuft, liest du unter <a href="/standortanalyse">Standortanalyse</a> und <a href="/padel-court-bauen">Padel&nbsp;Court&nbsp;bauen</a>.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Anlage anfragen</a><a class="btn ghost" href="#sp-referenz">Referenz ansehen</a></div>
     </div>
     <figure class="courtfig courtphoto"><img src="/media/courts/anlage_luftbild.jpg" alt="Luftaufnahme einer Anlage mit fünf Padel-Courts neben Tennisplätzen"></figure>
