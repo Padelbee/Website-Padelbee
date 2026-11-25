@@ -2,11 +2,7 @@
 require __DIR__ . '/inc/tc/layout.php';
 // Inhalt: Bauphasen 1 bis 3 (Firmenpräsentation 2026, Folie 15), Leistung 01 (Folie 6)
 // und Martins Entwurf (the-court.com, Stand 23.11.2026: Leistungen, FAQ, Ratgeber).
-$saFaq = [
-    ['frage' => 'Wie starte ich mein Projekt?', 'antwort' => 'Du startest mit einem kostenlosen Erstgespräch. Darin sprechen wir über deinen Standort, dein Budget und dein Nutzungskonzept und klären, ob Padel dort passt. Danach rechnen wir deine Anlage durch und zeigen dir, welche Courts, welches Fundament und welche Finanzierung infrage kommen. Schreib uns einfach über das Kontaktformular oder per E-Mail.'],
-    ['frage' => 'Wie läuft ein Padel-Projekt ab?', 'antwort' => 'Ein Padel-Projekt läuft bei uns in sieben Etappen, von Beratung und Finanzierung über Planung und Architektur, Bau und Digitalisierung bis zu Betrieb und auf Wunsch Franchise. Am Anfang prüfen wir Fläche, Zielgruppe und Potenzial deines Standorts. Danach klären wir Finanzierung und Genehmigung, bevor gebaut wird. Was in jeder Phase passiert, liest du unter <a href="/padel-court-bauen">Padel Court bauen</a>.'],
-    ['frage' => 'Wie viele Padel-Courts passen auf einen Tennisplatz?', 'antwort' => 'Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ein Padel-Court braucht deutlich weniger Fläche als ein Tennisplatz. Aus einem ungenutzten Tennisplatz kann so eine kleine Padelanlage werden, ohne dass dein Verein neues Gelände braucht. Ob deine Plätze passen, prüfen wir vor Ort zusammen mit Baurecht, Lärmschutz und Licht.'],
-];
+// DEV-1667: Keine eigene FAQ mehr. Die Fragen stehen wie in Martins Entwurf nur einmal (Startseite, /sportplatzbau), gesammelt auf /faq.
 tc_page_start([
     'path' => '/standortanalyse',
     'title' => 'Standortanalyse & Erstscreening für Padel · Padelbee',
@@ -21,7 +17,6 @@ tc_page_start([
             '/standortanalyse',
             ['serviceType' => 'Standortanalyse', 'image' => '/media/leistungen/standortanalyse-karte.png']
         ),
-        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $saFaq), '/standortanalyse'),
     ],
 ]);
 ?>
@@ -83,18 +78,6 @@ tc_page_start([
       <a class="btn" href="/padel-court-bauen">Padel Court bauen</a>
     </div>
     <p class="m-quote reveal">50 Projekte in 3 Ländern zeigen, dass mit dem richtigen Partner aus einer Idee eine Anlage wird, die <span class="hl">läuft.</span> Sieh dir unsere <a href="/referenzen">Referenzen</a> an.</p>
-  </div>
-</section>
-
-<section class="band grid-bg" id="s-faq" style="background-color:var(--grey-050)">
-  <div class="inner">
-    <p class="label" data-type>FAQ</p>
-    <h2 class="reveal">Fragen zur <span class="hl">Standortanalyse.</span></h2>
-    <div class="faq-list">
-<?php foreach ($saFaq as $f): ?>
-      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= $f['antwort'] ?></p></details>
-<?php endforeach; ?>
-    </div>
   </div>
 </section>
 

@@ -12,6 +12,14 @@ usort($refs, fn($a, $b) =>
 $year = (int) date('Y');
 // Projekte aus der Liste nach Folie 17: oben als Liste, unten nicht noch einmal als Kachel
 $refListe = ['ji3rdvvmh9qgx5t0dd5p', 'j51vwpfd4gfmh5l0hav9', 'vm3vl4d7wzxabm92z3o4', '05jhvfy737ano5y7zgg4', 'id4m500u98242zvwsv39', 'mw0x5hzgv9iha2km30r2', '7b834ar449mjjy5q316a', 'qav386pqfdsv1tckcdsh', 'jm2lhzv2t22b12fyrqpe', 'jjli2ofqq3mrxlemw5cn'];
+// DEV-1667: FAQ wie in Martins Entwurf (the-court.com/referenzen), Marke Padelbee
+$refFaq = [
+    ['frage' => 'Wie viele Projekte hat Padelbee umgesetzt?', 'antwort' => 'Auf unserer Projektkarte stehen 50 Projekte, von Garbsen bei Hannover bis Graz in Österreich. Jeder Punkt ist eine Anlage, die wir beraten, geplant oder gebaut haben, gesteuert aus Unterföhring bei München. Einen Teil davon zeigen wir hier mit Bildern und Details, Projekte in Planung sind als solche gekennzeichnet.'],
+    ['frage' => 'Welche Arten von Anlagen habt ihr gebaut?', 'antwort' => 'Unsere Referenzen reichen von Outdoor-Courts im Tennisverein bis zu Padelhallen kommerzieller Betreiber. Ein Beispiel ist H30 Fitness &amp; Padel in Memmingen mit vier Double- und zwei Single-Courts in einer kernsanierten Brauereihalle. 0711 Padel in Stuttgart steht auf einer mobilen Plattform.'],
+    ['frage' => 'Was bedeutet „in Planung“ bei einem Projekt?', 'antwort' => '„In Planung“ heißt, dass die Anlage noch nicht gebaut ist. Wir begleiten diese Projekte bereits, etwa bei Planung, Genehmigung oder Finanzierung, und die Eröffnung steht noch bevor. Sobald die Anlage fertig ist, ergänzen wir Bilder und Details.'],
+    ['frage' => 'Wo stehen Automaten von Padelbee?', 'antwort' => 'Verleih- und Verkaufsautomaten von uns stehen unter anderem in Memmingen, im Scheck Club in Unterföhring, bei 0711 Padel in Stuttgart, bei Donau Padel, im Padel Point in Konradsreuth, beim TC BW Neufahrn, in Straubing und beim TC GR Mainburg. Unser ganzes Sortiment findest du bei den <a href="/automatenloesungen">Automaten</a>.'],
+    ['frage' => 'Wie wird mein Projekt zur nächsten Referenz?', 'antwort' => 'Dein Projekt startet mit einem kostenlosen Erstgespräch. Darin prüfen wir Fläche, Zielgruppe und Potenzial deines Standorts und besprechen Budget und Finanzierung. Danach planen wir Courts, Fundament und bei Bedarf eine Halle und setzen sie mit unseren Partnern um.'],
+];
 $refJson = json_encode($refs, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP);
 
 $refSchema = tc_schema_item_list('Referenzprojekte von Padelbee', array_map(fn($p) => [
@@ -27,7 +35,7 @@ tc_page_start([
     'description' => 'Referenzen von Padelbee: Padel-Courts und Hallen für Tennisvereine, Betreiber und Kommunen, vom Scheck Club München bis Konradsreuth und Mainburg.',
     'breadcrumb' => ['Referenzen' => '/referenzen'],
     'page_type' => 'CollectionPage',
-    'schema' => [$refSchema],
+    'schema' => [$refSchema, tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => html_entity_decode(strip_tags($f['antwort']), ENT_QUOTES, 'UTF-8')], $refFaq), '/referenzen')],
     'extra_scripts' => cs_admin_scripts() . '<script>window.REF_STATIC=' . $refJson . ';window.REF_LISTE=' . json_encode($refListe) . ';</script>' . "\n"
         . '<script src="/media/tc/referenzen.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n"
         . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n"
@@ -137,6 +145,18 @@ tc_page_start([
       <p>Wir stellen hier gerade unsere abgeschlossenen Projekte zusammen. Bis dahin zeigt dir die <a href="/#projekte">Projektkarte</a> alle 50 Standorte.</p>
     </div>
     <p class="r-hint" id="rHint" hidden></p>
+  </div>
+</section>
+
+<section class="band grid-bg" id="r-faq" style="background-color:var(--grey-050)">
+  <div class="inner">
+    <p class="label" data-type>FAQ</p>
+    <h2 class="reveal">Fragen zu unseren <span class="hl">Referenzen.</span></h2>
+    <div class="faq-list">
+<?php foreach ($refFaq as $f): ?>
+      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= $f['antwort'] ?></p></details>
+<?php endforeach; ?>
+    </div>
   </div>
 </section>
 
