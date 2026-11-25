@@ -1,95 +1,31 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
-$introKurz = 'Padelbee ist ein innovatives Start-up, das sich der Projektentwicklung von Padelanlagen verschrieben hat.';
-// DEV-1667: "Über Padelbee" mit Martins Fakten (Zielgruppen, 50 Projekte, DACH, Unterföhring) statt des alten Textes.
-$ueber = 'Wir entwickeln, planen und bauen Padel-, Pickleball- und Tennisanlagen für Vereine, Hotels, Gewerbe und die öffentliche Hand. Unsere 50 Projekte in Deutschland, Österreich und der Schweiz steuern wir aus Unterföhring bei&nbsp;München.';
-$stelle = 'Zur Verstärkung unseres Teams suchen wir einen engagierten Werkstudenten (m/w/d) im Bereich Social Media, Marketing &amp; Sales.';
-$bloecke = [
-    ['Deine Aufgaben', [
-        'Sales Assistance: Unterstützung im Vertrieb, beispielsweise bei der Kundenakquise und -betreuung sowie bei der Organisation von Events und Promotions.',
-        'Marketing Support: Mitarbeit bei der Planung und Umsetzung von Marketingkampagnen, einschließlich Content-Erstellung und Performance-Analyse.',
-        'Marktforschung: Durchführung von Recherchen zu Markttrends und Wettbewerbern im Sport- und Freizeitbereich.',
-        'Social Media Management: Erstellung und Pflege von Inhalten für unsere Social-Media-Kanäle, um die Markenbekanntheit zu steigern und die Community zu erweitern',
-    ]],
-    ['Dein Profil', [
-        'Eingeschriebener Student (m/w/d) im Bereich Sportwissenschaften, Marketing, Betriebswirtschaft oder einem verwandten Studiengang.',
-        'Leidenschaft für Sport, idealerweise mit Interesse oder Erfahrung im Padel-Sport.',
-        'Erste Erfahrungen im Social Media Management und Marketing sind von Vorteil.',
-        'Kreativität, Kommunikationsstärke und eine selbstständige Arbeitsweise.',
-        'Gute Deutsch- und Englischkenntnisse in Wort und Schrift.',
-    ]],
-    ['Wir bieten', [
-        'Flexible Arbeitszeiten, die sich mit deinem Studium vereinbaren lassen.',
-        'Mitarbeit in einem dynamischen und sportbegeisterten Team.',
-        'Möglichkeit, eigene Ideen einzubringen und Verantwortung zu übernehmen.',
-        'Einblicke in die Start-up-Welt und die Sportbranche.',
-    ]],
-];
-$jobDesc = '<p>' . $introKurz . ' ' . $ueber . '</p><p>' . $stelle . '</p>';
-foreach ($bloecke as $b) {
-    $jobDesc .= '<p><strong>' . $b[0] . ':</strong></p><ul><li>' . implode('</li><li>', $b[1]) . '</li></ul>';
-}
+// DEV-1667 (Beti 25.11.2026, Variante B): Inhalte der alten Website entfernt (Bienen-Bild, Start-up-Text,
+// Werkstudenten-Anzeige, PDF-Link, JobPosting-Schema). Martins Entwurf hat keine Jobs-Seite.
+// Ob eine Stelle offen ist und welche Bewerbungsadresse gilt, klärt Martin (Fragenliste 32, 33).
+// Text: Martins Fakten (Zielgruppen, 50 Projekte, DACH, Unterföhring), Bewerbungssatz eigen.
 tc_page_start([
     'path' => '/jobs',
-    'title' => 'Jobs: Werkstudent Social Media, Marketing & Sales · Padelbee',
-    'description' => 'Jobs bei Padelbee: Werde Teil des Padel-Booms! Aktuelle Stellenangebote, zum Beispiel Werkstudent (m/w/d) im Bereich Social Media, Marketing & Sales.',
+    'title' => 'Jobs bei Padelbee · Padel-Projektentwicklung',
+    'description' => 'Jobs bei Padelbee: Wir entwickeln, planen und bauen Padelanlagen in Deutschland, Österreich und der Schweiz. Bewirb dich initiativ und werde Teil unseres Teams.',
     'breadcrumb' => ['Jobs' => '/jobs'],
-    'schema' => [[
-        '@type' => 'JobPosting',
-        'title' => 'Werkstudent (m/w/d) Social Media, Marketing & Sales',
-        'description' => html_entity_decode($jobDesc),
-        'datePosted' => '2026-10-21',
-        'validThrough' => '2027-04-21T23:59:59+02:00',
-        'employmentType' => 'PART_TIME',
-        'hiringOrganization' => ['@id' => TC_ORG_ID],
-        'jobLocation' => [
-            '@type' => 'Place',
-            'address' => [
-                '@type' => 'PostalAddress',
-                'streetAddress' => 'Münchner Str. 15',
-                'postalCode' => '85774',
-                'addressLocality' => 'Unterföhring',
-                'addressRegion' => 'Bayern',
-                'addressCountry' => 'DE',
-            ],
-        ],
-        'url' => tc_url('/jobs'),
-    ]],
 ]);
 ?>
-<section class="band dark grid-bg a-hero">
-  <div class="inner" style="padding-block:clamp(56px,8vw,110px)">
-    <div>
-      <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Jobs</p>
-      <p class="label" style="color:var(--white)" data-type>Jobs · Wir suchen Verstärkung</p>
-      <h1>Mach mit bei <span class="kw">Padelbee.</span></h1>
-      <p class="lead"><?= $introKurz ?></p>
-    </div>
-    <div class="jobs-art"><img src="/images/bienchen.png" alt="Drei Padelbee-Bienen als Symbol für das Team" width="467" height="452"></div>
+<section class="band dark grid-bg c-hero hero-1col">
+  <div class="inner">
+    <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Jobs</p>
+    <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Jobs bei Padelbee</span>Mach mit bei <span class="kw">Padelbee.</span></h1>
+    <p class="lead">Wir entwickeln, planen und bauen Padel-, Pickleball- und Tennisanlagen für Vereine, Hotels, Gewerbe und die öffentliche Hand. Unsere 50 Projekte in Deutschland, Österreich und der Schweiz steuern wir aus Unterföhring bei&nbsp;München.</p>
+    <a class="more-link" href="/team">Unser Team kennenlernen</a>
   </div>
 </section>
 
-<section class="band grid-bg" id="j-stelle">
+<section class="band grid-bg" id="j-bewerbung">
   <div class="inner">
-    <p class="label">Über Padelbee</p>
-    <p class="lead reveal" style="max-width:860px"><?= $ueber ?></p>
-    <p class="label" style="margin-top:clamp(48px,6vw,80px)">Jobangebote</p>
-    <h2 class="reveal">Werkstudent (m/w/d) Social Media, Marketing &amp; <span class="hl">Sales.</span></h2>
-    <p class="lead"><?= $stelle ?></p>
-    <div class="cards c3">
-<?php foreach ($bloecke as $b): ?>
-      <article class="card reveal"><h3 data-type><?= $b[0] ?></h3><ul class="ticks"><?php foreach ($b[1] as $li): ?><li><?= $li ?></li><?php endforeach; ?></ul></article>
-<?php endforeach; ?>
-    </div>
-  </div>
-</section>
-
-<section class="band dark grid-bg" id="j-bewerbung">
-  <div class="inner">
-    <p class="label">Bewerbung</p>
-    <h2 class="reveal">Bewirb dich <span class="kw">jetzt.</span></h2>
-    <p class="lead">Wenn du Lust hast, Teil von Padelbee zu werden und den Padel-Sport in Deutschland mit uns voranzutreiben, freuen wir uns auf deine Bewerbung! Bitte sende deine Unterlagen (Anschreiben, Lebenslauf, relevante Zeugnisse) per E-Mail an: <a href="mailto:kontakt@padelbee.de" style="color:var(--yellow)">kontakt@padelbee.de</a></p>
-    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="mailto:kontakt@padelbee.de?subject=Bewerbung%20Werkstudent%20(m%2Fw%2Fd)">Jetzt bewerben</a><a class="btn ghost" href="/Padelbee-Stellenanzeige-Werkstudent.pdf" target="_blank" rel="noopener">Download PDF</a></div>
+    <p class="label" data-type>Bewerbung</p>
+    <h2 class="reveal">Bewirb dich <span class="hl">initiativ.</span></h2>
+    <p class="lead">Du willst Teil von Padelbee werden? Schick uns deine Initiativbewerbung mit Lebenslauf und einem kurzen Anschreiben.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:34px"><a class="btn" href="mailto:info@padelbee.de?subject=Initiativbewerbung">Jetzt bewerben</a></div>
   </div>
 </section>
 <?php tc_page_end();
