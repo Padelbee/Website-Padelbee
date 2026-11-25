@@ -81,7 +81,7 @@ tc_page_start([
     ],
 ]);
 ?>
-<section class="band dark grid-bg">
+<section class="band dark grid-bg c-hero f-hero">
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; FAQ</p>
     <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padelbee FAQ</span>Häufig gestellte <span class="kw">Fragen.</span></h1>
