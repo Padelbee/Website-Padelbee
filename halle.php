@@ -51,7 +51,8 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Padel im Winter</p>
     <h2 class="reveal">Eine Halle spielt das <span class="hl">ganze Jahr.</span></h2>
-    <p class="lead">Ein Outdoor-Court spielt die halbe Saison. Im Sommer sind Outdoor-Courts voll, im November stehen sie leer. Genau dann suchen Spieler einen Platz und zahlen dafür.</p>
+    <p class="lead">Ein Outdoor-Court spielt die halbe Saison.</p>
+    <p class="lead">Im Sommer sind Outdoor-Courts voll, im November stehen sie leer. Genau dann suchen Spieler einen Platz und zahlen&nbsp;dafür.</p>
     <div class="gest">
       <article class="gbox reveal"><div class="k">Mehr Spielzeit</div><p>Mit Dach fällt kein Termin wegen Regen, Wind oder Schnee aus.</p><p>Jede Stunde ist buchbar.</p></article>
       <article class="gbox reveal"><div class="k">Mehr Planbarkeit</div><p>Trainings, Kurse und Turniere lassen sich verlässlich planen.</p><p>Das bindet Spieler an deinen Standort.</p></article>
