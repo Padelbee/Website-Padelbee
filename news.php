@@ -15,7 +15,7 @@ tc_page_start([
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; News</p>
     <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padelbee News</span>Aktuelles von uns und aus der <span class="kw">Padel-Welt.</span></h1>
-    <p class="lead">Hier zeigen wir neue Projekte und Events, von der Rafa Nadal Padel Tour bis zu den großen Messen. Wir bringen Padel dorthin, wo Spieler, Vereine und Betreiber zusammenkommen.</p>
+    <p class="lead">Hier zeigen wir neue Projekte und Events, von der Rafa Nadal Padel Tour bis zu den großen Messen. Wir bringen Padel dorthin, wo Spieler, Vereine und Betreiber&nbsp;zusammenkommen.</p>
     <a class="more-link" href="/referenzen">Fertige Anlagen ansehen</a>
   </div>
 </section>
