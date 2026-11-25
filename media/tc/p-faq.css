@@ -6,10 +6,10 @@
 .f-hero .inner{display:block}
 .f-hero .lead{max-width:860px}
 .faq-nav .kurz{display:none}
-/* Handy: alle Themen in einer Zeile mit kurzen Namen, bei sehr schmalen Handys seitlich wischen */
+/* Handy: alle Themen in einer Zeile, kurze Namen ohne Kästen zwischen zwei Linien */
 @media (max-width:680px){
-  .faq-nav{flex-wrap:nowrap;gap:6px;overflow-x:auto;scrollbar-width:none;margin-top:28px;margin-right:-16px;padding-right:16px}
-  .faq-nav::-webkit-scrollbar{display:none}
-  .faq-nav a{flex:0 0 auto;padding:9px 10px;font-size:10.5px;letter-spacing:.1em}
+  .faq-nav{flex-wrap:nowrap;justify-content:space-between;gap:8px;margin-top:28px;padding:14px 0;border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d)}
+  .faq-nav a{flex:0 0 auto;padding:0;border:0;font-size:10px;letter-spacing:.06em}
   .faq-nav .lang{display:none}.faq-nav .kurz{display:inline}
 }
+@media (max-width:359px){.faq-nav a{font-size:9px;letter-spacing:.03em}}
