@@ -112,7 +112,7 @@ tc_page_start([
       <article class="gbox reveal"><div class="k">Licht</div><p>Individuell abgestimmte Beleuchtungskonzepte für deine Anlage.</p><ul class="chips"><li class="w">Lichtmasten gerade, in C- oder Z-Form</li><li>Lichttemperatur nach Wunsch</li><li>Zusätzliche LEDs</li></ul></article>
       <article class="gbox reveal"><div class="k">Bauliche Anpassung</div><p>Zusätzliche Türen, spezielle Zugangslösungen und auch architektonische Besonderheiten bei Indoor- und Outdoor-Anlagen berücksichtigen wir.</p><ul class="chips"><li>Indoor oder Outdoor</li><li>Windlastzone 1 bis 4</li><li>Vogelschutzverglasung</li></ul></article>
     </div>
-    <p class="m-quote reveal">Nahezu alle Elemente sind gestaltbar. Entscheidend ist nicht, was technisch möglich ist, sondern was <span class="hl">strategisch sinnvoll</span> ist.</p>
+    <p class="m-quote reveal">Nahezu alle Elemente sind gestaltbar. Entscheidend ist nicht, was technisch möglich ist, sondern was <span class="hl">strategisch sinnvoll</span>&nbsp;ist.</p>
   </div>
 </section>
 
