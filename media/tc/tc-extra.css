@@ -530,3 +530,9 @@ span.sbr{display:block;height:4px}
 /* Einspaltiger Hero mit großer H1 (z. B. /news) */
 .c-hero.hero-1col .inner{display:block}
 .c-hero.hero-1col .lead{max-width:860px}
+/* Blog-Artikel (DEV-1667): Links und Tabellen aus Martins Ratgebern */
+.b-body a{color:var(--petrol);text-decoration:underline;text-underline-offset:3px}
+.b-table{overflow-x:auto;margin:0 0 24px;-webkit-overflow-scrolling:touch}
+.b-table table{border-collapse:collapse;width:100%;min-width:520px;font-size:16px;line-height:1.5}
+.b-table th,.b-table td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+.b-table th{font-family:var(--f-body);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--petrol);border-bottom:2px solid var(--petrol)}

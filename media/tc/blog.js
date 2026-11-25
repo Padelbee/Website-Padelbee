@@ -7,11 +7,15 @@ const el=(t,c,txt)=>{const e=document.createElement(t); if(c) e.className=c; if(
 const fmtDate=d=>{ if(!d) return ''; const x=new Date(d+'T12:00:00'); return isNaN(x)?d:x.toLocaleDateString('de-DE',{day:'numeric',month:'long',year:'numeric'}); };
 const slugify=s=>s.toLowerCase().replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,80)||'artikel';
 const readMin=t=>Math.max(1,Math.round(String(t||'').split(/\s+/).length/200));
-function inline(parent,text){ String(text).split(/(\*\*[^*]+\*\*)/).forEach(part=>{ if(/^\*\*[^*]+\*\*$/.test(part)) parent.appendChild(el('strong',null,part.slice(2,-2))); else if(part) parent.appendChild(document.createTextNode(part)); }); }
+function inline(parent,text){ String(text).split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)\s]+\))/).forEach(part=>{ if(/^\*\*[^*]+\*\*$/.test(part)) parent.appendChild(el('strong',null,part.slice(2,-2)));
+  else if(/^\[[^\]]+\]\([^)\s]+\)$/.test(part)){ const m=part.match(/^\[([^\]]+)\]\(([^)\s]+)\)$/); const a=el('a',null,m[1]); const h=m[2]; if(/^(\/|#)/.test(h)) a.href=h; parent.appendChild(a); }
+  else if(part) parent.appendChild(document.createTextNode(part)); }); }
+function table(box,lines){ const rows=lines.filter(l=>!/^\s*\|?\s*:?-{2,}/.test(l)).map(l=>l.trim().replace(/^\||\|$/g,'').split('|').map(c=>c.trim()));
+  const wrap=el('div','b-table'); const t=el('table'); rows.forEach((r,i)=>{ const tr=el('tr'); r.forEach(c=>{ const td=el(i===0?'th':'td'); inline(td,c); tr.appendChild(td); }); (i===0?(t.tHead||t.createTHead()):(t.tBodies[0]||t.createTBody())).appendChild(tr); }); wrap.appendChild(t); box.appendChild(wrap); }
 function renderBody(box,text){ box.textContent=''; String(text||'').split(/\n\s*\n/).forEach(block=>{ const b=block.trim(); if(!b) return;
   if(b.startsWith('## ')){ box.appendChild(el('h2',null,b.slice(3).trim())); return; }
   if(b.startsWith('### ')){ box.appendChild(el('h3',null,b.slice(4).trim())); return; }
-  const lines=b.split('\n'); if(lines.every(l=>/^\s*[-•]\s+/.test(l))){ const ul=el('ul'); lines.forEach(l=>{ const li=el('li'); inline(li,l.replace(/^\s*[-•]\s+/,'')); ul.appendChild(li); }); box.appendChild(ul); return; }
+  const lines=b.split('\n'); if(lines.length>1&&lines.every(l=>/^\s*\|/.test(l))){ table(box,lines); return; } if(lines.every(l=>/^\s*[-•]\s+/.test(l))){ const ul=el('ul'); lines.forEach(l=>{ const li=el('li'); inline(li,l.replace(/^\s*[-•]\s+/,'')); ul.appendChild(li); }); box.appendChild(ul); return; }
   if(lines.every(l=>/^\s*\d+[.)]\s+/.test(l))){ const ol=el('ol'); lines.forEach(l=>{ const li=el('li'); inline(li,l.replace(/^\s*\d+[.)]\s+/,'')); ol.appendChild(li); }); box.appendChild(ol); return; }
   const p=el('p'); lines.forEach((l,i)=>{ if(i) p.appendChild(el('br')); inline(p,l); }); box.appendChild(p); }); }
 function visible(){ return posts.filter(p=>canEdit||p.live).sort((a,b)=>String(b.datum||'').localeCompare(String(a.datum||''))); }
@@ -36,7 +40,7 @@ function fill(){ const p=cur; $('baTitle').textContent=p.titel; $('baMeta').text
   renderBody($('baBody'),p.text); $('baEdit').hidden=!(canEdit&&assets); }
 window.openPost=slug=>{ const p=posts.find(x=>x.slug===slug&&(x.live||canEdit)); if(!p){ window._pendingPost=slug; return; }
   cur=p; fill(); $('bArticle').hidden=false; $('b-list-hero').hidden=true; $('b-liste').hidden=true; window.scrollTo(0,0);
-  document.title=p.titel+' · Blog · THE COURT'; const d=document.querySelector('meta[name=description]'); if(d&&p.teaser) d.setAttribute('content',p.teaser); };
+  document.title=p.titel+' · Blog · Padelbee'; const d=document.querySelector('meta[name=description]'); if(d&&p.teaser) d.setAttribute('content',p.teaser); };
 window.closePost=()=>{ $('bArticle').hidden=true; $('b-list-hero').hidden=false; $('b-liste').hidden=false; cur=null; };
 /* editor */
 const F=$('bFormEl'), msg=(t,e)=>{ $('bfMsg').textContent=t||''; $('bfMsg').classList.toggle('err',!!e); };
@@ -78,7 +82,7 @@ $('bfDel').addEventListener('click',async()=>{ const b=$('bfDel'); if(!b.classLi
   try{ const p=posts.find(x=>x.id===form.id); await db.collection('blog').doc(form.id).delete(); if(p&&p.cover) assets.delete(p.cover.id).catch(()=>{}); closeModal($('bForm')); location.hash='blog'; }catch(e){ msg('Löschen fehlgeschlagen.',true); } });
 $('bNew').addEventListener('click',()=>openForm(null));
 $('baEdit').addEventListener('click',()=>cur&&openForm(cur));
-render(); if(window.BLOG_OPEN) window.openPost(window.BLOG_OPEN);
+render(); if(window.BLOG_OPEN) window.openPost(window.BLOG_OPEN); else if(location.hash.startsWith('#blog/')) window.openPost(decodeURIComponent(location.hash.slice(6)));
 (async()=>{ if(!window.claude||!window.claude.use) return;
   const [d,a,u]=await Promise.all([claude.use('db'),claude.use('assets'),claude.use('user')]);
   db=d; assets=a; canEdit=!!(u&&u.canEdit&&u.canEdit());

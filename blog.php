@@ -1,13 +1,36 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
+// DEV-1667: Artikel aus Martins Entwurf (the-court.com/blog, Stand 23.11.2026), 22 Beiträge in inc/tc/blog-data.json.
+// Angepasst für padelbee.de: "THE COURT" -> "Padelbee" (rechtlich "THE COURT GmbH"), Gedankenstriche -> Kommas,
+// Links auf padelbee.de-Seiten. Keine Texte der alten Website.
+// Artikel öffnen per #blog/<slug> wie die Referenzen. Eigene URLs je Artikel und Selbstverwaltung klärt Matthias.
+$blogPosts = json_decode((string) file_get_contents(__DIR__ . '/inc/tc/blog-data.json'), true) ?: [];
+$blogPosts = array_values(array_filter($blogPosts, fn($p) => !empty($p['live'])));
+usort($blogPosts, fn($a, $b) => strcmp($b['datum'] ?? '', $a['datum'] ?? ''));
+$blogDesc = 'Padel-Ratgeber von Padelbee: Kosten, Genehmigung, Court-Systeme, Hallen, Automaten und Betrieb. Praxiswissen aus über 50 Projekten für Vereine und Betreiber.';
+$blogSchema = tc_schema_blog('Padel-Wissen', $blogDesc);
+$blogSchema['blogPost'] = array_map(fn($p) => array_filter([
+    '@type' => 'BlogPosting',
+    'headline' => $p['titel'],
+    'description' => $p['teaser'],
+    'datePublished' => $p['datum'],
+    'author' => ['@type' => 'Person', 'name' => $p['autor']],
+    'url' => tc_url('/blog') . '#blog/' . $p['slug'],
+    'image' => !empty($p['cover']['url']) ? tc_url($p['cover']['url']) : null,
+]), $blogPosts);
+$blogMonths = ['', 'Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+$blogDate = function (string $d) use ($blogMonths): string {
+    $t = strtotime($d);
+    return $t ? (int) date('j', $t) . '. ' . $blogMonths[(int) date('n', $t)] . ' ' . date('Y', $t) : '';
+};
 tc_page_start([
     'path' => '/blog',
-    'title' => 'Blog · Padel-Wissen für Vereine, Betreiber und Kommunen · THE COURT',
-    'description' => 'Kosten, Genehmigung, Court-Systeme, Hallen, Automaten und Betrieb: Praxiswissen aus über 50 Padel-Projekten von Padelbee und The Court.',
+    'title' => 'Padel Blog: Kosten, Genehmigung und Courts · Padelbee',
+    'description' => $blogDesc,
     'breadcrumb' => ['Blog' => '/blog'],
     'page_type' => 'CollectionPage',
-    'schema' => [tc_schema_blog('Padel-Wissen', 'Kosten, Genehmigung, Court-Systeme, Hallen, Automaten und Betrieb: Praxiswissen aus über 50 Padel-Projekten von Padelbee und The Court.')],
-    'extra_scripts' => '<script src="/media/tc/blog.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
+    'schema' => [$blogSchema],
+    'extra_scripts' => '<script>window.BLOG_STATIC=' . json_encode($blogPosts, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) . ';</script>' . "\n" . '<script src="/media/tc/blog.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
 ]);
 ?>
 <section class="band dark grid-bg b-hero" id="b-list-hero">
@@ -15,7 +38,7 @@ tc_page_start([
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Blog</p>
     <p class="label" style="color:var(--white)" data-type>Wissen · Praxis · Projekte</p>
     <h1>Padel-<span class="kw">Wissen.</span></h1>
-    <p class="lead">Kosten, Genehmigung, Court-Systeme, Hallen, Automaten und Betrieb: Was wir aus über 50 Projekten gelernt haben, für Vereine, Betreiber, Hotels und Kommunen.</p>
+    <p class="lead">In unserem Padel-Ratgeber steht, was wir aus über 50 Projekten gelernt haben, für Vereine, Betreiber, Hotels und Kommunen. Es geht um Kosten, Genehmigung, Court-Systeme, Hallen, Automaten und&nbsp;Betrieb.</p>
   </div>
 </section>
 
@@ -26,7 +49,14 @@ tc_page_start([
       <div id="bAdmin" hidden><button type="button" class="btn" id="bNew">+ Artikel schreiben</button></div>
     </div>
     <div class="filters" role="group" aria-label="Artikel filtern" id="bFilters"></div>
-    <div class="posts" id="posts"></div>
+    <div class="posts" id="posts">
+<?php foreach ($blogPosts as $i => $p): ?>
+      <a class="post<?= $i === 0 ? ' lead-post' : '' ?>" href="#blog/<?= tc_h($p['slug']) ?>">
+        <figure><?php if (!empty($p['cover']['url'])): ?><img src="<?= tc_h($p['cover']['url']) ?>" alt="<?= tc_h($p['titel']) ?>" loading="lazy"><?php endif; ?></figure>
+        <div class="rb"><div class="pk"><?= tc_h(implode(' · ', array_filter([$p['kategorie'], $blogDate($p['datum'])]))) ?></div><h3><?= tc_h($p['titel']) ?></h3><p><?= tc_h($p['teaser']) ?></p><span class="more">Weiterlesen →</span></div>
+      </a>
+<?php endforeach; ?>
+    </div>
     <div class="r-empty" id="bEmpty" hidden>
       <h3>Die ersten Artikel sind in Arbeit.</h3>
       <p>Bis dahin erfährst du alles Wichtige bei <a href="/courts">Padel-Courts</a> und <a href="/automatenloesungen">Automaten</a>.</p>
