@@ -7,10 +7,7 @@ $courts = [
     ['Panorama-Court', 'Padel-Court mit deutlich weniger sichtbaren Streben, größeren Glasflächen und offener Anmutung für bessere Sicht und hochwertigen Gesamteindruck.', '/media/courts/panorama.jpg'],
     ['Full-Panorama-Court', 'Padel-Court mit nahezu durchgehenden Glasflächen und minimaler Stahlstruktur: repräsentativer Show-Court, vor allem für Indoor-Clubs.', '/media/courts/full.jpg'],
 ];
-$courtProducts = array_map(
-    fn($c) => tc_schema_product($c[0], $c[1], ['category' => 'Padel-Court', 'image' => $c[2], 'path' => '/courts', 'extra' => ['manufacturer' => ['@id' => TC_ORG_ID]]]),
-    $courts
-);
+// DEV-1573: Varianten ohne eigenen Preis nicht als Product, sondern als Service.
 $courtsFaq = [
     ['frage' => 'Welche Padel-Court-Varianten gibt es?', 'antwort' => 'Die drei Varianten heißen Standard, Panorama und Full-Panorama. Sie unterscheiden sich vor allem in den Streben zwischen den Glaselementen. Standard ist besonders stabil und wirtschaftlich, Panorama bietet größere Glasflächen und bessere Sicht, Full-Panorama ist der Show-Court für Indoor-Clubs und Turniere. Jede Variante gibt es als Doppel- und als Einzel-Court. Mehr dazu beim <a href="/standard-court">Standard-Court</a> und beim <a href="/panorama-court">Panorama-Court</a>.'],
     ['frage' => 'Was kostet ein Padel-Court?', 'antwort' => 'Ein Padel-Court kostet ab 27.000 € netto. Der Endpreis hängt von Variante, Hersteller und Ausstattung ab, etwa von Kunstrasen, Licht und Branding. Für die Gesamtkalkulation kommen das Fundament mit einem Richtwert von rund 35.000 € und bei Bedarf eine Halle ab 280 €/m² netto dazu. Wie dein Projekt von der Planung bis zum Bau abläuft, liest du unter <a href="/padel-court-bauen">Padel Court bauen</a>.'],
@@ -27,7 +24,7 @@ tc_page_start([
     'page_type' => 'CollectionPage',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
-        tc_schema_item_list('Padel-Court-Systeme', $courtProducts),
+        tc_schema_service('Padel-Courts: Beratung, Lieferung und Bau', 'Padel-Courts in drei Varianten (Standard, Panorama, Full-Panorama) von fünf Herstellern, mit Fundament und auf Wunsch Halle. Herstellerunabhängige Beratung zu Qualität, Lieferzeit, Herstellergarantie und Preis.', '/courts', ['serviceType' => 'Padel-Court-Bau', 'image' => '/media/courts/anlage_luftbild.jpg']),
         tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $courtsFaq), '/courts'),
     ],
 ]);

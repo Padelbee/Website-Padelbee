@@ -27,8 +27,9 @@ REDIRECTS = [("/bauplanung", "/padel-court-bauen"), ("/bauplanung.php", "/padel-
              ("/automaten", "/automatenloesungen"), ("/automaten/", "/automatenloesungen"),
              ("/courts/", "/courts"), ("/index.php", "/"),
              ("/standortanalyse.php", "/standortanalyse"), ("/team.php", "/team")]
-PRODUCT = ["/standard-court", "/panorama-court", "/hybrid-court", "/premier-court"]
-SERVICE = ["/standortanalyse", "/padel-court-bauen", "/betreiberkonzept", "/powerplay",
+# DEV-1573: /hybrid-court hat keinen Preis, deshalb Service statt Product
+PRODUCT = ["/standard-court", "/panorama-court", "/premier-court"]
+SERVICE = ["/hybrid-court", "/standortanalyse", "/padel-court-bauen", "/betreiberkonzept", "/powerplay",
            "/angebotsvergleich", "/sportplatzbau", "/halle"]
 ORG_TYPES = {"Organization", "LocalBusiness", "ProfessionalService"}
 SITE_TYPES = {"WebSite", "WebPage"}

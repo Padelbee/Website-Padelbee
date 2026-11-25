@@ -17,12 +17,8 @@ tc_page_start([
     'og_image' => $court['image'],
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
-        tc_schema_product($court['schema_name'], strip_tags($court['lead']), [
-            'brand' => '3B Padel',
-            'category' => 'Padel-Court',
-            'image' => $court['image'],
-            'path' => $court['path'],
-        ]),
+        // DEV-1573: ohne Preis kein Product (Google-Fehler), deshalb Service
+        tc_schema_service($court['schema_name'], strip_tags($court['lead']), $court['path'], ['serviceType' => 'Padel-Court', 'image' => $court['image']]),
     ],
 ]);
 ?>

@@ -17,16 +17,15 @@
  *   'others' => [[k, Titel, Text, Link, Linktext, Bild], ...]
  * ]
  */
+// DEV-1573: Product nur für Modelle mit Preis (Google meldet Product ohne offers als Fehler).
+// Modelle ohne Preis (z. B. Padel Concept, 100% Padel, Padel Galis) stehen weiter sichtbar auf der Seite.
 $products = array_map(fn($m) => tc_schema_product($m['name'], strip_tags($m['text']), [
     'brand' => $m['brand'],
     'category' => 'Padel-Court',
     'image' => $m['image'] ?? $v['image'],
     'path' => $v['path'],
-    'price' => isset($m['price']) ? $m['price'] : null,
-]), $v['models']);
-foreach ($v['schema_extra'] ?? [] as $x) {
-    $products[] = tc_schema_product($x['name'], $x['text'], ['brand' => $x['brand'], 'category' => 'Padel-Court', 'image' => $x['image'], 'path' => $v['path']]);
-}
+    'price' => $m['price'],
+]), array_values(array_filter($v['models'], fn($m) => !empty($m['price']))));
 
 tc_page_start([
     'path' => $v['path'],
@@ -35,7 +34,7 @@ tc_page_start([
     'breadcrumb' => ['Courts' => '/courts', $v['name'] => $v['path']],
     'og_image' => $v['image'],
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
-    'schema' => array_values(array_filter([tc_schema_item_list($v['name'] . ': Modelle', $products), !empty($v['faq']) ? tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $v['faq']), $v['path']) : null])),
+    'schema' => array_values(array_filter([$products ? tc_schema_item_list($v['name'] . ': Modelle', $products) : null, !empty($v['faq']) ? tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $v['faq']), $v['path']) : null])),
 ]);
 ?>
 <section class="band dark grid-bg c-hero">

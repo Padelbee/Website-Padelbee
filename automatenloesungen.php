@@ -25,7 +25,8 @@ $automatenProducts = array_map(
     fn($a) => tc_schema_product($a[0], 'Verleih- und Verkaufsautomat für Padel- und Tennisanlagen von ' . $a[1], [
         'brand' => $a[1], 'category' => 'Verkaufsautomat', 'price' => $a[2], 'image' => $a[3], 'path' => '/automatenloesungen',
     ]),
-    $automaten
+    // DEV-1573: Product nur mit Bild (Padel Ball Premium hat noch kein Foto, steht aber sichtbar auf der Seite)
+    array_values(array_filter($automaten, fn($a) => !empty($a[3])))
 );
 tc_page_start([
     'path' => '/automatenloesungen',
