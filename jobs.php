@@ -1,6 +1,5 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
-$intro = 'Padelbee ist ein innovatives Start-up, das sich der Projektentwicklung von Padelanlagen verschrieben hat. Von der Standortanalyse, der Bauplanung, dem Platzbau und der Baubegleitung, einem maßgeschneiderten Betreiberkonzept bis hin zum Padelbee-Partnerschip mit dem vollen Marketing- und Business-Support für den laufenden &amp; nachhaltigen Padel-Erfolg. Padelbee bietet eine 360 Grad Lösung. Auftraggeber sind Vereine, gewerbliche Anlagen und oder Tourismusanbieter, Freizeitparks. Mit unserem Know-how und dem notwendigen Rundumblick bringen wir die Vorhaben unserer Kunden gewinnbringend voran.';
 $introKurz = 'Padelbee ist ein innovatives Start-up, das sich der Projektentwicklung von Padelanlagen verschrieben hat.';
 // DEV-1667: "Über Padelbee" mit Martins Fakten (Zielgruppen, 50 Projekte, DACH, Unterföhring) statt des alten Textes.
 $ueber = 'Wir entwickeln, planen und bauen Padel-, Pickleball- und Tennisanlagen für Vereine, Hotels, Gewerbe und die öffentliche Hand. Unsere 50 Projekte in Deutschland, Österreich und der Schweiz steuern wir aus Unterföhring bei&nbsp;München.';
