@@ -549,3 +549,7 @@ span.sbr{display:block;height:4px}
 /* DEV-1667 Selbstverwaltung: Hinweisleiste für angemeldete Nutzer */
 .pb-adminbar{position:fixed;left:16px;bottom:16px;z-index:9999;background:var(--yellow);color:var(--petrol);font-weight:600;font-size:12px;letter-spacing:.08em;padding:10px 14px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
 .pb-adminbar a{color:var(--petrol);text-decoration:underline}
+/* Blog-Artikel: Titelbild immer im Querformat, hohe Bilder werden zugeschnitten statt die ganze Seite zu füllen */
+.b-cover{aspect-ratio:16/9;overflow:hidden;background:var(--petrol)}
+.b-cover img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+@media (max-width:620px){.b-cover{aspect-ratio:4/3}}
