@@ -6,10 +6,10 @@
 .f-hero .inner{display:block}
 .f-hero .lead{max-width:860px}
 .faq-nav .kurz{display:none}
-/* Handy: alle Themen in einer Zeile, kurze Namen ohne Kästen zwischen zwei Linien */
+/* Handy: alle Themen in einer Zeile, gleiche Kästen wie auf dem Desktop, kurze Namen */
 @media (max-width:680px){
-  .faq-nav{flex-wrap:nowrap;justify-content:space-between;gap:8px;margin-top:28px;padding:14px 0;border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d)}
-  .faq-nav a{flex:0 0 auto;padding:0;border:0;font-size:10px;letter-spacing:.06em}
+  .faq-nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin-top:28px}
+  .faq-nav a{padding:10px 2px;text-align:center;font-size:9.5px;letter-spacing:.04em;white-space:nowrap}
   .faq-nav .lang{display:none}.faq-nav .kurz{display:inline}
 }
-@media (max-width:359px){.faq-nav a{font-size:9px;letter-spacing:.03em}}
+@media (max-width:379px){.faq-nav{gap:4px}.faq-nav a{font-size:8.5px;letter-spacing:.02em;padding:9px 1px}}
