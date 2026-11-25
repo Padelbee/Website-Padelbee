@@ -3,9 +3,7 @@ require __DIR__ . '/inc/tc/layout.php';
 // Inhalt: Martins Entwurf (the-court.com, Stand 23.11.2026: "Für wen wir bauen", FAQ, Partnernetzwerk),
 // Referenz SC Eching (Folie 17 und inc/tc/referenzen-data.json), Bau-Partner (Folie 3).
 $spFaq = [
-    ['frage' => 'Für wen baut ihr Sportanlagen?', 'antwort' => 'Wir bauen für Vereine, Hotels, Gewerbe und die öffentliche Hand. Das reicht vom Tennisverein, der ungenutzte Plätze in Padel-Courts umwandelt, bis zum kommerziellen Betreiber mit eigener Halle. Neben Padel planen wir auch Anlagen für Pickleball und Tennis. Unser Angebot richtet sich ausschließlich an Unternehmen, Vereine und die öffentliche Hand, nicht an Privatpersonen.'],
     ['frage' => 'Wie viele Padel-Courts passen auf einen Tennisplatz?', 'antwort' => 'Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ein Padel-Court braucht deutlich weniger Fläche als ein Tennisplatz. Aus einem ungenutzten Tennisplatz kann so eine kleine Padelanlage werden, ohne dass dein Verein neues Gelände braucht. Ob deine Plätze passen, prüfen wir vor Ort, zusammen mit Baurecht, Lärm und Licht. Wie das abläuft, steht unter <a href="/standortanalyse">Standortanalyse</a>.'],
-    ['frage' => 'In welchen Ländern seid ihr aktiv?', 'antwort' => 'Wir sind in Deutschland, Österreich und der Schweiz aktiv. Unsere 50 Projekte reichen von Garbsen bis Graz und werden aus Unterföhring bei München gesteuert. Dazu zählen Anlagen, die wir beraten, geplant oder gebaut haben, vom Tennisverein bis zum kommerziellen Betreiber. Alle Standorte findest du in unseren <a href="/referenzen">Referenzen</a>.'],
 ];
 tc_page_start([
     'path' => '/sportplatzbau',
@@ -55,30 +53,9 @@ $spLogos = [
     </div>
     <figure class="courtfig courtphoto"><img src="/media/courts/anlage_luftbild.jpg" alt="Luftaufnahme einer Anlage mit fünf Padel-Courts neben Tennisplätzen"></figure>
   </div>
-  <div class="inner" style="padding-block:0 40px">
-    <div class="c-stats">
-      <div><b data-count="50">50</b><span>Projekte</span></div>
-      <div><b data-count="3">3</b><span>Länder</span></div>
-      <div><b>30+</b><span>Partner</span></div>
-      <div><b>+14</b><span>Jahre Padel-Erfahrung<em class="st-sub">im Team</em></span></div>
-    </div>
-  </div>
 </section>
 
-<section class="band grid-bg" id="sp-zielgruppen">
-  <div class="inner">
-    <p class="label" data-type>Für wen wir bauen</p>
-    <h2 class="reveal">Vom Tennisverein bis zur <span class="hl">Kommune.</span></h2>
-    <p class="lead">Unser Angebot richtet sich ausschließlich an Unternehmen, Vereine und die öffentliche Hand, nicht an Privatpersonen.</p>
-    <div class="cards c3">
-<?php foreach ($spGroups as $g): ?>
-      <article class="card reveal"><div class="k"><?= $g[0] ?></div><h3 data-type><?= $g[1] ?></h3><p><?= $g[2] ?></p></article>
-<?php endforeach; ?>
-    </div>
-  </div>
-</section>
-
-<section class="band dark grid-bg" id="sp-mehrsport">
+<section class="band grid-bg" id="sp-mehrsport">
   <div class="inner">
     <p class="label" data-type>Mehrsportanlagen</p>
     <h2 class="reveal">Mehr aus deiner Anlage <span class="kw">machen.</span></h2>
@@ -91,7 +68,7 @@ $spLogos = [
   </div>
 </section>
 
-<section class="band" id="sp-referenz">
+<section class="band" id="sp-referenz" style="background-color:var(--grey-050)">
   <div class="inner">
     <p class="label" data-type>Referenz</p>
     <h2 class="reveal">SC <span class="hl">Eching.</span></h2>
@@ -101,10 +78,6 @@ $spLogos = [
       <div><span>In Planung</span><b>Fertig 2027</b><p>Die Fertigstellung ist für 2027 geplant.</p><p><a class="more-link" href="/referenzen">Alle Referenzen ansehen</a></p></div>
     </div>
     <ul class="chips reveal"><li>Beratung</li><li>Finanzierung</li><li>Planung &amp; Architektur</li><li>Bau</li><li>Digitalisierung</li><li>Betrieb</li></ul>
-    <div class="teaser reveal">
-      <div><h3>Padel im Verein, 0 €&nbsp;<span>Investition.</span></h3><p>Dein Verein stellt die Fläche, das Joint Venture mit dem Motions Racket Club baut, finanziert und betreibt. Du bekommst Pacht, deine Mitglieder spielen mit 30 % Rabatt.</p></div>
-      <a class="btn" href="/padel-court-bauen#p-finanzierung">Finanzierung ansehen</a>
-    </div>
   </div>
 </section>
 
@@ -126,7 +99,7 @@ $spLogos = [
   </div>
 </section>
 
-<section class="band grid-bg" id="sp-faq" style="background-color:var(--grey-050)">
+<section class="band grid-bg" id="sp-faq">
   <div class="inner">
     <p class="label" data-type>FAQ</p>
     <h2 class="reveal">Fragen zum <span class="hl">Sportplatzbau.</span></h2>

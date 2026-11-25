@@ -9,3 +9,6 @@
 /* Pickleball-Karte: Joola-Logo füllt die Karte (Partner aus Martins Entwurf) */
 .sp-joola{margin-top:22px;padding:18px;background:var(--white);border-top:4px solid var(--yellow);display:flex;align-items:center;justify-content:center;height:96px}
 .sp-joola .m{background:var(--petrol);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:center;mask-position:center;max-width:70%}
+#sp-mehrsport .card .chips li{background:transparent;border-color:var(--petrol-200);color:var(--white)}
+#sp-mehrsport .card .chips li a{color:inherit;text-decoration:none}
+#sp-mehrsport .card .chips li a::after{content:" \2192"}
