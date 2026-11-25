@@ -36,7 +36,7 @@ tc_page_start([
 <section class="band dark grid-bg b-hero" id="b-list-hero">
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Blog</p>
-    <p class="label" style="color:var(--white)" data-type>Wissen · Praxis · Projekte</p>
+    <p class="label" style="color:var(--white)" data-type>Padel-Ratgeber · Wissen · Praxis</p>
     <h1>Padel-<span class="kw">Wissen.</span></h1>
     <p class="lead">In unserem Padel-Ratgeber steht, was wir aus über 50 Projekten gelernt haben, für Vereine, Betreiber, Hotels und Kommunen. Es geht um Kosten, Genehmigung, Court-Systeme, Hallen, Automaten und&nbsp;Betrieb.</p>
   </div>
