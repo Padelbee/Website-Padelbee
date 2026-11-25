@@ -30,7 +30,7 @@ $gruppen = [
             ['t', 'thecourt.dev', 'thecourt.dev', 'Sportplatzbau', 'Structure. Systemized.'],
         ]],
         ['k' => 'Courts · Hallen', 't' => 'Courts &amp; Hallen', 'text' => 'Jeder Hersteller hat eigene Stärken. Wir sind an keinen einzelnen Hersteller gebunden und vergleichen für dich Qualität, Lieferzeit, Herstellergarantie und Preis. Hallen bauen wir mit dem Gesamtsystem von Padel Factory und weiteren Hallenbauern wie Haltec, DS Stahl, Okatent und Kramke.', 'link' => [['/courts#c-hersteller', 'Alle Hersteller im Detail'], ['/halle', 'Zur Padel-Halle']], 'tiles' => [
-            ['m', 'padelfactory', 'Padel Factory', 'Italien · 15 J. Garantie lt. Hersteller'],
+            ['m', 'padelfactory', 'Padel Factory', 'Italien · 15 J. Garantie lt. Hersteller'],
             ['m', 'padelgalis', 'Padel Galis', 'Spanien · The Player\'s Court'],
             ['m', 'padelconcept', 'Padel Concept', 'Lettland · kurze Lieferzeiten'],
             ['m', 'mejorset', 'Mejor Set', 'Spanien · Premium Padel Courts'],
