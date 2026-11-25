@@ -122,7 +122,7 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Finanzierung &amp; Joint Venture</p>
     <h2 class="reveal">Drei Wege zur Anlage. Einer kostet dich <span class="hl">0 €.</span></h2>
-    <p class="lead">Nicht jeder Verein und nicht jeder Betreiber will sofort sechsstellig investieren. Musst du auch nicht. Kauf, Leasing oder Joint Venture, wir finden das Modell, das zu dir passt. Dazu gehören ein bankfähiger Business Case, Leasing, Fördermittel und Investoren. Für die Finanzierung haben wir mindspringpadel an unserer Seite.</p>
+    <p class="lead">Nicht jeder Verein und nicht jeder Betreiber will sofort sechsstellig investieren. Mit bankfähigem Business Case, Fördermitteln, Investoren und mindspringpadel als Finanzierungspartner finden wir das passende&nbsp;Modell.</p>
     <div class="cards c3">
       <article class="card reveal"><div class="k">Modell 1</div><h3 data-type>Kauf</h3><p>Du investierst einmal und dir gehört alles. Der Klassiker für Betreiber mit Kapital und langfristigem Plan.</p></article>
       <article class="card reveal"><div class="k">Modell 2</div><h3 data-type>Leasing</h3><p>Gerade bei mobilen Plattformen und Automaten eine starke Option. Die Raten fließen aus dem laufenden Betrieb, die Liquidität bleibt.</p></article>
