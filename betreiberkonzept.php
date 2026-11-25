@@ -114,7 +114,7 @@ tc_page_start([
       <div class="lg" role="img" aria-label="Scheck Club"><span class="t">Referenzclub</span><div class="m" data-logo="scheck" data-h="52"></div></div>
       <div class="lg"><span class="t">Messe</span><div class="txt">Sports Tech<small>Nation 2026</small></div></div>
     </div>
-    <div class="b-eventcta reveal"><div><h3 data-type>Dein Club beim nächsten Event?</h3><p>Ob Turnier, Messe oder ein eigenes Format auf deiner Anlage, wir prüfen gemeinsam, was zu deinem Club passt.</p></div><a class="btn" href="#kontakt">Event anfragen</a></div>
+    <div class="b-eventcta reveal"><div><h3 data-type>Dein Club beim nächsten Event?</h3></div><a class="btn" href="#kontakt">Event anfragen</a></div>
   </div>
 </section>
 
