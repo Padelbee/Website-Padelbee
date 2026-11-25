@@ -39,7 +39,7 @@ function news_posts(int $limit = 6): array
         $rest = '';
         foreach (array_slice($lines, 1) as $l) {
             // Zeilen, die durch entfernte Emojis ohne Satzzeichen enden, mit Punkt abschließen
-            $rest .= $l . (preg_match('/[.!?:,;…]$/u', $l) ? ' ' : '. ');
+            $rest .= $l . (preg_match('/[.!?:,;…]$/u', $l) ? ' ' : (str_contains($l, '·') ? ', ' : '. '));
         }
         $rest = trim($rest);
         $out[] = [
