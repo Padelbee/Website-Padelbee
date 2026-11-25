@@ -63,3 +63,9 @@
 /* 25.11.: Hero einspaltig wie Martins Startseite, BTV als Zeile statt Box */
 .p-hero .inner{grid-template-columns:1fr}
 .p-hero .lead{max-width:860px}
+/* 25.11.: je Gruppe ein eigenes Band wie Martins Entwurf: Titel, Zeile, ein Satz, Logos */
+.p-grp .pg{border-top:0;padding:0}
+.p-grp .pg:first-of-type{padding-top:0}
+#p-netzwerk .pg{margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+.p-grp .pg h3{margin-top:0}
+.p-grp .pg .k{margin-top:10px}
