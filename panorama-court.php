@@ -47,7 +47,7 @@ $v = [
     'description' => 'Panorama Court mit größeren Glasflächen und offener Sicht. Sieben Modelle von Padel Factory, Padel Concept, 100% Padel und Padel Galis, ab 28.150 € netto.',
     'label' => 'Court-Variante · Premium',
     'h1' => 'Panorama <span class="kw">Court.</span>',
-    'lead' => 'Der Panorama Court hat deutlich weniger sichtbare Streben, größere Glasflächen und eine offenere Anmutung. Das bringt bessere Sicht für Zuschauer und einen hochwertigen Gesamteindruck. Damit ist er die goldene Mitte für Clubs mit Anspruch. Jedes Modell gibt es als Double- und als Single-Court.',
+    'lead' => 'Der Panorama Court hat deutlich weniger sichtbare Streben, größere Glasflächen und eine offenere Anmutung. Das bringt bessere Sicht für Zuschauer und einen hochwertigen Gesamteindruck. Damit ist er die goldene Mitte für Clubs mit Anspruch.',
     'image' => '/media/courts/panorama.jpg',
     'alt' => 'Panorama Court Rendering mit großen Glasflächen',
     'stats' => [

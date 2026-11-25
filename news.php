@@ -99,7 +99,7 @@ tc_page_start([
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; News</p>
     <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padelbee News</span>Aktuelles von uns und aus der <span class="kw">Padel-Welt.</span></h1>
-    <p class="lead">Was gerade auf unseren Courts passiert. Neue Anlagen, Turniere und Einblicke aus 50 Projekten in Deutschland, Österreich und der&nbsp;Schweiz.</p>
+    <p class="lead">Was gerade auf unseren Courts passiert. Neue Anlagen, Turniere und Einblicke aus unseren 50&nbsp;Projekten.</p>
     <a class="more-link" href="/referenzen">Fertige Anlagen ansehen</a>
   </div>
 </section>
