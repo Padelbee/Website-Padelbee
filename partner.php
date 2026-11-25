@@ -102,11 +102,8 @@ tc_page_start([
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Partner</p>
       <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padelbee Partner · 360° Padel-Expertise</span>Unser <span class="kw">Partner&shy;netzwerk.</span></h1>
       <p class="lead">Für jedes Projekt wählen wir aus über 30 Partnern die passenden aus, von Planung und Bau über <a href="/courts#c-hersteller">Courts</a> und <a href="/halle">Hallen</a> bis zu <a href="/automatenloesungen">Digitalisierung</a>, Equipment und Events.</p>
+      <p class="label" style="margin-top:22px">Offizieller Padel-Infrastrukturpartner des Bayerischen Tennis-Verbands</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Projekt anfragen</a><a class="btn ghost" href="#p-netzwerk">Partner ansehen</a></div>
-    </div>
-    <div class="p-btv">
-      <p>Offizieller Padel-Infrastrukturpartner des Bayerischen Tennis-Verbands</p>
-      <div class="m" role="img" aria-label="Bayerischer Tennis-Verband" data-logo="btv" data-h="<?= $logoH('btv', 5200, 210) ?>"></div>
     </div>
   </div>
   <div class="inner" style="padding-block:0 40px">

@@ -60,3 +60,6 @@
 @media (min-width:1024px){.pg-logos .pn span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
 @media (max-width:980px){.pg-logos.n10{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (max-width:760px){.pg-logos.n8,.pg-logos.n10{grid-template-columns:repeat(2,minmax(0,1fr))}.pg-logos .pn span{white-space:normal}}
+/* 25.11.: Hero einspaltig wie Martins Startseite, BTV als Zeile statt Box */
+.p-hero .inner{grid-template-columns:1fr}
+.p-hero .lead{max-width:860px}
