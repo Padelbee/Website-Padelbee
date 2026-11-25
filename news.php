@@ -36,7 +36,12 @@ function news_posts(int $limit = 6): array
         }
         $lines = array_values(array_filter(array_map('trim', preg_split('/\n+/', $text))));
         $title = $lines[0] ?? '';
-        $rest = trim(implode(' ', array_slice($lines, 1)));
+        $rest = '';
+        foreach (array_slice($lines, 1) as $l) {
+            // Zeilen, die durch entfernte Emojis ohne Satzzeichen enden, mit Punkt abschließen
+            $rest .= $l . (preg_match('/[.!?:,;…]$/u', $l) ? ' ' : '. ');
+        }
+        $rest = trim($rest);
         $out[] = [
             'title' => news_cut($title, 90),
             'text' => news_cut($rest, 170),
@@ -109,7 +114,8 @@ tc_page_start([
       <a class="ref news-card" href="<?= tc_h($n['url']) ?>" target="_blank" rel="noopener">
         <figure>
 <?php if ($n['img'] !== ''): ?>
-          <img src="<?= tc_h($n['img']) ?>" alt="<?= tc_h($n['title']) ?>" loading="lazy">
+          <img class="nbg" src="<?= tc_h($n['img']) ?>" alt="" aria-hidden="true" loading="lazy">
+          <img class="nfg" src="<?= tc_h($n['img']) ?>" alt="<?= tc_h($n['title']) ?>" loading="lazy">
 <?php else: ?>
           <div class="noimg court-ph"><span>Padelbee</span></div>
 <?php endif; ?>

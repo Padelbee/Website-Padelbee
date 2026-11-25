@@ -6,3 +6,8 @@
 .news-all{margin-top:36px;display:flex;justify-content:center}
 @media (max-width:980px){.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:620px){.news-grid{grid-template-columns:1fr}}
+/* Bilder haben unterschiedliche Formate: ganzes Bild zeigen, Rand mit unscharfer Kopie füllen */
+.news-card figure .nbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(18px) brightness(.55);transform:scale(1.15)}
+.news-card figure .nfg{position:relative;width:100%;height:100%;object-fit:contain}
+.news-card:hover figure .nfg{transform:scale(1.03)}
+.news-card:hover figure .nbg{transform:scale(1.15)}
