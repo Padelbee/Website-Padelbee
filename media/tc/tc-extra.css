@@ -553,3 +553,5 @@ span.sbr{display:block;height:4px}
 .b-cover{aspect-ratio:16/9;overflow:hidden;background:var(--petrol)}
 .b-cover img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
 @media (max-width:620px){.b-cover{aspect-ratio:4/3}}
+/* Mega-Menü „Produkte“ mittig unter dem Menüpunkt, damit es rechts nicht aus dem Bild ragt */
+.dd-menu.mega{left:50%;margin-left:calc(min(760px,92vw) / -2)}
