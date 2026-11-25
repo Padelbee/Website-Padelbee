@@ -6,7 +6,7 @@ require __DIR__ . '/inc/tc/layout.php';
 // Die alten Fragen aus inc/faq-data.php (alte Website) werden nicht mehr verwendet.
 $gruppen = [
     [
-        'id' => 'faq-projekt', 'label' => 'Padelbee &amp; Projekt', 'h2' => 'Dein <span class="hl">Projekt.</span>',
+        'id' => 'faq-projekt', 'kurz' => 'Projekt', 'label' => 'Padelbee &amp; Projekt', 'h2' => 'Dein <span class="hl">Projekt.</span>',
         'link' => ['/padel-court-bauen', 'Zu Padel Court bauen'],
         'faqs' => [
             ['frage' => 'Was macht Padelbee?', 'antwort' => 'Padelbee ist ein Projektentwickler für Padel-, Pickleball- und Tennisanlagen in Deutschland, Österreich und der Schweiz. Wir begleiten dich von Beratung und Finanzierung über Planung und Bau bis zu Digitalisierung und Betrieb. Du hast einen Ansprechpartner für jede Phase. Für dein Projekt wählen wir aus über 30 Partnern aus Planung, Court- und Hallenbau, Digitalisierung und Equipment die passenden aus. Mehr dazu bei unseren <a href="/partner">Partnern</a>.'],
@@ -18,7 +18,7 @@ $gruppen = [
         ],
     ],
     [
-        'id' => 'faq-courts', 'label' => 'Courts · Halle', 'h2' => 'Courts &amp; <span class="hl">Halle.</span>',
+        'id' => 'faq-courts', 'kurz' => 'Courts', 'label' => 'Courts · Halle', 'h2' => 'Courts &amp; <span class="hl">Halle.</span>',
         'link' => ['/courts', 'Zu den Padel-Courts'],
         'faqs' => [
             ['frage' => 'Welche Padel-Court-Varianten gibt es?', 'antwort' => 'Die drei Varianten heißen Standard, Panorama und Full-Panorama. Sie unterscheiden sich vor allem in den Streben zwischen den Glaselementen. Standard ist besonders stabil und wirtschaftlich, Panorama bietet größere Glasflächen und bessere Sicht, Full-Panorama ist der Show-Court für Indoor-Clubs und Turniere. Jede Variante gibt es als Doppel- und als Einzel-Court. Mehr dazu beim <a href="/standard-court">Standard Court</a>, <a href="/panorama-court">Panorama Court</a> und <a href="/premier-court">Full-Panorama Court</a>.'],
@@ -31,7 +31,7 @@ $gruppen = [
         ],
     ],
     [
-        'id' => 'faq-automaten', 'label' => 'Automaten · Digitalisierung', 'h2' => 'Automaten &amp; <span class="hl">Zugang.</span>',
+        'id' => 'faq-automaten', 'kurz' => 'Automaten', 'label' => 'Automaten · Digitalisierung', 'h2' => 'Automaten &amp; <span class="hl">Zugang.</span>',
         'link' => ['/automatenloesungen', 'Zu den Automaten'],
         'faqs' => [
             ['frage' => 'Wie funktioniert ein Schläger-Verleihautomat?', 'antwort' => 'Ein Verleihautomat gibt Schläger ohne Personal aus, in vier Schritten. Deine Spieler wählen am Touchscreen oder per App, bezahlen bargeldlos mit Karte, Apple Pay, Google Pay oder PayPal und hinterlegen eine Kaution. Dann öffnet sich das richtige Fach automatisch. Nach dem Spiel kommt der Schläger zurück ins Fach und die Kaution wird freigegeben.'],
@@ -44,7 +44,7 @@ $gruppen = [
         ],
     ],
     [
-        'id' => 'faq-verein', 'label' => 'Joint Venture · Motions Racket Club', 'h2' => 'Padel im <span class="hl">Verein.</span>',
+        'id' => 'faq-verein', 'kurz' => 'Verein', 'label' => 'Joint Venture · Motions Racket Club', 'h2' => 'Padel im <span class="hl">Verein.</span>',
         'link' => ['/betreiberkonzept', 'Zum Betreiberkonzept'],
         'faqs' => [
             ['frage' => 'Kann mein Tennisverein Padel ohne eigene Investition bekommen?', 'antwort' => 'Ja, über das Joint Venture mit dem Motions Racket Club. Dein Verein stellt die Fläche und bekommt dafür Pacht. Bau, Finanzierung und Betrieb übernimmt das Joint Venture, für den Verein liegt die Investition bei 0 €. Deine Mitglieder spielen mit 30 % Rabatt. Mehr dazu beim <a href="/betreiberkonzept#b-finanzierung">Betreiberkonzept</a>.'],
@@ -57,7 +57,7 @@ $gruppen = [
         ],
     ],
     [
-        'id' => 'faq-referenzen', 'label' => 'Referenzen', 'h2' => 'Unsere <span class="hl">Referenzen.</span>',
+        'id' => 'faq-referenzen', 'kurz' => 'Referenzen', 'label' => 'Referenzen', 'h2' => 'Unsere <span class="hl">Referenzen.</span>',
         'link' => ['/referenzen', 'Alle Referenzen ansehen'],
         'faqs' => [
             ['frage' => 'Wie viele Projekte hat Padelbee umgesetzt?', 'antwort' => 'Auf unserer Projektkarte stehen 50 Projekte, von Garbsen bei Hannover bis Graz in Österreich. Jeder Punkt ist eine Anlage, die wir beraten, geplant oder gebaut haben, gesteuert aus Unterföhring bei München. Einen Teil davon zeigen wir in unseren <a href="/referenzen">Referenzen</a> mit Bildern und Details, Projekte in Planung sind als solche gekennzeichnet.'],
@@ -88,7 +88,7 @@ tc_page_start([
     <p class="lead">Hier findest du Antworten rund um deine Padelanlage, von Kosten und Ablauf über Courts und Halle bis zu Automaten, Padel im Verein und unseren Referenzen.</p>
     <nav class="faq-nav" aria-label="FAQ-Themen">
 <?php foreach ($gruppen as $g): ?>
-      <a href="#<?= $g['id'] ?>"><?= rtrim(strip_tags($g['h2']), '.') ?></a>
+      <a href="#<?= $g['id'] ?>"><span class="lang"><?= rtrim(strip_tags($g['h2']), '.') ?></span><span class="kurz"><?= $g['kurz'] ?></span></a>
 <?php endforeach; ?>
     </nav>
   </div>
