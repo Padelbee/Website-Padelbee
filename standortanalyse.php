@@ -43,13 +43,12 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Standortanalyse</p>
     <h2 class="reveal">Drei Phasen. Eine <span class="hl">Entscheidungs&shy;grundlage.</span></h2>
-    <p class="lead">Am Anfang prüfen wir Fläche, Zielgruppe und Potenzial deines Standorts. Danach klären wir Finanzierung und Genehmigung, bevor gebaut wird.</p>
     <div class="cards c3">
       <article class="card reveal"><div class="k">Phase 01</div><h3 data-type>Erstkontakt &amp; Projektaufnahme</h3><p>Du stellst deine Anfrage, wir prüfen deinen Standort im Quickcheck und legen deine Projektziele fest.</p><ul class="chips"><li>Eingangsanfrage &amp; Standort-Quickcheck</li><li>Projektziele definieren</li><li>Erste Kostenschätzung</li><li>Termin für die Besichtigung</li></ul></article>
       <article class="card reveal"><div class="k">Phase 02</div><h3 data-type>Standortbesichtigung &amp; Geländeaufnahme</h3><p>Wir gehen den Standort gemeinsam mit dir ab und nehmen das Gelände genau auf.</p><ul class="chips"><li>Begehung mit dir</li><li>GPS-Vermessung &amp; Drohnenbefliegung</li><li>Infrastruktur-Erfassung</li><li>CAD-Übertrag (2D &amp; 3D)</li></ul></article>
       <article class="card reveal"><div class="k">Phase 03</div><h3 data-type>Grundlagenanalyse &amp; Konzeptentwicklung</h3><p>Wir prüfen, ob dein Vorhaben planungsrechtlich möglich ist, und entwickeln Varianten, die wir dir in 3D zeigen. Dafür arbeiten wir mit spezialisierten Architekturbüros, die effizient und schnell für ganz Deutschland planen.</p><ul class="chips"><li>Planungsrechtliche Prüfung (§34/§35 BauGB)</li><li>Technische Untersuchungen</li><li>Variantenplanung</li><li>3D-Visualisierung &amp; Kostenrahmen (DIN 276)</li></ul></article>
     </div>
-    <p class="v-rule reveal"><span class="k">Für Tennisvereine</span>Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ob deine Plätze passen, prüfen wir vor Ort, zusammen mit Baurecht, Lärm und Licht. Worauf es dabei ankommt, liest du unter <a href="/padel-court-bauen#p-genehmigung">Padel Court bauen</a>.</p>
+    <p class="v-rule reveal"><span class="k">Für Tennisvereine</span>Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ob deine Plätze passen, prüfen wir vor Ort zusammen mit Baurecht, Lärmschutz und Licht. <a class="more-link" href="/padel-court-bauen#p-genehmigung">Worauf es bei der Genehmigung ankommt</a></p>
   </div>
 </section>
 
@@ -57,9 +56,9 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Finanzielle Planung &amp; Business Case</p>
     <h2 class="reveal">Wer früh richtig plant, spart später <span class="kw">doppelt.</span></h2>
-    <p class="lead">Zur Standortanalyse gehört die finanzielle Planung. Wir erstellen einen bankfähigen Business Case und rechnen dir vor, was deine Fläche bringen kann.</p>
+    <p class="lead">Wir erstellen einen bankfähigen Business Case und rechnen dir vor, was deine Fläche bringen kann.</p>
     <div class="cards c3">
-      <article class="card dk reveal"><div class="k">Leistung 01</div><h3 data-type>Business Case</h3><p>Ein bankfähiger Business Case zeigt dir, welche Courts, welches Fundament und welche Finanzierung für deine Anlage infrage kommen.</p></article>
+      <article class="card dk reveal"><div class="k">Leistung 01</div><h3 data-type>Business Case</h3><p>Er zeigt dir, welche Courts, welches Fundament und welche Finanzierung für deine Anlage infrage kommen.</p></article>
       <article class="card dk reveal"><div class="k">Finanzierung</div><h3 data-type>Dein Modell</h3><p>Kauf, Leasing oder <a href="/betreiberkonzept#b-finanzierung">Joint Venture</a>. Wir finden das Modell, das zu dir passt, und prüfen Fördermittel und Investoren.</p></article>
       <article class="card dk reveal"><div class="k">Erste Zahlen</div><h3 data-type>Richtwerte</h3><p>Für die erste Kalkulation rechnen wir mit einem Court ab 27.000 € netto, einem Fundament von rund 35.000 € und einer Halle ab 280 €/m² netto.</p></article>
     </div>
