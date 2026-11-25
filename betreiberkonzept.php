@@ -5,7 +5,7 @@ require __DIR__ . '/inc/tc/layout.php';
 $leistungen = [
     ['Digitalisierung & Automatisierung', 'Betreiberkonzept & Digitalisierung', 'Buchung, Zugang, Licht und Automaten greifen ineinander. Auf Wunsch unterstützen wir dich auch nach der Eröffnung.', '#b-digital', 'Zur Digitalisierung'],
     ['Sport Management', 'Marketing & Community-Aufbau', 'Wir übernehmen Markenaufbau, Sponsoring, Community-Wachstum und kommerzielles Management für Clubs und Betreiber.', null, null],
-    ['Zusatzeinnahmen', 'Zugang zu Sponsoren', 'Zusatzeinnahmen durch Sponsoren. Logos lassen sich integrieren und Glasflächen individualisieren, so entsteht eine professionelle Präsentationsfläche mit&nbsp;Wiedererkennungswert.', '/courts#c-marke', 'Gestaltung der Courts'],
+    ['Zusatzeinnahmen', 'Zugang zu Sponsoren', 'Logos und gestaltete Glasflächen machen deinen Court zur Präsentationsfläche mit Wiedererkennungswert, für Zusatzeinnahmen durch&nbsp;Sponsoren.', '/courts#c-marke', 'Gestaltung der Courts'],
     ['Ausbildung & Training', 'Academy & Coaching', 'Wir bieten strukturierte Trainingsprogramme, Betreiber-Coaching und&nbsp;Unternehmensberatung.', null, null],
     ['Management & Formate', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '#b-netzwerk', 'Zu den Events'],
     ['Verleih & Verkauf', 'Automatenlösungen', 'Zusatzeinnahmen mit Schlägerverleih, Bällen, Snacks und Getränken, rund um die Uhr und ohne Personal.', '/automatenloesungen', 'Zu den Automaten'],
@@ -39,7 +39,7 @@ tc_page_start([
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Betreiberkonzept</p>
       <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Betreiberkonzept · Padel-Anlagen betreiben</span>Bauen. Betreiben. <span class="kw">Padelbee.</span></h1>
-      <p class="lead">Mit einem nachhaltigen Betreiberkonzept startet Padel an deinem Standort schnell und bleibt erfolgreich. Wir bringen über 20 Jahre Erfahrung im Betrieb von Sportanlagen und im Marketing für Racket Sports mit und begleiten dich nach der <a href="/standortanalyse">Standortanalyse</a> und dem <a href="/padel-court-bauen">Bau</a> bis in den laufenden Betrieb.</p>
+      <p class="lead">Mit einem nachhaltigen Betreiberkonzept startet Padel an deinem Standort schnell und bleibt erfolgreich. Mit über 20 Jahren Erfahrung in Betrieb und Marketing begleiten wir dich nach <a href="/standortanalyse">Standortanalyse</a> und <a href="/padel-court-bauen">Bau</a> bis in den laufenden&nbsp;Betrieb.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Betreiberkonzept anfragen</a><a class="btn ghost" href="#b-leistungen">Leistungen ansehen</a></div>
     </div>
     <figure class="courtfig courtphoto"><img src="/media/uploads/a5b1ead76ff421ef2585a90d24bed755.jpg" alt="Padel-Halle im Scheck Club Unterföhring, Blick von der Galerie auf die Courts"></figure>
@@ -100,10 +100,10 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Academy, Events &amp; Coaching</p>
     <h2 class="reveal">Turniere, Training und <span class="hl">Events.</span></h2>
-    <p class="lead">Wir bringen Padel dorthin, wo Spieler, Vereine und Betreiber zusammenkommen. Dafür arbeiten wir mit starken Partnern aus Academy, Events und Coaching zusammen.</p>
+    <p class="lead">Wir bringen Padel dorthin, wo Spieler, Vereine und Betreiber zusammenkommen.</p>
     <div class="cards c3 b-events">
       <article class="card reveal"><div class="k">Turnierserie</div><h3 data-type>Rafa Nadal Padel Tour 2026</h3><p>Die Tour macht 2026 an drei Standorten in Deutschland Station, in München im <a href="/referenzen#r-scheck">Scheck Club</a>, in Düsseldorf bei Mitte Padel und in Berlin bei Padel Ludwigsfelde.</p></article>
-      <article class="card reveal"><div class="k">Format</div><h3 data-type>Best-of-Three-Challenge</h3><p>Im Rapid-Format gewinnt das Team, das zuerst 2 Punkte holt. Gespielt wird im einfachen K.&#8209;o.&#8209;System, wer verliert, scheidet aus. Das Gewinnerteam nimmt 1.000 € Preisgeld mit nach Hause.</p></article>
+      <article class="card reveal"><div class="k">Format</div><h3 data-type>Best-of-Three-Challenge</h3><p>Im Rapid-Format gewinnt, wer zuerst 2 Punkte holt. Gespielt wird im K.&#8209;o.&#8209;System, das Gewinnerteam bekommt 1.000&nbsp;€ Preisgeld.</p></article>
       <article class="card reveal"><div class="k">Messen</div><h3 data-type>f.re.e und Active Connected</h3><p>Gemeinsam mit der MPM GmbH und Sports Connected bringen wir Racketsport auf die f.re.e München vom 10. bis 14.&nbsp;Februar&nbsp;2027. Auf der Active Connected leiten wir den Bereich Racketsports.</p></article>
     </div>
     <div class="logos">
@@ -126,7 +126,7 @@ tc_page_start([
     <div class="cards c3">
       <article class="card reveal"><div class="k">Modell 1</div><h3 data-type>Kauf</h3><p>Du investierst einmal und dir gehört alles. Der Klassiker für Betreiber mit Kapital und langfristigem Plan.</p></article>
       <article class="card reveal"><div class="k">Modell 2</div><h3 data-type>Leasing</h3><p>Gerade bei mobilen Plattformen und Automaten eine starke Option. Die Raten fließen aus dem laufenden Betrieb, die Liquidität bleibt.</p></article>
-      <article class="card dk reveal"><div class="k">Modell 3</div><h3 data-type>Joint Venture</h3><p>Mit dem Motions Racket Club stellst du als Verein nur die Fläche. Bau, Finanzierung und Betrieb übernimmt das Joint Venture. Du bekommst Pacht und investierst 0 €.</p></article>
+      <article class="card dk reveal"><div class="k">Modell 3</div><h3 data-type>Joint Venture</h3><p>Mit dem Motions Racket Club stellt dein Verein nur die Fläche, bekommt Pacht und investiert 0&nbsp;€.</p></article>
     </div>
     <p class="lead b-choose">Welcher Weg passt, hängt von deinen Zielen ab. Willst du die volle Kontrolle oder planbare Einnahmen ohne Investitionsrisiko? Wir rechnen beide Seiten mit dir durch.</p>
     <div class="b-jv reveal">
