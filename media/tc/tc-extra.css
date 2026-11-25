@@ -521,3 +521,9 @@ span.sbr{display:block;height:4px}
 }
 /* Desktop: drei Kennzahlen gleich breit wie bei vier (je ein Viertel der Breite) */
 @media (min-width:861px){.c-stats.r-stats:has(> div:nth-child(3):last-child){grid-template-columns:repeat(3,minmax(0,1fr));width:75%}}
+/* Handy: drei Kennzahlen MIT Zusatzzeile untereinander (Zahl links, Text rechts), sonst zu eng */
+@media (max-width:680px){
+  .c-stats.r-stats:has(.st-sub){grid-template-columns:1fr !important}
+  .c-stats.r-stats:has(.st-sub) > div{display:grid;grid-template-columns:136px minmax(0,1fr);column-gap:14px;align-items:baseline}
+  .c-stats.r-stats:has(.st-sub) > div span{margin-top:0;font-size:11px;letter-spacing:.14em}
+}
