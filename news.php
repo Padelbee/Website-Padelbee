@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
 // DEV-1155: News im neuen Design. Inhalt: aktuelle LinkedIn-Beiträge von Padelbee.
-// DEV-1667: Hero-Text beschreibt die Themen der LinkedIn-Beiträge (kein Satz dazu in Martins Entwurf). Was /news künftig zeigen soll, klärt Martin (Fragenliste).
+// DEV-1667: Hero-Text mit Martins Fakten (50 Projekte, DACH), Formulierung eigen, von Beti freigegeben. Was /news künftig zeigen soll, klärt Martin (Fragenliste).
 // DEV-1667: Statt des SociableKit-Widgets (iframe, fremdes Design, für Google unsichtbar) eigene Karten im Seitendesign.
 // Quelle bleibt derselbe Feed (SociableKit-Embed 25653061), serverseitig geladen und 1 Stunde zwischengespeichert.
 // Fällt der Feed aus, bleibt der Button zu LinkedIn stehen.
@@ -99,7 +99,7 @@ tc_page_start([
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; News</p>
     <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padelbee News</span>Aktuelles von uns und aus der <span class="kw">Padel-Welt.</span></h1>
-    <p class="lead">Die neuesten Beiträge von Padelbee auf LinkedIn, von neuen Projekten über Court-Beratung bis zu Turnieren und&nbsp;Events.</p>
+    <p class="lead">Was gerade auf unseren Courts passiert. Neue Anlagen, Turniere und Einblicke aus 50 Projekten in Deutschland, Österreich und der&nbsp;Schweiz.</p>
     <a class="more-link" href="/referenzen">Fertige Anlagen ansehen</a>
   </div>
 </section>
