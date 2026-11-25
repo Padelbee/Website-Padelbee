@@ -48,7 +48,7 @@ tc_page_start([
       <article class="card reveal"><div class="k">Phase 02</div><h3 data-type>Standortbesichtigung &amp; Geländeaufnahme</h3><p>Wir gehen den Standort gemeinsam mit dir ab und nehmen das Gelände genau auf.</p><ul class="chips"><li>Begehung mit dir</li><li>GPS-Vermessung &amp; Drohnenbefliegung</li><li>Infrastruktur-Erfassung</li><li>CAD-Übertrag (2D &amp; 3D)</li></ul></article>
       <article class="card reveal"><div class="k">Phase 03</div><h3 data-type>Grundlagenanalyse &amp; Konzeptentwicklung</h3><p>Wir prüfen, ob dein Vorhaben planungsrechtlich möglich ist, und entwickeln Varianten, die wir dir in 3D zeigen. Dafür arbeiten wir mit spezialisierten Architekturbüros, die effizient und schnell für ganz Deutschland planen.</p><ul class="chips"><li>Planungsrechtliche Prüfung (§34/§35 BauGB)</li><li>Technische Untersuchungen</li><li>Variantenplanung</li><li>3D-Visualisierung &amp; Kostenrahmen (DIN 276)</li></ul></article>
     </div>
-    <p class="v-rule reveal"><span class="k">Für Tennisvereine</span>Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ob deine Plätze passen, prüfen wir vor Ort zusammen mit Baurecht, Lärmschutz und Licht. <a class="more-link" href="/padel-court-bauen#p-genehmigung">Worauf es bei der Genehmigung ankommt</a></p>
+    <p class="v-rule reveal"><span class="k">Für Tennisvereine</span>Auf einen Tennisplatz passen bis zu zwei Padel-Courts. Ob deine Plätze passen, prüfen wir vor Ort zusammen mit Baurecht, Lärmschutz und Licht.<br><a class="more-link" style="white-space:normal" href="/padel-court-bauen#p-genehmigung">Worauf es bei der Genehmigung ankommt</a></p>
   </div>
 </section>
 
