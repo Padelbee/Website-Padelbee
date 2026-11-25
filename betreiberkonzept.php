@@ -104,7 +104,7 @@ tc_page_start([
     <div class="cards c3 b-events">
       <article class="card reveal"><div class="k">Turnierserie</div><h3 data-type>Rafa Nadal Padel Tour 2026</h3><p>Die Tour macht 2026 an drei Standorten in Deutschland Station, in München im <a href="/referenzen#r-scheck">Scheck Club</a>, in Düsseldorf bei Mitte Padel und in Berlin bei Padel Ludwigsfelde.</p></article>
       <article class="card reveal"><div class="k">Format</div><h3 data-type>Best-of-Three-Challenge</h3><p>Im Rapid-Format gewinnt das Team, das zuerst 2 Punkte holt. Gespielt wird im einfachen K.&#8209;o.&#8209;System, wer verliert, scheidet aus. Das Gewinnerteam nimmt 1.000 € Preisgeld mit nach Hause.</p></article>
-      <article class="card reveal"><div class="k">Messen</div><h3 data-type>f.re.e und Active Connected</h3><p>Gemeinsam mit der MPM GmbH und Sports Connected bringen wir Racketsport auf die f.re.e München vom 10. bis 14. Februar 2027. Auf der Active Connected leiten wir den Bereich Racketsports.</p></article>
+      <article class="card reveal"><div class="k">Messen</div><h3 data-type>f.re.e und Active Connected</h3><p>Gemeinsam mit der MPM GmbH und Sports Connected bringen wir Racketsport auf die f.re.e München vom 10. bis 14.&nbsp;Februar&nbsp;2027. Auf der Active Connected leiten wir den Bereich Racketsports.</p></article>
     </div>
     <div class="logos">
       <div class="lg" role="img" aria-label="Rafa Nadal Academy"><span class="t">Academy</span><div class="m" data-logo="rna" data-h="40"></div></div>
