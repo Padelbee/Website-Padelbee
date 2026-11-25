@@ -110,7 +110,7 @@ tc_page_start([
     <div class="c-stats r-stats">
       <div><b data-count="30" data-plus>30+</b><span>Partner</span></div>
       <div><b data-count="5">5</b><span>Court-Hersteller</span></div>
-      <div><b data-count="8">8</b><span>Partnerbereiche</span></div>
+      <div><b data-count="8">8</b><span>Partner&shy;bereiche</span></div>
     </div>
   </div>
 </section>

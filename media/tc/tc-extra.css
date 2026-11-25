@@ -517,5 +517,5 @@ span.sbr{display:block;height:4px}
 /* Handy: genau drei Kennzahlen in einer Reihe statt 2 + 1 (Beti 25.11.) */
 @media (max-width:680px){
   .c-stats.r-stats:has(> div:nth-child(3):last-child){grid-template-columns:repeat(3,minmax(0,1fr));column-gap:14px}
-  .c-stats.r-stats:has(> div:nth-child(3):last-child) span{font-size:10px;letter-spacing:.08em;overflow-wrap:anywhere}
+  .c-stats.r-stats:has(> div:nth-child(3):last-child) span{display:block;font-size:10px;letter-spacing:.08em;line-height:1.4;margin-top:6px;hyphens:manual}
 }
