@@ -45,11 +45,10 @@ tc_page_start([
     <figure class="courtfig courtphoto"><img src="/media/uploads/a5b1ead76ff421ef2585a90d24bed755.jpg" alt="Padel-Halle im Scheck Club Unterföhring, Blick von der Galerie auf die Courts"></figure>
   </div>
   <div class="inner" style="padding-block:0 40px">
-    <div class="c-stats">
+    <div class="c-stats r-stats">
       <div><b data-count="20" data-pre="+">+20</b><span>Jahre Racketsports<em class="st-sub">Betrieb von Sportanlagen</em></span></div>
       <div><b data-count="12">12</b><span>Padel-Courts<em class="st-sub">Referenzanlage Scheck Club, eine der größten Deutschlands</em></span></div>
       <div><b data-count="14" data-pre="+">+14</b><span>Jahre Padel-Erfahrung<em class="st-sub">in Planung, Fundament- und Platzbau und Betrieb</em></span></div>
-      <div><b data-count="30" data-plus>30+</b><span>Partner</span></div>
     </div>
   </div>
 </section>
