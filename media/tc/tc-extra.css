@@ -536,3 +536,13 @@ span.sbr{display:block;height:4px}
 .b-table table{border-collapse:collapse;width:100%;min-width:520px;font-size:16px;line-height:1.5}
 .b-table th,.b-table td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
 .b-table th{font-family:var(--f-body);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--petrol);border-bottom:2px solid var(--petrol)}
+/* Handy: Tabellen als Karten untereinander statt seitlich wischen */
+@media (max-width:620px){
+  .b-table{overflow:visible}
+  .b-table table{min-width:0;font-size:15px}
+  .b-table thead{display:none}
+  .b-table tr{display:block;border-top:2px solid var(--petrol);padding:6px 0 10px}
+  .b-table td{display:grid;grid-template-columns:42% 1fr;gap:10px;padding:7px 0;border-bottom:1px solid var(--line)}
+  .b-table td:last-child{border-bottom:0}
+  .b-table td::before{content:attr(data-label);font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--petrol);padding-top:2px}
+}

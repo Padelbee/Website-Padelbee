@@ -11,7 +11,7 @@ function inline(parent,text){ String(text).split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)
   else if(/^\[[^\]]+\]\([^)\s]+\)$/.test(part)){ const m=part.match(/^\[([^\]]+)\]\(([^)\s]+)\)$/); const a=el('a',null,m[1]); const h=m[2]; if(/^(\/|#)/.test(h)) a.href=h; parent.appendChild(a); }
   else if(part) parent.appendChild(document.createTextNode(part)); }); }
 function table(box,lines){ const rows=lines.filter(l=>!/^\s*\|?\s*:?-{2,}/.test(l)).map(l=>l.trim().replace(/^\||\|$/g,'').split('|').map(c=>c.trim()));
-  const wrap=el('div','b-table'); const t=el('table'); rows.forEach((r,i)=>{ const tr=el('tr'); r.forEach(c=>{ const td=el(i===0?'th':'td'); inline(td,c); tr.appendChild(td); }); (i===0?(t.tHead||t.createTHead()):(t.tBodies[0]||t.createTBody())).appendChild(tr); }); wrap.appendChild(t); box.appendChild(wrap); }
+  const wrap=el('div','b-table'); const t=el('table'); rows.forEach((r,i)=>{ const tr=el('tr'); r.forEach((c,j)=>{ const td=el(i===0?'th':'td'); if(i>0&&rows[0][j]) td.dataset.label=rows[0][j]; inline(td,c); tr.appendChild(td); }); (i===0?(t.tHead||t.createTHead()):(t.tBodies[0]||t.createTBody())).appendChild(tr); }); wrap.appendChild(t); box.appendChild(wrap); }
 function renderBody(box,text){ box.textContent=''; String(text||'').split(/\n\s*\n/).forEach(block=>{ const b=block.trim(); if(!b) return;
   if(b.startsWith('## ')){ box.appendChild(el('h2',null,b.slice(3).trim())); return; }
   if(b.startsWith('### ')){ box.appendChild(el('h3',null,b.slice(4).trim())); return; }
