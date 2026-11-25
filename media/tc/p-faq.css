@@ -1,0 +1,5 @@
+/* FAQ (DEV-1667): Themen-Sprungleiste im Hero, je Thema ein Band */
+.faq-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.faq-nav a{display:inline-block;padding:10px 16px;border:1px solid var(--line-d);color:var(--white);text-decoration:none;font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;transition:border-color .2s,color .2s}
+.faq-nav a:hover{border-color:var(--yellow);color:var(--yellow)}
+.band .faq-list{margin-top:28px}
