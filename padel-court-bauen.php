@@ -6,6 +6,8 @@ require __DIR__ . '/inc/tc/layout.php';
 $pbFaq = [
     ['frage' => 'Wie läuft ein Padel-Projekt ab?', 'antwort' => 'Ein Padel-Projekt läuft bei uns in sieben Etappen, von Beratung und Finanzierung über Planung und Architektur, Bau und Digitalisierung bis zu Betrieb und auf Wunsch Franchise. Am Anfang prüfen wir Fläche, Zielgruppe und Potenzial deines Standorts. Danach klären wir Finanzierung und Genehmigung, bevor gebaut wird. Mehr dazu bei der <a href="/standortanalyse">Standortanalyse</a>.'],
     ['frage' => 'Was kostet eine Padelanlage?', 'antwort' => 'Für die erste Kalkulation brauchst du drei Zahlen. Ein Padel-Court kostet ab 27.000 € netto, das Fundament als Richtwert rund 35.000 € und eine Halle ab 280 €/m² netto. Den genauen Betrag bestimmen Standort, Variante und Ausstattung. Mehr dazu bei den <a href="/courts">Padel-Courts</a> und der <a href="/halle">Padel-Halle</a>.'],
+    ['frage' => 'Warum ist das Fundament so wichtig?', 'antwort' => 'Das Fundament entscheidet über Jahrzehnte Spielspaß. Wer hier spart, zahlt später, denn Risse, Pfützen und eine schiefe Glaswand sind teurer als jede saubere Gründung. Als Richtwert rechnen wir mit rund 35.000 €, abhängig von Standort, Boden und Bauauflagen. Mehr dazu beim <a href="/courts#c-fundament">Fundament</a>.'],
+    ['frage' => 'Für wen passt eine mobile Plattform?', 'antwort' => 'Nicht jede Fläche ist für immer. Die mobile Plattform passt zu kurzen Pachtverträgen, Zwischennutzungen, Parkdecks oder Gewerbeflächen mit unsicherer Zukunft. Der Court steht darauf wie auf einem festen Fundament, lässt sich aber abbauen und an einem neuen Ort wieder aufstellen.'],
 ];
 tc_page_start([
     'path' => '/padel-court-bauen',
