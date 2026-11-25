@@ -293,11 +293,13 @@ def group_schema(base, ctx):
         if path == "/team":
             check("Person" in types, "JSON-LD Person %s" % path, "fehlt")
         if path == "/jobs":
+            # DEV-1667: /jobs zeigt derzeit keine Stellenanzeige (nur Initiativbewerbung).
+            # JobPosting ist dann optional; wenn vorhanden, muss es vollständig sein.
             jobs = [n for t, n in found if t == "JobPosting"]
             need = ("title", "datePosted", "hiringOrganization", "jobLocation")
             bad = [", ".join(k for k in need if not j.get(k)) for j in jobs]
-            check(bool(jobs) and not any(bad), "JSON-LD JobPosting vollstaendig %s" % path,
-                  "keine JobPosting" if not jobs else "fehlend: %s" % bad)
+            check(not any(bad), "JSON-LD JobPosting vollstaendig (falls vorhanden) %s" % path,
+                  "fehlend: %s" % bad)
         if path in PRODUCT:
             check("Product" in types, "JSON-LD Product %s" % path, "fehlt")
         if path in SERVICE:
