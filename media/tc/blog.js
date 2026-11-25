@@ -47,7 +47,7 @@ const F=$('bFormEl'), msg=(t,e)=>{ $('bfMsg').textContent=t||''; $('bfMsg').clas
 function openModal(m){ m.hidden=false; document.body.style.overflow='hidden'; }
 function closeModal(m){ m.hidden=true; document.body.style.overflow=''; }
 $('bForm').addEventListener('click',e=>{ if(e.target===$('bForm')||e.target.closest('[data-close]')) closeModal($('bForm')); });
-function openForm(p){ form={id:p?p.id:null, cover:p&&p.cover?{id:p.cover.id}:null, removed:[], up:false}; F.reset(); msg('');
+function openForm(p){ form={id:p?p.id:null, cover:p&&p.cover?{id:p.cover.id,url:p.cover.url}:null, removed:[], up:false}; F.reset(); msg('');
   $('bfHead').textContent=p?'Artikel bearbeiten':'Artikel schreiben';
   ['titel','kategorie','datum','autor','slug','teaser','text'].forEach(k=>F.elements[k].value=p&&p[k]||'');
   if(!p) F.elements.datum.value=new Date().toISOString().slice(0,10); else F.elements.kategorie.value=p.kategorie||'Courts';
@@ -71,7 +71,7 @@ F.addEventListener('submit',async e=>{ e.preventDefault(); if(!db) return; if(fo
   const v=k=>F.elements[k].value.trim(); if(!v('titel')){ msg('Bitte einen Titel eingeben.',true); F.elements.titel.focus(); return; }
   let slug=slugify(v('slug')||v('titel')); const clash=posts.find(p=>p.slug===slug&&p.id!==form.id); if(clash) slug=slug+'-'+Date.now().toString(36).slice(-4);
   const old=form.id&&posts.find(p=>p.id===form.id);
-  const body={titel:v('titel'),slug,kategorie:F.elements.kategorie.value,datum:v('datum'),autor:v('autor'),teaser:v('teaser'),text:F.elements.text.value.trim(),cover:form.cover?{id:form.cover.id}:null,live:F.elements.live.checked,created:old&&old.created||Date.now(),updated:Date.now()};
+  const body={titel:v('titel'),slug,kategorie:F.elements.kategorie.value,datum:v('datum'),autor:v('autor'),teaser:v('teaser'),text:F.elements.text.value.trim(),cover:form.cover?{id:form.cover.id,url:form.cover.url}:null,live:F.elements.live.checked,created:old&&old.created||Date.now(),updated:Date.now()};
   $('bfSave').disabled=true; msg('Speichert …');
   try{ const ref=form.id?db.collection('blog').doc(form.id):db.collection('blog').doc(); await ref.set(body);
     form.removed.filter(id=>!body.cover||body.cover.id!==id).forEach(id=>assets.delete(id).catch(()=>{}));

@@ -58,7 +58,7 @@ document.querySelectorAll('.r-modal').forEach(m=>{ m.addEventListener('click',e=
 document.addEventListener('keydown',e=>{ if($('rDetail').hidden) return; if(e.key==='ArrowLeft') showImg(imgIdx-1); if(e.key==='ArrowRight') showImg(imgIdx+1); if(e.key==='Escape'){ history.replaceState(null,'','#referenzen'); closeModal($('rDetail')); } });
 /* editor */
 const F=$('rFormEl'), msg=(t,err)=>{ $('rfMsg').textContent=t||''; $('rfMsg').classList.toggle('err',!!err); };
-function openForm(p){ form={id:p?p.id:null, bilder:(p&&p.bilder||[]).map(b=>({id:b.id,alt:b.alt||''})), removed:[], uploading:0};
+function openForm(p){ form={id:p?p.id:null, bilder:(p&&p.bilder||[]).map(b=>({id:b.id,alt:b.alt||'',url:b.url||undefined})), removed:[], uploading:0};
   F.reset(); $('rfHead').textContent=p?'Projekt bearbeiten':'Projekt anlegen'; msg('');
   ['titel','ort','jahr','courts','hersteller','kurz','text'].forEach(k=>F.elements[k].value=p&&p[k]!=null?p[k]:'');
   F.elements.land.value=p&&p.land||'Deutschland'; F.elements.zielgruppe.value=p&&p.zielgruppe||''; F.elements.live.checked=!p||p.live!==false;
@@ -91,7 +91,7 @@ F.addEventListener('submit',async e=>{ e.preventDefault(); if(!db) return;
   const grp=g=>[...F.querySelectorAll(`[data-group="${g}"] input:checked`)].map(c=>c.value);
   const old=form.id&&projects.find(p=>p.id===form.id);
   const body={titel:v('titel'),ort:v('ort'),land:F.elements.land.value,jahr:v('jahr')?+v('jahr'):null,courts:v('courts')?+v('courts'):null,zielgruppe:F.elements.zielgruppe.value,hersteller:v('hersteller'),kurz:v('kurz'),text:F.elements.text.value.trim(),
-    kategorien:grp('kategorien'),leistungen:grp('leistungen'),bilder:form.bilder.map(b=>({id:b.id,alt:b.alt||''})),live:F.elements.live.checked,
+    kategorien:grp('kategorien'),leistungen:grp('leistungen'),bilder:form.bilder.map(b=>({id:b.id,alt:b.alt||'',url:b.url||undefined})),live:F.elements.live.checked,
     created:old&&old.created||Date.now(),updated:Date.now()};
   $('rfSave').disabled=true; msg('Speichert …');
   try{ const ref=form.id?db.collection('projekte').doc(form.id):db.collection('projekte').doc(); await ref.set(body);

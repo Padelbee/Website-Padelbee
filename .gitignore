@@ -6,3 +6,8 @@ inc/turnstile-config.php
 
 # Orgame Lead-Intake lokal (Produktion: K8s-Secret padelbee-orgame)
 inc/orgame-config.php
+
+# DEV-1667 Selbstverwaltung: Passwort-Hash lokal (Produktion: Env PADELBEE_ADMIN_HASH aus K8s-Secret)
+inc/admin-config.php
+# Gespeicherte Projekte, Artikel und Bilder lokal (Produktion: Volume unter PADELBEE_DATA_DIR)
+data/

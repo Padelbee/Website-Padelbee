@@ -1,10 +1,11 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
+require __DIR__ . '/inc/tc/content-store.php';
 // DEV-1667: Artikel aus Martins Entwurf (the-court.com/blog, Stand 23.11.2026), 22 Beiträge in inc/tc/blog-data.json.
 // Angepasst für padelbee.de: "THE COURT" -> "Padelbee" (rechtlich "THE COURT GmbH"), Gedankenstriche -> Kommas,
 // Links auf padelbee.de-Seiten. Keine Texte der alten Website.
 // Artikel öffnen per #blog/<slug> wie die Referenzen. Eigene URLs je Artikel und Selbstverwaltung klärt Matthias.
-$blogPosts = json_decode((string) file_get_contents(__DIR__ . '/inc/tc/blog-data.json'), true) ?: [];
+$blogPosts = array_map('cs_enrich', cs_load('blog'));
 $blogPosts = array_values(array_filter($blogPosts, fn($p) => !empty($p['live'])));
 usort($blogPosts, fn($a, $b) => strcmp($b['datum'] ?? '', $a['datum'] ?? ''));
 $blogDesc = 'Padel-Ratgeber von Padelbee: Kosten, Genehmigung, Court-Systeme, Hallen, Automaten und Betrieb. Praxiswissen aus über 50 Projekten für Vereine und Betreiber.';
@@ -30,7 +31,7 @@ tc_page_start([
     'breadcrumb' => ['Blog' => '/blog'],
     'page_type' => 'CollectionPage',
     'schema' => [$blogSchema],
-    'extra_scripts' => '<script>window.BLOG_STATIC=' . json_encode($blogPosts, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) . ';</script>' . "\n" . '<script src="/media/tc/blog.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
+    'extra_scripts' => cs_admin_scripts() . '<script>window.BLOG_STATIC=' . json_encode($blogPosts, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG) . ';</script>' . "\n" . '<script src="/media/tc/blog.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
 ]);
 ?>
 <section class="band dark grid-bg b-hero" id="b-list-hero">
@@ -96,7 +97,7 @@ tc_page_start([
     <h2 id="bfHead">Artikel schreiben</h2>
     <div class="rf-grid">
       <label class="wide">Titel *<input name="titel" required maxlength="110" placeholder="z. B. Was kostet ein Padel-Court 2026?"></label>
-      <label>Kategorie<select name="kategorie"><option>Courts</option><option>Hallen</option><option>Automaten</option><option>Finanzierung</option><option>Genehmigung</option><option>Betrieb</option><option>Projekte</option><option>News</option></select></label>
+      <label>Kategorie<select name="kategorie"><option>Leistungen</option><option>Ratgeber</option><option>Courts</option><option>Hallen</option><option>Motions Racket Club</option><option>Automaten</option><option>Finanzierung</option><option>Genehmigung</option><option>Betrieb</option><option>Projekte</option><option>News</option></select></label>
       <label>Datum<input name="datum" type="date"></label>
       <label>Autor<input name="autor" maxlength="60" placeholder="z. B. Martin Gaffal"></label>
       <label>URL-Kürzel<input name="slug" maxlength="80" placeholder="wird aus dem Titel erzeugt"></label>

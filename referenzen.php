@@ -1,8 +1,10 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
+require __DIR__ . '/inc/tc/content-store.php';
 
 // Referenzprojekte: eine Datenquelle für Server-HTML (SEO) und referenzen.js (Filter, Detailansicht).
-$refs = json_decode((string) file_get_contents(__DIR__ . '/inc/tc/referenzen-data.json'), true) ?: [];
+// DEV-1667: Daten aus der Selbstverwaltung (data/projekte.json), sonst Startdaten aus inc/tc/referenzen-data.json
+$refs = array_map('cs_enrich', cs_load('projekte'));
 $refs = array_values(array_filter($refs, fn($p) => ($p['live'] ?? true) !== false));
 usort($refs, fn($a, $b) =>
     [count($b['bilder'] ?? []) > 0, $b['jahr'] ?? 0, $b['created'] ?? 0]
@@ -26,7 +28,7 @@ tc_page_start([
     'breadcrumb' => ['Referenzen' => '/referenzen'],
     'page_type' => 'CollectionPage',
     'schema' => [$refSchema],
-    'extra_scripts' => '<script>window.REF_STATIC=' . $refJson . ';window.REF_LISTE=' . json_encode($refListe) . ';</script>' . "\n"
+    'extra_scripts' => cs_admin_scripts() . '<script>window.REF_STATIC=' . $refJson . ';window.REF_LISTE=' . json_encode($refListe) . ';</script>' . "\n"
         . '<script src="/media/tc/referenzen.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n"
         . '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n"
         . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
