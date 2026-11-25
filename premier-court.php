@@ -28,7 +28,7 @@ $v = [
     ],
     'models_label' => 'Full-Panorama-Modelle',
     'models_h2' => 'Drei Hersteller. Ein <span class="hl">Ansprechpartner.</span>',
-    'models_lead' => 'Mehr Glas, weniger Stahl, aber nicht jeder Standort braucht den Show-Court. Wir vergleichen die Full-Panorama-Modelle für dich auf Basis deines Standorts, deines Budgets und deines Nutzungskonzepts und empfehlen den passenden Court.',
+    'models_lead' => 'Mehr Glas, weniger Stahl, aber nicht jeder Standort braucht den Show-Court. Wir vergleichen die Modelle für deinen Standort, dein Budget und dein Nutzungskonzept und empfehlen den passenden Court.',
     'models' => [
         [
             'logo' => 'padelfactory', 'logo_h' => 44, 'brand' => '3B Padel',

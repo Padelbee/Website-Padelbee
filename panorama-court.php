@@ -58,7 +58,7 @@ $v = [
     ],
     'models_label' => 'Panorama-Modelle',
     'models_h2' => 'Vier Hersteller. Ein <span class="hl">Ansprechpartner.</span>',
-    'models_lead' => 'Jeder Hersteller hat eigene Stärken. Wir vergleichen die Panorama-Modelle für dich auf Basis deines Standorts, deines Budgets und deines Nutzungskonzepts und empfehlen den passenden Court.',
+    'models_lead' => 'Jeder Hersteller hat eigene Stärken. Wir vergleichen die Modelle für deinen Standort, dein Budget und dein Nutzungskonzept und empfehlen den passenden Court.',
     'models' => [
         [
             'logo' => 'padelfactory', 'logo_h' => 44, 'brand' => '3B Padel',
