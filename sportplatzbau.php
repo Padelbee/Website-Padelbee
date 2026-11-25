@@ -117,7 +117,7 @@ $spLogos = [
 
 <section class="band dark grid-bg end" id="kontakt">
   <div class="inner">
-    <h2>Egal, wer du bist, wir finden das passende <span class="kw">Konzept.</span></h2>
+    <h2>Wir finden das passende <span class="kw">Konzept.</span></h2>
     <p class="lead" style="margin:18px auto 0">Ob Verein, Hotel, Gewerbe oder Kommune, wir zeigen dir, welche Racketsportanlage zu deinem Standort passt. Sichere dir jetzt dein unverbindliches Beratungsgespräch.</p>
     <div class="people" style="grid-template-columns:repeat(2,minmax(0,1fr))">
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>

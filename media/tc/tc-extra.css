@@ -512,3 +512,5 @@ span.sbr{display:block;height:4px}
 .lead.lead-fill{text-wrap:wrap}
 /* Wortgruppe zusammenhalten (ab Tablet-Breite) */
 @media (min-width:600px){.keep{white-space:nowrap}}
+/* Abschluss-Überschrift auf allen Seiten gleich groß und kompakter (Wunsch Bietal) */
+#kontakt.end h2{font-size:clamp(40px,5.6vw,76px);line-height:1.04;text-wrap:balance;max-width:1000px;margin-inline:auto}
