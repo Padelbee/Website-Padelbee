@@ -88,8 +88,8 @@ $spLogos = [
 <section class="band dark grid-bg" id="sp-partner">
   <div class="inner">
     <p class="label" data-type>Bau-Partner</p>
-    <h2 class="reveal">Stark im <span class="kw">Netzwerk.</span></h2>
-    <p class="lead">30+ Partner aus Planung, Bau, Courtbau, Hallenbau, Digitalisierung, Equipment und Events. Für dein Projekt wählen wir die passenden aus.</p>
+    <h2 class="reveal">Gebaut mit starken <span class="kw">Partnern.</span></h2>
+    <p class="lead">Für Planung, Architektur, Tiefbau und Sportbeläge arbeiten wir mit einem erprobten Netzwerk, für eine sichere und termingerechte Umsetzung.</p>
     <div class="logos">
 <?php foreach ($spLogos as $l): ?>
 <?php if ($l[0] === 'txt'): ?>
