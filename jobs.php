@@ -2,7 +2,8 @@
 require __DIR__ . '/inc/tc/layout.php';
 $intro = 'Padelbee ist ein innovatives Start-up, das sich der Projektentwicklung von Padelanlagen verschrieben hat. Von der Standortanalyse, der Bauplanung, dem Platzbau und der Baubegleitung, einem maßgeschneiderten Betreiberkonzept bis hin zum Padelbee-Partnerschip mit dem vollen Marketing- und Business-Support für den laufenden &amp; nachhaltigen Padel-Erfolg. Padelbee bietet eine 360 Grad Lösung. Auftraggeber sind Vereine, gewerbliche Anlagen und oder Tourismusanbieter, Freizeitparks. Mit unserem Know-how und dem notwendigen Rundumblick bringen wir die Vorhaben unserer Kunden gewinnbringend voran.';
 $introKurz = 'Padelbee ist ein innovatives Start-up, das sich der Projektentwicklung von Padelanlagen verschrieben hat.';
-$introRest = trim(substr($intro, strlen($introKurz)));
+// DEV-1667: "Über Padelbee" mit Martins Fakten (Zielgruppen, 50 Projekte, DACH, Unterföhring) statt des alten Textes.
+$ueber = 'Wir entwickeln, planen und bauen Padel-, Pickleball- und Tennisanlagen für Vereine, Hotels, Gewerbe und die öffentliche Hand. Unsere 50 Projekte in Deutschland, Österreich und der Schweiz steuern wir aus Unterföhring bei&nbsp;München.';
 $stelle = 'Zur Verstärkung unseres Teams suchen wir einen engagierten Werkstudenten (m/w/d) im Bereich Social Media, Marketing &amp; Sales.';
 $bloecke = [
     ['Deine Aufgaben', [
@@ -25,7 +26,7 @@ $bloecke = [
         'Einblicke in die Start-up-Welt und die Sportbranche.',
     ]],
 ];
-$jobDesc = '<p>' . $intro . '</p><p>' . $stelle . '</p>';
+$jobDesc = '<p>' . $introKurz . ' ' . $ueber . '</p><p>' . $stelle . '</p>';
 foreach ($bloecke as $b) {
     $jobDesc .= '<p><strong>' . $b[0] . ':</strong></p><ul><li>' . implode('</li><li>', $b[1]) . '</li></ul>';
 }
@@ -72,13 +73,13 @@ tc_page_start([
 <section class="band grid-bg" id="j-stelle">
   <div class="inner">
     <p class="label">Über Padelbee</p>
-    <p class="lead reveal" style="max-width:860px"><?= $introRest ?></p>
+    <p class="lead reveal" style="max-width:860px"><?= $ueber ?></p>
     <p class="label" style="margin-top:clamp(48px,6vw,80px)">Jobangebote</p>
     <h2 class="reveal">Werkstudent (m/w/d) Social Media, Marketing &amp; <span class="hl">Sales.</span></h2>
     <p class="lead"><?= $stelle ?></p>
     <div class="cards c3">
 <?php foreach ($bloecke as $b): ?>
-      <article class="card reveal"><div class="k">Werkstudent (m/w/d)</div><h3 data-type><?= $b[0] ?></h3><ul class="ticks"><?php foreach ($b[1] as $li): ?><li><?= $li ?></li><?php endforeach; ?></ul></article>
+      <article class="card reveal"><h3 data-type><?= $b[0] ?></h3><ul class="ticks"><?php foreach ($b[1] as $li): ?><li><?= $li ?></li><?php endforeach; ?></ul></article>
 <?php endforeach; ?>
     </div>
   </div>
