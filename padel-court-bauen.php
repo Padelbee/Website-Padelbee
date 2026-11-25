@@ -48,7 +48,7 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Bauphasen 4 bis 7</p>
     <h2 class="reveal">Vom Bauantrag bis zur <span class="hl">Eröffnung.</span></h2>
-    <p class="lead">Eine Padel-Anlage baut man nicht nebenbei. Wir führen dich durch vier Bauphasen, nachdem Standort und Konzept in der <a href="/standortanalyse">Standortanalyse</a> geklärt sind.</p>
+    <p class="lead">Eine Padel-Anlage baut man nicht nebenbei. Nach der <a href="/standortanalyse">Standortanalyse</a> begleiten wir dich durch die nächsten vier&nbsp;Bauphasen.</p>
     <div class="cards c2">
       <article class="card reveal"><div class="k">Phase 04</div><h3 data-type>Abstimmungen &amp; Bauantrag</h3><p>Wir sprechen mit der Baubehörde, erstellen den Bauantrag und reichen ihn ein.</p><ul class="chips"><li>Erstgespräch Baubehörde</li><li>Bauantragsunterlagen</li><li>Fachgutachten (Lärm, Statik, Beleuchtung)</li><li>Einreichung bei der Genehmigungsbehörde</li></ul></article>
       <article class="card reveal"><div class="k">Phase 05</div><h3 data-type>Kosten-, Termin- &amp; Gremienfreigabe</h3><p>Wir berechnen die Kosten, erstellen einen Grobterminplan und prüfen Fördermittel, bis die Umsetzung beschlossen ist.</p><ul class="chips"><li>Kostenberechnung &amp; Grobterminplan</li><li>Fördermittelprüfung / Vereinsgremien</li><li>Beschluss zur Umsetzung</li></ul></article>

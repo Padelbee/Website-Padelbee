@@ -71,13 +71,12 @@ tc_page_start([
 <section class="band" id="s-ergebnis">
   <div class="inner">
     <p class="label" data-type>Ergebnis</p>
-    <h2 class="reveal">Am Ende steht deine <span class="hl">Go/No-Go-Empfehlung.</span></h2>
-    <p class="lead">Du weißt, ob Padel an deinem Standort passt, was es nach DIN 276 kostet und welche Variante sich eignet. Danach geht es mit dem Bauantrag und der Genehmigung weiter.</p>
+    <h2 class="reveal">Am Ende steht dein <span class="hl">Konzept.</span></h2>
+    <p class="lead">Du weißt, ob Padel an deinem Standort passt, was es nach DIN 276 kostet und welche Variante sich eignet.</p>
     <div class="teaser">
       <div><h3>Weiter mit <span>Phase 4 bis 7.</span></h3><p>Bauantrag, Freigabe, Ausschreibung und Bau deines Padel Courts.</p></div>
       <a class="btn" href="/padel-court-bauen">Padel Court bauen</a>
     </div>
-    <p class="m-quote reveal">50 Projekte in 3 Ländern zeigen, dass mit dem richtigen Partner aus einer Idee eine Anlage wird, die <span class="hl">läuft.</span> Sieh dir unsere <a href="/referenzen">Referenzen</a> an.</p>
   </div>
 </section>
 
