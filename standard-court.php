@@ -71,7 +71,7 @@ $v = [
         ],
     ],
     'faq' => [
-        ['frage' => 'Für wen eignet sich der Standard Court?', 'antwort' => 'Der Standard Court passt zu Vereinen und Outdoor-Anlagen. Wo Wind und Wetter wirken, punktet Standard, wo Zuschauer stehen, lohnt sich Panorama. Mehr dazu beim <a href="/panorama-court">Panorama Court</a> und beim <a href="/premier-court">Full-Panorama Court</a>.'],
+        ['frage' => 'Für wen eignet sich der Standard Court?', 'antwort' => 'Der Standard Court passt zu Vereinen und Outdoor-Anlagen. Unsere Faustregel ist einfach. Wo Wind und Wetter wirken, punktet Standard, wo Zuschauer stehen, lohnt sich Panorama. Mehr dazu beim <a href="/panorama-court">Panorama Court</a> und beim <a href="/premier-court">Full-Panorama Court</a>.'],
         ['frage' => 'Was kostet ein Standard Court?', 'antwort' => 'Der Smash Standard von Padel Factory kostet ab 27.275 € netto pro Court, inklusive kompletter Stahlkonstruktion, Glas-Kit, fibrilliertem Kunstrasen und 8 Flutlichtstrahlern, zuzüglich Übernachtungs- und Verpflegungskosten. Der Endpreis hängt von Hersteller und Ausstattung ab. Für die Gesamtkalkulation kommt das Fundament mit einem Richtwert von rund 35.000 € dazu, mehr dazu unter <a href="/courts#c-fundament">Fundament</a>.'],
         ['frage' => 'Wie viel Garantie gibt es auf einen Standard Court?', 'antwort' => 'Padel Factory nennt 15 Jahre Herstellergarantie auf die Konstruktion (lt. Hersteller). Bei 100% Padel sind es 2 Jahre Gewährleistung. Die Garantie gewährt immer der jeweilige Hersteller, nicht die THE COURT GmbH. Welche Bedingungen gelten, prüfen wir für dein Projekt mit dem Hersteller.'],
     ],
