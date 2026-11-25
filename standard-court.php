@@ -17,7 +17,7 @@ $v = [
     'alt' => 'Standard Court Rendering mit Streben zwischen den Glaselementen',
     'stats' => [
         ['3', 'Standard-Modelle', 'von 3 Herstellern'],
-        ['<small>bis zu</small> 15', 'Jahre Garantie', 'Padel Factory, lt. Hersteller'],
+        ['<small>bis zu</small> 15', 'Jahre Hersteller&shy;garantie', 'Padel Factory, lt. Hersteller'],
         ['144 km/h', 'Windlast', 'Standard Club, lt. Hersteller'],
         ['27.275 €', 'ab, pro Court netto', 'Smash Standard, Stand 11/2026'],
     ],

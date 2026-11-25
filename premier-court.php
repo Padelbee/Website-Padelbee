@@ -22,7 +22,7 @@ $v = [
     'alt' => 'Indoor-Padelhalle mit Courts von 100% Padel, Herstellerreferenz',
     'stats' => [
         ['3', 'Full-Panorama-Modelle', 'von 3 Herstellern'],
-        ['<small>bis zu</small> 15', 'Jahre Garantie', 'Padel Factory, lt. Hersteller'],
+        ['<small>bis zu</small> 15', 'Jahre Hersteller&shy;garantie', 'Padel Factory, lt. Hersteller'],
         ['12 mm', 'ESG-Glas', 'Premier Extreme, Full Panorama'],
         ['29.400 €', 'ab, pro Court netto', 'Premier Extreme, Stand 11/2026'],
     ],
