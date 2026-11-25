@@ -25,7 +25,7 @@
 
 require_once __DIR__ . '/schema.php';
 
-const TC_ASSET_VERSION = 178;
+const TC_ASSET_VERSION = 179;
 
 // Tracking/Consent wie auf der bisherigen Seite (GA4, CCM19, HubSpot). Auf false setzen, um alles abzuschalten.
 const TC_TRACKING = true;
@@ -105,7 +105,7 @@ function tc_header(bool $isStart): void
     <nav class="nav" aria-label="Hauptnavigation">
       <a href="/" data-nav="start">Start</a>
       <div class="dd">
-        <button type="button" class="dd-btn" aria-expanded="false" aria-controls="ddMenu" data-nav-group="courts automaten">Lösungen <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+        <button type="button" class="dd-btn" aria-expanded="false" aria-controls="ddMenu" data-nav-group="courts automaten">Produkte <svg width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
         <div class="dd-menu mega" id="ddMenu">
           <a href="/courts" data-nav="courts"><span class="dd-k">Courts</span><b>Padel-Courts</b><small>Drei Varianten, fünf Hersteller, Fundamente</small></a>
           <a href="/halle"><span class="dd-k">Hallen</span><b>Hallenlösungen</b><small>Polycarbonat und ThermoRoof, ab 280 €/m²</small></a>
@@ -119,14 +119,14 @@ function tc_header(bool $isStart): void
 <?php endforeach; ?>
         </div>
       </div>
-      <a href="<?= $a ?>#leistungen">Leistungen</a><a href="<?= $a ?>#projekte">Projekte</a><a href="/referenzen" data-nav="referenzen">Referenzen</a><a href="/blog" data-nav="blog">Blog</a><a href="<?= $a ?>#kontakt">Kontakt</a>
+      <a href="<?= $a ?>#leistungen">Leistungen</a><a href="/referenzen" data-nav="referenzen">Referenzen</a><a href="/blog" data-nav="blog">Blog</a><a href="<?= $a ?>#kontakt">Kontakt</a>
     </nav>
     <button type="button" class="burger" aria-expanded="false" aria-controls="mnav" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
     <a class="btn head-cta" href="<?= $a ?>#kontakt">Projekt anfragen</a>
   </div>
   <nav class="mnav" id="mnav" aria-label="Mobile Navigation" hidden>
     <a href="/">Start</a>
-    <p class="mnav-k">Lösungen</p>
+    <p class="mnav-k">Produkte</p>
     <a href="/courts" class="sub">Padel-Courts</a><a href="/halle" class="sub">Hallenlösungen</a><a href="/automatenloesungen" class="sub">Automaten</a>
 <?php foreach (['leistungen' => 'Leistungen', 'courts' => 'Court-Varianten', 'unternehmen' => 'Unternehmen'] as $key => $label): ?>
     <p class="mnav-k"><?= tc_h($label) ?></p>
@@ -134,7 +134,7 @@ function tc_header(bool $isStart): void
 
 <?php endforeach; ?>
     <p class="mnav-k">Mehr</p>
-    <a href="<?= $a ?>#leistungen">Leistungen</a><a href="<?= $a ?>#projekte">Projekte</a><a href="/referenzen">Referenzen</a><a href="/blog">Blog</a><a href="<?= $a ?>#partner">Partner</a><a href="<?= $a ?>#film">Film</a><a href="<?= $a ?>#kontakt">Kontakt</a>
+    <a href="<?= $a ?>#leistungen">Leistungen</a><a href="/referenzen">Referenzen</a><a href="/blog">Blog</a><a href="<?= $a ?>#kontakt">Kontakt</a>
   </nav>
 </header>
 <?php
