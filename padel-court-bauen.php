@@ -2,10 +2,7 @@
 require __DIR__ . '/inc/tc/layout.php';
 // Inhalt: Bauphasen 4 bis 7 (Firmenpräsentation 2026, Folien 15 und 16) und Martins Entwurf
 // (the-court.com, Stand 23.11.2026: FAQ, Ratgeber zu Kosten, Ablauf, Genehmigung und Finanzierung).
-$pbFaq = [
-    ['frage' => 'Woran hängen Padel-Projekte bei der Genehmigung?', 'antwort' => 'Der Court ist schnell bestellt, die Genehmigung dauert oft länger. Drei Themen solltest du früh klären. Bei Lage und Baurecht geht es darum, was der Bebauungsplan auf deiner Fläche erlaubt. Padel ist lauter als Tennis, deshalb gehören Abstand zur Wohnbebauung, Ausrichtung der Courts und Spielzeiten früh ins Konzept. Auch Lichtmasten, Lichttemperatur und Ausrichtung planen wir von Anfang an mit. Unser Tipp ist, die Gemeinde früh an den Tisch zu holen. Mit einem guten Konzept überzeugst du sie, bevor es überhaupt zu Einsprüchen kommt.'],
-    ['frage' => 'Wie finanziere ich meine Padelanlage?', 'antwort' => 'Du musst nicht sofort sechsstellig investieren. Drei Wege stehen dir offen, nämlich Kauf, Leasing oder Joint Venture. Beim Kauf investierst du einmal und dir gehört alles. Beim Leasing fließen die Raten aus dem laufenden Betrieb und deine Liquidität bleibt erhalten. Beim Joint Venture stellt ein Verein die Fläche, das Joint Venture baut, finanziert und betreibt. Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.'],
-];
+// DEV-1667: Keine eigene FAQ, die Fragen zu Genehmigung und Finanzierung stehen als Abschnitte auf dieser Seite und auf /faq.
 tc_page_start([
     'path' => '/padel-court-bauen',
     'title' => 'Padel Court bauen: Ablauf, Kosten & Finanzierung · Padelbee',
@@ -20,7 +17,6 @@ tc_page_start([
             '/padel-court-bauen',
             ['serviceType' => 'Padel-Court-Bau', 'image' => '/media/referenzen/scheck-aufbau-4.jpg']
         ),
-        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $pbFaq), '/padel-court-bauen'),
     ],
 ]);
 ?>
@@ -107,7 +103,7 @@ tc_page_start([
         </tbody>
       </table>
     </div>
-    <p class="fav-note fav-note-l">Unsere Faustregel ist einfach. Wo Zuschauer stehen, lohnt sich Panorama, wo Wind und Wetter wirken, punktet Standard. Wir arbeiten mit fünf Herstellern und vergleichen für dich Qualität, Lieferzeit, Herstellergarantie und Preis.</p>
+    <p class="fav-note fav-note-l">Wo Zuschauer stehen, lohnt sich Panorama, wo Wind und Wetter wirken, punktet Standard. Wir arbeiten mit fünf Herstellern und vergleichen für dich Qualität, Lieferzeit, Herstellergarantie und Preis.</p>
     <p style="margin-top:28px"><a class="btn" href="#kontakt">Anlage durchrechnen lassen</a></p>
   </div>
 </section>
@@ -119,7 +115,8 @@ tc_page_start([
       <div>
         <p class="label" data-type>Fundament</p>
         <h2 class="reveal">Fest oder <span class="hl">mobil?</span></h2>
-        <p class="lead">Die Wahl hängt vom Standort und von der Laufzeit deines Miet- oder Pachtvertrags ab. Beide Varianten liegen preislich in einem ähnlichen Rahmen. Festes Fundament, mobile Plattform und elastische Tragschicht erklären wir dir bei <a href="/courts#c-fundament">Das richtige Fundament</a>. Wie das in der Praxis aussieht, zeigt der <a href="/referenzen#r-scheck">Aufbau im Scheck Club München</a>.</p>
+        <p class="lead">Die Wahl hängt vom Standort und von der Laufzeit deines Miet- oder Pachtvertrags ab. Beide Varianten liegen preislich in einem ähnlichen Rahmen.</p>
+        <div style="display:flex;gap:10px 28px;flex-wrap:wrap"><a class="more-link" href="/courts#c-fundament">Das richtige Fundament</a><a class="more-link" href="/referenzen#r-scheck">Aufbau im Scheck Club</a></div>
       </div>
     </div>
   </div>
@@ -129,25 +126,13 @@ tc_page_start([
   <div class="inner">
     <p class="label" data-type>Finanzierung</p>
     <h2 class="reveal">Du musst <span class="hl">nicht sofort</span> sechsstellig investieren.</h2>
-    <p class="lead">Drei Wege stehen dir offen. Welcher passt, hängt von deinen Zielen ab. Willst du die volle Kontrolle oder planbare Einnahmen ohne Investitionsrisiko? Wir rechnen beide Seiten mit dir durch.</p>
+    <p class="lead">Drei Wege stehen dir offen. Welcher passt, hängt von deinen Zielen&nbsp;ab.</p>
     <div class="cards c3">
-      <article class="card reveal"><div class="k">Passt zu Betreibern mit Kapital</div><h3 data-type>Kauf</h3><p>Du investierst einmal und dir gehört alles. Der Klassiker für Betreiber mit Kapital und langfristigem Plan.</p></article>
+      <article class="card reveal"><div class="k">Passt zu Betreibern mit Kapital und langfristigem Plan</div><h3 data-type>Kauf</h3><p>Du investierst einmal und dir gehört alles.</p></article>
       <article class="card reveal"><div class="k">Passt zu mobilen Plattformen und Automaten</div><h3 data-type>Leasing</h3><p>Die Raten fließen aus dem laufenden Betrieb, die Liquidität bleibt. Für Automaten gibt es Leasing ab 109 € und Mietkauf ab 104 € im Monat, zum Beispiel mit 48 Monaten Laufzeit und 20 % Schlussrate, Bonität vorausgesetzt.</p></article>
       <article class="card reveal"><div class="k">Passt zu Tennisvereinen</div><h3 data-type>Joint Venture</h3><p>Der Verein stellt die Fläche, das Joint Venture mit dem Motions Racket Club baut, finanziert und betreibt. Du bekommst Pacht und investierst 0 €.</p></article>
     </div>
     <p class="fav-note fav-note-l">Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.</p>
-  </div>
-</section>
-
-<section class="band grid-bg" id="p-faq" style="background-color:var(--grey-050)">
-  <div class="inner">
-    <p class="label" data-type>FAQ</p>
-    <h2 class="reveal">Fragen zum <span class="hl">Padel Court bauen.</span></h2>
-    <div class="faq-list">
-<?php foreach ($pbFaq as $f): ?>
-      <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= $f['antwort'] ?></p></details>
-<?php endforeach; ?>
-    </div>
   </div>
 </section>
 
