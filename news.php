@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
-// DEV-1155: News im neuen Design. Inhalt wie bisher: LinkedIn-Beiträge von Padelbee (SociableKit-Widget).
+// DEV-1155: News im neuen Design. Inhalt: aktuelle LinkedIn-Beiträge von Padelbee (SociableKit-Widget).
+// DEV-1667: Hero-Text nach Martins Events-Seite (the-court.com/events). Was /news künftig zeigen soll, klärt Martin (Fragenliste).
 tc_page_start([
     'path' => '/news',
     'title' => 'Padelbee News: Aktuelles aus der Padel-Welt',
@@ -10,11 +11,12 @@ tc_page_start([
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>' . "\n" . '<script src="https://widgets.sociablekit.com/linkedin-page-posts/widget.js" defer></script>',
 ]);
 ?>
-<section class="band dark grid-bg">
+<section class="band dark grid-bg c-hero hero-1col">
   <div class="inner">
     <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; News</p>
     <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padelbee News</span>Aktuelles von uns und aus der <span class="kw">Padel-Welt.</span></h1>
-    <p class="lead">Neue Projekte, Events und Einblicke aus unserem Alltag. <a class="more-link" href="/referenzen">Fertige Anlagen ansehen</a></p>
+    <p class="lead">Hier zeigen wir neue Projekte und Events, von der Rafa Nadal Padel Tour bis zu den großen Messen. Wir bringen Padel dorthin, wo Spieler, Vereine und Betreiber zusammenkommen.</p>
+    <a class="more-link" href="/referenzen">Fertige Anlagen ansehen</a>
   </div>
 </section>
 

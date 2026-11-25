@@ -527,3 +527,6 @@ span.sbr{display:block;height:4px}
   .c-stats.r-stats:has(.st-sub) > div{display:grid;grid-template-columns:136px minmax(0,1fr);column-gap:14px;align-items:baseline}
   .c-stats.r-stats:has(.st-sub) > div span{margin-top:0;font-size:11px;letter-spacing:.14em}
 }
+/* Einspaltiger Hero mit großer H1 (z. B. /news) */
+.c-hero.hero-1col .inner{display:block}
+.c-hero.hero-1col .lead{max-width:860px}
