@@ -1,0 +1,8 @@
+/* News (DEV-1667): LinkedIn-Beiträge als Karten im Referenzen-Design */
+.news-card{text-decoration:none;color:inherit}
+.news-card h3{font-size:clamp(20px,1.7vw,24px);line-height:1.25;margin:0;text-wrap:balance}
+.news-card .rb p{margin:12px 0 0;color:var(--muted);font-size:15px;line-height:1.55}
+.news-card .more-link{margin-top:auto;padding-top:18px}
+.news-all{margin-top:36px;display:flex;justify-content:center}
+@media (max-width:980px){.news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.news-grid{grid-template-columns:1fr}}
