@@ -117,7 +117,6 @@ const q=()=>{if(!t)t=requestAnimationFrame(u);};addEventListener('scroll',q,{pas
   <div class="inner">
     <p class="label" data-type>Unsere Leistungen</p>
     <h2 class="reveal">In jeder Phase deines <span class="hl">Padel&#8209;Projekts.</span></h2>
-    <p class="lead">Von der ersten Rechnung bis zum laufenden Betrieb begleiten wir dich mit sieben Leistungen. Zu jeder führt ein Link mit allen Details.</p>
     <div class="ph-grid ph-compact">
       <article class="ph reveal"><p class="label n" data-type>01</p><h3 data-type>Finanzielle Planung &amp; Business Case</h3><p>Wir erstellen einen bankfähigen Business Case und prüfen Fördermittel und Investoren.</p><ul class="chips"><li>Court ab 27.000 € netto</li><li>Fundament rund 35.000 €</li><li>Halle ab 280 €/m²</li><li>Kauf, Leasing oder Joint Venture</li></ul><a class="ph-more" href="/standortanalyse">Zur Standortanalyse</a></article>
       <article class="ph reveal"><p class="label n" data-type>02</p><h3 data-type>Planung &amp; Bau von Padel- und Sportanlagen</h3><p>Von der Machbarkeit bis zur Fertigstellung, mit spezialisierten Architekturbüros.</p><ul class="chips"><li>GPS-Vermessung &amp; Drohne</li><li>Prüfung nach §34/§35 BauGB</li><li>3D-Visualisierung</li><li>Kostenrahmen nach DIN 276</li></ul><a class="ph-more" href="/padel-court-bauen">Zu Padel Court bauen</a></article>
