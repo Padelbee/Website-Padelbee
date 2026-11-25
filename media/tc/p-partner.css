@@ -38,3 +38,14 @@
 .pg-s h3{font-size:clamp(30px,3vw,44px);margin-top:8px}
 .pg-s p.t{margin:14px 0 0;color:var(--muted);line-height:1.6}
 .pg-s .pg-logos{margin-top:auto;padding-top:22px}
+/* 25.11.: Logos einer Gruppe in einer durchgehenden Reihe unter dem Text, ohne Lücken; im Kasten nur das Logo */
+.pg{grid-template-columns:1fr;gap:0}
+.pg > div:first-child{max-width:860px}
+.pg-logos,.pg-logos.c4,.pg-s .pg-logos{display:flex;flex-wrap:wrap;gap:14px;justify-content:flex-start}
+.pg > .pg-logos{margin-top:28px}
+.pg-logos .pt{flex:1 1 0;min-width:0}
+.pg-s .pg-logos .pt{flex:0 1 calc(50% - 7px)}
+.pg .lg .t,.pg-s .lg .t{display:none}
+.pg-s{padding-bottom:0}
+@media (max-width:980px){.pg-logos .pt{flex:0 1 calc(25% - 11px)}.pg-logos{justify-content:center}.pg-s .pg-logos .pt{flex:0 1 calc(33.33% - 10px)}.pg-s .pg-logos{justify-content:flex-start}.pg-s+.pg-s{border-top:1px solid var(--line);padding-top:32px}}
+@media (max-width:560px){.pg-logos .pt,.pg-s .pg-logos .pt{flex:0 1 calc(50% - 7px)}}

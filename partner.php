@@ -16,65 +16,65 @@ $logoH = function (string $k, float $area = 7200, float $maxW = 210) use ($ratio
     }
     return (int) round($h);
 };
-// Kachel: ['m', Maske, Rolle, Name, Zusatz] oder ['t', Text, Rolle, Name, Zusatz, Untertitel]
+// Kachel: ['m', Maske, Name, Info] oder ['t', Text, Name, Info, Untertitel]. Info nur aus Martins Entwurf/Folie 3.
 $gruppen = [
     ['dark' => false, 'items' => [
-        ['k' => 'Planung · Architektur · Bau', 't' => 'Bau', 'cols' => 4, 'text' => 'Architektur, Planung, Projektmanagement, Tiefbau und Sportbeläge. Unsere spezialisierten Architekturbüros arbeiten für ganz Deutschland, effizient und schnell.', 'link' => [['/sportplatzbau', 'Zum Sportplatzbau'], ['/padel-court-bauen', 'So läuft der Bau ab']], 'tiles' => [
-            ['t', 'thecourt.dev', 'Sportplatzbau', 'thecourt.dev', 'Sportplatzbau', 'Structure. Systemized.'],
-            ['m', 'acp', 'Projektmanagement', 'ACP', ''],
-            ['m', 'polytan', 'Sportbeläge', 'Polytan', ''],
-            ['m', 'avsyntec', 'Tennis', 'Rebound Ace', ''],
-            ['m', 'planeco', 'Planung', 'planeco', ''],
-            ['t', 'BAP', 'Architektur', 'BAP', 'Barthe Asmuth Partner', 'Barthe Asmuth Partner'],
-            ['t', 'InfraConstruct', 'Tiefbau', 'InfraConstruct', 'Bau GmbH', 'Bau GmbH'],
+        ['k' => 'Planung · Architektur · Bau', 't' => 'Bau', 'text' => 'Architektur, Planung, Projektmanagement, Tiefbau und Sportbeläge. Unsere spezialisierten Architekturbüros arbeiten für ganz Deutschland, effizient und schnell.', 'link' => [['/sportplatzbau', 'Zum Sportplatzbau'], ['/padel-court-bauen', 'So läuft der Bau ab']], 'tiles' => [
+            ['t', 'thecourt.dev', 'thecourt.dev', 'Sportplatzbau', 'Structure. Systemized.'],
+            ['m', 'acp', 'ACP', 'Projektmanagement'],
+            ['m', 'polytan', 'Polytan', 'Sportbeläge'],
+            ['m', 'avsyntec', 'Rebound Ace', ''],
+            ['m', 'planeco', 'planeco', 'Planung'],
+            ['t', 'BAP', 'BAP', 'Architektur', 'Barthe Asmuth Partner'],
+            ['t', 'InfraConstruct', 'InfraConstruct', 'Tiefbau', 'Bau GmbH'],
         ]],
         ['k' => 'Courts', 't' => 'Court-Hersteller', 'text' => 'Jeder Hersteller hat eigene Stärken. Wir sind an keinen einzelnen Hersteller gebunden und vergleichen für dich Qualität, Lieferzeit, Herstellergarantie und Preis.', 'link' => [['/courts#c-hersteller', 'Alle Hersteller im Detail']], 'tiles' => [
-            ['m', 'padelfactory', 'Courts', 'Padel Factory', 'Italien · 15 Jahre Herstellergarantie (lt. Hersteller)'],
-            ['m', 'padelconcept', 'Courts', 'Padel Concept', 'Lettland · vorrätige Courts, kurze Lieferzeiten'],
-            ['m', 'mejorset', 'Courts', 'Mejor Set', 'Spanien · Premium Padel Courts'],
-            ['m', '100padel', 'Courts', '100% Padel', 'Frankreich · Hallen-Courts, Montage in Deutschland'],
-            ['m', 'padelgalis', 'Courts', 'Padel Galis', 'Spanien · The Player\'s Court'],
+            ['m', 'padelfactory', 'Padel Factory', 'Italien · 15 Jahre Herstellergarantie (lt. Hersteller)'],
+            ['m', 'padelconcept', 'Padel Concept', 'Lettland · vorrätige Courts, kurze Lieferzeiten'],
+            ['m', 'mejorset', 'Mejor Set', 'Spanien · Premium Padel Courts'],
+            ['m', '100padel', '100% Padel', 'Frankreich · Hallen-Courts, Montageteam in Deutschland'],
+            ['m', 'padelgalis', 'Padel Galis', 'Spanien · The Player\'s Court'],
         ]],
         ['k' => 'Hallen', 't' => 'Hallenbau', 'text' => 'Hallen bauen wir mit dem Gesamtsystem von Padel Factory und weiteren Hallenbauern wie Haltec, DS Stahl, Okatent und Kramke.', 'link' => [['/halle', 'Zur Padel-Halle']], 'tiles' => [
-            ['m', 'haltec', 'Hallen', 'Haltec', ''],
-            ['m', 'kramke', 'Hallen', 'Kramke', ''],
-            ['m', 'padelfactory', 'Hallen', 'Padel Factory', 'Hallensystem'],
-            ['m', 'dsstahl', 'Hallen', 'DS Stahl', ''],
-            ['m', 'okatent', 'Hallen', 'Okatent', ''],
+            ['m', 'haltec', 'Haltec', ''],
+            ['m', 'kramke', 'Kramke', ''],
+            ['m', 'padelfactory', 'Padel Factory', 'Hallensystem'],
+            ['m', 'dsstahl', 'DS Stahl', ''],
+            ['m', 'okatent', 'Okatent', ''],
         ]],
     ]],
     ['dark' => true, 'items' => [
         ['k' => 'Buchung · Automaten', 't' => 'Digital', 'text' => 'Buchung, Zugang, Licht und Automaten greifen ineinander. Für Schlägerverleih, Bälle, Snacks und Getränke rund um die Uhr arbeiten wir mit Automatenpartnern zusammen.', 'link' => [['/automatenloesungen', 'Zu den Automaten']], 'tiles' => [
-            ['m', 'playtomic', 'Buchung', 'Playtomic', ''],
-            ['m', 'sportogo', 'Verleih', 'Sportogo', 'Verleihautomaten'],
-            ['m', 'purevending', 'Automaten', 'purevending', ''],
-            ['m', 'zuply', 'Vending', 'Zuply', ''],
-            ['t', 'Levendo Global', 'Digital', 'Levendo Global', '', ''],
+            ['m', 'playtomic', 'Playtomic', 'Buchung'],
+            ['m', 'sportogo', 'Sportogo', 'Verleih'],
+            ['m', 'purevending', 'purevending', 'Automaten'],
+            ['m', 'zuply', 'Zuply', 'Vending'],
+            ['t', 'Levendo Global', 'Levendo Global', 'Digital', ''],
         ]],
-        ['k' => 'Racket-Marken', 't' => 'Equipment', 'cols' => 4, 'text' => 'Equipment von etablierten Racket-Marken für Padel, Tennis und Pickleball.', 'link' => null, 'tiles' => [
-            ['m', 'babolat', 'Equipment', 'Babolat', ''],
-            ['t', 'Dunlop', 'Equipment', 'Dunlop', '', ''],
-            ['m', 'wilson', 'Equipment', 'Wilson', ''],
-            ['m', 'joola', 'Pickleball', 'Joola', 'Pickleball'],
+        ['k' => '', 't' => 'Equipment', 'text' => '', 'link' => null, 'tiles' => [
+            ['m', 'babolat', 'Babolat', ''],
+            ['t', 'Dunlop', 'Dunlop', '', ''],
+            ['m', 'wilson', 'Wilson', ''],
+            ['m', 'joola', 'Joola', 'Pickleball'],
         ]],
         ['k' => 'Joint Venture', 't' => 'Padel im Verein', 'small' => true, 'text' => 'Padel für deinen Verein ohne eigene Investition. Dein Verein stellt die Fläche gegen Pacht, das Joint Venture übernimmt Bau, Finanzierung und Betrieb. Padelbee entwickelt, der Motions Racket Club betreibt.', 'link' => null, 'tiles' => [
-            ['m', 'mrc', 'Joint Venture', 'Motions Racket Club', '0 € Investition für den Verein'],
+            ['m', 'mrc', 'Motions Racket Club', '0 € Investition für den Verein'],
         ]],
         ['k' => 'Finanzierung', 't' => 'Finanzierung', 'small' => true, 'text' => 'Kauf, Leasing oder Joint Venture, wir finden das Modell, das zu dir passt. Für die Finanzierung haben wir mindspringpadel an unserer Seite.', 'link' => null, 'tiles' => [
-            ['m', 'mindspring', 'Finanzierung', 'mindspringpadel', ''],
+            ['m', 'mindspring', 'mindspringpadel', ''],
         ]],
-        ['k' => 'Academy · Events · Coaching', 't' => 'Academy, Events &amp; Coaching', 'cols' => 4, 'text' => 'Strukturierte Trainingsprogramme, Betreiber-Coaching sowie professionelle Planung und Durchführung von Turnieren und Events.', 'link' => [['/betreiberkonzept#b-netzwerk', 'Zum Betreiberkonzept']], 'tiles' => [
-            ['m', 'rna', 'Academy', 'Rafa Nadal Academy', ''],
-            ['m', 'patricio', 'Travel', 'Patricio Travel', ''],
-            ['m', 'pws', 'Summit', 'Padel World Summit', ''],
-            ['m', 'scheck', 'Referenzclub', 'Scheck Club', 'Unsere Referenzanlage in Unterföhring'],
-            ['t', 'Best of Three', 'Events', 'Best of Three Challenge', '', 'Challenge'],
-            ['t', 'Sports Tech Nation', 'Messe', 'Sports Tech Nation 2026', '', '2026'],
-            ['m', 'activeconnected', 'Messe', 'active connected', ''],
+        ['k' => 'Academy · Events · Coaching', 't' => 'Academy, Events &amp; Coaching', 'text' => 'Strukturierte Trainingsprogramme, Betreiber-Coaching sowie professionelle Planung und Durchführung von Turnieren und Events.', 'link' => [['/betreiberkonzept#b-netzwerk', 'Zum Betreiberkonzept']], 'tiles' => [
+            ['m', 'rna', 'Rafa Nadal Academy', 'Academy'],
+            ['m', 'patricio', 'Patricio Travel', 'Travel'],
+            ['m', 'pws', 'Padel World Summit', 'Summit'],
+            ['m', 'scheck', 'Scheck Club', 'Referenzclub'],
+            ['t', 'Best of Three', 'Best of Three Challenge', 'Events', 'Challenge'],
+            ['t', 'Sports Tech Nation', 'Sports Tech Nation 2026', 'Messe', '2026'],
+            ['m', 'activeconnected', 'active connected', 'Messe'],
         ]],
-        ['k' => 'Verbände', 't' => 'Verbände', 'small' => true, 'text' => 'Unsere Verbandspartner im Tennis.', 'link' => null, 'tiles' => [
-            ['m', 'btv', 'Verband', 'Bayerischer Tennis-Verband', 'Offizieller Infrastrukturpartner'],
-            ['m', 'dtb', 'Verband', 'Deutscher Tennis Bund', ''],
+        ['k' => 'Verbände', 't' => 'Verbände', 'small' => true, 'text' => '', 'link' => null, 'tiles' => [
+            ['m', 'btv', 'Bayerischer Tennis-Verband', 'Offizieller Infrastrukturpartner'],
+            ['m', 'dtb', 'Deutscher Tennis Bund', ''],
         ]],
     ]],
 ];
@@ -82,18 +82,18 @@ $orgs = [];
 foreach ($gruppen as $band) {
     foreach ($band['items'] as $g) {
         foreach ($g['tiles'] as $t) {
-            $orgs[$t[3]] = tc_schema_clean(['@type' => 'Organization', 'name' => $t[3], 'description' => html_entity_decode($g['t'], ENT_QUOTES, 'UTF-8')]);
+            $orgs[$t[2]] = tc_schema_clean(['@type' => 'Organization', 'name' => $t[2], 'description' => html_entity_decode($g['t'], ENT_QUOTES, 'UTF-8')]);
         }
     }
 }
 $pTile = function (array $t) use ($logoH): void { ?>
           <div class="pt">
 <?php if ($t[0] === 'm'): ?>
-            <div class="lg" role="img" aria-label="<?= tc_h($t[3]) ?>"><span class="t"><?= tc_h($t[2]) ?></span><div class="m" data-logo="<?= tc_h($t[1]) ?>" data-h="<?= $logoH($t[1]) ?>"></div></div>
+            <div class="lg" role="img" aria-label="<?= tc_h($t[2]) ?>"><div class="m" data-logo="<?= tc_h($t[1]) ?>" data-h="<?= $logoH($t[1]) ?>"></div></div>
 <?php else: ?>
-            <div class="lg"><span class="t"><?= tc_h($t[2]) ?></span><div class="txt"><?= tc_h($t[1]) ?><?php if (($t[5] ?? '') !== ''): ?><small><?= tc_h($t[5]) ?></small><?php endif; ?></div></div>
+            <div class="lg"><div class="txt"><?= tc_h($t[1]) ?><?php if (($t[4] ?? '') !== ''): ?><small><?= tc_h($t[4]) ?></small><?php endif; ?></div></div>
 <?php endif; ?>
-            <p class="pn"><b><?= tc_h($t[3]) ?></b><?php if ($t[4] !== '' && $t[4] !== ($t[5] ?? '')): ?><span><?= tc_h($t[4]) ?></span><?php endif; ?></p>
+            <p class="pn"><b><?= tc_h($t[2]) ?></b><?php if ($t[3] !== ''): ?><span><?= tc_h($t[3]) ?></span><?php endif; ?></p>
           </div>
 <?php };
 tc_page_start([
@@ -146,14 +146,18 @@ tc_page_start([
 <?php foreach ($band['items'] as $g): if (!empty($g['small'])) continue; ?>
       <div class="pg reveal">
         <div>
+<?php if ($g['k'] !== ''): ?>
           <p class="label k" data-type><?= $g['k'] ?></p>
+<?php endif; ?>
           <h3 data-type><?= $g['t'] ?></h3>
+<?php if ($g['text'] !== ''): ?>
           <p class="t"><?= $g['text'] ?></p>
+<?php endif; ?>
 <?php foreach ($g['link'] ?? [] as $l): ?>
           <a class="pg-more" href="<?= tc_h($l[0]) ?>"><?= tc_h($l[1]) ?></a>
 <?php endforeach; ?>
         </div>
-        <div class="pg-logos<?= ($g['cols'] ?? 3) === 4 ? ' c4' : '' ?>">
+        <div class="pg-logos">
 <?php foreach ($g['tiles'] as $t) $pTile($t); ?>
         </div>
       </div>
@@ -164,7 +168,9 @@ tc_page_start([
         <div class="pg-s">
           <p class="label k" data-type><?= $g['k'] ?></p>
           <h3 data-type><?= $g['t'] ?></h3>
+<?php if ($g['text'] !== ''): ?>
           <p class="t"><?= $g['text'] ?></p>
+<?php endif; ?>
           <div class="pg-logos">
 <?php foreach ($g['tiles'] as $t) $pTile($t); ?>
           </div>
