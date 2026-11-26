@@ -25,7 +25,7 @@
 
 require_once __DIR__ . '/schema.php';
 
-const TC_ASSET_VERSION = 186;
+const TC_ASSET_VERSION = 187;
 
 // Tracking/Consent wie auf der bisherigen Seite (GA4, CCM19, HubSpot). Auf false setzen, um alles abzuschalten.
 const TC_TRACKING = true;
@@ -70,6 +70,7 @@ function tc_menu(): array
             'Betreiberkonzept' => '/betreiberkonzept',
             'Padelbee PowerPlay®' => '/powerplay',
             'Angebotsvergleich' => '/angebotsvergleich',
+            'Motions Racket Club' => '/motions-racket-club',
         ],
         'courts' => [
             'Standard Court' => '/standard-court',
@@ -82,6 +83,7 @@ function tc_menu(): array
             'Jobs' => '/jobs',
             'Partner' => '/partner',
             'News' => '/news',
+            'Events' => '/events',
             'FAQ' => '/faq',
         ],
     ];
@@ -118,7 +120,7 @@ function tc_header(bool $isStart): void
 <?php endforeach; ?>
         </div>
       </div>
-      <a href="<?= $a ?>#leistungen">Leistungen</a><a href="/referenzen" data-nav="referenzen">Referenzen</a><a href="/blog" data-nav="blog">Blog</a><a href="<?= $a ?>#kontakt">Kontakt</a>
+      <a href="<?= $a ?>#leistungen">Leistungen</a><a href="/referenzen" data-nav="referenzen">Referenzen</a><a href="/events" data-nav="events">Events</a><a href="/blog" data-nav="blog">Blog</a><a href="<?= $a ?>#kontakt">Kontakt</a>
     </nav>
     <button type="button" class="burger" aria-expanded="false" aria-controls="mnav" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
     <a class="btn head-cta" href="<?= $a ?>#kontakt">Projekt anfragen</a>
@@ -133,7 +135,7 @@ function tc_header(bool $isStart): void
 
 <?php endforeach; ?>
     <p class="mnav-k">Mehr</p>
-    <a href="<?= $a ?>#leistungen">Leistungen</a><a href="/referenzen">Referenzen</a><a href="/blog">Blog</a><a href="<?= $a ?>#kontakt">Kontakt</a>
+    <a href="<?= $a ?>#leistungen">Leistungen</a><a href="/referenzen">Referenzen</a><a href="/events">Events</a><a href="/blog">Blog</a><a href="<?= $a ?>#kontakt">Kontakt</a>
   </nav>
 </header>
 <?php

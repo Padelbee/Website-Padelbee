@@ -2,18 +2,17 @@
 require __DIR__ . '/inc/tc/layout.php';
 // Inhalt nach Firmenpräsentation 2026 (F2, F3, F4, F5, F6), Automaten-Präsentation (A6 Smart Access & Light Control)
 // und Martins neuestem Claude-Entwurf (Leistungen, Joint Venture mit dem Motions Racket Club, Blog-Ratgeber zur Finanzierung).
+// DEV-1775: Joint-Venture-Details und Vereins-FAQ auf /motions-racket-club umgezogen, Events ausführlich auf /events. Hier nur Anriss mit Link.
 $leistungen = [
     ['Digitalisierung & Automatisierung', 'Betreiberkonzept & Digitalisierung', 'Buchung, Zugang, Licht und Automaten greifen ineinander. Auf Wunsch unterstützen wir dich auch nach der Eröffnung.', '#b-digital', 'Zur Digitalisierung'],
     ['Sport Management', 'Marketing & Community-Aufbau', 'Wir übernehmen Markenaufbau, Sponsoring, Community-Wachstum und kommerzielles Management für Clubs und Betreiber.', null, null],
     ['Zusatzeinnahmen', 'Zugang zu Sponsoren', 'Logos und gestaltete Glasflächen machen deinen Court zur Präsentationsfläche mit Wiedererkennungswert, für Zusatzeinnahmen durch&nbsp;Sponsoren.', '/courts#c-marke', 'Gestaltung der Courts'],
     ['Ausbildung & Training', 'Academy & Coaching', 'Wir bieten strukturierte Trainingsprogramme, Betreiber-Coaching und&nbsp;Unternehmensberatung.', null, null],
-    ['Management & Formate', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '#b-netzwerk', 'Zu den Events'],
+    ['Management & Formate', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '/events', 'Zu den Events'],
     ['Verleih & Verkauf', 'Automatenlösungen', 'Zusatzeinnahmen mit Schlägerverleih, Bällen, Snacks und Getränken, rund um die Uhr und ohne Personal.', '/automatenloesungen', 'Zu den Automaten'],
 ];
 $bkFaq = [
-    ['frage' => 'Was kostet das Joint Venture meinen Verein?', 'antwort' => 'Dein Verein investiert 0 € und trägt kein Investitionsrisiko. Bau, Finanzierung und Betrieb der Padel-Courts übernimmt das Joint Venture. Dein Verein stellt die Fläche zur Verfügung und kümmert sich um die Pflege von Außenflächen und Courts sowie um die Sanitärräume. Steuerliche und rechtliche Fragen klärst du bitte immer mit deinem Steuerberater.'],
-    ['frage' => 'Wie viel Pacht bekommt mein Verein?', 'antwort' => 'Dein Verein bekommt eine ortsübliche Pacht pro Tennisplatz und Monat, langfristig vereinbart. Wie hoch sie genau ist, hängt von Standort und Fläche ab. Deshalb rechnen wir sie für deinen Verein individuell durch. Statt Pflegekosten für einen ungenutzten Platz hast du damit planbare Einnahmen.'],
-    ['frage' => 'Was haben die Vereinsmitglieder davon?', 'antwort' => 'Deine Mitglieder bekommen 30 % Rabatt auf den Stundenpreis, an allen MRC-Standorten und nicht nur zu Hause. Sie können 24 Stunden früher buchen als alle anderen und erhalten Zugang zu Events, Training und Partnerrabatten. Das Joint Venture baut außerdem Angebote für Kinder und Einsteiger auf.'],
+    ['frage' => 'Wie finanziere ich meine Padelanlage?', 'antwort' => 'Du musst nicht sofort sechsstellig investieren. Drei Wege stehen dir offen, nämlich Kauf, Leasing oder Joint Venture. Beim Kauf investierst du einmal und dir gehört alles. Beim Leasing fließen die Raten aus dem laufenden Betrieb und deine Liquidität bleibt erhalten. Beim Joint Venture stellt ein Verein die Fläche, das Joint Venture baut, finanziert und betreibt. Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.'],
     ['frage' => 'Kann mein Club bei einem Event dabei sein?', 'antwort' => 'Ja, sprich uns gern an, wenn dein Club bei einem unserer Events dabei sein will. Ob Turnier, Messe oder ein eigenes Format auf deiner Anlage, wir prüfen gemeinsam, was zu deinem Club passt. Schreib uns dafür über das Kontaktformular und erzähl uns kurz von deiner Anlage.'],
 ];
 tc_page_start([
@@ -88,7 +87,7 @@ tc_page_start([
           <div class="lg" role="img" aria-label="Sportogo"><span class="t">Verleih</span><div class="m" data-logo="sportogo" data-h="40"></div></div>
           <div class="lg" role="img" aria-label="Pure Vending"><span class="t">Automaten</span><div class="m" data-logo="purevending" data-h="40"></div></div>
           <div class="lg" role="img" aria-label="Zuply"><span class="t">Vending</span><div class="m" data-logo="zuply" data-h="40"></div></div>
-          <div class="lg lg-wide"><span class="t">Digital</span><div class="txt">Levendo<small>Global</small></div></div>
+          <div class="lg lg-wide" role="img" aria-label="Levendo Global"><span class="t">Digital</span><div class="m" data-logo="levendo" data-h="32"></div></div>
         </div>
         <p class="b-note"><a href="/partner">Alle Partner ansehen</a></p>
       </div>
@@ -112,9 +111,9 @@ tc_page_start([
       <div class="lg" role="img" aria-label="Padel World Summit"><span class="t">Summit</span><div class="m" data-logo="pws" data-h="40"></div></div>
       <div class="lg" role="img" aria-label="Active Connected"><span class="t">Messe</span><div class="m" data-logo="activeconnected" data-h="40"></div></div>
       <div class="lg" role="img" aria-label="Scheck Club"><span class="t">Referenzclub</span><div class="m" data-logo="scheck" data-h="52"></div></div>
-      <div class="lg"><span class="t">Messe</span><div class="txt">Sports Tech<small>Nation 2026</small></div></div>
+      <div class="lg" role="img" aria-label="Sports Tech Nation"><span class="t">Messe</span><div class="m" data-logo="stn" data-h="40"></div></div>
     </div>
-    <div class="b-eventcta reveal"><div><h3 data-type>Dein Club beim nächsten Event?</h3></div><a class="btn" href="#kontakt">Event anfragen</a></div>
+    <div class="b-eventcta reveal"><div><h3 data-type>Dein Club beim nächsten Event?</h3><a class="more-link" href="/events">Alle Events ansehen</a></div><a class="btn" href="#kontakt">Event anfragen</a></div>
   </div>
 </section>
 
@@ -133,14 +132,9 @@ tc_page_start([
       <div class="b-jv-logos"><div class="lg" role="img" aria-label="Motions Racket Club"><span class="t">Joint Venture</span><div class="m" data-logo="mrc" data-h="34"></div></div><div class="lg" role="img" aria-label="mindspringpadel"><span class="t">Finanzierung</span><div class="m" data-logo="mindspring" data-h="34"></div></div></div>
       <div class="b-jv-body">
         <h3 data-type>Padel im Tennisverein</h3>
-        <p>Wir entwickeln, der Motions Racket Club betreibt. So bleibt dein Verein Gastgeber, aber nicht Unternehmer.</p>
-        <div class="b-roles">
-          <div><div class="k">Das Joint Venture übernimmt</div><ul class="b-list"><li>Bau, Finanzierung und Betrieb</li><li>Jugend- und Trainingsangebote</li><li>Turniere zu rabattierten Konditionen</li><li>Marke „Motions Racket Club [Standort]“ mit Co-Branding</li></ul></div>
-          <div><div class="k">Dein Verein übernimmt</div><ul class="b-list"><li>Fläche gegen ortsübliche Pacht, pro Tennisplatz und Monat, langfristig</li><li>Pflege der Außenfläche und Courts</li><li>Sanitärräume</li><li>Padel im Vereinsleben verankern</li></ul></div>
-        </div>
-        <div class="facts vm-facts"><span>30 % Mitgliederrabatt an allen MRC-Standorten</span><span>24 h früher buchen</span><span>Events, Training und Partnerrabatte</span></div>
-        <p class="b-jv-note">Steuerliche und bilanzielle Fragen klärst du bitte immer mit deinem Steuerberater.</p>
-        <a class="btn ghost-d" href="#kontakt" style="margin-top:8px">Joint Venture anfragen</a>
+        <p>Wir entwickeln, der Motions Racket Club betreibt.</p>
+        <div class="facts vm-facts"><span>0 € Investition</span><span>Pacht pro Platz</span><span>30 % Mitgliederrabatt</span><span>24 h früher buchen</span></div>
+        <a class="btn ghost-d" href="/motions-racket-club" style="margin-top:20px">Zum Joint Venture</a>
       </div>
     </div>
   </div>
@@ -149,7 +143,7 @@ tc_page_start([
 <section class="band grid-bg" id="b-faq" style="background-color:var(--grey-050)">
   <div class="inner">
     <p class="label" data-type>FAQ</p>
-    <h2 class="reveal">Fragen zu Betrieb und <span class="hl">Joint Venture.</span></h2>
+    <h2 class="reveal">Fragen zu Betrieb und <span class="hl">Finanzierung.</span></h2>
     <div class="faq-list">
 <?php foreach ($bkFaq as $f): ?>
       <details class="faq"><summary><h3><?= tc_h($f['frage']) ?></h3></summary><p><?= tc_h($f['antwort']) ?></p></details>

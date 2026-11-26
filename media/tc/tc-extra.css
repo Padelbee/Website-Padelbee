@@ -503,7 +503,7 @@ span.sbr{display:block;height:4px}
 .more-link::after{content:" \2192"}
 .more-link:hover{text-decoration:underline;text-underline-offset:4px}
 .a-trust .more-link,.lead .more-link,.b-note .more-link{display:block;width:max-content;max-width:100%;white-space:normal}
-.dark .more-link,.card.dk .more-link,.fd-cost .more-link{color:var(--yellow)!important}
+.dark .more-link,.card.dk .more-link,.fd-cost .more-link,.b-eventcta .more-link{color:var(--yellow)!important}
 .more-row{display:flex;flex-wrap:wrap;gap:6px 28px;margin-top:4px}
 /* Drei Karten auf mittleren Bildschirmen: einzelne letzte Karte über die volle Breite statt leerem Feld daneben (alle Seiten) */
 @media (min-width:561px) and (max-width:980px){.cards.c3>*:last-child:nth-child(odd){grid-column:1/-1}}

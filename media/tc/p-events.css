@@ -1,0 +1,33 @@
+/* DEV-1775: Seiten /events und /motions-racket-club, Bausteine nach Martins Entwurf (the-court.com) */
+.ev-stops{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
+.ev-stop{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--yellow);padding:26px 24px 30px;min-width:0}
+.ev-stop .k,.ev-fact span{display:block;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--petrol)}
+.ev-stop h3{margin:10px 0 0;font-size:clamp(28px,2.8vw,38px)}
+.ev-stop p{margin:6px 0 0;color:var(--muted)}
+.ev-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.ev-gal figure{margin:0;overflow:hidden;aspect-ratio:2/3;background:var(--grey-050)}
+.ev-gal figure.wide{grid-column:span 2;aspect-ratio:auto}
+.ev-gal figure.wide img{object-position:center 25%}
+.ev-gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .9s cubic-bezier(.16,1,.3,1)}
+.ev-gal figure:hover img{transform:scale(1.04)}
+.ev-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:44px}
+.ev-fact{background:var(--panel);border:1px solid var(--line-d);border-top:4px solid var(--yellow);padding:24px 24px 28px;min-width:0}
+.ev-fact b{display:block;font-family:var(--f-display);font-style:italic;font-weight:700;font-size:clamp(34px,3.6vw,50px);line-height:1;color:var(--yellow)}
+.ev-fact span{margin-top:10px;color:var(--muted-d)}
+.ev-fact p{margin:12px 0 0;color:var(--white)}
+.ev-fairs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:44px}
+.ev-fair{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--yellow);padding:28px clamp(22px,3vw,36px) 32px;min-width:0;display:flex;flex-direction:column;gap:12px}
+.ev-fair h3,.ev-fair p{margin:0}
+.ev-fair p{color:var(--muted)}
+.ev-date{font-family:var(--f-display);font-style:italic;font-weight:700;font-size:clamp(26px,2.8vw,38px);line-height:1.05;color:var(--petrol);font-variant-numeric:tabular-nums}
+.ev-logos{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:16px}
+.ev-hero .courtphoto img{object-position:center 30%}
+@media (max-width:860px){.ev-stops,.ev-facts,.ev-fairs{grid-template-columns:1fr}.ev-gal{grid-template-columns:repeat(2,minmax(0,1fr))}.ev-gal figure:last-child{display:none}}
+@media (max-width:560px){.ev-logos{grid-template-columns:1fr}}
+/* Motions Racket Club */
+.mrc-logo{display:flex;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--line-d);border-top:4px solid var(--yellow);padding:48px 32px;align-self:center}
+.mrc-logo .m{background:var(--white);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain;-webkit-mask-position:center;mask-position:center;max-width:100%}
+.mrc-roles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:44px}
+.mrc-roles .card .k{margin-bottom:6px}
+.mrc-note{margin:18px 0 0;font-size:13.5px;color:var(--muted)}
+@media (max-width:860px){.mrc-roles{grid-template-columns:1fr}.mrc-logo{padding:32px 24px}}
