@@ -48,7 +48,7 @@ tc_page_start([
 <section class="band dark grid-bg v-intro v-zoom" id="film" aria-label="Film: Die 360°-Plattform">
   <div class="inner">
     <figure>
-      <video id="introVid" muted loop playsinline preload="none" poster="/media/intro.jpg" src="/media/intro.mp4" aria-label="Padelbee Film: Die 360°-Plattform"></video>
+      <video id="introVid" muted loop playsinline preload="none" poster="/media/intro.jpg" src="/media/intro.mp4?v=3" aria-label="Padelbee Film: Die 360°-Plattform"></video>
       <button type="button" class="snd" id="introSnd" aria-pressed="false" aria-label="Ton einschalten" title="Ton einschalten"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z" fill="currentColor"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg></button>
     </figure>
   </div>
