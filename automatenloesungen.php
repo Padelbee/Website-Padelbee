@@ -1,16 +1,16 @@
 <?php
 require __DIR__ . '/inc/tc/layout.php';
 $automaten = [
-    ['Padel Premium 12 Fach', 'Sportogo', '4950', '/media/automaten/sg12.jpg'],
-    ['Padel Premium 24 Fach', 'Sportogo', '6950', '/media/automaten/sg24.jpg'],
-    ['RentalBOX S', 'Pure Vending', '5190', '/media/automaten/rentalbox.webp'],
-    ['Racx IQ + Payx 8', 'Zuply', '8483', '/media/automaten/zuply_racx.jpg'],
-    ['Padel Ball Premium', 'Sportogo', '3500', null],
-    ['SportsBOX', 'Pure Vending', '5490', '/media/automaten/sportsbox.webp'],
-    ['Snack Touch Business', 'Sportogo', '7140', '/media/automaten/touch_business.webp'],
-    ['Snack Touch Premium Plus', 'Sportogo', '9680', '/media/automaten/touch_premium.webp'],
-    ['DualBOX Lift', 'Pure Vending', '5990', '/media/automaten/dualbox.webp'],
-    ['Linx IQ + Payx 8', 'Zuply', '19180', '/media/automaten/zuply_combo.jpg'],
+    ['Padel Premium 12 Fach', 'Sportogo', '4950', '/media/automaten/sg12.jpg', 'padel-premium-12'],
+    ['Padel Premium 24 Fach', 'Sportogo', '6950', '/media/automaten/sg24.jpg', 'padel-premium-24'],
+    ['RentalBOX S', 'Pure Vending', '5190', '/media/automaten/rentalbox.webp', 'rentalbox'],
+    ['Racx IQ + Payx 8', 'Zuply', '8483', '/media/automaten/zuply_racx.jpg', 'racx-iq'],
+    ['Padel Ball Premium', 'Sportogo', '3500', null, 'padel-ball-premium'],
+    ['SportsBOX', 'Pure Vending', '5490', '/media/automaten/sportsbox.webp', 'sportsbox'],
+    ['Snack Touch Business', 'Sportogo', '7140', '/media/automaten/touch_business.webp', 'snack-touch-business'],
+    ['Snack Touch Premium Plus', 'Sportogo', '9680', '/media/automaten/touch_premium.webp', 'snack-touch-premium-plus'],
+    ['DualBOX Lift', 'Pure Vending', '5990', '/media/automaten/dualbox.webp', 'dualbox-lift'],
+    ['Linx IQ + Payx 8', 'Zuply', '19180', '/media/automaten/zuply_combo.jpg', 'linx-iq'],
 ];
 $automatenFaq = [
     ['frage' => 'Wie funktioniert ein Schläger-Verleihautomat?', 'antwort' => 'Ein Verleihautomat gibt Schläger ohne Personal aus, in vier Schritten. Deine Spieler wählen am Touchscreen oder per App, bezahlen bargeldlos mit Karte, Apple Pay, Google Pay oder PayPal und hinterlegen eine Kaution. Dann öffnet sich das richtige Fach automatisch. Nach dem Spiel kommt der Schläger zurück ins Fach und die Kaution wird freigegeben. Details in <a href="/blog">Schläger leihen ohne Personal</a>.'],
@@ -23,7 +23,7 @@ $automatenFaq = [
 ];
 $automatenProducts = array_map(
     fn($a) => tc_schema_product($a[0], 'Verleih- und Verkaufsautomat für Padel- und Tennisanlagen von ' . $a[1], [
-        'brand' => $a[1], 'category' => 'Verkaufsautomat', 'price' => $a[2], 'image' => $a[3], 'path' => '/automatenloesungen',
+        'brand' => $a[1], 'category' => 'Verkaufsautomat', 'price' => $a[2], 'image' => $a[3], 'path' => '/automatenloesungen#' . $a[4],
     ]),
     // DEV-1573: Product nur mit Bild (Padel Ball Premium hat noch kein Foto, steht aber sichtbar auf der Seite)
     array_values(array_filter($automaten, fn($a) => !empty($a[3])))
@@ -92,19 +92,19 @@ tc_page_start([
       <button type="button" class="fbtn" data-f="snacks" aria-pressed="false">Snacks &amp; Getränke</button>
     </div>
     <div class="prods" id="prods">
-      <article class="prod" data-cat="verleih">
+      <article class="prod" id="padel-premium-12" data-cat="verleih">
         <figure class="ph photo"><img src="/media/automaten/sg12.jpg" alt="Verleihautomat Padel Premium mit 12 Fächern" loading="lazy"></figure>
         <div class="pb"><div class="pk">Sportogo · Verleihautomat</div><h3 data-type>Padel Premium 12 Fach</h3>
         <ul><li>45 × 54 × 194 cm, 75 kg, 230 V / LAN</li><li>7" Touchscreen, Plexiglasfront, LED</li><li>Bargeldlos, Remote-Verwaltung</li><li>In Blau und Schwarz</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>Fachgröße innen 135 × 385 × 535 mm</li><li>12 Monate Garantie</li></ul></details>
         <div class="price"><b>4.950 €</b><span>+ 49 €/Monat Grundgebühr</span></div></div>
       </article>
-      <article class="prod" data-cat="verleih">
+      <article class="prod" id="padel-premium-24" data-cat="verleih">
         <figure class="ph photo"><img src="/media/automaten/sg24.jpg" alt="Zwei Verleihautomaten Padel Premium mit insgesamt 24 Fächern" loading="lazy"></figure>
         <div class="pb"><div class="pk">Sportogo · Verleihautomat</div><h3 data-type>Padel Premium 24 Fach</h3>
         <ul><li>90 × 54 × 194 cm, 150 kg, 230 V / LAN</li><li>7" Touchscreen, Plexiglasfront, LED</li><li>Bargeldlos, Remote-Verwaltung</li><li>In Blau und Schwarz</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>Fachgröße innen 135 × 385 × 535 mm</li><li>12 Monate Garantie</li></ul></details>
         <div class="price"><b>6.950 €</b><span>+ 49 €/Monat Grundgebühr</span></div></div>
       </article>
-      <article class="prod" data-cat="verleih">
+      <article class="prod" id="rentalbox" data-cat="verleih">
         <figure class="ph cut"><img src="/media/automaten/rentalbox.webp" alt="RentalBOX Schläger-Verleihautomat" loading="lazy"></figure>
         <div class="pb"><div class="pk">Pure Vending · Verleihautomat</div><h3 data-type>RentalBOX</h3>
         <ul><li>Verleih mit Sicherheitskaution</li><li>Mietdauer und Preise frei einstellbar</li><li>Padel- und Pickleballschläger</li><li>Indoor oder Outdoor (+ 500 €, überdacht)</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>Optional Verkauf von Bällen und Griffbändern</li><li>10,1" Touchscreen (S), 21,5" ab Größe M, Ethernet / WLAN</li><li>Zzgl. Nayax-Terminal 400 €, Payment-Gebühr 12 €/Monat</li></ul></details>
@@ -128,43 +128,43 @@ tc_page_start([
         </div>
         <p class="fine" style="margin-top:16px">Varianten VS / VM / VL mit 15, 33 oder 51 Fächern für Tennis und Minigolf ab 5.690 €. Kombinierbar mit der DualBOX Lift für Getränke, Snacks und Bälle.</p>
       </div>
-      <article class="prod" data-cat="verleih">
+      <article class="prod" id="racx-iq" data-cat="verleih">
         <figure class="ph photo"><img src="/media/automaten/zuply_racx.jpg" alt="Zuply Racx IQ Verleihautomat mit Gewichtssensoren" loading="lazy"></figure>
         <div class="pb"><div class="pk">Zuply · Premium · Indoor</div><h3 data-type>Racx IQ + Payx 8</h3>
         <ul><li>Bis zu 50 Produkte, 10 pro Fach, bis 35 kg pro Fach</li><li>Gewichtssensoren für maximale Sicherheit</li><li>8" Touchscreen, QR-Code-Reader</li><li>Verleih plus Bälle und Zubehör</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>Optional mit 4G-Router (680 €)</li><li>12 Monate Garantie</li></ul></details>
         <div class="price"><b>8.483 €</b><span>+ 59 €/Monat Grundgebühr</span></div></div>
       </article>
-      <article class="prod" data-cat="baelle">
+      <article class="prod" id="padel-ball-premium" data-cat="baelle">
         <figure class="ph art" aria-hidden="true"><svg viewBox="0 0 200 240" class="cans"><g class="can"><rect x="34" y="40" width="40" height="150" rx="6"/><circle cx="54" cy="70" r="13"/><circle cx="54" cy="110" r="13"/><circle cx="54" cy="150" r="13"/></g><g class="can" style="animation-delay:.25s"><rect x="80" y="40" width="40" height="150" rx="6"/><circle cx="100" cy="70" r="13"/><circle cx="100" cy="110" r="13"/><circle cx="100" cy="150" r="13"/></g><g class="can" style="animation-delay:.5s"><rect x="126" y="40" width="40" height="150" rx="6"/><circle cx="146" cy="70" r="13"/><circle cx="146" cy="110" r="13"/><circle cx="146" cy="150" r="13"/></g><text x="100" y="222" text-anchor="middle">BIS ZU 100 DOSEN</text></svg></figure>
         <div class="pb"><div class="pk">Sportogo · Ballautomat</div><h3 data-type>Padel Ball Premium</h3>
         <ul><li>Bis zu 100 Balldosen, 3er und 4er</li><li>45 × 54 × 194 cm, 75 kg</li><li>Plexiglasfront, LED, bargeldlos</li><li>Modular kombinierbar mit Premium 12/24</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>12 Monate Garantie</li></ul></details>
         <div class="price"><b>3.500 €</b><span>netto</span></div></div>
       </article>
-      <article class="prod" data-cat="baelle">
+      <article class="prod" id="sportsbox" data-cat="baelle">
         <figure class="ph cut"><img src="/media/automaten/sportsbox.webp" alt="SportsBOX Verkaufsautomat für Bälle und Zubehör" loading="lazy"></figure>
         <div class="pb"><div class="pk">Pure Vending · Sportautomat</div><h3 data-type>SportsBOX</h3>
         <ul><li>Bis zu 144 Balldosen, 88 Griffbänder, Dämpfer und Zubehör</li><li>21,5" Touchscreen, digitaler Warenkorb</li><li>Outdoor-Version (überdacht)</li><li>Zzgl. Nayax-Terminal 400 €</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>126 × 77 × 194 cm, 240 kg</li><li>Ungekühlt, Ethernet / WLAN, 230 V</li><li>Payment-Gebühr 12 €/Monat</li></ul></details>
         <div class="price"><b>5.490 €</b><span>Mietkauf ab 110 €/Monat</span></div></div>
       </article>
-      <article class="prod" data-cat="snacks baelle">
+      <article class="prod" id="snack-touch-business" data-cat="snacks baelle">
         <figure class="ph cut"><img src="/media/automaten/touch_business.webp" alt="Snack Touch Business Verkaufsautomat" loading="lazy"></figure>
         <div class="pb"><div class="pk">Sportogo · Verkaufsautomat</div><h3 data-type>Snack Touch Business</h3>
         <ul><li>Bis zu 229 Produkte, 50 Balldosen</li><li>Gekühlt +3 °C, zwei Temperaturzonen</li><li>7" Touchscreen, Wi-Fi und Bluetooth</li><li>Ohne Ball-Option: 6.640 €</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>75 × 79 × 183 cm, 236 kg</li><li>12 Monate Garantie</li></ul></details>
         <div class="price"><b>7.140 €</b><span>+ 29 €/Monat Grundgebühr</span></div></div>
       </article>
-      <article class="prod" data-cat="snacks baelle">
+      <article class="prod" id="snack-touch-premium-plus" data-cat="snacks baelle">
         <figure class="ph cut dark"><img src="/media/automaten/touch_premium.webp" alt="Snack Touch Premium Plus Verkaufsautomat" loading="lazy"></figure>
         <div class="pb"><div class="pk">Sportogo · Verkaufsautomat</div><h3 data-type>Snack Touch Premium Plus</h3>
         <ul><li>Bis zu 444 Produkte, 100 Balldosen</li><li>10" Touch-Tablet, LED-Preisleisten</li><li>Gekühlt, Einbruchsschutz</li><li>106 × 79 × 183 cm, 348 kg</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>12 Monate Garantie</li></ul></details>
         <div class="price"><b>9.680 €</b><span>+ 29 €/Monat Grundgebühr</span></div></div>
       </article>
-      <article class="prod" data-cat="snacks baelle">
+      <article class="prod" id="dualbox-lift" data-cat="snacks baelle">
         <figure class="ph cut"><img src="/media/automaten/dualbox.webp" alt="DualBOX Lift Automat für Getränke, Snacks und Bälle" loading="lazy"></figure>
         <div class="pb"><div class="pk">Pure Vending · Kombiautomat</div><h3 data-type>DualBOX Lift</h3>
         <ul><li>Gekühlt: 208 Flaschen/Dosen und 112 Snacks</li><li>Ungekühlt: 48 Balldosen, 33 Griffbänder</li><li>Produktlift, bruchsicher auch für Glas</li><li>Optional Altersprüfung (595 €)</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>145 × 85 × 197 cm, 370 kg</li><li>Outdoor-Version: 6.690 €</li><li>Zzgl. Nayax-Terminal 400 €, Payment-Gebühr 12 €/Monat</li></ul></details>
         <div class="price"><b>5.990 €</b><span>Mietkauf ab 120 €/Monat</span></div></div>
       </article>
-      <article class="prod" data-cat="snacks verleih">
+      <article class="prod" id="linx-iq" data-cat="snacks verleih">
         <figure class="ph photo"><img src="/media/automaten/zuply_combo.jpg" alt="Zuply Linx und Racx im Padelbee-Branding" loading="lazy"></figure>
         <div class="pb"><div class="pk">Zuply · Premium · Indoor</div><h3 data-type>Linx IQ + Payx 8</h3>
         <ul><li>Gekühlt 0–4 °C, Drinks und Snacks</li><li>50 Produkte, 10 pro Fach, 35 kg pro Fach, Gewichtssensoren</li><li>8" Touch-Tablet, QR-Code-Reader</li><li>Im Bild kombiniert mit Racx IQ, in deinem Branding</li></ul><details class="pmore"><summary>Mehr Details</summary><ul><li>20 Fachtrenner</li><li>Optional mit 4G-Router (680 €)</li><li>12 Monate Garantie</li></ul></details>
