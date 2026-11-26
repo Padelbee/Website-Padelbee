@@ -1,5 +1,6 @@
 <?php
-require __DIR__ . '/inc/tc/layout.php';
+require dirname(__DIR__) . '/inc/tc/layout.php';
+// DEV-1775: Seite als Ordner (index.php), damit /events/ ohne Änderung an .htaccess funktioniert.
 // DEV-1775: Events nach Martins Entwurf (the-court.com/events, Stand 23.11.2026), Martins Mail vom 25.11.2026
 // ("Die Events kannst Du wie hier übernehmen"). Fotos der Rafa Nadal Padel Tour aus dem Entwurf (media/events).
 // Die FAQ "Kann mein Club bei einem Event dabei sein?" steht auf /betreiberkonzept und wird hier nicht wiederholt.
@@ -10,15 +11,15 @@ $evFaq = [
     ['frage' => 'Was macht ihr auf der Active Connected?', 'antwort' => 'Auf der Active Connected leiten wir den Bereich Racketsports, in Kooperation mit der MPM GmbH und Sports Connected. Wie bei der f.re.e bringen wir Racketsport dorthin, wo Spieler, Vereine und Betreiber zusammenkommen. Der Termin für die nächste Ausgabe folgt, wir ergänzen ihn auf dieser Seite, sobald er feststeht.'],
 ];
 tc_page_start([
-    'path' => '/events',
+    'path' => '/events/',
     'title' => 'Padel-Events, Turniere & Messen · Padelbee',
     'description' => 'Padel-Events mit Padelbee: Rafa Nadal Padel Tour 2026 in München, Düsseldorf und Berlin, Best-of-Three-Challenge und Racketsport auf der f.re.e München.',
-    'breadcrumb' => ['Events' => '/events'],
+    'breadcrumb' => ['Events' => '/events/'],
     'og_image' => '/media/events/rnpt_01.jpg',
     'extra_head' => '<link rel="stylesheet" href="/media/tc/p-events.css?v=' . TC_ASSET_VERSION . '">',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
-        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $evFaq), '/events'),
+        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $evFaq), '/events/'),
     ],
 ]);
 ?>
@@ -113,7 +114,7 @@ tc_page_start([
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
       <div class="person"><div class="k">Projektmanagement</div><b>Stefan Möbius</b><div class="mail"><a href="mailto:stefan.moebius@padelbee.de">stefan.moebius@padelbee.de</a></div></div>
     </div>
-<?php $tcPreselect = []; $tcFormButton = 'Event anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
+<?php $tcPreselect = []; $tcFormButton = 'Event anfragen'; include dirname(__DIR__) . '/inc/tc/kontakt-form-toggle.php'; ?>
   </div>
 </section>
 <?php tc_page_end();

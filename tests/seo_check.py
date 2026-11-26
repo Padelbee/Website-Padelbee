@@ -22,14 +22,14 @@ PAGES = ["/", "/courts", "/automatenloesungen", "/referenzen", "/blog", "/impres
          "/datenschutz", "/standortanalyse", "/padel-court-bauen", "/betreiberkonzept",
          "/powerplay", "/angebotsvergleich", "/sportplatzbau", "/halle", "/standard-court",
          "/panorama-court", "/premier-court", "/team", "/jobs", "/partner",
-         "/news", "/faq", "/events", "/motions-racket-club"]
+         "/news", "/faq", "/events/", "/motions-racket-club/"]
 REDIRECTS = [("/bauplanung", "/padel-court-bauen"), ("/bauplanung.php", "/padel-court-bauen"),
              ("/automaten", "/automatenloesungen"), ("/automaten/", "/automatenloesungen"),
              ("/courts/", "/courts"), ("/index.php", "/"),
              ("/standortanalyse.php", "/standortanalyse"), ("/team.php", "/team"),
              ("/hybrid-court", "/courts")]  # DEV-1774: Hybrid Court entfernt
 PRODUCT = ["/standard-court", "/panorama-court", "/premier-court"]
-SERVICE = ["/motions-racket-club", "/standortanalyse", "/padel-court-bauen", "/betreiberkonzept", "/powerplay",
+SERVICE = ["/motions-racket-club/", "/standortanalyse", "/padel-court-bauen", "/betreiberkonzept", "/powerplay",
            "/angebotsvergleich", "/sportplatzbau", "/halle"]
 ORG_TYPES = {"Organization", "LocalBusiness", "ProfessionalService"}
 SITE_TYPES = {"WebSite", "WebPage"}

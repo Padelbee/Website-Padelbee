@@ -8,7 +8,7 @@ $leistungen = [
     ['Sport Management', 'Marketing & Community-Aufbau', 'Wir übernehmen Markenaufbau, Sponsoring, Community-Wachstum und kommerzielles Management für Clubs und Betreiber.', null, null],
     ['Zusatzeinnahmen', 'Zugang zu Sponsoren', 'Logos und gestaltete Glasflächen machen deinen Court zur Präsentationsfläche mit Wiedererkennungswert, für Zusatzeinnahmen durch&nbsp;Sponsoren.', '/courts#c-marke', 'Gestaltung der Courts'],
     ['Ausbildung & Training', 'Academy & Coaching', 'Wir bieten strukturierte Trainingsprogramme, Betreiber-Coaching und&nbsp;Unternehmensberatung.', null, null],
-    ['Management & Formate', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '/events', 'Zu den Events'],
+    ['Management & Formate', 'Turnier & Event', 'Wir planen Turniere und Events professionell und führen sie durch.', '/events/', 'Zu den Events'],
     ['Verleih & Verkauf', 'Automatenlösungen', 'Zusatzeinnahmen mit Schlägerverleih, Bällen, Snacks und Getränken, rund um die Uhr und ohne Personal.', '/automatenloesungen', 'Zu den Automaten'],
 ];
 $bkFaq = [
@@ -113,7 +113,7 @@ tc_page_start([
       <div class="lg" role="img" aria-label="Scheck Club"><span class="t">Referenzclub</span><div class="m" data-logo="scheck" data-h="52"></div></div>
       <div class="lg" role="img" aria-label="Sports Tech Nation"><span class="t">Messe</span><div class="m" data-logo="stn" data-h="40"></div></div>
     </div>
-    <div class="b-eventcta reveal"><div><h3 data-type>Dein Club beim nächsten Event?</h3><a class="more-link" href="/events">Alle Events ansehen</a></div><a class="btn" href="#kontakt">Event anfragen</a></div>
+    <div class="b-eventcta reveal"><div><h3 data-type>Dein Club beim nächsten Event?</h3><a class="more-link" href="/events/">Alle Events ansehen</a></div><a class="btn" href="#kontakt">Event anfragen</a></div>
   </div>
 </section>
 
@@ -134,7 +134,7 @@ tc_page_start([
         <h3 data-type>Padel im Tennisverein</h3>
         <p>Wir entwickeln, der Motions Racket Club betreibt.</p>
         <div class="facts vm-facts"><span>0 € Investition</span><span>Pacht pro Platz</span><span>30 % Mitgliederrabatt</span><span>24 h früher buchen</span></div>
-        <a class="btn ghost-d" href="/motions-racket-club" style="margin-top:20px">Zum Joint Venture</a>
+        <a class="btn ghost-d" href="/motions-racket-club/" style="margin-top:20px">Zum Joint Venture</a>
       </div>
     </div>
   </div>

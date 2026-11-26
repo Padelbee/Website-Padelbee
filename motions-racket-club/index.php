@@ -1,5 +1,6 @@
 <?php
-require __DIR__ . '/inc/tc/layout.php';
+require dirname(__DIR__) . '/inc/tc/layout.php';
+// DEV-1775: Seite als Ordner (index.php), damit /events/ ohne Änderung an .htaccess funktioniert.
 // DEV-1775: Eigene Seite für das Joint Venture mit dem Motions Racket Club (Martins Mail vom 25.11.2026: "eigener Reiter").
 // Inhalt nach Martins Entwurf (the-court.com/motions, Stand 23.11.2026). Der Joint-Venture-Block und die Vereins-FAQ
 // sind von /betreiberkonzept hierher umgezogen, damit kein Satz doppelt steht. Die FAQ "Wie viele Padel-Courts passen
@@ -12,20 +13,20 @@ $mrcFaq = [
     ['frage' => 'Wer übernimmt welche Aufgaben?', 'antwort' => 'Das Joint Venture übernimmt Bau, Finanzierung und Betrieb, Jugend- und Trainingsangebote, Turniere zu rabattierten Konditionen und die Marke. Dein Verein übernimmt die Fläche gegen Pacht, die Pflege von Außenflächen und Courts, die Sanitärräume und verankert Padel im Vereinsleben. So bleibt dein Verein Gastgeber, aber nicht Unternehmer. Mehr dazu in <a href="/blog#blog/wer-macht-was-im-joint-venture">Wer macht was im Joint Venture?</a>'],
 ];
 tc_page_start([
-    'path' => '/motions-racket-club',
+    'path' => '/motions-racket-club/',
     'title' => 'Padel im Tennisverein ohne Investition · Padelbee',
     'description' => 'Padel im Tennisverein mit 0 € Investition: Joint Venture von Padelbee und Motions Racket Club mit Pacht pro Platz, 30 % Mitgliederrabatt und Co-Branding.',
-    'breadcrumb' => ['Motions Racket Club' => '/motions-racket-club'],
+    'breadcrumb' => ['Motions Racket Club' => '/motions-racket-club/'],
     'extra_head' => '<link rel="stylesheet" href="/media/tc/p-betreiberkonzept.css?v=' . TC_ASSET_VERSION . '">' . "\n" . '<link rel="stylesheet" href="/media/tc/p-events.css?v=' . TC_ASSET_VERSION . '">',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
         tc_schema_service(
             'Joint Venture Padel im Tennisverein',
             'Joint Venture von Padelbee und Motions Racket Club: Padel-Courts auf dem Gelände von Tennisvereinen ohne eigene Investition, mit ortsüblicher Pacht pro Tennisplatz, 30 % Mitgliederrabatt und Co-Branding.',
-            '/motions-racket-club',
+            '/motions-racket-club/',
             ['serviceType' => 'Joint Venture']
         ),
-        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $mrcFaq), '/motions-racket-club'),
+        tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $mrcFaq), '/motions-racket-club/'),
     ],
 ]);
 ?>
@@ -82,7 +83,7 @@ tc_page_start([
       <div class="person"><div class="k">Projektanfrage</div><b>Martin Gaffal</b><div class="mail"><a href="mailto:martin.gaffal@padelbee.de">martin.gaffal@padelbee.de</a></div></div>
       <div class="person"><div class="k">Allgemein</div><b>Padelbee</b><div class="mail"><a href="mailto:info@padelbee.de">info@padelbee.de</a></div></div>
     </div>
-<?php $tcPreselect = ['Maßgeschneidertes Betreiberkonzept']; $tcFormButton = 'Joint Venture anfragen'; include __DIR__ . '/inc/tc/kontakt-form-toggle.php'; ?>
+<?php $tcPreselect = ['Maßgeschneidertes Betreiberkonzept']; $tcFormButton = 'Joint Venture anfragen'; include dirname(__DIR__) . '/inc/tc/kontakt-form-toggle.php'; ?>
   </div>
 </section>
 <?php tc_page_end();
