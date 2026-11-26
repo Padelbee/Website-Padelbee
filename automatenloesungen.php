@@ -172,7 +172,7 @@ tc_page_start([
       </article>
     </div>
     <p class="a-trust reveal">Automaten von uns stehen unter anderem in Memmingen, Straubing und Mainburg; mehr in unseren <a href="/referenzen">Referenzen</a>.</p>
-    <p class="fine" style="color:var(--muted)">Alle Preise netto. Unser Angebot richtet sich ausschließlich an Unternehmen, Vereine und die öffentliche Hand. Pure Vending ab Lager Rietberg, zzgl. Fracht. Mietkauf-Beispiel: 48 Monate, 20 % Schlussrate, Bonität vorausgesetzt. Grundgebühren beinhalten Telemetrie, Fernwartung und Software-Updates. Stand 10/2026.</p>
+    <p class="fine" style="color:var(--muted)">Alle Preise netto. Pure Vending ab Lager Rietberg, zzgl. Fracht. Mietkauf-Beispiel: 48 Monate, 20 % Schlussrate, Bonität vorausgesetzt. Grundgebühren beinhalten Telemetrie, Fernwartung und Software-Updates. Stand 10/2026.</p>
   </div>
 </section>
 
