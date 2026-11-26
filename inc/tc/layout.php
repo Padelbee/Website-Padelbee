@@ -25,7 +25,7 @@
 
 require_once __DIR__ . '/schema.php';
 
-const TC_ASSET_VERSION = 181;
+const TC_ASSET_VERSION = 182;
 
 // Tracking/Consent wie auf der bisherigen Seite (GA4, CCM19, HubSpot). Auf false setzen, um alles abzuschalten.
 const TC_TRACKING = true;
@@ -145,9 +145,9 @@ function tc_footer(bool $isStart): void
     $a = $isStart ? '' : '/';
     $menu = tc_menu();
     ?>
-<nav class="band foot-nav" aria-label="Seitenübersicht" style="background:var(--petrol)"><div class="foot-links"><a href="/">Start</a><a href="/courts">Padel-Courts</a><a href="/halle">Hallenlösungen</a><a href="/automatenloesungen">Verleih- &amp; Verkaufsautomaten</a><a href="/referenzen">Referenzen</a><a href="/blog">Blog</a><a href="<?= $a ?>#leistungen">Leistungen</a><a href="<?= $a ?>#projekte">Projektkarte</a><a href="<?= $a ?>#partner">Partner</a><a href="<?= $a ?>#kontakt">Kontakt</a><a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a></div>
+<nav class="band foot-nav" aria-label="Seitenübersicht" style="background:var(--petrol)"><div class="foot-links"><a href="/">Start</a><a href="/courts">Padel-Courts</a><a href="/automatenloesungen">Verleih- &amp; Verkaufsautomaten</a><a href="/referenzen">Referenzen</a><a href="/blog">Blog</a><a href="<?= $a ?>#leistungen">Leistungen</a><a href="<?= $a ?>#projekte">Projektkarte</a><a href="<?= $a ?>#kontakt">Kontakt</a><a href="/impressum">Impressum</a><a href="/datenschutz">Datenschutz</a></div>
 <div class="foot-links foot-links2"><?php foreach ($menu as $group): foreach ($group as $name => $href): ?><a href="<?= tc_h($href) ?>"><?= tc_h($name) ?></a><?php endforeach; endforeach; ?></div></nav>
-<footer class="foot band"><div class="row"><div><?= tc_logos() ?></div><div>Oktober 2026</div></div></footer>
+<footer class="foot band"><div class="row"><div><?= tc_logos() ?></div><div>Oktober 2026</div><p class="b2b">Unser Angebot richtet sich ausschließlich an Unternehmen, Vereine und die öffentliche Hand.</p></div></footer>
 <?php
 }
 

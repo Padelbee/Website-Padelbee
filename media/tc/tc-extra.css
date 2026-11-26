@@ -555,3 +555,6 @@ span.sbr{display:block;height:4px}
 @media (max-width:620px){.b-cover{aspect-ratio:4/3}}
 /* Mega-Menü „Produkte“ mittig unter dem Menüpunkt, damit es rechts nicht aus dem Bild ragt */
 .dd-menu.mega{left:50%;margin-left:calc(min(760px,92vw) / -2)}
+
+/* Footer: B2B-Hinweis wie in Martins Entwurf */
+.foot .b2b{margin:10px 0 0;font-size:12px;letter-spacing:normal;text-transform:none;font-weight:400;color:var(--muted-d);flex-basis:100%}
