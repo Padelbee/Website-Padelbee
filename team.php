@@ -5,7 +5,7 @@ require __DIR__ . '/inc/tc/layout.php';
 $team = [
     ['Martin Gaffal', 'Co-Founder · Geschäftsführer', '/images/team/martin.png'],
     ['Stefan Möbius', 'Co-Founder', '/images/team/stefan.png'],
-    ['Laura Waack', 'Founder Associate', null],
+    ['Laura Waack', 'Founder Associate', '/media/team/laura.jpg'],
     ['Angélique Willner', 'Projektentwicklung', '/images/team/angelique.png'],
     ['Florian von Stuckrad', 'Sports & Products', '/media/team/florian.jpg'],
     ['Christian Bonk', 'Padelexperte · Padelcoach', '/images/team/christian.jpg'],

@@ -563,3 +563,8 @@ span.sbr{display:block;height:4px}
 /* Footer-Links: ab 1240px eine Zeile, darunter zwei ausgeglichene Zeilen (nie ein einzelner Link allein) */
 @media (min-width:1240px){.foot-links{gap:8px 14px;letter-spacing:.1em}}
 @media (min-width:700px) and (max-width:1239px){.foot-links:not(.foot-links2){margin-left:0;max-width:860px}}
+/* DEV-1778: Referenz SC Eching auf /sportplatzbau, Bild über den Kennzahlen in voller Breite */
+.sp-ref-img{margin:28px 0 0;aspect-ratio:2/1;overflow:hidden;background:var(--petrol)}
+.sp-ref-img img{width:100%;height:100%;object-fit:cover;object-position:center 85%;display:block}
+.sp-ref-img+.fd-cost{margin-top:0}
+@media (max-width:700px){.sp-ref-img{aspect-ratio:4/3}}

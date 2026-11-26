@@ -764,7 +764,13 @@
   "id": "id4m500u98242zvwsv39"
  },
  {
-  "bilder": [],
+  "bilder": [
+   {
+    "alt": "SC Eching bei München, Ansicht von oben mit Tennisplätzen und 2 Padel Courts",
+    "id": "69ce573ec9422f6a6b8f178c33bb8847",
+    "url": "/media/uploads/69ce573ec9422f6a6b8f178c33bb8847.jpg"
+   }
+  ],
   "courts": 2,
   "created": 1792849004638,
   "hersteller": "",
