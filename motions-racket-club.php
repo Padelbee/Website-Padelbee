@@ -34,7 +34,7 @@ tc_page_start([
     <div>
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Motions Racket Club</p>
       <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padel im Tennisverein · Padelbee × Motions Racket Club</span>Padel im Verein. <span class="kw">0&nbsp;€</span> Investition.</h1>
-      <p class="lead">Padel für deinen Verein ohne eigene Investition, mit Pacht, Mitgliedervorteilen und neuem Leben auf der Anlage. Padelbee entwickelt, der Motions Racket Club&nbsp;betreibt.</p>
+      <p class="lead">Padel für deinen Verein ohne eigene Investition, mit Pacht, Mitgliedervorteilen und neuem Leben auf der Anlage. Padelbee entwickelt die Courts, der Motions Racket Club betreibt&nbsp;sie.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#kontakt">Joint Venture anfragen</a><a class="btn ghost" href="#mrc-modell">Das Modell ansehen</a></div>
     </div>
     <div class="mrc-logo" role="img" aria-label="Motions Racket Club"><div class="m" data-logo="mrc" data-h="96"></div></div>
