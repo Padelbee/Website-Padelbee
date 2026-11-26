@@ -21,15 +21,15 @@ UA = "padelbee-seo-check/1.0"
 PAGES = ["/", "/courts", "/automatenloesungen", "/referenzen", "/blog", "/impressum",
          "/datenschutz", "/standortanalyse", "/padel-court-bauen", "/betreiberkonzept",
          "/powerplay", "/angebotsvergleich", "/sportplatzbau", "/halle", "/standard-court",
-         "/panorama-court", "/hybrid-court", "/premier-court", "/team", "/jobs", "/partner",
+         "/panorama-court", "/premier-court", "/team", "/jobs", "/partner",
          "/news", "/faq"]
 REDIRECTS = [("/bauplanung", "/padel-court-bauen"), ("/bauplanung.php", "/padel-court-bauen"),
              ("/automaten", "/automatenloesungen"), ("/automaten/", "/automatenloesungen"),
              ("/courts/", "/courts"), ("/index.php", "/"),
-             ("/standortanalyse.php", "/standortanalyse"), ("/team.php", "/team")]
-# DEV-1573: /hybrid-court hat keinen Preis, deshalb Service statt Product
+             ("/standortanalyse.php", "/standortanalyse"), ("/team.php", "/team"),
+             ("/hybrid-court", "/courts")]  # DEV-1774: Hybrid Court entfernt
 PRODUCT = ["/standard-court", "/panorama-court", "/premier-court"]
-SERVICE = ["/hybrid-court", "/standortanalyse", "/padel-court-bauen", "/betreiberkonzept", "/powerplay",
+SERVICE = ["/standortanalyse", "/padel-court-bauen", "/betreiberkonzept", "/powerplay",
            "/angebotsvergleich", "/sportplatzbau", "/halle"]
 ORG_TYPES = {"Organization", "LocalBusiness", "ProfessionalService"}
 SITE_TYPES = {"WebSite", "WebPage"}
