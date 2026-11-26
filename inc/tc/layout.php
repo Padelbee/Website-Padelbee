@@ -25,7 +25,7 @@
 
 require_once __DIR__ . '/schema.php';
 
-const TC_ASSET_VERSION = 187;
+const TC_ASSET_VERSION = 188;
 
 // Tracking/Consent wie auf der bisherigen Seite (GA4, CCM19, HubSpot). Auf false setzen, um alles abzuschalten.
 const TC_TRACKING = true;
@@ -224,10 +224,11 @@ function tc_page_start(array $page): void
     } ?>
 <?= $page['extra_head'] ?? '' ?>
 <?php if (TC_TRACKING): ?>
+<!-- CCM19 Cookie-Banner zuerst laden, damit er Google Analytics bis zur Zustimmung blockieren kann (Vorgabe CCM19) -->
+<script src="https://cloud.ccm19.de/app.js?apiKey=1a9603ffb3b304e1b2fae2a806846cbacf3795537350db7e&amp;domain=69118fc1086bc66c5c03daf2" referrerpolicy="origin"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDT6G30T20"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EDT6G30T20');</script>
-<script src="https://cloud.ccm19.de/app.js?apiKey=1a9603ffb3b304e1b2fae2a806846cbacf3795537350db7e&amp;domain=69118fc1086bc66c5c03daf2" referrerpolicy="origin"></script>
 <?php endif; ?>
 </head>
 <body>

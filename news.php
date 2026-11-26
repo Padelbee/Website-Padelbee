@@ -46,7 +46,8 @@ function news_posts(int $limit = 6): array
             'title' => news_cut($title, 90),
             'text' => news_cut($rest, 170),
             'date' => news_month((string) ($p['post_date_time'] ?? '')),
-            'img' => (string) ($p['thumbnail_url'] ?? ''),
+            // Bild über news-bild.php vom eigenen Server, nicht direkt von sociablekit.com (Datenschutz)
+            'img' => ($p['thumbnail_url'] ?? '') !== '' ? '/news-bild.php?k=' . substr(sha1((string) $p['thumbnail_url']), 0, 16) : '',
             'url' => (string) $p['post_url'],
         ];
         if (count($out) >= $limit) {
