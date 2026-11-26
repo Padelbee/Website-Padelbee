@@ -19,6 +19,20 @@ tc_page_start([
     'extra_head' => '<link rel="stylesheet" href="/media/tc/p-events.css?v=' . TC_ASSET_VERSION . '">',
     'extra_scripts' => '<script src="/media/tc/kontakt-form.js?v=' . TC_ASSET_VERSION . '"></script>' . "\n" . '<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad" async defer></script>',
     'schema' => [
+        // Termin f.re.e München wie in Martins Entwurf (Event-Knoten), über tc_schema_clean ohne Änderung an schema.php
+        tc_schema_clean([
+            '@type' => 'Event',
+            '@id' => tc_url('/events/#free-2027'),
+            'name' => 'f.re.e München 2027',
+            'startDate' => '2027-02-10',
+            'endDate' => '2027-02-14',
+            'eventStatus' => 'https://schema.org/EventScheduled',
+            'eventAttendanceMode' => 'https://schema.org/OfflineEventAttendanceMode',
+            'location' => ['@type' => 'Place', 'name' => 'Messe München', 'address' => ['@type' => 'PostalAddress', 'streetAddress' => 'Messegelände', 'postalCode' => '81823', 'addressLocality' => 'München', 'addressCountry' => 'DE']],
+            'description' => 'Racketsport auf der f.re.e München, gemeinsam mit MPM GmbH und Sports Connected.',
+            'image' => tc_url('/media/events/rnpt_01.jpg'),
+            'url' => 'https://free-muenchen.de',
+        ]),
         tc_schema_faq(array_map(fn($f) => ['frage' => $f['frage'], 'antwort' => strip_tags($f['antwort'])], $evFaq), '/events/'),
     ],
 ]);
