@@ -27,7 +27,10 @@ REDIRECTS = [("/bauplanung", "/padel-court-bauen"), ("/bauplanung.php", "/padel-
              ("/automaten", "/automatenloesungen"), ("/automaten/", "/automatenloesungen"),
              ("/courts/", "/courts"), ("/index.php", "/"),
              ("/standortanalyse.php", "/standortanalyse"), ("/team.php", "/team"),
-             ("/hybrid-court", "/courts")]  # DEV-1774: Hybrid Court entfernt
+             ("/hybrid-court", "/courts"),  # DEV-1774: Hybrid Court entfernt
+             ("/hybrid-court.php", "/courts"), ("/index_alt.php", "/"),  # DEV-1800
+             ("/events", "/events/"), ("/motions-racket-club", "/motions-racket-club/"),
+             ("/halle.php", "/halle")]
 PRODUCT = ["/standard-court", "/panorama-court", "/premier-court"]
 SERVICE = ["/motions-racket-club/", "/standortanalyse", "/padel-court-bauen", "/betreiberkonzept", "/powerplay",
            "/angebotsvergleich", "/sportplatzbau", "/halle"]
@@ -200,6 +203,8 @@ def group_redirects(base, ctx):
         got = path_of(loc, base)
         check(st == 301 and got == dst, "301 %s -> %s" % (src, dst),
               "Status %s, Location %r" % (st, loc))
+        if base.startswith("https://") and st == 301:  # DEV-1800: keine Kette ueber http
+            check(loc.startswith("https://"), "301 %s auf https" % src, "Location %r" % loc)
 
 
 def load_pages(base, ctx):
