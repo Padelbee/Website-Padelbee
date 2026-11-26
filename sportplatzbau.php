@@ -75,12 +75,16 @@ $spLogos = [
     <p class="label" data-type>Referenz</p>
     <h2 class="reveal">SC <span class="hl">Eching.</span></h2>
     <p class="lead">Der SC Eching bei München baut einen neuen Tennispark. Wir begleiten den Verein in allen Phasen, von der Beratung bis zum&nbsp;Betrieb.</p>
-    <figure class="sp-ref-img reveal"><img src="/media/uploads/69ce573ec9422f6a6b8f178c33bb8847.jpg" alt="SC Eching bei München, Ansicht von oben mit Tennisplätzen und 2 Padel Courts" loading="lazy" width="1402" height="1122"></figure>
+    <div class="sp-ref">
+      <figure class="sp-ref-img reveal"><img src="/media/uploads/69ce573ec9422f6a6b8f178c33bb8847.jpg" alt="SC Eching bei München, Ansicht von oben mit Tennisplätzen und 2 Padel Courts" loading="lazy" width="1402" height="1122"></figure>
+      <div>
     <div class="fd-cost reveal">
       <div><span>Neubau Tennispark</span><b>5 + 2</b><p>5 Rebound Ace Tennisplätze und 2 Outdoor Padel Courts.</p></div>
       <div><span>In Planung</span><b>Fertig 2027</b><p><a class="more-link" href="/referenzen">Alle Referenzen ansehen</a></p></div>
     </div>
     <ul class="chips reveal"><li>Beratung</li><li>Finanzierung</li><li>Planung &amp; Architektur</li><li>Bau</li><li>Digitalisierung</li><li>Betrieb</li></ul>
+      </div>
+    </div>
   </div>
 </section>
 

@@ -563,8 +563,10 @@ span.sbr{display:block;height:4px}
 /* Footer-Links: ab 1240px eine Zeile, darunter zwei ausgeglichene Zeilen (nie ein einzelner Link allein) */
 @media (min-width:1240px){.foot-links{gap:8px 14px;letter-spacing:.1em}}
 @media (min-width:700px) and (max-width:1239px){.foot-links:not(.foot-links2){margin-left:0;max-width:860px}}
-/* DEV-1778: Referenz SC Eching auf /sportplatzbau, Bild über den Kennzahlen in voller Breite */
-.sp-ref-img{margin:28px 0 0;aspect-ratio:2/1;overflow:hidden;background:var(--petrol)}
-.sp-ref-img img{width:100%;height:100%;object-fit:cover;object-position:center 85%;display:block}
-.sp-ref-img+.fd-cost{margin-top:0}
-@media (max-width:700px){.sp-ref-img{aspect-ratio:4/3}}
+/* DEV-1778: Referenz SC Eching auf /sportplatzbau. Bild ungeschnitten links, Kennzahlen und Leistungen rechts */
+.sp-ref{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,3vw,40px);align-items:center;margin-top:28px}
+.sp-ref-img{margin:0;background:var(--petrol)}
+.sp-ref-img img{width:100%;height:auto;display:block}
+.sp-ref .fd-cost{grid-template-columns:1fr;margin-top:0}
+.sp-ref .fd-cost div+div{border-left:0;border-top:1px solid rgba(255,255,255,.15)}
+@media (max-width:860px){.sp-ref{grid-template-columns:1fr}}
