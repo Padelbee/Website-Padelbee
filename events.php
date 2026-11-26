@@ -27,7 +27,7 @@ tc_page_start([
     <div style="max-width:860px">
       <p class="crumb"><a href="/">Start</a> &nbsp;/&nbsp; Events</p>
       <h1><span class="label h1-kicker" style="color:var(--white)" data-type>Padel-Events · Turniere · Messen</span>Padel <span class="kw">erleben.</span></h1>
-      <p class="lead">Von der Rafa Nadal Padel Tour bis zu den großen Messen bringt Padelbee Padel dorthin, wo Spieler, Vereine und Betreiber zusammenkommen.</p>
+      <p class="lead">Padelbee bringt Padel dorthin, wo Spieler, Vereine und Betreiber zusammenkommen, von der Rafa Nadal Padel Tour bis zu den großen Messen.</p>
       <div class="ctas" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px"><a class="btn" href="#ev-tour">Rafa Nadal Padel Tour</a><a class="btn ghost" href="#ev-challenge">Best-of-Three-Challenge</a><a class="btn ghost" href="#ev-messen">Messen</a></div>
     </div>
   </div>
