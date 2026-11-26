@@ -2,7 +2,8 @@
 require __DIR__ . '/inc/tc/layout.php';
 // Partnernetzwerk nach Firmenpräsentation 2026 (Folie 3) und Martins neuestem Entwurf (the-court.com, Stand 23.11.2026).
 // Logos: Masken aus the-court.js (data-logo), für Partner ohne Maske eine Textkachel.
-$ratio = ['100padel' => 1.144, 'acp' => 5.856, 'activeconnected' => 6.167, 'avsyntec' => 8.867, 'babolat' => 6.344, 'btv' => 4.089, 'dsstahl' => 4.922, 'dtb' => 2.411, 'haltec' => 3.278, 'joola' => 3.167, 'kramke' => 4.433, 'mejorset' => 2.789, 'mindspring' => 6.711, 'mrc' => 9.189, 'okatent' => 6.356, 'padelconcept' => 1.811, 'padelfactory' => 4.825, 'padelgalis' => 3.333, 'patricio' => 4.133, 'planeco' => 4.067, 'playtomic' => 6.033, 'polytan' => 3.533, 'purevending' => 5.278, 'pws' => 1.51, 'rna' => 9.489, 'scheck' => 2.856, 'sportogo' => 5.044, 'wilson' => 4.067, 'zuply' => 4.511];
+// DEV-1777: Masken für Dunlop, Levendo Global, Best-of-Three Challenge und Sports Tech Nation aus Folie 3 der Firmenpräsentation.
+$ratio = ['100padel' => 1.144, 'b3' => 1.014, 'dunlop' => 6.0, 'levendo' => 6.29, 'stn' => 3.556, 'acp' => 5.856, 'activeconnected' => 6.167, 'avsyntec' => 8.867, 'babolat' => 6.344, 'btv' => 4.089, 'dsstahl' => 4.922, 'dtb' => 2.411, 'haltec' => 3.278, 'joola' => 3.167, 'kramke' => 4.433, 'mejorset' => 2.789, 'mindspring' => 6.711, 'mrc' => 9.189, 'okatent' => 6.356, 'padelconcept' => 1.811, 'padelfactory' => 4.825, 'padelgalis' => 3.333, 'patricio' => 4.133, 'planeco' => 4.067, 'playtomic' => 6.033, 'polytan' => 3.533, 'purevending' => 5.278, 'pws' => 1.51, 'rna' => 9.489, 'scheck' => 2.856, 'sportogo' => 5.044, 'wilson' => 4.067, 'zuply' => 4.511];
 $logoH = function (string $k, float $area = 7200, float $maxW = 210) use ($ratio): int {
     $r = $ratio[$k];
     $h = sqrt($area / $r);
@@ -46,9 +47,9 @@ $gruppen = [
             ['m', 'sportogo', 'Sportogo', 'Verleih'],
             ['m', 'purevending', 'purevending', 'Automaten'],
             ['m', 'zuply', 'Zuply', 'Vending'],
-            ['t', 'Levendo Global', 'Levendo Global', 'Digital', ''],
+            ['m', 'levendo', 'Levendo Global', 'Digital'],
             ['m', 'babolat', 'Babolat', 'Equipment'],
-            ['t', 'Dunlop', 'Dunlop', 'Equipment', ''],
+            ['m', 'dunlop', 'Dunlop', 'Equipment'],
             ['m', 'wilson', 'Wilson', 'Equipment'],
             ['m', 'joola', 'Joola', 'Pickleball'],
             ['m', 'mindspring', 'mindspringpadel', 'Finanzierung'],
@@ -60,8 +61,8 @@ $gruppen = [
             ['m', 'patricio', 'Patricio Travel', 'Travel'],
             ['m', 'activeconnected', 'active connected', 'Messe'],
             ['m', 'pws', 'Padel World Summit', 'Summit'],
-            ['t', 'Best of Three', 'Best of Three', 'Events', 'Challenge'],
-            ['t', 'Sports Tech Nation', 'Sports Tech Nation', 'Messe', '2026'],
+            ['m', 'b3', 'Best-of-Three Challenge', 'Events'],
+            ['m', 'stn', 'Sports Tech Nation', 'Messe'],
             ['m', 'btv', 'Bayerischer Tennis-Verband', 'Offizieller Infrastrukturpartner'],
             ['m', 'dtb', 'Deutscher Tennis Bund', 'Verband'],
         ]],
